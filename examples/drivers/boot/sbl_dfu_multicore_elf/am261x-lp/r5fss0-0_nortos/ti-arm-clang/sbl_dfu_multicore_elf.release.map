@@ -1,0 +1,2212 @@
+******************************************************************************
+            TI ARM Clang Linker Unix v4.0.3                    
+******************************************************************************
+>> Linked Thu Nov 13 06:24:53 2025
+
+OUTPUT FILE NAME:   <sbl_dfu_multicore_elf.release.out>
+ENTRY POINT SYMBOL: "_vectors"  address: 00000000
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+----------------------  --------  ---------  --------  --------  ----  --------
+  R5F_VECS              00000000   00000100  00000040  000000c0  RWIX
+  R5F_TCMA              00000100   00007f00  00000000  00007f00  RWIX
+  R5F_TCMB0             00080000   00008000  00000000  00008000  RWIX
+  MAILBOX_HSM           44000000   000003ce  00000340  0000008e  RWIX
+  MAILBOX_R5F           44000400   000003ce  00000340  0000008e  RWIX
+  MSRAM_VECS            70002000   00000100  00000040  000000c0  RWIX
+  MSRAM_0               70002100   0003d000  00026698  00016968  RWIX
+  MSRAM_HSMRT           7003f100   00020000  00006bd3  0001942d  RWIX
+  MSRAM_2               700c0000   00080000  00080000  00000000  RWIX
+  NON_CACHE_MEM         70170000   00010000  00003bc0  0000c440  RWIX
+
+
+SEGMENT ALLOCATION MAP
+
+run origin  load origin   length   init length attrs members
+----------  ----------- ---------- ----------- ----- -------
+00000000    70002000    00000040   00000040    r-x
+  00000000    70002000    00000040   00000040    r-x .sbl_init_code
+70002100    70002100    00010980   00000000    rw-
+  70002100    70002100    00010980   00000000    rw- .bss
+70012a80    70012a80    0000c398   0000c398    r-x
+  70012a80    70012a80    0000b1d0   0000b1d0    r-x .text
+  7001dc50    7001dc50    00000978   00000978    r-x .text.hwi
+  7001e5c8    7001e5c8    00000430   00000430    r-x .text.cache
+  7001e9f8    7001e9f8    00000290   00000290    r-x .text.mpu
+  7001ec88    7001ec88    00000190   00000190    r-x .text.boot
+7001ee18    7001ee18    000002e8   000002e8    rw-
+  7001ee18    7001ee18    000002e8   000002e8    rw- .data
+7001f100    7001f100    00000fd8   00000fd8    r--
+  7001f100    7001f100    00000fd8   00000fd8    r-- .rodata
+700200d8    700200d8    000086c8   00000000    rw-
+  700200d8    700200d8    00004000   00000000    rw- .stack
+  700240d8    700240d8    000021b4   00000000    rw- .usbCxtRam
+  70026290    70026290    0000020c   00000000    rw- .bss._dfu_ctx
+  700264a0    700264a0    00001000   00000000    rw- .irqstack
+  700274a0    700274a0    00000100   00000000    rw- .fiqstack
+  700275a0    700275a0    00001000   00000000    rw- .svcstack
+  700285a0    700285a0    00000100   00000000    rw- .abortstack
+  700286a0    700286a0    00000100   00000000    rw- .undefinedstack
+7003f100    7003f100    00006bd3   00006bd3    r--
+  7003f100    7003f100    00006bd3   00006bd3    r-- .rodata.hsmrt
+70170000    70170000    00003bc0   00000000    rw-
+  70170000    70170000    00003bc0   00000000    rw- .bss.nocache
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.bss.sipc_hsm_queue_mem 
+*          0    44000000    00000340     NOLOAD SECTION
+                  44000000    00000340     ti_drivers_config.obj (.bss.sipc_hsm_queue_mem)
+
+.bss.sipc_secure_host_queue_mem 
+*          0    44000400    00000340     NOLOAD SECTION
+                  44000400    00000340     ti_drivers_config.obj (.bss.sipc_secure_host_queue_mem)
+
+.sbl_init_code 
+*          0    70002000    00000040     RUN ADDR = 00000000
+                  70002000    00000040     nortos.am261x.r5f.ti-arm-clang.release.lib : HwiP_armv7r_vectors_nortos_asm.obj (.vectors)
+
+.bss       0    70002100    00010980     UNINITIALIZED
+                  70002100    0000e080     (.common:gPHTBuffer)
+                  70010180    00001000     (.common:gX509Cert)
+                  70011180    0000080c     (.common:gHwiCtrl)
+                  7001198c    00000340     (.common:gHsmClientMsgQueue)
+                  70011ccc    0000002c     (.common:gHSMClient)
+                  70011cf8    00000004     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : usbd.obj (.bss._usbd_q)
+                  70011cfc    00000004     nortos.am261x.r5f.ti-arm-clang.release.lib : HwiP_armv7r_vim.obj (.bss.gdummy)
+                  70011d00    00000300     (.common:vec_addrs)
+                  70012000    00000280     (.common:gNoteSegBuffer)
+                  70012280    00000240     (.common:gSecureBootStreamArray)
+                  700124c0    000001b0     ti_drivers_config.obj (.bss.gUartObjects)
+                  70012670    00000118     (.common:gProfileObj)
+                  70012788    000000c0     (.common:_usbd_qdef_buf)
+                  70012848    00000020     (.common:gClockCtrl)
+                  70012868    00000014     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : usbd_control.obj (.bss._ctrl_xfer)
+                  7001287c    00000004     (.common:gUartHandle)
+                  70012880    00000080     (.common:gElfHBuffer)
+                  70012900    00000053                                                              : usbd.obj (.bss._usbd_dev)
+                  70012953    00000001     --HOLE--
+                  70012954    00000044     (.common:gSIPC_ctrl)
+                  70012998    00000040     ti_usb_descriptor.obj (.bss._desc_str)
+                  700129d8    00000040     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : usbd_control.obj (.bss._usbd_ctrl_buf)
+                  70012a18    00000010     (.common:eventQueueSem)
+                  70012a28    00000010     (.common:virtToPhymap)
+                  70012a38    00000048     --HOLE--
+
+.text      0    70012a80    0000b1d0     
+                  70012a80    00000762     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : ep0.obj (.text.dwc_usb3_handle_ep0_xfer)
+                  700131e2    00000002     ti_dpl_config.obj (.text.Dpl_deinit)
+                  700131e4    0000069c     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : bootloader.obj (.text.Bootloader_parseAndLoadMultiCoreELF)
+                  70013880    00000580     nortos.am261x.r5f.ti-arm-clang.release.lib : printf.obj (.text._vsnprintf)
+                  70013e00    00000512     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : usbd.obj (.text.tud_task_ext)
+                  70014312    00000006     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : edma.obj (.text.EDMA_isInterruptEnabled)
+                  70014318    00000400     nortos.am261x.r5f.ti-arm-clang.release.lib : printf.obj (.text._ftoa)
+                  70014718    00000380     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : cil.obj (.text.dwc_usb3_pcd_device_init)
+                  70014a98    0000036c     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : soc_rcm.obj (.text.SOC_rcmEnablePeripheralClock)
+                  70014e04    00000004     ti_board_open_close.obj (.text.Board_driversOpen)
+                  70014e08    00000310     nortos.am261x.r5f.ti-arm-clang.release.lib : printf.obj (.text._etoa)
+                  70015118    000002a0     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : uart_v0.obj (.text.UART_open)
+                  700153b8    0000023c                                                        : uart_v0_lld.obj (.text.UART_configInstance)
+                  700155f4    0000023c     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : pcd_intr.obj (.text.dwc_usb3_handle_dev_intr)
+                  70015830    0000022c     security.am261x.r5f.ti-arm-clang.nortos.release.lib : sipc_notify_src.obj (.text.SIPC_init)
+                  70015a5c    00000204     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : edma.obj (.text.EDMA_freeChannelRegion)
+                  70015c60    000001fc     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : dfu_device.obj (.text.dfu_moded_control_xfer_cb)
+                  70015e5c    000001f8     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : soc_rcm.obj (.text.SOC_rcmGetPeripheralClockFrequency)
+                  70016054    000001f4                                                        : soc_rcm.obj (.text.SOC_rcmSetPeripheralClock)
+                  70016248    000001e4                                                        : soc_rcm.obj (.text.SOC_rcmPerApllConfig)
+                  7001642c    000001bc     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : pcd.obj (.text.dwc_usb3_complete_request)
+                  700165e8    0000019a                                                          : pcd.obj (.text.dwc_usb3_pcd_fill_trbs)
+                  70016782    00000196     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : dcd.obj (.text.dcd_edpt_xfer)
+                  70016918    00000194     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : soc_rcm.obj (.text.SOC_rcmEthApllConfig)
+                  70016aac    00000194                                                        : uart_dma_edma.obj (.text.UART_lld_dmaInit)
+                  70016c40    00000186     security.am261x.r5f.ti-arm-clang.nortos.release.lib : hsmclient.obj (.text.HsmClient_procAuthBootFinish)
+                  70016dc6    00000002     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : bootloader_mem.obj (.text.Mem_imgClose)
+                  70016dc8    00000170     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : usbd.obj (.text.dcd_event_handler)
+                  70016f38    00000170     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : pcd.obj (.text.dwc_usb3_pcd_init)
+                  700170a8    0000016a     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : usb_app_init.obj (.text.dwc_usb3_driver_init)
+                  70017212    00000166     security.am261x.r5f.ti-arm-clang.nortos.release.lib : sipc_notify_src.obj (.text.SIPC_isr)
+                  70017378    00000154     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : soc_rcm.obj (.text.SOC_rcmCoreApllHSDivConfig)
+                  700174cc    0000014e                                                        : uart_dma_edma.obj (.text.UART_lld_dmaDeInit)
+                  7001761a    0000014c     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : pcd.obj (.text.dwc_usb3_ep_activate)
+                  70017766    0000014a     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : uart_v0_lld.obj (.text.UART_lld_controllerIsr)
+                  700178b0    00000146     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : usbd.obj (.text.process_set_config)
+                  700179f6    00000140     nortos.am261x.r5f.ti-arm-clang.release.lib : TimerP_rti_priv.obj (.text.TimerP_setupPriv)
+                  70017b36    00000002                                                : SemaphoreP_nortos.obj (.text.SemaphoreP_destruct)
+                  70017b38    00000138     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : uart_v0.obj (.text.UART_close)
+                  70017c70    00000136     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : pcd_hiber.obj (.text.dwc_exit_hibernation_after_connect)
+                  70017da6    00000132     nortos.am261x.r5f.ti-arm-clang.release.lib : printf.obj (.text._ntoa_format)
+                  70017ed8    00000130     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : pcd_hiber.obj (.text.dwc_exit_hibernation)
+                  70018008    0000012a     security.am261x.r5f.ti-arm-clang.nortos.release.lib : hsmclient_loadhsmrt.obj (.text.Hsmclient_loadHSMRtFirmware)
+                  70018132    00000124     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : pcd_intr.obj (.text.dwc_usb3_handle_connect_done_intr)
+                  70018256    00000124     main.obj (.text.main)
+                  7001837a    0000011e     security.am261x.r5f.ti-arm-clang.nortos.release.lib : hsmclient.obj (.text.HsmClient_EnqueueAndSendMsg)
+                  70018498    0000011c     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : ep0.obj (.text.ep0_complete_request)
+                  700185b4    00000118     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : edma.obj (.text.Alloc_resource)
+                  700186cc    00000118                                                        : soc_rcm.obj (.text.SOC_rcmCoreApllConfig)
+                  700187e4    00000118     libclang_rt.builtins.a : udivmoddi4.S.obj (.text)
+                  700188fc    00000104     nortos.am261x.r5f.ti-arm-clang.release.lib : ClockP_nortos_r5.obj (.text.ClockP_init)
+                  70018a00    00000104     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : uart_dma_edma.obj (.text.UART_lld_dmaWrite)
+                  70018b04    00000100     security.am261x.r5f.ti-arm-clang.nortos.release.lib : sipc_notify_src.obj (.text.SIPC_sendMsg)
+                  70018c04    00000100     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : pcd.obj (.text.dwc_usb3_pcd_ep_start_transfer)
+                  70018d04    000000f0     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : no_os_gadget.obj (.text.dwc_usb3_ep_queue)
+                  70018df4    000000dc     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : pcd.obj (.text.dwc_usb3_pcd_ep0_start_transfer)
+                  70018ed0    000000d0     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : edma.obj (.text.EDMA_unregisterIntr)
+                  70018fa0    000000cc                                                        : uart_v0_lld.obj (.text.UART_lld_initDma)
+                  7001906c    000000cc     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : usbd_control.obj (.text.usbd_control_xfer_cb)
+                  70019138    000000c4     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : uart_v0_lld.obj (.text.UART_lld_init)
+                  700191fc    000000c2     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : usbd.obj (.text.tud_init)
+                  700192be    00000002     nortos.am261x.r5f.ti-arm-clang.release.lib : TaskP_nortos.obj (.text.TaskP_yield)
+                  700192c0    000000bc     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : edma.obj (.text.EDMA_registerIntr)
+                  7001937c    000000bc     security.am261x.r5f.ti-arm-clang.nortos.release.lib : hsmclient.obj (.text.HsmClient_procAuthBootStart)
+                  70019438    000000ba     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : pcd_hiber.obj (.text.dwc_reenable_xfer_and_restart)
+                  700194f2    000000b8                                                          : cil_intr.obj (.text.dwc_usb3_handle_event)
+                  700195aa    00000002     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : uart_dma_edma.obj (.text.UART_edmaDoNothing)
+                  700195ac    000000b0                                                        : soc_rcm.obj (.text.SOC_rcmGetCoreHSDivOut)
+                  7001965c    000000b0     nortos.am261x.r5f.ti-arm-clang.release.lib : printf.obj (.text._ntoa_long_long)
+                  7001970c    000000b0     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : pcd.obj (.text.dwc_usb3_ep0_activate)
+                  700197bc    000000b0                                                          : pcd_intr.obj (.text.dwc_usb3_handle_ep_intr)
+                  7001986c    000000b0                                                          : cil.obj (.text.dwc_usb3_set_tx_fifo_size)
+                  7001991c    000000ac     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : uart_v0_lld.obj (.text.UART_divisorLatchWrite)
+                  700199c8    000000a6     nortos.am261x.r5f.ti-arm-clang.release.lib : printf.obj (.text._out_rev)
+                  70019a6e    00000002                                                : printf.obj (.text._out_null)
+                  70019a70    000000a0     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : bootloader_hsmRt_load.obj (.text.Bootloader_socLoadHsmRtFw)
+                  70019b10    000000a0                                                        : edma.obj (.text.EDMA_freeDmaChannel)
+                  70019bb0    000000a0                                                        : edma.obj (.text.EDMA_freeParam)
+                  70019c50    000000a0                                                        : edma.obj (.text.EDMA_freeTcc)
+                  70019cf0    000000a0                                                        : uart_dma_edma.obj (.text.UART_lld_dmaRead)
+                  70019d90    0000009e                                                        : bootloader.obj (.text.Bootloader_getMsgLen)
+                  70019e2e    0000009e     nortos.am261x.r5f.ti-arm-clang.release.lib : SemaphoreP_nortos.obj (.text.SemaphoreP_pend)
+                  70019ecc    00000098     ti_drivers_config.obj (.text.HsmClient_config)
+                  70019f64    00000098     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : usbd.obj (.text.process_get_descriptor)
+                  70019ffc    00000096     security.am261x.r5f.ti-arm-clang.nortos.release.lib : hsmclient.obj (.text.HsmClient_isr)
+                  7001a092    00000094     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : edma.obj (.text.EDMA_configureChannelRegion)
+                  7001a126    00000094     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : pcd.obj (.text.dwc_usb3_pcd_ep_disable)
+                  7001a1ba    00000002     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : dcd.obj (.text.dcd_edpt_close_all)
+                  7001a1bc    00000090     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : soc.obj (.text.SOC_phyToVirt)
+                  7001a24c    0000008e     nortos.am261x.r5f.ti-arm-clang.release.lib : printf.obj (.text._ntoa_long)
+                  7001a2da    0000008e     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : cil.obj (.text.dwc_usb3_pcd_common_init)
+                  7001a368    0000008e     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : dfu_device.obj (.text.process_download_get_status)
+                  7001a3f6    0000008c     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : cil_intr.obj (.text.dwc_usb3_irq)
+                  7001a482    00000002     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : dcd.obj (.text.dcd_set_address)
+                  7001a484    0000008a     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : pcd.obj (.text.dwc_usb3_pcd_ep_submit_req)
+                  7001a50e    00000002     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : no_os_gadget.obj (.text.dwc_usb3_gadget_free_dma)
+                  7001a510    00000088     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : uart_v0.obj (.text.UART_init)
+                  7001a598    00000088     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : pcd.obj (.text.dwc_usb3_pcd_ep_set_halt)
+                  7001a620    00000088     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : dfu_device.obj (.text.process_manifest_get_status)
+                  7001a6a8    00000084     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : soc.obj (.text.SOC_virtToPhy)
+                  7001a72c    00000082     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : usbd.obj (.text.configuration_reset)
+                  7001a7ae    00000082                                                              : no_os_gadget.obj (.text.dwc_usb3_close_all_ep)
+                  7001a830    00000082     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : pcd.obj (.text.dwc_usb3_pcd_stop)
+                  7001a8b2    00000082                                                          : cil.obj (.text.dwc_usb3_set_rx_fifo_size)
+                  7001a934    00000080     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : uart_v0.obj (.text.UART_flushTxFifo)
+                  7001a9b4    0000007e     security.am261x.r5f.ti-arm-clang.nortos.release.lib : hsmclient.obj (.text.HsmClient_procAuthBootUpdate)
+                  7001aa32    0000007e     ti_usb_descriptor.obj (.text.tud_descriptor_string_cb)
+                  7001aab0    0000007c     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : soc_rcm.obj (.text.SOC_rcmsetR5SysClock)
+                  7001ab2c    0000007a     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : no_os_gadget.obj (.text.dwc_usb3_gadget_complete)
+                  7001aba6    0000007a                                                              : no_os_gadget.obj (.text.dwc_usb3_gadget_isoc_ep_start)
+                  7001ac20    00000076                                                              : usb_app_init.obj (.text.dwc_usb3_driver_remove)
+                  7001ac96    00000070     ti_clocktree_pll_config.obj (.text.Bootloader_socConfigurePll)
+                  7001ad06    0000006e     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : edma.obj (.text.EDMA_disableTransferRegion)
+                  7001ad74    0000006e                                                        : edma.obj (.text.EDMA_enableTransferRegion)
+                  7001ade2    0000006e     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : pcd.obj (.text.dwc_usb3_stop_all_xfers)
+                  7001ae50    0000006c     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : bootloader_soc.obj (.text.Bootloader_socSetAutoClock)
+                  7001aebc    0000006c     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : cil.obj (.text.dwc_usb3_pcd_device_remove)
+                  7001af28    00000068     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : dfu_device.obj (.text.dfu_moded_open)
+                  7001af90    00000066     nortos.am261x.r5f.ti-arm-clang.release.lib : PmuP_armv7r.obj (.text.pmu)
+                  7001aff6    00000002     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : cil.obj (.text.dwc_usb3_pcd_common_remove)
+                  7001aff8    00000064     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : soc.obj (.text.SOC_controlModuleUnlockMMR)
+                  7001b05c    00000064                                                        : uart_v0_lld.obj (.text.UART_procLineStatusErr)
+                  7001b0c0    00000062     security.am261x.r5f.ti-arm-clang.nortos.release.lib : hsmclient.obj (.text.HsmClient_register)
+                  7001b122    00000060     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : usbd_control.obj (.text.tud_control_xfer)
+                  7001b182    0000005e     nortos.am261x.r5f.ti-arm-clang.release.lib : ClockP_nortos.obj (.text.ClockP_timerTickIsr)
+                  7001b1e0    0000005c     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : soc.obj (.text.SOC_controlModuleLockMMR)
+                  7001b23c    0000005c     nortos.am261x.r5f.ti-arm-clang.release.lib : DebugP_log.obj (.text._DebugP_assert)
+                  7001b298    0000005c     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : device_wrapper.obj (.text.usb_phy_power_sequence)
+                  7001b2f4    0000005a                                                              : usbd_control.obj (.text._data_stage_xact)
+                  7001b34e    0000005a                                                              : tusb_fifo.obj (.text._tu_fifo_peek)
+                  7001b3a8    0000005a                                                              : no_os_gadget.obj (.text.dwc_usb3_gadget_init)
+                  7001b402    0000005a                                                              : usb_app_init.obj (.text.haps_phy_config_hook)
+                  7001b45c    00000058     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : bootloader.obj (.text.Bootloader_parseNoteSegment)
+                  7001b4b4    00000058                                                        : bootloader.obj (.text.Bootloader_runCpu)
+                  7001b50c    00000058     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : pcd.obj (.text.dwc_usb3_pcd_isoc_ep_hiber_restart)
+                  7001b564    00000058                                                          : pcd.obj (.text.dwc_usb3_stop_xfer)
+                  7001b5bc    00000056     nortos.am261x.r5f.ti-arm-clang.release.lib : ClockP_nortos.obj (.text.ClockP_getTimeUsec)
+                  7001b612    00000056     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : uart_v0_lld.obj (.text.UART_intrDisable)
+                  7001b668    00000056     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : cil_intr.obj (.text.dwc_usb3_task)
+                  7001b6be    00000056                                                          : ep0.obj (.text.ep0_continue_transfer)
+                  7001b714    00000056     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : dcd.obj (.text.epXferCmplCb)
+                  7001b76a    00000056                                                              : usbd.obj (.text.usbd_edpt_xfer)
+                  7001b7c0    00000054     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : soc_rcm.obj (.text.SOC_rcmR5ConfigDualCore)
+                  7001b814    00000054     libc.a : autoinit.c.obj (.text:__TI_auto_init_nobinit_nopinit)
+                  7001b868    00000052     nortos.am261x.r5f.ti-arm-clang.release.lib : AddrTranslateP_32bit.obj (.text.AddrTranslateP_getLocalAddr)
+                  7001b8ba    00000052     security.am261x.r5f.ti-arm-clang.nortos.release.lib : hsmclient.obj (.text.HsmClient_checkAndWaitForBootNotification)
+                  7001b90c    00000052     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : device_wrapper.obj (.text.USB_init)
+                  7001b95e    00000052     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : cil.obj (.text.dwc_usb3_clr_eps_enabled)
+                  7001b9b0    00000052                                                          : pcd.obj (.text.dwc_usb3_pcd_request_done)
+                  7001ba02    00000002                                                          : no_os_hiber.obj (.text.dwc_usb3_power_ctl)
+                  7001ba04    00000050     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : bootloader_soc.obj (.text.Bootloader_socCpuGetClock)
+                  7001ba54    00000050                                                        : edma.obj (.text.EDMA_allocDmaChannel)
+                  7001baa4    00000050                                                        : edma.obj (.text.EDMA_allocParam)
+                  7001baf4    00000050                                                        : edma.obj (.text.EDMA_allocTcc)
+                  7001bb44    00000050     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : no_os_gadget.obj (.text.dwc_usb3_alloc_request)
+                  7001bb94    0000004e     nortos.am261x.r5f.ti-arm-clang.release.lib : ClockP_nortos.obj (.text.ClockP_addToList)
+                  7001bbe2    0000004e     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : edma.obj (.text.EDMA_disableChInShadowRegRegion)
+                  7001bc30    0000004e     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : pcd.obj (.text.dwc_usb3_pcd_ep0_out_start)
+                  7001bc7e    0000004e     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : tusb_fifo.obj (.text.tu_fifo_write)
+                  7001bccc    0000004c     ti_drivers_open_close.obj (.text.Drivers_uartOpen)
+                  7001bd18    0000004c     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : cil.obj (.text.dwc_usb3_xmit_fn_remote_wake)
+                  7001bd64    00000048     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : uart_dma_edma.obj (.text.UART_edmaIsrRx)
+                  7001bdac    00000046                                                        : uart_dma_edma.obj (.text.UART_edmaIsrTx)
+                  7001bdf2    00000002     ti_dpl_config.obj (.text.putchar_)
+                  7001bdf4    00000044     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : bootloader_soc.obj (.text.Bootloader_socCpuPowerOnReset)
+                  7001be38    00000044                                                        : uart_v0.obj (.text.UART_Params_init)
+                  7001be7c    00000044                                                        : uart_v0_lld.obj (.text.UART_lld_deInitDma)
+                  7001bec0    00000044     main.obj (.text.tud_dfu_download_cb)
+                  7001bf04    00000042     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : cil.obj (.text.dwc_usb3_ena_usb2_phy_suspend)
+                  7001bf46    00000040     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : bootloader.obj (.text.Bootloader_findSeq)
+                  7001bf86    00000002     --HOLE-- [fill = 0]
+                  7001bf88    00000040                                                        : bootloader.obj (.text.Bootloader_open)
+                  7001bfc8    00000040                                                        : bootloader.obj (.text.Bootloader_verifySegmentAddr)
+                  7001c008    00000040     nortos.am261x.r5f.ti-arm-clang.release.lib : ClockP_nortos.obj (.text.ClockP_stop)
+                  7001c048    00000040     ti_dpl_config.obj (.text.Dpl_init)
+                  7001c088    00000040     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : edma.obj (.text.EDMA_mapChToEvtQ)
+                  7001c0c8    00000040                                                        : pinmux.obj (.text.Pinmux_config)
+                  7001c108    00000040                                                        : soc_rcm.obj (.text.SOC_rcmStartMemInitTCMA)
+                  7001c148    00000040                                                        : soc_rcm.obj (.text.SOC_rcmStartMemInitTCMB)
+                  7001c188    00000040                                                        : uart_v0_lld.obj (.text.UART_lld_deInit)
+                  7001c1c8    00000040     main.obj (.text.dfu_task)
+                  7001c208    00000040     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : cil_intr.obj (.text.dwc_usb3_enable_common_interrupts)
+                  7001c248    00000040     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : usbd.obj (.text.usbd_edpt_clear_stall)
+                  7001c288    00000040                                                              : usbd.obj (.text.usbd_edpt_stall)
+                  7001c2c8    0000003e     security.am261x.r5f.ti-arm-clang.nortos.release.lib : hsmclient_loadhsmrt.obj (.text.Hsmclient_mboxRxISR)
+                  7001c306    0000003e                                                         : sipc_notify_src.obj (.text.SIPC_registerClient)
+                  7001c344    0000003e     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : cil_intr.obj (.text.dwc_usb3_dis_flush_eventbuf_intr)
+                  7001c382    0000003e     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : no_os_gadget.obj (.text.dwc_usb3_gadget_start_next_request)
+                  7001c3c0    0000003c     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : edma.obj (.text.EDMA_getBaseAddr)
+                  7001c3fc    0000003c                                                        : soc_rcm.obj (.text.SOC_rcmWaitMemInitTCMA)
+                  7001c438    0000003c                                                        : soc_rcm.obj (.text.SOC_rcmWaitMemInitTCMB)
+                  7001c474    0000003c                                                        : uart_v0_lld.obj (.text.UART_readData)
+                  7001c4b0    0000003c     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : cil.obj (.text.dwc_usb3_dep_cfg)
+                  7001c4ec    0000003c                                                          : cil.obj (.text.dwc_usb3_dep_startxfer)
+                  7001c528    0000003c     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : no_os_gadget.obj (.text.dwc_usb3_gadget_connect)
+                  7001c564    0000003c     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : cil_intr.obj (.text.dwc_usb3_init_eventbuf)
+                  7001c5a0    0000003c                                                          : ep0.obj (.text.dwc_usb3_pcd_ep0_data_stage)
+                  7001c5dc    0000003a     nortos.am261x.r5f.ti-arm-clang.release.lib : ClockP_nortos.obj (.text.ClockP_destruct)
+                  7001c616    0000003a     ti_power_clock_config.obj (.text.Module_clockSetFrequency)
+                  7001c650    0000003a     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : uart_v0_lld.obj (.text.UART_lld_flushTxFifo)
+                  7001c68a    00000002     --HOLE-- [fill = 0]
+                  7001c68c    00000038                                                        : bootloader_soc.obj (.text.Bootloader_authStart)
+                  7001c6c4    00000038                                                        : bootloader_soc.obj (.text.Bootloader_authUpdate)
+                  7001c6fc    00000038                                                        : bootloader_soc.obj (.text.Bootloader_socMemInitCpu)
+                  7001c734    00000038                                                        : bootloader_soc.obj (.text.Bootloader_socTranslateSectionAddr)
+                  7001c76c    00000038     nortos.am261x.r5f.ti-arm-clang.release.lib : DebugP_nortos.obj (.text._DebugP_logZone)
+                  7001c7a4    00000038     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : no_os_gadget.obj (.text.dwc_usb3_gadget_request_nuke)
+                  7001c7dc    00000038     nortos.am261x.r5f.ti-arm-clang.release.lib : PmuP_armv7r_asm.obj (.text.pmu)
+                  7001c814    00000036     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : edma.obj (.text.EDMA_clrMissEvtRegion)
+                  7001c84a    00000036     security.am261x.r5f.ti-arm-clang.nortos.release.lib : hsmclient_wait_for_boot_notify.obj (.text.HsmClient_waitForBootNotify)
+                  7001c880    00000036     nortos.am261x.r5f.ti-arm-clang.release.lib : SemaphoreP_nortos.obj (.text.SemaphoreP_post)
+                  7001c8b6    00000036     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : no_os_gadget.obj (.text.dwc_usb3_free_request)
+                  7001c8ec    00000036                                                              : dcd.obj (.text.outEp0XferCmplCb)
+                  7001c922    00000036                                                              : dfu_device.obj (.text.tud_dfu_finish_flashing)
+                  7001c958    00000036                                                              : device_wrapper.obj (.text.usbdIntrConfig)
+                  7001c98e    00000034     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : bootloader.obj (.text.Bootloader_getX509CertLen)
+                  7001c9c2    00000034     nortos.am261x.r5f.ti-arm-clang.release.lib : ClockP_nortos.obj (.text.ClockP_start)
+                  7001c9f6    00000034     ti_power_clock_config.obj (.text.Module_clockDisable)
+                  7001ca2a    00000034     ti_power_clock_config.obj (.text.Module_clockEnable)
+                  7001ca5e    00000002     --HOLE-- [fill = 0]
+                  7001ca60    00000034     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : soc_rcm.obj (.text.SOC_rcmADPLLJGetFOut)
+                  7001ca94    00000034                                                        : soc_rcm.obj (.text.SOC_rcmGetModuleClkDivVal)
+                  7001cac8    00000032                                                        : edma.obj (.text.EDMA_unmapChToEvtQ)
+                  7001cafa    00000002     --HOLE-- [fill = 0]
+                  7001cafc    00000030                                                        : bootloader.obj (.text.Bootloader_BootImageInfo_init)
+                  7001cb2c    00000030                                                        : bootloader_soc.obj (.text.Bootloader_authFinish)
+                  7001cb5c    00000030     security.am261x.r5f.ti-arm-clang.nortos.release.lib : sipc_notify_cfg.obj (.text.SIPC_Register_Isr)
+                  7001cb8c    00000030     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : soc_rcm.obj (.text.SOC_rcmCoreApllRelockPreRequisite)
+                  7001cbbc    00000030                                                        : uart_v0.obj (.text.UART_lld_readCompleteCallback)
+                  7001cbec    00000030                                                        : uart_v0.obj (.text.UART_lld_writeCompleteCallback)
+                  7001cc1c    00000030     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : dwc_queue.obj (.text.dwc_queueGet)
+                  7001cc4c    00000030                                                          : cil.obj (.text.dwc_usb3_dep_endxfer)
+                  7001cc7c    00000030                                                          : cil.obj (.text.dwc_usb3_disable_ep)
+                  7001ccac    00000030                                                          : cil.obj (.text.dwc_usb3_enable_ep)
+                  7001ccdc    00000030                                                          : cil.obj (.text.dwc_usb3_fill_desc)
+                  7001cd0c    00000030                                                          : ep0.obj (.text.ep0_do_stall)
+                  7001cd3c    00000030     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : usbd_control.obj (.text.tud_control_status)
+                  7001cd6c    0000002e     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : edma.obj (.text.EDMA_enableChInShadowRegRegion)
+                  7001cd9a    0000002e     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : cil.obj (.text.dwc_usb3_set_scratchpad_buf_array)
+                  7001cdc8    0000002e     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : dcd.obj (.text.inEp0XferCmplCb)
+                  7001cdf6    00000002     --HOLE-- [fill = 0]
+                  7001cdf8    0000002c     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : soc_rcm.obj (.text.SOC_rcmCoreR5FUnhalt)
+                  7001ce24    0000002c                                                        : soc_rcm.obj (.text.SOC_rcmR5ConfigLockStep)
+                  7001ce50    0000002c     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : dwc_queue.obj (.text.dwc_queuePut)
+                  7001ce7c    0000002c                                                          : cil.obj (.text.dwc_usb3_dep_cstall)
+                  7001cea8    0000002a                                                          : pcd.obj (.text.dwc_usb3_pcd_ep_clear_stall)
+                  7001ced2    0000002a     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : tusb.obj (.text.tu_edpt_bind_driver)
+                  7001cefc    00000028     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : bootloader_soc.obj (.text.Bootloader_socCpuGetClkDefault)
+                  7001cf24    00000028                                                        : bootloader_soc.obj (.text.Bootloader_socGetCoreName)
+                  7001cf4c    00000028     nortos.am261x.r5f.ti-arm-clang.release.lib : ClockP_nortos.obj (.text.ClockP_construct)
+                  7001cf74    00000028     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : bootloader_mem.obj (.text.Mem_imgRead)
+                  7001cf9c    00000028                                                        : soc.obj (.text.SOC_moduleSetClockFrequency)
+                  7001cfc4    00000028                                                        : soc_rcm.obj (.text.SOC_rcmGetADPLLJConfig)
+                  7001cfec    00000028     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : cil.obj (.text.dwc_usb3_dep_xfercfg)
+                  7001d014    00000028                                                          : pcd.obj (.text.dwc_usb3_pcd_ep_set_stall)
+                  7001d03c    00000026     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : bootloader.obj (.text.Bootloader_initCpu)
+                  7001d062    00000026                                                        : edma.obj (.text.EDMA_setPaRAM)
+                  7001d088    00000026     security.am261x.r5f.ti-arm-clang.nortos.release.lib : sipc_notify_src.obj (.text.SIPC_unregisterClient)
+                  7001d0ae    00000026     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : cil.obj (.text.dwc_usb3_dep_startnewcfg)
+                  7001d0d4    00000026                                                          : cil.obj (.text.dwc_usb3_dep_updatexfer)
+                  7001d0fa    00000026                                                          : cil.obj (.text.dwc_usb3_pcd_set_link_state)
+                  7001d120    00000024     security.am261x.r5f.ti-arm-clang.nortos.release.lib : hsmclient.obj (.text.HsmClient_init)
+                  7001d144    00000024     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : soc_rcm.obj (.text.SOC_rcmGetR5Clock)
+                  7001d168    00000024                                                        : uart_v0_lld.obj (.text.UART_IsHWFlowCtrlValid)
+                  7001d18c    00000024     libclang_rt.builtins.a : aeabi_uldivmod.S.obj (.text.__aeabi_uldivmod)
+                  7001d1b0    00000024     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : dcd.obj (.text.dcd_edpt_clear_stall)
+                  7001d1d4    00000024                                                              : dcd.obj (.text.dcd_edpt_stall)
+                  7001d1f8    00000024     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : cil.obj (.text.dwc_usb3_dep_sstall)
+                  7001d21c    00000024                                                          : cil.obj (.text.dwc_usb3_dis_usb2_phy_suspend)
+                  7001d240    00000024     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : no_os_gadget.obj (.text.dwc_usb3_gadget_disconnect)
+                  7001d264    00000024                                                              : no_os_gadget.obj (.text.dwc_usb3_gadget_resume)
+                  7001d288    00000024                                                              : no_os_gadget.obj (.text.dwc_usb3_gadget_suspend)
+                  7001d2ac    00000024                                                              : tusb_fifo.obj (.text.tu_fifo_read)
+                  7001d2d0    00000024     nortos.am261x.r5f.ti-arm-clang.release.lib : printf.obj (.text.vprintf_)
+                  7001d2f4    00000022     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : edma.obj (.text.EDMA_linkChannel)
+                  7001d316    00000022     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : dcd.obj (.text.dcd_init)
+                  7001d338    00000022     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : cil_intr.obj (.text.dwc_usb3_enable_device_interrupts)
+                  7001d35a    00000022                                                          : pcd.obj (.text.dwc_usb3_pcd_get_ep_by_addr)
+                  7001d37c    00000020     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : bootloader.obj (.text.Bootloader_runSelfCpu)
+                  7001d39c    00000020     nortos.am261x.r5f.ti-arm-clang.release.lib : DebugP_log.obj (.text.DebugP_logZoneEnable)
+                  7001d3bc    00000020     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : soc_rcm.obj (.text.SOC_rcmMemInitL2Memory)
+                  7001d3dc    00000020     nortos.am261x.r5f.ti-arm-clang.release.lib : SemaphoreP_nortos.obj (.text.SemaphoreP_constructCounting)
+                  7001d3fc    00000020     ti_drivers_config.obj (.text.System_deinit)
+                  7001d41c    00000020     nortos.am261x.r5f.ti-arm-clang.release.lib : TimerP_rti_priv.obj (.text.TimerP_Params_initPriv)
+                  7001d43c    00000020     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : uart_v0_lld.obj (.text.UART_getChar)
+                  7001d45c    00000020     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : no_os_gadget.obj (.text.dwc_usb3_gadget_setup)
+                  7001d47c    00000020     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : cil.obj (.text.dwc_usb3_get_device_speed)
+                  7001d49c    00000020                                                          : cil.obj (.text.dwc_usb3_pcd_check_snpsid)
+                  7001d4bc    0000001e     ti_drivers_open_close.obj (.text.Drivers_close)
+                  7001d4da    0000001e     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : uart_v0_lld.obj (.text.UART_spaceAvail)
+                  7001d4f8    0000001e                                                        : bootloader.obj (.text.memcmp)
+                  7001d516    0000001e     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : tusb_fifo.obj (.text.tu_fifo_clear)
+                  7001d534    0000001c     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : bootloader_mem.obj (.text.Mem_imgOpen)
+                  7001d550    0000001c     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : no_os_gadget.obj (.text.dwc_usb3_gadget_set_ep_not_started)
+                  7001d56c    0000001c     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : pcd.obj (.text.dwc_usb3_pcd_trb_free)
+                  7001d588    0000001c                                                          : cil_intr.obj (.text.dwc_usb3_task_init)
+                  7001d5a4    0000001c     libc.a : memcpy32.S.obj (.text:TI_memcpy_small)
+                  7001d5c0    0000001a     nortos.am261x.r5f.ti-arm-clang.release.lib : CpuId_armv7r.obj (.text.CSL_armR5GetCpuID)
+                  7001d5da    0000001a     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : edma.obj (.text.EDMA_readEventStatusRegion)
+                  7001d5f4    0000001a     security.am261x.r5f.ti-arm-clang.nortos.release.lib : sipc_notify_src.obj (.text.SIPC_Params_init)
+                  7001d60e    0000001a     ti_drivers_config.obj (.text.System_init)
+                  7001d628    0000001a     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : uart_v0_lld.obj (.text.UART_enhanFuncEnable)
+                  7001d642    0000001a     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : device_wrapper.obj (.text.usbCoreIntrHandler)
+                  7001d65c    00000018     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : bootloader_profile.obj (.text.Bootloader_profileAddCore)
+                  7001d674    00000018                                                        : soc_rcm.obj (.text.SOC_rcmMemInitMailboxMemory)
+                  7001d68c    00000018                                                        : soc_rcm.obj (.text.SOC_rcmR5SS0PowerOnReset)
+                  7001d6a4    00000018     nortos.am261x.r5f.ti-arm-clang.release.lib : TimerP_rti_priv.obj (.text.TimerP_getCountPriv)
+                  7001d6bc    00000018     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : uart_v0.obj (.text.UART_deinit)
+                  7001d6d4    00000018     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : usbd_control.obj (.text.usbd_control_set_request)
+                  7001d6ec    00000018     libc.a : memset32.S.obj (.text:TI_memset_small)
+                  7001d704    00000016     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : bootloader_soc.obj (.text.Bootloader_socCpuSetClock)
+                  7001d71a    00000016     nortos.am261x.r5f.ti-arm-clang.release.lib : SemaphoreP_nortos.obj (.text.SemaphoreP_constructBinary)
+                  7001d730    00000016     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : uart_v0_lld.obj (.text.UART_IsTxRxFifoEmpty)
+                  7001d746    00000016                                                        : uart_v0_lld.obj (.text.UART_checkCharsAvailInFifo)
+                  7001d75c    00000016                                                        : uart_v0_lld.obj (.text.UART_getIntrIdentityStatus)
+                  7001d772    00000016     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : cil.obj (.text.dwc_usb3_set_address)
+                  7001d788    00000016     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : usbd.obj (.text.usbd_int_set)
+                  7001d79e    00000014     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : bootloader_soc.obj (.text.Bootloader_socCpuResetRelease)
+                  7001d7b2    00000002     --HOLE-- [fill = 0]
+                  7001d7b4    00000014                                                        : bootloader_soc.obj (.text.Bootloader_socIsAuthRequired)
+                  7001d7c8    00000014     nortos.am261x.r5f.ti-arm-clang.release.lib : ClockP_nortos.obj (.text.ClockP_usecToTicks)
+                  7001d7dc    00000014     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : edma.obj (.text.EDMA_getRegionId)
+                  7001d7f0    00000014                                                        : soc_rcm.obj (.text.SOC_rcmIsR5FInLockStepMode)
+                  7001d804    00000014                                                        : soc_rcm.obj (.text.SOC_rcmR5SS0TriggerReset)
+                  7001d818    00000014     nortos.am261x.r5f.ti-arm-clang.release.lib : SemaphoreP_nortos.obj (.text.SemaphoreP_constructMutex)
+                  7001d82c    00000014     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : uart_v0_lld.obj (.text.UART_enhanFuncBitValRestore)
+                  7001d840    00000014     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : device_wrapper.obj (.text.USB_configureInterrupt)
+                  7001d854    00000014                                                              : dfu_device.obj (.text.dfu_moded_init)
+                  7001d868    00000014                                                              : dfu_device.obj (.text.dfu_moded_reset)
+                  7001d87c    00000014     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : pcd.obj (.text.dwc_usb3_get_in_ep)
+                  7001d890    00000012     ti_drivers_open_close.obj (.text.Drivers_open)
+                  7001d8a2    00000012     security.am261x.r5f.ti-arm-clang.nortos.release.lib : hsmclient_loadhsmrt.obj (.text.Hsmclient_updateBootNotificationRegister)
+                  7001d8b4    00000012     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : uart_v0_lld.obj (.text.UART_hardwareFlowCtrlOptSet)
+                  7001d8c6    00000012                                                        : uart_v0_lld.obj (.text.UART_operatingModeSelect)
+                  7001d8d8    00000012                                                        : uart_v0_lld.obj (.text.UART_readLineStatus)
+                  7001d8ea    00000012     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : cil.obj (.text.dwc_usb3_accept_u1)
+                  7001d8fc    00000012                                                          : cil.obj (.text.dwc_usb3_accept_u2)
+                  7001d90e    00000012                                                          : cil.obj (.text.dwc_usb3_disable_u1)
+                  7001d920    00000012                                                          : cil.obj (.text.dwc_usb3_disable_u2)
+                  7001d932    00000012                                                          : cil.obj (.text.dwc_usb3_enable_u1)
+                  7001d944    00000012                                                          : cil.obj (.text.dwc_usb3_enable_u2)
+                  7001d956    00000012     main.obj (.text.tud_dfu_manifest_cb)
+                  7001d968    00000012     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : usbd.obj (.text.tud_inited)
+                  7001d97a    00000012                                                              : usbd_control.obj (.text.usbd_control_reset)
+                  7001d98c    00000010     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : bootloader.obj (.text.Bootloader_close)
+                  7001d99c    00000010                                                        : bootloader.obj (.text.Bootloader_getBootMedia)
+                  7001d9ac    00000010                                                        : bootloader.obj (.text.Bootloader_isCorePresent)
+                  7001d9bc    00000010                                                        : uart_v0_lld.obj (.text.UART_intr2Disable)
+                  7001d9cc    00000010     libclang_rt.builtins.a : aeabi_memset.S.obj (.text.__aeabi_memset)
+                  7001d9dc    00000010     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : no_os_gadget.obj (.text.dwc_usb3_gadget_get_request)
+                  7001d9ec    0000000e     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : bootloader_soc.obj (.text.Bootloader_socCpuResetReleaseSelf)
+                  7001d9fa    0000000e                                                        : bootloader_soc.obj (.text.Bootloader_socInitL2MailBoxMemory)
+                  7001da08    0000000e                                                        : edma.obj (.text.EDMA_ccPaRAMEntry_init)
+                  7001da16    0000000e     ti_pinmux_config.obj (.text.Pinmux_init)
+                  7001da24    0000000e     ti_power_clock_config.obj (.text.PowerClock_init)
+                  7001da32    0000000e     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : device_wrapper.obj (.text.USB_dwcTask)
+                  7001da40    0000000e     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : pcd.obj (.text.dwc_usb3_get_out_ep)
+                  7001da4e    0000000e                                                          : no_os_hiber.obj (.text.dwc_usb3_handle_pme_intr)
+                  7001da5c    0000000e                                                          : cil.obj (.text.dwc_usb3_pcd_remote_wake)
+                  7001da6a    00000002     --HOLE-- [fill = 0]
+                  7001da6c    0000000c     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : bootloader.obj (.text.Bootloader_Params_init)
+                  7001da78    0000000c                                                        : bootloader_soc.obj (.text.Bootloader_socGetBootSeqOid)
+                  7001da84    0000000c     nortos.am261x.r5f.ti-arm-clang.release.lib : ClockP_nortos.obj (.text.ClockP_getTicks)
+                  7001da90    0000000c     security.am261x.r5f.ti-arm-clang.nortos.release.lib : hsmclient.obj (.text.HsmClient_SecureBootQueueInit)
+                  7001da9c    0000000c                                                         : sipc_notify_src.obj (.text.SIPC_getSelfCoreId)
+                  7001daa8    0000000c     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : soc_rcm.obj (.text.SOC_rcmSetR5ClockSource)
+                  7001dab4    0000000c     libclang_rt.builtins.a : aeabi_memset.S.obj (.text.__aeabi_memclr)
+                  7001dac0    0000000c     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : cil.obj (.text.dwc_usb3_get_frame)
+                  7001dacc    0000000c                                                          : cil.obj (.text.dwc_usb3_pcd_get_link_state)
+                  7001dad8    0000000c                                                          : cil.obj (.text.dwc_usb3_u1_enabled)
+                  7001dae4    0000000c                                                          : cil.obj (.text.dwc_usb3_u2_enabled)
+                  7001daf0    0000000c     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : usbd_control.obj (.text.usbd_control_set_complete_callback)
+                  7001dafc    0000000c     nortos.am261x.r5f.ti-arm-clang.release.lib : CpuId_armv7r_asm.obj (.text)
+                  7001db08    0000000a                                                : ClockP_nortos.obj (.text.ClockP_Params_init)
+                  7001db12    0000000a                                                : ClockP_nortos.obj (.text.ClockP_isActive)
+                  7001db1c    0000000a     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : soc_rcm.obj (.text.SOC_rcmSetR5Clock)
+                  7001db26    0000000a     nortos.am261x.r5f.ti-arm-clang.release.lib : TimerP_rti_priv.obj (.text.TimerP_getReloadCountPriv)
+                  7001db30    0000000a                                                : TimerP_rti_priv.obj (.text.TimerP_startPriv)
+                  7001db3a    0000000a     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : uart_v0_lld.obj (.text.UART_lld_Transaction_deInit)
+                  7001db44    0000000a     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : dwc_queue.obj (.text.dwc_queueInit)
+                  7001db4e    0000000a                                                          : cil.obj (.text.dwc_usb3_disable_desc)
+                  7001db58    0000000a                                                          : cil.obj (.text.dwc_usb3_enable_desc)
+                  7001db62    0000000a     ti_usb_descriptor.obj (.text.tud_descriptor_configuration_cb)
+                  7001db6c    0000000a     ti_usb_descriptor.obj (.text.tud_descriptor_device_cb)
+                  7001db76    0000000a     ti_usb_descriptor.obj (.text.tud_descriptor_device_qualifier_cb)
+                  7001db80    0000000a     main.obj (.text.tud_dfu_get_timeout_cb)
+                  7001db8a    00000002     --HOLE-- [fill = 0]
+                  7001db8c    00000008     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : bootloader_soc.obj (.text.Bootloader_socGetSBLMem)
+                  7001db94    00000008     libsysbm.a : hostexit.c.obj (.text.HOSTexit)
+                  7001db9c    00000008     nortos.am261x.r5f.ti-arm-clang.release.lib : TimerP_rti_priv.obj (.text.TimerP_clearOverflowIntPriv)
+                  7001dba4    00000008                                                : printf.obj (.text._out_char)
+                  7001dbac    00000008     libc.a : exit.c.obj (.text:abort)
+                  7001dbb4    00000006     security.am261x.r5f.ti-arm-clang.nortos.release.lib : hsmclient.obj (.text.HsmClient_unregister)
+                  7001dbba    00000006     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : soc.obj (.text.SOC_moduleClockEnable)
+                  7001dbc0    00000006                                                        : soc_rcm.obj (.text.SOC_rcmGetCR5SysclkInFrequency)
+                  7001dbc6    00000006     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : dcd.obj (.text.dcd_int_disable)
+                  7001dbcc    00000006                                                              : dcd.obj (.text.dcd_int_enable)
+                  7001dbd2    00000006                                                              : tusb.obj (.text.tusb_init)
+                  7001dbd8    00000004     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : bootloader_soc.obj (.text.Bootloader_socCpuRelease)
+                  7001dbdc    00000004                                                        : bootloader_soc.obj (.text.Bootloader_socCpuRequest)
+                  7001dbe0    00000004     nortos.am261x.r5f.ti-arm-clang.release.lib : ClockP_nortos_r5.obj (.text.ClockP_getTimerCount)
+                  7001dbe4    00000004                                                : ClockP_nortos_r5.obj (.text.ClockP_timerClearOverflowInt)
+                  7001dbe8    00000004     main.obj (.text.Keyring_init)
+                  7001dbec    00000004     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : bootloader_mem.obj (.text.Mem_imgGetCurOffset)
+                  7001dbf0    00000004                                                        : bootloader_mem.obj (.text.Mem_imgSeek)
+                  7001dbf4    00000004     ti_power_clock_config.obj (.text.PowerClock_deinit)
+                  7001dbf8    00000004     nortos.am261x.r5f.ti-arm-clang.release.lib : TimerP_rti_nortos.obj (.text.TimerP_Params_init)
+                  7001dbfc    00000004                                                : TimerP_rti_nortos.obj (.text.TimerP_clearOverflowInt)
+                  7001dc00    00000004                                                : TimerP_rti_nortos.obj (.text.TimerP_getCount)
+                  7001dc04    00000004                                                : TimerP_rti_nortos.obj (.text.TimerP_getReloadCount)
+                  7001dc08    00000004                                                : TimerP_rti_nortos.obj (.text.TimerP_setup)
+                  7001dc0c    00000004                                                : TimerP_rti_nortos.obj (.text.TimerP_start)
+                  7001dc10    00000004     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : device_wrapper.obj (.text.USB_deinit)
+                  7001dc14    00000004     libclang_rt.builtins.a : aeabi_div0.c.obj (.text.__aeabi_ldiv0)
+                  7001dc18    00000004                            : aeabi_memcpy.S.obj (.text.__aeabi_memcpy)
+                  7001dc1c    00000004     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : pcd.obj (.text.dwc_usb3_pcd_remove)
+                  7001dc20    00000004     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : tusb.obj (.text.tusb_inited)
+                  7001dc24    00000008     libclang_rt.builtins.a : aeabi_memcpy.S.obj (.tramp.__aeabi_memcpy.1)
+                  7001dc2c    00000008     nortos.am261x.r5f.ti-arm-clang.release.lib : HwiP_armv7r_asm.obj (.tramp.HwiP_enable.1)
+                  7001dc34    00000008                                                : HwiP_armv7r_asm.obj (.tramp.HwiP_restore.1)
+                  7001dc3c    00000008                                                : PmuP_armv7r_asm.obj (.tramp.PmuP_setUserEnable.1)
+                  7001dc44    00000008                                                : PmuP_armv7r_asm.obj (.tramp.PmuP_enableCounters.1)
+                  7001dc4c    00000004     --HOLE-- [fill = 0]
+
+.text.hwi 
+*          0    7001dc50    00000978     
+                  7001dc50    0000048a     nortos.am261x.r5f.ti-arm-clang.release.lib : HwiP_armv7r_vim.obj (.text.hwi)
+                  7001e0da    000002f4                                                : HwiP_armv7r_handlers_nortos.obj (.text.hwi)
+                  7001e3ce    00000002     --HOLE-- [fill = 0]
+                  7001e3d0    0000017c                                                : HwiP_armv7r_handlers_nortos_asm.obj (.text.hwi)
+                  7001e54c    00000070                                                : HwiP_armv7r_asm.obj (.text.hwi)
+                  7001e5bc    00000008                                                : HwiP_armv7r_asm.obj (.tramp.HwiP_enableFIQ.1)
+                  7001e5c4    00000004     --HOLE-- [fill = 0]
+
+.text.cache 
+*          0    7001e5c8    00000430     
+                  7001e5c8    00000340     nortos.am261x.r5f.ti-arm-clang.release.lib : CacheP_armv7r_asm.obj (.text.cache)
+                  7001e908    000000d8                                                : CacheP_armv7r.obj (.text.cache)
+                  7001e9e0    00000008                                                : CacheP_armv7r_asm.obj (.tramp.CacheP_invL1d.1)
+                  7001e9e8    00000008                                                : CacheP_armv7r_asm.obj (.tramp.CacheP_enableL1p.1)
+                  7001e9f0    00000008                                                : HwiP_armv7r_asm.obj (.tramp.HwiP_restore.2)
+
+.text.mpu 
+*          0    7001e9f8    00000290     
+                  7001e9f8    00000202     nortos.am261x.r5f.ti-arm-clang.release.lib : MpuP_armv7r.obj (.text.mpu)
+                  7001ebfa    00000002     --HOLE-- [fill = 0]
+                  7001ebfc    00000078                                                : MpuP_armv7r_asm.obj (.text.mpu)
+                  7001ec74    00000008                                                : HwiP_armv7r_asm.obj (.tramp.HwiP_restore.3)
+                  7001ec7c    00000008                                                : MpuP_armv7r_asm.obj (.tramp.MpuP_isEnableAsm.1)
+                  7001ec84    00000004     --HOLE-- [fill = 0]
+
+.text.boot 
+*          0    7001ec88    00000190     
+                  7001ec88    00000144     nortos.am261x.r5f.ti-arm-clang.release.lib : boot_armv7r_asm.obj (.text.boot)
+                  7001edcc    0000001e                                                : DebugP_log.obj (.text.boot)
+                  7001edea    0000001c                                                : boot_armv7r.obj (.text.boot)
+                  7001ee06    0000000e     ti_dpl_config.obj (.text.boot)
+                  7001ee14    00000004     --HOLE-- [fill = 0]
+
+.data      0    7001ee18    000002e8     
+                  7001ee18    00000058     ti_drivers_open_close.obj (.data.gUartParams)
+                  7001ee70    0000003c     security.am261x.r5f.ti-arm-clang.nortos.release.lib : sipc_notify_cfg.obj (.data.gSIPC_InterruptConfig)
+                  7001eeac    00000038     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : bootloader_soc.obj (.data.gAddrTranslateInfo)
+                  7001eee4    00000030                                                        : bootloader_soc.obj (.data..L_MergedGlobals)
+                  7001ef14    00000030     ti_pinmux_config.obj (.data.gPinMuxMainDomainCfg)
+                  7001ef44    0000002c     ti_drivers_config.obj (.data.gBootloaderConfig)
+                  7001ef70    00000028     security.am261x.r5f.ti-arm-clang.nortos.release.lib : sipc_notify_cfg.obj (.data.gSIPC_HsmMboxConfig)
+                  7001ef98    00000028                                                         : sipc_notify_cfg.obj (.data.gSIPC_SecureHostMboxConfig)
+                  7001efc0    00000018     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : usbd.obj (.data._usbd_qdef)
+                  7001efd8    00000018     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : bootloader_mem.obj (.data.gBootloaderMemFxns)
+                  7001eff0    00000018     ti_dpl_config.obj (.data.gClockConfig)
+                  7001f008    00000018     ti_power_clock_config.obj (.data.gSocModulesClockFrequency)
+                  7001f020    00000014     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : bootloader_soc.obj (.data.gResMemSection)
+                  7001f034    00000014                                                        : uart_v0.obj (.data.gUartDrvObj)
+                  7001f048    0000000c     nortos.am261x.r5f.ti-arm-clang.release.lib : AddrTranslateP_32bit.obj (.data.gAddrTranslateConfig)
+                  7001f054    00000008     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : bootloader.obj (.data..L_MergedGlobals)
+                  7001f05c    00000008     ti_drivers_config.obj (.data.gBootloader0Args)
+                  7001f064    00000008     security.am261x.r5f.ti-arm-clang.nortos.release.lib : sipc_notify_cfg.obj (.data.gSIPC_QueHsmToSecureHost)
+                  7001f06c    00000008                                                         : sipc_notify_cfg.obj (.data.gSIPC_QueSecureHostToHsm)
+                  7001f074    00000008     ti_power_clock_config.obj (.data.gSocModules)
+                  7001f07c    00000008     ti_drivers_config.obj (.data.gUartAttrs)
+                  7001f084    00000008     ti_drivers_config.obj (.data.gUartConfig)
+                  7001f08c    00000004     main.obj (.data.FileBufPtr)
+                  7001f090    00000008     nortos.am261x.r5f.ti-arm-clang.release.lib : PmuP_armv7r.obj (.data.pmu)
+                  7001f098    00000004     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : usbd.obj (.data._app_driver)
+                  7001f09c    00000004     main.obj (.data.dfu_ctx)
+                  7001f0a0    00000004     security.am261x.r5f.ti-arm-clang.nortos.release.lib : hsmclient.obj (.data.gBootNotificationReceived)
+                  7001f0a4    00000004     ti_drivers_config.obj (.data.gBootloaderConfigNum)
+                  7001f0a8    00000004     nortos.am261x.r5f.ti-arm-clang.release.lib : DebugP_log.obj (.data.gDebugLogZone)
+                  7001f0ac    00000004     ti_drivers_open_close.obj (.data.gEdmaConfigNum)
+                  7001f0b0    00000004     security.am261x.r5f.ti-arm-clang.nortos.release.lib : hsmclient_loadhsmrt.obj (.data.gHsmRtDownloadComplete)
+                  7001f0b4    00000004                                                         : hsmclient.obj (.data.gHsmrtLoadStatus)
+                  7001f0b8    00000004     ti_dpl_config.obj (.data.gHwiConfig)
+                  7001f0bc    00000004     security.am261x.r5f.ti-arm-clang.nortos.release.lib : hsmclient.obj (.data.gLastEnqueuedIndex)
+                  7001f0c0    00000004                                                         : hsmclient.obj (.data.gLastSentIndex)
+                  7001f0c4    00000004                                                         : hsmclient.obj (.data.gNum_HsmRequestSent)
+                  7001f0c8    00000004                                                         : hsmclient.obj (.data.gNum_HsmResponseReceived)
+                  7001f0cc    00000004     ti_dpl_config.obj (.data.gR5ClockFrequency)
+                  7001f0d0    00000004     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : bootloader_soc.obj (.data.gR5ss0Core1ImagePresent)
+                  7001f0d4    00000004                                                        : bootloader_soc.obj (.data.gR5ss0MemInitDone)
+                  7001f0d8    00000004     security.am261x.r5f.ti-arm-clang.nortos.release.lib : hsmclient.obj (.data.gSecureBootStatus)
+                  7001f0dc    00000004     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : bootloader_soc.obj (.data.gStreamId)
+                  7001f0e0    00000004     ti_drivers_config.obj (.data.gUartConfigNum)
+                  7001f0e4    00000004     ti_drivers_open_close.obj (.data.gUartDmaChConfig)
+                  7001f0e8    00000004     security.am261x.r5f.ti-arm-clang.nortos.release.lib : hsmclient.obj (.data.hsm_client_msg_queue_size)
+                  7001f0ec    00000004     ti_drivers_config.obj (.data.operatingMode)
+                  7001f0f0    00000004     security.am261x.r5f.ti-arm-clang.nortos.release.lib : hsmclient_loadhsmrt.obj (.data.ptrMSSCtrlRegs)
+                  7001f0f4    00000004     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : bootloader_soc.obj (.data.ptrTopCtrlRegs)
+                  7001f0f8    00000004     main.obj (.data.recvFileSize)
+                  7001f0fc    00000001     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : usbd.obj (.data._app_driver_count)
+                  7001f0fd    00000001                                                              : usbd.obj (.data._usbd_rhport)
+                  7001f0fe    00000001     main.obj (.data.gManifestDone)
+                  7001f0ff    00000001     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : soc.obj (.data.isMapAvailable)
+
+.rodata    0    7001f100    00000fd8     
+                  7001f100    00000094     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : usb_app_init.obj (.rodata.usb3ss_module_params)
+                  7001f194    0000008c     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : soc_rcm.obj (.rodata.gADPLLJConfigTbl)
+                  7001f220    00000064     ti_dpl_config.obj (.rodata.cfg)
+                  7001f284    00000061     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : bootloader.obj (.rodata.str1.10218919752055685820.1)
+                  7001f2e5    00000002     ti_usb_descriptor.obj (.rodata..compoundliteral)
+                  7001f2e7    00000001     --HOLE-- [fill = 0]
+                  7001f2e8    00000050     nortos.am261x.r5f.ti-arm-clang.release.lib : printf.obj (.rodata._ftoa.pow10)
+                  7001f338    00000042     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : soc_rcm.obj (.rodata.str1.6995560061672649380.1)
+                  7001f37a    00000042                                                        : soc_rcm.obj (.rodata.str1.8407350469959805165.1)
+                  7001f3bc    00000042                                                        : soc_rcm.obj (.rodata.str1.9492239733735185226.1)
+                  7001f3fe    00000041     security.am261x.r5f.ti-arm-clang.nortos.release.lib : hsmclient.obj (.rodata.str1.6860530134828891372.1)
+                  7001f43f    0000003d     nortos.am261x.r5f.ti-arm-clang.release.lib : TimerP_rti_priv.obj (.rodata.str1.11388379688747141303.1)
+                  7001f47c    0000003d     security.am261x.r5f.ti-arm-clang.nortos.release.lib : hsmclient.obj (.rodata.str1.7828111062026553345.1)
+                  7001f4b9    0000003c                                                         : hsmclient.obj (.rodata.str1.9403394270237628570.1)
+                  7001f4f5    00000037     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : bootloader_hsmRt_load.obj (.rodata.str1.12375796919973758842.1)
+                  7001f52c    00000036                                                        : bootloader_hsmRt_load.obj (.rodata.str1.14484052729778540281.1)
+                  7001f562    00000035     ti_drivers_open_close.obj (.rodata.str1.871795152488895636.1)
+                  7001f597    00000032     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : bootloader.obj (.rodata.str1.15526777834658975876.1)
+                  7001f5c9    0000002c     security.am261x.r5f.ti-arm-clang.nortos.release.lib : hsmclient.obj (.rodata.str1.13408186326143254281.1)
+                  7001f5f5    0000002c     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : bootloader.obj (.rodata.str1.17709848550151440161.1)
+                  7001f621    0000002c                                                        : bootloader_soc.obj (.rodata.str1.758133230464634327.1)
+                  7001f64d    0000002a                                                        : bootloader_hsmRt_load.obj (.rodata.str1.15781484254665038843.1)
+                  7001f677    0000002a     nortos.am261x.r5f.ti-arm-clang.release.lib : DebugP_log.obj (.rodata.str1.227947788441500939.1)
+                  7001f6a1    00000028     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : soc_rcm.obj (.rodata.str1.15254166369472350524.1)
+                  7001f6c9    00000027                                                        : soc_rcm.obj (.rodata.str1.10455832150672089953.1)
+                  7001f6f0    00000027     nortos.am261x.r5f.ti-arm-clang.release.lib : ClockP_nortos_r5.obj (.rodata.str1.12743090444791882666.1)
+                  7001f717    00000027     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : bootloader_soc.obj (.rodata.str1.13597811311604317403.1)
+                  7001f73e    00000027                                                        : soc_rcm.obj (.rodata.str1.14690907752718593297.1)
+                  7001f765    00000024                                                        : soc_rcm.obj (.rodata.str1.13550309975525380474.1)
+                  7001f789    00000024                                                        : bootloader_hsmRt_load.obj (.rodata.str1.15233958391154112668.1)
+                  7001f7ad    00000023                                                        : soc_rcm.obj (.rodata.str1.2078190104202520215.1)
+                  7001f7d0    00000023     nortos.am261x.r5f.ti-arm-clang.release.lib : ClockP_nortos_r5.obj (.rodata.str1.7689125538912326484.1)
+                  7001f7f3    00000022     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : edma.obj (.rodata.str1.12976018205622752890.1)
+                  7001f815    00000021     nortos.am261x.r5f.ti-arm-clang.release.lib : ClockP_nortos_r5.obj (.rodata.str1.8559540482768925367.1)
+                  7001f836    00000002     --HOLE-- [fill = 0]
+                  7001f838    00000020     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : uart_v0_lld.obj (.rodata.cst32)
+                  7001f858    00000020                                                        : uart_v0.obj (.rodata.str1.16594507886308206351.1)
+                  7001f878    00000020                                                        : bootloader_hsmRt_load.obj (.rodata.str1.17514089804878980774.1)
+                  7001f898    0000001f     nortos.am261x.r5f.ti-arm-clang.release.lib : ClockP_nortos_r5.obj (.rodata.str1.2746619892315392655.1)
+                  7001f8b7    0000001e     ti_drivers_config.obj (.rodata.str1.7767457247551078139.1)
+                  7001f8d5    0000001d     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : bootloader_soc.obj (.rodata.str1.12326270906577760919.1)
+                  7001f8f2    0000001d     nortos.am261x.r5f.ti-arm-clang.release.lib : TimerP_rti_priv.obj (.rodata.str1.1727973701797049581.1)
+                  7001f90f    0000001d                                                : TimerP_rti_priv.obj (.rodata.str1.4425773406285945039.1)
+                  7001f92c    0000001d     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : uart_v0.obj (.rodata.str1.4697665093340446018.1)
+                  7001f949    0000001d     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : device_wrapper.obj (.rodata.str1.4966996839893708900.1)
+                  7001f966    0000001d     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : bootloader.obj (.rodata.str1.5963387784432681875.1)
+                  7001f983    0000001d     nortos.am261x.r5f.ti-arm-clang.release.lib : TimerP_rti_priv.obj (.rodata.str1.7297095892955669843.1)
+                  7001f9a0    0000001c     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : soc_rcm.obj (.rodata.gControlssPllClkSrcValMap)
+                  7001f9bc    0000001c                                                        : soc_rcm.obj (.rodata.gCpswClkSrcValMap)
+                  7001f9d8    0000001c                                                        : soc_rcm.obj (.rodata.gCptsClkSrcValMap)
+                  7001f9f4    0000001c                                                        : soc_rcm.obj (.rodata.gI2cClkSrcValMap)
+                  7001fa10    0000001c                                                        : soc_rcm.obj (.rodata.gIcssmCoreClkSrcValMap)
+                  7001fa2c    0000001c                                                        : soc_rcm.obj (.rodata.gLinUartClkSrcValMap)
+                  7001fa48    0000001c                                                        : soc_rcm.obj (.rodata.gOspiClkSrcValMap)
+                  7001fa64    0000001c                                                        : soc_rcm.obj (.rodata.gPeripheralClkSrcInfoMap)
+                  7001fa80    0000001c                                                        : soc_rcm.obj (.rodata.gRtiClkSrcValMap)
+                  7001fa9c    0000001c                                                        : soc_rcm.obj (.rodata.gWdtClkSrcValMap)
+                  7001fab8    0000001b     ti_usb_descriptor.obj (.rodata.desc_configuration)
+                  7001fad3    0000001b     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : bootloader_soc.obj (.rodata.str1.12772591696291441472.1)
+                  7001faee    0000001b                                                        : edma.obj (.rodata.str1.16672221102796607080.1)
+                  7001fb09    0000001b     main.obj (.rodata.str1.17100691992556644108.1)
+                  7001fb24    0000001b     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : soc_rcm.obj (.rodata.str1.3692981583693152116.1)
+                  7001fb3f    0000001a                                                        : soc_rcm.obj (.rodata.str1.16907879152045164286.1)
+                  7001fb59    0000001a     nortos.am261x.r5f.ti-arm-clang.release.lib : ClockP_nortos_r5.obj (.rodata.str1.3810757863367538396.1)
+                  7001fb73    0000001a     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : bootloader_hsmRt_load.obj (.rodata.str1.6398333492730878928.1)
+                  7001fb8d    0000001a                                                        : bootloader_soc.obj (.rodata.str1.6530055611811043708.1)
+                  7001fba7    0000001a     main.obj (.rodata.str1.8154729771448623357.1)
+                  7001fbc1    00000019     nortos.am261x.r5f.ti-arm-clang.release.lib : TimerP_rti_priv.obj (.rodata.str1.5494506574634759136.1)
+                  7001fbda    00000002     --HOLE-- [fill = 0]
+                  7001fbdc    00000018     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : usbd.obj (.rodata._usbd_driver)
+                  7001fbf4    00000018     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : uart_v0.obj (.rodata.str1.16507871919775359273.1)
+                  7001fc0c    00000018                                                        : soc_rcm.obj (.rodata.str1.17101430071927342085.1)
+                  7001fc24    00000018     ti_drivers_config.obj (.rodata.str1.2211846465855763212.1)
+                  7001fc3c    00000018     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : soc_rcm.obj (.rodata.str1.2233712739639673237.1)
+                  7001fc54    00000018                                                        : soc_rcm.obj (.rodata.str1.2918502748189006786.1)
+                  7001fc6c    00000018                                                        : soc_rcm.obj (.rodata.str1.3545355937057541302.1)
+                  7001fc84    00000018     ti_usb_descriptor.obj (.rodata.str1.402711239097344033.1)
+                  7001fc9c    00000017     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : soc_rcm.obj (.rodata.str1.10238261936043285561.1)
+                  7001fcb3    00000017                                                        : soc_rcm.obj (.rodata.str1.1263028196474875090.1)
+                  7001fcca    00000017                                                        : soc_rcm.obj (.rodata.str1.14566101093493230310.1)
+                  7001fce1    00000016                                                        : bootloader.obj (.rodata.str1.14376141685787114521.1)
+                  7001fcf7    00000016                                                        : soc_rcm.obj (.rodata.str1.18101715471844446405.1)
+                  7001fd0d    00000016                                                        : soc_rcm.obj (.rodata.str1.3349473071634452315.1)
+                  7001fd23    00000016                                                        : soc_rcm.obj (.rodata.str1.7023207857097194628.1)
+                  7001fd39    00000016                                                        : soc_rcm.obj (.rodata.str1.9282807670327755277.1)
+                  7001fd4f    00000015                                                        : soc_rcm.obj (.rodata.str1.14531647829147925505.1)
+                  7001fd64    00000015                                                        : soc_rcm.obj (.rodata.str1.2452496540137352989.1)
+                  7001fd79    00000015                                                        : soc_rcm.obj (.rodata.str1.503491203257075565.1)
+                  7001fd8e    00000015                                                        : soc_rcm.obj (.rodata.str1.9288997184789691739.1)
+                  7001fda3    00000015                                                        : edma.obj (.rodata.str1.9771253703579349310.1)
+                  7001fdb8    00000014     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : pcd.obj (.rodata..Lswitch.table.dwc_usb3_ep_activate)
+                  7001fdcc    00000014                                                          : cil.obj (.rodata..Lswitch.table.dwc_usb3_get_device_speed)
+                  7001fde0    00000014     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : soc_rcm.obj (.rodata.gPLLFreqId2FOutMap)
+                  7001fdf4    00000014                                                        : edma.obj (.rodata.str1.14977302951450442404.1)
+                  7001fe08    00000014                                                        : edma.obj (.rodata.str1.16586217098785273673.1)
+                  7001fe1c    00000014                                                        : edma.obj (.rodata.str1.6479261940699871955.1)
+                  7001fe30    00000014     ti_usb_descriptor.obj (.rodata.string_desc_arr)
+                  7001fe44    00000013     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : soc_rcm.obj (.rodata.str1.1513614241493853460.1)
+                  7001fe57    00000013                                                        : uart_v0.obj (.rodata.str1.8511823138002593779.1)
+                  7001fe6a    00000012     ti_usb_descriptor.obj (.rodata.desc_device)
+                  7001fe7c    00000012     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : uart_v0.obj (.rodata.str1.10085477686273322470.1)
+                  7001fe8e    00000012                                                        : soc_rcm.obj (.rodata.str1.13766728229239614249.1)
+                  7001fea0    00000012                                                        : uart_v0.obj (.rodata.str1.1906408950570946892.1)
+                  7001feb2    00000012                                                        : bootloader.obj (.rodata.str1.4238517662877779100.1)
+                  7001fec4    00000012                                                        : soc_rcm.obj (.rodata.str1.6089483996110695684.1)
+                  7001fed6    00000012                                                        : soc_rcm.obj (.rodata.str1.7381037412669850541.1)
+                  7001fee8    00000012                                                        : edma.obj (.rodata.str1.8988798825313313125.1)
+                  7001fefa    00000011                                                        : edma.obj (.rodata.str1.13359792024450833872.1)
+                  7001ff0b    00000011                                                        : uart_v0.obj (.rodata.str1.18277465892467933209.1)
+                  7001ff1c    00000011     ti_drivers_open_close.obj (.rodata.str1.6292539624901818759.1)
+                  7001ff2d    00000011     ti_drivers_config.obj (.rodata.str1.6903391077677833475.1)
+                  7001ff3e    00000011     nortos.am261x.r5f.ti-arm-clang.release.lib : TimerP_rti_priv.obj (.rodata.str1.7786169893402823657.1)
+                  7001ff4f    00000010     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : edma.obj (.rodata.str1.16687974986316968853.1)
+                  7001ff5f    0000000f                                                        : edma.obj (.rodata.str1.12381575634899622488.1)
+                  7001ff6e    0000000f                                                        : edma.obj (.rodata.str1.15707078201242323249.1)
+                  7001ff7d    0000000f                                                        : edma.obj (.rodata.str1.2781376525681532154.1)
+                  7001ff8c    0000000f                                                        : edma.obj (.rodata.str1.4907917467944964367.1)
+                  7001ff9b    0000000e                                                        : edma.obj (.rodata.str1.1669868279207928169.1)
+                  7001ffa9    0000000e                                                        : edma.obj (.rodata.str1.6128441279204879358.1)
+                  7001ffb7    0000000e                                                        : edma.obj (.rodata.str1.6928588723460450634.1)
+                  7001ffc5    0000000d                                                        : edma.obj (.rodata.str1.14657363906792235350.1)
+                  7001ffd2    0000000d     nortos.am261x.r5f.ti-arm-clang.release.lib : TimerP_rti_priv.obj (.rodata.str1.15140844044942405278.1)
+                  7001ffdf    00000001     --HOLE-- [fill = 0]
+                  7001ffe0    0000000c     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : no_os_gadget.obj (.rodata..L__const.dwc_usb3_gadget_connect.event)
+                  7001ffec    00000004     nortos.am261x.r5f.ti-arm-clang.release.lib : CacheP_armv7r.obj (.rodata.gCacheL1dCacheLineSize)
+                  7001fff0    0000000c     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : no_os_gadget.obj (.rodata..L__const.dwc_usb3_gadget_disconnect.event)
+                  7001fffc    00000004     nortos.am261x.r5f.ti-arm-clang.release.lib : CacheP_armv7r.obj (.rodata.gCacheL1pCacheLineSize)
+                  70020000    0000000c     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : no_os_gadget.obj (.rodata..L__const.dwc_usb3_gadget_resume.event)
+                  7002000c    00000004     nortos.am261x.r5f.ti-arm-clang.release.lib : printf.obj (.rodata.str1.13278797451342649413.1)
+                  70020010    0000000c     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : no_os_gadget.obj (.rodata..L__const.dwc_usb3_gadget_suspend.event)
+                  7002001c    0000000c     ti_usb_descriptor.obj (.rodata.str1.11182897901778756619.1)
+                  70020028    0000000c     nortos.am261x.r5f.ti-arm-clang.release.lib : ClockP_nortos_r5.obj (.rodata.str1.13463193513887205357.1)
+                  70020034    0000000c     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : edma.obj (.rodata.str1.8587431144907355806.1)
+                  70020040    0000000b                                                        : bootloader_soc.obj (.rodata..L__const.Bootloader_socGetBootSeqOid.boot_seq)
+                  7002004b    0000000b                                                        : uart_v0.obj (.rodata.str1.1151567497034493012.1)
+                  70020056    0000000b     ti_usb_descriptor.obj (.rodata.str1.8335402312601980273.1)
+                  70020061    00000001     --HOLE-- [fill = 0]
+                  70020062    0000000a     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : pcd_intr.obj (.rodata..Lswitch.table.dwc_usb3_handle_connect_done_intr)
+                  7002006c    00000004     nortos.am261x.r5f.ti-arm-clang.release.lib : printf.obj (.rodata.str1.17155598869870286803.1)
+                  70020070    0000000a     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : ep0.obj (.rodata.cap2_desc)
+                  7002007a    0000000a     ti_usb_descriptor.obj (.rodata.desc_device_qualifier)
+                  70020084    0000000a     main.obj (.rodata.str1.15159059442110792349.1)
+                  7002008e    0000000a     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : soc_rcm.obj (.rodata.str1.6883917863849351830.1)
+                  70020098    0000000a                                                        : uart_v0.obj (.rodata.str1.7892831408302009747.1)
+                  700200a2    0000000a                                                        : uart_v0.obj (.rodata.str1.8477608605346433529.1)
+                  700200ac    00000009     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : device_wrapper.obj (.rodata.str1.7233396148812523736.1)
+                  700200b5    00000006     drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : soc_rcm.obj (.rodata.str1.12246138248821672736.1)
+                  700200bb    00000006     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : device_wrapper.obj (.rodata.str1.4318636577925605546.1)
+                  700200c1    00000006     ti_usb_descriptor.obj (.rodata.str1.8500648229244440079.1)
+                  700200c7    00000005     main.obj (.rodata.str1.8309300403304547201.1)
+                  700200cc    00000005     nortos.am261x.r5f.ti-arm-clang.release.lib : printf.obj (.rodata.str1.8544352122861784523.1)
+                  700200d1    00000005                                                : printf.obj (.rodata.str1.8812429412984920041.1)
+                  700200d6    00000002     --HOLE-- [fill = 0]
+
+.stack     0    700200d8    00004000     UNINITIALIZED
+                  700200d8    00000004     nortos.am261x.r5f.ti-arm-clang.release.lib : boot_armv7r_asm.obj (.stack)
+                  700200dc    00003ffc     --HOLE--
+
+.usbCxtRam 
+*          0    700240d8    000021b4     UNINITIALIZED
+                  700240d8    00002190     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : usb_app_init.obj (.usbCxtRam)
+                  70026268    00000020                                                              : device_wrapper.obj (.usbCxtRam)
+                  70026288    00000004     usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib : cil_intr.obj (.usbCxtRam)
+
+.bss._dfu_ctx 
+*          0    70026290    0000020c     UNINITIALIZED
+                  70026290    0000020c     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : dfu_device.obj (.bss._dfu_ctx)
+
+.irqstack 
+*          0    700264a0    00001000     UNINITIALIZED
+                  700264a0    00001000     --HOLE--
+
+.fiqstack 
+*          0    700274a0    00000100     UNINITIALIZED
+                  700274a0    00000100     --HOLE--
+
+.svcstack 
+*          0    700275a0    00001000     UNINITIALIZED
+                  700275a0    00001000     --HOLE--
+
+.abortstack 
+*          0    700285a0    00000100     UNINITIALIZED
+                  700285a0    00000100     --HOLE--
+
+.undefinedstack 
+*          0    700286a0    00000100     UNINITIALIZED
+                  700286a0    00000100     --HOLE--
+
+.rodata.hsmrt 
+*          0    7003f100    00006bd3     
+                  7003f100    00006bd3     main.obj (.rodata.hsmrt)
+
+.bss.filebuf 
+*          0    700c0000    00080000     NOLOAD SECTION
+                  700c0000    00080000     main.obj (.bss.filebuf)
+
+.bss.nocache 
+*          0    70170000    00003bc0     UNINITIALIZED
+                  70170000    00003bc0     usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib : usb_app_init.obj (.bss.nocache)
+
+__llvm_prf_cnts 
+*          0    70002100    00000000     UNINITIALIZED
+
+__llvm_prf_bits 
+*          0    70002100    00000000     UNINITIALIZED
+
+MODULE SUMMARY
+
+       Module                                code    ro data   rw data
+       ------                                ----    -------   -------
+    obj/release/
+       main.obj                              456     27671     524301 
+       ti_drivers_config.obj                 210     71        3628   
+       ti_usb_descriptor.obj                 156     130       64     
+       ti_drivers_open_close.obj             124     70        100    
+       ti_dpl_config.obj                     82      100       32     
+       ti_power_clock_config.obj             180     0         32     
+       ti_clocktree_pll_config.obj           112     0         0      
+       ti_pinmux_config.obj                  14      0         48     
+       ti_board_open_close.obj               4       0         0      
+    +--+-------------------------------------+-------+---------+---------+
+       Total:                                1338    28042     528205 
+                                                                      
+    /home/epswbld5/ti/ccs2030/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/lib/armv7r-ti-none-eabihf/c/libc.a
+       autoinit.c.obj                        84      0         0      
+       memcpy32.S.obj                        28      0         0      
+       memset32.S.obj                        24      0         0      
+       exit.c.obj                            8       0         0      
+    +--+-------------------------------------+-------+---------+---------+
+       Total:                                144     0         0      
+                                                                      
+    /home/epswbld5/ti/ccs2030/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/lib/armv7r-ti-none-eabihf/c/libsysbm.a
+       hostexit.c.obj                        8       0         0      
+    +--+-------------------------------------+-------+---------+---------+
+       Total:                                8       0         0      
+                                                                      
+    /home/epswbld5/ti/ccs2030/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/lib/armv7r-ti-none-eabihf/libclang_rt.builtins.a
+       udivmoddi4.S.obj                      280     0         0      
+       aeabi_uldivmod.S.obj                  36      0         0      
+       aeabi_memset.S.obj                    28      0         0      
+       aeabi_memcpy.S.obj                    12      0         0      
+       aeabi_div0.c.obj                      4       0         0      
+    +--+-------------------------------------+-------+---------+---------+
+       Total:                                360     0         0      
+                                                                      
+    /nightlybuilds/mcupsdk_internal/jenkins/mcu_plus_sdk_am261x_11_00_00_29/source/drivers/lib/drivers.am261x.r5f.ti-arm-clang.nortos.release.lib
+       bootloader.obj                        2478    260       63112  
+       soc_rcm.obj                           4484    1306      0      
+       edma.obj                              2770    320       0      
+       uart_v0_lld.obj                       2200    32        0      
+       uart_v0.obj                           1436    188       20     
+       uart_dma_edma.obj                     1302    0         0      
+       bootloader_soc.obj                    726     176       140    
+       soc.obj                               514     0         17     
+       bootloader_hsmRt_load.obj             160     245       0      
+       bootloader_profile.obj                24      0         280    
+       bootloader_mem.obj                    78      0         24     
+       pinmux.obj                            64      0         0      
+    +--+-------------------------------------+-------+---------+---------+
+       Total:                                16236   2527      63593  
+                                                                      
+    /nightlybuilds/mcupsdk_internal/jenkins/mcu_plus_sdk_am261x_11_00_00_29/source/kernel/nortos/lib/nortos.am261x.r5f.ti-arm-clang.release.lib
+       printf.obj                            4052    98        0      
+       HwiP_armv7r_vim.obj                   1162    0         2064   
+       CacheP_armv7r_asm.obj                 848     0         0      
+       HwiP_armv7r_handlers_nortos.obj       756     0         0      
+       TimerP_rti_priv.obj                   404     203       0      
+       ClockP_nortos.obj                     524     0         32     
+       MpuP_armv7r.obj                       514     0         0      
+       ClockP_nortos_r5.obj                  268     176       0      
+       HwiP_armv7r_handlers_nortos_asm.obj   380     0         0      
+       boot_armv7r_asm.obj                   324     0         0      
+       SemaphoreP_nortos.obj                 288     0         0      
+       CacheP_armv7r.obj                     216     8         0      
+       DebugP_log.obj                        154     42        4      
+       HwiP_armv7r_asm.obj                   152     0         0      
+       HwiP_armv7r_vectors_nortos_asm.obj    128     0         0      
+       MpuP_armv7r_asm.obj                   128     0         0      
+       PmuP_armv7r.obj                       102     0         8      
+       AddrTranslateP_32bit.obj              82      0         12     
+       PmuP_armv7r_asm.obj                   72      0         0      
+       DebugP_nortos.obj                     56      0         0      
+       boot_armv7r.obj                       28      0         0      
+       CpuId_armv7r.obj                      26      0         0      
+       TimerP_rti_nortos.obj                 24      0         0      
+       CpuId_armv7r_asm.obj                  12      0         0      
+       TaskP_nortos.obj                      2       0         0      
+    +--+-------------------------------------+-------+---------+---------+
+       Total:                                10702   527       2120   
+                                                                      
+    /nightlybuilds/mcupsdk_internal/jenkins/mcu_plus_sdk_am261x_11_00_00_29/source/security/lib/security.am261x.r5f.ti-arm-clang.nortos.release.lib
+       hsmclient.obj                         1374    230       32     
+       sipc_notify_src.obj                   1308    0         68     
+       hsmclient_loadhsmrt.obj               378     0         8      
+       sipc_notify_cfg.obj                   48      0         156    
+       hsmclient_wait_for_boot_notify.obj    54      0         0      
+    +--+-------------------------------------+-------+---------+---------+
+       Total:                                3162    230       264    
+                                                                      
+    /nightlybuilds/mcupsdk_internal/jenkins/mcu_plus_sdk_am261x_11_00_00_29/source/usb/synp/lib/usbd_synp_nortos.am261x.r5f.ti-arm-clang.release.lib
+       pcd.obj                               3386    20        0      
+       cil.obj                               2582    20        0      
+       ep0.obj                               2368    10        0      
+       pcd_intr.obj                          1040    10        0      
+       pcd_hiber.obj                         800     0         0      
+       cil_intr.obj                          658     0         20     
+       dwc_queue.obj                         102     0         0      
+       no_os_hiber.obj                       16      0         0      
+    +--+-------------------------------------+-------+---------+---------+
+       Total:                                10952   60        20     
+                                                                      
+    /nightlybuilds/mcupsdk_internal/jenkins/mcu_plus_sdk_am261x_11_00_00_29/source/usb/tinyusb/lib/usbd_tusb_dfu_nortos.am261x.r5f.ti-arm-clang.release.lib
+       usb_app_init.obj                      570     148       23888  
+       usbd.obj                              2722    24        309    
+       dfu_device.obj                        984     0         524    
+       no_os_gadget.obj                      1202    48        0      
+       dcd.obj                               714     0         0      
+       usbd_control.obj                      492     0         84     
+       device_wrapper.obj                    292     44        32     
+       tusb_fifo.obj                         234     0         0      
+       tusb.obj                              52      0         0      
+    +--+-------------------------------------+-------+---------+---------+
+       Total:                                7262    264       24837  
+                                                                      
+       Stack:                                0       0         16384  
+    +--+-------------------------------------+-------+---------+---------+
+       Grand Total:                          50164   31650     635423 
+
+VENEERS
+
+callee name               veneer name
+   callee addr  veneer addr  call addr  call info
+--------------  -----------  ---------  ----------------
+__aeabi_memcpy            $Ven$TA$L$PI$$__aeabi_memcpy
+   7001dc18     7001dc24     7001da7c   drivers.am261x.r5f.ti-arm-clang.nortos.release.lib : bootloader_soc.obj (.text.Bootloader_socGetBootSeqOid)
+HwiP_enable               $Ven$TA$L$PI$$HwiP_enable
+   7001e56c     7001dc2c     7001c084   ti_dpl_config.obj (.text.Dpl_init)
+HwiP_restore              $Ven$TA$L$PI$$HwiP_restore
+   7001e58c     7001dc34     7001c044   nortos.am261x.r5f.ti-arm-clang.release.lib : ClockP_nortos.obj (.text.ClockP_stop)
+                             7001c612                                              : ClockP_nortos.obj (.text.ClockP_destruct)
+                             7001c8b0                                              : SemaphoreP_nortos.obj (.text.SemaphoreP_post)
+                             7001c9f2                                              : ClockP_nortos.obj (.text.ClockP_start)
+PmuP_setUserEnable        $Ven$TA$L$PI$$PmuP_setUserEnable
+   7001c80c     7001dc3c     7001aff2   nortos.am261x.r5f.ti-arm-clang.release.lib : PmuP_armv7r.obj (.text.pmu)
+PmuP_enableCounters       $Ven$TA$L$PI$$PmuP_enableCounters
+   7001c7ec     7001dc44     7001afc0   nortos.am261x.r5f.ti-arm-clang.release.lib : PmuP_armv7r.obj (.text.pmu)
+HwiP_enableFIQ            $Ven$TA$L$PI$$HwiP_enableFIQ
+   7001e57c     7001e5bc     7001e034   nortos.am261x.r5f.ti-arm-clang.release.lib : HwiP_armv7r_vim.obj (.text.hwi)
+CacheP_invL1d             $Ven$TA$L$PI$$CacheP_invL1d
+   7001e638     7001e9e0     7001e9dc   nortos.am261x.r5f.ti-arm-clang.release.lib : CacheP_armv7r.obj (.text.cache)
+CacheP_enableL1p          $Ven$TA$L$PI$$CacheP_enableL1p
+   7001e620     7001e9e8     7001e9b6   nortos.am261x.r5f.ti-arm-clang.release.lib : CacheP_armv7r.obj (.text.cache)
+HwiP_restore              $Ven$TA$L$PI$$HwiP_restore
+   7001e58c     7001e9f0     7001e996   nortos.am261x.r5f.ti-arm-clang.release.lib : CacheP_armv7r.obj (.text.cache)
+HwiP_restore              $Ven$TA$L$PI$$HwiP_restore
+   7001e58c     7001ec74     7001eaf0   nortos.am261x.r5f.ti-arm-clang.release.lib : MpuP_armv7r.obj (.text.mpu)
+                             7001eb2e                                              : MpuP_armv7r.obj (.text.mpu)
+MpuP_isEnableAsm          $Ven$TA$L$PI$$MpuP_isEnableAsm
+   7001ec4c     7001ec7c     7001eac0   nortos.am261x.r5f.ti-arm-clang.release.lib : MpuP_armv7r.obj (.text.mpu)
+
+[11 trampolines]
+[15 trampoline calls]
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address   name                                       
+-------   ----                                       
+7001b869  AddrTranslateP_getLocalAddr                
+70014e05  Board_driversOpen                          
+7001cafd  Bootloader_BootImageInfo_init              
+7001da6d  Bootloader_Params_init                     
+7001cb2d  Bootloader_authFinish                      
+7001c68d  Bootloader_authStart                       
+7001c6c5  Bootloader_authUpdate                      
+7001d98d  Bootloader_close                           
+7001bf47  Bootloader_findSeq                         
+7001d99d  Bootloader_getBootMedia                    
+70019d91  Bootloader_getMsgLen                       
+7001c98f  Bootloader_getX509CertLen                  
+7001d03d  Bootloader_initCpu                         
+7001d9ad  Bootloader_isCorePresent                   
+7001bf89  Bootloader_open                            
+700131e5  Bootloader_parseAndLoadMultiCoreELF        
+7001b45d  Bootloader_parseNoteSegment                
+7001d65d  Bootloader_profileAddCore                  
+7001b4b5  Bootloader_runCpu                          
+7001d37d  Bootloader_runSelfCpu                      
+7001ac97  Bootloader_socConfigurePll                 
+7001cefd  Bootloader_socCpuGetClkDefault             
+7001ba05  Bootloader_socCpuGetClock                  
+7001bdf5  Bootloader_socCpuPowerOnReset              
+7001dbd9  Bootloader_socCpuRelease                   
+7001dbdd  Bootloader_socCpuRequest                   
+7001d79f  Bootloader_socCpuResetRelease              
+7001d9ed  Bootloader_socCpuResetReleaseSelf          
+7001d705  Bootloader_socCpuSetClock                  
+7001da79  Bootloader_socGetBootSeqOid                
+7001cf25  Bootloader_socGetCoreName                  
+7001db8d  Bootloader_socGetSBLMem                    
+7001d9fb  Bootloader_socInitL2MailBoxMemory          
+7001d7b5  Bootloader_socIsAuthRequired               
+70019a71  Bootloader_socLoadHsmRtFw                  
+7001c6fd  Bootloader_socMemInitCpu                   
+7001ae51  Bootloader_socSetAutoClock                 
+7001c735  Bootloader_socTranslateSectionAddr         
+7001db94  C$$EXIT                                    
+7001d5c1  CSL_armR5GetCpuID                          
+7001dafc  CSL_armR5ReadMpidrReg                      
+7001e8d8  CacheP_configForceWrThru                   
+7001e961  CacheP_disable                             
+7001e5c8  CacheP_disableL1d                          
+7001e5f0  CacheP_disableL1p                          
+7001e99b  CacheP_enable                              
+7001e608  CacheP_enableL1d                           
+7001e620  CacheP_enableL1p                           
+7001e8cc  CacheP_getCacheLevelInfo                   
+7001e894  CacheP_getEnabled                          
+7001e909  CacheP_init                                
+7001e9bb  CacheP_inv                                 
+7001e638  CacheP_invL1d                              
+7001e6ac  CacheP_invL1dAll                           
+7001e670  CacheP_invL1p                              
+7001e6b4  CacheP_invL1pAll                           
+7001e8f8  CacheP_setDLFO                             
+7001e6bc  CacheP_wb                                  
+7001e734  CacheP_wbAll                               
+7001e6f8  CacheP_wbInv                               
+7001e7dc  CacheP_wbInvAll                            
+7001e7f4  CacheP_wbInvAllAsm                         
+7001db09  ClockP_Params_init                         
+7001cf4d  ClockP_construct                           
+7001c5dd  ClockP_destruct                            
+7001da85  ClockP_getTicks                            
+7001b5bd  ClockP_getTimeUsec                         
+7001dbe1  ClockP_getTimerCount                       
+700188fd  ClockP_init                                
+7001db13  ClockP_isActive                            
+7001c9c3  ClockP_start                               
+7001c009  ClockP_stop                                
+7001dbe5  ClockP_timerClearOverflowInt               
+7001b183  ClockP_timerTickIsr                        
+7001d7c9  ClockP_usecToTicks                         
+7001aff1  CycleCounterP_enableUserAccess             
+7001c7dc  CycleCounterP_getCount32                   
+7001af91  CycleCounterP_init                         
+7001afc5  CycleCounterP_nsToTicks                    
+7001afa1  CycleCounterP_reset                        
+7001d39d  DebugP_logZoneEnable                       
+700131e3  Dpl_deinit                                 
+7001c049  Dpl_init                                   
+7001d4bd  Drivers_close                              
+7001d891  Drivers_open                               
+7001bccd  Drivers_uartOpen                           
+7001ba55  EDMA_allocDmaChannel                       
+7001baa5  EDMA_allocParam                            
+7001baf5  EDMA_allocTcc                              
+7001da09  EDMA_ccPaRAMEntry_init                     
+7001c815  EDMA_clrMissEvtRegion                      
+7001a093  EDMA_configureChannelRegion                
+7001bbe3  EDMA_disableChInShadowRegRegion            
+7001ad07  EDMA_disableTransferRegion                 
+7001cd6d  EDMA_enableChInShadowRegRegion             
+7001ad75  EDMA_enableTransferRegion                  
+70015a5d  EDMA_freeChannelRegion                     
+70019b11  EDMA_freeDmaChannel                        
+70019bb1  EDMA_freeParam                             
+70019c51  EDMA_freeTcc                               
+7001c3c1  EDMA_getBaseAddr                           
+7001d7dd  EDMA_getRegionId                           
+70014313  EDMA_isInterruptEnabled                    
+7001d2f5  EDMA_linkChannel                           
+7001c089  EDMA_mapChToEvtQ                           
+7001d5db  EDMA_readEventStatusRegion                 
+700192c1  EDMA_registerIntr                          
+7001d063  EDMA_setPaRAM                              
+7001cac9  EDMA_unmapChToEvtQ                         
+70018ed1  EDMA_unregisterIntr                        
+7001f08c  FileBufPtr                                 
+7001e50c  GET_ADFSR                                  
+7001e524  GET_AIFSR                                  
+7001e514  GET_DFAR                                   
+7001e504  GET_DFSR                                   
+7001e52c  GET_IFAR                                   
+7001e51c  GET_IFSR                                   
+7001e534  GET_SPSR                                   
+7001db94  HOSTexit                                   
+7001da91  HsmClient_SecureBootQueueInit              
+7001b8bb  HsmClient_checkAndWaitForBootNotification  
+70019ecd  HsmClient_config                           
+7001d121  HsmClient_init                             
+70019ffd  HsmClient_isr                              
+70016c41  HsmClient_procAuthBootFinish               
+7001937d  HsmClient_procAuthBootStart                
+7001a9b5  HsmClient_procAuthBootUpdate               
+7001b0c1  HsmClient_register                         
+7001dbb5  HsmClient_unregister                       
+7001c84b  HsmClient_waitForBootNotify                
+70018009  Hsmclient_loadHSMRtFirmware                
+7001d8a3  Hsmclient_updateBootNotificationRegister   
+7001dd49  HwiP_Params_init                           
+7001dd01  HwiP_clearInt                              
+7001dd5b  HwiP_construct                             
+7001e444  HwiP_data_abort_handler                    
+7001e33f  HwiP_data_abort_handler_c                  
+7001de9f  HwiP_destruct                              
+7001e54c  HwiP_disable                               
+7001e55c  HwiP_disableFIQ                            
+7001dc79  HwiP_disableInt                            
+7001e5a4  HwiP_disableVIC                            
+7001e56c  HwiP_enable                                
+7001e57c  HwiP_enableFIQ                             
+7001dc51  HwiP_enableInt                             
+7001e594  HwiP_enableVIC                             
+7001e177  HwiP_fiq_handler                           
+7001e5b4  HwiP_getCPSR                               
+7001e039  HwiP_inISR                                 
+7001df71  HwiP_init                                  
+7001e3d0  HwiP_irq_handler                           
+7001e0db  HwiP_irq_handler_c                         
+7001dd21  HwiP_post                                  
+7001e488  HwiP_prefetch_abort_handler                
+7001e2b5  HwiP_prefetch_abort_handler_c              
+7001e227  HwiP_reserved_handler                      
+7001e58c  HwiP_restore                               
+7001dcab  HwiP_restoreInt                            
+7001e0c3  HwiP_restoreVimIrqPriMask                  
+7001e077  HwiP_setVimIrqPriMaskAtomic                
+7001e055  HwiP_setVimIrqPriMaskNonAtomic             
+7001e287  HwiP_svc_handler                           
+7001e4d4  HwiP_undefined_handler                     
+7001e255  HwiP_undefined_handler_c                   
+7001e3bf  HwiP_user_data_abort_handler_c             
+7001e32f  HwiP_user_prefetch_abort_handler_c         
+7001e273  HwiP_user_undefined_handler_c              
+7001dbe9  Keyring_init                               
+7001c9f7  Module_clockDisable                        
+7001ca2b  Module_clockEnable                         
+7001c617  Module_clockSetFrequency                   
+7001ea39  MpuP_RegionAttrs_init                      
+7001eac5  MpuP_disable                               
+7001ebfc  MpuP_disableAsm                            
+7001ec14  MpuP_disableBRAsm                          
+7001eaf7  MpuP_enable                                
+7001ec24  MpuP_enableAsm                             
+7001ec3c  MpuP_enableBRAsm                           
+7001e9f9  MpuP_getAttrs                              
+7001eb33  MpuP_init                                  
+7001eac1  MpuP_isEnable                              
+7001ec4c  MpuP_isEnableAsm                           
+7001eb95  MpuP_isUserAuthorizedToAccessMemory        
+7001ea47  MpuP_setRegion                             
+7001ec60  MpuP_setRegionAsm                          
+7001c0c9  Pinmux_config                              
+7001da17  Pinmux_init                                
+7001c804  PmuP_clearOverflowStatus                   
+7001c7f4  PmuP_disableCounters                       
+7001c7ec  PmuP_enableCounters                        
+7001c7fc  PmuP_getOverflowStatus                     
+7001c80c  PmuP_setUserEnable                         
+7001c7e4  PmuP_setup                                 
+7001dbf5  PowerClock_deinit                          
+7001da25  PowerClock_init                            
+7001d5f5  SIPC_Params_init                           
+7001cb5d  SIPC_Register_Isr                          
+7001da9d  SIPC_getSelfCoreId                         
+70015831  SIPC_init                                  
+70017213  SIPC_isr                                   
+7001c307  SIPC_registerClient                        
+70018b05  SIPC_sendMsg                               
+7001d089  SIPC_unregisterClient                      
+7001b1e1  SOC_controlModuleLockMMR                   
+7001aff9  SOC_controlModuleUnlockMMR                 
+7001dbbb  SOC_moduleClockEnable                      
+7001cf9d  SOC_moduleSetClockFrequency                
+7001a1bd  SOC_phyToVirt                              
+700186cd  SOC_rcmCoreApllConfig                      
+70017379  SOC_rcmCoreApllHSDivConfig                 
+7001cb8d  SOC_rcmCoreApllRelockPreRequisite          
+7001cdf9  SOC_rcmCoreR5FUnhalt                       
+70014a99  SOC_rcmEnablePeripheralClock               
+70016919  SOC_rcmEthApllConfig                       
+70015e5d  SOC_rcmGetPeripheralClockFrequency         
+7001d145  SOC_rcmGetR5Clock                          
+7001d7f1  SOC_rcmIsR5FInLockStepMode                 
+7001d3bd  SOC_rcmMemInitL2Memory                     
+7001d675  SOC_rcmMemInitMailboxMemory                
+70016249  SOC_rcmPerApllConfig                       
+7001b7c1  SOC_rcmR5ConfigDualCore                    
+7001ce25  SOC_rcmR5ConfigLockStep                    
+7001d68d  SOC_rcmR5SS0PowerOnReset                   
+7001d805  SOC_rcmR5SS0TriggerReset                   
+70016055  SOC_rcmSetPeripheralClock                  
+7001db1d  SOC_rcmSetR5Clock                          
+7001daa9  SOC_rcmSetR5ClockSource                    
+7001c109  SOC_rcmStartMemInitTCMA                    
+7001c149  SOC_rcmStartMemInitTCMB                    
+7001c3fd  SOC_rcmWaitMemInitTCMA                     
+7001c439  SOC_rcmWaitMemInitTCMB                     
+7001aab1  SOC_rcmsetR5SysClock                       
+7001a6a9  SOC_virtToPhy                              
+7001d71b  SemaphoreP_constructBinary                 
+7001d3dd  SemaphoreP_constructCounting               
+7001d819  SemaphoreP_constructMutex                  
+70017b37  SemaphoreP_destruct                        
+70019e2f  SemaphoreP_pend                            
+7001c881  SemaphoreP_post                            
+7001d3fd  System_deinit                              
+7001d60f  System_init                                
+7001d5a4  TI_memcpy_small                            
+7001d6ec  TI_memset_small                            
+700192bf  TaskP_yield                                
+7001dbf9  TimerP_Params_init                         
+7001d41d  TimerP_Params_initPriv                     
+7001dbfd  TimerP_clearOverflowInt                    
+7001db9d  TimerP_clearOverflowIntPriv                
+7001dc01  TimerP_getCount                            
+7001d6a5  TimerP_getCountPriv                        
+7001dc05  TimerP_getReloadCount                      
+7001db27  TimerP_getReloadCountPriv                  
+7001dc09  TimerP_setup                               
+700179f7  TimerP_setupPriv                           
+7001dc0d  TimerP_start                               
+7001db31  TimerP_startPriv                           
+7001d731  UART_IsTxRxFifoEmpty                       
+7001be39  UART_Params_init                           
+7001d747  UART_checkCharsAvailInFifo                 
+70017b39  UART_close                                 
+7001d6bd  UART_deinit                                
+7001a935  UART_flushTxFifo                           
+7001d43d  UART_getChar                               
+7001d75d  UART_getIntrIdentityStatus                 
+7001a511  UART_init                                  
+7001d9bd  UART_intr2Disable                          
+7001b613  UART_intrDisable                           
+7001db3b  UART_lld_Transaction_deInit                
+70017767  UART_lld_controllerIsr                     
+7001c189  UART_lld_deInit                            
+7001be7d  UART_lld_deInitDma                         
+700174cd  UART_lld_dmaDeInit                         
+70016aad  UART_lld_dmaInit                           
+70019cf1  UART_lld_dmaRead                           
+70018a01  UART_lld_dmaWrite                          
+7001c651  UART_lld_flushTxFifo                       
+70019139  UART_lld_init                              
+70018fa1  UART_lld_initDma                           
+70015119  UART_open                                  
+7001d8c7  UART_operatingModeSelect                   
+7001b05d  UART_procLineStatusErr                     
+7001d8d9  UART_readLineStatus                        
+7001d4db  UART_spaceAvail                            
+7001d841  USB_configureInterrupt                     
+7001dc11  USB_deinit                                 
+7001da33  USB_dwcTask                                
+7001b90d  USB_init                                   
+7001b23d  _DebugP_assert                             
+7001edcd  _DebugP_assertNoLog                        
+7001c76d  _DebugP_logZone                            
+700286a0  __ABORT_STACK_END                          
+00000100  __ABORT_STACK_SIZE                         
+700285a0  __ABORT_STACK_START                        
+70012a80  __BSS_END                                  
+70002100  __BSS_START                                
+7002649c  __DFU_CTX_END                              
+70026290  __DFU_CTX_START                            
+700275a0  __FIQ_STACK_END                            
+00000100  __FIQ_STACK_SIZE                           
+700274a0  __FIQ_STACK_START                          
+700274a0  __IRQ_STACK_END                            
+00001000  __IRQ_STACK_SIZE                           
+700264a0  __IRQ_STACK_START                          
+700240d8  __STACK_END                                
+00004000  __STACK_SIZE                               
+700285a0  __SVC_STACK_END                            
+00001000  __SVC_STACK_SIZE                           
+700275a0  __SVC_STACK_START                          
+00000000  __TI_ATRegion0_region_sz                   
+00000000  __TI_ATRegion0_src_addr                    
+00000000  __TI_ATRegion0_trg_addr                    
+00000000  __TI_ATRegion1_region_sz                   
+00000000  __TI_ATRegion1_src_addr                    
+00000000  __TI_ATRegion1_trg_addr                    
+00000000  __TI_ATRegion2_region_sz                   
+00000000  __TI_ATRegion2_src_addr                    
+00000000  __TI_ATRegion2_trg_addr                    
+UNDEFED   __TI_CINIT_Base                            
+UNDEFED   __TI_CINIT_Limit                           
+UNDEFED   __TI_Handler_Table_Base                    
+UNDEFED   __TI_Handler_Table_Limit                   
+7001b814  __TI_auto_init_nobinit_nopinit             
+ffffffff  __TI_pprof_out_hndl                        
+ffffffff  __TI_prof_data_size                        
+ffffffff  __TI_prof_data_start                       
+00000000  __TI_static_base__                         
+700287a0  __UNDEFINED_STACK_END                      
+00000100  __UNDEFINED_STACK_SIZE                     
+700286a0  __UNDEFINED_STACK_START                    
+7001dc14  __aeabi_ldiv0                              
+7001dab4  __aeabi_memclr                             
+7001dab4  __aeabi_memclr4                            
+7001dab4  __aeabi_memclr8                            
+7001dc18  __aeabi_memcpy                             
+7001dc18  __aeabi_memcpy4                            
+7001dc18  __aeabi_memcpy8                            
+7001d9cc  __aeabi_memset                             
+7001d9cc  __aeabi_memset4                            
+7001d9cc  __aeabi_memset8                            
+7001d18c  __aeabi_uldivmod                           
+ffffffff  __binit__                                  
+7001ee07  __mpu_init                                 
+700200d8  __stack                                    
+70002100  __start___llvm_prf_bits                    
+70002100  __start___llvm_prf_cnts                    
+70002100  __stop___llvm_prf_bits                     
+70002100  __stop___llvm_prf_cnts                     
+700187e4  __udivmoddi4                               
+7001ecac  _c_int00                                   
+7001ec88  _c_int00_sbl                               
+UNDEFED   _system_post_cinit                         
+7001edeb  _system_pre_init                           
+7001efc0  _usbd_qdef                                 
+70012788  _usbd_qdef_buf                             
+00000000  _vectors                                   
+7001dbac  abort                                      
+ffffffff  binit                                      
+UNDEFED   dcd_edpt0_status_complete                  
+7001d1b1  dcd_edpt_clear_stall                       
+7001a1bb  dcd_edpt_close_all                         
+7001d1d5  dcd_edpt_stall                             
+70016783  dcd_edpt_xfer                              
+70016dc9  dcd_event_handler                          
+7001d317  dcd_init                                   
+7001dbc7  dcd_int_disable                            
+7001dbcd  dcd_int_enable                             
+7001a483  dcd_set_address                            
+7001f09c  dfu_ctx                                    
+70015c61  dfu_moded_control_xfer_cb                  
+7001d855  dfu_moded_init                             
+7001af29  dfu_moded_open                             
+7001d869  dfu_moded_reset                            
+7001c1c9  dfu_task                                   
+70017ed9  dwc_exit_hibernation                       
+70017c71  dwc_exit_hibernation_after_connect         
+7001cc1d  dwc_queueGet                               
+7001db45  dwc_queueInit                              
+7001ce51  dwc_queuePut                               
+7001d8eb  dwc_usb3_accept_u1                         
+7001d8fd  dwc_usb3_accept_u2                         
+7001bb45  dwc_usb3_alloc_request                     
+7001a7af  dwc_usb3_close_all_ep                      
+7001b95f  dwc_usb3_clr_eps_enabled                   
+7001642d  dwc_usb3_complete_request                  
+7001c4b1  dwc_usb3_dep_cfg                           
+7001ce7d  dwc_usb3_dep_cstall                        
+7001cc4d  dwc_usb3_dep_endxfer                       
+7001d1f9  dwc_usb3_dep_sstall                        
+7001d0af  dwc_usb3_dep_startnewcfg                   
+7001c4ed  dwc_usb3_dep_startxfer                     
+7001d0d5  dwc_usb3_dep_updatexfer                    
+7001cfed  dwc_usb3_dep_xfercfg                       
+7001c345  dwc_usb3_dis_flush_eventbuf_intr           
+7001d21d  dwc_usb3_dis_usb2_phy_suspend              
+7001db4f  dwc_usb3_disable_desc                      
+7001cc7d  dwc_usb3_disable_ep                        
+7001d90f  dwc_usb3_disable_u1                        
+7001d921  dwc_usb3_disable_u2                        
+700170a9  dwc_usb3_driver_init                       
+7001ac21  dwc_usb3_driver_remove                     
+7001bf05  dwc_usb3_ena_usb2_phy_suspend              
+7001c209  dwc_usb3_enable_common_interrupts          
+7001db59  dwc_usb3_enable_desc                       
+7001d339  dwc_usb3_enable_device_interrupts          
+7001ccad  dwc_usb3_enable_ep                         
+7001d933  dwc_usb3_enable_u1                         
+7001d945  dwc_usb3_enable_u2                         
+7001970d  dwc_usb3_ep0_activate                      
+7001761b  dwc_usb3_ep_activate                       
+70018d05  dwc_usb3_ep_queue                          
+7001ccdd  dwc_usb3_fill_desc                         
+7001c8b7  dwc_usb3_free_request                      
+7001ab2d  dwc_usb3_gadget_complete                   
+7001c529  dwc_usb3_gadget_connect                    
+7001d241  dwc_usb3_gadget_disconnect                 
+7001a50f  dwc_usb3_gadget_free_dma                   
+7001d9dd  dwc_usb3_gadget_get_request                
+7001b3a9  dwc_usb3_gadget_init                       
+7001aba7  dwc_usb3_gadget_isoc_ep_start              
+7001c7a5  dwc_usb3_gadget_request_nuke               
+7001d265  dwc_usb3_gadget_resume                     
+7001d551  dwc_usb3_gadget_set_ep_not_started         
+7001d45d  dwc_usb3_gadget_setup                      
+7001c383  dwc_usb3_gadget_start_next_request         
+7001d289  dwc_usb3_gadget_suspend                    
+7001d47d  dwc_usb3_get_device_speed                  
+7001dac1  dwc_usb3_get_frame                         
+7001d87d  dwc_usb3_get_in_ep                         
+7001da41  dwc_usb3_get_out_ep                        
+70018133  dwc_usb3_handle_connect_done_intr          
+700155f5  dwc_usb3_handle_dev_intr                   
+70012a81  dwc_usb3_handle_ep0_xfer                   
+700197bd  dwc_usb3_handle_ep_intr                    
+700194f3  dwc_usb3_handle_event                      
+7001da4f  dwc_usb3_handle_pme_intr                   
+7001c565  dwc_usb3_init_eventbuf                     
+7001a3f7  dwc_usb3_irq                               
+7001d49d  dwc_usb3_pcd_check_snpsid                  
+7001a2db  dwc_usb3_pcd_common_init                   
+7001aff7  dwc_usb3_pcd_common_remove                 
+70014719  dwc_usb3_pcd_device_init                   
+7001aebd  dwc_usb3_pcd_device_remove                 
+7001c5a1  dwc_usb3_pcd_ep0_data_stage                
+7001bc31  dwc_usb3_pcd_ep0_out_start                 
+70018df5  dwc_usb3_pcd_ep0_start_transfer            
+7001cea9  dwc_usb3_pcd_ep_clear_stall                
+7001a127  dwc_usb3_pcd_ep_disable                    
+7001a599  dwc_usb3_pcd_ep_set_halt                   
+7001d015  dwc_usb3_pcd_ep_set_stall                  
+70018c05  dwc_usb3_pcd_ep_start_transfer             
+7001a485  dwc_usb3_pcd_ep_submit_req                 
+700165e9  dwc_usb3_pcd_fill_trbs                     
+7001d35b  dwc_usb3_pcd_get_ep_by_addr                
+7001dacd  dwc_usb3_pcd_get_link_state                
+70016f39  dwc_usb3_pcd_init                          
+7001b50d  dwc_usb3_pcd_isoc_ep_hiber_restart         
+7001da5d  dwc_usb3_pcd_remote_wake                   
+7001dc1d  dwc_usb3_pcd_remove                        
+7001b9b1  dwc_usb3_pcd_request_done                  
+7001d0fb  dwc_usb3_pcd_set_link_state                
+7001a831  dwc_usb3_pcd_stop                          
+7001d56d  dwc_usb3_pcd_trb_free                      
+7001ba03  dwc_usb3_power_ctl                         
+7001d773  dwc_usb3_set_address                       
+7001a8b3  dwc_usb3_set_rx_fifo_size                  
+7001cd9b  dwc_usb3_set_scratchpad_buf_array          
+7001986d  dwc_usb3_set_tx_fifo_size                  
+7001ade3  dwc_usb3_stop_all_xfers                    
+7001b669  dwc_usb3_task                              
+7001d589  dwc_usb3_task_init                         
+7001dad9  dwc_usb3_u1_enabled                        
+7001dae5  dwc_usb3_u2_enabled                        
+7001bd19  dwc_usb3_xmit_fn_remote_wake               
+7001b715  epXferCmplCb                               
+70170b40  ep_in_buf                                  
+70171b40  ep_out_buf                                 
+70012a18  eventQueueSem                              
+7001f194  gADPLLJConfigTbl                           
+7001f048  gAddrTranslateConfig                       
+7001eeac  gAddrTranslateInfo                         
+700c0000  gAppImageBuf                               
+7001f05c  gBootloader0Args                           
+7001ef44  gBootloaderConfig                          
+7001f0a4  gBootloaderConfigNum                       
+7001efd8  gBootloaderMemFxns                         
+7001f220  gCacheConfig                               
+7001ffec  gCacheL1dCacheLineSize                     
+7001fffc  gCacheL1pCacheLineSize                     
+7001eff0  gClockConfig                               
+70012848  gClockCtrl                                 
+7001eee4  gCoreBootInfo400Mhz                        
+7001eefc  gCoreBootInfo500Mhz                        
+7001f0a8  gDebugLogZone                              
+7001ee18  gEdmaConfig                                
+7001f0ac  gEdmaConfigNum                             
+70012880  gElfHBuffer                                
+70011ccc  gHSMClient                                 
+7001198c  gHsmClientMsgQueue                         
+7001f0b0  gHsmRtDownloadComplete                     
+7003f100  gHsmRtFw                                   
+7001f0b4  gHsmrtLoadStatus                           
+7001f0b8  gHwiConfig                                 
+70011180  gHwiCtrl                                   
+7001f0fe  gManifestDone                              
+7001f228  gMpuConfig                                 
+7001f234  gMpuRegionConfig                           
+70012000  gNoteSegBuffer                             
+70002100  gPHTBuffer                                 
+7001fde0  gPLLFreqId2FOutMap                         
+7001fa64  gPeripheralClkSrcInfoMap                   
+70012670  gProfileObj                                
+44000000  gQueue_HsmToSecureHost                     
+44000400  gQueue_SecureHostToHsm                     
+7001f0cc  gR5ClockFrequency                          
+7001f0d0  gR5ss0Core1ImagePresent                    
+7001f0d4  gR5ss0MemInitDone                          
+7001f020  gResMemSection                             
+7001ef70  gSIPC_HsmMboxConfig                        
+7001ee70  gSIPC_InterruptConfig                      
+7001f064  gSIPC_QueHsmToSecureHost                   
+7001f06c  gSIPC_QueSecureHostToHsm                   
+7001ef98  gSIPC_SecureHostMboxConfig                 
+70012954  gSIPC_ctrl                                 
+70012280  gSecureBootStreamArray                     
+7001f074  gSocModules                                
+7001f008  gSocModulesClockFrequency                  
+7001f0dc  gStreamId                                  
+7001f084  gUartConfig                                
+7001f0e0  gUartConfigNum                             
+7001f0e4  gUartDmaChConfig                           
+7001ee18  gUartDmaHandle                             
+7001287c  gUartHandle                                
+7001ee18  gUartParams                                
+70010180  gX509Cert                                  
+7002433c  g_ep0                                      
+70170480  g_ep0_in_desc                              
+70170440  g_ep0_out_desc                             
+70024260  g_ep0_req                                  
+70170400  g_ep0_setup_desc                           
+701706c0  g_ep0_setup_pkt                            
+701704c0  g_ep0_status_buf                           
+70170000  g_event_buf                                
+70170700  g_hiber_scratchpad                         
+70170ac0  g_hiber_scratchpad_array                   
+70024544  g_in_ep                                    
+70173380  g_in_trb_pool                              
+700243a4  g_out_ep                                   
+70172b40  g_out_trb_pool                             
+700246e8  g_pcd_req                                  
+700246e4  g_pcd_req_bm                               
+700240d8  g_usb3_dev                                 
+7001cdc9  inEp0XferCmplCb                            
+7001f0ff  isMapAvailable                             
+70018257  main                                       
+70026288  msg_cnt                                    
+7001f0ec  operatingMode                              
+7001c8ed  outEp0XferCmplCb                           
+7001f0f0  ptrMSSCtrlRegs                             
+7001f0f4  ptrTopCtrlRegs                             
+7001bdf3  putchar_                                   
+7001f0f8  recvFileSize                               
+7001ced3  tu_edpt_bind_driver                        
+7001d517  tu_fifo_clear                              
+7001d2ad  tu_fifo_read                               
+7001bc7f  tu_fifo_write                              
+7001cd3d  tud_control_status                         
+7001b123  tud_control_xfer                           
+UNDEFED   tud_descriptor_bos_cb                      
+7001db63  tud_descriptor_configuration_cb            
+7001db6d  tud_descriptor_device_cb                   
+7001db77  tud_descriptor_device_qualifier_cb         
+UNDEFED   tud_descriptor_other_speed_configuration_cb
+7001aa33  tud_descriptor_string_cb                   
+UNDEFED   tud_dfu_abort_cb                           
+UNDEFED   tud_dfu_detach_cb                          
+7001bec1  tud_dfu_download_cb                        
+7001c923  tud_dfu_finish_flashing                    
+7001db81  tud_dfu_get_timeout_cb                     
+7001d957  tud_dfu_manifest_cb                        
+UNDEFED   tud_dfu_upload_cb                          
+700191fd  tud_init                                   
+7001d969  tud_inited                                 
+UNDEFED   tud_mount_cb                               
+UNDEFED   tud_resume_cb                              
+UNDEFED   tud_suspend_cb                             
+70013e01  tud_task_ext                               
+UNDEFED   tud_umount_cb                              
+UNDEFED   tud_vendor_control_xfer_cb                 
+7001dbd3  tusb_init                                  
+7001dc21  tusb_inited                                
+7001f100  usb3ss_module_params                       
+7001d643  usbCoreIntrHandler                         
+70026268  usb_handle                                 
+7001b299  usb_phy_power_sequence                     
+7001c959  usbdIntrConfig                             
+UNDEFED   usbd_app_driver_get_cb                     
+7001d97b  usbd_control_reset                         
+7001daf1  usbd_control_set_complete_callback         
+7001d6d5  usbd_control_set_request                   
+7001906d  usbd_control_xfer_cb                       
+7001c249  usbd_edpt_clear_stall                      
+7001c289  usbd_edpt_stall                            
+7001b76b  usbd_edpt_xfer                             
+7001d789  usbd_int_set                               
+70011d00  vec_addrs                                  
+7001f054  vec_size                                   
+7001f058  vector_table_loc                           
+70012a28  virtToPhymap                               
+7001d2d1  vprintf_                                   
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address   name                                       
+-------   ----                                       
+00000000  __TI_ATRegion0_region_sz                   
+00000000  __TI_ATRegion0_src_addr                    
+00000000  __TI_ATRegion0_trg_addr                    
+00000000  __TI_ATRegion1_region_sz                   
+00000000  __TI_ATRegion1_src_addr                    
+00000000  __TI_ATRegion1_trg_addr                    
+00000000  __TI_ATRegion2_region_sz                   
+00000000  __TI_ATRegion2_src_addr                    
+00000000  __TI_ATRegion2_trg_addr                    
+00000000  __TI_static_base__                         
+00000000  _vectors                                   
+00000100  __ABORT_STACK_SIZE                         
+00000100  __FIQ_STACK_SIZE                           
+00000100  __UNDEFINED_STACK_SIZE                     
+00001000  __IRQ_STACK_SIZE                           
+00001000  __SVC_STACK_SIZE                           
+00004000  __STACK_SIZE                               
+44000000  gQueue_HsmToSecureHost                     
+44000400  gQueue_SecureHostToHsm                     
+70002100  __BSS_START                                
+70002100  __start___llvm_prf_bits                    
+70002100  __start___llvm_prf_cnts                    
+70002100  __stop___llvm_prf_bits                     
+70002100  __stop___llvm_prf_cnts                     
+70002100  gPHTBuffer                                 
+70010180  gX509Cert                                  
+70011180  gHwiCtrl                                   
+7001198c  gHsmClientMsgQueue                         
+70011ccc  gHSMClient                                 
+70011d00  vec_addrs                                  
+70012000  gNoteSegBuffer                             
+70012280  gSecureBootStreamArray                     
+70012670  gProfileObj                                
+70012788  _usbd_qdef_buf                             
+70012848  gClockCtrl                                 
+7001287c  gUartHandle                                
+70012880  gElfHBuffer                                
+70012954  gSIPC_ctrl                                 
+70012a18  eventQueueSem                              
+70012a28  virtToPhymap                               
+70012a80  __BSS_END                                  
+70012a81  dwc_usb3_handle_ep0_xfer                   
+700131e3  Dpl_deinit                                 
+700131e5  Bootloader_parseAndLoadMultiCoreELF        
+70013e01  tud_task_ext                               
+70014313  EDMA_isInterruptEnabled                    
+70014719  dwc_usb3_pcd_device_init                   
+70014a99  SOC_rcmEnablePeripheralClock               
+70014e05  Board_driversOpen                          
+70015119  UART_open                                  
+700155f5  dwc_usb3_handle_dev_intr                   
+70015831  SIPC_init                                  
+70015a5d  EDMA_freeChannelRegion                     
+70015c61  dfu_moded_control_xfer_cb                  
+70015e5d  SOC_rcmGetPeripheralClockFrequency         
+70016055  SOC_rcmSetPeripheralClock                  
+70016249  SOC_rcmPerApllConfig                       
+7001642d  dwc_usb3_complete_request                  
+700165e9  dwc_usb3_pcd_fill_trbs                     
+70016783  dcd_edpt_xfer                              
+70016919  SOC_rcmEthApllConfig                       
+70016aad  UART_lld_dmaInit                           
+70016c41  HsmClient_procAuthBootFinish               
+70016dc9  dcd_event_handler                          
+70016f39  dwc_usb3_pcd_init                          
+700170a9  dwc_usb3_driver_init                       
+70017213  SIPC_isr                                   
+70017379  SOC_rcmCoreApllHSDivConfig                 
+700174cd  UART_lld_dmaDeInit                         
+7001761b  dwc_usb3_ep_activate                       
+70017767  UART_lld_controllerIsr                     
+700179f7  TimerP_setupPriv                           
+70017b37  SemaphoreP_destruct                        
+70017b39  UART_close                                 
+70017c71  dwc_exit_hibernation_after_connect         
+70017ed9  dwc_exit_hibernation                       
+70018009  Hsmclient_loadHSMRtFirmware                
+70018133  dwc_usb3_handle_connect_done_intr          
+70018257  main                                       
+700186cd  SOC_rcmCoreApllConfig                      
+700187e4  __udivmoddi4                               
+700188fd  ClockP_init                                
+70018a01  UART_lld_dmaWrite                          
+70018b05  SIPC_sendMsg                               
+70018c05  dwc_usb3_pcd_ep_start_transfer             
+70018d05  dwc_usb3_ep_queue                          
+70018df5  dwc_usb3_pcd_ep0_start_transfer            
+70018ed1  EDMA_unregisterIntr                        
+70018fa1  UART_lld_initDma                           
+7001906d  usbd_control_xfer_cb                       
+70019139  UART_lld_init                              
+700191fd  tud_init                                   
+700192bf  TaskP_yield                                
+700192c1  EDMA_registerIntr                          
+7001937d  HsmClient_procAuthBootStart                
+700194f3  dwc_usb3_handle_event                      
+7001970d  dwc_usb3_ep0_activate                      
+700197bd  dwc_usb3_handle_ep_intr                    
+7001986d  dwc_usb3_set_tx_fifo_size                  
+70019a71  Bootloader_socLoadHsmRtFw                  
+70019b11  EDMA_freeDmaChannel                        
+70019bb1  EDMA_freeParam                             
+70019c51  EDMA_freeTcc                               
+70019cf1  UART_lld_dmaRead                           
+70019d91  Bootloader_getMsgLen                       
+70019e2f  SemaphoreP_pend                            
+70019ecd  HsmClient_config                           
+70019ffd  HsmClient_isr                              
+7001a093  EDMA_configureChannelRegion                
+7001a127  dwc_usb3_pcd_ep_disable                    
+7001a1bb  dcd_edpt_close_all                         
+7001a1bd  SOC_phyToVirt                              
+7001a2db  dwc_usb3_pcd_common_init                   
+7001a3f7  dwc_usb3_irq                               
+7001a483  dcd_set_address                            
+7001a485  dwc_usb3_pcd_ep_submit_req                 
+7001a50f  dwc_usb3_gadget_free_dma                   
+7001a511  UART_init                                  
+7001a599  dwc_usb3_pcd_ep_set_halt                   
+7001a6a9  SOC_virtToPhy                              
+7001a7af  dwc_usb3_close_all_ep                      
+7001a831  dwc_usb3_pcd_stop                          
+7001a8b3  dwc_usb3_set_rx_fifo_size                  
+7001a935  UART_flushTxFifo                           
+7001a9b5  HsmClient_procAuthBootUpdate               
+7001aa33  tud_descriptor_string_cb                   
+7001aab1  SOC_rcmsetR5SysClock                       
+7001ab2d  dwc_usb3_gadget_complete                   
+7001aba7  dwc_usb3_gadget_isoc_ep_start              
+7001ac21  dwc_usb3_driver_remove                     
+7001ac97  Bootloader_socConfigurePll                 
+7001ad07  EDMA_disableTransferRegion                 
+7001ad75  EDMA_enableTransferRegion                  
+7001ade3  dwc_usb3_stop_all_xfers                    
+7001ae51  Bootloader_socSetAutoClock                 
+7001aebd  dwc_usb3_pcd_device_remove                 
+7001af29  dfu_moded_open                             
+7001af91  CycleCounterP_init                         
+7001afa1  CycleCounterP_reset                        
+7001afc5  CycleCounterP_nsToTicks                    
+7001aff1  CycleCounterP_enableUserAccess             
+7001aff7  dwc_usb3_pcd_common_remove                 
+7001aff9  SOC_controlModuleUnlockMMR                 
+7001b05d  UART_procLineStatusErr                     
+7001b0c1  HsmClient_register                         
+7001b123  tud_control_xfer                           
+7001b183  ClockP_timerTickIsr                        
+7001b1e1  SOC_controlModuleLockMMR                   
+7001b23d  _DebugP_assert                             
+7001b299  usb_phy_power_sequence                     
+7001b3a9  dwc_usb3_gadget_init                       
+7001b45d  Bootloader_parseNoteSegment                
+7001b4b5  Bootloader_runCpu                          
+7001b50d  dwc_usb3_pcd_isoc_ep_hiber_restart         
+7001b5bd  ClockP_getTimeUsec                         
+7001b613  UART_intrDisable                           
+7001b669  dwc_usb3_task                              
+7001b715  epXferCmplCb                               
+7001b76b  usbd_edpt_xfer                             
+7001b7c1  SOC_rcmR5ConfigDualCore                    
+7001b814  __TI_auto_init_nobinit_nopinit             
+7001b869  AddrTranslateP_getLocalAddr                
+7001b8bb  HsmClient_checkAndWaitForBootNotification  
+7001b90d  USB_init                                   
+7001b95f  dwc_usb3_clr_eps_enabled                   
+7001b9b1  dwc_usb3_pcd_request_done                  
+7001ba03  dwc_usb3_power_ctl                         
+7001ba05  Bootloader_socCpuGetClock                  
+7001ba55  EDMA_allocDmaChannel                       
+7001baa5  EDMA_allocParam                            
+7001baf5  EDMA_allocTcc                              
+7001bb45  dwc_usb3_alloc_request                     
+7001bbe3  EDMA_disableChInShadowRegRegion            
+7001bc31  dwc_usb3_pcd_ep0_out_start                 
+7001bc7f  tu_fifo_write                              
+7001bccd  Drivers_uartOpen                           
+7001bd19  dwc_usb3_xmit_fn_remote_wake               
+7001bdf3  putchar_                                   
+7001bdf5  Bootloader_socCpuPowerOnReset              
+7001be39  UART_Params_init                           
+7001be7d  UART_lld_deInitDma                         
+7001bec1  tud_dfu_download_cb                        
+7001bf05  dwc_usb3_ena_usb2_phy_suspend              
+7001bf47  Bootloader_findSeq                         
+7001bf89  Bootloader_open                            
+7001c009  ClockP_stop                                
+7001c049  Dpl_init                                   
+7001c089  EDMA_mapChToEvtQ                           
+7001c0c9  Pinmux_config                              
+7001c109  SOC_rcmStartMemInitTCMA                    
+7001c149  SOC_rcmStartMemInitTCMB                    
+7001c189  UART_lld_deInit                            
+7001c1c9  dfu_task                                   
+7001c209  dwc_usb3_enable_common_interrupts          
+7001c249  usbd_edpt_clear_stall                      
+7001c289  usbd_edpt_stall                            
+7001c307  SIPC_registerClient                        
+7001c345  dwc_usb3_dis_flush_eventbuf_intr           
+7001c383  dwc_usb3_gadget_start_next_request         
+7001c3c1  EDMA_getBaseAddr                           
+7001c3fd  SOC_rcmWaitMemInitTCMA                     
+7001c439  SOC_rcmWaitMemInitTCMB                     
+7001c4b1  dwc_usb3_dep_cfg                           
+7001c4ed  dwc_usb3_dep_startxfer                     
+7001c529  dwc_usb3_gadget_connect                    
+7001c565  dwc_usb3_init_eventbuf                     
+7001c5a1  dwc_usb3_pcd_ep0_data_stage                
+7001c5dd  ClockP_destruct                            
+7001c617  Module_clockSetFrequency                   
+7001c651  UART_lld_flushTxFifo                       
+7001c68d  Bootloader_authStart                       
+7001c6c5  Bootloader_authUpdate                      
+7001c6fd  Bootloader_socMemInitCpu                   
+7001c735  Bootloader_socTranslateSectionAddr         
+7001c76d  _DebugP_logZone                            
+7001c7a5  dwc_usb3_gadget_request_nuke               
+7001c7dc  CycleCounterP_getCount32                   
+7001c7e4  PmuP_setup                                 
+7001c7ec  PmuP_enableCounters                        
+7001c7f4  PmuP_disableCounters                       
+7001c7fc  PmuP_getOverflowStatus                     
+7001c804  PmuP_clearOverflowStatus                   
+7001c80c  PmuP_setUserEnable                         
+7001c815  EDMA_clrMissEvtRegion                      
+7001c84b  HsmClient_waitForBootNotify                
+7001c881  SemaphoreP_post                            
+7001c8b7  dwc_usb3_free_request                      
+7001c8ed  outEp0XferCmplCb                           
+7001c923  tud_dfu_finish_flashing                    
+7001c959  usbdIntrConfig                             
+7001c98f  Bootloader_getX509CertLen                  
+7001c9c3  ClockP_start                               
+7001c9f7  Module_clockDisable                        
+7001ca2b  Module_clockEnable                         
+7001cac9  EDMA_unmapChToEvtQ                         
+7001cafd  Bootloader_BootImageInfo_init              
+7001cb2d  Bootloader_authFinish                      
+7001cb5d  SIPC_Register_Isr                          
+7001cb8d  SOC_rcmCoreApllRelockPreRequisite          
+7001cc1d  dwc_queueGet                               
+7001cc4d  dwc_usb3_dep_endxfer                       
+7001cc7d  dwc_usb3_disable_ep                        
+7001ccad  dwc_usb3_enable_ep                         
+7001ccdd  dwc_usb3_fill_desc                         
+7001cd3d  tud_control_status                         
+7001cd6d  EDMA_enableChInShadowRegRegion             
+7001cd9b  dwc_usb3_set_scratchpad_buf_array          
+7001cdc9  inEp0XferCmplCb                            
+7001cdf9  SOC_rcmCoreR5FUnhalt                       
+7001ce25  SOC_rcmR5ConfigLockStep                    
+7001ce51  dwc_queuePut                               
+7001ce7d  dwc_usb3_dep_cstall                        
+7001cea9  dwc_usb3_pcd_ep_clear_stall                
+7001ced3  tu_edpt_bind_driver                        
+7001cefd  Bootloader_socCpuGetClkDefault             
+7001cf25  Bootloader_socGetCoreName                  
+7001cf4d  ClockP_construct                           
+7001cf9d  SOC_moduleSetClockFrequency                
+7001cfed  dwc_usb3_dep_xfercfg                       
+7001d015  dwc_usb3_pcd_ep_set_stall                  
+7001d03d  Bootloader_initCpu                         
+7001d063  EDMA_setPaRAM                              
+7001d089  SIPC_unregisterClient                      
+7001d0af  dwc_usb3_dep_startnewcfg                   
+7001d0d5  dwc_usb3_dep_updatexfer                    
+7001d0fb  dwc_usb3_pcd_set_link_state                
+7001d121  HsmClient_init                             
+7001d145  SOC_rcmGetR5Clock                          
+7001d18c  __aeabi_uldivmod                           
+7001d1b1  dcd_edpt_clear_stall                       
+7001d1d5  dcd_edpt_stall                             
+7001d1f9  dwc_usb3_dep_sstall                        
+7001d21d  dwc_usb3_dis_usb2_phy_suspend              
+7001d241  dwc_usb3_gadget_disconnect                 
+7001d265  dwc_usb3_gadget_resume                     
+7001d289  dwc_usb3_gadget_suspend                    
+7001d2ad  tu_fifo_read                               
+7001d2d1  vprintf_                                   
+7001d2f5  EDMA_linkChannel                           
+7001d317  dcd_init                                   
+7001d339  dwc_usb3_enable_device_interrupts          
+7001d35b  dwc_usb3_pcd_get_ep_by_addr                
+7001d37d  Bootloader_runSelfCpu                      
+7001d39d  DebugP_logZoneEnable                       
+7001d3bd  SOC_rcmMemInitL2Memory                     
+7001d3dd  SemaphoreP_constructCounting               
+7001d3fd  System_deinit                              
+7001d41d  TimerP_Params_initPriv                     
+7001d43d  UART_getChar                               
+7001d45d  dwc_usb3_gadget_setup                      
+7001d47d  dwc_usb3_get_device_speed                  
+7001d49d  dwc_usb3_pcd_check_snpsid                  
+7001d4bd  Drivers_close                              
+7001d4db  UART_spaceAvail                            
+7001d517  tu_fifo_clear                              
+7001d551  dwc_usb3_gadget_set_ep_not_started         
+7001d56d  dwc_usb3_pcd_trb_free                      
+7001d589  dwc_usb3_task_init                         
+7001d5a4  TI_memcpy_small                            
+7001d5c1  CSL_armR5GetCpuID                          
+7001d5db  EDMA_readEventStatusRegion                 
+7001d5f5  SIPC_Params_init                           
+7001d60f  System_init                                
+7001d643  usbCoreIntrHandler                         
+7001d65d  Bootloader_profileAddCore                  
+7001d675  SOC_rcmMemInitMailboxMemory                
+7001d68d  SOC_rcmR5SS0PowerOnReset                   
+7001d6a5  TimerP_getCountPriv                        
+7001d6bd  UART_deinit                                
+7001d6d5  usbd_control_set_request                   
+7001d6ec  TI_memset_small                            
+7001d705  Bootloader_socCpuSetClock                  
+7001d71b  SemaphoreP_constructBinary                 
+7001d731  UART_IsTxRxFifoEmpty                       
+7001d747  UART_checkCharsAvailInFifo                 
+7001d75d  UART_getIntrIdentityStatus                 
+7001d773  dwc_usb3_set_address                       
+7001d789  usbd_int_set                               
+7001d79f  Bootloader_socCpuResetRelease              
+7001d7b5  Bootloader_socIsAuthRequired               
+7001d7c9  ClockP_usecToTicks                         
+7001d7dd  EDMA_getRegionId                           
+7001d7f1  SOC_rcmIsR5FInLockStepMode                 
+7001d805  SOC_rcmR5SS0TriggerReset                   
+7001d819  SemaphoreP_constructMutex                  
+7001d841  USB_configureInterrupt                     
+7001d855  dfu_moded_init                             
+7001d869  dfu_moded_reset                            
+7001d87d  dwc_usb3_get_in_ep                         
+7001d891  Drivers_open                               
+7001d8a3  Hsmclient_updateBootNotificationRegister   
+7001d8c7  UART_operatingModeSelect                   
+7001d8d9  UART_readLineStatus                        
+7001d8eb  dwc_usb3_accept_u1                         
+7001d8fd  dwc_usb3_accept_u2                         
+7001d90f  dwc_usb3_disable_u1                        
+7001d921  dwc_usb3_disable_u2                        
+7001d933  dwc_usb3_enable_u1                         
+7001d945  dwc_usb3_enable_u2                         
+7001d957  tud_dfu_manifest_cb                        
+7001d969  tud_inited                                 
+7001d97b  usbd_control_reset                         
+7001d98d  Bootloader_close                           
+7001d99d  Bootloader_getBootMedia                    
+7001d9ad  Bootloader_isCorePresent                   
+7001d9bd  UART_intr2Disable                          
+7001d9cc  __aeabi_memset                             
+7001d9cc  __aeabi_memset4                            
+7001d9cc  __aeabi_memset8                            
+7001d9dd  dwc_usb3_gadget_get_request                
+7001d9ed  Bootloader_socCpuResetReleaseSelf          
+7001d9fb  Bootloader_socInitL2MailBoxMemory          
+7001da09  EDMA_ccPaRAMEntry_init                     
+7001da17  Pinmux_init                                
+7001da25  PowerClock_init                            
+7001da33  USB_dwcTask                                
+7001da41  dwc_usb3_get_out_ep                        
+7001da4f  dwc_usb3_handle_pme_intr                   
+7001da5d  dwc_usb3_pcd_remote_wake                   
+7001da6d  Bootloader_Params_init                     
+7001da79  Bootloader_socGetBootSeqOid                
+7001da85  ClockP_getTicks                            
+7001da91  HsmClient_SecureBootQueueInit              
+7001da9d  SIPC_getSelfCoreId                         
+7001daa9  SOC_rcmSetR5ClockSource                    
+7001dab4  __aeabi_memclr                             
+7001dab4  __aeabi_memclr4                            
+7001dab4  __aeabi_memclr8                            
+7001dac1  dwc_usb3_get_frame                         
+7001dacd  dwc_usb3_pcd_get_link_state                
+7001dad9  dwc_usb3_u1_enabled                        
+7001dae5  dwc_usb3_u2_enabled                        
+7001daf1  usbd_control_set_complete_callback         
+7001dafc  CSL_armR5ReadMpidrReg                      
+7001db09  ClockP_Params_init                         
+7001db13  ClockP_isActive                            
+7001db1d  SOC_rcmSetR5Clock                          
+7001db27  TimerP_getReloadCountPriv                  
+7001db31  TimerP_startPriv                           
+7001db3b  UART_lld_Transaction_deInit                
+7001db45  dwc_queueInit                              
+7001db4f  dwc_usb3_disable_desc                      
+7001db59  dwc_usb3_enable_desc                       
+7001db63  tud_descriptor_configuration_cb            
+7001db6d  tud_descriptor_device_cb                   
+7001db77  tud_descriptor_device_qualifier_cb         
+7001db81  tud_dfu_get_timeout_cb                     
+7001db8d  Bootloader_socGetSBLMem                    
+7001db94  C$$EXIT                                    
+7001db94  HOSTexit                                   
+7001db9d  TimerP_clearOverflowIntPriv                
+7001dbac  abort                                      
+7001dbb5  HsmClient_unregister                       
+7001dbbb  SOC_moduleClockEnable                      
+7001dbc7  dcd_int_disable                            
+7001dbcd  dcd_int_enable                             
+7001dbd3  tusb_init                                  
+7001dbd9  Bootloader_socCpuRelease                   
+7001dbdd  Bootloader_socCpuRequest                   
+7001dbe1  ClockP_getTimerCount                       
+7001dbe5  ClockP_timerClearOverflowInt               
+7001dbe9  Keyring_init                               
+7001dbf5  PowerClock_deinit                          
+7001dbf9  TimerP_Params_init                         
+7001dbfd  TimerP_clearOverflowInt                    
+7001dc01  TimerP_getCount                            
+7001dc05  TimerP_getReloadCount                      
+7001dc09  TimerP_setup                               
+7001dc0d  TimerP_start                               
+7001dc11  USB_deinit                                 
+7001dc14  __aeabi_ldiv0                              
+7001dc18  __aeabi_memcpy                             
+7001dc18  __aeabi_memcpy4                            
+7001dc18  __aeabi_memcpy8                            
+7001dc1d  dwc_usb3_pcd_remove                        
+7001dc21  tusb_inited                                
+7001dc51  HwiP_enableInt                             
+7001dc79  HwiP_disableInt                            
+7001dcab  HwiP_restoreInt                            
+7001dd01  HwiP_clearInt                              
+7001dd21  HwiP_post                                  
+7001dd49  HwiP_Params_init                           
+7001dd5b  HwiP_construct                             
+7001de9f  HwiP_destruct                              
+7001df71  HwiP_init                                  
+7001e039  HwiP_inISR                                 
+7001e055  HwiP_setVimIrqPriMaskNonAtomic             
+7001e077  HwiP_setVimIrqPriMaskAtomic                
+7001e0c3  HwiP_restoreVimIrqPriMask                  
+7001e0db  HwiP_irq_handler_c                         
+7001e177  HwiP_fiq_handler                           
+7001e227  HwiP_reserved_handler                      
+7001e255  HwiP_undefined_handler_c                   
+7001e273  HwiP_user_undefined_handler_c              
+7001e287  HwiP_svc_handler                           
+7001e2b5  HwiP_prefetch_abort_handler_c              
+7001e32f  HwiP_user_prefetch_abort_handler_c         
+7001e33f  HwiP_data_abort_handler_c                  
+7001e3bf  HwiP_user_data_abort_handler_c             
+7001e3d0  HwiP_irq_handler                           
+7001e444  HwiP_data_abort_handler                    
+7001e488  HwiP_prefetch_abort_handler                
+7001e4d4  HwiP_undefined_handler                     
+7001e504  GET_DFSR                                   
+7001e50c  GET_ADFSR                                  
+7001e514  GET_DFAR                                   
+7001e51c  GET_IFSR                                   
+7001e524  GET_AIFSR                                  
+7001e52c  GET_IFAR                                   
+7001e534  GET_SPSR                                   
+7001e54c  HwiP_disable                               
+7001e55c  HwiP_disableFIQ                            
+7001e56c  HwiP_enable                                
+7001e57c  HwiP_enableFIQ                             
+7001e58c  HwiP_restore                               
+7001e594  HwiP_enableVIC                             
+7001e5a4  HwiP_disableVIC                            
+7001e5b4  HwiP_getCPSR                               
+7001e5c8  CacheP_disableL1d                          
+7001e5f0  CacheP_disableL1p                          
+7001e608  CacheP_enableL1d                           
+7001e620  CacheP_enableL1p                           
+7001e638  CacheP_invL1d                              
+7001e670  CacheP_invL1p                              
+7001e6ac  CacheP_invL1dAll                           
+7001e6b4  CacheP_invL1pAll                           
+7001e6bc  CacheP_wb                                  
+7001e6f8  CacheP_wbInv                               
+7001e734  CacheP_wbAll                               
+7001e7dc  CacheP_wbInvAll                            
+7001e7f4  CacheP_wbInvAllAsm                         
+7001e894  CacheP_getEnabled                          
+7001e8cc  CacheP_getCacheLevelInfo                   
+7001e8d8  CacheP_configForceWrThru                   
+7001e8f8  CacheP_setDLFO                             
+7001e909  CacheP_init                                
+7001e961  CacheP_disable                             
+7001e99b  CacheP_enable                              
+7001e9bb  CacheP_inv                                 
+7001e9f9  MpuP_getAttrs                              
+7001ea39  MpuP_RegionAttrs_init                      
+7001ea47  MpuP_setRegion                             
+7001eac1  MpuP_isEnable                              
+7001eac5  MpuP_disable                               
+7001eaf7  MpuP_enable                                
+7001eb33  MpuP_init                                  
+7001eb95  MpuP_isUserAuthorizedToAccessMemory        
+7001ebfc  MpuP_disableAsm                            
+7001ec14  MpuP_disableBRAsm                          
+7001ec24  MpuP_enableAsm                             
+7001ec3c  MpuP_enableBRAsm                           
+7001ec4c  MpuP_isEnableAsm                           
+7001ec60  MpuP_setRegionAsm                          
+7001ec88  _c_int00_sbl                               
+7001ecac  _c_int00                                   
+7001edcd  _DebugP_assertNoLog                        
+7001edeb  _system_pre_init                           
+7001ee07  __mpu_init                                 
+7001ee18  gEdmaConfig                                
+7001ee18  gUartDmaHandle                             
+7001ee18  gUartParams                                
+7001ee70  gSIPC_InterruptConfig                      
+7001eeac  gAddrTranslateInfo                         
+7001eee4  gCoreBootInfo400Mhz                        
+7001eefc  gCoreBootInfo500Mhz                        
+7001ef44  gBootloaderConfig                          
+7001ef70  gSIPC_HsmMboxConfig                        
+7001ef98  gSIPC_SecureHostMboxConfig                 
+7001efc0  _usbd_qdef                                 
+7001efd8  gBootloaderMemFxns                         
+7001eff0  gClockConfig                               
+7001f008  gSocModulesClockFrequency                  
+7001f020  gResMemSection                             
+7001f048  gAddrTranslateConfig                       
+7001f054  vec_size                                   
+7001f058  vector_table_loc                           
+7001f05c  gBootloader0Args                           
+7001f064  gSIPC_QueHsmToSecureHost                   
+7001f06c  gSIPC_QueSecureHostToHsm                   
+7001f074  gSocModules                                
+7001f084  gUartConfig                                
+7001f08c  FileBufPtr                                 
+7001f09c  dfu_ctx                                    
+7001f0a4  gBootloaderConfigNum                       
+7001f0a8  gDebugLogZone                              
+7001f0ac  gEdmaConfigNum                             
+7001f0b0  gHsmRtDownloadComplete                     
+7001f0b4  gHsmrtLoadStatus                           
+7001f0b8  gHwiConfig                                 
+7001f0cc  gR5ClockFrequency                          
+7001f0d0  gR5ss0Core1ImagePresent                    
+7001f0d4  gR5ss0MemInitDone                          
+7001f0dc  gStreamId                                  
+7001f0e0  gUartConfigNum                             
+7001f0e4  gUartDmaChConfig                           
+7001f0ec  operatingMode                              
+7001f0f0  ptrMSSCtrlRegs                             
+7001f0f4  ptrTopCtrlRegs                             
+7001f0f8  recvFileSize                               
+7001f0fe  gManifestDone                              
+7001f0ff  isMapAvailable                             
+7001f100  usb3ss_module_params                       
+7001f194  gADPLLJConfigTbl                           
+7001f220  gCacheConfig                               
+7001f228  gMpuConfig                                 
+7001f234  gMpuRegionConfig                           
+7001fa64  gPeripheralClkSrcInfoMap                   
+7001fde0  gPLLFreqId2FOutMap                         
+7001ffec  gCacheL1dCacheLineSize                     
+7001fffc  gCacheL1pCacheLineSize                     
+700200d8  __stack                                    
+700240d8  __STACK_END                                
+700240d8  g_usb3_dev                                 
+70024260  g_ep0_req                                  
+7002433c  g_ep0                                      
+700243a4  g_out_ep                                   
+70024544  g_in_ep                                    
+700246e4  g_pcd_req_bm                               
+700246e8  g_pcd_req                                  
+70026268  usb_handle                                 
+70026288  msg_cnt                                    
+70026290  __DFU_CTX_START                            
+7002649c  __DFU_CTX_END                              
+700264a0  __IRQ_STACK_START                          
+700274a0  __FIQ_STACK_START                          
+700274a0  __IRQ_STACK_END                            
+700275a0  __FIQ_STACK_END                            
+700275a0  __SVC_STACK_START                          
+700285a0  __ABORT_STACK_START                        
+700285a0  __SVC_STACK_END                            
+700286a0  __ABORT_STACK_END                          
+700286a0  __UNDEFINED_STACK_START                    
+700287a0  __UNDEFINED_STACK_END                      
+7003f100  gHsmRtFw                                   
+700c0000  gAppImageBuf                               
+70170000  g_event_buf                                
+70170400  g_ep0_setup_desc                           
+70170440  g_ep0_out_desc                             
+70170480  g_ep0_in_desc                              
+701704c0  g_ep0_status_buf                           
+701706c0  g_ep0_setup_pkt                            
+70170700  g_hiber_scratchpad                         
+70170ac0  g_hiber_scratchpad_array                   
+70170b40  ep_in_buf                                  
+70171b40  ep_out_buf                                 
+70172b40  g_out_trb_pool                             
+70173380  g_in_trb_pool                              
+ffffffff  __TI_pprof_out_hndl                        
+ffffffff  __TI_prof_data_size                        
+ffffffff  __TI_prof_data_start                       
+ffffffff  __binit__                                  
+ffffffff  binit                                      
+UNDEFED   __TI_CINIT_Base                            
+UNDEFED   __TI_CINIT_Limit                           
+UNDEFED   __TI_Handler_Table_Base                    
+UNDEFED   __TI_Handler_Table_Limit                   
+UNDEFED   _system_post_cinit                         
+UNDEFED   dcd_edpt0_status_complete                  
+UNDEFED   tud_descriptor_bos_cb                      
+UNDEFED   tud_descriptor_other_speed_configuration_cb
+UNDEFED   tud_dfu_abort_cb                           
+UNDEFED   tud_dfu_detach_cb                          
+UNDEFED   tud_dfu_upload_cb                          
+UNDEFED   tud_mount_cb                               
+UNDEFED   tud_resume_cb                              
+UNDEFED   tud_suspend_cb                             
+UNDEFED   tud_umount_cb                              
+UNDEFED   tud_vendor_control_xfer_cb                 
+UNDEFED   usbd_app_driver_get_cb                     
+
+[609 symbols]

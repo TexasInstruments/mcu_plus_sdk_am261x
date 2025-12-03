@@ -111,6 +111,9 @@ Introduction</h1>
 <li>ARM M4F</li>
 <li>ARM R5F</li>
 </ul>
+<p>MCU+ SDK supports <a href="https://www.freertos.org/Security/04-FreeRTOS-MPU-memory-protection-unit">FreeRTOS MPU</a> on below CPUs</p><ul>
+<li>ARM R5F</li>
+</ul>
 <h1><a class="anchor" id="FREERTOS_SUPPORTED_FEATURES"></a>
 Features Supported</h1>
 <ul>
@@ -118,6 +121,11 @@ Features Supported</h1>
 <li>Tasks, semaphores, mutex, queues, timers, list, heap, event groups</li>
 <li>preemptive priority based scheduler</li>
 <li>static and/or dynamic memory allocation mode</li>
+</ul>
+</li>
+<li>FreeRTOS MPU (only on R5F)<ul>
+<li>Create user mode and privileged mode tasks</li>
+<li>User mode tasks with up-to 7 configurable task specific MPU regions</li>
 </ul>
 </li>
 <li>FreeRTOS+POSIX<ul>
@@ -149,7 +157,14 @@ Features Not Supported</h1>
 <ul>
 <li>Co-routines, stream buffer are not enabled and are not compiled by default. Users can add these to the FreeRTOS config and makefile if they want to use these features.</li>
 <li>Tickless IDLE mode</li>
-<li>Task level memory protection wrapper</li>
+<li><a href="https://www.freertos.org/Documentation/02-Kernel/04-API-references/13-FreeRTOS-MPU-specific/04-portSWITCH_TO_USER_MODE"><code>portSWITCH_TO_USER_MODE</code></a> is not supported<ul>
+<li>i.e, a task created in privileged mode cannot set its privilege level to user mode</li>
+</ul>
+</li>
+<li><a href="https://www.freertos.org/Documentation/02-Kernel/04-API-references/13-FreeRTOS-MPU-specific/03-vTaskAllocateMPURegions"><code>vTaskAllocateMPURegions</code></a> is not tested and should not be used<ul>
+<li>i.e, a task created with task specific MPU regions cannot modify/re-define the MPU regions at run time</li>
+</ul>
+</li>
 <li>R5F ISRs,<ul>
 <li>IRQ mode,</li>
 <li>FIQ mode,<ul>
@@ -218,6 +233,7 @@ Important files and directory structure</h1>
 <h1><a class="anchor" id="autotoc_md615"></a>
 FreeRTOS usage guidelines</h1>
 <p>See <a class="el" href="KERNEL_FREERTOS_IMPORTANT_GUIDELINES_PAGE.html">FreeRTOS usage guidelines</a> for FreeRTOS usage guidelines and comparison to SysBIOS.</p>
+<p>See <a class="el" href="KERNEL_FREERTOS_MPU_IMPORTANT_GUIDELINES_PAGE.html">FreeRTOS MPU usage guidelines</a> for FreeRTOS MPU usage guidelines.</p>
 <h1><a class="anchor" id="autotoc_md616"></a>
 Additional references</h1>
 <p>Given below are some references to learn more about FreeRTOS.</p>

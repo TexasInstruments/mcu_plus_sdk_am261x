@@ -249,7 +249,7 @@ Step 1: Building the OSPI Flash Diagnostic example</h1>
 <div class="line">}</div>
 <div class="line">All tests have passed!!</div>
 </div><!-- fragment --><p>You can see that the prints include the major and minor revisions of the SFDP standard supported. The diagnostic will print the SFDP details for this version only. As mentioned above, currently it supports till JESD216D version.</p>
-<p>Between the lines <code>JSON Data for the flash</code> and <code>All tests have passed</code>, you can see the configuration data for the flash printed as a json. You will see this if your flash supports SFDP. In this case, copy this part save it as JSON file, this would be useful in Step 2. In fact, the TI Board Default Flash configuration is also saved as json.</p>
+<p>Between the lines <code>JSON Data for the flash</code> and <code>All tests have passed</code>, you can see the configuration data for the flash printed as a json. You will see this if your flash supports SFDP. In this case, copy this part save it as JSON file, this would be useful in Step 2. In fact, the TI Board Default Flash configuration is also saved as json. Optional - add a field "flashName" manually that saves the flash name as the SFDP does not provide it.</p>
 <h1><a class="anchor" id="autotoc_md443"></a>
 Step 2: Configuring the flash via SysConfig</h1>
 <p> <style>div.image img[src="flash_syscfg_gen.png"]{ width:30%}</style> </p><div class="image">

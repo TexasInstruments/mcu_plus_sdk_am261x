@@ -61,5 +61,9 @@ var KERNEL_FREERTOS_PAGE =
         [ "Overview", "KERNEL_FREERTOS_IMPORTANT_GUIDELINES_PAGE.html#autotoc_md657", null ],
         [ "Important tips for application writers", "KERNEL_FREERTOS_IMPORTANT_GUIDELINES_PAGE.html#autotoc_md658", null ]
       ] ]
+    ] ],
+    [ "FreeRTOS MPU usage guidelines", "KERNEL_FREERTOS_MPU_IMPORTANT_GUIDELINES_PAGE.html", [
+      [ "Using and adding FreeRTOS MPU to your project", "KERNEL_FREERTOS_MPU_IMPORTANT_GUIDELINES_PAGE.html#autotoc_md665", null ],
+      [ "Important tips for application writers", "KERNEL_FREERTOS_MPU_IMPORTANT_GUIDELINES_PAGE.html#autotoc_md666", null ]
     ] ]
 ];

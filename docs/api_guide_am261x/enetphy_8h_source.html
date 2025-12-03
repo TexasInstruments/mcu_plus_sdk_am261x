@@ -579,24 +579,28 @@ $(document).ready(function(){initNavTree('enetphy_8h_source.html',''); initResiz
 <div class="line"><a name="l01154"></a><span class="lineno"> 1154</span>&#160; </div>
 <div class="line"><a name="l01167"></a><span class="lineno"><a class="line" href="group__DRV__ENETPHY.html#ga6a5b68a158188d891346fb6b74096b31"> 1167</a></span>&#160;int32_t <a class="code" href="group__DRV__ENETPHY.html#ga6a5b68a158188d891346fb6b74096b31">EnetPhy_getEventTs</a>(<a class="code" href="group__DRV__ENETPHY.html#ga321b990b312722b35a86cf9d09be4e48">EnetPhy_Handle</a> hPhy, uint32_t *eventIdx,</div>
 <div class="line"><a name="l01168"></a><span class="lineno"> 1168</span>&#160;                uint32_t *seqId, uint64_t *ts64);</div>
-<div class="line"><a name="l01169"></a><span class="lineno"> 1169</span>&#160;<span class="comment">/* ========================================================================== */</span></div>
-<div class="line"><a name="l01170"></a><span class="lineno"> 1170</span>&#160;<span class="comment">/*                        Deprecated Function Declarations                    */</span></div>
-<div class="line"><a name="l01171"></a><span class="lineno"> 1171</span>&#160;<span class="comment">/* ========================================================================== */</span></div>
-<div class="line"><a name="l01172"></a><span class="lineno"> 1172</span>&#160; </div>
-<div class="line"><a name="l01173"></a><span class="lineno"> 1173</span>&#160;<span class="comment">/* None */</span></div>
-<div class="line"><a name="l01174"></a><span class="lineno"> 1174</span>&#160; </div>
-<div class="line"><a name="l01175"></a><span class="lineno"> 1175</span>&#160;<span class="comment">/* ========================================================================== */</span></div>
-<div class="line"><a name="l01176"></a><span class="lineno"> 1176</span>&#160;<span class="comment">/*                       Static Function Definitions                          */</span></div>
-<div class="line"><a name="l01177"></a><span class="lineno"> 1177</span>&#160;<span class="comment">/* ========================================================================== */</span></div>
-<div class="line"><a name="l01178"></a><span class="lineno"> 1178</span>&#160; </div>
-<div class="line"><a name="l01179"></a><span class="lineno"> 1179</span>&#160;<span class="comment">/* None */</span></div>
-<div class="line"><a name="l01180"></a><span class="lineno"> 1180</span>&#160; </div>
-<div class="line"><a name="l01181"></a><span class="lineno"> 1181</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l01182"></a><span class="lineno"> 1182</span>&#160;}</div>
-<div class="line"><a name="l01183"></a><span class="lineno"> 1183</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01184"></a><span class="lineno"> 1184</span>&#160; </div>
-<div class="line"><a name="l01185"></a><span class="lineno"> 1185</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ENETPHY_H_ */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l01186"></a><span class="lineno"> 1186</span>&#160; </div>
+<div class="line"><a name="l01169"></a><span class="lineno"> 1169</span>&#160; </div>
+<div class="line"><a name="l01183"></a><span class="lineno"><a class="line" href="group__DRV__ENETPHY.html#gab3ff4a61a3baece654a738afa369cd4a"> 1183</a></span>&#160;int32_t <a class="code" href="group__DRV__ENETPHY.html#gab3ff4a61a3baece654a738afa369cd4a">EnetPhy_configMediaClock</a>(<a class="code" href="group__DRV__ENETPHY.html#ga321b990b312722b35a86cf9d09be4e48">EnetPhy_Handle</a> hPhy,  <span class="keywordtype">bool</span> isMaster,</div>
+<div class="line"><a name="l01184"></a><span class="lineno"> 1184</span>&#160;                uint8_t *streamIDMatchValue, <span class="keywordtype">bool</span> enTrigOut);</div>
+<div class="line"><a name="l01195"></a><span class="lineno"><a class="line" href="group__DRV__ENETPHY.html#ga9535e9ca77ebdba36a29c48ee1481bf5"> 1195</a></span>&#160;int32_t <a class="code" href="group__DRV__ENETPHY.html#ga9535e9ca77ebdba36a29c48ee1481bf5">EnetPhy_nudgeCodecClock</a>(<a class="code" href="group__DRV__ENETPHY.html#ga321b990b312722b35a86cf9d09be4e48">EnetPhy_Handle</a> hPhy, int8_t nudgeValue);</div>
+<div class="line"><a name="l01196"></a><span class="lineno"> 1196</span>&#160;<span class="comment">/* ========================================================================== */</span></div>
+<div class="line"><a name="l01197"></a><span class="lineno"> 1197</span>&#160;<span class="comment">/*                        Deprecated Function Declarations                    */</span></div>
+<div class="line"><a name="l01198"></a><span class="lineno"> 1198</span>&#160;<span class="comment">/* ========================================================================== */</span></div>
+<div class="line"><a name="l01199"></a><span class="lineno"> 1199</span>&#160; </div>
+<div class="line"><a name="l01200"></a><span class="lineno"> 1200</span>&#160;<span class="comment">/* None */</span></div>
+<div class="line"><a name="l01201"></a><span class="lineno"> 1201</span>&#160; </div>
+<div class="line"><a name="l01202"></a><span class="lineno"> 1202</span>&#160;<span class="comment">/* ========================================================================== */</span></div>
+<div class="line"><a name="l01203"></a><span class="lineno"> 1203</span>&#160;<span class="comment">/*                       Static Function Definitions                          */</span></div>
+<div class="line"><a name="l01204"></a><span class="lineno"> 1204</span>&#160;<span class="comment">/* ========================================================================== */</span></div>
+<div class="line"><a name="l01205"></a><span class="lineno"> 1205</span>&#160; </div>
+<div class="line"><a name="l01206"></a><span class="lineno"> 1206</span>&#160;<span class="comment">/* None */</span></div>
+<div class="line"><a name="l01207"></a><span class="lineno"> 1207</span>&#160; </div>
+<div class="line"><a name="l01208"></a><span class="lineno"> 1208</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l01209"></a><span class="lineno"> 1209</span>&#160;}</div>
+<div class="line"><a name="l01210"></a><span class="lineno"> 1210</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01211"></a><span class="lineno"> 1211</span>&#160; </div>
+<div class="line"><a name="l01212"></a><span class="lineno"> 1212</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ENETPHY_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l01213"></a><span class="lineno"> 1213</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructEnetPhy__State_html_a35921dba6384be1f92b8f4ea6be4310a"><div class="ttname"><a href="structEnetPhy__State.html#a35921dba6384be1f92b8f4ea6be4310a">EnetPhy_State::enableMdix</a></div><div class="ttdeci">bool enableMdix</div><div class="ttdef"><b>Definition:</b> enetphy.h:616</div></div>
@@ -629,6 +633,7 @@ $(document).ready(function(){initNavTree('enetphy_8h_source.html',''); initResiz
 <div class="ttc" id="astructEnetPhy__State_html_ace82b4fdcdd6dff56479412c9f6323d3"><div class="ttname"><a href="structEnetPhy__State.html#ace82b4fdcdd6dff56479412c9f6323d3">EnetPhy_State::speed</a></div><div class="ttdeci">EnetPhy_Speed speed</div><div class="ttdef"><b>Definition:</b> enetphy.h:580</div></div>
 <div class="ttc" id="agroup__DRV__ENETPHY_html_ga67859143637d0b09b8d3249774c1c002"><div class="ttname"><a href="group__DRV__ENETPHY.html#ga67859143637d0b09b8d3249774c1c002">EnetPhy_getLinkCfg</a></div><div class="ttdeci">int32_t EnetPhy_getLinkCfg(EnetPhy_Handle hPhy, EnetPhy_LinkCfg *linkCfg)</div><div class="ttdoc">Get link configuration.</div></div>
 <div class="ttc" id="agroup__DRV__ENETPHY_html_gaffc3fd5abf62e9d2b0ff41869b2622ec"><div class="ttname"><a href="group__DRV__ENETPHY.html#gaffc3fd5abf62e9d2b0ff41869b2622ec">EnetPhy_readC45Reg</a></div><div class="ttdeci">int32_t EnetPhy_readC45Reg(EnetPhy_Handle hPhy, uint8_t mmd, uint32_t reg, uint16_t *val)</div><div class="ttdoc">Read PHY register using Clause-45 frame.</div></div>
+<div class="ttc" id="agroup__DRV__ENETPHY_html_gab3ff4a61a3baece654a738afa369cd4a"><div class="ttname"><a href="group__DRV__ENETPHY.html#gab3ff4a61a3baece654a738afa369cd4a">EnetPhy_configMediaClock</a></div><div class="ttdeci">int32_t EnetPhy_configMediaClock(EnetPhy_Handle hPhy, bool isMaster, uint8_t *streamIDMatchValue, bool enTrigOut)</div><div class="ttdoc">config Media Clock</div></div>
 <div class="ttc" id="agroup__DRV__ENETPHY_html_gaf95e72866cee60c328592b4fc3a95943"><div class="ttname"><a href="group__DRV__ENETPHY.html#gaf95e72866cee60c328592b4fc3a95943">EnetPhy_rmwExtReg</a></div><div class="ttdeci">int32_t EnetPhy_rmwExtReg(EnetPhy_Handle hPhy, uint32_t reg, uint16_t mask, uint16_t val)</div><div class="ttdoc">Read-modify-write PHY extended register.</div></div>
 <div class="ttc" id="agroup__DRV__ENETPHY_html_ga5b7e4026319c8138985fe4801f26bc43"><div class="ttname"><a href="group__DRV__ENETPHY.html#ga5b7e4026319c8138985fe4801f26bc43">EnetPhy_writeReg</a></div><div class="ttdeci">int32_t EnetPhy_writeReg(void *pArgs, uint32_t reg, uint16_t val)</div><div class="ttdoc">Write PHY register.</div></div>
 <div class="ttc" id="agroup__DRV__ENETPHY_html_ga86d2852ee8d820639c56aa26104965fc"><div class="ttname"><a href="group__DRV__ENETPHY.html#ga86d2852ee8d820639c56aa26104965fc">EnetPhy_printRegs</a></div><div class="ttdeci">void EnetPhy_printRegs(EnetPhy_Handle hPhy)</div><div class="ttdoc">Print all PHY registers.</div></div>
@@ -731,6 +736,7 @@ $(document).ready(function(){initNavTree('enetphy_8h_source.html',''); initResiz
 <div class="ttc" id="agroup__DRV__ENETPHY_html_gaf3c210740d0f86ebaee58dafeaf00ae7"><div class="ttname"><a href="group__DRV__ENETPHY.html#gaf3c210740d0f86ebaee58dafeaf00ae7">EnetPhy_Magic</a></div><div class="ttdeci">EnetPhy_Magic</div><div class="ttdoc">EnetPhy driver magic value, used to indicate if driver is open or not.</div><div class="ttdef"><b>Definition:</b> enetphy.h:206</div></div>
 <div class="ttc" id="agroup__DRV__ENETPHY_html_gaa1d96cf32f75f046e6c14d4296ba23ab"><div class="ttname"><a href="group__DRV__ENETPHY.html#gaa1d96cf32f75f046e6c14d4296ba23ab">Mdio_Obj</a></div><div class="ttdeci">struct Mdio_Obj_s Mdio_Obj</div><div class="ttdef"><b>Definition:</b> enetphy.h:200</div></div>
 <div class="ttc" id="astructEnetPhy__State_html_a39b049fcdfea083c6cdbcfa3cba7ace7"><div class="ttname"><a href="structEnetPhy__State.html#a39b049fcdfea083c6cdbcfa3cba7ace7">EnetPhy_State::timeout</a></div><div class="ttdeci">uint32_t timeout</div><div class="ttdef"><b>Definition:</b> enetphy.h:586</div></div>
+<div class="ttc" id="agroup__DRV__ENETPHY_html_ga9535e9ca77ebdba36a29c48ee1481bf5"><div class="ttname"><a href="group__DRV__ENETPHY.html#ga9535e9ca77ebdba36a29c48ee1481bf5">EnetPhy_nudgeCodecClock</a></div><div class="ttdeci">int32_t EnetPhy_nudgeCodecClock(EnetPhy_Handle hPhy, int8_t nudgeValue)</div><div class="ttdoc">Nudge Codec Clock.</div></div>
 <div class="ttc" id="agroup__DRV__ENETPHY_html_ga6f49b6a8f4260ed3817279c73fcdd53e"><div class="ttname"><a href="group__DRV__ENETPHY.html#ga6f49b6a8f4260ed3817279c73fcdd53e">EnetPhy_adjPtpPhase</a></div><div class="ttdeci">int32_t EnetPhy_adjPtpPhase(EnetPhy_Handle hPhy, int64_t offset)</div><div class="ttdoc">Adjust PHY PTP clock phase.</div></div>
 <div class="ttc" id="agroup__DRV__ENETPHY_html_ga4b2bc2f18084d53342a5adfb3003af7d"><div class="ttname"><a href="group__DRV__ENETPHY.html#ga4b2bc2f18084d53342a5adfb3003af7d">EnetPhy_LinkStatus</a></div><div class="ttdeci">EnetPhy_LinkStatus</div><div class="ttdoc">PHY link status.</div><div class="ttdef"><b>Definition:</b> enetphy.h:290</div></div>
 <!-- HTML footer for doxygen 1.8.11-->

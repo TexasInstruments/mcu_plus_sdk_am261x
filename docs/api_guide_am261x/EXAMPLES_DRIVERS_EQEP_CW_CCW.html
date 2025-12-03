@@ -92,30 +92,30 @@ $(document).ready(function(){initNavTree('EXAMPLES_DRIVERS_EQEP_CW_CCW.html','')
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#autotoc_md2357">Introduction</a><ul><li class="level2"><a href="#autotoc_md2358">Example Description</a></li>
-<li class="level2"><a href="#autotoc_md2359">Configuration Details</a></li>
+<ul><li class="level1"><a href="#autotoc_md2391">Introduction</a><ul><li class="level2"><a href="#autotoc_md2392">Example Description</a></li>
+<li class="level2"><a href="#autotoc_md2393">Configuration Details</a></li>
 </ul>
 </li>
-<li class="level1"><a href="#autotoc_md2360">External Connections</a><ul><li class="level2"><a href="#autotoc_md2361">AM261x-SOM</a></li>
-<li class="level2"><a href="#autotoc_md2362">AM261x-LP</a></li>
+<li class="level1"><a href="#autotoc_md2394">External Connections</a><ul><li class="level2"><a href="#autotoc_md2395">AM261x-SOM</a></li>
+<li class="level2"><a href="#autotoc_md2396">AM261x-LP</a></li>
 </ul>
 </li>
-<li class="level1"><a href="#autotoc_md2363">Watch Variables</a></li>
-<li class="level1"><a href="#autotoc_md2364">Supported Combinations</a></li>
-<li class="level1"><a href="#autotoc_md2365">Steps to Run the Example</a></li>
-<li class="level1"><a href="#autotoc_md2366">Sample Output</a></li>
-<li class="level1"><a href="#autotoc_md2367">See Also</a></li>
+<li class="level1"><a href="#autotoc_md2397">Watch Variables</a></li>
+<li class="level1"><a href="#autotoc_md2398">Supported Combinations</a></li>
+<li class="level1"><a href="#autotoc_md2399">Steps to Run the Example</a></li>
+<li class="level1"><a href="#autotoc_md2400">Sample Output</a></li>
+<li class="level1"><a href="#autotoc_md2401">See Also</a></li>
 </ul>
 </div>
 <div class="textblock"><p><a class="anchor" id="md_examples_drivers_eqep_cw_ccw"></a></p>
-<h1><a class="anchor" id="autotoc_md2357"></a>
+<h1><a class="anchor" id="autotoc_md2391"></a>
 Introduction</h1>
 <p>This example demonstrates the use of eQEP (Enhanced Quadrature Encoder Pulse) module to measure position, direction, frequency and speed from CW/CCW input pulses. The example emulates encoder signals using GPIO outputs and timer-based interrupts.</p>
 <p> <style>div.image img[src="am26x_eqep_cw_ccw_input.png"]{ width:60%}</style> </p><div class="image">
 <img src="am26x_eqep_cw_ccw_input.png" alt=""/>
 <div class="caption">
 EQEP CW/CCW Input pulses, Index Pulse visible at count 0</div></div>
-<h2><a class="anchor" id="autotoc_md2358"></a>
+<h2><a class="anchor" id="autotoc_md2392"></a>
 Example Description</h2>
 <p>The example configures:</p><ul>
 <li>Two GPIO outputs to generate CW and CCW pulses that emulate encoder signals</li>
@@ -131,7 +131,7 @@ Example Description</h2>
 <li>Speed calculation in RPM</li>
 <li>QMA error detection</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md2359"></a>
+<h2><a class="anchor" id="autotoc_md2393"></a>
 Configuration Details</h2>
 <ul>
 <li>Encoder resolution: 1000 counts/revolution</li>
@@ -140,30 +140,30 @@ Configuration Details</h2>
 <li>Index pulse generated using simulated count at pos=0</li>
 <li>Unit timeout period: 10ms</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md2360"></a>
+<h1><a class="anchor" id="autotoc_md2394"></a>
 External Connections</h1>
 <p>The following GPIO pins can be monitored with an oscilloscope to view the generated encoder signals:</p>
-<h2><a class="anchor" id="autotoc_md2361"></a>
+<h2><a class="anchor" id="autotoc_md2395"></a>
 AM261x-SOM</h2>
 <ul>
 <li>GPIO49: eQEP Phase A signal</li>
 <li>GPIO50: eQEP Phase B signal</li>
 <li>GPIO48: eQEP Index Signal</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md2362"></a>
+<h2><a class="anchor" id="autotoc_md2396"></a>
 AM261x-LP</h2>
 <ul>
 <li>GPIO49/J4.38: eQEP Phase A signal</li>
 <li>GPIO50/J4.37: eQEP Phase B signal</li>
 <li>GPIO48/J4.36: eQEP Index Signal</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md2363"></a>
+<h1><a class="anchor" id="autotoc_md2397"></a>
 Watch Variables</h1>
 <p>The following variables can be monitored by pausing the program to observe the eQEP measurements:</p>
 <ul>
 <li>gEncoderState: Global structure for all calculations</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md2364"></a>
+<h1><a class="anchor" id="autotoc_md2398"></a>
 Supported Combinations</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -177,7 +177,7 @@ Supported Combinations</h1>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">Example folder  </td><td class="markdownTableBodyNone">examples/drivers/eqep/eqep_cw_ccw   </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md2365"></a>
+<h1><a class="anchor" id="autotoc_md2399"></a>
 Steps to Run the Example</h1>
 <ol type="1">
 <li>Import and build the project for your target configuration</li>
@@ -191,7 +191,7 @@ Steps to Run the Example</h1>
 </ul>
 </li>
 </ol>
-<h1><a class="anchor" id="autotoc_md2366"></a>
+<h1><a class="anchor" id="autotoc_md2400"></a>
 Sample Output</h1>
 <p>The example will display position, direction, frequency and speed measurements via UART:</p>
 <div class="fragment"><div class="line">EQEP Position Speed Test Started ...</div>
@@ -201,7 +201,7 @@ Sample Output</h1>
 <div class="line">  Speed: 150.00 RPM</div>
 <div class="line">  Direction: Counter-clockwise</div>
 <div class="line">All tests passed successfully!</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md2367"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md2401"></a>
 See Also</h1>
 <ul>
 <li><a class="el" href="DRIVERS_EQEP_PAGE.html">EQEP</a></li>

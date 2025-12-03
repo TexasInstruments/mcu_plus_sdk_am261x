@@ -1,22 +1,22 @@
 var SECURITY_PAGE =
 [
-    [ "Introduction", "SECURITY_PAGE.html#autotoc_md1042", [
-      [ "Getting started", "SECURITY_PAGE.html#autotoc_md1043", [
-        [ "Bootloader_socLoadHsmRtFw", "SECURITY_PAGE.html#autotoc_md1044", [
+    [ "Introduction", "SECURITY_PAGE.html#autotoc_md1044", [
+      [ "Getting started", "SECURITY_PAGE.html#autotoc_md1045", [
+        [ "Bootloader_socLoadHsmRtFw", "SECURITY_PAGE.html#autotoc_md1046", [
           [ "HSMRt Firewall Configurations", "SECURITY_PAGE.html#SECURITY_HSFS_BOOTTIME_FIREWALL", null ]
         ] ],
-        [ "Resources available", "SECURITY_PAGE.html#autotoc_md1045", null ],
-        [ "Services", "SECURITY_PAGE.html#autotoc_md1046", null ],
-        [ "Modules", "SECURITY_PAGE.html#autotoc_md1047", null ]
+        [ "Resources available", "SECURITY_PAGE.html#autotoc_md1047", null ],
+        [ "Services", "SECURITY_PAGE.html#autotoc_md1048", null ],
+        [ "Modules", "SECURITY_PAGE.html#autotoc_md1049", null ]
       ] ]
     ] ],
     [ "HSM client", "DRIVERS_HSMCLIENT_PAGE.html", [
-      [ "Introduction", "DRIVERS_HSMCLIENT_PAGE.html#autotoc_md1075", null ],
-      [ "MCU+SDK v10.02.00 Supported Services", "DRIVERS_HSMCLIENT_PAGE.html#autotoc_md1076", null ],
-      [ "HSM Client message format.", "DRIVERS_HSMCLIENT_PAGE.html#autotoc_md1077", null ],
-      [ "HSM client Initialization.", "DRIVERS_HSMCLIENT_PAGE.html#autotoc_md1079", null ],
-      [ "HSM Client generic service flow.", "DRIVERS_HSMCLIENT_PAGE.html#autotoc_md1080", null ],
-      [ "HSM Client Load TIFS-MCU API and BootNotify message.", "DRIVERS_HSMCLIENT_PAGE.html#autotoc_md1081", null ],
+      [ "Introduction", "DRIVERS_HSMCLIENT_PAGE.html#autotoc_md1077", null ],
+      [ "MCU+SDK v10.02.00 Supported Services", "DRIVERS_HSMCLIENT_PAGE.html#autotoc_md1078", null ],
+      [ "HSM Client message format.", "DRIVERS_HSMCLIENT_PAGE.html#autotoc_md1079", null ],
+      [ "HSM client Initialization.", "DRIVERS_HSMCLIENT_PAGE.html#autotoc_md1081", null ],
+      [ "HSM Client generic service flow.", "DRIVERS_HSMCLIENT_PAGE.html#autotoc_md1082", null ],
+      [ "HSM Client Load TIFS-MCU API and BootNotify message.", "DRIVERS_HSMCLIENT_PAGE.html#autotoc_md1083", null ],
       [ "HSM Client GetVersion Service.", "DRIVERS_HSMCLIENT_PAGE.html#DRIVERS_HSMCLIENT_GET_VERSION", null ],
       [ "HSM Client GetUID Service.", "DRIVERS_HSMCLIENT_PAGE.html#DRIVERS_HSMCLIENT_GET_UID", null ],
       [ "HSM Client SetFirewall Service.", "DRIVERS_HSMCLIENT_PAGE.html#DRIVERS_HSMCLIENT_SET_FIREWALL", null ],
@@ -38,7 +38,7 @@ var SECURITY_PAGE =
       [ "HSM Client Read OTFA Region Configuration Service", "DRIVERS_HSMCLIENT_PAGE.html#DRIVERS_HSMCLIENT_readOTFARegions", null ],
       [ "HSM Client Verify RoT Switching Certificate", "DRIVERS_HSMCLIENT_PAGE.html#DRIVERS_HSMCLIENT_VerifyROTSwitchingCertificate", null ],
       [ "HSM Client Update Key Revision", "DRIVERS_HSMCLIENT_PAGE.html#DRIVERS_HSMCLIENT_UpdateKeyRevsion", null ],
-      [ "APIs", "DRIVERS_HSMCLIENT_PAGE.html#autotoc_md1084", null ]
+      [ "APIs", "DRIVERS_HSMCLIENT_PAGE.html#autotoc_md1086", null ]
     ] ],
     [ "DTHE", "DRIVERS_DTHE_PAGE.html", "DRIVERS_DTHE_PAGE" ]
 ];

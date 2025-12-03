@@ -58,6 +58,13 @@ const enet_cpsw_system_config = {
     collapsed:true,
     config: [
         {
+            name: "IsEthFw",
+            description: "Flag to indicate if this is an EthFw application.",
+            displayName: "Is EthFw Application",
+            default: false,
+            hidden: true,
+        },
+        {
             name: "McmEnable",
             description: "Flag to enable multi-client manager. Required for multi-core, multiple Enet client use cases",
             displayName: "Mcm Enable",
@@ -552,7 +559,7 @@ function validate(instance, report) {
                 report.logError("Both MAC ports in 'MAC PORT Config' should be enabled to support two NetIfs", instance);
             }
 
-            if ((instance.macOnlyEn_hostPort === false) || (instance.macOnlyEn_macPort1 === false) || (instance.macOnlyEn_macPort2 === false))
+            if ((instance.IsEthFw === false) && ((instance.macOnlyEn_hostPort === false) || (instance.macOnlyEn_macPort1 === false) || (instance.macOnlyEn_macPort2 === false)))
             {
                 report.logError("All Ports in 'ALE Config -> ALE Port Config -> MAC-only mode config' should be in MAC-only mode in case of two NetIfs", instance);
             }
@@ -716,51 +723,69 @@ function getEnetCoreIntNumPrefix() {
 
 }
 
-function getEnetResPartInfoNumCores() {
-    let resPartInfo = getEnetResPartInfo();
+function getEnetResPartInfoNumCores(instance) {
+    let resPartInfo = getEnetResPartInfo(instance);
     return resPartInfo.numCores;
 }
 
-function getEnetCoreResInfoCoreId(idx) {
-    let resPartInfo = getEnetResPartInfo();
+function getEnetCoreResInfoCoreId(instance, idx) {
+    let resPartInfo = getEnetResPartInfo(instance);
     return resPartInfo.coreResInfo[idx].coreId;
 }
 
-function getEnetCoreResInfoNumRxCh(idx) {
-    let resPartInfo = getEnetResPartInfo();
+function getEnetCoreResInfoNumRxCh(instance, idx) {
+    let resPartInfo = getEnetResPartInfo(instance);
     return resPartInfo.coreResInfo[idx].numRxCh;
 }
 
-function getEnetCoreResInfoNumRxFlows(idx) {
-    let resPartInfo = getEnetResPartInfo();
+function getEnetCoreResInfoNumRxFlows(instance, idx) {
+    let resPartInfo = getEnetResPartInfo(instance);
     return resPartInfo.coreResInfo[idx].numRxFlows;
 }
 
-function getEnetCoreResInfoNumMac(idx) {
-    let resPartInfo = getEnetResPartInfo();
+function getEnetCoreResInfoNumMac(instance, idx) {
+    let resPartInfo = getEnetResPartInfo(instance);
     return resPartInfo.coreResInfo[idx].numMacAddress;
 }
 
-function getEnetCoreResInfoNumHwPush(idx) {
-    let resPartInfo = getEnetResPartInfo();
+function getEnetCoreResInfoNumHwPush(instance, idx) {
+    let resPartInfo = getEnetResPartInfo(instance);
     return resPartInfo.coreResInfo[idx].numHwPush;
 }
 
-function getEnetResPartInfoIsStatTxChAlloc() {
-    let resPartInfo = getEnetResPartInfo();
+function getEnetResPartInfoIsStatTxChAlloc(instance) {
+    let resPartInfo = getEnetResPartInfo(instance);
     return resPartInfo.isStaticTxChanAllocated;
 }
 
-function getEnetResPartInfo() {
+function getEnetResPartInfoNumTxCh(instance, idx) {
+    let resPartInfo = getEnetResPartInfo(instance);
+    return resPartInfo.coreResInfo[idx].numTxCh;
+}
+
+function getEnetResPartInfo(instance) {
+    let socName = common.getSocName();
     const ResPartInfoMap = new Map(
                                [
                                  ['am62x', {numCores: 1, coreResInfo: [{txCh: {}, numRxCh: 1, numRxFlows: 1, numMacAddress: 4, numHwPush: 0}], isStaticTxChanAllocated: false}],
-                                 ['am62dx',{numCores: 3, coreResInfo: [{coreId: 'CSL_CORE_ID_R5FSS0_0', txCh: {}, numRxCh: 1, numRxFlows: 4, numMacAddress: 4, numHwPush: 0},{coreId: 'CSL_CORE_ID_A53SS0_0', txCh: {}, numRxCh: 1, numRxFlows: 1, numMacAddress: 1, numHwPush: 0},{coreId: 'CSL_CORE_ID_MCU_R5FSS0_0', txCh: {}, numRxCh: 1, numRxFlows: 3, numMacAddress: 2, numHwPush: 0}], isStaticTxChanAllocated: false}],
+                                 ['am62dx',{numCores: 1, coreResInfo: [{txCh: {}, numRxCh: 1, numRxFlows: 1, numMacAddress: 4, numHwPush: 0}], isStaticTxChanAllocated: false}],
                                  ['am62ax',{numCores: 1, coreResInfo: [{txCh: {}, numRxCh: 1, numRxFlows: 1, numMacAddress: 4, numHwPush: 0}], isStaticTxChanAllocated: false}],
-                                 ['am62px',{numCores: 3, coreResInfo: [{coreId: 'CSL_CORE_ID_WKUP_R5FSS0_0', txCh: {}, numRxCh: 1, numRxFlows: 4, numMacAddress: 4, numHwPush: 0},{coreId: 'CSL_CORE_ID_A53SS0_0', txCh: {}, numRxCh: 1, numRxFlows: 1, numMacAddress: 1, numHwPush: 0},{coreId: 'CSL_CORE_ID_MCU_R5FSS0_0', txCh: {}, numRxCh: 1, numRxFlows: 3, numMacAddress: 1, numHwPush: 0}], isStaticTxChanAllocated: false}],
+                                 ['am62px',{numCores: 1, coreResInfo: [{txCh: {}, numRxCh: 1, numRxFlows: 4, numMacAddress: 4, numHwPush: 0}], isStaticTxChanAllocated: false}],
                                ],
-                             );
-    let instInfo =  ResPartInfoMap.get(common.getSocName());
+                            );
+    const EthfwResPartInfoMap = new Map(
+                               [
+                                 ['am62dx',{numCores: 3, coreResInfo: [{coreId: 'CSL_CORE_ID_R5FSS0_0',txCh: {}, numTxCh: 'ENET_SYSCFG_TX_CHANNELS_NUM', numRxCh: 1, numRxFlows: 5, numMacAddress: 4, numHwPush: 0},{coreId: 'CSL_CORE_ID_A53SS0_0', txCh: {}, numTxCh: 0, numRxCh: 0, numRxFlows: 0, numMacAddress: 0, numHwPush: 0}, {coreId: 'CSL_CORE_ID_MCU_R5FSS0_0', txCh: {}, numTxCh: 1, numRxCh: 1, numRxFlows: 3, numMacAddress: 2, numHwPush: 0}], isStaticTxChanAllocated: false}],
+                                 ['am62px',{numCores: 3, coreResInfo: [{coreId: 'CSL_CORE_ID_WKUP_R5FSS0_0', txCh: {}, numTxCh: 'ENET_SYSCFG_TX_CHANNELS_NUM', numRxCh: 1, numRxFlows: 4, numMacAddress: 4, numHwPush: 0},{coreId: 'CSL_CORE_ID_A53SS0_0', txCh: {}, numTxCh: 1, numRxCh: 1, numRxFlows: 1, numMacAddress: 1, numHwPush: 0},{coreId: 'CSL_CORE_ID_MCU_R5FSS0_0', txCh: {}, numRxCh: 1, numTxCh: 1, numRxFlows: 3, numMacAddress: 1, numHwPush: 0}], isStaticTxChanAllocated: false}],
+                               ],
+                            );
+
+    let instInfo = ResPartInfoMap.get(socName);
+    if ((socName == 'am62dx' || socName == 'am62px') && instance.IsEthFw == true)
+    {
+        instInfo = EthfwResPartInfoMap.get(socName);
+    }
+
     return instInfo;
 }
 
@@ -890,6 +915,7 @@ let enet_cpsw_module = {
     getEnetCoreResInfoNumMac,
     getEnetCoreResInfoNumHwPush,
     getEnetResPartInfoIsStatTxChAlloc,
+    getEnetResPartInfoNumTxCh,
     validate: validate,
 };
 

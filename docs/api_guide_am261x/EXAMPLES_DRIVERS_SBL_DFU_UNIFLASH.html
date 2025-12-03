@@ -92,16 +92,16 @@ $(document).ready(function(){initNavTree('EXAMPLES_DRIVERS_SBL_DFU_UNIFLASH.html
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#autotoc_md2518">Introduction</a></li>
+<ul><li class="level1"><a href="#autotoc_md2552">Introduction</a></li>
 <li class="level1"><a href="#EXAMPLES_DRIVERS_SBL_DFU_UNIFLASH_COMBOS">Supported Combinations</a></li>
-<li class="level1"><a href="#autotoc_md2519">Steps to Run the Example</a></li>
-<li class="level1"><a href="#autotoc_md2520">Flashing Failure</a></li>
-<li class="level1"><a href="#autotoc_md2521">See Also</a></li>
-<li class="level1"><a href="#autotoc_md2522">Sample Output</a></li>
+<li class="level1"><a href="#autotoc_md2553">Steps to Run the Example</a></li>
+<li class="level1"><a href="#autotoc_md2554">Flashing Failure</a></li>
+<li class="level1"><a href="#autotoc_md2555">See Also</a></li>
+<li class="level1"><a href="#autotoc_md2556">Sample Output</a></li>
 </ul>
 </div>
 <div class="textblock"><p><a class="anchor" id="md_examples_drivers_sbl_dfu_uniflash"></a></p>
-<h1><a class="anchor" id="autotoc_md2518"></a>
+<h1><a class="anchor" id="autotoc_md2552"></a>
 Introduction</h1>
 <p>This is a flash-writer application which works in conjunction with the <b>usb_dfu_uniflash.py</b> python script mentioned in <a class="el" href="TOOLS_FLASH.html">Flashing Tools</a>. Although it is not strictly not a bootloader, it uses bootloader APIs to do basic SOC initialization required to be able to flash binaries to the OSPI flash. Like other SBLs, this is also booted by the ROM bootloader. It is analogous to <a class="el" href="EXAMPLES_DRIVERS_SBL_UART_UNIFLASH.html">SBL UART Flash Writer</a></p>
 <ul>
@@ -128,14 +128,14 @@ Introduction</h1>
 </ul>
 <h1><a class="anchor" id="EXAMPLES_DRIVERS_SBL_DFU_UNIFLASH_COMBOS"></a>
 Supported Combinations</h1>
-<h1><a class="anchor" id="autotoc_md2519"></a>
+<h1><a class="anchor" id="autotoc_md2553"></a>
 Steps to Run the Example</h1>
 <p>Since this is mainly a flash-writer application, <b>this is sent via the USB DFU</b> unlike other examples which are usually loaded with CCS. Nevertheless, you can build this example like you do for the others using makefile or build it via CCS by importing as a project.</p>
 <ul>
 <li><b>When using CCS projects to build</b>, import the CCS project for the required combination and build it using the CCS project menu (see <a class="el" href="CCS_PROJECTS_PAGE.html">Using SDK with CCS Projects</a>).</li>
 <li><b>When using makefiles to build</b>, note the required combination and build using make command (see <a class="el" href="MAKEFILE_BUILD_PAGE.html">Using SDK with Makefiles</a>)</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md2520"></a>
+<h1><a class="anchor" id="autotoc_md2554"></a>
 Flashing Failure</h1>
 <p>If the flashing fails, the error message will give a hint as to why it failed. Some common error messages, reasons and potential solutions are listed below.</p>
 <table class="doxtable">
@@ -148,13 +148,13 @@ Flashing Failure</h1>
 <tr>
 <td>DFU Timeout while transfering large application image (LIBUSB_ERROR_TIMEOUT) </td><td>DFU-UTIL tool timed out </td><td>Reduce the size of application image if the dfu-util tool is facing time-out issues due to large appimage/mcelf OR create a custom dfu-util tool with increased timeout which suits your requirements.  </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md2521"></a>
+<h1><a class="anchor" id="autotoc_md2555"></a>
 See Also</h1>
 <p><a class="el" href="USB_DEVICE_DRIVER.html">USB</a></p>
 <p><a class="el" href="DRIVERS_BOOTLOADER_PAGE.html">BOOTLOADER</a></p>
 <p><a class="el" href="TOOLS_FLASH.html#TOOLS_FLASH_DFU_UNIFLASH">USB DFU Uniflash</a>.</p>
 <p><a class="el" href="TOOLS_FLASH.html">Flashing Tools</a></p>
-<h1><a class="anchor" id="autotoc_md2522"></a>
+<h1><a class="anchor" id="autotoc_md2556"></a>
 Sample Output</h1>
 <p>Since this SBL receives the appimage and other files over USB protocol, it doesn't print anything to the console. </p>
 </div></div><!-- contents -->

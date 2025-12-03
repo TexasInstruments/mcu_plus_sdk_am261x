@@ -182,5 +182,7 @@ var group__DRV__ENETPHY =
     [ "EnetPhy_tickDriver", "group__DRV__ENETPHY.html#ga62ccd584b1844929926fb9554c95683d", null ],
     [ "EnetPhy_enableEventCapture", "group__DRV__ENETPHY.html#ga0dc85abb0de79855f3f8e3b26f48ffb6", null ],
     [ "EnetPhy_enableTriggerOutput", "group__DRV__ENETPHY.html#ga65171003450b027831a898c7c2dfe693", null ],
-    [ "EnetPhy_getEventTs", "group__DRV__ENETPHY.html#ga6a5b68a158188d891346fb6b74096b31", null ]
+    [ "EnetPhy_getEventTs", "group__DRV__ENETPHY.html#ga6a5b68a158188d891346fb6b74096b31", null ],
+    [ "EnetPhy_configMediaClock", "group__DRV__ENETPHY.html#gab3ff4a61a3baece654a738afa369cd4a", null ],
+    [ "EnetPhy_nudgeCodecClock", "group__DRV__ENETPHY.html#ga9535e9ca77ebdba36a29c48ee1481bf5", null ]
 ];

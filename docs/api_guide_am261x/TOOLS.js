@@ -1,9 +1,9 @@
 var TOOLS =
 [
-    [ "Introduction", "TOOLS.html#autotoc_md1120", null ],
+    [ "Introduction", "TOOLS.html#autotoc_md1122", null ],
     [ "Booting Tools", "TOOLS_BOOT.html", [
-      [ "Introduction", "TOOLS_BOOT.html#autotoc_md1145", null ],
-      [ "Important files and folders", "TOOLS_BOOT.html#autotoc_md1146", null ],
+      [ "Introduction", "TOOLS_BOOT.html#autotoc_md1147", null ],
+      [ "Important files and folders", "TOOLS_BOOT.html#autotoc_md1148", null ],
       [ "MCELF Image Gen", "TOOLS_BOOT.html#MCELF_GEN_TOOL", null ],
       [ "UART Bootloader Python Script", "TOOLS_BOOT.html#UART_BOOTLOADER_PYTHON_SCRIPT", null ],
       [ "USB Bootloader Python Script", "TOOLS_BOOT.html#USB_BOOTLOADER", null ],
@@ -12,109 +12,109 @@ var TOOLS =
     ] ],
     [ "Security Related Tools", "TOOLS_SECURITY.html", [
       [ "Signing Scripts", "TOOLS_SECURITY.html#TOOLS_BOOT_SIGNING", [
-        [ "Signing SBL", "TOOLS_SECURITY.html#autotoc_md1147", [
-          [ "Access Protection Scheme", "DRIVERS_DTHE_AES_PAGE.html#autotoc_md1054", null ],
-          [ "AES", "DRIVERS_DTHE_AES_PAGE.html#autotoc_md1055", [
-            [ "AES-ECB", "DRIVERS_DTHE_AES_PAGE.html#autotoc_md1056", null ],
-            [ "AES-CBC", "DRIVERS_DTHE_AES_PAGE.html#autotoc_md1057", null ],
-            [ "AES-CTR", "DRIVERS_DTHE_AES_PAGE.html#autotoc_md1058", null ],
-            [ "AES-CFB", "DRIVERS_DTHE_AES_PAGE.html#autotoc_md1059", null ],
-            [ "AES-CMAC", "DRIVERS_DTHE_AES_PAGE.html#autotoc_md1060", null ],
-            [ "AES-GCM", "DRIVERS_DTHE_AES_PAGE.html#autotoc_md1061", null ],
-            [ "AES-XTS", "DRIVERS_DTHE_AES_PAGE.html#autotoc_md1062", null ]
+        [ "Signing SBL", "TOOLS_SECURITY.html#autotoc_md1149", [
+          [ "Access Protection Scheme", "DRIVERS_DTHE_AES_PAGE.html#autotoc_md1056", null ],
+          [ "AES", "DRIVERS_DTHE_AES_PAGE.html#autotoc_md1057", [
+            [ "AES-ECB", "DRIVERS_DTHE_AES_PAGE.html#autotoc_md1058", null ],
+            [ "AES-CBC", "DRIVERS_DTHE_AES_PAGE.html#autotoc_md1059", null ],
+            [ "AES-CTR", "DRIVERS_DTHE_AES_PAGE.html#autotoc_md1060", null ],
+            [ "AES-CFB", "DRIVERS_DTHE_AES_PAGE.html#autotoc_md1061", null ],
+            [ "AES-CMAC", "DRIVERS_DTHE_AES_PAGE.html#autotoc_md1062", null ],
+            [ "AES-GCM", "DRIVERS_DTHE_AES_PAGE.html#autotoc_md1063", null ],
+            [ "AES-XTS", "DRIVERS_DTHE_AES_PAGE.html#autotoc_md1064", null ]
           ] ],
-          [ "API Sequence for ECB, CBC, CTR, CMAC Algorithms (Single Shot Mechanism)", "DRIVERS_DTHE_AES_PAGE.html#autotoc_md1063", null ],
-          [ "API Sequence for ECB, CBC, CTR, CMAC Algorithms (Multi Shot Mechanism)", "DRIVERS_DTHE_AES_PAGE.html#autotoc_md1064", null ],
-          [ "API Sequence for GCM Algorithm (Single Shot Mechanism)", "DRIVERS_DTHE_AES_PAGE.html#autotoc_md1065", null ],
-          [ "API Sequence for GCM Algorithm (Multi Shot Mechanism)", "DRIVERS_DTHE_AES_PAGE.html#autotoc_md1066", null ],
-          [ "API Sequence for XTS Algorithm (Single Shot Mechanism)", "DRIVERS_DTHE_AES_PAGE.html#autotoc_md1067", null ],
-          [ "API Sequence for XTS Algorithm (Multi Shot Mechanism)", "DRIVERS_DTHE_AES_PAGE.html#autotoc_md1068", null ],
-          [ "Boot Information OID (1.3.6.1.4.1.294.1.1)", "TOOLS_SECURITY.html#autotoc_md1148", [
-            [ "Elements of the extension:", "TOOLS_SECURITY.html#autotoc_md1149", null ]
-          ] ],
-          [ "Image Integrity OID (1.3.6.1.4.1.294.1.2)", "TOOLS_SECURITY.html#autotoc_md1150", [
+          [ "API Sequence for ECB, CBC, CTR, CMAC Algorithms (Single Shot Mechanism)", "DRIVERS_DTHE_AES_PAGE.html#autotoc_md1065", null ],
+          [ "API Sequence for ECB, CBC, CTR, CMAC Algorithms (Multi Shot Mechanism)", "DRIVERS_DTHE_AES_PAGE.html#autotoc_md1066", null ],
+          [ "API Sequence for GCM Algorithm (Single Shot Mechanism)", "DRIVERS_DTHE_AES_PAGE.html#autotoc_md1067", null ],
+          [ "API Sequence for GCM Algorithm (Multi Shot Mechanism)", "DRIVERS_DTHE_AES_PAGE.html#autotoc_md1068", null ],
+          [ "API Sequence for XTS Algorithm (Single Shot Mechanism)", "DRIVERS_DTHE_AES_PAGE.html#autotoc_md1069", null ],
+          [ "API Sequence for XTS Algorithm (Multi Shot Mechanism)", "DRIVERS_DTHE_AES_PAGE.html#autotoc_md1070", null ],
+          [ "Boot Information OID (1.3.6.1.4.1.294.1.1)", "TOOLS_SECURITY.html#autotoc_md1150", [
             [ "Elements of the extension:", "TOOLS_SECURITY.html#autotoc_md1151", null ]
           ] ],
-          [ "Software Revision OID (1.3.6.1.4.1.294.1.3)", "TOOLS_SECURITY.html#autotoc_md1152", [
+          [ "Image Integrity OID (1.3.6.1.4.1.294.1.2)", "TOOLS_SECURITY.html#autotoc_md1152", [
             [ "Elements of the extension:", "TOOLS_SECURITY.html#autotoc_md1153", null ]
           ] ],
-          [ "Image Encryption OID (1.3.6.1.4.1.294.1.4)", "TOOLS_SECURITY.html#autotoc_md1154", [
+          [ "Software Revision OID (1.3.6.1.4.1.294.1.3)", "TOOLS_SECURITY.html#autotoc_md1154", [
             [ "Elements of the extension:", "TOOLS_SECURITY.html#autotoc_md1155", null ]
           ] ],
-          [ "Derivation OID (1.3.6.1.4.1.294.1.5)", "TOOLS_SECURITY.html#autotoc_md1156", [
+          [ "Image Encryption OID (1.3.6.1.4.1.294.1.4)", "TOOLS_SECURITY.html#autotoc_md1156", [
             [ "Elements of the extension:", "TOOLS_SECURITY.html#autotoc_md1157", null ]
           ] ],
-          [ "Debug OID (1.3.6.1.4.1.294.1.8)", "TOOLS_SECURITY.html#autotoc_md1158", [
-            [ "Elements of the extension:", "TOOLS_SECURITY.html#autotoc_md1159", null ],
-            [ "Elements of the extension:", "TOOLS_SECURITY.html#autotoc_md1160", null ]
+          [ "Derivation OID (1.3.6.1.4.1.294.1.5)", "TOOLS_SECURITY.html#autotoc_md1158", [
+            [ "Elements of the extension:", "TOOLS_SECURITY.html#autotoc_md1159", null ]
           ] ],
-          [ "Image Integrity OID (1.3.6.1.4.1.294.1.2)", "TOOLS_SECURITY.html#autotoc_md1161", [
+          [ "Debug OID (1.3.6.1.4.1.294.1.8)", "TOOLS_SECURITY.html#autotoc_md1160", [
+            [ "Elements of the extension:", "TOOLS_SECURITY.html#autotoc_md1161", null ],
             [ "Elements of the extension:", "TOOLS_SECURITY.html#autotoc_md1162", null ]
           ] ],
-          [ "Software Revision OID (1.3.6.1.4.1.294.1.3)", "TOOLS_SECURITY.html#autotoc_md1163", [
+          [ "Image Integrity OID (1.3.6.1.4.1.294.1.2)", "TOOLS_SECURITY.html#autotoc_md1163", [
             [ "Elements of the extension:", "TOOLS_SECURITY.html#autotoc_md1164", null ]
           ] ],
-          [ "Image Encryption OID (1.3.6.1.4.1.294.1.4)", "TOOLS_SECURITY.html#autotoc_md1165", [
+          [ "Software Revision OID (1.3.6.1.4.1.294.1.3)", "TOOLS_SECURITY.html#autotoc_md1165", [
             [ "Elements of the extension:", "TOOLS_SECURITY.html#autotoc_md1166", null ]
           ] ],
-          [ "Keyring Index OID (1.3.6.1.4.1.294.1.12)", "TOOLS_SECURITY.html#autotoc_md1167", [
+          [ "Image Encryption OID (1.3.6.1.4.1.294.1.4)", "TOOLS_SECURITY.html#autotoc_md1167", [
             [ "Elements of the extension:", "TOOLS_SECURITY.html#autotoc_md1168", null ]
+          ] ],
+          [ "Keyring Index OID (1.3.6.1.4.1.294.1.12)", "TOOLS_SECURITY.html#autotoc_md1169", [
+            [ "Elements of the extension:", "TOOLS_SECURITY.html#autotoc_md1170", null ]
           ] ]
         ] ],
-        [ "Application Signing", "TOOLS_SECURITY.html#autotoc_md1169", [
-          [ "Boot Information OID (1.3.6.1.4.1.294.1.1)", "TOOLS_SECURITY.html#autotoc_md1170", null ]
+        [ "Application Signing", "TOOLS_SECURITY.html#autotoc_md1171", [
+          [ "Boot Information OID (1.3.6.1.4.1.294.1.1)", "TOOLS_SECURITY.html#autotoc_md1172", null ]
         ] ]
       ] ],
       [ "Keyring Cert Generation Python Script", "TOOLS_SECURITY.html#KEYRING_CERT_GEN_PYTHON_SCRIPT", null ],
-      [ "Boot time calculator tool", "TOOLS_SECURITY.html#autotoc_md1171", null ]
+      [ "Boot time calculator tool", "TOOLS_SECURITY.html#autotoc_md1173", null ]
     ] ],
     [ "CCS Tools", "TOOLS_CCS.html", [
-      [ "Introduction", "TOOLS_CCS.html#autotoc_md1172", null ],
-      [ "Application loader", "TOOLS_CCS.html#autotoc_md1173", [
-        [ "Usage", "TOOLS_CCS.html#autotoc_md1174", null ]
+      [ "Introduction", "TOOLS_CCS.html#autotoc_md1174", null ],
+      [ "Application loader", "TOOLS_CCS.html#autotoc_md1175", [
+        [ "Usage", "TOOLS_CCS.html#autotoc_md1176", null ]
       ] ]
     ] ],
     [ "Flashing Tools", "TOOLS_FLASH.html", [
-      [ "Introduction", "TOOLS_FLASH.html#autotoc_md1121", null ],
+      [ "Introduction", "TOOLS_FLASH.html#autotoc_md1123", null ],
       [ "TI Uniflash", "TOOLS_FLASH.html#TOOLS_TI_UNIFLASH_TOOL", [
-        [ "JTAG Session", "TOOLS_FLASH.html#autotoc_md1122", null ],
-        [ "Serial (UART) Session", "TOOLS_FLASH.html#autotoc_md1123", null ]
+        [ "JTAG Session", "TOOLS_FLASH.html#autotoc_md1124", null ],
+        [ "Serial (UART) Session", "TOOLS_FLASH.html#autotoc_md1125", null ]
       ] ],
       [ "UART Uniflash", "TOOLS_FLASH.html#TOOLS_FLASH_UART_UNIFLASH", [
-        [ "Tool requirements on host PC", "TOOLS_FLASH.html#autotoc_md1124", null ],
-        [ "Important files and folders", "TOOLS_FLASH.html#autotoc_md1125", null ],
+        [ "Tool requirements on host PC", "TOOLS_FLASH.html#autotoc_md1126", null ],
+        [ "Important files and folders", "TOOLS_FLASH.html#autotoc_md1127", null ],
         [ "Basic steps to flash files", "TOOLS_FLASH.html#BASIC_STEPS_TO_FLASH_FILES", [
-          [ "Getting ready to flash", "TOOLS_FLASH.html#autotoc_md1126", null ],
-          [ "Flash configuration file", "TOOLS_FLASH.html#autotoc_md1127", null ],
-          [ "Flashing the files", "TOOLS_FLASH.html#autotoc_md1128", null ],
-          [ "Flash tool options", "TOOLS_FLASH.html#autotoc_md1129", null ]
+          [ "Getting ready to flash", "TOOLS_FLASH.html#autotoc_md1128", null ],
+          [ "Flash configuration file", "TOOLS_FLASH.html#autotoc_md1129", null ],
+          [ "Flashing the files", "TOOLS_FLASH.html#autotoc_md1130", null ],
+          [ "Flash tool options", "TOOLS_FLASH.html#autotoc_md1131", null ]
         ] ],
         [ "Flash tool error messages and solutions", "TOOLS_FLASH.html#TOOLS_FLASH_ERROR_MESSAGES", null ],
-        [ "Detailed sequence of steps that happen when flashing files", "TOOLS_FLASH.html#autotoc_md1130", null ],
+        [ "Detailed sequence of steps that happen when flashing files", "TOOLS_FLASH.html#autotoc_md1132", null ],
         [ "GUI for UART Uniflash (Experimental)", "TOOLS_FLASH.html#TOOLS_UART_UNIFLASH_GUI", [
-          [ "Pre-Requisites for UART Uniflash GUI", "TOOLS_FLASH.html#autotoc_md1131", null ]
+          [ "Pre-Requisites for UART Uniflash GUI", "TOOLS_FLASH.html#autotoc_md1133", null ]
         ] ],
-        [ "Using the UART Uniflash GUI", "TOOLS_FLASH.html#autotoc_md1132", null ],
-        [ "Important Notes and Common Pitfalls in UART Uniflash GUI", "TOOLS_FLASH.html#autotoc_md1133", null ]
+        [ "Using the UART Uniflash GUI", "TOOLS_FLASH.html#autotoc_md1134", null ],
+        [ "Important Notes and Common Pitfalls in UART Uniflash GUI", "TOOLS_FLASH.html#autotoc_md1135", null ]
       ] ],
       [ "USB DFU Uniflash", "TOOLS_FLASH.html#TOOLS_FLASH_DFU_UNIFLASH", [
-        [ "USB DFU bootflow using dfu based flash-writer.", "TOOLS_FLASH.html#autotoc_md1134", null ],
-        [ "Tool requirements on host PC", "TOOLS_FLASH.html#autotoc_md1135", null ],
-        [ "Important files and folders", "TOOLS_FLASH.html#autotoc_md1136", null ],
+        [ "USB DFU bootflow using dfu based flash-writer.", "TOOLS_FLASH.html#autotoc_md1136", null ],
+        [ "Tool requirements on host PC", "TOOLS_FLASH.html#autotoc_md1137", null ],
+        [ "Important files and folders", "TOOLS_FLASH.html#autotoc_md1138", null ],
         [ "Basic steps to flash files", "TOOLS_FLASH.html#BASIC_STEPS_TO_FLASH_FILES_DFU", [
-          [ "Flashing the files", "TOOLS_FLASH.html#autotoc_md1137", null ],
-          [ "Flash tool options", "TOOLS_FLASH.html#autotoc_md1138", null ]
+          [ "Flashing the files", "TOOLS_FLASH.html#autotoc_md1139", null ],
+          [ "Flash tool options", "TOOLS_FLASH.html#autotoc_md1140", null ]
         ] ],
-        [ "Detailed sequence of steps that happen when flashing files using usb_dfu_uniflash tool", "TOOLS_FLASH.html#autotoc_md1139", null ]
+        [ "Detailed sequence of steps that happen when flashing files using usb_dfu_uniflash tool", "TOOLS_FLASH.html#autotoc_md1141", null ]
       ] ],
       [ "JTAG Uniflash", "TOOLS_FLASH.html#TOOLS_FLASH_JTAG_UNIFLASH", [
-        [ "Sequence of steps that happen when flashing via JTAG", "TOOLS_FLASH.html#autotoc_md1140", null ],
-        [ "Important files and folders", "TOOLS_FLASH.html#autotoc_md1141", null ],
-        [ "Basic steps to flash files", "TOOLS_FLASH.html#autotoc_md1142", null ]
-      ] ],
-      [ "CAN Uniflash", "TOOLS_FLASH.html#TOOLS_FLASH_CAN_UNIFLASH", [
+        [ "Sequence of steps that happen when flashing via JTAG", "TOOLS_FLASH.html#autotoc_md1142", null ],
         [ "Important files and folders", "TOOLS_FLASH.html#autotoc_md1143", null ],
         [ "Basic steps to flash files", "TOOLS_FLASH.html#autotoc_md1144", null ]
+      ] ],
+      [ "CAN Uniflash", "TOOLS_FLASH.html#TOOLS_FLASH_CAN_UNIFLASH", [
+        [ "Important files and folders", "TOOLS_FLASH.html#autotoc_md1145", null ],
+        [ "Basic steps to flash files", "TOOLS_FLASH.html#autotoc_md1146", null ]
       ] ]
     ] ],
     [ "Smart Placement", "SMART_PLACEMENT.html", [

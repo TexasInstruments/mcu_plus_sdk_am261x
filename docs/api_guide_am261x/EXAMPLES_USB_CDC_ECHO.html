@@ -92,25 +92,25 @@ $(document).ready(function(){initNavTree('EXAMPLES_USB_CDC_ECHO.html',''); initR
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#autotoc_md3309">Introduction</a></li>
-<li class="level1"><a href="#autotoc_md3310">USB Logging Template Example</a></li>
+<ul><li class="level1"><a href="#autotoc_md3343">Introduction</a></li>
+<li class="level1"><a href="#autotoc_md3344">USB Logging Template Example</a></li>
 <li class="level1"><a href="#EXAMPLES_USB_CDC_ECHO_EXAMPLE_COMBOS">Supported Combinations</a></li>
-<li class="level1"><a href="#autotoc_md3311">Steps to Run the Example</a><ul><li class="level2"><a href="#autotoc_md3312">Build the example</a></li>
-<li class="level2"><a href="#autotoc_md3313">HW Setup</a><ul><li class="level3"><a href="#autotoc_md3314">AM261x-LP</a></li>
-<li class="level3"><a href="#autotoc_md3315">AM261X-SOM</a></li>
+<li class="level1"><a href="#autotoc_md3345">Steps to Run the Example</a><ul><li class="level2"><a href="#autotoc_md3346">Build the example</a></li>
+<li class="level2"><a href="#autotoc_md3347">HW Setup</a><ul><li class="level3"><a href="#autotoc_md3348">AM261x-LP</a></li>
+<li class="level3"><a href="#autotoc_md3349">AM261X-SOM</a></li>
 </ul>
 </li>
-<li class="level2"><a href="#autotoc_md3316">Run the example</a><ul><li class="level3"><a href="#autotoc_md3317">For Window 10</a></li>
-<li class="level3"><a href="#autotoc_md3318">For Linux</a></li>
+<li class="level2"><a href="#autotoc_md3350">Run the example</a><ul><li class="level3"><a href="#autotoc_md3351">For Window 10</a></li>
+<li class="level3"><a href="#autotoc_md3352">For Linux</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="level1"><a href="#autotoc_md3319">See Also</a></li>
+<li class="level1"><a href="#autotoc_md3353">See Also</a></li>
 </ul>
 </div>
 <div class="textblock"><p><a class="anchor" id="md_examples_usb_usb_cdc_echo_example"></a></p>
-<h1><a class="anchor" id="autotoc_md3309"></a>
+<h1><a class="anchor" id="autotoc_md3343"></a>
 Introduction</h1>
 <p>This example is a USB device CDC-ACM (Communication Device Class - Abstract Control Model) application based on USB CDC class from TinyUSB.</p>
 <p>The example does the below</p><ul>
@@ -118,7 +118,7 @@ Introduction</h1>
 <li>Create two virtual COM ports visible to a USB host.</li>
 <li>Any alphabetic input from the USB host will be echo-ed back in lower case on one COM port and in upper case in the other COM port.</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md3310"></a>
+<h1><a class="anchor" id="autotoc_md3344"></a>
 USB Logging Template Example</h1>
 <ul>
 <li>This example also demonstrates how to enable logging for USB using shared memory log feature.<ul>
@@ -147,17 +147,17 @@ Supported Combinations</h1>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">Example folder  </td><td class="markdownTableBodyNone">examples/usb/device/cdc_echo   </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md3311"></a>
+<h1><a class="anchor" id="autotoc_md3345"></a>
 Steps to Run the Example</h1>
-<h2><a class="anchor" id="autotoc_md3312"></a>
+<h2><a class="anchor" id="autotoc_md3346"></a>
 Build the example</h2>
 <ul>
 <li>When using CCS projects to build, import the CCS project for the required combination and build it using the CCS project menu (see <a class="el" href="CCS_PROJECTS_PAGE.html">Using SDK with CCS Projects</a>).</li>
 <li>When using makefiles to build, note the required combination and build using make command (see <a class="el" href="MAKEFILE_BUILD_PAGE.html">Using SDK with Makefiles</a>)</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md3313"></a>
+<h2><a class="anchor" id="autotoc_md3347"></a>
 HW Setup</h2>
-<h3><a class="anchor" id="autotoc_md3314"></a>
+<h3><a class="anchor" id="autotoc_md3348"></a>
 AM261x-LP</h3>
 <ul>
 <li>To test the application, one can use a Windows/Linux PC as a USB host.</li>
@@ -167,7 +167,7 @@ AM261x-LP</h3>
 <img src="am261x_lp_j10.png" alt=""/>
 <div class="caption">
 USB Micro B Device Connector</div></div>
-<h3><a class="anchor" id="autotoc_md3315"></a>
+<h3><a class="anchor" id="autotoc_md3349"></a>
 AM261X-SOM</h3>
 <ul>
 <li>To test the application, one can use a Windows/Linux PC as a USB host</li>
@@ -177,13 +177,13 @@ AM261X-SOM</h3>
 <img src="am261x_som_j7.png" alt=""/>
 <div class="caption">
 USB Micro B Device Connector</div></div>
-<h2><a class="anchor" id="autotoc_md3316"></a>
+<h2><a class="anchor" id="autotoc_md3350"></a>
 Run the example</h2>
 <ul>
 <li>Launch a CCS debug session and run the executable, see <a class="el" href="CCS_LAUNCH_PAGE.html">CCS Launch, Load and Run</a></li>
 <li>When the application is running, two COM ports will be enumerated on the USB host</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md3317"></a>
+<h3><a class="anchor" id="autotoc_md3351"></a>
 For Window 10</h3>
 <ul>
 <li>The two enumerated COM ports can be displayed using the Device Manager on Windows 10,</li>
@@ -214,7 +214,7 @@ Lower Case Input Echo-ed</div></div>
 <img src="usb_cdc_echo_example_upper.png" alt=""/>
 <div class="caption">
 Upper Case Input Echo-ed</div></div>
-<h3><a class="anchor" id="autotoc_md3318"></a>
+<h3><a class="anchor" id="autotoc_md3352"></a>
 For Linux</h3>
 <ul>
 <li>The two enumerated serial ports can be enumerated as "/dev/ttyACM0" and "/dev/ttyACM1"</li>
@@ -240,7 +240,7 @@ Lower Case Input Echo-ed</div></div>
 <img src="usb_cdc_echo_linux_upper.png" alt=""/>
 <div class="caption">
 Upper Case Input Echo-ed</div></div>
-<h1><a class="anchor" id="autotoc_md3319"></a>
+<h1><a class="anchor" id="autotoc_md3353"></a>
 See Also</h1>
 <p><a class="el" href="USB_DEVICE_DRIVER.html">USB</a> </p>
 </div></div><!-- contents -->

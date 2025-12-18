@@ -1,0 +1,105 @@
+let common = system.getScript("/common");
+let xbarSoc = system.getScript(`/xbar/soc/xbar_${common.getSocName()}`);
+
+const internal_list = [
+    {  name: "EPWM0_INT", displayName: "EPWM0_INT", path: "int_xbar", group: 0 },
+    {  name: "EPWM1_INT", displayName: "EPWM1_INT", path: "int_xbar", group: 0 },
+    {  name: "EPWM2_INT", displayName: "EPWM2_INT", path: "int_xbar", group: 0 },
+    {  name: "EPWM3_INT", displayName: "EPWM3_INT", path: "int_xbar", group: 0 },
+    {  name: "EPWM4_INT", displayName: "EPWM4_INT", path: "int_xbar", group: 0 },
+    {  name: "EPWM5_INT", displayName: "EPWM5_INT", path: "int_xbar", group: 0 },
+    {  name: "EPWM6_INT", displayName: "EPWM6_INT", path: "int_xbar", group: 0 },
+    {  name: "EPWM7_INT", displayName: "EPWM7_INT", path: "int_xbar", group: 0 },
+    {  name: "EPWM8_INT", displayName: "EPWM8_INT", path: "int_xbar", group: 0 },
+    {  name: "EPWM9_INT", displayName: "EPWM9_INT", path: "int_xbar", group: 0 },
+    {  name: "EPWM0_TZINT", displayName: "EPWM0_TZINT", path: "int_xbar", group: 1 },
+    {  name: "EPWM1_TZINT", displayName: "EPWM1_TZINT", path: "int_xbar", group: 1 },
+    {  name: "EPWM2_TZINT", displayName: "EPWM2_TZINT", path: "int_xbar", group: 1 },
+    {  name: "EPWM3_TZINT", displayName: "EPWM3_TZINT", path: "int_xbar", group: 1 },
+    {  name: "EPWM4_TZINT", displayName: "EPWM4_TZINT", path: "int_xbar", group: 1 },
+    {  name: "EPWM5_TZINT", displayName: "EPWM5_TZINT", path: "int_xbar", group: 1 },
+    {  name: "EPWM6_TZINT", displayName: "EPWM6_TZINT", path: "int_xbar", group: 1 },
+    {  name: "EPWM7_TZINT", displayName: "EPWM7_TZINT", path: "int_xbar", group: 1 },
+    {  name: "EPWM8_TZINT", displayName: "EPWM8_TZINT", path: "int_xbar", group: 1 },
+    {  name: "EPWM9_TZINT", displayName: "EPWM9_TZINT", path: "int_xbar", group: 1 },
+    {  name: "ADC0_INT1", displayName: "ADC0_INT1", path: "int_xbar", group: 2 },
+    {  name: "ADC0_INT2", displayName: "ADC0_INT2", path: "int_xbar", group: 2 },
+    {  name: "ADC0_INT3", displayName: "ADC0_INT3", path: "int_xbar", group: 2 },
+    {  name: "ADC0_INT4", displayName: "ADC0_INT4", path: "int_xbar", group: 2 },
+    {  name: "ADC0_EVTINT", displayName: "ADC0_EVTINT", path: "int_xbar", group: 2 },
+    {  name: "ADC1_INT1", displayName: "ADC1_INT1", path: "int_xbar", group: 2 },
+    {  name: "ADC1_INT2", displayName: "ADC1_INT2", path: "int_xbar", group: 2 },
+    {  name: "ADC1_INT3", displayName: "ADC1_INT3", path: "int_xbar", group: 2 },
+    {  name: "ADC1_INT4", displayName: "ADC1_INT4", path: "int_xbar", group: 2 },
+    {  name: "ADC1_EVTINT", displayName: "ADC1_EVTINT", path: "int_xbar", group: 2 },
+    {  name: "ADC2_INT1", displayName: "ADC2_INT1", path: "int_xbar", group: 2 },
+    {  name: "ADC2_INT2", displayName: "ADC2_INT2", path: "int_xbar", group: 2 },
+    {  name: "ADC2_INT3", displayName: "ADC2_INT3", path: "int_xbar", group: 2 },
+    {  name: "ADC2_INT4", displayName: "ADC2_INT4", path: "int_xbar", group: 2 },
+    {  name: "ADC2_EVTINT", displayName: "ADC2_EVTINT", path: "int_xbar", group: 2 },
+    {  name: "EVTAGGR0", displayName: "EVTAGGR0", path: "int_xbar", group: 2 },
+    {  name: "FSIRX0_INT1N", displayName: "FSIRX0_INT1N", path: "int_xbar", group: 3 },
+    {  name: "FSIRX0_INT2N", displayName: "FSIRX0_INT2N", path: "int_xbar", group: 3 },
+    {  name: "FSITX0_INT1N", displayName: "FSITX0_INT1N", path: "int_xbar", group: 3 },
+    {  name: "FSITX0_INT2N", displayName: "FSITX0_INT2N", path: "int_xbar", group: 3 },
+    {  name: "SD0_ERR", displayName: "SD0_ERR", path: "int_xbar", group: 4 },
+    {  name: "SD0_FILT0_DRINT", displayName: "SD0_FILT0_DRINT", path: "int_xbar", group: 4 },
+    {  name: "SD0_FILT1_DRINT", displayName: "SD0_FILT1_DRINT", path: "int_xbar", group: 4 },
+    {  name: "SD0_FILT2_DRINT", displayName: "SD0_FILT2_DRINT", path: "int_xbar", group: 4 },
+    {  name: "SD0_FILT3_DRINT", displayName: "SD0_FILT3_DRINT", path: "int_xbar", group: 4 },
+    {  name: "SD1_ERR", displayName: "SD1_ERR", path: "int_xbar", group: 4 },
+    {  name: "SD1_FILT0_DRINT", displayName: "SD1_FILT0_DRINT", path: "int_xbar", group: 4 },
+    {  name: "SD1_FILT1_DRINT", displayName: "SD1_FILT1_DRINT", path: "int_xbar", group: 4 },
+    {  name: "SD1_FILT2_DRINT", displayName: "SD1_FILT2_DRINT", path: "int_xbar", group: 4 },
+    {  name: "SD1_FILT3_DRINT", displayName: "SD1_FILT3_DRINT", path: "int_xbar", group: 4 },
+    {  name: "ECAP0_INT", displayName: "ECAP0_INT", path: "int_xbar", group: 5 },
+    {  name: "ECAP1_INT", displayName: "ECAP1_INT", path: "int_xbar", group: 5 },
+    {  name: "ECAP2_INT", displayName: "ECAP2_INT", path: "int_xbar", group: 5 },
+    {  name: "ECAP3_INT", displayName: "ECAP3_INT", path: "int_xbar", group: 5 },
+    {  name: "ECAP4_INT", displayName: "ECAP4_INT", path: "int_xbar", group: 5 },
+    {  name: "ECAP5_INT", displayName: "ECAP5_INT", path: "int_xbar", group: 5 },
+    {  name: "ECAP6_INT", displayName: "ECAP6_INT", path: "int_xbar", group: 5 },
+    {  name: "ECAP7_INT", displayName: "ECAP7_INT", path: "int_xbar", group: 5 },
+    {  name: "EQEP0_INT", displayName: "EQEP0_INT", path: "int_xbar", group: 6 },
+    {  name: "EQEP1_INT", displayName: "EQEP1_INT", path: "int_xbar", group: 6 },
+    {  name: "CMPSSA0_CTRIPL", displayName: "CMPSSA0_CTRIPL", path: "int_xbar", group: 7 },
+    {  name: "CMPSSA0_CTRIPH", displayName: "CMPSSA0_CTRIPH", path: "int_xbar", group: 7 },
+    {  name: "CMPSSA1_CTRIPL", displayName: "CMPSSA1_CTRIPL", path: "int_xbar", group: 7 },
+    {  name: "CMPSSA1_CTRIPH", displayName: "CMPSSA1_CTRIPH", path: "int_xbar", group: 7 },
+    {  name: "CMPSSA2_CTRIPL", displayName: "CMPSSA2_CTRIPL", path: "int_xbar", group: 7 },
+    {  name: "CMPSSA2_CTRIPH", displayName: "CMPSSA2_CTRIPH", path: "int_xbar", group: 7 },
+    {  name: "CMPSSA3_CTRIPL", displayName: "CMPSSA3_CTRIPL", path: "int_xbar", group: 7 },
+    {  name: "CMPSSA3_CTRIPH", displayName: "CMPSSA3_CTRIPH", path: "int_xbar", group: 7 },
+    {  name: "CMPSSA4_CTRIPL", displayName: "CMPSSA4_CTRIPL", path: "int_xbar", group: 7 },
+    {  name: "CMPSSA4_CTRIPH", displayName: "CMPSSA4_CTRIPH", path: "int_xbar", group: 7 },
+    {  name: "CMPSSA5_CTRIPL", displayName: "CMPSSA5_CTRIPL", path: "int_xbar", group: 7 },
+    {  name: "CMPSSA5_CTRIPH", displayName: "CMPSSA5_CTRIPH", path: "int_xbar", group: 7 },
+    {  name: "CMPSSA6_CTRIPL", displayName: "CMPSSA6_CTRIPL", path: "int_xbar", group: 7 },
+    {  name: "CMPSSA6_CTRIPH", displayName: "CMPSSA6_CTRIPH", path: "int_xbar", group: 7 },
+    {  name: "CMPSSA7_CTRIPL", displayName: "CMPSSA7_CTRIPL", path: "int_xbar", group: 7 },
+    {  name: "CMPSSA7_CTRIPH", displayName: "CMPSSA7_CTRIPH", path: "int_xbar", group: 7 },
+    {  name: "CMPSSA8_CTRIPL", displayName: "CMPSSA8_CTRIPL", path: "int_xbar", group: 7 },
+    {  name: "CMPSSA8_CTRIPH", displayName: "CMPSSA8_CTRIPH", path: "int_xbar", group: 7 },
+];
+
+let xbarProperties = {
+    masterXbarList: [],
+    outputInstanceList: [
+        { name: "INT_XBAR", count: 32},
+    ],
+    duplicatesPresent: false,
+    moduleString: "int_xbar",
+}
+
+function getOptionList(calledBy) {
+    return xbarSoc.getOptionListSoc(calledBy, xbarProperties, internal_list);
+}
+
+function getConfigArr() {
+    return xbarSoc.getXbarInstanceConfig(xbarProperties);
+}
+
+exports = {
+    getConfigArr,
+    getOptionList,
+};

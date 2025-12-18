@@ -1,0 +1,92 @@
+{
+    "name": "MCU_PLUS_SDK_AM261x",
+    "displayName": "MCU+ SDK for AM261x",
+    "version": "11.01.00",
+    "documentationPath": "../docs",
+    "includePaths": [
+        "../source/sysconfig",
+        "../source/networking/enet/core/sysconfig",
+    ],
+    "components": [
+        "/kernel/dpl",
+        "/drivers/drivers",
+        "/board/board",
+        "/fs/fs",
+        "/networking/networking",
+        "/security/security",
+        "/usb/usb",
+        "/xbar/xbar",
+        "/memory_configurator/components",
+        "/optiflash/optiflash",
+        "sdl/sdl",
+        "/clockTree/clockTreeComponents.js"
+    ],
+    "devices": [
+        "AM261x_ZCZ",
+        "AM261x_ZNC",
+        "AM261x_ZEJ",
+        "AM261x_ZFG",
+        "AM261x_ZFG_400",
+    ],
+    "boardPath": "/board/",
+    "contexts": {
+        "AM261x_ZCZ": [{
+            "name": "r5fss0-0",
+            "targetdbId": "Cortex_R5_0"
+        }, {
+            "name": "r5fss0-1",
+            "targetdbId": "Cortex_R5_1"
+        }, {
+            "name": "hsm0-0",
+            "targetdbId": "Cortex_M4_0"
+        }],
+        "AM261x_ZNC": [{
+            "name": "r5fss0-0",
+            "targetdbId": "Cortex_R5_0"
+        }, {
+            "name": "r5fss0-1",
+            "targetdbId": "Cortex_R5_1"
+        }, {
+            "name": "hsm0-0",
+            "targetdbId": "Cortex_M4_0"
+        }],
+        "AM261x_ZEJ": [{
+            "name": "r5fss0-0",
+            "targetdbId": "Cortex_R5_0"
+        }, {
+            "name": "r5fss0-1",
+            "targetdbId": "Cortex_R5_1"
+        }, {
+            "name": "hsm0-0",
+            "targetdbId": "Cortex_M4_0"
+        }],
+        "AM261x_ZFG": [{
+            "name": "r5fss0-0",
+            "targetdbId": "Cortex_R5_0"
+        }, {
+            "name": "r5fss0-1",
+            "targetdbId": "Cortex_R5_1"
+        }, {
+            "name": "hsm0-0",
+            "targetdbId": "Cortex_M4_0"
+        }],
+        "AM261x_ZFG_400": [{
+            "name": "r5fss0-0",
+            "targetdbId": "Cortex_R5_0"
+        }, {
+            "name": "r5fss0-1",
+            "targetdbId": "Cortex_R5_1"
+        }, {
+            "name": "hsm0-0",
+            "targetdbId": "Cortex_M4_0"
+        }],
+    },
+    "pinmuxUIOptions": {
+        "group": "merged",
+        "hidePeripheralTab": false,
+        "showPinTable": true,
+        "showSignals": true,
+        "showUsed": true
+    },
+    "minToolVersion" : "1.26.0"
+}

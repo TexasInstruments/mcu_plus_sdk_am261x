@@ -1,5 +1,12 @@
 var NAVTREEINDEX61 =
 {
+"structFlash__DevConfig.html#aceece3d92326136df48c08aad0b56109":[19,1,1,1,2],
+"structFlash__DevConfig.html#aec4d61cd7bbcd19ee93805ec6ebd4203":[19,1,1,1,28],
+"structFlash__DevConfig.html#aeea07d11c4e7bdafaeb17d5d07f56ea6":[19,1,1,1,4],
+"structFlash__DevConfig.html#af26d4f2cc7406d7d47b233d74813c859":[19,1,1,1,24],
+"structFlash__DevConfig.html#af9aaea904629353d937dc22dc5837b94":[19,1,1,1,0],
+"structFlash__DevConfig.html#afab0fc477109d917238beffbee9712a0":[19,1,1,1,16],
+"structFlash__DevConfig.html#afb423a4bf94438d4e449227ca0c2596c":[19,1,1,1,17],
 "structFlash__DevConfig.html#afe362f0bdd2a40fc03d2089e45daa312":[19,1,1,1,5],
 "structFlash__Fxns.html":[19,1,1,3],
 "structFlash__Fxns.html#a10e797df598663ad56a0de7fc97948e6":[19,1,1,3,6],
@@ -200,10 +207,10 @@ var NAVTREEINDEX61 =
 "structI2CLLD__Transaction.html#a5ed508a6f3051823294aa2f360e9353d":[19,7,20,1,0],
 "structI2CLLD__Transaction.html#aef3885a01ff5915f86b0859b414f314e":[19,7,20,1,2],
 "structI2CLLD__targetTransaction.html":[19,7,20,5],
-"structI2CLLD__targetTransaction.html#a103d3f191c65f5cfc95e37f3b2519310":[19,7,20,5,0],
 "structI2CLLD__targetTransaction.html#a1391cb4ce81c145a244460a4dfb7c2f2":[19,7,20,5,5],
 "structI2CLLD__targetTransaction.html#a14cae78c3f330f42ea7e03f0fef67c16":[19,7,20,5,2],
 "structI2CLLD__targetTransaction.html#a69efce8cb62381eac486144fb6876c5e":[19,7,20,5,1],
+"structI2CLLD__targetTransaction.html#a8892571f456d76e84108da1c22ac7e75":[19,7,20,5,0],
 "structI2CLLD__targetTransaction.html#a8a212a830b435c3e60fdd7d81b6fa3d3":[19,7,20,5,3],
 "structI2CLLD__targetTransaction.html#af57732285792e08766b5f916cc1a53a5":[19,7,20,5,4],
 "structI2C__Config.html":[19,7,19,5],
@@ -242,12 +249,5 @@ var NAVTREEINDEX61 =
 "structI2C__Object.html#a9c5bac93e68090c87fafc284eff18e79":[19,7,19,4,7],
 "structI2C__Object.html#ab08fd2d0ee8a59fe0a39dc636e2e50b5":[19,7,19,4,5],
 "structI2C__Object.html#ad6a25967b42125c9b81c9bd8a600b117":[19,7,19,4,9],
-"structI2C__Object.html#ada53053790f68feab247d1452cb646ab":[19,7,19,4,1],
-"structI2C__Object.html#aff386dafe5a558b55af8c556841ca4de":[19,7,19,4,11],
-"structI2C__Params.html":[19,7,19,3],
-"structI2C__Params.html#a56e74ffc2f1ee70f715dcb41874f153c":[19,7,19,3,1],
-"structI2C__Params.html#a7f9942a2c6bab07474666638d0dfdc57":[19,7,19,3,2],
-"structI2C__Params.html#ab72ce0fd173d102656a5b482ad6f3779":[19,7,19,3,0],
-"structI2C__Transaction.html":[19,7,19,2],
-"structI2C__Transaction.html#a08959a9f098163d02d6002e73b3a4606":[19,7,19,2,1]
+"structI2C__Object.html#ada53053790f68feab247d1452cb646ab":[19,7,19,4,1]
 };

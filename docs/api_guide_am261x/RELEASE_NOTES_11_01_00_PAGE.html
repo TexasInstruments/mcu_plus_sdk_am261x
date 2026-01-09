@@ -124,9 +124,11 @@ $(document).ready(function(){initNavTree('RELEASE_NOTES_11_01_00_PAGE.html','');
 </ul>
 </li>
 <li class="level3"><a href="#autotoc_md201">SDL PBIST Self test</a></li>
-<li class="level3"><a href="#autotoc_md202">Compiler Options</a></li>
-<li class="level3"><a href="#autotoc_md203">SOC Device Drivers</a></li>
-<li class="level3"><a href="#autotoc_md204">Networking</a></li>
+<li class="level3"><a href="#autotoc_md202">SDL STC Configuration</a></li>
+<li class="level3"><a href="#autotoc_md203">SDL Handler API name update</a></li>
+<li class="level3"><a href="#autotoc_md204">Compiler Options</a></li>
+<li class="level3"><a href="#autotoc_md205">SOC Device Drivers</a></li>
+<li class="level3"><a href="#autotoc_md206">Networking</a></li>
 </ul>
 </li>
 </ul>
@@ -136,11 +138,11 @@ $(document).ready(function(){initNavTree('RELEASE_NOTES_11_01_00_PAGE.html','');
 <div class="textblock"><p><a class="anchor" id="md_device_am261x_release_notes_11_01_00"></a></p>
 <dl class="section attention"><dt>Attention</dt><dd>1. Also refer to individual module pages for more details on each feature, unsupported features, important usage guidelines.</dd>
 <dd>
-2. RPRC image format has been deprecated from this release. Multi Core ELF image format should be used. (<a class="el" href="MCELF_LANDING.html">Understanding Multicore ELF image format</a>).</dd>
+2. RPRC image format has been deprecated from 11.00.00 release. Multi Core ELF image format support should be used.(<a class="el" href="MCELF_LANDING.html">Understanding Multicore ELF image format</a>)</dd>
 <dd>
 3. DFU Utils tool is not supported on Mac systems due to a build issue.</dd>
 <dd>
-4. SDK has been updated to support CCS Theia Out of Box from this release. Refer to Compatibility section below for changes w.r.t Eclipse.</dd>
+4. SDK has been updated to support CCS Theia Out of Box from 11.00.00 release. Refer to Compatibility section below for changes w.r.t Eclipse.</dd>
 <dd>
 5. The default Stack size is 16KB and Heap size 32 KB for SDK examples. This can be adjusted as per application requirement through Memory Configurator in SysCfg or by updating Linker script in case of standalone applications.</dd>
 <dd>
@@ -155,35 +157,9 @@ New in this Release</h1>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Feature  </th><th class="markdownTableHeadNone">Module   </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">Clock Tree support for PLL and Peripheral clock configuration  </td><td class="markdownTableBodyNone">Sysconfig   </td></tr>
+<td class="markdownTableBodyNone">Enablement of MPU awareness in FreeRTOS  </td><td class="markdownTableBodyNone">FreeRTOS   </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">CCS Theia Support  </td><td class="markdownTableBodyNone">CCS   </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">Multi Core FreeRTOS IPC Example  </td><td class="markdownTableBodyNone">IPC   </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">OSPI Phy Graph Plotter Example  </td><td class="markdownTableBodyNone">OSPI   </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">Rev A Launchpad Support  </td><td class="markdownTableBodyNone">Board   </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">Rev A SOM Support  </td><td class="markdownTableBodyNone">Board   </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">Board Level Sysconfig Support  </td><td class="markdownTableBodyNone">Sysconfig   </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">USB Sysconfig support  </td><td class="markdownTableBodyNone">Sysconfig   </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">McSPI External Loopback Example  </td><td class="markdownTableBodyNone">McSPI   </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">USB NCM Class Support  </td><td class="markdownTableBodyNone">USB   </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">FreeRTOS based CDC Example  </td><td class="markdownTableBodyNone">USB   </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">LwIP stack upgrade to STABLE-2_2_1_RELEASE  </td><td class="markdownTableBodyNone">Networking   </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">IET Feature Enablement via Syscfg-GUI  </td><td class="markdownTableBodyNone">Networking   </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">XIP+RL2 support is included in Networking OOB example, referenced in EXAMPLES_ENET_LWIP_CPSW_UDPCLIENT  </td><td class="markdownTableBodyNone">Networking   </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">SENT Decoder and Encoder Examples  </td><td class="markdownTableBodyNone">PRU-IO   </td></tr>
+<td class="markdownTableBodyNone">I2C Peripheral LLD example  </td><td class="markdownTableBodyNone">I2C   </td></tr>
 </table>
 <h1><a class="anchor" id="autotoc_md170"></a>
 Modules Not tested/supported in this release</h1>
@@ -208,11 +184,11 @@ Dependent Tools and Compiler Information</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Tools  </th><th class="markdownTableHeadNone">Supported CPUs  </th><th class="markdownTableHeadNone">Version   </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">Code Composer Studio  </td><td class="markdownTableBodyNone">R5F  </td><td class="markdownTableBodyNone">20.3.0   </td></tr>
+<td class="markdownTableBodyNone">Code Composer Studio  </td><td class="markdownTableBodyNone">R5F  </td><td class="markdownTableBodyNone">20.4.0   </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">SysConfig  </td><td class="markdownTableBodyNone">R5F  </td><td class="markdownTableBodyNone">1.25.0 build, build 42688   </td></tr>
+<td class="markdownTableBodyNone">SysConfig  </td><td class="markdownTableBodyNone">R5F  </td><td class="markdownTableBodyNone">1.26.0 build, build 4407   </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">TI ARM CLANG  </td><td class="markdownTableBodyNone">R5F  </td><td class="markdownTableBodyNone">4.0.3.LTS   </td></tr>
+<td class="markdownTableBodyNone">TI ARM CLANG  </td><td class="markdownTableBodyNone">R5F  </td><td class="markdownTableBodyNone">4.0.4.LTS   </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">FreeRTOS Kernel  </td><td class="markdownTableBodyNone">R5F  </td><td class="markdownTableBodyNone">11.1.0   </td></tr>
 <tr class="markdownTableRowOdd">
@@ -220,7 +196,7 @@ Dependent Tools and Compiler Information</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">Mbed-TLS  </td><td class="markdownTableBodyNone">R5F  </td><td class="markdownTableBodyNone">2.13.1   </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">Uniflash  </td><td class="markdownTableBodyNone">R5F  </td><td class="markdownTableBodyNone">9.3.0   </td></tr>
+<td class="markdownTableBodyNone">Uniflash  </td><td class="markdownTableBodyNone">R5F  </td><td class="markdownTableBodyNone">9.4.0   </td></tr>
 </table>
 <h2><a class="anchor" id="autotoc_md173"></a>
 Key Features</h2>
@@ -430,53 +406,29 @@ Fixed Issues</h2>
 <tr>
 <th>ID </th><th>Head Line </th><th>Module </th><th>Applicable Releases </th><th>Applicable Devices </th><th>Resolution/Comments  </th></tr>
 <tr>
-<td>MCUSDK-14055 </td><td>SBL DFU and SBL DFU Uniflash Example failure </td><td>USB </td><td>10.00.01 onwards </td><td>AM261x </td><td>Resolved in driver  </td></tr>
+<td>MCUSDK-15024 </td><td>HHV mask is required before setting ADC reference buffers </td><td>ADC </td><td>11.00.00 onwards </td><td>AM263x, AM263Px, AM261x </td><td>Implemented the register programming sequence as per TRM  </td></tr>
 <tr>
-<td>MCUSDK-14502 </td><td>PMIC WDG QA Example not working on AM261x-LP E2 board </td><td>PMIC </td><td>10.02.00 onwards </td><td>AM261x </td><td>Fixed in driver by increasing sleep time for waiting to trigger wdg reset  </td></tr>
+<td>MCUSDK-14935 </td><td>MMCSD LLD uses incorrect data type for status check </td><td>MMCSD </td><td>11.00.00 onwards </td><td>AM263x, AM263Px, AM261x </td><td>Resolved in driver code  </td></tr>
 <tr>
-<td>MCUSDK-14547 </td><td>XIP Flashing not supported in SBL JTAG Uniflash example </td><td>SBL </td><td>10.00.00 onwards </td><td>AM263Px, AM261x </td><td>Added XIP flashing support in the example  </td></tr>
+<td>MCUSDK-15130 </td><td>CCS compilation error when adding PBIST to SBL via sysconfig </td><td>SBL </td><td>11.00.00 onwards </td><td>AM263x, AM263Px, AM261x </td><td>Fixed by linking prebuilt SDL libraries to SBL project  </td></tr>
 <tr>
-<td>MCUSDK-14609 </td><td>FOTA Example Failure on AM261x SOM </td><td>OptiFlash </td><td>10.02.00 onwards </td><td>AM261x </td><td>Resolved by reducing OSPI clock frequency from 166Mhz to 133Mhz  </td></tr>
+<td>MCUSDK-14953 </td><td>Load from json not working in CCS Theia </td><td>Flash </td><td>11.00.00 onwards </td><td>AM263Px, AM261x </td><td>Resolved in CCS 20.4  </td></tr>
 <tr>
-<td>MCUSDK-14606 </td><td>USB Enumeration fails randomly </td><td>USB </td><td>10.02.00 onwards </td><td>AM261x </td><td>-  </td></tr>
+<td>MCUSDK-15080 </td><td>Incorrect configuration of xspiWipRdCmd </td><td>Flash </td><td>11.00.00 onwards </td><td>AM263Px, AM261x </td><td>Resolved in OSPI driver  </td></tr>
 <tr>
-<td>MCUSDK-14704 </td><td>Adding multiple instances of UART DMA LLD causes failure </td><td>UART </td><td>10.02.00 onwards </td><td>AM263x, AM263Px, AM261x </td><td>Fixed array indexing while assigning dma config  </td></tr>
+<td>MCUSDK-15148 </td><td>SOC RCM clock configuration static register optimized with O2 compilation flag </td><td>SOC </td><td>11.00.00 onwards </td><td>AM263x, AM263Px, AM261x </td><td>Resolved in SOC RCM driver  </td></tr>
 <tr>
-<td>MCUSDK-14917 </td><td>"Selected mode" in pinmux.csv.xdt file not being updated correctly in SysCfg </td><td>Pinmux </td><td>10.01.00 onwards </td><td>AM263x, AM263Px, AM261x </td><td>Fixed in Pinmux CSV template  </td></tr>
+<td>MCUSDK-14933 </td><td>I2C1 to I2C3 communication failing </td><td>I2C </td><td>10.02.00 onwards </td><td>AM263x, AM263Px, AM261x </td><td>Resolved in I2C driver source code  </td></tr>
 <tr>
 <td>PROC_SDL-9179 </td><td>Redefinition error in MCU_PBIST Sysconfig </td><td>SDL </td><td>10.02.00 onwards </td><td>AM263Px, AM261x </td><td>Resolved in Source code  </td></tr>
 <tr>
-<td>MCUSDK-14749 </td><td>McSPI: Non Powers of 2 cannot be configured as fifo trigger levels in polling and interrupt mode </td><td>McSPI </td><td>10.02.00 onwards </td><td>AM263x, AM263Px, AM261x </td><td>Fix in SysCfg Meta file.  </td></tr>
+<td>PROC_SDL-9597 </td><td>Watchdog status bits are not clearing properly in SDL_RTI_clearStatus API </td><td>SDL </td><td>09.02.00 onwards </td><td>AM263x, AM263Px, AM261x </td><td>Fixed in library  </td></tr>
 <tr>
-<td>MCUSDK-13966 </td><td>All UART triggers levels not exposed in SysCfg </td><td>UART </td><td>10.00.00 onwards </td><td>AM263x, AM263Px, AM261x </td><td>Update SysCfg to show all trigger levels from 1 to 64.  </td></tr>
+<td>PROC_SDL-9582 </td><td>[SDL] faultInsert and stcDiagnostic not used for fault injection </td><td>SDL </td><td>11.00.00 onwards </td><td>AM263x, AM263Px, AM261x </td><td>Added documentation as not used the faultInsert and stcDiagnostic.  </td></tr>
 <tr>
-<td>MCUSDK-14573 </td><td>Incorrect handling of errata i2310 in UART isr </td><td>UART </td><td>10.00.00 onwards </td><td>AM263x, AM263Px, AM261x </td><td>Reorder the ISR state machine for handling UART errata correctly.  </td></tr>
+<td>PROC_SDL-9485 </td><td>Interrupt clear missing in ecc_bus_safety example. </td><td>SDL </td><td>11.00.00 onwards </td><td>AM263x, AM263Px, AM261x </td><td>Cleared the error status in code.  </td></tr>
 <tr>
-<td>MCUSDK-14706 </td><td>GPIO Qual selection API missing </td><td>GPIO </td><td>10.00.00 onwards </td><td>AM263x, AM263Px, AM261x </td><td>Qual sel API added in pinmux driver  </td></tr>
-<tr>
-<td>MCUSDK-14569 </td><td>UART Errata i2310 is missing a step </td><td>UART </td><td>10.00.00 onwards </td><td>AM263x, AM263Px, AM261x </td><td>Added IIR register read to clear the interrupt  </td></tr>
-<tr>
-<td>MCUSDK-14620 </td><td>SDK build fails in Mac Machines </td><td>Build </td><td>10.02.00 onwards </td><td>AM263x, AM263Px, AM261x </td><td>Added GMAC library for MAC into SDK  </td></tr>
-<tr>
-<td>MCUSDK-14659 </td><td>Incorrect RTI clock source mux address for RTI 4 to 7 </td><td>RTI </td><td>10.00.00 onwards </td><td>AM263Px, AM261x </td><td>Updated to correct mux addresses in SysCfg  </td></tr>
-<tr>
-<td>MCUSDK-13182 </td><td>SysCfg unexpectedly changes OSPI Pin </td><td>OSPI </td><td>10.00.00 onwards </td><td>AM263Px, AM261x </td><td>The OSPI pins are locked in SDK examples.  </td></tr>
-<tr>
-<td>MCUSDK-14857, MCUSDK-14731 </td><td>Core 1 unhalted in SBL before FSM Trigger, Memory load </td><td>SBL </td><td>10.00.00 onwards </td><td>AM263x, AM263Px, AM261x </td><td>Skip unhalting core 1 of both clusters in dual core mode  </td></tr>
-<tr>
-<td>MCUSDK-14712 </td><td>OSPI Reset Pin being used before configuration </td><td>OSPI </td><td>10.00.00 onwards </td><td>AM263Px, AM261x </td><td>Configure OSPI reset in OSPI open instead of Flash open  </td></tr>
-<tr>
-<td>PROC_SDL-9160 </td><td>PBIST does not cover the VIM memories </td><td>SDL </td><td>10.02.00 onwards </td><td>AM263x, AM263Px, AM261x </td><td>Fixed in Source and Used polling method instead of ISR to cover VIM memory  </td></tr>
-<tr>
-<td>PROC_SDL-9154 </td><td>VTM Example stuck in UC2 </td><td>SDL </td><td>10.02.00 onwards </td><td>AM263Px, AM261x </td><td>Fixed in example  </td></tr>
-<tr>
-<td>MCUSDK-14695 </td><td>SDFM_configComparator has incorrect input in examples </td><td>SDFM </td><td>10.00.00 onwards </td><td>AM263x, AM263Px, AM261x </td><td>Updated example to pass correct value  </td></tr>
-<tr>
-<td>MCUSDK-14696 </td><td>ADC Sysconfig does not seem to generate codes for repeaters </td><td>ADC </td><td>10.00.00 onwards </td><td>AM263Px, AM261x </td><td>Fixed syscfg template file to generate trigger repeater code for burst mode  </td></tr>
-<tr>
-<td>MCUSDK-14645 </td><td>Implementation of the ADC_selectSOCExtChannel </td><td>ADC </td><td>10.01.00 onwards </td><td>AM263Px, AM261x </td><td>Fixed ADC_selectSOCExtChannel API implementation  </td></tr>
-<tr>
-<td>PROC_SDL-9147 </td><td>VTM Usecase stuck in integrated example </td><td>SDL </td><td>10.02.00 onwards </td><td>AM263Px, AM261x </td><td>Fixed in integrated example  </td></tr>
+<td>PINDSW-9499 </td><td>Short serial message and enhanced serial message not working in SENT decoder using IEP ECAP example </td><td>PRU-IO </td><td>11.01.00 onwards </td><td>AM263Px, AM261x </td><td>Fixed the glitch period and disable CCS log  </td></tr>
 </table>
 <h2><a class="anchor" id="autotoc_md184"></a>
 Known Issues</h2>
@@ -501,12 +453,6 @@ Known Issues</h2>
 <tr>
 <td>MCUSDK-14950 </td><td>AM26x: Networking examples show up as "..." on TIREX </td><td>Networking </td><td>10.01.00 onwards </td><td>-  </td></tr>
 <tr>
-<td>MCUSDK-14692 </td><td>Raw HTTP Server example does not work with Static IP </td><td>Networking </td><td>10.02.00 onwards </td><td>-  </td></tr>
-<tr>
-<td>MCUSDK-14792 </td><td>AM261x LwIP ping app does not work (enet_lwip_cpsw) </td><td>Networking </td><td>10.02.00 onwards </td><td>-  </td></tr>
-<tr>
-<td>MCUSDK-13896 </td><td>Syscfg does not let you configure ethernet interfaces pinmux independently </td><td>Networking </td><td>10.02.00 onwards </td><td>-  </td></tr>
-<tr>
 <td>MCUSDK-15051 </td><td>ENET: am261x: UDP client example not working in CCS boot mode </td><td>Networking </td><td>11.00.00 onwards </td><td>-  </td></tr>
 <tr>
 <td>PINDSW-7715 </td><td>Dual EMAC instance not working with both ports together for icss_emac_lwip example </td><td>ICSS-EMAC </td><td>10.00.01 onwards </td><td>None  </td></tr>
@@ -521,7 +467,9 @@ Known Issues</h2>
 <tr>
 <td>MCUSDK-14059 </td><td>CMPSS DE example has Glitch in PWM output </td><td>CMPSS </td><td>10.00.01 onwards </td><td>None  </td></tr>
 <tr>
-<td>PROC_SDL-8392 </td><td>In ECC bus safety example, ECC error is not properly cleared at the source. </td><td>SDL </td><td>10.02.00 onwards </td><td>None  </td></tr>
+<td>PROC_SDL-9596 </td><td>SEC and DED failure in ecc_bus_safety example </td><td>SDL </td><td>11.01.00 onwards </td><td>For AXI_RD_SEC nodes can test in specific core.  </td></tr>
+<tr>
+<td>PROC_SDL-9617 </td><td>AXI_S SEC and DED failure </td><td>SDL </td><td>11.01.00 onwards </td><td>For AXI_S node, use CCS to test.  </td></tr>
 <tr>
 <td>PROC_SDL-8787 </td><td>ECC TPTC and STC examples are not supported in SDL integrated example. </td><td>SDL </td><td>10.02.00 onwards </td><td>Use standalone examples.  </td></tr>
 <tr>
@@ -562,8 +510,6 @@ Known Issues</h2>
 <td>MCUSDK-14636 </td><td>AM261x: Phy Tuning not supported for NAND Flash and PSRAM </td><td>OSPI, Flash </td><td>10.02.00 onwards </td><td>-  </td></tr>
 <tr>
 <td>MCUSDK-14656 </td><td>Mac OS Support not available for DFU Utils tool </td><td>USB </td><td>10.02.00 onwards </td><td>-  </td></tr>
-<tr>
-<td>PINDSW-9499 </td><td>Short serial message and enhanced serial message not working in SENT decoder using IEP ECAP example </td><td>PRU-IO </td><td>11.00.00 onwards </td><td>-  </td></tr>
 </table>
 <h2><a class="anchor" id="autotoc_md185"></a>
 Errata</h2>
@@ -716,6 +662,12 @@ OS Macro addition for FreeRTOS example</div></div>
 SDL PBIST Self test</h3>
 <p>VIM Memory groups are added to PBIST self test from this release. Because of this change, Self test (SDL_PBIST_selfTest) API has to be called in polling mode only and interrupt mode is not supported.</p>
 <h3><a class="anchor" id="autotoc_md202"></a>
+SDL STC Configuration</h3>
+<p>faultInsert and stcDiagnostic are removed from <a class="el" href="structSDL__STC__Config.html">SDL_STC_Config</a> structure as unused in SDL library.</p>
+<h3><a class="anchor" id="autotoc_md203"></a>
+SDL Handler API name update</h3>
+<p>Handler API names are added prefix with "SDL_". For example, undefInstructionExptnHandler changed to SDL_undefInstructionExptnHandler.</p>
+<h3><a class="anchor" id="autotoc_md204"></a>
 Compiler Options</h3>
 <table class="doxtable">
 <tr>
@@ -723,7 +675,7 @@ Compiler Options</h3>
 <tr>
 <td>- </td><td>- </td><td>- </td><td>-  </td></tr>
 </table>
-<h3><a class="anchor" id="autotoc_md203"></a>
+<h3><a class="anchor" id="autotoc_md205"></a>
 SOC Device Drivers</h3>
 <table class="doxtable">
 <tr>
@@ -731,7 +683,7 @@ SOC Device Drivers</h3>
 <tr>
 <td>- </td><td>- </td><td>- </td><td>-  </td></tr>
 </table>
-<h3><a class="anchor" id="autotoc_md204"></a>
+<h3><a class="anchor" id="autotoc_md206"></a>
 Networking</h3>
 <table class="doxtable">
 <tr>

@@ -1,5 +1,7 @@
 var NAVTREEINDEX19 =
 {
+"group__BOARD__PMIC__MODULE.html#ga5bad42ff4afae8882c7112907f8f8ec1":[19,1,4,13],
+"group__BOARD__PMIC__MODULE.html#ga70122676719166e2d73b7fde2d6217ea":[19,1,4,8],
 "group__BOARD__PMIC__MODULE.html#ga8bf0f7313eb0eee09344d972fdede780":[19,1,4,11],
 "group__BOARD__PMIC__MODULE.html#ga8f845b34aa52b612671a1508b41d2236":[19,1,4,6],
 "group__BOARD__PMIC__MODULE.html#gaa305375f08acd4cc7d48d2b14ee6ba7d":[19,1,4,9],
@@ -247,7 +249,5 @@ var NAVTREEINDEX19 =
 "group__CPSW__MACPORT__MOD.html#ga0840800cbfc598300796592a959e0577":[19,4,0,3,0,29],
 "group__CPSW__MACPORT__MOD.html#ga259889f3dd5e276e861fbd75d05b4a63":[19,4,0,3,0,14],
 "group__CPSW__MACPORT__MOD.html#ga27d8c394491153e153e42dd76c802958":[19,4,0,3,0,12],
-"group__CPSW__MACPORT__MOD.html#ga2d043cdbbfd84800849c8d9b0a74b878":[19,4,0,3,0,13],
-"group__CPSW__MACPORT__MOD.html#ga2e90a64aba1b42d8a778d333291bb027":[19,4,0,3,0,24],
-"group__CPSW__MACPORT__MOD.html#ga2ef98baf8d908bc2481b71df41104d81":[19,4,0,3,0,15]
+"group__CPSW__MACPORT__MOD.html#ga2d043cdbbfd84800849c8d9b0a74b878":[19,4,0,3,0,13]
 };

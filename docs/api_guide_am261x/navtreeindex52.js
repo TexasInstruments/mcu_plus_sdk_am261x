@@ -1,5 +1,12 @@
 var NAVTREEINDEX52 =
 {
+"group__SYNP__USB__MODULE.html#gga1a64e378ad9450edfa0fc7e1336bfeb3a111d2205b1480b377b22204ee8ab945a":[19,7,47,0,33,7],
+"group__SYNP__USB__MODULE.html#gga1a64e378ad9450edfa0fc7e1336bfeb3a29f8f0cfdf42c802def25f49620ee59b":[19,7,47,0,33,5],
+"group__SYNP__USB__MODULE.html#gga1a64e378ad9450edfa0fc7e1336bfeb3a5df1bec27c858afb123cd4a8c4e427f7":[19,7,47,0,33,3],
+"group__SYNP__USB__MODULE.html#gga1a64e378ad9450edfa0fc7e1336bfeb3a694b523575fccf6d6bd61de05e130ce3":[19,7,47,0,33,6],
+"group__SYNP__USB__MODULE.html#gga1a64e378ad9450edfa0fc7e1336bfeb3a6e32122dea1f3754293df701cf3bbf9c":[19,7,47,0,33,0],
+"group__SYNP__USB__MODULE.html#gga1a64e378ad9450edfa0fc7e1336bfeb3a8ae63775e176df8b2ab527a1a5699ae8":[19,7,47,0,33,8],
+"group__SYNP__USB__MODULE.html#gga1a64e378ad9450edfa0fc7e1336bfeb3a958e879a5e3616dc9cccd939e3401555":[19,7,47,0,33,4],
 "group__SYNP__USB__MODULE.html#gga1a64e378ad9450edfa0fc7e1336bfeb3afa645a56c1509b57ac531ab3bf4851c9":[19,7,47,0,33,9],
 "group__SYNP__USB__MODULE.html#gga1a64e378ad9450edfa0fc7e1336bfeb3afd506da9d58fd52f33ac7d29cef7eb98":[19,7,47,0,33,2],
 "group__SYNP__USB__MODULE.html#ggaf20a9be8b36c96d6cbf02eaef0685b1ba1671f47a547c989c2c8421bf93c7b218":[19,7,47,0,34,1],
@@ -242,12 +249,5 @@ var NAVTREEINDEX52 =
 "group__lld__thread.html#gaabca1c68dc2b10a7a2bf13d781919002":[19,12,4,43],
 "group__lld__thread.html#gaaec34ffce0e911902ac66aaf57946607":[19,12,4,61],
 "group__lld__thread.html#gab2931e0399a8b00bbcbf63cea216b267":[19,12,4,13],
-"group__lld__thread.html#gab69c94f6a6fb4f65445d57c2f5ba14ed":[19,12,4,53],
-"group__lld__thread.html#gab9e991c52ef7080c25a0af79a7239f4c":[19,12,4,33],
-"group__lld__thread.html#gac0bd4e728046f03eabf8e860b0aa38ad":[19,12,4,14],
-"group__lld__thread.html#gac0cec1f178d0aa30410887f5949d2362":[19,12,4,21],
-"group__lld__thread.html#gac7b2dd832e40d4d5025a1e9869d74767":[19,12,4,40],
-"group__lld__thread.html#gac9f1ecb86b30a1a854f7d6d403d1d6f4":[19,12,4,4],
-"group__lld__thread.html#gacb88dec317d345c86a8fec93fa406225":[19,12,4,50],
-"group__lld__thread.html#gad037dc8a25652dd3d2ec554b024cc5b0":[19,12,4,1]
+"group__lld__thread.html#gab69c94f6a6fb4f65445d57c2f5ba14ed":[19,12,4,53]
 };

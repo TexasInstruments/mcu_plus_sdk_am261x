@@ -92,82 +92,82 @@ $(document).ready(function(){initNavTree('EXAMPLES_DRIVERS_DTHE_AES_CTR.html',''
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#autotoc_md3158">Introduction</a><ul><li class="level2"><a href="#autotoc_md3159">Build the aes cbc 128 example</a></li>
+<ul><li class="level1"><a href="#autotoc_md3160">Introduction</a><ul><li class="level2"><a href="#autotoc_md3161">Build the aes cbc 128 example</a></li>
 </ul>
 </li>
-<li class="level1"><a href="#autotoc_md3160">Steps to Run through ROM Boot flow</a><ul><li class="level2"><a href="#autotoc_md3161">Via SBL_uart bootloader</a><ul><li class="level3"><a href="#autotoc_md3162">Build sbl_uart</a></li>
-<li class="level3"><a href="#autotoc_md3163">Set board for UART boot</a></li>
-<li class="level3"><a href="#autotoc_md3164">Run UART_bootloader</a></li>
-<li class="level3"><a href="#autotoc_md3165">Sample output</a></li>
+<li class="level1"><a href="#autotoc_md3162">Steps to Run through ROM Boot flow</a><ul><li class="level2"><a href="#autotoc_md3163">Via SBL_uart bootloader</a><ul><li class="level3"><a href="#autotoc_md3164">Build sbl_uart</a></li>
+<li class="level3"><a href="#autotoc_md3165">Set board for UART boot</a></li>
+<li class="level3"><a href="#autotoc_md3166">Run UART_bootloader</a></li>
+<li class="level3"><a href="#autotoc_md3167">Sample output</a></li>
 </ul>
 </li>
-<li class="level2"><a href="#autotoc_md3166">Via SBL_qspi bootloader</a><ul><li class="level3"><a href="#autotoc_md3167">Build sbl_qspi</a></li>
-<li class="level3"><a href="#autotoc_md3168">Build sbl_uart_uniflash</a></li>
-<li class="level3"><a href="#autotoc_md3169">Set UART boot mode</a></li>
-<li class="level3"><a href="#autotoc_md3170">Edit default_sbl_qspi.cfg to include the correct images</a></li>
-<li class="level3"><a href="#autotoc_md3171">Run UART_uniflash</a></li>
-<li class="level3"><a href="#autotoc_md3172">Set QSPI boot mode</a></li>
-<li class="level3"><a href="#autotoc_md3173">Sample output</a></li>
+<li class="level2"><a href="#autotoc_md3168">Via SBL_qspi bootloader</a><ul><li class="level3"><a href="#autotoc_md3169">Build sbl_qspi</a></li>
+<li class="level3"><a href="#autotoc_md3170">Build sbl_uart_uniflash</a></li>
+<li class="level3"><a href="#autotoc_md3171">Set UART boot mode</a></li>
+<li class="level3"><a href="#autotoc_md3172">Edit default_sbl_qspi.cfg to include the correct images</a></li>
+<li class="level3"><a href="#autotoc_md3173">Run UART_uniflash</a></li>
+<li class="level3"><a href="#autotoc_md3174">Set QSPI boot mode</a></li>
+<li class="level3"><a href="#autotoc_md3175">Sample output</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="level1"><a href="#autotoc_md3174">See Also</a></li>
+<li class="level1"><a href="#autotoc_md3176">See Also</a></li>
 </ul>
 </div>
 <div class="textblock"><p><a class="anchor" id="md_examples_security_crypto_dthe_aes_ctr"></a></p>
-<h1><a class="anchor" id="autotoc_md3158"></a>
+<h1><a class="anchor" id="autotoc_md3160"></a>
 Introduction</h1>
 <p>This example demonstrates Counter mode(CTR) of AES(Advanced Encryption Standard) using AES accelerator. The AES supports all the key sizes like 128-bit, 192-bit and 256-bit implementations. This example explains the steps to build and run for DTHE AES CTR with 128-bit, 192-bit and 256-bit keys.</p>
 <dl class="section note"><dt>Note</dt><dd>AES-CTR is a special mode of AES where Encryption and Decryption is <b>EXACTLY</b> identical. So in case if the user needs to decrypt the encrypted data, the pointer of the input and output needs to be swapped. Also note, the conversion of nonce, IV and counter needs to handled via user.</dd></dl>
-<h2><a class="anchor" id="autotoc_md3159"></a>
+<h2><a class="anchor" id="autotoc_md3161"></a>
 Build the aes cbc 128 example</h2>
 <div class="fragment"><div class="line">$make -s -C examples/security/crypto/dthe_aes/crypto_aes_ctr/&lt;soc&gt;-&lt;board&gt;/r5fss0-0_nortos/ti-arm-clang all DEVICE=&lt;soc&gt;</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md3160"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md3162"></a>
 Steps to Run through ROM Boot flow</h1>
 <dl class="section note"><dt>Note</dt><dd>If the device type is HS-SE, an additional flag "DEVICE_TYPE=HS" is passed for building SBL. The flag results in generation of SBL image with suffix "hs.tiimage" which can only be used when device type is HS-SE.</dd></dl>
-<h2><a class="anchor" id="autotoc_md3161"></a>
+<h2><a class="anchor" id="autotoc_md3163"></a>
 Via SBL_uart bootloader</h2>
-<h3><a class="anchor" id="autotoc_md3162"></a>
+<h3><a class="anchor" id="autotoc_md3164"></a>
 Build sbl_uart</h3>
 <div class="fragment"><div class="line">make -s -C examples/drivers/boot/sbl_uart_multicore_elf/&lt;soc&gt;-&lt;board&gt;/r5fss0-0_nortos/ti-arm-clang/ all DEVICE=&lt;soc&gt;</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md3163"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md3165"></a>
 Set board for UART boot</h3>
 <p>See <a href="https://software-dl.ti.com/mcu-plus-sdk/esd/AM261X/latest/exports/docs/api_guide_am261x/EVM_SETUP_PAGE.html#autotoc_md29">EVM setup</a></p>
-<h3><a class="anchor" id="autotoc_md3164"></a>
+<h3><a class="anchor" id="autotoc_md3166"></a>
 Run UART_bootloader</h3>
 <div class="fragment"><div class="line">python uart_bootloader.py -p &lt;COMxx&gt; --bootloader=sbl_prebuilt/&lt;soc&gt;-&lt;board&gt;/sbl_uart.release.hs.tiimage --file=../../examples/security/crypto/dthe_aes/crypto_aes_ctr/&lt;soc&gt;-&lt;board&gt;/r5fss0-0_nortos/ti-arm-clang/crypto_dthe_aes_ctr.release.mcelf</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md3165"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md3167"></a>
 Sample output</h3>
 <p>On successful boot, R5 log at uart terminal, will have the following output. UART Console: </p><div class="fragment"><div class="line">[CRYPTO] DTHE AES CTR example started ...</div>
 <div class="line">[CRYPTO] DTHE AES CTR example completed!!</div>
 <div class="line">All tests have passed!!</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md3166"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md3168"></a>
 Via SBL_qspi bootloader</h2>
-<h3><a class="anchor" id="autotoc_md3167"></a>
+<h3><a class="anchor" id="autotoc_md3169"></a>
 Build sbl_qspi</h3>
 <div class="fragment"><div class="line">make -C examples/drivers/boot/sbl_qspi_multicore_elf/&lt;soc&gt;-&lt;board&gt;/r5fss0-0_nortos/ti-arm-clang/ all DEVICE=&lt;soc&gt;</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md3168"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md3170"></a>
 Build sbl_uart_uniflash</h3>
 <div class="fragment"><div class="line">make -s -C examples/drivers/boot/sbl_uart_uniflash/&lt;soc&gt;-&lt;board&gt;/r5fss0-0_nortos/ti-arm-clang/ all DEVICE=&lt;soc&gt;</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md3169"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md3171"></a>
 Set UART boot mode</h3>
 <p>See <a href="https://software-dl.ti.com/mcu-plus-sdk/esd/AM261X/latest/exports/docs/api_guide_am261x/EVM_SETUP_PAGE.html#autotoc_md29">EVM setup</a></p>
-<h3><a class="anchor" id="autotoc_md3170"></a>
+<h3><a class="anchor" id="autotoc_md3172"></a>
 Edit default_sbl_qspi.cfg to include the correct images</h3>
-<h3><a class="anchor" id="autotoc_md3171"></a>
+<h3><a class="anchor" id="autotoc_md3173"></a>
 Run UART_uniflash</h3>
 <div class="fragment"><div class="line">python uart_uniflash.py -p &lt;COMxx&gt; --cfg=sbl_prebuilt/&lt;soc&gt;-&lt;board&gt;/default_sbl_qspi.cfg</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md3172"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md3174"></a>
 Set QSPI boot mode</h3>
 <p>See <a href="https://software-dl.ti.com/mcu-plus-sdk/esd/AM261X/latest/exports/docs/api_guide_am261x/EVM_SETUP_PAGE.html#autotoc_md29">EVM setup</a></p>
-<h3><a class="anchor" id="autotoc_md3173"></a>
+<h3><a class="anchor" id="autotoc_md3175"></a>
 Sample output</h3>
 <p>On successful boot, R5 log at uart terminal, will have the following output.</p>
 <p>UART Console: </p><div class="fragment"><div class="line">[CRYPTO] DTHE AES CTR example started ...</div>
 <div class="line">[CRYPTO] DTHE AES CTR example completed!!</div>
 <div class="line">All tests have passed!!</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md3174"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md3176"></a>
 See Also</h1>
 <p><a class="el" href="DRIVERS_DTHE_PAGE.html">DTHE</a> </p>
 </div></div><!-- contents -->

@@ -92,17 +92,17 @@ $(document).ready(function(){initNavTree('EXAMPLES_DRIVERS_SBL_DFU.html',''); in
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#autotoc_md2602">Introduction</a></li>
+<ul><li class="level1"><a href="#autotoc_md2604">Introduction</a></li>
 <li class="level1"><a href="#EXAMPLES_DRIVERS_SBL_DFU_MCELF">SBL DFU Multicore ELF</a></li>
 <li class="level1"><a href="#EXAMPLES_DRIVERS_SBL_DFU_COMBOS">Supported Combinations</a></li>
-<li class="level1"><a href="#autotoc_md2603">Steps to Run the Example</a></li>
-<li class="level1"><a href="#autotoc_md2604">Example Usage</a></li>
-<li class="level1"><a href="#autotoc_md2605">Flashing Failure</a></li>
-<li class="level1"><a href="#autotoc_md2606">See Also</a></li>
+<li class="level1"><a href="#autotoc_md2605">Steps to Run the Example</a></li>
+<li class="level1"><a href="#autotoc_md2606">Example Usage</a></li>
+<li class="level1"><a href="#autotoc_md2607">Flashing Failure</a></li>
+<li class="level1"><a href="#autotoc_md2608">See Also</a></li>
 </ul>
 </div>
 <div class="textblock"><p><a class="anchor" id="md_examples_drivers_sbl_dfu"></a></p>
-<h1><a class="anchor" id="autotoc_md2602"></a>
+<h1><a class="anchor" id="autotoc_md2604"></a>
 Introduction</h1>
 <p><b>SBL_DFU</b> is a bootloader which boots the multicore application received via USB DFU. It is analogous to <a class="el" href="EXAMPLES_DRIVERS_SBL_UART.html">SBL UART</a></p>
 <ul>
@@ -137,14 +137,14 @@ Supported Combinations</h1>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">Example folder  </td><td class="markdownTableBodyNone">examples/drivers/boot/sbl_dfu_multicore_elf   </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md2603"></a>
+<h1><a class="anchor" id="autotoc_md2605"></a>
 Steps to Run the Example</h1>
 <p>Since this is a bootloader and is used as a SOC initialization binary, the example will be run every time you boot an application using this example. It is generally run from a boot media (OSPI Flash, SD Card or over UART) unlike other examples which are usually loaded with CCS. Nevertheless, you can build this example like you do for the others using makefile or build it via CCS by importing as a project.</p>
 <ul>
 <li><b>When using CCS projects to build</b>, import the CCS project for the required combination and build it using the CCS project menu (see <a class="el" href="CCS_PROJECTS_PAGE.html">Using SDK with CCS Projects</a>).</li>
 <li><b>When using makefiles to build</b>, note the required combination and build using make command (see <a class="el" href="MAKEFILE_BUILD_PAGE.html">Using SDK with Makefiles</a> )</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md2604"></a>
+<h1><a class="anchor" id="autotoc_md2606"></a>
 Example Usage</h1>
 <p>The standard DFU-Utility is not compatible with the AM261x device. Instead, please use the dfu-util executable located in ${SDK_INSTALL_PATH}/tools/boot/usb_dfu_utility, depending on your operating system, to carry out DFU operations.</p>
 <ul>
@@ -165,7 +165,7 @@ DFU ROM boot log</div></div>
 </pre><ul>
 <li>Another option is to use the <a class="el" href="TOOLS_BOOT.html#USB_BOOTLOADER">USB Bootloader Python Script</a> which abstracts the setps 3 and 4 mentioned above.</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md2605"></a>
+<h1><a class="anchor" id="autotoc_md2607"></a>
 Flashing Failure</h1>
 <p>If the flashing fails, the error message will give a hint as to why it failed. Some common error messages, reasons and potential solutions are listed below.</p>
 <table class="doxtable">
@@ -178,7 +178,7 @@ Flashing Failure</h1>
 <tr>
 <td>DFU Timeout while transfering large .mcelf (LIBUSB_ERROR_TIMEOUT) </td><td>DFU-UTIL tool timed out </td><td>Reduce the size of application image if the dfu-util tool is facing time-out issues due to large application image OR create a custom dfu-util tool with increased timeout which suits your requirements.  </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md2606"></a>
+<h1><a class="anchor" id="autotoc_md2608"></a>
 See Also</h1>
 <p><a class="el" href="USB_DEVICE_DRIVER.html">USB</a></p>
 <p><a class="el" href="DRIVERS_BOOTLOADER_PAGE.html">BOOTLOADER</a></p>

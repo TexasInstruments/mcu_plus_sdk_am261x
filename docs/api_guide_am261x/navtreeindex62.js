@@ -1,5 +1,12 @@
 var NAVTREEINDEX62 =
 {
+"structI2C__Object.html#aff386dafe5a558b55af8c556841ca4de":[19,7,19,4,11],
+"structI2C__Params.html":[19,7,19,3],
+"structI2C__Params.html#a56e74ffc2f1ee70f715dcb41874f153c":[19,7,19,3,1],
+"structI2C__Params.html#a7f9942a2c6bab07474666638d0dfdc57":[19,7,19,3,2],
+"structI2C__Params.html#ab72ce0fd173d102656a5b482ad6f3779":[19,7,19,3,0],
+"structI2C__Transaction.html":[19,7,19,2],
+"structI2C__Transaction.html#a08959a9f098163d02d6002e73b3a4606":[19,7,19,2,1],
 "structI2C__Transaction.html#a2085d4c943f0d8617365b7c427e6a0de":[19,7,19,2,3],
 "structI2C__Transaction.html#a21755edd4d999d6041d303e269596371":[19,7,19,2,5],
 "structI2C__Transaction.html#a29ec65addac2d4ef5d1235c2329e2fc1":[19,7,19,2,6],
@@ -242,12 +249,5 @@ var NAVTREEINDEX62 =
 "structIcssgStats__MacPort.html#a94205e181d3eede27967aaad867265e2":[19,4,0,9,1,0,46],
 "structIcssgStats__MacPort.html#a956ef02a03232a1452f59960b9d82f69":[19,4,0,9,1,0,31],
 "structIcssgStats__MacPort.html#a9f1f2d558cb122d70f27d1c4113f05cd":[19,4,0,9,1,0,11],
-"structIcssgStats__MacPort.html#aa480214860fbda23eba0d24cbe0cbc90":[19,4,0,9,1,0,43],
-"structIcssgStats__MacPort.html#aa64be7b2de54fa8fcd87dfe2b5250375":[19,4,0,9,1,0,30],
-"structIcssgStats__MacPort.html#aa689102fd815057c14f08c75b0a64d12":[19,4,0,9,1,0,12],
-"structIcssgStats__MacPort.html#aa78d5ca211901b49b899196c7d344df5":[19,4,0,9,1,0,50],
-"structIcssgStats__MacPort.html#aa7e9fd309ee0ba418af979ff58862b31":[19,4,0,9,1,0,9],
-"structIcssgStats__MacPort.html#ab4f6efa3416a3f809ca84c30d6dbb0f8":[19,4,0,9,1,0,57],
-"structIcssgStats__MacPort.html#ab7da7c43df33346afe8bbb22d4547811":[19,4,0,9,1,0,23],
-"structIcssgStats__MacPort.html#aba8c931530df15bf967f029d6ed4b159":[19,4,0,9,1,0,10]
+"structIcssgStats__MacPort.html#aa480214860fbda23eba0d24cbe0cbc90":[19,4,0,9,1,0,43]
 };

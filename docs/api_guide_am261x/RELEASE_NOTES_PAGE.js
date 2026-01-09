@@ -35,9 +35,11 @@ var RELEASE_NOTES_PAGE =
             [ "Makefile Changes", "RELEASE_NOTES_11_01_00_PAGE.html#autotoc_md198", null ]
           ] ],
           [ "SDL PBIST Self test", "RELEASE_NOTES_11_01_00_PAGE.html#autotoc_md201", null ],
-          [ "Compiler Options", "RELEASE_NOTES_11_01_00_PAGE.html#autotoc_md202", null ],
-          [ "SOC Device Drivers", "RELEASE_NOTES_11_01_00_PAGE.html#autotoc_md203", null ],
-          [ "Networking", "RELEASE_NOTES_11_01_00_PAGE.html#autotoc_md204", null ]
+          [ "SDL STC Configuration", "RELEASE_NOTES_11_01_00_PAGE.html#autotoc_md202", null ],
+          [ "SDL Handler API name update", "RELEASE_NOTES_11_01_00_PAGE.html#autotoc_md203", null ],
+          [ "Compiler Options", "RELEASE_NOTES_11_01_00_PAGE.html#autotoc_md204", null ],
+          [ "SOC Device Drivers", "RELEASE_NOTES_11_01_00_PAGE.html#autotoc_md205", null ],
+          [ "Networking", "RELEASE_NOTES_11_01_00_PAGE.html#autotoc_md206", null ]
         ] ]
       ] ]
     ] ],

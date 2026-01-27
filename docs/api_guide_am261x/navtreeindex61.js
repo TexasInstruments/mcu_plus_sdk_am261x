@@ -1,5 +1,10 @@
 var NAVTREEINDEX61 =
 {
+"structFlash__DevConfig.html#a98f44573a23b6366b4f5911fe930e52b":[19,1,1,1,30],
+"structFlash__DevConfig.html#aa34b6b36b967b4d9f0d6a6f67d90296d":[19,1,1,1,19],
+"structFlash__DevConfig.html#aa7a680fe04d589f1c8191cd822b8a305":[19,1,1,1,21],
+"structFlash__DevConfig.html#ab283ed5ac28888b6d2f4ece2a2697e44":[19,1,1,1,20],
+"structFlash__DevConfig.html#ab2acdfad5f7e49651aff07b71fd31310":[19,1,1,1,10],
 "structFlash__DevConfig.html#aceece3d92326136df48c08aad0b56109":[19,1,1,1,2],
 "structFlash__DevConfig.html#aec4d61cd7bbcd19ee93805ec6ebd4203":[19,1,1,1,28],
 "structFlash__DevConfig.html#aeea07d11c4e7bdafaeb17d5d07f56ea6":[19,1,1,1,4],
@@ -244,10 +249,5 @@ var NAVTREEINDEX61 =
 "structI2C__Object.html#a21aab1e2c9725ec2f059458ad263d992":[19,7,19,4,4],
 "structI2C__Object.html#a76cc5a10bfabe817395d18b7de6e3202":[19,7,19,4,2],
 "structI2C__Object.html#a7923b94eff66662bf2e087943360ae89":[19,7,19,4,10],
-"structI2C__Object.html#a91311572f00321c4e09f9c7211b188d1":[19,7,19,4,3],
-"structI2C__Object.html#a926e5faed22a7e4d797a417301dd0d2f":[19,7,19,4,6],
-"structI2C__Object.html#a9c5bac93e68090c87fafc284eff18e79":[19,7,19,4,7],
-"structI2C__Object.html#ab08fd2d0ee8a59fe0a39dc636e2e50b5":[19,7,19,4,5],
-"structI2C__Object.html#ad6a25967b42125c9b81c9bd8a600b117":[19,7,19,4,9],
-"structI2C__Object.html#ada53053790f68feab247d1452cb646ab":[19,7,19,4,1]
+"structI2C__Object.html#a91311572f00321c4e09f9c7211b188d1":[19,7,19,4,3]
 };

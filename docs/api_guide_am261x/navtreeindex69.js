@@ -1,5 +1,11 @@
 var NAVTREEINDEX69 =
 {
+"structSOC__RcmADPLLJConfig__t.html#acb70ae59e4531c26af17677fca0423fa":[19,7,41,0,2,0],
+"structSOC__RcmClkSrcInfo.html":[19,7,41,0,0],
+"structSOC__RcmClkSrcInfo.html#a024a52f2eb4e44a367857461b1521fb4":[19,7,41,0,0,1],
+"structSOC__RcmClkSrcInfo.html#ae3a78d39e27d98b49e7b01d5d43a2990":[19,7,41,0,0,0],
+"structSOC__RcmPllHsDivOutConfig.html":[19,7,41,0,3],
+"structSOC__RcmPllHsDivOutConfig.html#a8c4302d495010f249239ef79e0cc8766":[19,7,41,0,3,0],
 "structSOC__RcmPllHsDivOutConfig.html#aeaaaaca823fe27bec1953b0bb98b2d3e":[19,7,41,0,3,1],
 "structSOC__RcmXTALInfo.html":[19,7,41,0,1],
 "structSOC__RcmXTALInfo.html#a938802de08fd49c75442ad59d933ec58":[19,7,41,0,1,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX69 =
 "structcb__rawsock__paras__t.html#a7c82d5b5adeef7f3e2df6965b3336cf4":[19,12,1,2,2],
 "structcb__rawsock__paras__t.html#a8597bfe10d714dcc7f7165aa9692ae59":[19,12,1,2,3],
 "structcb__rawsock__paras__t.html#aa25b070ba65f93c44620462ae81dae11":[19,12,1,2,1],
-"structcb__rawsock__paras__t.html#aa7853a15ac027792149b75db433ad90b":[19,12,1,2,9],
-"structcb__rawsock__paras__t.html#ab203a597c18180542a46f67815d317b0":[19,12,1,2,8],
-"structcb__rawsock__paras__t.html#af93bcebd168a408a56d2e85ef4023077":[19,12,1,2,6],
-"structcb__socket__lldcfg__update__t.html":[19,12,3,4],
-"structcb__socket__lldcfg__update__t.html#a0f6f3f7e6d5a7395320278fa835951bb":[19,12,3,4,11],
-"structcb__socket__lldcfg__update__t.html#a6a243d64ed53afac13b8265a167996a2":[19,12,3,4,10],
-"structcb__socket__lldcfg__update__t.html#a76715096d9ef4c9383bccca385bc4809":[19,12,3,4,4]
+"structcb__rawsock__paras__t.html#aa7853a15ac027792149b75db433ad90b":[19,12,1,2,9]
 };

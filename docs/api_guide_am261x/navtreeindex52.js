@@ -1,5 +1,10 @@
 var NAVTREEINDEX52 =
 {
+"group__SYNP__USB__MODULE.html#gac6e81f46df92d9b76aa65650cc912f17":[19,7,47,0,41],
+"group__SYNP__USB__MODULE.html#gadb21db88e81848ad2e6a76f7ba4b1005":[19,7,47,0,46],
+"group__SYNP__USB__MODULE.html#gaf20a9be8b36c96d6cbf02eaef0685b1b":[19,7,47,0,34],
+"group__SYNP__USB__MODULE.html#gaffb94c2f7bff115bc48c8ec083cfd0c4":[19,7,47,0,25],
+"group__SYNP__USB__MODULE.html#gga1a64e378ad9450edfa0fc7e1336bfeb3a1107e21d1603a1348fd6d1596d84e9d4":[19,7,47,0,33,1],
 "group__SYNP__USB__MODULE.html#gga1a64e378ad9450edfa0fc7e1336bfeb3a111d2205b1480b377b22204ee8ab945a":[19,7,47,0,33,7],
 "group__SYNP__USB__MODULE.html#gga1a64e378ad9450edfa0fc7e1336bfeb3a29f8f0cfdf42c802def25f49620ee59b":[19,7,47,0,33,5],
 "group__SYNP__USB__MODULE.html#gga1a64e378ad9450edfa0fc7e1336bfeb3a5df1bec27c858afb123cd4a8c4e427f7":[19,7,47,0,33,3],
@@ -244,10 +249,5 @@ var NAVTREEINDEX52 =
 "group__lld__thread.html#ga9be7dbe0379e7821c0062219a6a767a6":[19,12,4,60],
 "group__lld__thread.html#ga9c4a6270a3819fa1f0471c435724b6fd":[19,12,4,57],
 "group__lld__thread.html#gaa65faa0a37ac5f14eccf1380454ce1dd":[19,12,4,42],
-"group__lld__thread.html#gaa88d7b7b1d170d594266064aa4d15766":[19,12,4,15],
-"group__lld__thread.html#gaa92d0f3871e1cb4b650fd5a70d98153c":[19,12,4,9],
-"group__lld__thread.html#gaabca1c68dc2b10a7a2bf13d781919002":[19,12,4,43],
-"group__lld__thread.html#gaaec34ffce0e911902ac66aaf57946607":[19,12,4,61],
-"group__lld__thread.html#gab2931e0399a8b00bbcbf63cea216b267":[19,12,4,13],
-"group__lld__thread.html#gab69c94f6a6fb4f65445d57c2f5ba14ed":[19,12,4,53]
+"group__lld__thread.html#gaa88d7b7b1d170d594266064aa4d15766":[19,12,4,15]
 };

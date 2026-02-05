@@ -1,5 +1,9 @@
 var NAVTREEINDEX58 =
 {
+"structCpswStats__MacPort__Ng.html":[19,4,0,9,0,3],
+"structCpswStats__MacPort__Ng.html#a050722212de6b93fe08659f5a7c6104f":[19,4,0,9,0,3,36],
+"structCpswStats__MacPort__Ng.html#a05254a959d3e18bba7a0ee34ec482433":[19,4,0,9,0,3,57],
+"structCpswStats__MacPort__Ng.html#a054633478ebf32810cd5030f533d268b":[19,4,0,9,0,3,40],
 "structCpswStats__MacPort__Ng.html#a059f5675fc2f8f6e253aaa9db1c5b407":[19,4,0,9,0,3,0],
 "structCpswStats__MacPort__Ng.html#a06ad9cc8c63718dffc23d0222d81b490":[19,4,0,9,0,3,4],
 "structCpswStats__MacPort__Ng.html#a189fca2699123206767b4bda7fcaf054":[19,4,0,9,0,3,9],
@@ -245,9 +249,5 @@ var NAVTREEINDEX58 =
 "structEDMA__Object.html#a13eab20d6bb601393d4663c08abcd1ee":[19,7,6,9,0],
 "structEDMA__Object.html#a172b15ef69c4142479b958e1e1d1507c":[19,7,6,9,8],
 "structEDMA__Object.html#a3a6f7cb56c580e3f7f0bd205ae19d8b0":[19,7,6,9,5],
-"structEDMA__Object.html#a4be9bd8fe842c8d0f234d969fa86ad17":[19,7,6,9,9],
-"structEDMA__Object.html#a59d3ca94ccb84c00cdb310f554ce665c":[19,7,6,9,3],
-"structEDMA__Object.html#a82ddfb1a67326aeed5039da2d54923ba":[19,7,6,9,1],
-"structEDMA__Object.html#a9a2075dfbef402e43ec24b46eefa710b":[19,7,6,9,7],
-"structEDMA__Object.html#ab77f1ffcca1f855744496bf4270c2d87":[19,7,6,9,2]
+"structEDMA__Object.html#a4be9bd8fe842c8d0f234d969fa86ad17":[19,7,6,9,9]
 };

@@ -1,5 +1,9 @@
 var NAVTREEINDEX61 =
 {
+"structFlash__DevConfig.html#a58fcf27c6c42c987fc0f7ccdbf766aa9":[19,1,1,1,7],
+"structFlash__DevConfig.html#a64568ae2281c278d4e88401d2bb4a874":[19,1,1,1,13],
+"structFlash__DevConfig.html#a7cd4f1646878a255c5f42f94fb5f1dce":[19,1,1,1,27],
+"structFlash__DevConfig.html#a80726f5736774c6f94ae2985fe7f37f5":[19,1,1,1,6],
 "structFlash__DevConfig.html#a98f44573a23b6366b4f5911fe930e52b":[19,1,1,1,30],
 "structFlash__DevConfig.html#aa34b6b36b967b4d9f0d6a6f67d90296d":[19,1,1,1,19],
 "structFlash__DevConfig.html#aa7a680fe04d589f1c8191cd822b8a305":[19,1,1,1,21],
@@ -39,7 +43,8 @@ var NAVTREEINDEX61 =
 "structFlash__NandConfig.html#af151e797eaf119f15c9ecce04aebe7fa":[19,1,1,0,11],
 "structFlash__NandConfig.html#af65ff3790948df048400a56d9684c83d":[19,1,1,0,5],
 "structFlash__Params.html":[19,1,1,2],
-"structFlash__Params.html#adbf8c9b96aeeeca61ee090ea1d0fe554":[19,1,1,2,1],
+"structFlash__Params.html#ad72dcfc0daca45ca650db45b1b31ee1d":[19,1,1,2,1],
+"structFlash__Params.html#adbf8c9b96aeeeca61ee090ea1d0fe554":[19,1,1,2,2],
 "structFlash__Params.html#af84f256d7f327843ed0ea6abdd7a59c8":[19,1,1,2,0],
 "structGPMC__AddrRegion.html":[19,7,16,3],
 "structGPMC__AddrRegion.html#a81c14c90e58a2d8d26f49b509d960e8c":[19,7,16,3,1],
@@ -244,10 +249,5 @@ var NAVTREEINDEX61 =
 "structI2C__Memory__ExtendedParams.html#a513ca096238418a4172df9678f51d30b":[19,7,20,4,1],
 "structI2C__Memory__ExtendedParams.html#adf6e2f48b386682818525f715f0e62e0":[19,7,20,4,0],
 "structI2C__Object.html":[19,7,19,4],
-"structI2C__Object.html#a00a4f93fca8c1fda9e24343353b9bff9":[19,7,19,4,8],
-"structI2C__Object.html#a09cad8965bfd3b85fe50ea822580eda7":[19,7,19,4,0],
-"structI2C__Object.html#a21aab1e2c9725ec2f059458ad263d992":[19,7,19,4,4],
-"structI2C__Object.html#a76cc5a10bfabe817395d18b7de6e3202":[19,7,19,4,2],
-"structI2C__Object.html#a7923b94eff66662bf2e087943360ae89":[19,7,19,4,10],
-"structI2C__Object.html#a91311572f00321c4e09f9c7211b188d1":[19,7,19,4,3]
+"structI2C__Object.html#a00a4f93fca8c1fda9e24343353b9bff9":[19,7,19,4,8]
 };

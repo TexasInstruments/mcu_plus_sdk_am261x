@@ -1,5 +1,9 @@
 var NAVTREEINDEX59 =
 {
+"structEDMA__Object.html#a59d3ca94ccb84c00cdb310f554ce665c":[19,7,6,9,3],
+"structEDMA__Object.html#a82ddfb1a67326aeed5039da2d54923ba":[19,7,6,9,1],
+"structEDMA__Object.html#a9a2075dfbef402e43ec24b46eefa710b":[19,7,6,9,7],
+"structEDMA__Object.html#ab77f1ffcca1f855744496bf4270c2d87":[19,7,6,9,2],
 "structEDMA__Object.html#ac9b4fcdcceef76481c3f89773100e7d5":[19,7,6,9,10],
 "structEDMA__Object.html#adc641ef96182f806cb961049bbf1cdc0":[19,7,6,9,11],
 "structEDMA__Object.html#adf744d4012131376e7f2de3f3fa91631":[19,7,6,9,4],
@@ -245,9 +249,5 @@ var NAVTREEINDEX59 =
 "structEnetPhy__Mdio.html#ae5726adc4dc388d402253c819845c7b3":[19,4,0,13,6,4],
 "structEnetPhy__Obj.html":[19,4,0,13,8],
 "structEnetPhy__Obj.html#a2e67344e87b4670073386b9d4c879264":[19,4,0,13,8,6],
-"structEnetPhy__Obj.html#a3cb346e8055e88a8bad2abcb6e529a3a":[19,4,0,13,8,8],
-"structEnetPhy__Obj.html#a598b95b4f8f6e5d6cb9d09fdddedf808":[19,4,0,13,8,7],
-"structEnetPhy__Obj.html#a75e7cedadf056e0b0512f286c051b413":[19,4,0,13,8,1],
-"structEnetPhy__Obj.html#a7be549959efd1b2ac45387c2dea1d76f":[19,4,0,13,8,13],
-"structEnetPhy__Obj.html#a850453b51829db99fd0ce5b7eb893e0e":[19,4,0,13,8,10]
+"structEnetPhy__Obj.html#a3cb346e8055e88a8bad2abcb6e529a3a":[19,4,0,13,8,8]
 };

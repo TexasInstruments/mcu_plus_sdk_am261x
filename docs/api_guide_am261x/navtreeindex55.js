@@ -1,5 +1,9 @@
 var NAVTREEINDEX55 =
 {
+"structCANFD__MCANECCErrStatus.html":[19,7,2,10],
+"structCANFD__MCANECCErrStatus.html#a25e2277050850a02b978d9da83398a25":[19,7,2,10,0],
+"structCANFD__MCANECCErrStatus.html#a33b865c8c61198221843f148669ed71f":[19,7,2,10,1],
+"structCANFD__MCANECCErrStatus.html#a58cac52ffc6be05d5bf6f94d178ed8ed":[19,7,2,10,3],
 "structCANFD__MCANECCErrStatus.html#a729e5627dfc52769ebe002cff8f3278f":[19,7,2,10,2],
 "structCANFD__MCANECCErrStatus.html#a7451364795c4285a74b08e1131e6759f":[19,7,2,10,4],
 "structCANFD__MCANErrCntStatus.html":[19,7,2,7],
@@ -245,9 +249,5 @@ var NAVTREEINDEX55 =
 "structCpswAle__MacAddrClassifierInfo.html#a15d4afa99295510798f6c167f1c609ab":[19,4,0,1,0,18,0],
 "structCpswAle__MacAddrClassifierInfo.html#ae25a23ac98b6745a7582373c1d9b8579":[19,4,0,1,0,18,1],
 "structCpswAle__MacAddrInfo.html":[19,4,0,1,0,0],
-"structCpswAle__MacAddrInfo.html#a3b56fecf2a43fe7b00495bf9d21785cc":[19,4,0,1,0,0,0],
-"structCpswAle__MacAddrInfo.html#a63b0e48a153540592591e2a99ef93fd4":[19,4,0,1,0,0,1],
-"structCpswAle__MacAuthCfg.html":[19,4,0,1,0,42],
-"structCpswAle__MacAuthCfg.html#a5ee789e3b7232853345ba8e686610bb1":[19,4,0,1,0,42,1],
-"structCpswAle__MacAuthCfg.html#a999ef4f8fc4f9093080b7acd168a795e":[19,4,0,1,0,42,0]
+"structCpswAle__MacAddrInfo.html#a3b56fecf2a43fe7b00495bf9d21785cc":[19,4,0,1,0,0,0]
 };

@@ -179,16 +179,16 @@ var NAVTREEINDEX67 =
 "structSDL__ECC__ErrorInfo__t.html#a446c3a71d80fcc9bf09b530a8e2bdabe":[19,5,0,0,2,0],
 "structSDL__ECC__ErrorInfo__t.html#a4526456fbf67a84f6b34c5fb66f50689":[19,5,0,0,2,3],
 "structSDL__ECC__ErrorInfo__t.html#a4526456fbf67a84f6b34c5fb66f50689":[19,6,4,0,2,3],
-"structSDL__ECC__ErrorInfo__t.html#a88383ff4a995f70a54e31ad939d90ca4":[19,6,4,0,2,2],
 "structSDL__ECC__ErrorInfo__t.html#a88383ff4a995f70a54e31ad939d90ca4":[19,5,0,0,2,2],
+"structSDL__ECC__ErrorInfo__t.html#a88383ff4a995f70a54e31ad939d90ca4":[19,6,4,0,2,2],
 "structSDL__ECC__ErrorInfo__t.html#aa8a64d97ec15c7ddbb1b74d3c324d7c0":[19,5,0,0,2,1],
 "structSDL__ECC__ErrorInfo__t.html#aa8a64d97ec15c7ddbb1b74d3c324d7c0":[19,6,4,0,2,1],
-"structSDL__ECC__ErrorInfo__t.html#ab4e3b9802e01c7e43f4ee13fdcc5c19d":[19,5,0,0,2,5],
 "structSDL__ECC__ErrorInfo__t.html#ab4e3b9802e01c7e43f4ee13fdcc5c19d":[19,6,4,0,2,5],
+"structSDL__ECC__ErrorInfo__t.html#ab4e3b9802e01c7e43f4ee13fdcc5c19d":[19,5,0,0,2,5],
 "structSDL__ECC__ErrorInfo__t.html#aca7d2c8594d485ce17d80d720e616a48":[19,6,4,0,2,4],
 "structSDL__ECC__ErrorInfo__t.html#aca7d2c8594d485ce17d80d720e616a48":[19,5,0,0,2,4],
-"structSDL__ECC__ErrorInfo__t.html#af08e6f67a020732f8768dc11c7de1278":[19,6,4,0,2,6],
 "structSDL__ECC__ErrorInfo__t.html#af08e6f67a020732f8768dc11c7de1278":[19,5,0,0,2,6],
+"structSDL__ECC__ErrorInfo__t.html#af08e6f67a020732f8768dc11c7de1278":[19,6,4,0,2,6],
 "structSDL__ECC__InitConfig__t.html":[19,5,0,0,0],
 "structSDL__ECC__InitConfig__t.html":[19,6,4,0,0],
 "structSDL__ECC__InitConfig__t.html#a16e6cbb424fe97b7c7ad303f3cf201db":[19,5,0,0,0,1],
@@ -249,5 +249,5 @@ var NAVTREEINDEX67 =
 "structSDL__Ecc__AggrEccRamErrorStatusInfo.html#a0ac543b8f58b4d3e73bd08b436735929":[19,5,0,0,4,2],
 "structSDL__Ecc__AggrEccRamErrorStatusInfo.html#a18e023c16e004a4de3a5b00ef725b42c":[19,5,0,0,4,5],
 "structSDL__Ecc__AggrEccRamErrorStatusInfo.html#a18e023c16e004a4de3a5b00ef725b42c":[19,6,4,0,4,5],
-"structSDL__Ecc__AggrEccRamErrorStatusInfo.html#a2b9d4f1d92385edc1b67b6eefdc6248f":[19,6,4,0,4,0]
+"structSDL__Ecc__AggrEccRamErrorStatusInfo.html#a2b9d4f1d92385edc1b67b6eefdc6248f":[19,5,0,0,4,0]
 };

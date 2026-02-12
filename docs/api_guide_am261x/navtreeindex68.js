@@ -1,6 +1,6 @@
 var NAVTREEINDEX68 =
 {
-"structSDL__Ecc__AggrEccRamErrorStatusInfo.html#a2b9d4f1d92385edc1b67b6eefdc6248f":[19,5,0,0,4,0],
+"structSDL__Ecc__AggrEccRamErrorStatusInfo.html#a2b9d4f1d92385edc1b67b6eefdc6248f":[19,6,4,0,4,0],
 "structSDL__Ecc__AggrEccRamErrorStatusInfo.html#a47f5ce6b92a3ee55cdc41dd8a2be18d9":[19,6,4,0,4,8],
 "structSDL__Ecc__AggrEccRamErrorStatusInfo.html#a47f5ce6b92a3ee55cdc41dd8a2be18d9":[19,5,0,0,4,8],
 "structSDL__Ecc__AggrEccRamErrorStatusInfo.html#a4bd1e3e05011bb6d26f2b2ab39f7b3b8":[19,5,0,0,4,3],
@@ -9,12 +9,12 @@ var NAVTREEINDEX68 =
 "structSDL__Ecc__AggrEccRamErrorStatusInfo.html#a97155632403e7e38c7aebbe4b1f61f1f":[19,5,0,0,4,4],
 "structSDL__Ecc__AggrEccRamErrorStatusInfo.html#acd7d0b67635a31e148914ac434dc066a":[19,6,4,0,4,7],
 "structSDL__Ecc__AggrEccRamErrorStatusInfo.html#acd7d0b67635a31e148914ac434dc066a":[19,5,0,0,4,7],
-"structSDL__Ecc__AggrEccRamErrorStatusInfo.html#acf1390bfce243f94d492c9b24aaafeb2":[19,6,4,0,4,1],
 "structSDL__Ecc__AggrEccRamErrorStatusInfo.html#acf1390bfce243f94d492c9b24aaafeb2":[19,5,0,0,4,1],
+"structSDL__Ecc__AggrEccRamErrorStatusInfo.html#acf1390bfce243f94d492c9b24aaafeb2":[19,6,4,0,4,1],
 "structSDL__Ecc__AggrEccRamErrorStatusInfo.html#af70392ef0b1f85b465ba7ce204e6fc3d":[19,5,0,0,4,6],
 "structSDL__Ecc__AggrEccRamErrorStatusInfo.html#af70392ef0b1f85b465ba7ce204e6fc3d":[19,6,4,0,4,6],
-"structSDL__Ecc__AggrErrorInfo.html":[19,6,4,0,3],
 "structSDL__Ecc__AggrErrorInfo.html":[19,5,0,0,3],
+"structSDL__Ecc__AggrErrorInfo.html":[19,6,4,0,3],
 "structSDL__Ecc__AggrErrorInfo.html#a0a00d4b40d734a762479903b8e531ff3":[19,6,4,0,3,0],
 "structSDL__Ecc__AggrErrorInfo.html#a0a00d4b40d734a762479903b8e531ff3":[19,5,0,0,3,0],
 "structSDL__Ecc__AggrErrorInfo.html#a0e97708281c3aa7b26950e741ba3dc4f":[19,5,0,0,3,1],

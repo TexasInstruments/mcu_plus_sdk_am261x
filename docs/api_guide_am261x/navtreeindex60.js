@@ -1,5 +1,6 @@
 var NAVTREEINDEX60 =
 {
+"structEnetPhy__Obj.html#a3cb346e8055e88a8bad2abcb6e529a3a":[19,4,0,13,8,8],
 "structEnetPhy__Obj.html#a598b95b4f8f6e5d6cb9d09fdddedf808":[19,4,0,13,8,7],
 "structEnetPhy__Obj.html#a75e7cedadf056e0b0512f286c051b413":[19,4,0,13,8,1],
 "structEnetPhy__Obj.html#a7be549959efd1b2ac45387c2dea1d76f":[19,4,0,13,8,13],
@@ -248,6 +249,5 @@ var NAVTREEINDEX60 =
 "structFlash__DevConfig.html#a3c1371c0b80f704be04ca418c1eb5bab":[19,1,1,1,22],
 "structFlash__DevConfig.html#a47bc6a8e8e5de5fd6368cbca3331885a":[19,1,1,1,29],
 "structFlash__DevConfig.html#a4b9a8b5f73b7208bc365d78539c7c6d5":[19,1,1,1,18],
-"structFlash__DevConfig.html#a506fa24d7ae2fc51c2bedd573f08bacc":[19,1,1,1,8],
-"structFlash__DevConfig.html#a54c68798c25edf92571b16f19c6435f5":[19,1,1,1,9]
+"structFlash__DevConfig.html#a506fa24d7ae2fc51c2bedd573f08bacc":[19,1,1,1,8]
 };

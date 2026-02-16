@@ -1,5 +1,6 @@
 var NAVTREEINDEX43 =
 {
+"group__DRV__UART__LLD__MODULE.html#gaa01bc8a65f364b5d4b5ef5a718a4376c":[19,7,46,154],
 "group__DRV__UART__LLD__MODULE.html#gaa0c5fd1cd1203e678d2b68c9c1e83ad5":[19,7,46,21],
 "group__DRV__UART__LLD__MODULE.html#gaa2a3e1b61fddff2c5cf3c3d384cbd11f":[19,7,46,124],
 "group__DRV__UART__LLD__MODULE.html#gaa2e92b25289b82ccca3dc5f13ccc8a8a":[19,7,46,96],
@@ -248,6 +249,5 @@ var NAVTREEINDEX43 =
 "group__ENET__MAIN__API.html#ga66b739fe0b7e9306fa45677e0cf6aaf7":[19,4,0,4,105],
 "group__ENET__MAIN__API.html#ga69252ac1c7fdf3b40a837c8a3675d0a5":[19,4,0,4,32],
 "group__ENET__MAIN__API.html#ga6ab187501a798f1c2491ec9a2cc6bfba":[19,4,0,4,53],
-"group__ENET__MAIN__API.html#ga7693fa2763587e68ad8ce2a60ce6e485":[19,4,0,4,6],
-"group__ENET__MAIN__API.html#ga7c28c7d4573a19f423675e247972803d":[19,4,0,4,68]
+"group__ENET__MAIN__API.html#ga7693fa2763587e68ad8ce2a60ce6e485":[19,4,0,4,6]
 };

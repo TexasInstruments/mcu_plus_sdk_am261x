@@ -1,5 +1,6 @@
 var NAVTREEINDEX46 =
 {
+"group__KERNEL__DPL__ADDR__TRANSLATE.html#gga1222985aa01dacd64b461a6d60b2d69ca6e78ef979710df1e187bf159d2ee104e":[19,2,10,3,20],
 "group__KERNEL__DPL__ADDR__TRANSLATE.html#gga1222985aa01dacd64b461a6d60b2d69ca7c24f92539399d1748a198214718e72b":[19,2,10,3,29],
 "group__KERNEL__DPL__ADDR__TRANSLATE.html#gga1222985aa01dacd64b461a6d60b2d69ca84d968cca4867fa4077098c6abc314ae":[19,2,10,3,18],
 "group__KERNEL__DPL__ADDR__TRANSLATE.html#gga1222985aa01dacd64b461a6d60b2d69ca966faabb63d6f50e0f8aaaf5ca19c512":[19,2,10,3,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX46 =
 "group__MCSPI__DMA__LLD.html#ga45a5ea571b59daceb6c92522e30e80fd":[19,7,29,0,1],
 "group__MCSPI__DMA__LLD.html#ga474719bf4ce5a695ef7f7a5bbf62be72":[19,7,29,0,2],
 "group__MCSPI__DMA__LLD.html#ga7acae0e9dd9e06729cfb0fbc6543f921":[19,7,29,0,4],
-"group__MCSPI__DMA__LLD.html#ga8e101e80b620fd187ccef05cf383b665":[19,7,29,0,0],
-"group__MDIO__MOD.html":[19,4,0,5,0]
+"group__MCSPI__DMA__LLD.html#ga8e101e80b620fd187ccef05cf383b665":[19,7,29,0,0]
 };

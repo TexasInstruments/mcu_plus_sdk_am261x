@@ -1,5 +1,6 @@
 var NAVTREEINDEX66 =
 {
+"structMMCSDLLD__InitObject.html#a3fffbe59cd1adffba3c76152d722d798":[19,7,32,4,0],
 "structMMCSDLLD__InitObject.html#a4f028d17dfe7913c64ab6a499856185e":[19,7,32,4,6],
 "structMMCSDLLD__InitObject.html#a6c80ef0cff5c332a712ad6a067d0572e":[19,7,32,4,8],
 "structMMCSDLLD__InitObject.html#a83470a956ad4b367c2bf7d5b117f8266":[19,7,32,4,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX66 =
 "structPRUICSS__Config.html#a54ecffe273d6c2e4e639bd471294aac5":[19,7,38,6,0],
 "structPRUICSS__Config.html#ac20c7bf5203e04599c75626524283104":[19,7,38,6,1],
 "structPRUICSS__HwAttrs.html":[19,7,38,5],
-"structPRUICSS__HwAttrs.html#a074d2fa5623f0341638bb96d816de0bb":[19,7,38,5,9],
-"structPRUICSS__HwAttrs.html#a0c85e2d9d1b0c19419d1d8284b279254":[19,7,38,5,6]
+"structPRUICSS__HwAttrs.html#a074d2fa5623f0341638bb96d816de0bb":[19,7,38,5,9]
 };

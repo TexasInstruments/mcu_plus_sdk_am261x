@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"group__CPSW__MACPORT__MOD.html#ga2d043cdbbfd84800849c8d9b0a74b878":[19,4,0,3,0,13],
 "group__CPSW__MACPORT__MOD.html#ga2e90a64aba1b42d8a778d333291bb027":[19,4,0,3,0,24],
 "group__CPSW__MACPORT__MOD.html#ga2ef98baf8d908bc2481b71df41104d81":[19,4,0,3,0,15],
 "group__CPSW__MACPORT__MOD.html#ga35edb69444ff2d14486527bf4b0a29f7":[19,4,0,3,0,27],
@@ -248,6 +249,5 @@ var NAVTREEINDEX20 =
 "group__DRV__ADC__MODULE.html#gga254fedc72090784dcfcdcebebdf3ea39a13f3e19d5ee844b3a2eff08681becbb3":[19,7,0,59,0],
 "group__DRV__ADC__MODULE.html#gga254fedc72090784dcfcdcebebdf3ea39a24cd87237628ac79b2891574e0b2ca16":[19,7,0,59,11],
 "group__DRV__ADC__MODULE.html#gga254fedc72090784dcfcdcebebdf3ea39a39f5749e05562cc10e49c564b9b882f8":[19,7,0,59,4],
-"group__DRV__ADC__MODULE.html#gga254fedc72090784dcfcdcebebdf3ea39a59ed2ddcb0833aaa80234623679f25f2":[19,7,0,59,1],
-"group__DRV__ADC__MODULE.html#gga254fedc72090784dcfcdcebebdf3ea39a5fdf20c2c172e83b96b13e6cbe780113":[19,7,0,59,9]
+"group__DRV__ADC__MODULE.html#gga254fedc72090784dcfcdcebebdf3ea39a59ed2ddcb0833aaa80234623679f25f2":[19,7,0,59,1]
 };

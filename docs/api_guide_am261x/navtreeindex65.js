@@ -1,5 +1,6 @@
 var NAVTREEINDEX65 =
 {
+"structMCAN__MsgRAMConfigParams.html#a1b4f40c8f440712ee2c064ba58fc89e9":[19,7,27,8,0],
 "structMCAN__MsgRAMConfigParams.html#a224aa70e53b831f947dbd76e439d2843":[19,7,27,8,20],
 "structMCAN__MsgRAMConfigParams.html#a46068a0ce2c3af23dc1e553ae56144fd":[19,7,27,8,10],
 "structMCAN__MsgRAMConfigParams.html#a5d69435ba93f602ff691fbacb9fbd8ae":[19,7,27,8,15],
@@ -248,6 +249,5 @@ var NAVTREEINDEX65 =
 "structMMCSDLLD__InitObject.html#a1e0ae053e977b1aa8c090e7b0c212188":[19,7,32,4,2],
 "structMMCSDLLD__InitObject.html#a210054d4fa1b585b1f096fbd3625546c":[19,7,32,4,1],
 "structMMCSDLLD__InitObject.html#a27f25fb245288ac84b6c13ed0ccf7ae6":[19,7,32,4,11],
-"structMMCSDLLD__InitObject.html#a371d47feb0fc497f6c2d60110edcdac9":[19,7,32,4,5],
-"structMMCSDLLD__InitObject.html#a3fffbe59cd1adffba3c76152d722d798":[19,7,32,4,0]
+"structMMCSDLLD__InitObject.html#a371d47feb0fc497f6c2d60110edcdac9":[19,7,32,4,5]
 };

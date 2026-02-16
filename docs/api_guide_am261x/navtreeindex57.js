@@ -1,5 +1,6 @@
 var NAVTREEINDEX57 =
 {
+"structCpswMacPort__Cfg.html#a288d13bf75fc275bfb4e80bb7ab188e8":[19,4,0,3,0,8,4],
 "structCpswMacPort__Cfg.html#a64577e1ab5deef710e6eb5b4421a66fd":[19,4,0,3,0,8,1],
 "structCpswMacPort__Cfg.html#a790b30fc14e792d4876f9d7a90f263a9":[19,4,0,3,0,8,0],
 "structCpswMacPort__Cfg.html#a8126e409d5a8516ab6d25afbbb5f79db":[19,4,0,3,0,8,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX57 =
 "structCpswStats__MacPort__2g.html#afa5305eb0d1fba450b4bd0e85046ebe3":[19,4,0,9,0,1,16],
 "structCpswStats__MacPort__2g.html#afb636d406435534fb14b55c56b6dd5fe":[19,4,0,9,0,1,61],
 "structCpswStats__MacPort__2g.html#afc1b465e6db7e1ee83c4927209f0921e":[19,4,0,9,0,1,25],
-"structCpswStats__MacPort__2g.html#afcae76234129b95faab8bd75ea853271":[19,4,0,9,0,1,22],
-"structCpswStats__MacPort__2g.html#afd57423317eb60c6830916fbe8b3268b":[19,4,0,9,0,1,57]
+"structCpswStats__MacPort__2g.html#afcae76234129b95faab8bd75ea853271":[19,4,0,9,0,1,22]
 };

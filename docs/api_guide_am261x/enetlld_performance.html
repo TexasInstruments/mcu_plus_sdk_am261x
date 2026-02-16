@@ -92,31 +92,31 @@ $(document).ready(function(){initNavTree('enetlld_performance.html',''); initRes
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#autotoc_md1256">Introduction</a></li>
-<li class="level1"><a href="#autotoc_md1257">Setup Details</a></li>
-<li class="level1"><a href="#autotoc_md1258">Layer 2 Performance</a><ul><li class="level2"><a href="#autotoc_md1259">Configuration Details</a></li>
-<li class="level2"><a href="#autotoc_md1260">Layer 2 Latency</a><ul><li class="level3"><a href="#autotoc_md1261">Layer-2 Hardware Switching Latency for CPSW</a></li>
-<li class="level3"><a href="#autotoc_md1262">Test Setup</a></li>
-<li class="level3"><a href="#autotoc_md1263">CPSW Latency for RGMII</a></li>
+<ul><li class="level1"><a href="#autotoc_md1257">Introduction</a></li>
+<li class="level1"><a href="#autotoc_md1258">Setup Details</a></li>
+<li class="level1"><a href="#autotoc_md1259">Layer 2 Performance</a><ul><li class="level2"><a href="#autotoc_md1260">Configuration Details</a></li>
+<li class="level2"><a href="#autotoc_md1261">Layer 2 Latency</a><ul><li class="level3"><a href="#autotoc_md1262">Layer-2 Hardware Switching Latency for CPSW</a></li>
+<li class="level3"><a href="#autotoc_md1263">Test Setup</a></li>
+<li class="level3"><a href="#autotoc_md1264">CPSW Latency for RGMII</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="level1"><a href="#autotoc_md1264">TCP/IP Performance</a><ul><li class="level2"><a href="#autotoc_md1265">Configuration Details</a><ul><li class="level3"><a href="#autotoc_md1266">TCP Throughput</a></li>
-<li class="level3"><a href="#autotoc_md1267">UDP Throughput</a></li>
+<li class="level1"><a href="#autotoc_md1265">TCP/IP Performance</a><ul><li class="level2"><a href="#autotoc_md1266">Configuration Details</a><ul><li class="level3"><a href="#autotoc_md1267">TCP Throughput</a></li>
+<li class="level3"><a href="#autotoc_md1268">UDP Throughput</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="level1"><a href="#autotoc_md1268">XIP Performance</a></li>
-<li class="level1"><a href="#autotoc_md1269">See Also</a></li>
+<li class="level1"><a href="#autotoc_md1269">XIP Performance</a></li>
+<li class="level1"><a href="#autotoc_md1270">See Also</a></li>
 </ul>
 </div>
 <div class="textblock"><p><a class="anchor" id="md_components_networking_enet_lld_enet_cpsw_performance_am261x"></a> </p>
-<h1><a class="anchor" id="autotoc_md1256"></a>
+<h1><a class="anchor" id="autotoc_md1257"></a>
 Introduction</h1>
 <p>This section provides the performance numbers of Ethernet drivers using CPSW peripheral in MCU+ SDK</p>
-<h1><a class="anchor" id="autotoc_md1257"></a>
+<h1><a class="anchor" id="autotoc_md1258"></a>
 Setup Details</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -130,13 +130,13 @@ Setup Details</h1>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">Cache status  </td><td class="markdownTableBodyNone">Enabled   </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md1258"></a>
+<h1><a class="anchor" id="autotoc_md1259"></a>
 Layer 2 Performance</h1>
 <p> <style>div.image img[src="CPSW_latency_measurement_diagram.bmp"]{width:30%}</style> </p><div class="image">
 <img src="CPSW_latency_measurement_diagram.bmp" alt=""/>
 <div class="caption">
 Latency defination</div></div>
-<h2><a class="anchor" id="autotoc_md1259"></a>
+<h2><a class="anchor" id="autotoc_md1260"></a>
 Configuration Details</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -169,7 +169,7 @@ Configuration Details</h2>
 </table>
 <p><br  />
  </p>
-<h2><a class="anchor" id="autotoc_md1260"></a>
+<h2><a class="anchor" id="autotoc_md1261"></a>
 Layer 2 Latency</h2>
 <table class="doxtable">
 <tr>
@@ -182,7 +182,7 @@ Layer 2 Latency</h2>
 <tr>
 <td>TX Latency </td><td>13225 </td><td>384 </td><td>13609  </td></tr>
 </table>
-<h3><a class="anchor" id="autotoc_md1261"></a>
+<h3><a class="anchor" id="autotoc_md1262"></a>
 Layer-2 Hardware Switching Latency for CPSW</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -205,13 +205,13 @@ Layer-2 Hardware Switching Latency for CPSW</h3>
 </table>
 <p><br  />
  </p>
-<h3><a class="anchor" id="autotoc_md1262"></a>
+<h3><a class="anchor" id="autotoc_md1263"></a>
 Test Setup</h3>
 <p> <style>div.image img[src="CPSW_Latency_measurement.png"]{width:15==20%}</style> </p><div class="image">
 <img src="CPSW_Latency_measurement.png" alt=""/>
 <div class="caption">
 Connections for Latency Measurement</div></div>
-<h3><a class="anchor" id="autotoc_md1263"></a>
+<h3><a class="anchor" id="autotoc_md1264"></a>
 CPSW Latency for RGMII</h3>
 <table class="doxtable">
 <tr>
@@ -227,9 +227,9 @@ CPSW Latency for RGMII</h3>
 <tr>
 <td><b>1518 Bytes</b> </td><td>13.2</td><td>2.0 </td><td>124.0</td><td>13.8 </td><td>1237.0</td><td>135.6  </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md1264"></a>
+<h1><a class="anchor" id="autotoc_md1265"></a>
 TCP/IP Performance</h1>
-<h2><a class="anchor" id="autotoc_md1265"></a>
+<h2><a class="anchor" id="autotoc_md1266"></a>
 Configuration Details</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -266,7 +266,7 @@ Configuration Details</h2>
 </table>
 <p><br  />
 </p>
-<h3><a class="anchor" id="autotoc_md1266"></a>
+<h3><a class="anchor" id="autotoc_md1267"></a>
 TCP Throughput</h3>
 <table class="doxtable">
 <tr>
@@ -289,7 +289,7 @@ TCP Throughput</h3>
  $<code>iperf -c &lt;evm_ip&gt; -d</code><br  />
  </li>
 </ul>
-<h3><a class="anchor" id="autotoc_md1267"></a>
+<h3><a class="anchor" id="autotoc_md1268"></a>
 UDP Throughput</h3>
 <table class="doxtable">
 <tr>
@@ -325,7 +325,7 @@ where &lt;bw&gt; is 25M, 50M, 100M, etc<br  />
 where &lt;bw&gt; is 25M, 50M, 100M, etc<br  />
  </li>
 </ul>
-<h1><a class="anchor" id="autotoc_md1268"></a>
+<h1><a class="anchor" id="autotoc_md1269"></a>
 XIP Performance</h1>
 <p>Lwip Application size: 793KB</p>
 <p>FLASH: 198KB </p><table class="doxtable">
@@ -358,7 +358,7 @@ XIP Performance</h1>
 <tr>
 <td>UDP Rx </td><td>116Mbps ~1% pkt drop&#160;86% CPU load </td><td>45Mbps&#160; ~1% pkt drop&#160;98% CPU load </td><td>64Mbps&#160; ~1% pkt drop&#160;99% CPU load </td><td>92Mbps ~1% pkt drop 97% CPU load </td><td>108Mbps ~1% pkt drop&#160;89% CPU load </td><td>110Mbps ~1% pkt drop&#160;86% CPU load </td><td>115Mbps ~1% pkt drop&#160;89% CPU load  </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md1269"></a>
+<h1><a class="anchor" id="autotoc_md1270"></a>
 See Also</h1>
 <p><a class="el" href="NETWORKING.html">Ethernet And Networking</a> <a class="el" href="EXAMPLES_ENET_LWIP_CPSW.html">Enet Lwip CPSW Example</a> </p>
 </div></div><!-- contents -->

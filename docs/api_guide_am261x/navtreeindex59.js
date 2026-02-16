@@ -1,5 +1,6 @@
 var NAVTREEINDEX59 =
 {
+"structEDMA__Object.html#a4be9bd8fe842c8d0f234d969fa86ad17":[19,7,6,9,9],
 "structEDMA__Object.html#a59d3ca94ccb84c00cdb310f554ce665c":[19,7,6,9,3],
 "structEDMA__Object.html#a82ddfb1a67326aeed5039da2d54923ba":[19,7,6,9,1],
 "structEDMA__Object.html#a9a2075dfbef402e43ec24b46eefa710b":[19,7,6,9,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX59 =
 "structEnetPhy__Mdio.html#adf8aff6f641f4989d9e86b320644d3b0":[19,4,0,13,6,3],
 "structEnetPhy__Mdio.html#ae5726adc4dc388d402253c819845c7b3":[19,4,0,13,6,4],
 "structEnetPhy__Obj.html":[19,4,0,13,8],
-"structEnetPhy__Obj.html#a2e67344e87b4670073386b9d4c879264":[19,4,0,13,8,6],
-"structEnetPhy__Obj.html#a3cb346e8055e88a8bad2abcb6e529a3a":[19,4,0,13,8,8]
+"structEnetPhy__Obj.html#a2e67344e87b4670073386b9d4c879264":[19,4,0,13,8,6]
 };

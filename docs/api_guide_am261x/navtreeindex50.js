@@ -1,5 +1,7 @@
 var NAVTREEINDEX50 =
 {
+"group__SDL__IP__VTM__Enum.html#gae3ddf914c80569f6fa9126e90b548a11":[19,11,2,0,33],
+"group__SDL__IP__VTM__Enum.html#gaedfc45ec33c28069f4f22942211689e8":[19,11,2,0,41],
 "group__SDL__IP__VTM__Enum.html#gaf9659cbcfdaf1aec23d88be55db53eb2":[19,11,2,0,23],
 "group__SDL__IP__VTM__FUNCTION.html":[19,11,2,1],
 "group__SDL__IP__VTM__FUNCTION.html#ga7701836048362438077fba0563b4f79b":[19,11,2,1,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX50 =
 "group__SDL__MSS__CR5__API.html#gaf348434b59c3ae712b5ffc76df012b09":[19,0,96],
 "group__SDL__MSS__CR5__API.html#gaf8b1108f1a7624df9c434d0586d1ec72":[19,0,77],
 "group__SDL__MSS__CR5__API.html#gaf8fb002e11bce2a66acb0a97eb309779":[19,0,20],
-"group__SDL__MSS__CR5__API.html#gaf9133dc64a0d91c6afa8a1faac003d4d":[19,0,8],
-"group__SDL__MSS__CR5__API.html#gaf92ddc51317a5e40ff1f265337e734dd":[19,0,60],
-"group__SDL__MSS__CR5__API.html#gafcbc6ea2db12913a1bd7e0d2892bf59e":[19,0,128]
+"group__SDL__MSS__CR5__API.html#gaf9133dc64a0d91c6afa8a1faac003d4d":[19,0,8]
 };

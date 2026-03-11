@@ -73,6 +73,7 @@ var EXAMPLES =
       ] ],
       [ "Conclusion", "EXAMPLES_BASIC_SMART_PLACEMENT.html#autotoc_md3457", null ]
     ] ],
+    [ "AI Examples", "EXAMPLES_AI.html", "EXAMPLES_AI" ],
     [ "Software Diagnostics Library (SDL)", "EXAMPLES_SDL.html", "EXAMPLES_SDL" ],
     [ "USB", "EXAMPLES_USB.html", "EXAMPLES_USB" ]
 ];

@@ -15,65 +15,65 @@ var EXAMPLES_BENCHMARKS =
     ] ],
     [ "Optiflash OCRAM Benchmark", "EXAMPLES_OPTIFLASH_OCRAM_BENCHMARK.html", [
       [ "Supported Combinations", "EXAMPLES_OPTIFLASH_OCRAM_BENCHMARK.html#EXAMPLES_OPTIFLASH_OCRAM_BENCHMARKCOMBOS", null ],
-      [ "Introduction", "EXAMPLES_OPTIFLASH_OCRAM_BENCHMARK.html#autotoc_md3475", null ],
-      [ "Steps to Run the Example", "EXAMPLES_OPTIFLASH_OCRAM_BENCHMARK.html#autotoc_md3476", [
-        [ "Building the application", "EXAMPLES_OPTIFLASH_OCRAM_BENCHMARK.html#autotoc_md3477", null ],
-        [ "Running the application", "EXAMPLES_OPTIFLASH_OCRAM_BENCHMARK.html#autotoc_md3478", null ],
-        [ "Sample output", "EXAMPLES_OPTIFLASH_OCRAM_BENCHMARK.html#autotoc_md3479", null ]
+      [ "Introduction", "EXAMPLES_OPTIFLASH_OCRAM_BENCHMARK.html#autotoc_md3615", null ],
+      [ "Steps to Run the Example", "EXAMPLES_OPTIFLASH_OCRAM_BENCHMARK.html#autotoc_md3616", [
+        [ "Building the application", "EXAMPLES_OPTIFLASH_OCRAM_BENCHMARK.html#autotoc_md3617", null ],
+        [ "Running the application", "EXAMPLES_OPTIFLASH_OCRAM_BENCHMARK.html#autotoc_md3618", null ],
+        [ "Sample output", "EXAMPLES_OPTIFLASH_OCRAM_BENCHMARK.html#autotoc_md3619", null ]
       ] ]
     ] ],
     [ "Optiflash XIP Benchmark with 8KB L2 Cache", "EXAMPLES_OPTIFLASH_XIP_8K_BENCHMARK.html", [
       [ "Supported Combinations", "EXAMPLES_OPTIFLASH_XIP_8K_BENCHMARK.html#EXAMPLES_OPTIFLASH_XIP_8K_BENCHMARK_COMBOS", null ],
-      [ "Introduction", "EXAMPLES_OPTIFLASH_XIP_8K_BENCHMARK.html#autotoc_md3480", null ],
-      [ "Steps to Run the Example", "EXAMPLES_OPTIFLASH_XIP_8K_BENCHMARK.html#autotoc_md3481", [
-        [ "Building the application", "EXAMPLES_OPTIFLASH_XIP_8K_BENCHMARK.html#autotoc_md3482", null ],
-        [ "Running the application", "EXAMPLES_OPTIFLASH_XIP_8K_BENCHMARK.html#autotoc_md3483", null ],
-        [ "Sample output", "EXAMPLES_OPTIFLASH_XIP_8K_BENCHMARK.html#autotoc_md3484", null ]
+      [ "Introduction", "EXAMPLES_OPTIFLASH_XIP_8K_BENCHMARK.html#autotoc_md3620", null ],
+      [ "Steps to Run the Example", "EXAMPLES_OPTIFLASH_XIP_8K_BENCHMARK.html#autotoc_md3621", [
+        [ "Building the application", "EXAMPLES_OPTIFLASH_XIP_8K_BENCHMARK.html#autotoc_md3622", null ],
+        [ "Running the application", "EXAMPLES_OPTIFLASH_XIP_8K_BENCHMARK.html#autotoc_md3623", null ],
+        [ "Sample output", "EXAMPLES_OPTIFLASH_XIP_8K_BENCHMARK.html#autotoc_md3624", null ]
       ] ]
     ] ],
     [ "Optiflash XIP Benchmark with 16KB L2 Cache", "EXAMPLES_OPTIFLASH_XIP_16K_BENCHMARK.html", [
       [ "Supported Combinations", "EXAMPLES_OPTIFLASH_XIP_16K_BENCHMARK.html#EXAMPLES_OPTIFLASH_XIP_16K_BENCHMARK_COMBOS", null ],
-      [ "Introduction", "EXAMPLES_OPTIFLASH_XIP_16K_BENCHMARK.html#autotoc_md3485", null ],
-      [ "Steps to Run the Example", "EXAMPLES_OPTIFLASH_XIP_16K_BENCHMARK.html#autotoc_md3486", [
-        [ "Building the application", "EXAMPLES_OPTIFLASH_XIP_16K_BENCHMARK.html#autotoc_md3487", null ],
-        [ "Running the application", "EXAMPLES_OPTIFLASH_XIP_16K_BENCHMARK.html#autotoc_md3488", null ],
-        [ "Sample output", "EXAMPLES_OPTIFLASH_XIP_16K_BENCHMARK.html#autotoc_md3489", null ]
+      [ "Introduction", "EXAMPLES_OPTIFLASH_XIP_16K_BENCHMARK.html#autotoc_md3625", null ],
+      [ "Steps to Run the Example", "EXAMPLES_OPTIFLASH_XIP_16K_BENCHMARK.html#autotoc_md3626", [
+        [ "Building the application", "EXAMPLES_OPTIFLASH_XIP_16K_BENCHMARK.html#autotoc_md3627", null ],
+        [ "Running the application", "EXAMPLES_OPTIFLASH_XIP_16K_BENCHMARK.html#autotoc_md3628", null ],
+        [ "Sample output", "EXAMPLES_OPTIFLASH_XIP_16K_BENCHMARK.html#autotoc_md3629", null ]
       ] ]
     ] ],
     [ "Optiflash XIP Benchmark with 32KB L2 Cache", "EXAMPLES_OPTIFLASH_XIP_32K_BENCHMARK.html", [
       [ "Supported Combinations", "EXAMPLES_OPTIFLASH_XIP_32K_BENCHMARK.html#EXAMPLES_OPTIFLASH_XIP_32K_BENCHMARK_COMBOS", null ],
-      [ "Introduction", "EXAMPLES_OPTIFLASH_XIP_32K_BENCHMARK.html#autotoc_md3490", null ],
-      [ "Steps to Run the Example", "EXAMPLES_OPTIFLASH_XIP_32K_BENCHMARK.html#autotoc_md3491", [
-        [ "Building the application", "EXAMPLES_OPTIFLASH_XIP_32K_BENCHMARK.html#autotoc_md3492", null ],
-        [ "Running the application", "EXAMPLES_OPTIFLASH_XIP_32K_BENCHMARK.html#autotoc_md3493", null ],
-        [ "Sample output", "EXAMPLES_OPTIFLASH_XIP_32K_BENCHMARK.html#autotoc_md3494", null ]
+      [ "Introduction", "EXAMPLES_OPTIFLASH_XIP_32K_BENCHMARK.html#autotoc_md3630", null ],
+      [ "Steps to Run the Example", "EXAMPLES_OPTIFLASH_XIP_32K_BENCHMARK.html#autotoc_md3631", [
+        [ "Building the application", "EXAMPLES_OPTIFLASH_XIP_32K_BENCHMARK.html#autotoc_md3632", null ],
+        [ "Running the application", "EXAMPLES_OPTIFLASH_XIP_32K_BENCHMARK.html#autotoc_md3633", null ],
+        [ "Sample output", "EXAMPLES_OPTIFLASH_XIP_32K_BENCHMARK.html#autotoc_md3634", null ]
       ] ]
     ] ],
     [ "Optiflash XIP Benchmark with 64KB L2 Cache", "EXAMPLES_OPTIFLASH_XIP_64K_BENCHMARK.html", [
       [ "Supported Combinations", "EXAMPLES_OPTIFLASH_XIP_64K_BENCHMARK.html#EXAMPLES_OPTIFLASH_XIP_64K_BENCHMARK_COMBOS", null ],
-      [ "Introduction", "EXAMPLES_OPTIFLASH_XIP_64K_BENCHMARK.html#autotoc_md3495", null ],
-      [ "Steps to Run the Example", "EXAMPLES_OPTIFLASH_XIP_64K_BENCHMARK.html#autotoc_md3496", [
-        [ "Building the application", "EXAMPLES_OPTIFLASH_XIP_64K_BENCHMARK.html#autotoc_md3497", null ],
-        [ "Running the application", "EXAMPLES_OPTIFLASH_XIP_64K_BENCHMARK.html#autotoc_md3498", null ],
-        [ "Sample output", "EXAMPLES_OPTIFLASH_XIP_64K_BENCHMARK.html#autotoc_md3499", null ]
+      [ "Introduction", "EXAMPLES_OPTIFLASH_XIP_64K_BENCHMARK.html#autotoc_md3635", null ],
+      [ "Steps to Run the Example", "EXAMPLES_OPTIFLASH_XIP_64K_BENCHMARK.html#autotoc_md3636", [
+        [ "Building the application", "EXAMPLES_OPTIFLASH_XIP_64K_BENCHMARK.html#autotoc_md3637", null ],
+        [ "Running the application", "EXAMPLES_OPTIFLASH_XIP_64K_BENCHMARK.html#autotoc_md3638", null ],
+        [ "Sample output", "EXAMPLES_OPTIFLASH_XIP_64K_BENCHMARK.html#autotoc_md3639", null ]
       ] ]
     ] ],
     [ "Optiflash XIP Benchmark", "EXAMPLES_OPTIFLASH_XIP_BENCHMARK.html", [
       [ "Supported Combinations", "EXAMPLES_OPTIFLASH_XIP_BENCHMARK.html#EXAMPLES_OPTIFLASH_XIP_BENCHMARKCOMBOS", null ],
-      [ "Introduction", "EXAMPLES_OPTIFLASH_XIP_BENCHMARK.html#autotoc_md3500", null ],
-      [ "Steps to Run the Example", "EXAMPLES_OPTIFLASH_XIP_BENCHMARK.html#autotoc_md3501", [
-        [ "Building the application", "EXAMPLES_OPTIFLASH_XIP_BENCHMARK.html#autotoc_md3502", null ],
-        [ "Running the application", "EXAMPLES_OPTIFLASH_XIP_BENCHMARK.html#autotoc_md3503", null ],
-        [ "Sample output", "EXAMPLES_OPTIFLASH_XIP_BENCHMARK.html#autotoc_md3504", null ]
+      [ "Introduction", "EXAMPLES_OPTIFLASH_XIP_BENCHMARK.html#autotoc_md3640", null ],
+      [ "Steps to Run the Example", "EXAMPLES_OPTIFLASH_XIP_BENCHMARK.html#autotoc_md3641", [
+        [ "Building the application", "EXAMPLES_OPTIFLASH_XIP_BENCHMARK.html#autotoc_md3642", null ],
+        [ "Running the application", "EXAMPLES_OPTIFLASH_XIP_BENCHMARK.html#autotoc_md3643", null ],
+        [ "Sample output", "EXAMPLES_OPTIFLASH_XIP_BENCHMARK.html#autotoc_md3644", null ]
       ] ]
     ] ],
     [ "Optiflash XIP Benchmark with Smart Placement", "EXAMPLES_OPTIFLASH_XIP_SP_BENCHMARK.html", [
       [ "Supported Combinations", "EXAMPLES_OPTIFLASH_XIP_SP_BENCHMARK.html#EXAMPLES_OPTIFLASH_XIP_SP_BENCHMARK_COMBOS", null ],
-      [ "Introduction", "EXAMPLES_OPTIFLASH_XIP_SP_BENCHMARK.html#autotoc_md3505", null ],
-      [ "Steps to Run the Example", "EXAMPLES_OPTIFLASH_XIP_SP_BENCHMARK.html#autotoc_md3506", [
-        [ "Building the application", "EXAMPLES_OPTIFLASH_XIP_SP_BENCHMARK.html#autotoc_md3507", null ],
-        [ "Running the application", "EXAMPLES_OPTIFLASH_XIP_SP_BENCHMARK.html#autotoc_md3508", null ],
-        [ "Sample output", "EXAMPLES_OPTIFLASH_XIP_SP_BENCHMARK.html#autotoc_md3509", null ]
+      [ "Introduction", "EXAMPLES_OPTIFLASH_XIP_SP_BENCHMARK.html#autotoc_md3645", null ],
+      [ "Steps to Run the Example", "EXAMPLES_OPTIFLASH_XIP_SP_BENCHMARK.html#autotoc_md3646", [
+        [ "Building the application", "EXAMPLES_OPTIFLASH_XIP_SP_BENCHMARK.html#autotoc_md3647", null ],
+        [ "Running the application", "EXAMPLES_OPTIFLASH_XIP_SP_BENCHMARK.html#autotoc_md3648", null ],
+        [ "Sample output", "EXAMPLES_OPTIFLASH_XIP_SP_BENCHMARK.html#autotoc_md3649", null ]
       ] ]
     ] ],
     [ "Sram Overlay Benchmark", "EXAMPLES_SRAM_OVERLAY.html", [

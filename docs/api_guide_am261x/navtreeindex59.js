@@ -1,15 +1,5 @@
 var NAVTREEINDEX59 =
 {
-"structCpsw__Cfg.html#a3ee6b7ca2ccd697ab6b0702ffbff69d8":[19,4,0,6,0,12,16],
-"structCpsw__Cfg.html#a50d3ceafbd951175ea4b7fcaa3b3b17d":[19,4,0,6,0,12,2],
-"structCpsw__Cfg.html#a7d9526dc5f9b25e410eceddcde89b962":[19,4,0,6,0,12,12],
-"structCpsw__Cfg.html#a92a604c28fd5f6e9a5c370fedce64b19":[19,4,0,6,0,12,13],
-"structCpsw__Cfg.html#a9354af0c48fda33aaf5b9d2d11ce6928":[19,4,0,6,0,12,8],
-"structCpsw__Cfg.html#a9f6322f75c00b37cfd4a4876c4ee0f03":[19,4,0,6,0,12,11],
-"structCpsw__Cfg.html#aa661cd352d7cab143343990187960592":[19,4,0,6,0,12,5],
-"structCpsw__Cfg.html#ab58eb5b0e02c839dd383543e05778bdc":[19,4,0,6,0,12,14],
-"structCpsw__Cfg.html#ab83954db77d033afa350afc92b8de6e5":[19,4,0,6,0,12,7],
-"structCpsw__Cfg.html#ad62b7b5c4f099289bc5b0655506ef117":[19,4,0,6,0,12,3],
 "structCpsw__Cfg.html#af31aecf86f4f094f7c96bf7bf7018567":[19,4,0,6,0,12,1],
 "structCpsw__Cfg.html#af847ee39574cd49027beb9691ad69f77":[19,4,0,6,0,12,6],
 "structCpsw__Cfg.html#af9c345f9d9efe883197826b23e399e15":[19,4,0,6,0,12,0],
@@ -249,5 +239,15 @@ var NAVTREEINDEX59 =
 "structETHPHY__SpeedDuplexConfig.html":[19,1,0,4],
 "structETHPHY__SpeedDuplexConfig.html#a790b1cb3380ad6003d299028b0f64d7e":[19,1,0,4,0],
 "structEdma__IntrObject.html":[19,7,6,8],
-"structEdma__IntrObject.html#a269367fdadf3a52ed34c40def1d18d96":[19,7,6,8,4]
+"structEdma__IntrObject.html#a269367fdadf3a52ed34c40def1d18d96":[19,7,6,8,4],
+"structEdma__IntrObject.html#a8ab3ef0a6376c449aaec1e1e548ddfff":[19,7,6,8,1],
+"structEdma__IntrObject.html#aa4dfd3ed797444486f8e40624d635e1c":[19,7,6,8,0],
+"structEdma__IntrObject.html#ac5490e8a31870a8fd5dc7e6b64b4a31c":[19,7,6,8,3],
+"structEdma__IntrObject.html#ad2eec23e992618bb0d6965c8bbb6ca91":[19,7,6,8,2],
+"structEnetCpdma__OpenRxChPrms.html":[19,4,0,0,0,0,12],
+"structEnetCpdma__OpenRxChPrms.html#a0961951aa692a7574b8ccb47a8ccef85":[19,4,0,0,0,0,12,4],
+"structEnetCpdma__OpenRxChPrms.html#a22b6580590c5a6c02bd21d1918e749d3":[19,4,0,0,0,0,12,0],
+"structEnetCpdma__OpenRxChPrms.html#a54e62c22d0ef0fbd7baa349ccbe45d91":[19,4,0,0,0,0,12,1],
+"structEnetCpdma__OpenRxChPrms.html#a8a14a31d130cad3712bbf0fa30552070":[19,4,0,0,0,0,12,3],
+"structEnetCpdma__OpenRxChPrms.html#adb14aac558d6abeec3f7ef53de3639d7":[19,4,0,0,0,0,12,2]
 };

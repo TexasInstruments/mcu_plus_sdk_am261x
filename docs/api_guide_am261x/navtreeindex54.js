@@ -1,15 +1,5 @@
 var NAVTREEINDEX54 =
 {
-"group__logging.html#ga92acd8fdab2ddfe6cd7b59115cb449f2":[19,10,2,33],
-"group__logging.html#ga94082b7665613bcc43958ccfbb394dca":[19,10,2,21],
-"group__logging.html#ga987a0fa4ebd3c2bdbec575f62e3218b4":[19,10,2,7],
-"group__logging.html#ga9c1d505dab8781d49b1a094040be690e":[19,10,2,25],
-"group__logging.html#gaa0abc5c5d55a18814eafb7787f8c3146":[19,10,2,32],
-"group__logging.html#gaae2940bbbf8b580481e7104b8302c7bf":[19,10,2,44],
-"group__logging.html#gab0165ff944568e88a77844ba84a74a14":[19,10,2,36],
-"group__logging.html#gac37934f8ba136976b570152e9db1b1a8":[19,10,2,12],
-"group__logging.html#gac74ce98ae3191f0ecae12173238bff7f":[19,10,2,5],
-"group__logging.html#gac9a541681280e7523bba2f2e88b0ac48":[19,10,2,28],
 "group__logging.html#gacc89d8ff61c8913e220937a1b2932899":[19,10,2,37],
 "group__logging.html#gad6fc0dea4ab82a1d0a5f214e003d3b1f":[19,10,2,3],
 "group__logging.html#gad9eb826f8f91c0d5621f6f47f8f1e458":[19,10,2,41],
@@ -249,5 +239,15 @@ var NAVTREEINDEX54 =
 "group__unibase__macros.html#ga31f68ff7f36940d4dfb6f0de5e0a02f3":[19,10,7,8],
 "group__unibase__macros.html#ga3e23a27a9b35057ada6800469e436f0a":[19,10,7,48],
 "group__unibase__macros.html#ga4593ad87be4823c76f66768c69491b32":[19,10,7,54],
-"group__unibase__macros.html#ga467377c918b261af9ddf79346668040a":[19,10,7,51]
+"group__unibase__macros.html#ga467377c918b261af9ddf79346668040a":[19,10,7,51],
+"group__unibase__macros.html#ga473a890bf9a58a5b43fe3c37e3f00fd9":[19,10,7,7],
+"group__unibase__macros.html#ga4a48c05c904260ebb1684c1edb7da9ff":[19,10,7,50],
+"group__unibase__macros.html#ga51167e539b6ff980a5129a84e336c920":[19,10,7,14],
+"group__unibase__macros.html#ga587f1bc266b17723c7184fdea56510ef":[19,10,7,38],
+"group__unibase__macros.html#ga5c78e2b760e07deba2db35dc43e52463":[19,10,7,26],
+"group__unibase__macros.html#ga62353a576054f62704d0d59abcd193be":[19,10,7,45],
+"group__unibase__macros.html#ga65e2a0b6d523e04343633ce7025c9225":[19,10,7,30],
+"group__unibase__macros.html#ga7b9bee7da2fa2ae8eaa7bd3b2e5b8d83":[19,10,7,32],
+"group__unibase__macros.html#ga7d82c9728c945550262072e037f36afe":[19,10,7,19],
+"group__unibase__macros.html#ga842fe1f7f1ff0e6f876a7cfe8da99d04":[19,10,7,35]
 };

@@ -1,15 +1,5 @@
 var NAVTREEINDEX58 =
 {
-"structCpswStats__HostPort__2g.html#a46e58fc0dae5216c8395cb29e5eb4359":[19,4,0,9,0,0,28],
-"structCpswStats__HostPort__2g.html#a48155b3906554cd471bc66364681e5e4":[19,4,0,9,0,0,7],
-"structCpswStats__HostPort__2g.html#a492ba5c28052be4975977d5adc779994":[19,4,0,9,0,0,53],
-"structCpswStats__HostPort__2g.html#a4df51014157fc13011f516cd450a82b9":[19,4,0,9,0,0,20],
-"structCpswStats__HostPort__2g.html#a582b12587328d8e8f999ed67ff3ad2d9":[19,4,0,9,0,0,39],
-"structCpswStats__HostPort__2g.html#a603e54dd50bc9922a841eec8e341abc7":[19,4,0,9,0,0,32],
-"structCpswStats__HostPort__2g.html#a61d37fab079a431cd3ea9c5dcab23652":[19,4,0,9,0,0,4],
-"structCpswStats__HostPort__2g.html#a66ab2dfbe3c59deeab39afe030b40f5e":[19,4,0,9,0,0,50],
-"structCpswStats__HostPort__2g.html#a695916bf94b472af7eab3f4fd1869cc3":[19,4,0,9,0,0,2],
-"structCpswStats__HostPort__2g.html#a6c20f49610b191e4b61083da08e2fdc4":[19,4,0,9,0,0,45],
 "structCpswStats__HostPort__2g.html#a78b31341a69b2da12c380ac16d9daa9e":[19,4,0,9,0,0,36],
 "structCpswStats__HostPort__2g.html#a801a58e92ae764c8f17e6a3e22243b2f":[19,4,0,9,0,0,34],
 "structCpswStats__HostPort__2g.html#a803b6a3607ab59125abf91f5141a7d01":[19,4,0,9,0,0,38],
@@ -249,5 +239,15 @@ var NAVTREEINDEX58 =
 "structCpsw__Cfg.html#a03fc3a58bbac4a274f34f371c52f7265":[19,4,0,6,0,12,4],
 "structCpsw__Cfg.html#a1244603674c05facca0f2828118dc1b8":[19,4,0,6,0,12,10],
 "structCpsw__Cfg.html#a25be1c060f61b996319e45e5104484a2":[19,4,0,6,0,12,15],
-"structCpsw__Cfg.html#a25c2b15318697bd06de0e4c7018c4bcf":[19,4,0,6,0,12,9]
+"structCpsw__Cfg.html#a25c2b15318697bd06de0e4c7018c4bcf":[19,4,0,6,0,12,9],
+"structCpsw__Cfg.html#a3ee6b7ca2ccd697ab6b0702ffbff69d8":[19,4,0,6,0,12,16],
+"structCpsw__Cfg.html#a50d3ceafbd951175ea4b7fcaa3b3b17d":[19,4,0,6,0,12,2],
+"structCpsw__Cfg.html#a7d9526dc5f9b25e410eceddcde89b962":[19,4,0,6,0,12,12],
+"structCpsw__Cfg.html#a92a604c28fd5f6e9a5c370fedce64b19":[19,4,0,6,0,12,13],
+"structCpsw__Cfg.html#a9354af0c48fda33aaf5b9d2d11ce6928":[19,4,0,6,0,12,8],
+"structCpsw__Cfg.html#a9f6322f75c00b37cfd4a4876c4ee0f03":[19,4,0,6,0,12,11],
+"structCpsw__Cfg.html#aa661cd352d7cab143343990187960592":[19,4,0,6,0,12,5],
+"structCpsw__Cfg.html#ab58eb5b0e02c839dd383543e05778bdc":[19,4,0,6,0,12,14],
+"structCpsw__Cfg.html#ab83954db77d033afa350afc92b8de6e5":[19,4,0,6,0,12,7],
+"structCpsw__Cfg.html#ad62b7b5c4f099289bc5b0655506ef117":[19,4,0,6,0,12,3]
 };

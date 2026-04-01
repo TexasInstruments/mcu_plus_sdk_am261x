@@ -1,15 +1,5 @@
 var NAVTREEINDEX66 =
 {
-"structMCAN__RxNewDataStatus.html#a5d1b7d6ce1195fe244dda5b7480bbdd2":[19,7,27,10,0],
-"structMCAN__RxNewDataStatus.html#ad6b7bdb581bf74416bb5618afb622700":[19,7,27,10,1],
-"structMCAN__StdMsgIDFilterElement.html":[19,7,27,25],
-"structMCAN__StdMsgIDFilterElement.html#a504660d72a30a2afa1cfa159576b0d81":[19,7,27,25,3],
-"structMCAN__StdMsgIDFilterElement.html#a810be26bca69b7c105bc9a8f445cd0ba":[19,7,27,25,1],
-"structMCAN__StdMsgIDFilterElement.html#aa99907aff6465ce4a2f7b4ba3c468254":[19,7,27,25,0],
-"structMCAN__StdMsgIDFilterElement.html#ab0180971b176c6d5b7c558891ed2a2e8":[19,7,27,25,2],
-"structMCAN__TDCConfig.html":[19,7,27,2],
-"structMCAN__TDCConfig.html#a66a3f13a3dc513d32325bb91c20afb5b":[19,7,27,2,1],
-"structMCAN__TDCConfig.html#aadeab20c96e14356e36bf8eaa142f24f":[19,7,27,2,0],
 "structMCAN__TxBufElement.html":[19,7,27,20],
 "structMCAN__TxBufElement.html#a16ab6d944c3606c7001af8614f20ce8d":[19,7,27,20,2],
 "structMCAN__TxBufElement.html#a1a09aea55a081878f79be58687d73ac3":[19,7,27,20,5],
@@ -249,5 +239,15 @@ var NAVTREEINDEX66 =
 "structMMCSD__Params.html#a0576d1c78dc3cf52fe7374f6647fe293":[19,7,31,1,2],
 "structMMCSD__Params.html#a26f01d1db4a10b5bc1e123818e5b0435":[19,7,31,1,3],
 "structMMCSD__Params.html#aa88cce03f0fc66885af8a3298363381c":[19,7,31,1,1],
-"structMMCSD__Params.html#aac246828febc153b9e82b52d01c51d29":[19,7,31,1,4]
+"structMMCSD__Params.html#aac246828febc153b9e82b52d01c51d29":[19,7,31,1,4],
+"structMMCSD__Params.html#aec406868898d6d6acaa42a20083e8a77":[19,7,31,1,0],
+"structMMCSD__SdDeviceData.html":[19,7,32,2],
+"structMMCSD__SdDeviceData.html#a0effefe7c7474940b612699d9d9261f6":[19,7,32,2,10],
+"structMMCSD__SdDeviceData.html#a341b6042b12085a5086bfc734b9155cc":[19,7,32,2,7],
+"structMMCSD__SdDeviceData.html#a7f8fef11d7e38088f4ec62f787b02322":[19,7,32,2,11],
+"structMMCSD__SdDeviceData.html#a90df8c95108ca796fbc02eebb1390c67":[19,7,32,2,2],
+"structMMCSD__SdDeviceData.html#a962b60c78572560129b4b9df2de5c7e3":[19,7,32,2,6],
+"structMMCSD__SdDeviceData.html#aa66f79b36e685add2607eb486ad53db2":[19,7,32,2,9],
+"structMMCSD__SdDeviceData.html#aa6cbf62c6c47d4321d4e1640502f247a":[19,7,32,2,3],
+"structMMCSD__SdDeviceData.html#ac151e6810020d09b53682ac54216c256":[19,7,32,2,8]
 };

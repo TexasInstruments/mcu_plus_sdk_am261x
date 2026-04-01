@@ -1,15 +1,5 @@
 var NAVTREEINDEX57 =
 {
-"structCpswAle__PortCfg.html":[19,4,0,1,0,47],
-"structCpswAle__PortCfg.html#a81cf2dcb7080fcf047d5f9b1c5c222f1":[19,4,0,1,0,47,2],
-"structCpswAle__PortCfg.html#a9defbd0b99bd98fafc4b0b9965c441c6":[19,4,0,1,0,47,3],
-"structCpswAle__PortCfg.html#aa07f2099acefbafd78eabcd28497cd03":[19,4,0,1,0,47,0],
-"structCpswAle__PortCfg.html#ad16110f247af16c51bc4f80b87202870":[19,4,0,1,0,47,1],
-"structCpswAle__PortLearningSecurityCfg.html":[19,4,0,1,0,44],
-"structCpswAle__PortLearningSecurityCfg.html#a2aab0ac53ee32835161b9b71f3e24e04":[19,4,0,1,0,44,1],
-"structCpswAle__PortLearningSecurityCfg.html#a876eb3aee1a807d49fb6ff7d5c7d9db5":[19,4,0,1,0,44,0],
-"structCpswAle__PortMacModeCfg.html":[19,4,0,1,0,46],
-"structCpswAle__PortMacModeCfg.html#a1acaf9ee8da0b19163e1c7e6066ed153":[19,4,0,1,0,46,1],
 "structCpswAle__PortMacModeCfg.html#a673cf7285052390399747a1fda7fad74":[19,4,0,1,0,46,0],
 "structCpswAle__PortMirroringCfg.html":[19,4,0,1,0,20],
 "structCpswAle__PortMirroringCfg.html#a0711ecc0f0fdc7ce90c7c6c489e81bf4":[19,4,0,1,0,20,2],
@@ -249,5 +239,15 @@ var NAVTREEINDEX57 =
 "structCpswStats__HostPort__2g.html#a284b7d8e13b79da840b33c2936dcb270":[19,4,0,9,0,0,35],
 "structCpswStats__HostPort__2g.html#a35d2f53eb224a401a08e03a5d3cb079c":[19,4,0,9,0,0,22],
 "structCpswStats__HostPort__2g.html#a375f6e7a6b73e3e44564561332cb6194":[19,4,0,9,0,0,54],
-"structCpswStats__HostPort__2g.html#a3e040b107d4da4e1d1db95733a2a4ea9":[19,4,0,9,0,0,3]
+"structCpswStats__HostPort__2g.html#a3e040b107d4da4e1d1db95733a2a4ea9":[19,4,0,9,0,0,3],
+"structCpswStats__HostPort__2g.html#a46e58fc0dae5216c8395cb29e5eb4359":[19,4,0,9,0,0,28],
+"structCpswStats__HostPort__2g.html#a48155b3906554cd471bc66364681e5e4":[19,4,0,9,0,0,7],
+"structCpswStats__HostPort__2g.html#a492ba5c28052be4975977d5adc779994":[19,4,0,9,0,0,53],
+"structCpswStats__HostPort__2g.html#a4df51014157fc13011f516cd450a82b9":[19,4,0,9,0,0,20],
+"structCpswStats__HostPort__2g.html#a582b12587328d8e8f999ed67ff3ad2d9":[19,4,0,9,0,0,39],
+"structCpswStats__HostPort__2g.html#a603e54dd50bc9922a841eec8e341abc7":[19,4,0,9,0,0,32],
+"structCpswStats__HostPort__2g.html#a61d37fab079a431cd3ea9c5dcab23652":[19,4,0,9,0,0,4],
+"structCpswStats__HostPort__2g.html#a66ab2dfbe3c59deeab39afe030b40f5e":[19,4,0,9,0,0,50],
+"structCpswStats__HostPort__2g.html#a695916bf94b472af7eab3f4fd1869cc3":[19,4,0,9,0,0,2],
+"structCpswStats__HostPort__2g.html#a6c20f49610b191e4b61083da08e2fdc4":[19,4,0,9,0,0,45]
 };

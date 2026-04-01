@@ -1,15 +1,5 @@
 var NAVTREEINDEX70 =
 {
-"structUARTLLD__InitObject.html":[19,7,46,4],
-"structUARTLLD__InitObject.html#a1579220dcafedc058b524105dc336173":[19,7,46,4,9],
-"structUARTLLD__InitObject.html#a24eda7a4db5f4fe6b12ed8d05d58b5dd":[19,7,46,4,20],
-"structUARTLLD__InitObject.html#a27a5389841d404330f15a44bba806d3d":[19,7,46,4,7],
-"structUARTLLD__InitObject.html#a2c2702b06c6b8664da32ccbbffdac836":[19,7,46,4,14],
-"structUARTLLD__InitObject.html#a31995d35c7ce5a082a1d8923f4829b78":[19,7,46,4,10],
-"structUARTLLD__InitObject.html#a3cd4de530e5f9b81db1bdfbc92c38b68":[19,7,46,4,5],
-"structUARTLLD__InitObject.html#a3fb21cef9a40e7d736191f5c79444ab5":[19,7,46,4,11],
-"structUARTLLD__InitObject.html#a449d04e39990be26bfc7f94b552d6bb0":[19,7,46,4,2],
-"structUARTLLD__InitObject.html#a4720410adb78d460f7c14ee82738a062":[19,7,46,4,19],
 "structUARTLLD__InitObject.html#a5474c976d851927815eb31ee1aae9920":[19,7,46,4,22],
 "structUARTLLD__InitObject.html#a5dc2b05888277e3d3ab840bbf9c646bd":[19,7,46,4,13],
 "structUARTLLD__InitObject.html#a609fd20928620c66843c74b5562046c2":[19,7,46,4,8],
@@ -249,5 +239,15 @@ var NAVTREEINDEX70 =
 "structdwc__ep__t.html#aec784994d4b63e48a5568ebf6b9ece3a":[19,7,47,0,10,5],
 "structdwc__ep__t.html#afc31ed94685b9489409e483a9dbda9e0":[19,7,47,0,10,9],
 "structdwc__ep__t.html#afdfeee61137508cfe550ed3da72a2638":[19,7,47,0,10,27],
-"structdwc__ep__t.html#afe356f03861412a8085901f91e321789":[19,7,47,0,10,33]
+"structdwc__ep__t.html#afe356f03861412a8085901f91e321789":[19,7,47,0,10,33],
+"structdwc__hiber__scratchpad__array.html":[19,7,47,0,13],
+"structdwc__hiber__scratchpad__array.html#a296be6a2ac6cd1932ee9ffbedb5da48e":[19,7,47,0,13,0],
+"structdwc__req__t.html":[19,7,47,0,8],
+"structdwc__req__t.html#a1ecefe9f0be67d33ebd8d3e1a74022cd":[19,7,47,0,8,2],
+"structdwc__req__t.html#a2d9c92e81e3e8541f4bcd031542207b5":[19,7,47,0,8,7],
+"structdwc__req__t.html#a5c47edcd036b9cc7759195b24f9a38d0":[19,7,47,0,8,4],
+"structdwc__req__t.html#aae6617864a15a2719cd306a12ded51f8":[19,7,47,0,8,1],
+"structdwc__req__t.html#ab6989eccfcc4cd7648a562bd22414c34":[19,7,47,0,8,5],
+"structdwc__req__t.html#ac33853500ef0b7856706956803696fc6":[19,7,47,0,8,3],
+"structdwc__req__t.html#ad7f6b9a12de1de976ed2a7c655888ffd":[19,7,47,0,8,0]
 };

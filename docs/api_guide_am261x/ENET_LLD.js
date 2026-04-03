@@ -89,24 +89,24 @@ var ENET_LLD =
       [ "Limitations", "enet_iet_userguide.html#autotoc_md1250", null ]
     ] ],
     [ "Ethernet Performance on AM261x", "enetlld_performance.html", [
-      [ "Introduction", "enetlld_performance.html#autotoc_md1257", null ],
-      [ "Setup Details", "enetlld_performance.html#autotoc_md1258", null ],
-      [ "Layer 2 Performance", "enetlld_performance.html#autotoc_md1259", [
-        [ "Configuration Details", "enetlld_performance.html#autotoc_md1260", null ],
-        [ "Layer 2 Latency", "enetlld_performance.html#autotoc_md1261", [
-          [ "Layer-2 Hardware Switching Latency for CPSW", "enetlld_performance.html#autotoc_md1262", null ],
-          [ "Test Setup", "enetlld_performance.html#autotoc_md1263", null ],
-          [ "CPSW Latency for RGMII", "enetlld_performance.html#autotoc_md1264", null ]
+      [ "Introduction", "enetlld_performance.html#autotoc_md1264", null ],
+      [ "Setup Details", "enetlld_performance.html#autotoc_md1265", null ],
+      [ "Layer 2 Performance", "enetlld_performance.html#autotoc_md1266", [
+        [ "Configuration Details", "enetlld_performance.html#autotoc_md1267", null ],
+        [ "Layer 2 Latency", "enetlld_performance.html#autotoc_md1268", [
+          [ "Layer-2 Hardware Switching Latency for CPSW", "enetlld_performance.html#autotoc_md1269", null ],
+          [ "Test Setup", "enetlld_performance.html#autotoc_md1270", null ],
+          [ "CPSW Latency for RGMII", "enetlld_performance.html#autotoc_md1271", null ]
         ] ]
       ] ],
-      [ "TCP/IP Performance", "enetlld_performance.html#autotoc_md1265", [
-        [ "Configuration Details", "enetlld_performance.html#autotoc_md1266", [
-          [ "TCP Throughput", "enetlld_performance.html#autotoc_md1267", null ],
-          [ "UDP Throughput", "enetlld_performance.html#autotoc_md1268", null ]
+      [ "TCP/IP Performance", "enetlld_performance.html#autotoc_md1272", [
+        [ "Configuration Details", "enetlld_performance.html#autotoc_md1273", [
+          [ "TCP Throughput", "enetlld_performance.html#autotoc_md1274", null ],
+          [ "UDP Throughput", "enetlld_performance.html#autotoc_md1275", null ]
         ] ]
       ] ],
-      [ "XIP Performance", "enetlld_performance.html#autotoc_md1269", null ],
-      [ "See Also", "enetlld_performance.html#autotoc_md1270", null ]
+      [ "XIP Performance", "enetlld_performance.html#autotoc_md1276", null ],
+      [ "See Also", "enetlld_performance.html#autotoc_md1277", null ]
     ] ],
     [ "Enet EST/TAS Support", "enet_tas_top.html", [
       [ "Introduction", "enet_tas_top.html#enet_est_intro", [
@@ -129,9 +129,21 @@ var ENET_LLD =
         ] ]
       ] ]
     ] ],
+    [ "Enet Migration Guide", "enet_migration_guide_top.html", [
+      [ "Introduction", "enet_migration_guide_top.html#enet_migration_guide_intro", null ],
+      [ "Need for sysconfig", "enet_migration_guide_top.html#NeedForSysconfig", null ],
+      [ "Enet Driver Initialization Sequence Change", "enet_migration_guide_top.html#EnetInitSeqChange", null ],
+      [ "Enet DMA channel open changes", "enet_migration_guide_top.html#EnetDmaChOpenChange", null ],
+      [ "Runtime Control API (Enet_ioctl) change", "enet_migration_guide_top.html#EnetIoctlChange", null ],
+      [ "Packet Transmit/Receive API related changes", "enet_migration_guide_top.html#PacketTxRxChange", null ],
+      [ "Custom Board Support", "enet_migration_guide_top.html#CustomBoardSupport", null ],
+      [ "External PHY management", "enet_migration_guide_top.html#ExternalPhyManagement", null ],
+      [ "Tuning memory usage of enet driver for non-lwip apps", "enet_migration_guide_top.html#MemoryTuningNonLwip", null ],
+      [ "Tuning memory usage of enet driver for lwip apps", "enet_migration_guide_top.html#MemoryTuningLwip", null ]
+    ] ],
     [ "Ethernet Add-on Boards", "ETHERNET_ADDON_BOARDS_TOP.html", [
       [ "Introduction", "ETHERNET_ADDON_BOARDS_TOP.html#ethernet_addon_boards_intro", [
-        [ "Important Usage Guidelines", "ETHERNET_ADDON_BOARDS_TOP.html#autotoc_md1251", null ]
+        [ "Important Usage Guidelines", "ETHERNET_ADDON_BOARDS_TOP.html#autotoc_md1258", null ]
       ] ]
     ] ],
     [ "Software modification needeed to use Rev-E1 and Rev-E2 version of LP-AM261 EVM", "AM261X_LP_E1_E2_SUPPORT.html", null ],

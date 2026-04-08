@@ -46,97 +46,110 @@ var GETTING_STARTED =
         ] ]
       ] ]
     ] ],
+    [ "Download, Install and Setup IAR Embedded Workbench", "IAR_SETUP_PAGE.html", [
+      [ "Download IAR Embedded Workbench", "IAR_SETUP_PAGE.html#autotoc_md30", null ],
+      [ "Install IAR Embedded Workbench", "IAR_SETUP_PAGE.html#autotoc_md31", null ],
+      [ "Configure Sysconfig to IAR Embedded Workbench IDE", "IAR_SETUP_PAGE.html#IAR_SYSCFG_SETUP", null ],
+      [ "Setup IAR EW", "IAR_SETUP_PAGE.html#autotoc_md32", null ],
+      [ "Known Issues", "IAR_SETUP_PAGE.html#autotoc_md33", [
+        [ "IAR Embedded Workbench Does Not Support GEL Scripts", "IAR_SETUP_PAGE.html#IAR_SBLL_NULL_LOAD", null ],
+        [ "Debugging Multi-core Projects Using the XDS110 in IAR", "IAR_SETUP_PAGE.html#IAR_MULTI_CORE_LOAD", null ]
+      ] ]
+    ] ],
     [ "EVM Setup", "EVM_SETUP_PAGE.html", [
-      [ "EVM Overview", "EVM_SETUP_PAGE.html#autotoc_md30", [
-        [ "AM261X-LP", "EVM_SETUP_PAGE.html#autotoc_md31", null ]
+      [ "EVM Overview", "EVM_SETUP_PAGE.html#autotoc_md34", [
+        [ "AM261X-LP", "EVM_SETUP_PAGE.html#autotoc_md35", null ]
       ] ],
       [ "Cable Connections", "EVM_SETUP_PAGE.html#EVM_CABLES", [
-        [ "AM261X-LP", "EVM_SETUP_PAGE.html#autotoc_md32", null ]
+        [ "AM261X-LP", "EVM_SETUP_PAGE.html#autotoc_md36", null ]
       ] ],
       [ "Setup UART Terminal", "EVM_SETUP_PAGE.html#CCS_UART_TERMINAL", [
-        [ "AM261X-LP", "EVM_SETUP_PAGE.html#autotoc_md33", null ],
-        [ "BOOT MODE", "EVM_SETUP_PAGE.html#autotoc_md34", [
+        [ "AM261X-LP", "EVM_SETUP_PAGE.html#autotoc_md37", null ]
+      ] ],
+      [ "Additional Details", "EVM_SETUP_PAGE.html#autotoc_md38", [
+        [ "BOOT MODE", "EVM_SETUP_PAGE.html#autotoc_md39", [
           [ "OSPI BOOT MODE", "EVM_SETUP_PAGE.html#BOOTMODE_OSPI", [
-            [ "AM261X-LP", "EVM_SETUP_PAGE.html#autotoc_md35", null ],
-            [ "AM261X-SOM", "EVM_SETUP_PAGE.html#autotoc_md36", null ]
+            [ "AM261X-LP", "EVM_SETUP_PAGE.html#autotoc_md40", null ],
+            [ "AM261X-SOM", "EVM_SETUP_PAGE.html#autotoc_md41", null ]
           ] ],
           [ "UART BOOT MODE", "EVM_SETUP_PAGE.html#BOOTMODE_UART", [
-            [ "AM261X-LP", "EVM_SETUP_PAGE.html#autotoc_md37", null ],
-            [ "AM261X-SOM", "EVM_SETUP_PAGE.html#autotoc_md38", null ]
+            [ "AM261X-LP", "EVM_SETUP_PAGE.html#autotoc_md42", null ],
+            [ "AM261X-SOM", "EVM_SETUP_PAGE.html#autotoc_md43", null ]
           ] ],
           [ "DEVBOOT MODE", "EVM_SETUP_PAGE.html#BOOTMODE_NOBOOT", [
-            [ "AM261X-LP", "EVM_SETUP_PAGE.html#autotoc_md39", null ],
-            [ "AM261X-SOM", "EVM_SETUP_PAGE.html#autotoc_md40", null ]
+            [ "AM261X-LP", "EVM_SETUP_PAGE.html#autotoc_md44", null ],
+            [ "AM261X-SOM", "EVM_SETUP_PAGE.html#autotoc_md45", null ]
           ] ],
           [ "DFU BOOT MODE", "EVM_SETUP_PAGE.html#BOOTMODE_DFU", [
-            [ "AM261X-LP", "EVM_SETUP_PAGE.html#autotoc_md41", null ],
-            [ "AM261X-SOM", "EVM_SETUP_PAGE.html#autotoc_md42", null ]
+            [ "AM261X-LP", "EVM_SETUP_PAGE.html#autotoc_md46", null ],
+            [ "AM261X-SOM", "EVM_SETUP_PAGE.html#autotoc_md47", null ]
           ] ]
         ] ]
       ] ]
     ] ],
     [ "Build, Load and Run Example", "BUILD_LOAD_RUN_EXAMPLE.html", [
-      [ "Application Execution Flow", "BUILD_LOAD_RUN_EXAMPLE.html#autotoc_md43", null ],
-      [ "Building an application", "BUILD_LOAD_RUN_EXAMPLE.html#autotoc_md44", null ],
-      [ "Loading an application", "BUILD_LOAD_RUN_EXAMPLE.html#autotoc_md45", null ],
-      [ "Running an application", "BUILD_LOAD_RUN_EXAMPLE.html#autotoc_md46", null ]
+      [ "Application Execution Flow", "BUILD_LOAD_RUN_EXAMPLE.html#autotoc_md48", null ],
+      [ "Building an application", "BUILD_LOAD_RUN_EXAMPLE.html#autotoc_md49", null ],
+      [ "Loading an application", "BUILD_LOAD_RUN_EXAMPLE.html#autotoc_md50", null ],
+      [ "Running an application", "BUILD_LOAD_RUN_EXAMPLE.html#autotoc_md51", null ]
     ] ],
     [ "Building an Application", "BUILDING_APPLICATION.html", [
-      [ "Tools", "BUILDING_APPLICATION.html#autotoc_md576", null ],
-      [ "Creation of application binary", "BUILDING_APPLICATION.html#autotoc_md577", [
-        [ "Generating .out binary", "BUILDING_APPLICATION.html#autotoc_md578", null ],
-        [ "Generating .mcelf binary", "BUILDING_APPLICATION.html#autotoc_md579", null ],
-        [ "Generating HEX binary", "BUILDING_APPLICATION.html#autotoc_md580", [
-          [ "Installing SRecord on Windows", "BUILDING_APPLICATION.html#autotoc_md581", null ],
-          [ "Installing SRecord on Linux", "BUILDING_APPLICATION.html#autotoc_md582", null ],
-          [ "Converting .mcelf to Intel hex:", "BUILDING_APPLICATION.html#autotoc_md583", null ]
+      [ "Tools", "BUILDING_APPLICATION.html#autotoc_md591", null ],
+      [ "Creation of application binary", "BUILDING_APPLICATION.html#autotoc_md592", [
+        [ "Generating .out binary", "BUILDING_APPLICATION.html#autotoc_md593", null ],
+        [ "Generating .mcelf binary", "BUILDING_APPLICATION.html#autotoc_md594", null ],
+        [ "Generating HEX binary", "BUILDING_APPLICATION.html#autotoc_md595", [
+          [ "Installing SRecord on Windows", "BUILDING_APPLICATION.html#autotoc_md596", null ],
+          [ "Installing SRecord on Linux", "BUILDING_APPLICATION.html#autotoc_md597", null ],
+          [ "Converting .mcelf to Intel hex:", "BUILDING_APPLICATION.html#autotoc_md598", null ]
         ] ],
-        [ "Signing the binary", "BUILDING_APPLICATION.html#autotoc_md584", [
+        [ "Signing the binary", "BUILDING_APPLICATION.html#autotoc_md599", [
           [ "SBL Signing", "BUILDING_APPLICATION.html#SBL_SIGNING", null ],
-          [ "Application signing", "BUILDING_APPLICATION.html#autotoc_md585", null ]
+          [ "Application signing", "BUILDING_APPLICATION.html#autotoc_md600", null ]
         ] ]
       ] ],
-      [ "Building a Hello world example", "BUILDING_APPLICATION.html#autotoc_md586", null ],
-      [ "Next step - Loading the application", "BUILDING_APPLICATION.html#autotoc_md587", null ]
+      [ "Building a Hello world example", "BUILDING_APPLICATION.html#autotoc_md601", null ],
+      [ "Next step - Loading the application", "BUILDING_APPLICATION.html#autotoc_md602", null ]
     ] ],
     [ "Loading an Application", "LOADING_APPLICATION.html", [
-      [ "Tools", "LOADING_APPLICATION.html#autotoc_md588", null ],
-      [ "Loading via CCS", "LOADING_APPLICATION.html#autotoc_md589", [
-        [ "Loading an executable in CCS", "LOADING_APPLICATION.html#autotoc_md590", null ],
-        [ "Build and load using 1 click", "LOADING_APPLICATION.html#autotoc_md591", null ],
-        [ "Loading applicaction via SBL JTAG UNIFLASH", "LOADING_APPLICATION.html#autotoc_md592", null ]
+      [ "Tools", "LOADING_APPLICATION.html#autotoc_md603", null ],
+      [ "Loading via CCS", "LOADING_APPLICATION.html#autotoc_md604", [
+        [ "Loading an executable in CCS", "LOADING_APPLICATION.html#autotoc_md605", null ],
+        [ "Build and load using 1 click", "LOADING_APPLICATION.html#autotoc_md606", null ],
+        [ "Loading applicaction via SBL JTAG UNIFLASH", "LOADING_APPLICATION.html#autotoc_md607", null ]
       ] ],
-      [ "Loading via TI Uniflash tool", "LOADING_APPLICATION.html#autotoc_md593", null ],
-      [ "Script based loaders/flashwriters", "LOADING_APPLICATION.html#autotoc_md594", [
-        [ "UART_BOOTLOADER", "LOADING_APPLICATION.html#autotoc_md595", null ],
-        [ "UART_UNIFLASH Flashwriter", "LOADING_APPLICATION.html#autotoc_md596", null ],
-        [ "CAN_BOOTLOADER", "LOADING_APPLICATION.html#autotoc_md597", null ],
-        [ "CAN_UNIFLASH Flashwriter", "LOADING_APPLICATION.html#autotoc_md598", null ]
+      [ "Loading via IAR Embedded Workbench", "LOADING_APPLICATION.html#autotoc_md608", null ],
+      [ "Loading via TI Uniflash tool", "LOADING_APPLICATION.html#autotoc_md609", null ],
+      [ "Script based loaders/flashwriters", "LOADING_APPLICATION.html#autotoc_md610", [
+        [ "UART_BOOTLOADER", "LOADING_APPLICATION.html#autotoc_md611", null ],
+        [ "UART_UNIFLASH Flashwriter", "LOADING_APPLICATION.html#autotoc_md612", null ],
+        [ "CAN_BOOTLOADER", "LOADING_APPLICATION.html#autotoc_md613", null ],
+        [ "CAN_UNIFLASH Flashwriter", "LOADING_APPLICATION.html#autotoc_md614", null ]
       ] ],
-      [ "Flashing a hello world application", "LOADING_APPLICATION.html#autotoc_md599", null ],
-      [ "Next step - Running the application", "LOADING_APPLICATION.html#autotoc_md600", null ]
+      [ "Flashing a hello world application", "LOADING_APPLICATION.html#autotoc_md615", null ],
+      [ "Next step - Running the application", "LOADING_APPLICATION.html#autotoc_md616", null ]
     ] ],
     [ "Running an Application", "RUNNING_APPLICATION.html", [
-      [ "SBLs in SDK", "RUNNING_APPLICATION.html#autotoc_md601", [
-        [ "SBL NULL", "RUNNING_APPLICATION.html#autotoc_md602", null ],
-        [ "SBL OSPI", "RUNNING_APPLICATION.html#autotoc_md603", null ],
-        [ "SBL UART", "RUNNING_APPLICATION.html#autotoc_md604", null ],
-        [ "SBL CAN", "RUNNING_APPLICATION.html#autotoc_md605", null ],
-        [ "SBL SD", "RUNNING_APPLICATION.html#autotoc_md606", null ]
+      [ "SBLs in SDK", "RUNNING_APPLICATION.html#autotoc_md617", [
+        [ "SBL NULL", "RUNNING_APPLICATION.html#autotoc_md618", null ],
+        [ "SBL OSPI", "RUNNING_APPLICATION.html#autotoc_md619", null ],
+        [ "SBL UART", "RUNNING_APPLICATION.html#autotoc_md620", null ],
+        [ "SBL CAN", "RUNNING_APPLICATION.html#autotoc_md621", null ],
+        [ "SBL SD", "RUNNING_APPLICATION.html#autotoc_md622", null ]
       ] ],
-      [ "SBL Based bootflow on HSFS device", "RUNNING_APPLICATION.html#autotoc_md607", null ],
-      [ "SBL Based bootflow on HSSE device", "RUNNING_APPLICATION.html#autotoc_md608", null ],
-      [ "Debugging support", "RUNNING_APPLICATION.html#autotoc_md609", null ]
+      [ "SBL Based bootflow on HSFS device", "RUNNING_APPLICATION.html#autotoc_md623", null ],
+      [ "SBL Based bootflow on HSSE device", "RUNNING_APPLICATION.html#autotoc_md624", null ],
+      [ "Debugging support", "RUNNING_APPLICATION.html#autotoc_md625", null ]
     ] ],
     [ "Additional Details", "ADDITIONAL_DETAILS_PAGE.html", "ADDITIONAL_DETAILS_PAGE" ],
     [ "Getting Started With Smart Placement", "SMART_PLACEMENT_GETTING_STARTED.html", [
-      [ "Introduction", "SMART_PLACEMENT_GETTING_STARTED.html#autotoc_md60", [
-        [ "When is smart placement required:", "SMART_PLACEMENT_GETTING_STARTED.html#autotoc_md61", null ],
-        [ "What not to expect from Smart Placement?", "SMART_PLACEMENT_GETTING_STARTED.html#autotoc_md62", null ]
+      [ "Introduction", "SMART_PLACEMENT_GETTING_STARTED.html#autotoc_md67", [
+        [ "When is smart placement required:", "SMART_PLACEMENT_GETTING_STARTED.html#autotoc_md68", null ],
+        [ "What not to expect from Smart Placement?", "SMART_PLACEMENT_GETTING_STARTED.html#autotoc_md69", null ]
       ] ],
-      [ "Specific implementation of smart placement", "SMART_PLACEMENT_GETTING_STARTED.html#autotoc_md63", [
-        [ "Manual Implementation", "SMART_PLACEMENT_GETTING_STARTED.html#autotoc_md64", null ],
-        [ "SW Instrumentation implementation", "SMART_PLACEMENT_GETTING_STARTED.html#autotoc_md65", null ]
+      [ "Specific implementation of smart placement", "SMART_PLACEMENT_GETTING_STARTED.html#autotoc_md70", [
+        [ "Manual Implementation", "SMART_PLACEMENT_GETTING_STARTED.html#autotoc_md71", null ],
+        [ "SW Instrumentation implementation", "SMART_PLACEMENT_GETTING_STARTED.html#autotoc_md72", null ]
       ] ]
     ] ]
 ];

@@ -1,13 +1,13 @@
 var group__ENET__CPDMA__CONFIG__DEFS =
 [
-    [ "On PC1", "EXAMPLES_ENET_CPSW_TSN_GPTP_BRIDGE.html#autotoc_md2982", null ],
-    [ "On PC2", "EXAMPLES_ENET_CPSW_TSN_GPTP_BRIDGE.html#autotoc_md2983", null ],
-    [ "Packet Processing", "EXAMPLES_ENET_CPSW_INDUSTRIAL_APP.html#autotoc_md2935", null ],
-    [ "On PC1", "EXAMPLES_ENET_CPSW_TSN_GPTP_BRIDGE.html#autotoc_md2982", null ],
-    [ "On PC2", "EXAMPLES_ENET_CPSW_TSN_GPTP_BRIDGE.html#autotoc_md2983", null ],
-    [ "DFU Download", "EXAMPLES_USB_DFU.html#autotoc_md3416", null ],
-    [ "DFU Upload", "EXAMPLES_USB_DFU.html#autotoc_md3417", null ],
-    [ "NCM Download", "EXAMPLES_USB_NCM.html#autotoc_md3425", null ],
+    [ "On PC1", "EXAMPLES_ENET_CPSW_TSN_GPTP_BRIDGE.html#autotoc_md2998", null ],
+    [ "On PC2", "EXAMPLES_ENET_CPSW_TSN_GPTP_BRIDGE.html#autotoc_md2999", null ],
+    [ "Packet Processing", "EXAMPLES_ENET_CPSW_INDUSTRIAL_APP.html#autotoc_md2951", null ],
+    [ "On PC1", "EXAMPLES_ENET_CPSW_TSN_GPTP_BRIDGE.html#autotoc_md2998", null ],
+    [ "On PC2", "EXAMPLES_ENET_CPSW_TSN_GPTP_BRIDGE.html#autotoc_md2999", null ],
+    [ "DFU Download", "EXAMPLES_USB_DFU.html#autotoc_md3432", null ],
+    [ "DFU Upload", "EXAMPLES_USB_DFU.html#autotoc_md3433", null ],
+    [ "NCM Download", "EXAMPLES_USB_NCM.html#autotoc_md3441", null ],
     [ "EnetCpdma_OpenTxChPrms", "structEnetCpdma__OpenTxChPrms.html", [
       [ "hEnet", "structEnetCpdma__OpenTxChPrms.html#a2eda8a58f7e15c88551ad34de897369f", null ],
       [ "chNum", "structEnetCpdma__OpenTxChPrms.html#a97ef204e1173c3217f2896360b3ca92b", null ],

@@ -99,33 +99,33 @@ $(document).ready(function(){initNavTree('pcd__intr_8c.html',''); initResizable(
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a7e8b75986a58e84f9b4cb5f2135d8486"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pcd__intr_8c.html#a7e8b75986a58e84f9b4cb5f2135d8486">handle_disconnect_intr</a> (volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd)</td></tr>
-<tr class="separator:a7e8b75986a58e84f9b4cb5f2135d8486"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c4b356f77a7f4e042577241572a3f78"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pcd__intr_8c.html#a6c4b356f77a7f4e042577241572a3f78">handle_usb_reset_intr</a> (volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd)</td></tr>
-<tr class="separator:a6c4b356f77a7f4e042577241572a3f78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67cf3460c3427a96c24ca26c5ff5fcda"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pcd__intr_8c.html#a67cf3460c3427a96c24ca26c5ff5fcda">handle_link_status_change_intr</a> (volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd)</td></tr>
-<tr class="separator:a67cf3460c3427a96c24ca26c5ff5fcda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d8d0b39dd9222b56ae6e4c16372d97e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pcd__intr_8c.html#a5d8d0b39dd9222b56ae6e4c16372d97e">handle_wakeup_detected_intr</a> (volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd)</td></tr>
-<tr class="separator:a5d8d0b39dd9222b56ae6e4c16372d97e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4409a99ea353711a7722ce218f057e3"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pcd__intr_8c.html#ad4409a99ea353711a7722ce218f057e3">handle_hiber_req_intr</a> (volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd, <a class="el" href="os__defs_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> event)</td></tr>
-<tr class="separator:ad4409a99ea353711a7722ce218f057e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab48a1984a313e847309dd6494c0d6196"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pcd__intr_8c.html#ab48a1984a313e847309dd6494c0d6196">handle_u3_l2l1_susp_intr</a> (volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd)</td></tr>
-<tr class="separator:ab48a1984a313e847309dd6494c0d6196"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac35f49786c4ffd13cdf263c828fde47b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pcd__intr_8c.html#ac35f49786c4ffd13cdf263c828fde47b">handle_sof_intr</a> (volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd)</td></tr>
-<tr class="separator:ac35f49786c4ffd13cdf263c828fde47b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac6e81f46df92d9b76aa65650cc912f17"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SYNP__USB__MODULE.html#gac6e81f46df92d9b76aa65650cc912f17">dwc_usb3_handle_connect_done_intr</a> (volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd)</td></tr>
-<tr class="memdesc:gac6e81f46df92d9b76aa65650cc912f17"><td class="mdescLeft">&#160;</td><td class="mdescRight">This interrupt occurs when a Connect Done is detected. Read the device status register and set the device speed in the data structure. Set up EP0 to receive SETUP packets.  <a href="group__SYNP__USB__MODULE.html#gac6e81f46df92d9b76aa65650cc912f17">More...</a><br /></td></tr>
-<tr class="separator:gac6e81f46df92d9b76aa65650cc912f17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2fb43c9d3f2d3e0ca038d72974261391"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SYNP__USB__MODULE.html#ga2fb43c9d3f2d3e0ca038d72974261391">dwc_usb3_handle_ep_intr</a> (volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd, <a class="el" href="os__defs_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> physep, <a class="el" href="os__defs_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> event)</td></tr>
-<tr class="memdesc:ga2fb43c9d3f2d3e0ca038d72974261391"><td class="mdescLeft">&#160;</td><td class="mdescRight">This interrupt indicates that an EP has a pending interrupt.  <a href="group__SYNP__USB__MODULE.html#ga2fb43c9d3f2d3e0ca038d72974261391">More...</a><br /></td></tr>
-<tr class="separator:ga2fb43c9d3f2d3e0ca038d72974261391"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6ac2a8bc1b667108e7adaf39a9419cad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SYNP__USB__MODULE.html#ga6ac2a8bc1b667108e7adaf39a9419cad">dwc_usb3_handle_dev_intr</a> (volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd, <a class="el" href="os__defs_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> event)</td></tr>
-<tr class="memdesc:ga6ac2a8bc1b667108e7adaf39a9419cad"><td class="mdescLeft">&#160;</td><td class="mdescRight">PCD interrupt handler.  <a href="group__SYNP__USB__MODULE.html#ga6ac2a8bc1b667108e7adaf39a9419cad">More...</a><br /></td></tr>
-<tr class="separator:ga6ac2a8bc1b667108e7adaf39a9419cad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3c286f24938ff633030e6b3b791de7e"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pcd__intr_8c.html#af3c286f24938ff633030e6b3b791de7e">handle_disconnect_intr</a> (<a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd)</td></tr>
+<tr class="separator:af3c286f24938ff633030e6b3b791de7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb16cd023d66a98eb9b898027093dfc0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pcd__intr_8c.html#acb16cd023d66a98eb9b898027093dfc0">handle_usb_reset_intr</a> (<a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd)</td></tr>
+<tr class="separator:acb16cd023d66a98eb9b898027093dfc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4d853b03a9a84b83fb1f5268ed7fed5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pcd__intr_8c.html#ab4d853b03a9a84b83fb1f5268ed7fed5">handle_link_status_change_intr</a> (<a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd)</td></tr>
+<tr class="separator:ab4d853b03a9a84b83fb1f5268ed7fed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a713af0d87f69d70649b7ab21526b1bde"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pcd__intr_8c.html#a713af0d87f69d70649b7ab21526b1bde">handle_wakeup_detected_intr</a> (<a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd)</td></tr>
+<tr class="separator:a713af0d87f69d70649b7ab21526b1bde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a638eb568fed99c82727eabac2af80005"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pcd__intr_8c.html#a638eb568fed99c82727eabac2af80005">handle_hiber_req_intr</a> (<a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd, <a class="el" href="os__defs_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> event)</td></tr>
+<tr class="separator:a638eb568fed99c82727eabac2af80005"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14d11c97e6f472d7959bff44097e062f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pcd__intr_8c.html#a14d11c97e6f472d7959bff44097e062f">handle_u3_l2l1_susp_intr</a> (<a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd)</td></tr>
+<tr class="separator:a14d11c97e6f472d7959bff44097e062f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0235d7d37a0e00517e2aaf575aff173a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pcd__intr_8c.html#a0235d7d37a0e00517e2aaf575aff173a">handle_sof_intr</a> (<a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd)</td></tr>
+<tr class="separator:a0235d7d37a0e00517e2aaf575aff173a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga86b89d00fe0ffafed3726a8c0d4ce611"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SYNP__USB__MODULE.html#ga86b89d00fe0ffafed3726a8c0d4ce611">dwc_usb3_handle_connect_done_intr</a> (<a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd)</td></tr>
+<tr class="memdesc:ga86b89d00fe0ffafed3726a8c0d4ce611"><td class="mdescLeft">&#160;</td><td class="mdescRight">This interrupt occurs when a Connect Done is detected. Read the device status register and set the device speed in the data structure. Set up EP0 to receive SETUP packets.  <a href="group__SYNP__USB__MODULE.html#ga86b89d00fe0ffafed3726a8c0d4ce611">More...</a><br /></td></tr>
+<tr class="separator:ga86b89d00fe0ffafed3726a8c0d4ce611"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae4a605a2b7e29ca58b6f7caa636e2a42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SYNP__USB__MODULE.html#gae4a605a2b7e29ca58b6f7caa636e2a42">dwc_usb3_handle_ep_intr</a> (<a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd, <a class="el" href="os__defs_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> physep, <a class="el" href="os__defs_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> event)</td></tr>
+<tr class="memdesc:gae4a605a2b7e29ca58b6f7caa636e2a42"><td class="mdescLeft">&#160;</td><td class="mdescRight">This interrupt indicates that an EP has a pending interrupt.  <a href="group__SYNP__USB__MODULE.html#gae4a605a2b7e29ca58b6f7caa636e2a42">More...</a><br /></td></tr>
+<tr class="separator:gae4a605a2b7e29ca58b6f7caa636e2a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga902dc09f1d6d872d00d35061e77aac9b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SYNP__USB__MODULE.html#ga902dc09f1d6d872d00d35061e77aac9b">dwc_usb3_handle_dev_intr</a> (<a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd, <a class="el" href="os__defs_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> event)</td></tr>
+<tr class="memdesc:ga902dc09f1d6d872d00d35061e77aac9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">PCD interrupt handler.  <a href="group__SYNP__USB__MODULE.html#ga902dc09f1d6d872d00d35061e77aac9b">More...</a><br /></td></tr>
+<tr class="separator:ga902dc09f1d6d872d00d35061e77aac9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a7e8b75986a58e84f9b4cb5f2135d8486"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e8b75986a58e84f9b4cb5f2135d8486">&#9670;&nbsp;</a></span>handle_disconnect_intr()</h2>
+<a id="af3c286f24938ff633030e6b3b791de7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3c286f24938ff633030e6b3b791de7e">&#9670;&nbsp;</a></span>handle_disconnect_intr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -136,7 +136,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static int handle_disconnect_intr </td>
           <td>(</td>
-          <td class="paramtype">volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
           <td class="paramname"><em>pcd</em></td><td>)</td>
           <td></td>
         </tr>
@@ -151,8 +151,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a6c4b356f77a7f4e042577241572a3f78"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c4b356f77a7f4e042577241572a3f78">&#9670;&nbsp;</a></span>handle_usb_reset_intr()</h2>
+<a id="acb16cd023d66a98eb9b898027093dfc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb16cd023d66a98eb9b898027093dfc0">&#9670;&nbsp;</a></span>handle_usb_reset_intr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -163,7 +163,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static void handle_usb_reset_intr </td>
           <td>(</td>
-          <td class="paramtype">volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
           <td class="paramname"><em>pcd</em></td><td>)</td>
           <td></td>
         </tr>
@@ -179,8 +179,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a67cf3460c3427a96c24ca26c5ff5fcda"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a67cf3460c3427a96c24ca26c5ff5fcda">&#9670;&nbsp;</a></span>handle_link_status_change_intr()</h2>
+<a id="ab4d853b03a9a84b83fb1f5268ed7fed5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4d853b03a9a84b83fb1f5268ed7fed5">&#9670;&nbsp;</a></span>handle_link_status_change_intr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -191,7 +191,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static void handle_link_status_change_intr </td>
           <td>(</td>
-          <td class="paramtype">volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
           <td class="paramname"><em>pcd</em></td><td>)</td>
           <td></td>
         </tr>
@@ -206,8 +206,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a5d8d0b39dd9222b56ae6e4c16372d97e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d8d0b39dd9222b56ae6e4c16372d97e">&#9670;&nbsp;</a></span>handle_wakeup_detected_intr()</h2>
+<a id="a713af0d87f69d70649b7ab21526b1bde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a713af0d87f69d70649b7ab21526b1bde">&#9670;&nbsp;</a></span>handle_wakeup_detected_intr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -218,7 +218,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static void handle_wakeup_detected_intr </td>
           <td>(</td>
-          <td class="paramtype">volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
           <td class="paramname"><em>pcd</em></td><td>)</td>
           <td></td>
         </tr>
@@ -233,8 +233,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad4409a99ea353711a7722ce218f057e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4409a99ea353711a7722ce218f057e3">&#9670;&nbsp;</a></span>handle_hiber_req_intr()</h2>
+<a id="a638eb568fed99c82727eabac2af80005"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a638eb568fed99c82727eabac2af80005">&#9670;&nbsp;</a></span>handle_hiber_req_intr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -245,7 +245,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static int handle_hiber_req_intr </td>
           <td>(</td>
-          <td class="paramtype">volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
           <td class="paramname"><em>pcd</em>, </td>
         </tr>
         <tr>
@@ -270,8 +270,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ab48a1984a313e847309dd6494c0d6196"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab48a1984a313e847309dd6494c0d6196">&#9670;&nbsp;</a></span>handle_u3_l2l1_susp_intr()</h2>
+<a id="a14d11c97e6f472d7959bff44097e062f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14d11c97e6f472d7959bff44097e062f">&#9670;&nbsp;</a></span>handle_u3_l2l1_susp_intr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -282,7 +282,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static void handle_u3_l2l1_susp_intr </td>
           <td>(</td>
-          <td class="paramtype">volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
           <td class="paramname"><em>pcd</em></td><td>)</td>
           <td></td>
         </tr>
@@ -297,8 +297,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac35f49786c4ffd13cdf263c828fde47b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac35f49786c4ffd13cdf263c828fde47b">&#9670;&nbsp;</a></span>handle_sof_intr()</h2>
+<a id="a0235d7d37a0e00517e2aaf575aff173a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0235d7d37a0e00517e2aaf575aff173a">&#9670;&nbsp;</a></span>handle_sof_intr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -309,7 +309,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static void handle_sof_intr </td>
           <td>(</td>
-          <td class="paramtype">volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
           <td class="paramname"><em>pcd</em></td><td>)</td>
           <td></td>
         </tr>

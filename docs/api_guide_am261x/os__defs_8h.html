@@ -293,32 +293,32 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae37d213c44ce91bbd12cd300de88a704"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__defs_8h.html#ae37d213c44ce91bbd12cd300de88a704">dwc_usb3_task_schedule</a> (volatile struct <a class="el" href="structtasklet__struct.html">tasklet_struct</a> *tasklet)</td></tr>
-<tr class="separator:ae37d213c44ce91bbd12cd300de88a704"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd2ebf6941c67221a1d2c82b4e4a0197"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__defs_8h.html#acd2ebf6941c67221a1d2c82b4e4a0197">dwc_usb3_task_schedule</a> (struct <a class="el" href="structtasklet__struct.html">tasklet_struct</a> *tasklet)</td></tr>
+<tr class="separator:acd2ebf6941c67221a1d2c82b4e4a0197"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31ca4e5f95a62d9c4c1eecf729519644"><td class="memItemLeft" align="right" valign="top">struct dwc_usb3_device *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__defs_8h.html#a31ca4e5f95a62d9c4c1eecf729519644">dwc_usb3_driver_init</a> (<a class="el" href="os__defs_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> base_addr_dwc)</td></tr>
 <tr class="separator:a31ca4e5f95a62d9c4c1eecf729519644"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a415c67f81523fe10775bcf50ccd20cdc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__defs_8h.html#a415c67f81523fe10775bcf50ccd20cdc">dwc_usb3_driver_remove</a> (void)</td></tr>
 <tr class="separator:a415c67f81523fe10775bcf50ccd20cdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa81f7703b7b05079bd2ccf53f5bc773b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__defs_8h.html#aa81f7703b7b05079bd2ccf53f5bc773b">dwc_usb3_common_irq</a> (int irq, void *dev)</td></tr>
 <tr class="separator:aa81f7703b7b05079bd2ccf53f5bc773b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91530e539feee8175da4b564d58aa771"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="structusb__ep__t.html">usb_ep_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__defs_8h.html#a91530e539feee8175da4b564d58aa771">dwc_usb3_ep_enable</a> (struct dwc_usb3_device *usb3_dev, const void *epdesc, const void *epcomp)</td></tr>
-<tr class="separator:a91530e539feee8175da4b564d58aa771"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9db624908e82a37ee6e7ccd0270194b3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__defs_8h.html#a9db624908e82a37ee6e7ccd0270194b3">dwc_usb3_ep_disable</a> (volatile struct dwc_usb3_device *usb3_dev, volatile <a class="el" href="structusb__ep__t.html">usb_ep_t</a> *usb_ep)</td></tr>
-<tr class="separator:a9db624908e82a37ee6e7ccd0270194b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05874dcec9c9b4508fa40ca35d68b733"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__defs_8h.html#a05874dcec9c9b4508fa40ca35d68b733">dwc_usb3_close_all_ep</a> (volatile struct dwc_usb3_device *usb3_dev)</td></tr>
-<tr class="separator:a05874dcec9c9b4508fa40ca35d68b733"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34b0a9c7df564a09807659df0db02161"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structusb__request__t.html">usb_request_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__defs_8h.html#a34b0a9c7df564a09807659df0db02161">dwc_usb3_alloc_request</a> (struct dwc_usb3_device *usb3_dev, volatile <a class="el" href="structusb__ep__t.html">usb_ep_t</a> *usb_ep)</td></tr>
-<tr class="separator:a34b0a9c7df564a09807659df0db02161"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59187941f3f3d5d01fd171f858a51b87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__defs_8h.html#a59187941f3f3d5d01fd171f858a51b87">dwc_usb3_free_request</a> (struct dwc_usb3_device *usb3_dev, volatile <a class="el" href="structusb__ep__t.html">usb_ep_t</a> *usb_ep, volatile <a class="el" href="structusb__request__t.html">usb_request_t</a> *usb_req)</td></tr>
-<tr class="separator:a59187941f3f3d5d01fd171f858a51b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89da6769e6276c84b993689004d16bb8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__defs_8h.html#a89da6769e6276c84b993689004d16bb8">dwc_usb3_ep_queue</a> (struct dwc_usb3_device *usb3_dev, volatile <a class="el" href="structusb__ep__t.html">usb_ep_t</a> *usb_ep, <a class="el" href="structusb__request__t.html">usb_request_t</a> *usb_req)</td></tr>
-<tr class="separator:a89da6769e6276c84b993689004d16bb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad803c24351b709d9944d6358b9722a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structusb__ep__t.html">usb_ep_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__defs_8h.html#aad803c24351b709d9944d6358b9722a6">dwc_usb3_ep_enable</a> (struct dwc_usb3_device *usb3_dev, const void *epdesc, const void *epcomp)</td></tr>
+<tr class="separator:aad803c24351b709d9944d6358b9722a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaee56b7eefae55c6cfdb8500806d821b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__defs_8h.html#aaee56b7eefae55c6cfdb8500806d821b">dwc_usb3_ep_disable</a> (struct dwc_usb3_device *usb3_dev, <a class="el" href="structusb__ep__t.html">usb_ep_t</a> *usb_ep)</td></tr>
+<tr class="separator:aaee56b7eefae55c6cfdb8500806d821b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad33bfdb9fc529845b7ac5aebe4e0bdac"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__defs_8h.html#ad33bfdb9fc529845b7ac5aebe4e0bdac">dwc_usb3_close_all_ep</a> (struct dwc_usb3_device *usb3_dev)</td></tr>
+<tr class="separator:ad33bfdb9fc529845b7ac5aebe4e0bdac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a193a62202bf00432a4943e8b38d01dc3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structusb__request__t.html">usb_request_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__defs_8h.html#a193a62202bf00432a4943e8b38d01dc3">dwc_usb3_alloc_request</a> (struct dwc_usb3_device *usb3_dev, <a class="el" href="structusb__ep__t.html">usb_ep_t</a> *usb_ep)</td></tr>
+<tr class="separator:a193a62202bf00432a4943e8b38d01dc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a646dbb0b416f926e1264134eda509caf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__defs_8h.html#a646dbb0b416f926e1264134eda509caf">dwc_usb3_free_request</a> (struct dwc_usb3_device *usb3_dev, <a class="el" href="structusb__ep__t.html">usb_ep_t</a> *usb_ep, <a class="el" href="structusb__request__t.html">usb_request_t</a> *usb_req)</td></tr>
+<tr class="separator:a646dbb0b416f926e1264134eda509caf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2723ff658880f0f8adde5b3989a7cc62"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__defs_8h.html#a2723ff658880f0f8adde5b3989a7cc62">dwc_usb3_ep_queue</a> (struct dwc_usb3_device *usb3_dev, <a class="el" href="structusb__ep__t.html">usb_ep_t</a> *usb_ep, <a class="el" href="structusb__request__t.html">usb_request_t</a> *usb_req)</td></tr>
+<tr class="separator:a2723ff658880f0f8adde5b3989a7cc62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3dfb8fda7ed40e00de8c12498ae13556"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__defs_8h.html#a3dfb8fda7ed40e00de8c12498ae13556">dwc_usb3_ep_dequeue</a> (struct dwc_usb3_device *usb3_dev, <a class="el" href="structusb__ep__t.html">usb_ep_t</a> *usb_ep, <a class="el" href="structusb__request__t.html">usb_request_t</a> *usb_req)</td></tr>
 <tr class="separator:a3dfb8fda7ed40e00de8c12498ae13556"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8318d619285a1a180b26bbcacce9616d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__defs_8h.html#a8318d619285a1a180b26bbcacce9616d">dwc_usb3_wait_pme</a> (volatile struct dwc_usb3_device *usb3_dev)</td></tr>
-<tr class="separator:a8318d619285a1a180b26bbcacce9616d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10688e0e1f3c995b52646db21b36cb79"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__defs_8h.html#a10688e0e1f3c995b52646db21b36cb79">dwc_usb3_handle_pme_intr</a> (volatile struct dwc_usb3_device *usb3_dev)</td></tr>
-<tr class="separator:a10688e0e1f3c995b52646db21b36cb79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64af45e18392a43af6a0e49690a28830"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__defs_8h.html#a64af45e18392a43af6a0e49690a28830">dwc_usb3_wait_pme</a> (struct dwc_usb3_device *usb3_dev)</td></tr>
+<tr class="separator:a64af45e18392a43af6a0e49690a28830"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a520461904486706d5b9b4c1dd01eec3a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__defs_8h.html#a520461904486706d5b9b4c1dd01eec3a">dwc_usb3_handle_pme_intr</a> (struct dwc_usb3_device *usb3_dev)</td></tr>
+<tr class="separator:a520461904486706d5b9b4c1dd01eec3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc9037504b476899008145fe074d5223"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__defs_8h.html#acc9037504b476899008145fe074d5223">dwc_usb3_function_init</a> (struct dwc_usb3_device *usb3_dev)</td></tr>
 <tr class="separator:acc9037504b476899008145fe074d5223"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a604023b84df5355ae9ea2df7a46ab940"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__defs_8h.html#a604023b84df5355ae9ea2df7a46ab940">dwc_usb3_function_remove</a> (struct dwc_usb3_device *usb3_dev)</td></tr>
@@ -1546,8 +1546,8 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ae37d213c44ce91bbd12cd300de88a704"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae37d213c44ce91bbd12cd300de88a704">&#9670;&nbsp;</a></span>dwc_usb3_task_schedule()</h2>
+<a id="acd2ebf6941c67221a1d2c82b4e4a0197"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd2ebf6941c67221a1d2c82b4e4a0197">&#9670;&nbsp;</a></span>dwc_usb3_task_schedule()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1558,7 +1558,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static void dwc_usb3_task_schedule </td>
           <td>(</td>
-          <td class="paramtype">volatile struct <a class="el" href="structtasklet__struct.html">tasklet_struct</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structtasklet__struct.html">tasklet_struct</a> *&#160;</td>
           <td class="paramname"><em>tasklet</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1636,14 +1636,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a91530e539feee8175da4b564d58aa771"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91530e539feee8175da4b564d58aa771">&#9670;&nbsp;</a></span>dwc_usb3_ep_enable()</h2>
+<a id="aad803c24351b709d9944d6358b9722a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad803c24351b709d9944d6358b9722a6">&#9670;&nbsp;</a></span>dwc_usb3_ep_enable()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">volatile <a class="el" href="structusb__ep__t.html">usb_ep_t</a>* dwc_usb3_ep_enable </td>
+          <td class="memname"><a class="el" href="structusb__ep__t.html">usb_ep_t</a>* dwc_usb3_ep_enable </td>
           <td>(</td>
           <td class="paramtype">struct dwc_usb3_device *&#160;</td>
           <td class="paramname"><em>usb3_dev</em>, </td>
@@ -1680,8 +1680,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a9db624908e82a37ee6e7ccd0270194b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9db624908e82a37ee6e7ccd0270194b3">&#9670;&nbsp;</a></span>dwc_usb3_ep_disable()</h2>
+<a id="aaee56b7eefae55c6cfdb8500806d821b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaee56b7eefae55c6cfdb8500806d821b">&#9670;&nbsp;</a></span>dwc_usb3_ep_disable()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1689,13 +1689,13 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">int dwc_usb3_ep_disable </td>
           <td>(</td>
-          <td class="paramtype">volatile struct dwc_usb3_device *&#160;</td>
+          <td class="paramtype">struct dwc_usb3_device *&#160;</td>
           <td class="paramname"><em>usb3_dev</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">volatile <a class="el" href="structusb__ep__t.html">usb_ep_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structusb__ep__t.html">usb_ep_t</a> *&#160;</td>
           <td class="paramname"><em>usb_ep</em>&#160;</td>
         </tr>
         <tr>
@@ -1717,8 +1717,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a05874dcec9c9b4508fa40ca35d68b733"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05874dcec9c9b4508fa40ca35d68b733">&#9670;&nbsp;</a></span>dwc_usb3_close_all_ep()</h2>
+<a id="ad33bfdb9fc529845b7ac5aebe4e0bdac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad33bfdb9fc529845b7ac5aebe4e0bdac">&#9670;&nbsp;</a></span>dwc_usb3_close_all_ep()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1726,7 +1726,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">int dwc_usb3_close_all_ep </td>
           <td>(</td>
-          <td class="paramtype">volatile struct dwc_usb3_device *&#160;</td>
+          <td class="paramtype">struct dwc_usb3_device *&#160;</td>
           <td class="paramname"><em>usb3_dev</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1743,8 +1743,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a34b0a9c7df564a09807659df0db02161"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34b0a9c7df564a09807659df0db02161">&#9670;&nbsp;</a></span>dwc_usb3_alloc_request()</h2>
+<a id="a193a62202bf00432a4943e8b38d01dc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a193a62202bf00432a4943e8b38d01dc3">&#9670;&nbsp;</a></span>dwc_usb3_alloc_request()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1758,7 +1758,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">volatile <a class="el" href="structusb__ep__t.html">usb_ep_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structusb__ep__t.html">usb_ep_t</a> *&#160;</td>
           <td class="paramname"><em>usb_ep</em>&#160;</td>
         </tr>
         <tr>
@@ -1779,8 +1779,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a59187941f3f3d5d01fd171f858a51b87"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59187941f3f3d5d01fd171f858a51b87">&#9670;&nbsp;</a></span>dwc_usb3_free_request()</h2>
+<a id="a646dbb0b416f926e1264134eda509caf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a646dbb0b416f926e1264134eda509caf">&#9670;&nbsp;</a></span>dwc_usb3_free_request()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1794,13 +1794,13 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">volatile <a class="el" href="structusb__ep__t.html">usb_ep_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structusb__ep__t.html">usb_ep_t</a> *&#160;</td>
           <td class="paramname"><em>usb_ep</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">volatile <a class="el" href="structusb__request__t.html">usb_request_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structusb__request__t.html">usb_request_t</a> *&#160;</td>
           <td class="paramname"><em>usb_req</em>&#160;</td>
         </tr>
         <tr>
@@ -1822,8 +1822,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a89da6769e6276c84b993689004d16bb8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89da6769e6276c84b993689004d16bb8">&#9670;&nbsp;</a></span>dwc_usb3_ep_queue()</h2>
+<a id="a2723ff658880f0f8adde5b3989a7cc62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2723ff658880f0f8adde5b3989a7cc62">&#9670;&nbsp;</a></span>dwc_usb3_ep_queue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1837,7 +1837,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">volatile <a class="el" href="structusb__ep__t.html">usb_ep_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structusb__ep__t.html">usb_ep_t</a> *&#160;</td>
           <td class="paramname"><em>usb_ep</em>, </td>
         </tr>
         <tr>
@@ -1910,8 +1910,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a8318d619285a1a180b26bbcacce9616d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8318d619285a1a180b26bbcacce9616d">&#9670;&nbsp;</a></span>dwc_usb3_wait_pme()</h2>
+<a id="a64af45e18392a43af6a0e49690a28830"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64af45e18392a43af6a0e49690a28830">&#9670;&nbsp;</a></span>dwc_usb3_wait_pme()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1919,7 +1919,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">int dwc_usb3_wait_pme </td>
           <td>(</td>
-          <td class="paramtype">volatile struct dwc_usb3_device *&#160;</td>
+          <td class="paramtype">struct dwc_usb3_device *&#160;</td>
           <td class="paramname"><em>usb3_dev</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1928,8 +1928,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a10688e0e1f3c995b52646db21b36cb79"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a10688e0e1f3c995b52646db21b36cb79">&#9670;&nbsp;</a></span>dwc_usb3_handle_pme_intr()</h2>
+<a id="a520461904486706d5b9b4c1dd01eec3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a520461904486706d5b9b4c1dd01eec3a">&#9670;&nbsp;</a></span>dwc_usb3_handle_pme_intr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1937,7 +1937,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">int dwc_usb3_handle_pme_intr </td>
           <td>(</td>
-          <td class="paramtype">volatile struct dwc_usb3_device *&#160;</td>
+          <td class="paramtype">struct dwc_usb3_device *&#160;</td>
           <td class="paramname"><em>usb3_dev</em></td><td>)</td>
           <td></td>
         </tr>

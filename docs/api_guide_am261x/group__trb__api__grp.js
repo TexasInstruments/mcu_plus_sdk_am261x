@@ -1,6 +1,6 @@
 var group__trb__api__grp =
 [
-    [ "dwc_usb3_pcd_trb_alloc", "group__trb__api__grp.html#ga1bb7c6f3ac26152ab30944f71d9cb6e2", null ],
-    [ "dwc_usb3_pcd_trb_free", "group__trb__api__grp.html#gad1c3d36ae244268843f8f71e73e4824b", null ],
-    [ "dwc_usb3_pcd_fill_trbs", "group__trb__api__grp.html#gad761bd466131c0d88e289f8e67f6f10e", null ]
+    [ "dwc_usb3_pcd_trb_alloc", "group__trb__api__grp.html#ga069b104710acfad9c8ba300be1d2163f", null ],
+    [ "dwc_usb3_pcd_trb_free", "group__trb__api__grp.html#ga837b60a387391e8635beebc15ef7a307", null ],
+    [ "dwc_usb3_pcd_fill_trbs", "group__trb__api__grp.html#gacf7bb15c31e6899241271cf2f9d4e7af", null ]
 ];

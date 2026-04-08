@@ -92,13 +92,14 @@ $(document).ready(function(){initNavTree('GETTING_STARTED_BUILD.html',''); initR
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#autotoc_md52">Using CCS projects</a></li>
-<li class="level1"><a href="#autotoc_md53">Using makefiles</a></li>
-<li class="level1"><a href="#autotoc_md54">Rebuilding libraries</a></li>
+<ul><li class="level1"><a href="#autotoc_md58">Using CCS projects</a></li>
+<li class="level1"><a href="#autotoc_md59">Using IAR Embedded Workbench projects</a></li>
+<li class="level1"><a href="#autotoc_md60">Using makefiles</a></li>
+<li class="level1"><a href="#autotoc_md61">Rebuilding libraries</a></li>
 </ul>
 </div>
 <div class="textblock"><p><a class="anchor" id="md_getting_started_getting_started_build"></a></p>
-<h1><a class="anchor" id="autotoc_md52"></a>
+<h1><a class="anchor" id="autotoc_md58"></a>
 Using CCS projects</h1>
 <ul>
 <li><b>When using CCS projects to build</b>, make sure you have imported and built the CCS project of interest (see <a class="el" href="CCS_PROJECTS_PAGE.html">Using SDK with CCS Projects</a>)</li>
@@ -113,7 +114,20 @@ Using CCS projects</h1>
 </ul>
 </li>
 </ul>
-<h1><a class="anchor" id="autotoc_md53"></a>
+<h1><a class="anchor" id="autotoc_md59"></a>
+Using IAR Embedded Workbench projects</h1>
+<ul>
+<li>Quick steps to import the "hello world example" IAR EW project are listed below<ul>
+<li>In IAR EW, goto <code>Toolbar &gt; File &gt; Open Workspace</code></li>
+<li>Browse and goto the folder <code>${SDK_INSTALL_DIR}/examples/hello_world/am261x-lp/r5fss0-0_freertos/iar-arm</code></li>
+<li>Select the <code>hello_world_am261x-lp_r5fss0-0_freertos.template.eww</code> file</li>
+<li>The workspace and project will be imported.</li>
+<li>Right click on the project title and click <code>"Make"</code></li>
+<li>This will build the project, now you can load and run it (see <a class="el" href="IAR_LAUNCH_PAGE.html">IAR Launch, Load and Run</a>)</li>
+</ul>
+</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md60"></a>
 Using makefiles</h1>
 <ul>
 <li><b>When using makefiles to build</b>, make sure you have built the example of interest using makefiles (see <a class="el" href="MAKEFILE_BUILD_PAGE.html">Using SDK with Makefiles</a>)</li>
@@ -124,7 +138,7 @@ Using makefiles</h1>
 </pre><ul>
 <li>After the executable is built successfully, now you can load and run it (see <a class="el" href="CCS_LAUNCH_PAGE.html">CCS Launch, Load and Run</a>)</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md54"></a>
+<h1><a class="anchor" id="autotoc_md61"></a>
 Rebuilding libraries</h1>
 <ul>
 <li>When a CCS example project is built or a single example is built with makefiles, as described above, the libraries are not re-built.</li>

@@ -92,18 +92,18 @@ $(document).ready(function(){initNavTree('enet_iet_userguide.html',''); initResi
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#autotoc_md1246">Introduction</a><ul><li class="level2"><a href="#autotoc_md1247">IEEE 802.1Qbu IET</a></li>
+<ul><li class="level1"><a href="#autotoc_md1262">Introduction</a><ul><li class="level2"><a href="#autotoc_md1263">IEEE 802.1Qbu IET</a></li>
 </ul>
 </li>
-<li class="level1"><a href="#autotoc_md1248">IET Architecture</a></li>
-<li class="level1"><a href="#autotoc_md1249">Enet LLD API</a></li>
-<li class="level1"><a href="#autotoc_md1250">Limitations</a></li>
+<li class="level1"><a href="#autotoc_md1264">IET Architecture</a></li>
+<li class="level1"><a href="#autotoc_md1265">Enet LLD API</a></li>
+<li class="level1"><a href="#autotoc_md1266">Limitations</a></li>
 </ul>
 </div>
 <div class="textblock"><p><a class="anchor" id="md_components_networking_enet_lld_enet_IET_userguide"></a></p>
-<h1><a class="anchor" id="autotoc_md1246"></a>
+<h1><a class="anchor" id="autotoc_md1262"></a>
 Introduction</h1>
-<h2><a class="anchor" id="autotoc_md1247"></a>
+<h2><a class="anchor" id="autotoc_md1263"></a>
 IEEE 802.1Qbu IET</h2>
 <p>CPSW support Intersperse Express Traffic (IET, defined in P802.3br/D2.0 spec which later is included in IEEE 802.3 2018) Frame preemption (inArgs) feature and also to allow MAC layer to verify if the peer supports IET MAC merge layer or not. IET (one of the TSN standards), which defines a mechanism to transmit an express frame with a minimum delay at the expense of delaying completion of normal priority frames.</p>
 <p>Ethernet allows any device to send messages at any moment which might cause congestion in network. Messages are queued in a queue to be sent out based on packet priority. A ethernet frame with high priority can be delayed by a low priority frame in front it, which just happened to arrive a little bit earlier.</p>
@@ -113,14 +113,14 @@ IEEE 802.1Qbu IET</h2>
 <img src="IET_Schedule_Diagram.png" alt=""/>
 </div>
 <dl class="section note"><dt>Note</dt><dd>Express traffic is expected to be made on high priority traffic.</dd></dl>
-<h1><a class="anchor" id="autotoc_md1248"></a>
+<h1><a class="anchor" id="autotoc_md1264"></a>
 IET Architecture</h1>
 <p>MAC merge layer is responsible for preempting the transmission of frame from a preemptible queue if there is frame waiting for transmission at a higher priority Express queue. The h/w sends an initial segment of the frame satisfying min fragment size requirement and then schedule frame from the Express queue for transmission. Finally when no more frames available at the Express queue, it will resume transmission of remaining segments of the frame of the preemptible queue which was preempted. At the peer end, the segments are re-assembled and delivered to the MAC interface.</p>
 <p>The diagram below shows transmission of express and preemptable traffic at MAC merge layer.</p>
 <p> <style>div.image img[src="IET_Architecture.png"]{width:30%}</style> </p><div class="image">
 <img src="IET_Architecture.png" alt=""/>
 </div>
-<h1><a class="anchor" id="autotoc_md1249"></a>
+<h1><a class="anchor" id="autotoc_md1265"></a>
 Enet LLD API</h1>
 <p>Enet LLD provides support for IET through the IOCTLs described in the API Guide. The most important IOCTLs for any application using IET will require are listed below (in order of usage): IET configuration can be set through syscfg-gui in Enet (CPSW) section under category <code>MAC config</code> with sub-category as <code>IET Configuration</code>.</p>
 <p>Syscfg GUI for enabling IET with configuration parameters:</p>
@@ -236,7 +236,7 @@ Enet LLD API</h1>
 <div class="line">status = Enet_ioctl(hEnet, coreId, ENET_MACPORT_IOCTL_IET_RELEASE_PREEMPT_TRAFFIC, &amp;prms);</div>
 </div><!-- fragment --></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md1250"></a>
+<h1><a class="anchor" id="autotoc_md1266"></a>
 Limitations</h1>
 <ul>
 <li>IET verification will fail for RMII (not supported). </li>

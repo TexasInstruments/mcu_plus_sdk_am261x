@@ -98,31 +98,31 @@ $(document).ready(function(){initNavTree('group__gadget__callbk__grp.html',''); 
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga50a5bed0c2e6fb186cb2d7a3ed627dd2"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gadget__callbk__grp.html#ga50a5bed0c2e6fb186cb2d7a3ed627dd2">dwc_usb3_gadget_alloc_dma</a> (volatile <a class="el" href="structdwc__usb3__pcd__ep__t.html">dwc_usb3_pcd_ep_t</a> *ep, int size, <a class="el" href="os__defs_8h.html#a51ed96ab2e2762bd1f604cd00810e0fa">dwc_dma_t</a> *mem_dma_ret)</td></tr>
-<tr class="memdesc:ga50a5bed0c2e6fb186cb2d7a3ed627dd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine allocates coherent DMA memory. It is used by the PCD to allocate memory for TRBs. The block of memory returned must have a start address aligned to a 16-byte boundary.  <a href="group__gadget__callbk__grp.html#ga50a5bed0c2e6fb186cb2d7a3ed627dd2">More...</a><br /></td></tr>
-<tr class="separator:ga50a5bed0c2e6fb186cb2d7a3ed627dd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gace32f4892687ddfa1ccf700812ac0cef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gadget__callbk__grp.html#gace32f4892687ddfa1ccf700812ac0cef">dwc_usb3_gadget_free_dma</a> (volatile <a class="el" href="structdwc__usb3__pcd__ep__t.html">dwc_usb3_pcd_ep_t</a> *ep, int size, void *mem, <a class="el" href="os__defs_8h.html#a51ed96ab2e2762bd1f604cd00810e0fa">dwc_dma_t</a> mem_dma)</td></tr>
-<tr class="memdesc:gace32f4892687ddfa1ccf700812ac0cef"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine frees DMA memory allocated by <a class="el" href="group__gadget__callbk__grp.html#ga50a5bed0c2e6fb186cb2d7a3ed627dd2" title="This routine allocates coherent DMA memory. It is used by the PCD to allocate memory for TRBs....">dwc_usb3_gadget_alloc_dma()</a>.  <a href="group__gadget__callbk__grp.html#gace32f4892687ddfa1ccf700812ac0cef">More...</a><br /></td></tr>
-<tr class="separator:gace32f4892687ddfa1ccf700812ac0cef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadcc12d992fc9cb6639feb3f0e3e64101"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdwc__usb3__pcd__req__t.html">dwc_usb3_pcd_req_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gadget__callbk__grp.html#gadcc12d992fc9cb6639feb3f0e3e64101">dwc_usb3_gadget_get_request</a> (volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd, volatile <a class="el" href="structdwc__usb3__pcd__ep__t.html">dwc_usb3_pcd_ep_t</a> *ep)</td></tr>
-<tr class="memdesc:gadcc12d992fc9cb6639feb3f0e3e64101"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine returns the PCD request corresponding to the current transfer request for an endpoint. The current transfer request is the first request submitted that has not been completed yet.  <a href="group__gadget__callbk__grp.html#gadcc12d992fc9cb6639feb3f0e3e64101">More...</a><br /></td></tr>
-<tr class="separator:gadcc12d992fc9cb6639feb3f0e3e64101"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6283f5fcc1811aaf5dd9a9c6924a98a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gadget__callbk__grp.html#ga6283f5fcc1811aaf5dd9a9c6924a98a8">dwc_usb3_gadget_start_next_request</a> (volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd, volatile <a class="el" href="structdwc__usb3__pcd__ep__t.html">dwc_usb3_pcd_ep_t</a> *ep)</td></tr>
-<tr class="memdesc:ga6283f5fcc1811aaf5dd9a9c6924a98a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine checks to see if there is another transfer request waiting on an endpoint that has not been started yet. If so then that transfer is started.  <a href="group__gadget__callbk__grp.html#ga6283f5fcc1811aaf5dd9a9c6924a98a8">More...</a><br /></td></tr>
-<tr class="separator:ga6283f5fcc1811aaf5dd9a9c6924a98a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7b634c950ca78fd0045d1b796d21ec57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gadget__callbk__grp.html#ga7b634c950ca78fd0045d1b796d21ec57">dwc_usb3_gadget_isoc_ep_start</a> (volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd, volatile <a class="el" href="structdwc__usb3__pcd__ep__t.html">dwc_usb3_pcd_ep_t</a> *ep, <a class="el" href="os__defs_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> event)</td></tr>
-<tr class="memdesc:ga7b634c950ca78fd0045d1b796d21ec57"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine starts an Isoc EP running at the proper interval, after receiving the initial XferNrdy event.  <a href="group__gadget__callbk__grp.html#ga7b634c950ca78fd0045d1b796d21ec57">More...</a><br /></td></tr>
-<tr class="separator:ga7b634c950ca78fd0045d1b796d21ec57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaaf502fcb0fea494e7fae78cc0bb3c613"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gadget__callbk__grp.html#gaaf502fcb0fea494e7fae78cc0bb3c613">dwc_usb3_gadget_request_nuke</a> (volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd, volatile <a class="el" href="structdwc__usb3__pcd__ep__t.html">dwc_usb3_pcd_ep_t</a> *ep)</td></tr>
-<tr class="memdesc:gaaf502fcb0fea494e7fae78cc0bb3c613"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine terminates all requests which are pending on an endpoint.  <a href="group__gadget__callbk__grp.html#gaaf502fcb0fea494e7fae78cc0bb3c613">More...</a><br /></td></tr>
-<tr class="separator:gaaf502fcb0fea494e7fae78cc0bb3c613"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac81cd60ca441155c9ee460258f174518"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gadget__callbk__grp.html#gac81cd60ca441155c9ee460258f174518">dwc_usb3_gadget_set_ep_not_started</a> (volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd, volatile <a class="el" href="structdwc__usb3__pcd__ep__t.html">dwc_usb3_pcd_ep_t</a> *ep)</td></tr>
-<tr class="memdesc:gac81cd60ca441155c9ee460258f174518"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine marks all pending requests for an EP as not started.  <a href="group__gadget__callbk__grp.html#gac81cd60ca441155c9ee460258f174518">More...</a><br /></td></tr>
-<tr class="separator:gac81cd60ca441155c9ee460258f174518"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga548605eef8f33bd378c0599dadab6110"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gadget__callbk__grp.html#ga548605eef8f33bd378c0599dadab6110">dwc_usb3_gadget_alloc_dma</a> (<a class="el" href="structdwc__usb3__pcd__ep__t.html">dwc_usb3_pcd_ep_t</a> *ep, int size, <a class="el" href="os__defs_8h.html#a51ed96ab2e2762bd1f604cd00810e0fa">dwc_dma_t</a> *mem_dma_ret)</td></tr>
+<tr class="memdesc:ga548605eef8f33bd378c0599dadab6110"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine allocates coherent DMA memory. It is used by the PCD to allocate memory for TRBs. The block of memory returned must have a start address aligned to a 16-byte boundary.  <a href="group__gadget__callbk__grp.html#ga548605eef8f33bd378c0599dadab6110">More...</a><br /></td></tr>
+<tr class="separator:ga548605eef8f33bd378c0599dadab6110"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga89dfa782cce8c3cf9ed07a864a710b45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gadget__callbk__grp.html#ga89dfa782cce8c3cf9ed07a864a710b45">dwc_usb3_gadget_free_dma</a> (<a class="el" href="structdwc__usb3__pcd__ep__t.html">dwc_usb3_pcd_ep_t</a> *ep, int size, void *mem, <a class="el" href="os__defs_8h.html#a51ed96ab2e2762bd1f604cd00810e0fa">dwc_dma_t</a> mem_dma)</td></tr>
+<tr class="memdesc:ga89dfa782cce8c3cf9ed07a864a710b45"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine frees DMA memory allocated by <a class="el" href="group__gadget__callbk__grp.html#ga548605eef8f33bd378c0599dadab6110" title="This routine allocates coherent DMA memory. It is used by the PCD to allocate memory for TRBs....">dwc_usb3_gadget_alloc_dma()</a>.  <a href="group__gadget__callbk__grp.html#ga89dfa782cce8c3cf9ed07a864a710b45">More...</a><br /></td></tr>
+<tr class="separator:ga89dfa782cce8c3cf9ed07a864a710b45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3437417669ee3d85b80972e89fa0f0a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdwc__usb3__pcd__req__t.html">dwc_usb3_pcd_req_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gadget__callbk__grp.html#ga3437417669ee3d85b80972e89fa0f0a3">dwc_usb3_gadget_get_request</a> (<a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd, <a class="el" href="structdwc__usb3__pcd__ep__t.html">dwc_usb3_pcd_ep_t</a> *ep)</td></tr>
+<tr class="memdesc:ga3437417669ee3d85b80972e89fa0f0a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine returns the PCD request corresponding to the current transfer request for an endpoint. The current transfer request is the first request submitted that has not been completed yet.  <a href="group__gadget__callbk__grp.html#ga3437417669ee3d85b80972e89fa0f0a3">More...</a><br /></td></tr>
+<tr class="separator:ga3437417669ee3d85b80972e89fa0f0a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1702e421dde12bcbbf9536ff90ffa997"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gadget__callbk__grp.html#ga1702e421dde12bcbbf9536ff90ffa997">dwc_usb3_gadget_start_next_request</a> (<a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd, <a class="el" href="structdwc__usb3__pcd__ep__t.html">dwc_usb3_pcd_ep_t</a> *ep)</td></tr>
+<tr class="memdesc:ga1702e421dde12bcbbf9536ff90ffa997"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine checks to see if there is another transfer request waiting on an endpoint that has not been started yet. If so then that transfer is started.  <a href="group__gadget__callbk__grp.html#ga1702e421dde12bcbbf9536ff90ffa997">More...</a><br /></td></tr>
+<tr class="separator:ga1702e421dde12bcbbf9536ff90ffa997"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad89c0841d437a1b65f27bad064cb79b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gadget__callbk__grp.html#gad89c0841d437a1b65f27bad064cb79b6">dwc_usb3_gadget_isoc_ep_start</a> (<a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd, <a class="el" href="structdwc__usb3__pcd__ep__t.html">dwc_usb3_pcd_ep_t</a> *ep, <a class="el" href="os__defs_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> event)</td></tr>
+<tr class="memdesc:gad89c0841d437a1b65f27bad064cb79b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine starts an Isoc EP running at the proper interval, after receiving the initial XferNrdy event.  <a href="group__gadget__callbk__grp.html#gad89c0841d437a1b65f27bad064cb79b6">More...</a><br /></td></tr>
+<tr class="separator:gad89c0841d437a1b65f27bad064cb79b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga00a9311c16f17da51c21f89201eed85d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gadget__callbk__grp.html#ga00a9311c16f17da51c21f89201eed85d">dwc_usb3_gadget_request_nuke</a> (<a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd, <a class="el" href="structdwc__usb3__pcd__ep__t.html">dwc_usb3_pcd_ep_t</a> *ep)</td></tr>
+<tr class="memdesc:ga00a9311c16f17da51c21f89201eed85d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine terminates all requests which are pending on an endpoint.  <a href="group__gadget__callbk__grp.html#ga00a9311c16f17da51c21f89201eed85d">More...</a><br /></td></tr>
+<tr class="separator:ga00a9311c16f17da51c21f89201eed85d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga93d1de34dba2ab668c82c38680b005a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gadget__callbk__grp.html#ga93d1de34dba2ab668c82c38680b005a4">dwc_usb3_gadget_set_ep_not_started</a> (<a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd, <a class="el" href="structdwc__usb3__pcd__ep__t.html">dwc_usb3_pcd_ep_t</a> *ep)</td></tr>
+<tr class="memdesc:ga93d1de34dba2ab668c82c38680b005a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine marks all pending requests for an EP as not started.  <a href="group__gadget__callbk__grp.html#ga93d1de34dba2ab668c82c38680b005a4">More...</a><br /></td></tr>
+<tr class="separator:ga93d1de34dba2ab668c82c38680b005a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga50a5bed0c2e6fb186cb2d7a3ed627dd2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga50a5bed0c2e6fb186cb2d7a3ed627dd2">&#9670;&nbsp;</a></span>dwc_usb3_gadget_alloc_dma()</h2>
+<a id="ga548605eef8f33bd378c0599dadab6110"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga548605eef8f33bd378c0599dadab6110">&#9670;&nbsp;</a></span>dwc_usb3_gadget_alloc_dma()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -130,7 +130,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void* dwc_usb3_gadget_alloc_dma </td>
           <td>(</td>
-          <td class="paramtype">volatile <a class="el" href="structdwc__usb3__pcd__ep__t.html">dwc_usb3_pcd_ep_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structdwc__usb3__pcd__ep__t.html">dwc_usb3_pcd_ep_t</a> *&#160;</td>
           <td class="paramname"><em>pcd_ep</em>, </td>
         </tr>
         <tr>
@@ -167,8 +167,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gace32f4892687ddfa1ccf700812ac0cef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gace32f4892687ddfa1ccf700812ac0cef">&#9670;&nbsp;</a></span>dwc_usb3_gadget_free_dma()</h2>
+<a id="ga89dfa782cce8c3cf9ed07a864a710b45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga89dfa782cce8c3cf9ed07a864a710b45">&#9670;&nbsp;</a></span>dwc_usb3_gadget_free_dma()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -176,7 +176,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void dwc_usb3_gadget_free_dma </td>
           <td>(</td>
-          <td class="paramtype">volatile <a class="el" href="structdwc__usb3__pcd__ep__t.html">dwc_usb3_pcd_ep_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structdwc__usb3__pcd__ep__t.html">dwc_usb3_pcd_ep_t</a> *&#160;</td>
           <td class="paramname"><em>pcd_ep</em>, </td>
         </tr>
         <tr>
@@ -205,7 +205,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>This routine frees DMA memory allocated by <a class="el" href="group__gadget__callbk__grp.html#ga50a5bed0c2e6fb186cb2d7a3ed627dd2" title="This routine allocates coherent DMA memory. It is used by the PCD to allocate memory for TRBs....">dwc_usb3_gadget_alloc_dma()</a>. </p>
+<p>This routine frees DMA memory allocated by <a class="el" href="group__gadget__callbk__grp.html#ga548605eef8f33bd378c0599dadab6110" title="This routine allocates coherent DMA memory. It is used by the PCD to allocate memory for TRBs....">dwc_usb3_gadget_alloc_dma()</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pcd_ep</td><td>PCD EP that memory block is associated with. </td></tr>
@@ -218,8 +218,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gadcc12d992fc9cb6639feb3f0e3e64101"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadcc12d992fc9cb6639feb3f0e3e64101">&#9670;&nbsp;</a></span>dwc_usb3_gadget_get_request()</h2>
+<a id="ga3437417669ee3d85b80972e89fa0f0a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3437417669ee3d85b80972e89fa0f0a3">&#9670;&nbsp;</a></span>dwc_usb3_gadget_get_request()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -227,13 +227,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="structdwc__usb3__pcd__req__t.html">dwc_usb3_pcd_req_t</a>* dwc_usb3_gadget_get_request </td>
           <td>(</td>
-          <td class="paramtype">volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
           <td class="paramname"><em>pcd</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">volatile <a class="el" href="structdwc__usb3__pcd__ep__t.html">dwc_usb3_pcd_ep_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structdwc__usb3__pcd__ep__t.html">dwc_usb3_pcd_ep_t</a> *&#160;</td>
           <td class="paramname"><em>pcd_ep</em>&#160;</td>
         </tr>
         <tr>
@@ -256,8 +256,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga6283f5fcc1811aaf5dd9a9c6924a98a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6283f5fcc1811aaf5dd9a9c6924a98a8">&#9670;&nbsp;</a></span>dwc_usb3_gadget_start_next_request()</h2>
+<a id="ga1702e421dde12bcbbf9536ff90ffa997"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1702e421dde12bcbbf9536ff90ffa997">&#9670;&nbsp;</a></span>dwc_usb3_gadget_start_next_request()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -265,13 +265,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void dwc_usb3_gadget_start_next_request </td>
           <td>(</td>
-          <td class="paramtype">volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
           <td class="paramname"><em>pcd</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">volatile <a class="el" href="structdwc__usb3__pcd__ep__t.html">dwc_usb3_pcd_ep_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structdwc__usb3__pcd__ep__t.html">dwc_usb3_pcd_ep_t</a> *&#160;</td>
           <td class="paramname"><em>pcd_ep</em>&#160;</td>
         </tr>
         <tr>
@@ -293,8 +293,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga7b634c950ca78fd0045d1b796d21ec57"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7b634c950ca78fd0045d1b796d21ec57">&#9670;&nbsp;</a></span>dwc_usb3_gadget_isoc_ep_start()</h2>
+<a id="gad89c0841d437a1b65f27bad064cb79b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad89c0841d437a1b65f27bad064cb79b6">&#9670;&nbsp;</a></span>dwc_usb3_gadget_isoc_ep_start()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -302,13 +302,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void dwc_usb3_gadget_isoc_ep_start </td>
           <td>(</td>
-          <td class="paramtype">volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
           <td class="paramname"><em>pcd</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">volatile <a class="el" href="structdwc__usb3__pcd__ep__t.html">dwc_usb3_pcd_ep_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structdwc__usb3__pcd__ep__t.html">dwc_usb3_pcd_ep_t</a> *&#160;</td>
           <td class="paramname"><em>pcd_ep</em>, </td>
         </tr>
         <tr>
@@ -337,8 +337,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gaaf502fcb0fea494e7fae78cc0bb3c613"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaaf502fcb0fea494e7fae78cc0bb3c613">&#9670;&nbsp;</a></span>dwc_usb3_gadget_request_nuke()</h2>
+<a id="ga00a9311c16f17da51c21f89201eed85d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga00a9311c16f17da51c21f89201eed85d">&#9670;&nbsp;</a></span>dwc_usb3_gadget_request_nuke()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -346,13 +346,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void dwc_usb3_gadget_request_nuke </td>
           <td>(</td>
-          <td class="paramtype">volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
           <td class="paramname"><em>pcd</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">volatile <a class="el" href="structdwc__usb3__pcd__ep__t.html">dwc_usb3_pcd_ep_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structdwc__usb3__pcd__ep__t.html">dwc_usb3_pcd_ep_t</a> *&#160;</td>
           <td class="paramname"><em>pcd_ep</em>&#160;</td>
         </tr>
         <tr>
@@ -374,8 +374,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gac81cd60ca441155c9ee460258f174518"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac81cd60ca441155c9ee460258f174518">&#9670;&nbsp;</a></span>dwc_usb3_gadget_set_ep_not_started()</h2>
+<a id="ga93d1de34dba2ab668c82c38680b005a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga93d1de34dba2ab668c82c38680b005a4">&#9670;&nbsp;</a></span>dwc_usb3_gadget_set_ep_not_started()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -383,13 +383,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void dwc_usb3_gadget_set_ep_not_started </td>
           <td>(</td>
-          <td class="paramtype">volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
           <td class="paramname"><em>pcd</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">volatile <a class="el" href="structdwc__usb3__pcd__ep__t.html">dwc_usb3_pcd_ep_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structdwc__usb3__pcd__ep__t.html">dwc_usb3_pcd_ep_t</a> *&#160;</td>
           <td class="paramname"><em>pcd_ep</em>&#160;</td>
         </tr>
         <tr>

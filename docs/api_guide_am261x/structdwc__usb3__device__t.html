@@ -145,10 +145,10 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a4d2e832d87d30fc5d3449b1fc7902274"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdwc__usb3__device__t.html#a4d2e832d87d30fc5d3449b1fc7902274">program_gsbuscfg</a>: 1</td></tr>
 <tr class="separator:a4d2e832d87d30fc5d3449b1fc7902274"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a8d8cb55662f46dab219adc3ff397b231"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="os__defs_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdwc__usb3__device__t.html#a8d8cb55662f46dab219adc3ff397b231">event_ptr</a> [<a class="el" href="dev_8h.html#aef78fda7a06a3dd4575072b283cd66f2">DWC_NUM_EVENT_BUFS</a>]</td></tr>
-<tr class="separator:a8d8cb55662f46dab219adc3ff397b231"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add30963f4c434f6b77d0b365e79ea25e"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="os__defs_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdwc__usb3__device__t.html#add30963f4c434f6b77d0b365e79ea25e">event_buf</a> [<a class="el" href="dev_8h.html#aef78fda7a06a3dd4575072b283cd66f2">DWC_NUM_EVENT_BUFS</a>]</td></tr>
-<tr class="separator:add30963f4c434f6b77d0b365e79ea25e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af66a80a7cf728bb0c6fdfafadb33a410"><td class="memItemLeft" align="right" valign="top"><a class="el" href="os__defs_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdwc__usb3__device__t.html#af66a80a7cf728bb0c6fdfafadb33a410">event_ptr</a> [<a class="el" href="dev_8h.html#aef78fda7a06a3dd4575072b283cd66f2">DWC_NUM_EVENT_BUFS</a>]</td></tr>
+<tr class="separator:af66a80a7cf728bb0c6fdfafadb33a410"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadec958567f111cc9cd97882ad23ca3f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="os__defs_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdwc__usb3__device__t.html#aadec958567f111cc9cd97882ad23ca3f">event_buf</a> [<a class="el" href="dev_8h.html#aef78fda7a06a3dd4575072b283cd66f2">DWC_NUM_EVENT_BUFS</a>]</td></tr>
+<tr class="separator:aadec958567f111cc9cd97882ad23ca3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a399cd51f6c0314fcc4ad3d31e605584d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="os__defs_8h.html#a51ed96ab2e2762bd1f604cd00810e0fa">dwc_dma_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdwc__usb3__device__t.html#a399cd51f6c0314fcc4ad3d31e605584d">event_buf_dma</a> [<a class="el" href="dev_8h.html#aef78fda7a06a3dd4575072b283cd66f2">DWC_NUM_EVENT_BUFS</a>]</td></tr>
 <tr class="separator:a399cd51f6c0314fcc4ad3d31e605584d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
@@ -186,18 +186,18 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a2b0686db19332dfb2f69dcde7aee37ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="os__defs_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdwc__usb3__device__t.html#a2b0686db19332dfb2f69dcde7aee37ff">grxfifosiz0_save</a></td></tr>
 <tr class="separator:a2b0686db19332dfb2f69dcde7aee37ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a67ed19432af9f66c8051cfa0e1052e70"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdwc__usb3__device__t.html#a67ed19432af9f66c8051cfa0e1052e70">soft_reset_hook</a> )(volatile struct dwc_usb3_device *dev, int softrst, int rstor)</td></tr>
-<tr class="separator:a67ed19432af9f66c8051cfa0e1052e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5e2324c2248c998920b02daad3e6c01"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdwc__usb3__device__t.html#af5e2324c2248c998920b02daad3e6c01">phy_config_hook</a> )(volatile struct dwc_usb3_device *dev, int softrst, int rstor)</td></tr>
-<tr class="separator:af5e2324c2248c998920b02daad3e6c01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2aad8d5943a328ac927cb8ddbde3d7c"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdwc__usb3__device__t.html#ad2aad8d5943a328ac927cb8ddbde3d7c">fifo_sizing_hook</a> )(volatile struct dwc_usb3_device *dev, int softrst, int rstor)</td></tr>
-<tr class="separator:ad2aad8d5943a328ac927cb8ddbde3d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d8db1d592ab6a58bd2aae0c4d856ea7"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdwc__usb3__device__t.html#a9d8db1d592ab6a58bd2aae0c4d856ea7">gctl_init_hook</a> )(volatile struct dwc_usb3_device *dev, int softrst, int rstor)</td></tr>
-<tr class="separator:a9d8db1d592ab6a58bd2aae0c4d856ea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c43aad6f2cc0537d5bc6b3898a1f755"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdwc__usb3__device__t.html#a7c43aad6f2cc0537d5bc6b3898a1f755">set_address_hook</a> )(volatile struct dwc_usb3_device *dev, int softrst, int rstor)</td></tr>
-<tr class="separator:a7c43aad6f2cc0537d5bc6b3898a1f755"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51d76f6ddb06b2cd4c6e77423de2852a"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdwc__usb3__device__t.html#a51d76f6ddb06b2cd4c6e77423de2852a">ep0_start_hook</a> )(volatile struct dwc_usb3_device *dev, int softrst, int rstor)</td></tr>
-<tr class="separator:a51d76f6ddb06b2cd4c6e77423de2852a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a685a962e4025c703b99641b67cc6529b"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdwc__usb3__device__t.html#a685a962e4025c703b99641b67cc6529b">soft_reset_hook</a> )(struct dwc_usb3_device *dev, int softrst, int rstor)</td></tr>
+<tr class="separator:a685a962e4025c703b99641b67cc6529b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e8d29a004ec792a79a9ab81b534fa25"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdwc__usb3__device__t.html#a4e8d29a004ec792a79a9ab81b534fa25">phy_config_hook</a> )(struct dwc_usb3_device *dev, int softrst, int rstor)</td></tr>
+<tr class="separator:a4e8d29a004ec792a79a9ab81b534fa25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fa6de7a81120cccbcfd615c1dd483ee"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdwc__usb3__device__t.html#a1fa6de7a81120cccbcfd615c1dd483ee">fifo_sizing_hook</a> )(struct dwc_usb3_device *dev, int softrst, int rstor)</td></tr>
+<tr class="separator:a1fa6de7a81120cccbcfd615c1dd483ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4588902837755d847b113ff99c0016a6"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdwc__usb3__device__t.html#a4588902837755d847b113ff99c0016a6">gctl_init_hook</a> )(struct dwc_usb3_device *dev, int softrst, int rstor)</td></tr>
+<tr class="separator:a4588902837755d847b113ff99c0016a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4953f5ff1721e02dd0624fcf42c67cd3"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdwc__usb3__device__t.html#a4953f5ff1721e02dd0624fcf42c67cd3">set_address_hook</a> )(struct dwc_usb3_device *dev, int softrst, int rstor)</td></tr>
+<tr class="separator:a4953f5ff1721e02dd0624fcf42c67cd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa89a34b4159b32ec9a7bd67bbd83fe17"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdwc__usb3__device__t.html#aa89a34b4159b32ec9a7bd67bbd83fe17">ep0_start_hook</a> )(struct dwc_usb3_device *dev, int softrst, int rstor)</td></tr>
+<tr class="separator:aa89a34b4159b32ec9a7bd67bbd83fe17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
 <a id="a45c865ef3e5c25641e8265915bd75bb6"></a>
@@ -334,14 +334,14 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a8d8cb55662f46dab219adc3ff397b231"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d8cb55662f46dab219adc3ff397b231">&#9670;&nbsp;</a></span>event_ptr</h2>
+<a id="af66a80a7cf728bb0c6fdfafadb33a410"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af66a80a7cf728bb0c6fdfafadb33a410">&#9670;&nbsp;</a></span>event_ptr</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">volatile <a class="el" href="os__defs_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>* dwc_usb3_device_t::event_ptr[<a class="el" href="dev_8h.html#aef78fda7a06a3dd4575072b283cd66f2">DWC_NUM_EVENT_BUFS</a>]</td>
+          <td class="memname"><a class="el" href="os__defs_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>* dwc_usb3_device_t::event_ptr[<a class="el" href="dev_8h.html#aef78fda7a06a3dd4575072b283cd66f2">DWC_NUM_EVENT_BUFS</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -349,14 +349,14 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="add30963f4c434f6b77d0b365e79ea25e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add30963f4c434f6b77d0b365e79ea25e">&#9670;&nbsp;</a></span>event_buf</h2>
+<a id="aadec958567f111cc9cd97882ad23ca3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadec958567f111cc9cd97882ad23ca3f">&#9670;&nbsp;</a></span>event_buf</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">volatile <a class="el" href="os__defs_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>* dwc_usb3_device_t::event_buf[<a class="el" href="dev_8h.html#aef78fda7a06a3dd4575072b283cd66f2">DWC_NUM_EVENT_BUFS</a>]</td>
+          <td class="memname"><a class="el" href="os__defs_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a>* dwc_usb3_device_t::event_buf[<a class="el" href="dev_8h.html#aef78fda7a06a3dd4575072b283cd66f2">DWC_NUM_EVENT_BUFS</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -633,85 +633,85 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a67ed19432af9f66c8051cfa0e1052e70"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a67ed19432af9f66c8051cfa0e1052e70">&#9670;&nbsp;</a></span>soft_reset_hook</h2>
+<a id="a685a962e4025c703b99641b67cc6529b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a685a962e4025c703b99641b67cc6529b">&#9670;&nbsp;</a></span>soft_reset_hook</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* dwc_usb3_device_t::soft_reset_hook) (volatile struct dwc_usb3_device *dev, int softrst, int rstor)</td>
+          <td class="memname">void(* dwc_usb3_device_t::soft_reset_hook) (struct dwc_usb3_device *dev, int softrst, int rstor)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Hooks for customizing device initialization. See <a class="el" href="group__init__api__grp.html#ga619545a2cc61df0bfd9a3cea96a8d459" title="This routine initializes the DWC_usb3 controller registers.">dwc_usb3_pcd_device_init()</a> in <a class="el" href="cil_8c.html">cil.c</a> to see how these work. </p>
+<p>Hooks for customizing device initialization. See <a class="el" href="group__init__api__grp.html#ga2dc8c8ab0385fca539aa11d85caa27d4" title="This routine initializes the DWC_usb3 controller registers.">dwc_usb3_pcd_device_init()</a> in <a class="el" href="cil_8c.html">cil.c</a> to see how these work. </p>
 
 </div>
 </div>
-<a id="af5e2324c2248c998920b02daad3e6c01"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5e2324c2248c998920b02daad3e6c01">&#9670;&nbsp;</a></span>phy_config_hook</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void(* dwc_usb3_device_t::phy_config_hook) (volatile struct dwc_usb3_device *dev, int softrst, int rstor)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad2aad8d5943a328ac927cb8ddbde3d7c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2aad8d5943a328ac927cb8ddbde3d7c">&#9670;&nbsp;</a></span>fifo_sizing_hook</h2>
+<a id="a4e8d29a004ec792a79a9ab81b534fa25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e8d29a004ec792a79a9ab81b534fa25">&#9670;&nbsp;</a></span>phy_config_hook</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* dwc_usb3_device_t::fifo_sizing_hook) (volatile struct dwc_usb3_device *dev, int softrst, int rstor)</td>
+          <td class="memname">void(* dwc_usb3_device_t::phy_config_hook) (struct dwc_usb3_device *dev, int softrst, int rstor)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a9d8db1d592ab6a58bd2aae0c4d856ea7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d8db1d592ab6a58bd2aae0c4d856ea7">&#9670;&nbsp;</a></span>gctl_init_hook</h2>
+<a id="a1fa6de7a81120cccbcfd615c1dd483ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fa6de7a81120cccbcfd615c1dd483ee">&#9670;&nbsp;</a></span>fifo_sizing_hook</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* dwc_usb3_device_t::gctl_init_hook) (volatile struct dwc_usb3_device *dev, int softrst, int rstor)</td>
+          <td class="memname">void(* dwc_usb3_device_t::fifo_sizing_hook) (struct dwc_usb3_device *dev, int softrst, int rstor)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a7c43aad6f2cc0537d5bc6b3898a1f755"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c43aad6f2cc0537d5bc6b3898a1f755">&#9670;&nbsp;</a></span>set_address_hook</h2>
+<a id="a4588902837755d847b113ff99c0016a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4588902837755d847b113ff99c0016a6">&#9670;&nbsp;</a></span>gctl_init_hook</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* dwc_usb3_device_t::set_address_hook) (volatile struct dwc_usb3_device *dev, int softrst, int rstor)</td>
+          <td class="memname">void(* dwc_usb3_device_t::gctl_init_hook) (struct dwc_usb3_device *dev, int softrst, int rstor)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a51d76f6ddb06b2cd4c6e77423de2852a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51d76f6ddb06b2cd4c6e77423de2852a">&#9670;&nbsp;</a></span>ep0_start_hook</h2>
+<a id="a4953f5ff1721e02dd0624fcf42c67cd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4953f5ff1721e02dd0624fcf42c67cd3">&#9670;&nbsp;</a></span>set_address_hook</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* dwc_usb3_device_t::ep0_start_hook) (volatile struct dwc_usb3_device *dev, int softrst, int rstor)</td>
+          <td class="memname">void(* dwc_usb3_device_t::set_address_hook) (struct dwc_usb3_device *dev, int softrst, int rstor)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa89a34b4159b32ec9a7bd67bbd83fe17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa89a34b4159b32ec9a7bd67bbd83fe17">&#9670;&nbsp;</a></span>ep0_start_hook</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* dwc_usb3_device_t::ep0_start_hook) (struct dwc_usb3_device *dev, int softrst, int rstor)</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -94,18 +94,18 @@ $(document).ready(function(){initNavTree('EXAMPLES_USB_NCM.html',''); initResiza
 <div class="toc"><h3>Table of Contents</h3>
 <ul><li class="level1"><a href="#INTRODUCTION_NCM">Introduction</a></li>
 <li class="level1"><a href="#EXAMPLES_USB_NCM_EXAMPLE_COMBOS">Supported Combinations</a></li>
-<li class="level1"><a href="#autotoc_md3419">Steps to Run the Example</a><ul><li class="level2"><a href="#autotoc_md3420">Build the example</a></li>
-<li class="level2"><a href="#autotoc_md3421">HW Setup</a><ul><li class="level3"><a href="#autotoc_md3422">AM261x-LP</a></li>
-<li class="level3"><a href="#autotoc_md3423">AM261X-SOM</a></li>
+<li class="level1"><a href="#autotoc_md3435">Steps to Run the Example</a><ul><li class="level2"><a href="#autotoc_md3436">Build the example</a></li>
+<li class="level2"><a href="#autotoc_md3437">HW Setup</a><ul><li class="level3"><a href="#autotoc_md3438">AM261x-LP</a></li>
+<li class="level3"><a href="#autotoc_md3439">AM261X-SOM</a></li>
 </ul>
 </li>
-<li class="level2"><a href="#autotoc_md3424">Run the example</a><ul><ul><li class="level4"><a href="#autotoc_md3425">NCM Download</a></li>
+<li class="level2"><a href="#autotoc_md3440">Run the example</a><ul><ul><li class="level4"><a href="#autotoc_md3441">NCM Download</a></li>
 </ul>
 </ul>
 </li>
 </ul>
 </li>
-<li class="level1"><a href="#autotoc_md3426">See Also</a></li>
+<li class="level1"><a href="#autotoc_md3442">See Also</a></li>
 </ul>
 </div>
 <div class="textblock"><p><a class="anchor" id="md_examples_usb_usb_ncm_example"></a></p>
@@ -138,23 +138,26 @@ Supported Combinations</h1>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">r5fss0-0_freertos   </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">Toolchain  </td><td class="markdownTableBodyNone">ti-arm-clang   </td></tr>
+<td class="markdownTableBodyNone" rowspan="2">Toolchain  </td><td class="markdownTableBodyNone">ti-arm-clang   </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">Boards  </td><td class="markdownTableBodyNone">am261x-som, am261x-lp   </td></tr>
+<td class="markdownTableBodyNone">iar-arm   </td></tr>
 <tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Boards  </td><td class="markdownTableBodyNone">am261x-som, am261x-lp   </td></tr>
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">Example folder  </td><td class="markdownTableBodyNone">examples/usb/device/ncm   </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md3419"></a>
+<h1><a class="anchor" id="autotoc_md3435"></a>
 Steps to Run the Example</h1>
-<h2><a class="anchor" id="autotoc_md3420"></a>
+<h2><a class="anchor" id="autotoc_md3436"></a>
 Build the example</h2>
 <ul>
-<li>When using CCS projects to build, import the CCS project for the required combination and build it using the CCS project menu (see <a class="el" href="CCS_PROJECTS_PAGE.html">Using SDK with CCS Projects</a>).</li>
-<li>When using makefiles to build, note the required combination and build using make command (see <a class="el" href="MAKEFILE_BUILD_PAGE.html">Using SDK with Makefiles</a>)</li>
+<li><b>When using CCS projects to build</b>, import the CCS project for the required combination and build it using the CCS project menu (see <a class="el" href="CCS_PROJECTS_PAGE.html">Using SDK with CCS Projects</a>).</li>
+<li><b>When using IAR EW projects to build</b>, import the IAR EW workspace for the required combination and build it using the IAR EW project menu (see <a class="el" href="IAR_PROJECTS_PAGE.html">Using SDK with IAR Embedded Workbench Projects</a>).</li>
+<li><b>When using makefiles to build</b>, note the required combination and build using make command (see <a class="el" href="MAKEFILE_BUILD_PAGE.html">Using SDK with Makefiles</a>)</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md3421"></a>
+<h2><a class="anchor" id="autotoc_md3437"></a>
 HW Setup</h2>
-<h3><a class="anchor" id="autotoc_md3422"></a>
+<h3><a class="anchor" id="autotoc_md3438"></a>
 AM261x-LP</h3>
 <ul>
 <li>To test the application, one can use a Windows/Linux PC as a USB host.</li>
@@ -164,7 +167,7 @@ AM261x-LP</h3>
 <img src="am261x_lp_j10.png" alt=""/>
 <div class="caption">
 USB Micro B Device Connector</div></div>
-<h3><a class="anchor" id="autotoc_md3423"></a>
+<h3><a class="anchor" id="autotoc_md3439"></a>
 AM261X-SOM</h3>
 <ul>
 <li>To test the application, one can use a Windows/Linux PC as a USB host</li>
@@ -174,10 +177,10 @@ AM261X-SOM</h3>
 <img src="am261x_som_j7.png" alt=""/>
 <div class="caption">
 USB Micro B Device Connector</div></div>
-<h2><a class="anchor" id="autotoc_md3424"></a>
+<h2><a class="anchor" id="autotoc_md3440"></a>
 Run the example</h2>
 <ul>
-<li>Launch a CCS debug session and run the executable, see <a class="el" href="CCS_LAUNCH_PAGE.html">CCS Launch, Load and Run</a></li>
+<li>Launch a CCS or IAR EW debug session and run the executable, see <a class="el" href="CCS_LAUNCH_PAGE.html">CCS Launch, Load and Run</a> or <a class="el" href="IAR_LAUNCH_PAGE.html">IAR Launch, Load and Run</a></li>
 <li>When application is running observe that ncm network device is detected by HOST PC ( Windows/linux)</li>
 <li>If the enumeration is successful the following should be displayed on console.</li>
 </ul>
@@ -201,7 +204,7 @@ NCM Device Enumeration log</div></div>
 <img src="ncm_enum_log_am261x.png" alt=""/>
 <div class="caption">
 NCM Device Enumeration log. </div></div>
-<h4><a class="anchor" id="autotoc_md3425"></a>
+<h4><a class="anchor" id="autotoc_md3441"></a>
 NCM Download</h4>
 <ul>
 <li><p class="startli">Open any web browser application and post following http request.</p>
@@ -217,7 +220,7 @@ NCM Download</h4>
 <img src="web_page.png" alt=""/>
 <div class="caption">
 HTTP Get request via USB( NCM ) successful</div></div>
-<h1><a class="anchor" id="autotoc_md3426"></a>
+<h1><a class="anchor" id="autotoc_md3442"></a>
 See Also</h1>
 <p><a class="el" href="USB_DEVICE_DRIVER.html">USB</a> </p>
 </div></div><!-- contents -->

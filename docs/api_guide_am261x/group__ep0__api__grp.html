@@ -99,64 +99,64 @@ $(document).ready(function(){initNavTree('group__ep0__api__grp.html',''); initRe
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gaf70146c50197cde6917c38822a39c45b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ep0__api__grp.html#gaf70146c50197cde6917c38822a39c45b">dwc_usb3_ep0_activate</a> (volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd, int restore)</td></tr>
-<tr class="memdesc:gaf70146c50197cde6917c38822a39c45b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine configures EP0 OUT to receive SETUP packets and configures EP0 IN for transmitting packets.  <a href="group__ep0__api__grp.html#gaf70146c50197cde6917c38822a39c45b">More...</a><br /></td></tr>
-<tr class="separator:gaf70146c50197cde6917c38822a39c45b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa26cf0f55376ecf50476968c87e3396b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ep0__api__grp.html#gaa26cf0f55376ecf50476968c87e3396b">dwc_usb3_pcd_ep0_out_start</a> (volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd)</td></tr>
-<tr class="memdesc:gaa26cf0f55376ecf50476968c87e3396b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine sets up a SETUP stage transfer for EP0 and starts the transfer.  <a href="group__ep0__api__grp.html#gaa26cf0f55376ecf50476968c87e3396b">More...</a><br /></td></tr>
-<tr class="separator:gaa26cf0f55376ecf50476968c87e3396b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4a34a08b521e8d04dfaccb0796b50bbb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ep0__api__grp.html#ga4a34a08b521e8d04dfaccb0796b50bbb">dwc_usb3_pcd_ep0_start_transfer</a> (volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd, volatile <a class="el" href="structdwc__usb3__pcd__req__t.html">dwc_usb3_pcd_req_t</a> *req)</td></tr>
-<tr class="memdesc:ga4a34a08b521e8d04dfaccb0796b50bbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine sets up a data/status stage transfer for EP0 and starts the transfer. If pcd-&gt;ep0-&gt;dwc_ep.is_in is 0 it will be an OUT transfer, otherwise it will be an IN transfer.  <a href="group__ep0__api__grp.html#ga4a34a08b521e8d04dfaccb0796b50bbb">More...</a><br /></td></tr>
-<tr class="separator:ga4a34a08b521e8d04dfaccb0796b50bbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad9a0a566e93e34841cfc626929b7bf9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ep0__api__grp.html#gad9a0a566e93e34841cfc626929b7bf9b">dwc_usb3_pcd_ep0_data_stage</a> (volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd, int length)</td></tr>
-<tr class="memdesc:gad9a0a566e93e34841cfc626929b7bf9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine starts the data stage of a 3-stage control command. pcd-&gt;ep0state must be set to EP0_OUT_DATA_PHASE or EP0_IN_DATA_PHASE, and pcd-&gt;ep0-&gt;dwc_ep.is_in must be set to 0 or 1 before calling this routine. For IN, the data to be sent must be placed in pcd-&gt;ep0_status_buf before the call.  <a href="group__ep0__api__grp.html#gad9a0a566e93e34841cfc626929b7bf9b">More...</a><br /></td></tr>
-<tr class="separator:gad9a0a566e93e34841cfc626929b7bf9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacb532a4126539b6954b57270efc87530"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ep0__api__grp.html#gacb532a4126539b6954b57270efc87530">dwc_usb3_handle_ep0_xfer</a> (volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd, <a class="el" href="os__defs_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> event)</td></tr>
-<tr class="memdesc:gacb532a4126539b6954b57270efc87530"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine handles EP0 transfers.  <a href="group__ep0__api__grp.html#gacb532a4126539b6954b57270efc87530">More...</a><br /></td></tr>
-<tr class="separator:gacb532a4126539b6954b57270efc87530"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1b01aa1b24cd7724701c9628c35d2cda"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ep0__api__grp.html#ga1b01aa1b24cd7724701c9628c35d2cda">dwc_usb3_do_setup</a> (volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd)</td></tr>
-<tr class="memdesc:ga1b01aa1b24cd7724701c9628c35d2cda"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine processes SETUP commands. The USB Command processing is done in two places - the first being the PCD and the second being the Gadget driver (for example, the File-Backed Storage Gadget driver).  <a href="group__ep0__api__grp.html#ga1b01aa1b24cd7724701c9628c35d2cda">More...</a><br /></td></tr>
-<tr class="separator:ga1b01aa1b24cd7724701c9628c35d2cda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2930843753921d0fada29db037f2c517"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ep0__api__grp.html#ga2930843753921d0fada29db037f2c517">ep0_do_stall</a> (volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd, int err_val)</td></tr>
-<tr class="memdesc:ga2930843753921d0fada29db037f2c517"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine stalls EP0.  <a href="group__ep0__api__grp.html#ga2930843753921d0fada29db037f2c517">More...</a><br /></td></tr>
-<tr class="separator:ga2930843753921d0fada29db037f2c517"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga89bd3878616f8598da6fac91a1f43ca7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ep0__api__grp.html#ga89bd3878616f8598da6fac91a1f43ca7">do_clear_halt</a> (volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd, volatile <a class="el" href="structdwc__usb3__pcd__ep__t.html">dwc_usb3_pcd_ep_t</a> *ep)</td></tr>
-<tr class="memdesc:ga89bd3878616f8598da6fac91a1f43ca7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the EP halt (STALL), and if there are pending requests start the transfer.  <a href="group__ep0__api__grp.html#ga89bd3878616f8598da6fac91a1f43ca7">More...</a><br /></td></tr>
-<tr class="separator:ga89bd3878616f8598da6fac91a1f43ca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1b9e4762e9bd58b089f4f2c2737f29f1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ep0__api__grp.html#ga1b9e4762e9bd58b089f4f2c2737f29f1">do_get_status</a> (volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd)</td></tr>
-<tr class="memdesc:ga1b9e4762e9bd58b089f4f2c2737f29f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine processes the GET_STATUS Setup Commands.  <a href="group__ep0__api__grp.html#ga1b9e4762e9bd58b089f4f2c2737f29f1">More...</a><br /></td></tr>
-<tr class="separator:ga1b9e4762e9bd58b089f4f2c2737f29f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8c44c27c513f20944a917de2bb53c8e7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ep0__api__grp.html#ga8c44c27c513f20944a917de2bb53c8e7">do_clear_feature</a> (volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd)</td></tr>
-<tr class="memdesc:ga8c44c27c513f20944a917de2bb53c8e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine processes the CLEAR_FEATURE Setup Commands.  <a href="group__ep0__api__grp.html#ga8c44c27c513f20944a917de2bb53c8e7">More...</a><br /></td></tr>
-<tr class="separator:ga8c44c27c513f20944a917de2bb53c8e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga45b2cd75f729fb6f7af6e4b59aad6225"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ep0__api__grp.html#ga45b2cd75f729fb6f7af6e4b59aad6225">do_set_feature</a> (volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd)</td></tr>
-<tr class="memdesc:ga45b2cd75f729fb6f7af6e4b59aad6225"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine processes the SET_FEATURE Setup Commands.  <a href="group__ep0__api__grp.html#ga45b2cd75f729fb6f7af6e4b59aad6225">More...</a><br /></td></tr>
-<tr class="separator:ga45b2cd75f729fb6f7af6e4b59aad6225"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga85b3f957dc475cad951bfa54914d1ece"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ep0__api__grp.html#ga85b3f957dc475cad951bfa54914d1ece">do_set_address</a> (volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd)</td></tr>
-<tr class="memdesc:ga85b3f957dc475cad951bfa54914d1ece"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine processes the SET_ADDRESS Setup Commands.  <a href="group__ep0__api__grp.html#ga85b3f957dc475cad951bfa54914d1ece">More...</a><br /></td></tr>
-<tr class="separator:ga85b3f957dc475cad951bfa54914d1ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab16cc26bd6355db03dfac85a20a5097d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ep0__api__grp.html#gab16cc26bd6355db03dfac85a20a5097d">do_get_descriptor</a> (volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd)</td></tr>
-<tr class="memdesc:gab16cc26bd6355db03dfac85a20a5097d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine handles the Get Descriptor request for the BOS descriptor and the OTG descriptor, and passes all other requests to the Gadget driver.  <a href="group__ep0__api__grp.html#gab16cc26bd6355db03dfac85a20a5097d">More...</a><br /></td></tr>
-<tr class="separator:gab16cc26bd6355db03dfac85a20a5097d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga345ebb686999f3bc923bc95fc599f213"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ep0__api__grp.html#ga345ebb686999f3bc923bc95fc599f213">ep0_continue_transfer</a> (volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd, volatile <a class="el" href="structdwc__usb3__pcd__req__t.html">dwc_usb3_pcd_req_t</a> *req)</td></tr>
-<tr class="memdesc:ga345ebb686999f3bc923bc95fc599f213"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine continues control IN transfers started by ep0_start_transfer, when the transfer does not fit in a single request.  <a href="group__ep0__api__grp.html#ga345ebb686999f3bc923bc95fc599f213">More...</a><br /></td></tr>
-<tr class="separator:ga345ebb686999f3bc923bc95fc599f213"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2944591a4b3bae1b0cfa98d928ae1300"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ep0__api__grp.html#ga2944591a4b3bae1b0cfa98d928ae1300">ep0_complete_request</a> (volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd, volatile <a class="el" href="structdwc__usb3__pcd__req__t.html">dwc_usb3_pcd_req_t</a> *req, <a class="el" href="structdwc__usb3__dma__desc__t.html">dwc_usb3_dma_desc_t</a> *desc, int status)</td></tr>
-<tr class="memdesc:ga2944591a4b3bae1b0cfa98d928ae1300"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine completes the ep0 control transfer.  <a href="group__ep0__api__grp.html#ga2944591a4b3bae1b0cfa98d928ae1300">More...</a><br /></td></tr>
-<tr class="separator:ga2944591a4b3bae1b0cfa98d928ae1300"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga506f59fc1151a4755c5558fcbed4b39e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ep0__api__grp.html#ga506f59fc1151a4755c5558fcbed4b39e">setup_in_status_phase</a> (volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd, void *buf, <a class="el" href="os__defs_8h.html#a51ed96ab2e2762bd1f604cd00810e0fa">dwc_dma_t</a> dma)</td></tr>
-<tr class="memdesc:ga506f59fc1151a4755c5558fcbed4b39e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine starts the Zero-Length Packet for the IN status phase of a control write transfer.  <a href="group__ep0__api__grp.html#ga506f59fc1151a4755c5558fcbed4b39e">More...</a><br /></td></tr>
-<tr class="separator:ga506f59fc1151a4755c5558fcbed4b39e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga92cd211c9143b220ddd96319147f2667"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ep0__api__grp.html#ga92cd211c9143b220ddd96319147f2667">setup_out_status_phase</a> (volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd, void *buf, <a class="el" href="os__defs_8h.html#a51ed96ab2e2762bd1f604cd00810e0fa">dwc_dma_t</a> dma)</td></tr>
-<tr class="memdesc:ga92cd211c9143b220ddd96319147f2667"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine starts the Zero-Length Packet for the OUT status phase of a control read transfer.  <a href="group__ep0__api__grp.html#ga92cd211c9143b220ddd96319147f2667">More...</a><br /></td></tr>
-<tr class="separator:ga92cd211c9143b220ddd96319147f2667"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9a2b745d983575476a5a19d2355652cc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ep0__api__grp.html#ga9a2b745d983575476a5a19d2355652cc">dwc_usb3_handle_ep0</a> (volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd, volatile <a class="el" href="structdwc__usb3__pcd__req__t.html">dwc_usb3_pcd_req_t</a> *req, <a class="el" href="os__defs_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> event)</td></tr>
-<tr class="memdesc:ga9a2b745d983575476a5a19d2355652cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine handles EP0 Control transfers.  <a href="group__ep0__api__grp.html#ga9a2b745d983575476a5a19d2355652cc">More...</a><br /></td></tr>
-<tr class="separator:ga9a2b745d983575476a5a19d2355652cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaea59a63d400ac5df86c605aec8dc222c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ep0__api__grp.html#gaea59a63d400ac5df86c605aec8dc222c">dwc_usb3_ep0_activate</a> (<a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd, int restore)</td></tr>
+<tr class="memdesc:gaea59a63d400ac5df86c605aec8dc222c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine configures EP0 OUT to receive SETUP packets and configures EP0 IN for transmitting packets.  <a href="group__ep0__api__grp.html#gaea59a63d400ac5df86c605aec8dc222c">More...</a><br /></td></tr>
+<tr class="separator:gaea59a63d400ac5df86c605aec8dc222c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6554d3739a62a46a725f50f6f6663415"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ep0__api__grp.html#ga6554d3739a62a46a725f50f6f6663415">dwc_usb3_pcd_ep0_out_start</a> (<a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd)</td></tr>
+<tr class="memdesc:ga6554d3739a62a46a725f50f6f6663415"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine sets up a SETUP stage transfer for EP0 and starts the transfer.  <a href="group__ep0__api__grp.html#ga6554d3739a62a46a725f50f6f6663415">More...</a><br /></td></tr>
+<tr class="separator:ga6554d3739a62a46a725f50f6f6663415"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa0c9ef58484b2c6fb880c0da30480509"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ep0__api__grp.html#gaa0c9ef58484b2c6fb880c0da30480509">dwc_usb3_pcd_ep0_start_transfer</a> (<a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd, <a class="el" href="structdwc__usb3__pcd__req__t.html">dwc_usb3_pcd_req_t</a> *req)</td></tr>
+<tr class="memdesc:gaa0c9ef58484b2c6fb880c0da30480509"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine sets up a data/status stage transfer for EP0 and starts the transfer. If pcd-&gt;ep0-&gt;dwc_ep.is_in is 0 it will be an OUT transfer, otherwise it will be an IN transfer.  <a href="group__ep0__api__grp.html#gaa0c9ef58484b2c6fb880c0da30480509">More...</a><br /></td></tr>
+<tr class="separator:gaa0c9ef58484b2c6fb880c0da30480509"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf2063f3275032364d3555a908bb8000b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ep0__api__grp.html#gaf2063f3275032364d3555a908bb8000b">dwc_usb3_pcd_ep0_data_stage</a> (<a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd, int length)</td></tr>
+<tr class="memdesc:gaf2063f3275032364d3555a908bb8000b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine starts the data stage of a 3-stage control command. pcd-&gt;ep0state must be set to EP0_OUT_DATA_PHASE or EP0_IN_DATA_PHASE, and pcd-&gt;ep0-&gt;dwc_ep.is_in must be set to 0 or 1 before calling this routine. For IN, the data to be sent must be placed in pcd-&gt;ep0_status_buf before the call.  <a href="group__ep0__api__grp.html#gaf2063f3275032364d3555a908bb8000b">More...</a><br /></td></tr>
+<tr class="separator:gaf2063f3275032364d3555a908bb8000b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa21ff8dd23c5323043f15c31b04d8c2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ep0__api__grp.html#gaa21ff8dd23c5323043f15c31b04d8c2d">dwc_usb3_handle_ep0_xfer</a> (<a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd, <a class="el" href="os__defs_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> event)</td></tr>
+<tr class="memdesc:gaa21ff8dd23c5323043f15c31b04d8c2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine handles EP0 transfers.  <a href="group__ep0__api__grp.html#gaa21ff8dd23c5323043f15c31b04d8c2d">More...</a><br /></td></tr>
+<tr class="separator:gaa21ff8dd23c5323043f15c31b04d8c2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab5135f60d72c4768ae276c58e6107e2b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ep0__api__grp.html#gab5135f60d72c4768ae276c58e6107e2b">dwc_usb3_do_setup</a> (<a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd)</td></tr>
+<tr class="memdesc:gab5135f60d72c4768ae276c58e6107e2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine processes SETUP commands. The USB Command processing is done in two places - the first being the PCD and the second being the Gadget driver (for example, the File-Backed Storage Gadget driver).  <a href="group__ep0__api__grp.html#gab5135f60d72c4768ae276c58e6107e2b">More...</a><br /></td></tr>
+<tr class="separator:gab5135f60d72c4768ae276c58e6107e2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabfb1bbd159afb86e78f7a59931a4ed72"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ep0__api__grp.html#gabfb1bbd159afb86e78f7a59931a4ed72">ep0_do_stall</a> (<a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd, int err_val)</td></tr>
+<tr class="memdesc:gabfb1bbd159afb86e78f7a59931a4ed72"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine stalls EP0.  <a href="group__ep0__api__grp.html#gabfb1bbd159afb86e78f7a59931a4ed72">More...</a><br /></td></tr>
+<tr class="separator:gabfb1bbd159afb86e78f7a59931a4ed72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2ab4a8a00fcaddbbf11c216cd39321b1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ep0__api__grp.html#ga2ab4a8a00fcaddbbf11c216cd39321b1">do_clear_halt</a> (<a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd, <a class="el" href="structdwc__usb3__pcd__ep__t.html">dwc_usb3_pcd_ep_t</a> *ep)</td></tr>
+<tr class="memdesc:ga2ab4a8a00fcaddbbf11c216cd39321b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the EP halt (STALL), and if there are pending requests start the transfer.  <a href="group__ep0__api__grp.html#ga2ab4a8a00fcaddbbf11c216cd39321b1">More...</a><br /></td></tr>
+<tr class="separator:ga2ab4a8a00fcaddbbf11c216cd39321b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf4a45f42b15c9ea67287a577fdfed079"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ep0__api__grp.html#gaf4a45f42b15c9ea67287a577fdfed079">do_get_status</a> (<a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd)</td></tr>
+<tr class="memdesc:gaf4a45f42b15c9ea67287a577fdfed079"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine processes the GET_STATUS Setup Commands.  <a href="group__ep0__api__grp.html#gaf4a45f42b15c9ea67287a577fdfed079">More...</a><br /></td></tr>
+<tr class="separator:gaf4a45f42b15c9ea67287a577fdfed079"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8d99e2776b606d1084afb68c97ad8c85"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ep0__api__grp.html#ga8d99e2776b606d1084afb68c97ad8c85">do_clear_feature</a> (<a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd)</td></tr>
+<tr class="memdesc:ga8d99e2776b606d1084afb68c97ad8c85"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine processes the CLEAR_FEATURE Setup Commands.  <a href="group__ep0__api__grp.html#ga8d99e2776b606d1084afb68c97ad8c85">More...</a><br /></td></tr>
+<tr class="separator:ga8d99e2776b606d1084afb68c97ad8c85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga153f97d69e84fd9ac24e4b4dd22db92a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ep0__api__grp.html#ga153f97d69e84fd9ac24e4b4dd22db92a">do_set_feature</a> (<a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd)</td></tr>
+<tr class="memdesc:ga153f97d69e84fd9ac24e4b4dd22db92a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine processes the SET_FEATURE Setup Commands.  <a href="group__ep0__api__grp.html#ga153f97d69e84fd9ac24e4b4dd22db92a">More...</a><br /></td></tr>
+<tr class="separator:ga153f97d69e84fd9ac24e4b4dd22db92a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa6ae019402473121f6d280209bc2de1d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ep0__api__grp.html#gaa6ae019402473121f6d280209bc2de1d">do_set_address</a> (<a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd)</td></tr>
+<tr class="memdesc:gaa6ae019402473121f6d280209bc2de1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine processes the SET_ADDRESS Setup Commands.  <a href="group__ep0__api__grp.html#gaa6ae019402473121f6d280209bc2de1d">More...</a><br /></td></tr>
+<tr class="separator:gaa6ae019402473121f6d280209bc2de1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad8a67305a7df1ed1015aae8350e5c08f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ep0__api__grp.html#gad8a67305a7df1ed1015aae8350e5c08f">do_get_descriptor</a> (<a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd)</td></tr>
+<tr class="memdesc:gad8a67305a7df1ed1015aae8350e5c08f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine handles the Get Descriptor request for the BOS descriptor and the OTG descriptor, and passes all other requests to the Gadget driver.  <a href="group__ep0__api__grp.html#gad8a67305a7df1ed1015aae8350e5c08f">More...</a><br /></td></tr>
+<tr class="separator:gad8a67305a7df1ed1015aae8350e5c08f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaa204ef32ac8353daf492e7c14f9bbc9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ep0__api__grp.html#gaaa204ef32ac8353daf492e7c14f9bbc9">ep0_continue_transfer</a> (<a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd, <a class="el" href="structdwc__usb3__pcd__req__t.html">dwc_usb3_pcd_req_t</a> *req)</td></tr>
+<tr class="memdesc:gaaa204ef32ac8353daf492e7c14f9bbc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine continues control IN transfers started by ep0_start_transfer, when the transfer does not fit in a single request.  <a href="group__ep0__api__grp.html#gaaa204ef32ac8353daf492e7c14f9bbc9">More...</a><br /></td></tr>
+<tr class="separator:gaaa204ef32ac8353daf492e7c14f9bbc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga848f062afe4d89d32362c681fa3a3fc6"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ep0__api__grp.html#ga848f062afe4d89d32362c681fa3a3fc6">ep0_complete_request</a> (<a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd, <a class="el" href="structdwc__usb3__pcd__req__t.html">dwc_usb3_pcd_req_t</a> *req, <a class="el" href="structdwc__usb3__dma__desc__t.html">dwc_usb3_dma_desc_t</a> *desc, int status)</td></tr>
+<tr class="memdesc:ga848f062afe4d89d32362c681fa3a3fc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine completes the ep0 control transfer.  <a href="group__ep0__api__grp.html#ga848f062afe4d89d32362c681fa3a3fc6">More...</a><br /></td></tr>
+<tr class="separator:ga848f062afe4d89d32362c681fa3a3fc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf22a3fbbb4b847b4804f6823efa367fc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ep0__api__grp.html#gaf22a3fbbb4b847b4804f6823efa367fc">setup_in_status_phase</a> (<a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd, void *buf, <a class="el" href="os__defs_8h.html#a51ed96ab2e2762bd1f604cd00810e0fa">dwc_dma_t</a> dma)</td></tr>
+<tr class="memdesc:gaf22a3fbbb4b847b4804f6823efa367fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine starts the Zero-Length Packet for the IN status phase of a control write transfer.  <a href="group__ep0__api__grp.html#gaf22a3fbbb4b847b4804f6823efa367fc">More...</a><br /></td></tr>
+<tr class="separator:gaf22a3fbbb4b847b4804f6823efa367fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae071c70ba1d3a59d454787f6c1812ef9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ep0__api__grp.html#gae071c70ba1d3a59d454787f6c1812ef9">setup_out_status_phase</a> (<a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd, void *buf, <a class="el" href="os__defs_8h.html#a51ed96ab2e2762bd1f604cd00810e0fa">dwc_dma_t</a> dma)</td></tr>
+<tr class="memdesc:gae071c70ba1d3a59d454787f6c1812ef9"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine starts the Zero-Length Packet for the OUT status phase of a control read transfer.  <a href="group__ep0__api__grp.html#gae071c70ba1d3a59d454787f6c1812ef9">More...</a><br /></td></tr>
+<tr class="separator:gae071c70ba1d3a59d454787f6c1812ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae7b2f990d0f496f748636a3a4cd2ac30"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ep0__api__grp.html#gae7b2f990d0f496f748636a3a4cd2ac30">dwc_usb3_handle_ep0</a> (<a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *pcd, <a class="el" href="structdwc__usb3__pcd__req__t.html">dwc_usb3_pcd_req_t</a> *req, <a class="el" href="os__defs_8h.html#a10e94b422ef0c20dcdec20d31a1f5049">u32</a> event)</td></tr>
+<tr class="memdesc:gae7b2f990d0f496f748636a3a4cd2ac30"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine handles EP0 Control transfers.  <a href="group__ep0__api__grp.html#gae7b2f990d0f496f748636a3a4cd2ac30">More...</a><br /></td></tr>
+<tr class="separator:gae7b2f990d0f496f748636a3a4cd2ac30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gaf70146c50197cde6917c38822a39c45b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf70146c50197cde6917c38822a39c45b">&#9670;&nbsp;</a></span>dwc_usb3_ep0_activate()</h2>
+<a id="gaea59a63d400ac5df86c605aec8dc222c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaea59a63d400ac5df86c605aec8dc222c">&#9670;&nbsp;</a></span>dwc_usb3_ep0_activate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -164,7 +164,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void dwc_usb3_ep0_activate </td>
           <td>(</td>
-          <td class="paramtype">volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
           <td class="paramname"><em>pcd</em>, </td>
         </tr>
         <tr>
@@ -192,8 +192,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gaa26cf0f55376ecf50476968c87e3396b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa26cf0f55376ecf50476968c87e3396b">&#9670;&nbsp;</a></span>dwc_usb3_pcd_ep0_out_start()</h2>
+<a id="ga6554d3739a62a46a725f50f6f6663415"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6554d3739a62a46a725f50f6f6663415">&#9670;&nbsp;</a></span>dwc_usb3_pcd_ep0_out_start()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -201,7 +201,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void dwc_usb3_pcd_ep0_out_start </td>
           <td>(</td>
-          <td class="paramtype">volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
           <td class="paramname"><em>pcd</em></td><td>)</td>
           <td></td>
         </tr>
@@ -218,8 +218,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga4a34a08b521e8d04dfaccb0796b50bbb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4a34a08b521e8d04dfaccb0796b50bbb">&#9670;&nbsp;</a></span>dwc_usb3_pcd_ep0_start_transfer()</h2>
+<a id="gaa0c9ef58484b2c6fb880c0da30480509"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa0c9ef58484b2c6fb880c0da30480509">&#9670;&nbsp;</a></span>dwc_usb3_pcd_ep0_start_transfer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -227,13 +227,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void dwc_usb3_pcd_ep0_start_transfer </td>
           <td>(</td>
-          <td class="paramtype">volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
           <td class="paramname"><em>pcd</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">volatile <a class="el" href="structdwc__usb3__pcd__req__t.html">dwc_usb3_pcd_req_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structdwc__usb3__pcd__req__t.html">dwc_usb3_pcd_req_t</a> *&#160;</td>
           <td class="paramname"><em>req</em>&#160;</td>
         </tr>
         <tr>
@@ -255,8 +255,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gad9a0a566e93e34841cfc626929b7bf9b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad9a0a566e93e34841cfc626929b7bf9b">&#9670;&nbsp;</a></span>dwc_usb3_pcd_ep0_data_stage()</h2>
+<a id="gaf2063f3275032364d3555a908bb8000b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf2063f3275032364d3555a908bb8000b">&#9670;&nbsp;</a></span>dwc_usb3_pcd_ep0_data_stage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -264,7 +264,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void dwc_usb3_pcd_ep0_data_stage </td>
           <td>(</td>
-          <td class="paramtype">volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
           <td class="paramname"><em>pcd</em>, </td>
         </tr>
         <tr>
@@ -292,8 +292,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gacb532a4126539b6954b57270efc87530"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacb532a4126539b6954b57270efc87530">&#9670;&nbsp;</a></span>dwc_usb3_handle_ep0_xfer()</h2>
+<a id="gaa21ff8dd23c5323043f15c31b04d8c2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa21ff8dd23c5323043f15c31b04d8c2d">&#9670;&nbsp;</a></span>dwc_usb3_handle_ep0_xfer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -301,7 +301,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void dwc_usb3_handle_ep0_xfer </td>
           <td>(</td>
-          <td class="paramtype">volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
           <td class="paramname"><em>pcd</em>, </td>
         </tr>
         <tr>
@@ -319,7 +319,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>This routine handles EP0 transfers. </p>
-<p>This routine gets the request corresponding to the current EP0 transfer. If EP0 is in IDLE state, it calls <a class="el" href="group__ep0__api__grp.html#ga1b01aa1b24cd7724701c9628c35d2cda" title="This routine processes SETUP commands. The USB Command processing is done in two places - the first b...">dwc_usb3_do_setup()</a> to begin processing the next Setup request, otherwise it calls <a class="el" href="group__ep0__api__grp.html#ga9a2b745d983575476a5a19d2355652cc" title="This routine handles EP0 Control transfers.">dwc_usb3_handle_ep0()</a> to handle the next stage of the current transfer.</p>
+<p>This routine gets the request corresponding to the current EP0 transfer. If EP0 is in IDLE state, it calls <a class="el" href="group__ep0__api__grp.html#gab5135f60d72c4768ae276c58e6107e2b" title="This routine processes SETUP commands. The USB Command processing is done in two places - the first b...">dwc_usb3_do_setup()</a> to begin processing the next Setup request, otherwise it calls <a class="el" href="group__ep0__api__grp.html#gae7b2f990d0f496f748636a3a4cd2ac30" title="This routine handles EP0 Control transfers.">dwc_usb3_handle_ep0()</a> to handle the next stage of the current transfer.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pcd</td><td>Programming view of DWC_usb3 peripheral controller. </td></tr>
@@ -330,8 +330,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga1b01aa1b24cd7724701c9628c35d2cda"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1b01aa1b24cd7724701c9628c35d2cda">&#9670;&nbsp;</a></span>dwc_usb3_do_setup()</h2>
+<a id="gab5135f60d72c4768ae276c58e6107e2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab5135f60d72c4768ae276c58e6107e2b">&#9670;&nbsp;</a></span>dwc_usb3_do_setup()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -342,7 +342,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static void dwc_usb3_do_setup </td>
           <td>(</td>
-          <td class="paramtype">volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
           <td class="paramname"><em>pcd</em></td><td>)</td>
           <td></td>
         </tr>
@@ -405,12 +405,12 @@ Functions</h2></td></tr>
 <tr>
 <td>SET_INTERFACE </td><td>Gadget driver </td><td>Disable all EPs and enable EPs for new interface.  </td></tr>
 </table>
-<p>When the SETUP Phase Done interrupt occurs, the generic SETUP commands are processed by <a class="el" href="group__ep0__api__grp.html#ga1b01aa1b24cd7724701c9628c35d2cda" title="This routine processes SETUP commands. The USB Command processing is done in two places - the first b...">dwc_usb3_do_setup()</a>. Calling the Gadget driver's <a class="el" href="group__gadget__notif__grp.html#ga5e3830a9352daf7be63e60e4089b33ea" title="This routine receives Setup request notifications from the PCD.">dwc_usb3_gadget_setup()</a> routine from <a class="el" href="group__ep0__api__grp.html#ga1b01aa1b24cd7724701c9628c35d2cda" title="This routine processes SETUP commands. The USB Command processing is done in two places - the first b...">dwc_usb3_do_setup()</a> processes the gadget-specific SETUP commands. </p>
+<p>When the SETUP Phase Done interrupt occurs, the generic SETUP commands are processed by <a class="el" href="group__ep0__api__grp.html#gab5135f60d72c4768ae276c58e6107e2b" title="This routine processes SETUP commands. The USB Command processing is done in two places - the first b...">dwc_usb3_do_setup()</a>. Calling the Gadget driver's <a class="el" href="group__gadget__notif__grp.html#gaf1d0f459f59b1f0b4f1739a9a7ebd82d" title="This routine receives Setup request notifications from the PCD.">dwc_usb3_gadget_setup()</a> routine from <a class="el" href="group__ep0__api__grp.html#gab5135f60d72c4768ae276c58e6107e2b" title="This routine processes SETUP commands. The USB Command processing is done in two places - the first b...">dwc_usb3_do_setup()</a> processes the gadget-specific SETUP commands. </p>
 
 </div>
 </div>
-<a id="ga2930843753921d0fada29db037f2c517"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2930843753921d0fada29db037f2c517">&#9670;&nbsp;</a></span>ep0_do_stall()</h2>
+<a id="gabfb1bbd159afb86e78f7a59931a4ed72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabfb1bbd159afb86e78f7a59931a4ed72">&#9670;&nbsp;</a></span>ep0_do_stall()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -421,7 +421,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static void ep0_do_stall </td>
           <td>(</td>
-          <td class="paramtype">volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
           <td class="paramname"><em>pcd</em>, </td>
         </tr>
         <tr>
@@ -454,8 +454,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga89bd3878616f8598da6fac91a1f43ca7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga89bd3878616f8598da6fac91a1f43ca7">&#9670;&nbsp;</a></span>do_clear_halt()</h2>
+<a id="ga2ab4a8a00fcaddbbf11c216cd39321b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2ab4a8a00fcaddbbf11c216cd39321b1">&#9670;&nbsp;</a></span>do_clear_halt()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -466,13 +466,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static void do_clear_halt </td>
           <td>(</td>
-          <td class="paramtype">volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
           <td class="paramname"><em>pcd</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">volatile <a class="el" href="structdwc__usb3__pcd__ep__t.html">dwc_usb3_pcd_ep_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structdwc__usb3__pcd__ep__t.html">dwc_usb3_pcd_ep_t</a> *&#160;</td>
           <td class="paramname"><em>ep</em>&#160;</td>
         </tr>
         <tr>
@@ -499,8 +499,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga1b9e4762e9bd58b089f4f2c2737f29f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1b9e4762e9bd58b089f4f2c2737f29f1">&#9670;&nbsp;</a></span>do_get_status()</h2>
+<a id="gaf4a45f42b15c9ea67287a577fdfed079"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf4a45f42b15c9ea67287a577fdfed079">&#9670;&nbsp;</a></span>do_get_status()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -511,7 +511,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static void do_get_status </td>
           <td>(</td>
-          <td class="paramtype">volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
           <td class="paramname"><em>pcd</em></td><td>)</td>
           <td></td>
         </tr>
@@ -533,8 +533,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga8c44c27c513f20944a917de2bb53c8e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8c44c27c513f20944a917de2bb53c8e7">&#9670;&nbsp;</a></span>do_clear_feature()</h2>
+<a id="ga8d99e2776b606d1084afb68c97ad8c85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8d99e2776b606d1084afb68c97ad8c85">&#9670;&nbsp;</a></span>do_clear_feature()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -545,7 +545,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static void do_clear_feature </td>
           <td>(</td>
-          <td class="paramtype">volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
           <td class="paramname"><em>pcd</em></td><td>)</td>
           <td></td>
         </tr>
@@ -567,8 +567,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga45b2cd75f729fb6f7af6e4b59aad6225"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga45b2cd75f729fb6f7af6e4b59aad6225">&#9670;&nbsp;</a></span>do_set_feature()</h2>
+<a id="ga153f97d69e84fd9ac24e4b4dd22db92a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga153f97d69e84fd9ac24e4b4dd22db92a">&#9670;&nbsp;</a></span>do_set_feature()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -579,7 +579,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static void do_set_feature </td>
           <td>(</td>
-          <td class="paramtype">volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
           <td class="paramname"><em>pcd</em></td><td>)</td>
           <td></td>
         </tr>
@@ -601,8 +601,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga85b3f957dc475cad951bfa54914d1ece"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga85b3f957dc475cad951bfa54914d1ece">&#9670;&nbsp;</a></span>do_set_address()</h2>
+<a id="gaa6ae019402473121f6d280209bc2de1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa6ae019402473121f6d280209bc2de1d">&#9670;&nbsp;</a></span>do_set_address()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -613,7 +613,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static void do_set_address </td>
           <td>(</td>
-          <td class="paramtype">volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
           <td class="paramname"><em>pcd</em></td><td>)</td>
           <td></td>
         </tr>
@@ -635,8 +635,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gab16cc26bd6355db03dfac85a20a5097d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab16cc26bd6355db03dfac85a20a5097d">&#9670;&nbsp;</a></span>do_get_descriptor()</h2>
+<a id="gad8a67305a7df1ed1015aae8350e5c08f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad8a67305a7df1ed1015aae8350e5c08f">&#9670;&nbsp;</a></span>do_get_descriptor()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -647,7 +647,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static void do_get_descriptor </td>
           <td>(</td>
-          <td class="paramtype">volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
           <td class="paramname"><em>pcd</em></td><td>)</td>
           <td></td>
         </tr>
@@ -669,8 +669,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga345ebb686999f3bc923bc95fc599f213"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga345ebb686999f3bc923bc95fc599f213">&#9670;&nbsp;</a></span>ep0_continue_transfer()</h2>
+<a id="gaaa204ef32ac8353daf492e7c14f9bbc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaa204ef32ac8353daf492e7c14f9bbc9">&#9670;&nbsp;</a></span>ep0_continue_transfer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -681,13 +681,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static void ep0_continue_transfer </td>
           <td>(</td>
-          <td class="paramtype">volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
           <td class="paramname"><em>pcd</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">volatile <a class="el" href="structdwc__usb3__pcd__req__t.html">dwc_usb3_pcd_req_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structdwc__usb3__pcd__req__t.html">dwc_usb3_pcd_req_t</a> *&#160;</td>
           <td class="paramname"><em>req</em>&#160;</td>
         </tr>
         <tr>
@@ -714,8 +714,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga2944591a4b3bae1b0cfa98d928ae1300"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2944591a4b3bae1b0cfa98d928ae1300">&#9670;&nbsp;</a></span>ep0_complete_request()</h2>
+<a id="ga848f062afe4d89d32362c681fa3a3fc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga848f062afe4d89d32362c681fa3a3fc6">&#9670;&nbsp;</a></span>ep0_complete_request()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -726,13 +726,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static int ep0_complete_request </td>
           <td>(</td>
-          <td class="paramtype">volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
           <td class="paramname"><em>pcd</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">volatile <a class="el" href="structdwc__usb3__pcd__req__t.html">dwc_usb3_pcd_req_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structdwc__usb3__pcd__req__t.html">dwc_usb3_pcd_req_t</a> *&#160;</td>
           <td class="paramname"><em>req</em>, </td>
         </tr>
         <tr>
@@ -774,8 +774,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga506f59fc1151a4755c5558fcbed4b39e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga506f59fc1151a4755c5558fcbed4b39e">&#9670;&nbsp;</a></span>setup_in_status_phase()</h2>
+<a id="gaf22a3fbbb4b847b4804f6823efa367fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf22a3fbbb4b847b4804f6823efa367fc">&#9670;&nbsp;</a></span>setup_in_status_phase()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -786,7 +786,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static void setup_in_status_phase </td>
           <td>(</td>
-          <td class="paramtype">volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
           <td class="paramname"><em>pcd</em>, </td>
         </tr>
         <tr>
@@ -826,8 +826,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga92cd211c9143b220ddd96319147f2667"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga92cd211c9143b220ddd96319147f2667">&#9670;&nbsp;</a></span>setup_out_status_phase()</h2>
+<a id="gae071c70ba1d3a59d454787f6c1812ef9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae071c70ba1d3a59d454787f6c1812ef9">&#9670;&nbsp;</a></span>setup_out_status_phase()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -838,7 +838,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static void setup_out_status_phase </td>
           <td>(</td>
-          <td class="paramtype">volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
           <td class="paramname"><em>pcd</em>, </td>
         </tr>
         <tr>
@@ -878,8 +878,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga9a2b745d983575476a5a19d2355652cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9a2b745d983575476a5a19d2355652cc">&#9670;&nbsp;</a></span>dwc_usb3_handle_ep0()</h2>
+<a id="gae7b2f990d0f496f748636a3a4cd2ac30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae7b2f990d0f496f748636a3a4cd2ac30">&#9670;&nbsp;</a></span>dwc_usb3_handle_ep0()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -890,13 +890,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static void dwc_usb3_handle_ep0 </td>
           <td>(</td>
-          <td class="paramtype">volatile <a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structdwc__usb3__pcd__t.html">dwc_usb3_pcd_t</a> *&#160;</td>
           <td class="paramname"><em>pcd</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">volatile <a class="el" href="structdwc__usb3__pcd__req__t.html">dwc_usb3_pcd_req_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structdwc__usb3__pcd__req__t.html">dwc_usb3_pcd_req_t</a> *&#160;</td>
           <td class="paramname"><em>req</em>, </td>
         </tr>
         <tr>

@@ -1,9 +1,9 @@
 var group__gadget__notif__grp =
 [
-    [ "dwc_usb3_gadget_connect", "group__gadget__notif__grp.html#ga5ce31f62e9c1835a1d926c5fdf84871b", null ],
-    [ "dwc_usb3_gadget_disconnect", "group__gadget__notif__grp.html#ga5c5de1e7ab15f73ce83baa02a94c5f4b", null ],
-    [ "dwc_usb3_gadget_suspend", "group__gadget__notif__grp.html#ga1a45303422c45cac048bf705bea87f3c", null ],
-    [ "dwc_usb3_gadget_resume", "group__gadget__notif__grp.html#ga42b1976bbfa6eb8e5669d690a79ffcbc", null ],
-    [ "dwc_usb3_gadget_setup", "group__gadget__notif__grp.html#ga5e3830a9352daf7be63e60e4089b33ea", null ],
-    [ "dwc_usb3_gadget_complete", "group__gadget__notif__grp.html#ga9c19bfd0aa9c7205cfb9a79e92a8caed", null ]
+    [ "dwc_usb3_gadget_connect", "group__gadget__notif__grp.html#gae7d8a7fdcf899ef08d959058d30f9f37", null ],
+    [ "dwc_usb3_gadget_disconnect", "group__gadget__notif__grp.html#ga762d9151a6b35614759939bfda9705b7", null ],
+    [ "dwc_usb3_gadget_suspend", "group__gadget__notif__grp.html#gadcfc1c10307e81ee3690790c79a87a23", null ],
+    [ "dwc_usb3_gadget_resume", "group__gadget__notif__grp.html#gaa4ca50522149d2d0dc9337162dddc878", null ],
+    [ "dwc_usb3_gadget_setup", "group__gadget__notif__grp.html#gaf1d0f459f59b1f0b4f1739a9a7ebd82d", null ],
+    [ "dwc_usb3_gadget_complete", "group__gadget__notif__grp.html#gae90cce6d223c8e0f401d7ae0830150cb", null ]
 ];

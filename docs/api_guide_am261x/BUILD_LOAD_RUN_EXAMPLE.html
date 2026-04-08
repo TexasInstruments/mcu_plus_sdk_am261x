@@ -92,16 +92,16 @@ $(document).ready(function(){initNavTree('BUILD_LOAD_RUN_EXAMPLE.html',''); init
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md_device_am261x_load_run_examples"></a> </p><dl class="section note"><dt>Note</dt><dd>For quick start tutorial on MCU+SDK under 10 minutes, please watch <a href="https://www.youtube.com/watch?v=1ggz1AeIoIA">Getting started with AM26x microcontrollers and MCU PLUS SDK</a></dd></dl>
-<h1><a class="anchor" id="autotoc_md43"></a>
+<h1><a class="anchor" id="autotoc_md48"></a>
 Application Execution Flow</h1>
 <p> <style>div.image img[src="complete_bootflow.png"]{width:100%}</style> </p><div class="image">
 <img src="complete_bootflow.png" alt=""/>
 <div class="caption">
 Build, load and run application</div></div>
-<h1><a class="anchor" id="autotoc_md44"></a>
+<h1><a class="anchor" id="autotoc_md49"></a>
 Building an application</h1>
-<dl class="section note"><dt>Note</dt><dd>SDK supports building applications via both <b>Makefile</b> and <b>CCS</b>.<ul>
-<li><code>makefile_ccs_bootimage_gen</code> file present inside a CCS project will have steps involved in building an application via CCS.</li>
+<dl class="section note"><dt>Note</dt><dd>SDK supports building applications via <b>Makefile</b>, <b>CCS</b> and <b>IAR Embedded Workbench</b>.<ul>
+<li><code>makefile_ccs_bootimage_gen</code> file present inside a CCS and IAR project will have steps involved in building an application via CCS or IAR.</li>
 <li><code>makefile</code> present inside each example folder consists of the steps involved in building the application via make.</li>
 </ul>
 </dd>
@@ -114,12 +114,13 @@ Refer <a class="el" href="GETTING_STARTED_BUILD.html">Build a Hello World exampl
 <li>.out file can be directly loaded into CCS. Refer <a class="el" href="CCS_LAUNCH_PAGE.html#CCS_LOAD_RUN">Load and run example binaries in CCS</a></li>
 </ul>
 <p>For detailed information on building visit <a class="el" href="BUILDING_APPLICATION.html">Building an Application</a></p>
-<h1><a class="anchor" id="autotoc_md45"></a>
+<h1><a class="anchor" id="autotoc_md50"></a>
 Loading an application</h1>
 <ul>
 <li>Loading is when an application is written into RAM/Flash memory.</li>
-<li>There are 3 ways to load a binary:<ul>
+<li>There are 4 ways to load a binary:<ul>
 <li>via CCS</li>
+<li>via IAR Embedded Workbench</li>
 <li>via TI Uniflash tool</li>
 <li>via Python scripts</li>
 </ul>
@@ -127,7 +128,7 @@ Loading an application</h1>
 <li>Once the application is loaded, we can run it.</li>
 </ul>
 <p>For detailed information on loading visit <a class="el" href="LOADING_APPLICATION.html">Loading an Application</a></p>
-<h1><a class="anchor" id="autotoc_md46"></a>
+<h1><a class="anchor" id="autotoc_md51"></a>
 Running an application</h1>
 <ul>
 <li>Bootloaders are responsible for reading the loaded application and running it on the respective CPU.</li>

@@ -92,27 +92,29 @@ $(document).ready(function(){initNavTree('EVM_SETUP_PAGE.html',''); initResizabl
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#autotoc_md30">EVM Overview</a><ul><li class="level2"><a href="#autotoc_md31">AM261X-LP</a></li>
+<ul><li class="level1"><a href="#autotoc_md34">EVM Overview</a><ul><li class="level2"><a href="#autotoc_md35">AM261X-LP</a></li>
 </ul>
 </li>
-<li class="level1"><a href="#EVM_CABLES">Cable Connections</a><ul><li class="level2"><a href="#autotoc_md32">AM261X-LP</a></li>
+<li class="level1"><a href="#EVM_CABLES">Cable Connections</a><ul><li class="level2"><a href="#autotoc_md36">AM261X-LP</a></li>
 </ul>
 </li>
-<li class="level1"><a href="#CCS_UART_TERMINAL">Setup UART Terminal</a><ul><li class="level2"><a href="#autotoc_md33">AM261X-LP</a></li>
-<li class="level2"><a href="#autotoc_md34">BOOT MODE</a><ul><li class="level3"><a href="#BOOTMODE_OSPI">OSPI BOOT MODE</a><ul><li class="level4"><a href="#autotoc_md35">AM261X-LP</a></li>
-<li class="level4"><a href="#autotoc_md36">AM261X-SOM</a></li>
+<li class="level1"><a href="#CCS_UART_TERMINAL">Setup UART Terminal</a><ul><li class="level2"><a href="#autotoc_md37">AM261X-LP</a></li>
 </ul>
 </li>
-<li class="level3"><a href="#BOOTMODE_UART">UART BOOT MODE</a><ul><li class="level4"><a href="#autotoc_md37">AM261X-LP</a></li>
-<li class="level4"><a href="#autotoc_md38">AM261X-SOM</a></li>
+<li class="level1"><a href="#autotoc_md38">Additional Details</a><ul><li class="level2"><a href="#autotoc_md39">BOOT MODE</a><ul><li class="level3"><a href="#BOOTMODE_OSPI">OSPI BOOT MODE</a><ul><li class="level4"><a href="#autotoc_md40">AM261X-LP</a></li>
+<li class="level4"><a href="#autotoc_md41">AM261X-SOM</a></li>
 </ul>
 </li>
-<li class="level3"><a href="#BOOTMODE_NOBOOT">DEVBOOT MODE</a><ul><li class="level4"><a href="#autotoc_md39">AM261X-LP</a></li>
-<li class="level4"><a href="#autotoc_md40">AM261X-SOM</a></li>
+<li class="level3"><a href="#BOOTMODE_UART">UART BOOT MODE</a><ul><li class="level4"><a href="#autotoc_md42">AM261X-LP</a></li>
+<li class="level4"><a href="#autotoc_md43">AM261X-SOM</a></li>
 </ul>
 </li>
-<li class="level3"><a href="#BOOTMODE_DFU">DFU BOOT MODE</a><ul><li class="level4"><a href="#autotoc_md41">AM261X-LP</a></li>
-<li class="level4"><a href="#autotoc_md42">AM261X-SOM</a></li>
+<li class="level3"><a href="#BOOTMODE_NOBOOT">DEVBOOT MODE</a><ul><li class="level4"><a href="#autotoc_md44">AM261X-LP</a></li>
+<li class="level4"><a href="#autotoc_md45">AM261X-SOM</a></li>
+</ul>
+</li>
+<li class="level3"><a href="#BOOTMODE_DFU">DFU BOOT MODE</a><ul><li class="level4"><a href="#autotoc_md46">AM261X-LP</a></li>
+<li class="level4"><a href="#autotoc_md47">AM261X-SOM</a></li>
 </ul>
 </li>
 </ul>
@@ -122,18 +124,18 @@ $(document).ready(function(){initNavTree('EVM_SETUP_PAGE.html',''); initResizabl
 </ul>
 </div>
 <div class="textblock"><p><a class="anchor" id="md_device_am261x_am261x_evm_setup"></a></p>
-<h1><a class="anchor" id="autotoc_md30"></a>
+<h1><a class="anchor" id="autotoc_md34"></a>
 EVM Overview</h1>
 <p> <style>div.image img[src="am261x_lp_overview.png"]{width:50%}</style> </p><div class="image">
 <img src="am261x_lp_overview.png" alt=""/>
 <div class="caption">
 AM261X-LP</div></div>
-<h2><a class="anchor" id="autotoc_md31"></a>
+<h2><a class="anchor" id="autotoc_md35"></a>
 AM261X-LP</h2>
 <h1><a class="anchor" id="EVM_CABLES"></a>
 Cable Connections</h1>
 <p>Important cable connections, ports and switches.</p>
-<h2><a class="anchor" id="autotoc_md32"></a>
+<h2><a class="anchor" id="autotoc_md36"></a>
 AM261X-LP</h2>
 <ul>
 <li>Bootmode selection</li>
@@ -144,7 +146,7 @@ AM261X-LP</h2>
 AM261X-LP bootmode</div></div>
 <h1><a class="anchor" id="CCS_UART_TERMINAL"></a>
 Setup UART Terminal</h1>
-<h2><a class="anchor" id="autotoc_md33"></a>
+<h2><a class="anchor" id="autotoc_md37"></a>
 AM261X-LP</h2>
 <ul>
 <li>Many examples use a standard UART terminal to log the output from the examples. You can use any UART terminal program for the same. Below steps show how to setup the UART terminal from CCS.</li>
@@ -194,19 +196,21 @@ Connect to UART port</div></div>
 <ul>
 <li>In this screenshot this happens to be COM5/COM11 however on your machine this could be different. One tip to make sure there is no mistake in identifying the UART port is to disconnect all other UART to USB devices other than this EVM before checking in device manager.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md34"></a>
+<h1><a class="anchor" id="autotoc_md38"></a>
+Additional Details</h1>
+<h2><a class="anchor" id="autotoc_md39"></a>
 BOOT MODE</h2>
 <h3><a class="anchor" id="BOOTMODE_OSPI"></a>
 OSPI BOOT MODE</h3>
 <p>This mode is used to boot flashed applications via EVM flash like OSPI flash.</p>
-<h4><a class="anchor" id="autotoc_md35"></a>
+<h4><a class="anchor" id="autotoc_md40"></a>
 AM261X-LP</h4>
 <div class="fragment"><div class="line">BOOTMODE [ 1 : 4 ] (SW1) = 1100</div>
 </div><!-- fragment --><p> <style>div.image img[src="am261x_lp_boot_pins_ospi.png"]{width:30%}</style> </p><div class="image">
 <img src="am261x_lp_boot_pins_ospi.png" alt=""/>
 <div class="caption">
 OSPI BOOT MODE</div></div>
-<h4><a class="anchor" id="autotoc_md36"></a>
+<h4><a class="anchor" id="autotoc_md41"></a>
 AM261X-SOM</h4>
 <div class="fragment"><div class="line">BOOTMODE [ 1 : 4 ] (SW1) = 1100</div>
 </div><!-- fragment --><p> <style>div.image img[src="am261x_som_boot_pins_ospi.png"]{width:25%}</style> </p><div class="image">
@@ -216,14 +220,14 @@ OSPI BOOT MODE</div></div>
 <h3><a class="anchor" id="BOOTMODE_UART"></a>
 UART BOOT MODE</h3>
 <p>This mode is used to flash files to the EVM flash via UART. It can also be used to boot applications via UART.</p>
-<h4><a class="anchor" id="autotoc_md37"></a>
+<h4><a class="anchor" id="autotoc_md42"></a>
 AM261X-LP</h4>
 <div class="fragment"><div class="line">BOOTMODE [ 1 : 4 ] (SW1) = 0111</div>
 </div><!-- fragment --><p> <style>div.image img[src="am261x_lp_boot_pins_uart_mode.png"]{width:30%}</style> </p><div class="image">
 <img src="am261x_lp_boot_pins_uart_mode.png" alt=""/>
 <div class="caption">
 UART BOOT MODE</div></div>
-<h4><a class="anchor" id="autotoc_md38"></a>
+<h4><a class="anchor" id="autotoc_md43"></a>
 AM261X-SOM</h4>
 <div class="fragment"><div class="line">BOOTMODE [ 1 : 4 ] (SW1) = 1000</div>
 </div><!-- fragment --><p> <style>div.image img[src="am261x_som_boot_pins_uart_mode.png"]{width:25%}</style> </p><div class="image">
@@ -233,14 +237,14 @@ UART BOOT MODE</div></div>
 <h3><a class="anchor" id="BOOTMODE_NOBOOT"></a>
 DEVBOOT MODE</h3>
 <p>This mode is used in CCS.</p>
-<h4><a class="anchor" id="autotoc_md39"></a>
+<h4><a class="anchor" id="autotoc_md44"></a>
 AM261X-LP</h4>
 <div class="fragment"><div class="line">BOOTMODE [ 1 : 4 ] (SW1) = 0010</div>
 </div><!-- fragment --><p> <style>div.image img[src="am261x_lp_boot_pins_noboot_mode.png"]{width:30%}</style> </p><div class="image">
 <img src="am261x_lp_boot_pins_noboot_mode.png" alt=""/>
 <div class="caption">
 NO BOOT MODE</div></div>
-<h4><a class="anchor" id="autotoc_md40"></a>
+<h4><a class="anchor" id="autotoc_md45"></a>
 AM261X-SOM</h4>
 <div class="fragment"><div class="line">BOOTMODE [ 1 : 4 ] (SW1) = 1101</div>
 </div><!-- fragment --><p> <style>div.image img[src="am261x_som_boot_pins_noboot_mode.png"]{width:25%}</style> </p><div class="image">
@@ -250,14 +254,14 @@ NO BOOT MODE</div></div>
 <h3><a class="anchor" id="BOOTMODE_DFU"></a>
 DFU BOOT MODE</h3>
 <p>This mode is used with DFU bootloader and DFU Uniflash.</p>
-<h4><a class="anchor" id="autotoc_md41"></a>
+<h4><a class="anchor" id="autotoc_md46"></a>
 AM261X-LP</h4>
 <div class="fragment"><div class="line">BOOTMODE [ 1 : 4 ] (SW1) = 1000</div>
 </div><!-- fragment --><p> <style>div.image img[src="am261x_lp_boot_pins_dfu_mode.png"]{width:30%}</style> </p><div class="image">
 <img src="am261x_lp_boot_pins_dfu_mode.png" alt=""/>
 <div class="caption">
 DFU BOOT MODE</div></div>
-<h4><a class="anchor" id="autotoc_md42"></a>
+<h4><a class="anchor" id="autotoc_md47"></a>
 AM261X-SOM</h4>
 <div class="fragment"><div class="line">BOOTMODE [ 1 : 4 ] (SW1) = 0111</div>
 </div><!-- fragment --><p> <style>div.image img[src="am261x_som_boot_pins_dfu_mode.png"]{width:25%}</style> </p><div class="image">

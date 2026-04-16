@@ -235,6 +235,7 @@ var NAVTREEINDEX18 =
 "enet_integration_guide_top.html#enet_openport_sequence":[5,1,5,2,2],
 "enet_integration_guide_top.html#enet_pktrxtx_sequence":[5,1,5,2,3],
 "enet_integration_guide_top.html#enetper_specific_handling":[5,1,5,2,8],
+"enet_interface_selection.html":[5,1,15],
 "enet_ioctl_interface.html":[5,1,1],
 "enet_ioctl_interface.html#enet_async_ioctl":[5,1,1,0,1],
 "enet_ioctl_interface.html#enet_ioctl_intro":[5,1,1,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX18 =
 "enet_mdio_clause45_support.html#autotoc_md1247":[5,1,7,1,0],
 "enet_mdio_clause45_support.html#autotoc_md1248":[5,1,7,1,1],
 "enet_mdio_clause45_support.html#autotoc_md1249":[5,1,7,2],
-"enet_mdio_clause45_support.html#autotoc_md1250":[5,1,7,3],
-"enet_mdio_clause45_support.html#autotoc_md1251":[5,1,7,3,0]
+"enet_mdio_clause45_support.html#autotoc_md1250":[5,1,7,3]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX70 =
 {
+"structSDL__esmRegs__ERR__GRP__STATIC.html#a6c20fe70d2c9caafb6975411e88c6918":[19,6,6,0,4,3],
 "structSDL__esmRegs__ERR__GRP__STATIC.html#accadf8372b4233fd7a41ae8d9d650657":[19,6,6,0,4,2],
 "structSDL__esmRegs__ERR__GRP__STATIC.html#ae395d387a6aa0975e2a79b0557e936c9":[19,6,6,0,4,1],
 "structSDL__vimStaticRegs.html":[19,6,0,0,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX70 =
 "structWatchdog__HwAttrs.html":[19,7,48,1],
 "structWatchdog__HwAttrs.html#a5e5b737b3657f1f79ed5ae7d5f8c56dd":[19,7,48,1,0],
 "structWatchdog__HwAttrs.html#aa2d2e632dc6e8144901d9d9c44c94d04":[19,7,48,1,1],
-"structWatchdog__HwAttrs.html#ae161d5d9bfc7e99f85512fbdbaa5e138":[19,7,48,1,2],
-"structWatchdog__MCB.html":[19,7,48,4]
+"structWatchdog__HwAttrs.html#ae161d5d9bfc7e99f85512fbdbaa5e138":[19,7,48,1,2]
 };

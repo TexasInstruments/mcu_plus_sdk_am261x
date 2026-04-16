@@ -1,5 +1,6 @@
 var NAVTREEINDEX21 =
 {
+"group__DRV__ADC__MODULE.html#ga0177c7401a22a4607272157e025fd6bb":[19,7,0,150],
 "group__DRV__ADC__MODULE.html#ga03a41bc17f74223f884ab1d2b95fe202":[19,7,0,42],
 "group__DRV__ADC__MODULE.html#ga055d357ccf4b5583815c5d4063535c49":[19,7,0,149],
 "group__DRV__ADC__MODULE.html#ga056c8a6e3fb375ec619caa88fb4be150":[19,7,0,171],
@@ -248,6 +249,5 @@ var NAVTREEINDEX21 =
 "group__DRV__ADC__MODULE.html#gga4f60e7ea55578eb4eb621f31b0b8d434abc2343f5f792f5790d5878f646ea894a":[19,7,0,61,12],
 "group__DRV__ADC__MODULE.html#gga4f60e7ea55578eb4eb621f31b0b8d434adb7fd3d22b7a6b536bc47e7aa246989a":[19,7,0,61,5],
 "group__DRV__ADC__MODULE.html#gga4f60e7ea55578eb4eb621f31b0b8d434ae10aaea1f0763b40c298500b057774a8":[19,7,0,61,1],
-"group__DRV__ADC__MODULE.html#gga4f60e7ea55578eb4eb621f31b0b8d434aeac0757f770d9cc6ae33fd057eeae9c8":[19,7,0,61,14],
-"group__DRV__ADC__MODULE.html#gga4f60e7ea55578eb4eb621f31b0b8d434aeba70de1a0c4cefebc3d882eab391ec2":[19,7,0,61,16]
+"group__DRV__ADC__MODULE.html#gga4f60e7ea55578eb4eb621f31b0b8d434aeac0757f770d9cc6ae33fd057eeae9c8":[19,7,0,61,14]
 };

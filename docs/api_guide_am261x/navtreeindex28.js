@@ -1,5 +1,6 @@
 var NAVTREEINDEX28 =
 {
+"group__DRV__EPWM__MODULE.html#ga069fd0fd74c19bb8216b030a60b4e0a5":[19,7,7,317],
 "group__DRV__EPWM__MODULE.html#ga074a5e8c14e595842f69a04c139e88b0":[19,7,7,102],
 "group__DRV__EPWM__MODULE.html#ga083985665de0bfec2171bbc1c8b2c583":[19,7,7,179],
 "group__DRV__EPWM__MODULE.html#ga0862538a6a6c7ad7bf37e1ca28e6e021":[19,7,7,435],
@@ -248,6 +249,5 @@ var NAVTREEINDEX28 =
 "group__DRV__EPWM__MODULE.html#ga786acd6256c76e5dba42d1dec973ac87":[19,7,7,161],
 "group__DRV__EPWM__MODULE.html#ga7984c710ebe020242f860115cda2a16a":[19,7,7,257],
 "group__DRV__EPWM__MODULE.html#ga7aa754d1e089a7e86cf1d5fa2e8a4b72":[19,7,7,5],
-"group__DRV__EPWM__MODULE.html#ga7abfdb5b881959cba2b48ef9f34f322b":[19,7,7,528],
-"group__DRV__EPWM__MODULE.html#ga7bf25dccb38a545a35994db097dbd5af":[19,7,7,338]
+"group__DRV__EPWM__MODULE.html#ga7abfdb5b881959cba2b48ef9f34f322b":[19,7,7,528]
 };

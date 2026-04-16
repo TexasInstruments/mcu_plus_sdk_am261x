@@ -147,5 +147,6 @@ var ENET_LLD =
       ] ]
     ] ],
     [ "Software modification needeed to use Rev-E1 and Rev-E2 version of LP-AM261 EVM", "AM261X_LP_E1_E2_SUPPORT.html", null ],
-    [ "Ethernet Packet Pool Allocation Guidelines", "PACKETPOOL_CONFIG_TOP.html", null ]
+    [ "Ethernet Packet Pool Allocation Guidelines", "PACKETPOOL_CONFIG_TOP.html", null ],
+    [ "Ethernet interface (RGMII / MII) selection", "enet_interface_selection.html", null ]
 ];

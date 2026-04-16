@@ -1,5 +1,6 @@
 var NAVTREEINDEX23 =
 {
+"group__DRV__BOOTLOADER__MODULE.html#ga204681c31a9a2aefc21f898e5506b9c3":[19,7,1,44],
 "group__DRV__BOOTLOADER__MODULE.html#ga25742c00c254eac8c87c2a681d257920":[19,7,1,10],
 "group__DRV__BOOTLOADER__MODULE.html#ga3279e9dc5f5480e5a3f1b2e35a00503d":[19,7,1,6],
 "group__DRV__BOOTLOADER__MODULE.html#ga399e0b351597db6773e599b37cc9da26":[19,7,1,42],
@@ -248,6 +249,5 @@ var NAVTREEINDEX23 =
 "group__DRV__DAC__MODULE.html#ga015ca6d4a2b55bd66d1a4effb180313e":[19,7,4,6],
 "group__DRV__DAC__MODULE.html#ga050286066cbfe396b9f3bf046247347f":[19,7,4,5],
 "group__DRV__DAC__MODULE.html#ga0950f801ddb49b8f54d3ba2806a47311":[19,7,4,17],
-"group__DRV__DAC__MODULE.html#ga12d9dffb62b325ddc1b320435aefcb8b":[19,7,4,12],
-"group__DRV__DAC__MODULE.html#ga12f9f3a884fa5bdebf6d94df8c2223d9":[19,7,4,14]
+"group__DRV__DAC__MODULE.html#ga12d9dffb62b325ddc1b320435aefcb8b":[19,7,4,12]
 };

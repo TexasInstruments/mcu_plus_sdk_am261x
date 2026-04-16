@@ -1,5 +1,6 @@
 var NAVTREEINDEX53 =
 {
+"group__SYNP__USB__MODULE.html#ga5326b0747e9e16e25244599e994055e6":[19,7,47,0,37],
 "group__SYNP__USB__MODULE.html#ga68901a1c1b105442d863e471df73853e":[19,7,47,0,23],
 "group__SYNP__USB__MODULE.html#ga6a0758bc52c860b989121c57059f59d0":[19,7,47,0,32],
 "group__SYNP__USB__MODULE.html#ga81f3952a2c36f5898f9e82b4eb0b9dad":[19,7,47,0,22],
@@ -248,6 +249,5 @@ var NAVTREEINDEX53 =
 "group__lld__thread.html#ga2b5dc35772afeb1466aa9942cd415ca9":[19,12,4,5],
 "group__lld__thread.html#ga33b417c040dee072fc0dff4999f94b9e":[19,12,4,6],
 "group__lld__thread.html#ga4c12d2177514a6ba68a01c68e03fdaae":[19,12,4,20],
-"group__lld__thread.html#ga551c751c1c3213adf4d47ce9a07c7a16":[19,12,4,49],
-"group__lld__thread.html#ga557b1c9a3d1455d37557131a5329c237":[19,12,4,28]
+"group__lld__thread.html#ga551c751c1c3213adf4d47ce9a07c7a16":[19,12,4,49]
 };

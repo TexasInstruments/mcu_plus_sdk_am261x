@@ -1,5 +1,6 @@
 var NAVTREEINDEX19 =
 {
+"enet_mdio_clause45_support.html#autotoc_md1251":[5,1,7,3,0],
 "enet_mdio_clause45_support.html#autotoc_md1252":[5,1,7,3,1],
 "enet_mdio_clause45_support.html#autotoc_md1253":[5,1,7,3,2],
 "enet_mdio_clause45_support.html#autotoc_md1254":[5,1,7,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX19 =
 "group__CPSW__ALE__MOD.html#ga276e6c1131bfafb59e02d9251cb20696":[19,4,0,1,0,65],
 "group__CPSW__ALE__MOD.html#ga3098f9b3a67cb42cc1cfedbcde41a721":[19,4,0,1,0,94],
 "group__CPSW__ALE__MOD.html#ga38d656c574f45f2617c9a140a2357572":[19,4,0,1,0,73],
-"group__CPSW__ALE__MOD.html#ga46bcca49613181e33ef0f8c5d57125b4":[19,4,0,1,0,90],
-"group__CPSW__ALE__MOD.html#ga5199deb093edcef386737b3299027a86":[19,4,0,1,0,67]
+"group__CPSW__ALE__MOD.html#ga46bcca49613181e33ef0f8c5d57125b4":[19,4,0,1,0,90]
 };

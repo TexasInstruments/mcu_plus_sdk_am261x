@@ -1,5 +1,6 @@
 var NAVTREEINDEX62 =
 {
+"structFlash__Attrs.html#afbf10107b2ef425512e4cfa7125aafdb":[19,1,1,4,3],
 "structFlash__Attrs.html#aff4d7214894937b329a7a36a24fcabce":[19,1,1,4,13],
 "structFlash__Config.html":[19,1,1,5],
 "structFlash__Config.html#a1a59751bde097d04063251b1e59b4b5b":[19,1,1,5,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX62 =
 "structI2CLLD__Object.html#aecb121c613c6634ce90220a7c1af0923":[19,7,20,6,17],
 "structI2CLLD__Transaction.html":[19,7,20,1],
 "structI2CLLD__Transaction.html#a3c4cf15a122a216c8e396979507aefc5":[19,7,20,1,1],
-"structI2CLLD__Transaction.html#a4f247892f6d0f8e9cef5e4cebb52be7f":[19,7,20,1,3],
-"structI2CLLD__Transaction.html#a5ed508a6f3051823294aa2f360e9353d":[19,7,20,1,0]
+"structI2CLLD__Transaction.html#a4f247892f6d0f8e9cef5e4cebb52be7f":[19,7,20,1,3]
 };

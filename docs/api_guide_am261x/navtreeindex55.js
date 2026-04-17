@@ -1,5 +1,8 @@
 var NAVTREEINDEX55 =
 {
+"group__thread.html#gab2931e0399a8b00bbcbf63cea216b267":[19,12,5,13],
+"group__thread.html#gab561b7491cdb44cc86352adc4da21dd9":[19,12,5,34],
+"group__thread.html#gab74791413f4227284e89e5e3f1c6d0eb":[19,12,5,46],
 "group__thread.html#gab9e991c52ef7080c25a0af79a7239f4c":[19,12,5,20],
 "group__thread.html#gac0bd4e728046f03eabf8e860b0aa38ad":[19,12,5,14],
 "group__thread.html#gac0cec1f178d0aa30410887f5949d2362":[19,12,5,15],
@@ -151,8 +154,8 @@ var NAVTREEINDEX55 =
 "group__xtimer.html#gabc716d68e28b749deb531c1a4bd49742":[19,12,7,3],
 "group__xtimer.html#gad69eb8f53037632c4cdefb4ba1c19e3b":[19,12,7,17],
 "group__xtimer.html#gae4233d0f78b7d372c7802ef76ad4784a":[19,12,7,15],
-"index.html":[],
 "index.html":[0],
+"index.html":[],
 "index.html#autotoc_md0":[0,0],
 "index.html#autotoc_md1":[0,1],
 "index.html#autotoc_md2":[0,2],
@@ -187,6 +190,11 @@ var NAVTREEINDEX55 =
 "structAddrTranslateP__RegionConfig.html#a5afd678d14352aa8e4c92d9a0111e4ac":[19,2,10,0,2],
 "structAddrTranslateP__RegionConfig.html#a8a1663e4cad3179f9fafb1512ea6d4c4":[19,2,10,0,1],
 "structAddrTranslateP__RegionConfig.html#a8cc170242f5ae708200c07ab38c80c88":[19,2,10,0,0],
+"structBankSwapReq__t.html":[19,7,17,24],
+"structBankSwapReq__t.html#a0b9acad6ce2fcbb2be0e03ff13d698ef":[19,7,17,24,0],
+"structBankSwapReq__t.html#a6ad6d9f2b61b4c732e86e2589f472ca7":[19,7,17,24,3],
+"structBankSwapReq__t.html#a755f518c6433b007f35dcb2863480051":[19,7,17,24,1],
+"structBankSwapReq__t.html#ac3b64d7f3ef72077f67fa895e0058b61":[19,7,17,24,2],
 "structBootloader__BootImageInfo.html":[19,7,1,4],
 "structBootloader__BootImageInfo.html#a4914929710b6283065945eae62e4120c":[19,7,1,4,0],
 "structBootloader__Config.html":[19,7,1,2],
@@ -241,13 +249,5 @@ var NAVTREEINDEX55 =
 "structCANFD__DmaMsgConfig.html#af7880c844f95f1531a91183ce8a89209":[19,7,2,17,2],
 "structCANFD__DmaRxBuf.html":[19,7,2,18],
 "structCANFD__DmaRxBuf.html#a5bc1dc3a8ead98f610ea33bd916a1130":[19,7,2,18,0],
-"structCANFD__DmaRxBuf.html#a8758faf5caf30899a2256dcedcf62c43":[19,7,2,18,2],
-"structCANFD__DmaRxBuf.html#aa276c820949383a62d7e608aa1162c5b":[19,7,2,18,1],
-"structCANFD__MCANBitTimingParams.html":[19,7,2,2],
-"structCANFD__MCANBitTimingParams.html#a03547914f183396295c2064df7bb6a50":[19,7,2,2,2],
-"structCANFD__MCANBitTimingParams.html#a0f99680a747c813b2d366229b0d32189":[19,7,2,2,5],
-"structCANFD__MCANBitTimingParams.html#a173c2d10ff95747bb8f4af8430c7d245":[19,7,2,2,0],
-"structCANFD__MCANBitTimingParams.html#a7e0a74ee9d8bc214fe910f28e2bb8921":[19,7,2,2,1],
-"structCANFD__MCANBitTimingParams.html#a7e387f3d8a53a754b1b0dd06175fff9a":[19,7,2,2,4],
-"structCANFD__MCANBitTimingParams.html#a9a1aca7b4b1e9612913f3a2c0aa8c99b":[19,7,2,2,8]
+"structCANFD__DmaRxBuf.html#a8758faf5caf30899a2256dcedcf62c43":[19,7,2,18,2]
 };

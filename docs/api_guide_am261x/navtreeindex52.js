@@ -1,5 +1,8 @@
 var NAVTREEINDEX52 =
 {
+"group__SDL__MSS__CR5__API.html#gade42fced26da402187a670b4474c8e3e":[19,0,78],
+"group__SDL__MSS__CR5__API.html#gadf09214c26c5776b256ccccd0f7f3616":[19,0,33],
+"group__SDL__MSS__CR5__API.html#gadfa915f4a6cda281608ffa311539647c":[19,0,131],
 "group__SDL__MSS__CR5__API.html#gae02dbed6756b8ad79fe65c02fc31c692":[19,0,132],
 "group__SDL__MSS__CR5__API.html#gae6b2de417660ed5c5e37272105b2619b":[19,0,83],
 "group__SDL__MSS__CR5__API.html#gae7f5d39dfa4f0d99380c408b2dd09a3b":[19,0,29],
@@ -60,8 +63,8 @@ var NAVTREEINDEX52 =
 "group__SDL__RTI__ENUM.html#ggaf3c380f1a6387bbf83e41fa59e03d307a72f463605089a9f1bc4b2208e612c8ef":[19,6,8,1,0,2],
 "group__SDL__RTI__ENUM.html#ggaf3c380f1a6387bbf83e41fa59e03d307a999089a8840d39d140f30b5b27dc8259":[19,5,1,1,0,0],
 "group__SDL__RTI__ENUM.html#ggaf3c380f1a6387bbf83e41fa59e03d307a999089a8840d39d140f30b5b27dc8259":[19,6,8,1,0,0],
-"group__SDL__RTI__ENUM.html#ggaf3c380f1a6387bbf83e41fa59e03d307aca8bfa0a480ef2fc67358a5005853ba1":[19,5,1,1,0,1],
 "group__SDL__RTI__ENUM.html#ggaf3c380f1a6387bbf83e41fa59e03d307aca8bfa0a480ef2fc67358a5005853ba1":[19,6,8,1,0,1],
+"group__SDL__RTI__ENUM.html#ggaf3c380f1a6387bbf83e41fa59e03d307aca8bfa0a480ef2fc67358a5005853ba1":[19,5,1,1,0,1],
 "group__SDL__RTI__FUNCTION.html":[19,5,1,2],
 "group__SDL__RTI__FUNCTION.html":[19,6,8,2],
 "group__SDL__RTI__FUNCTION.html#ga0e3f1dc0d83e79da9d5d91f1e213f6e0":[19,5,1,2,3],
@@ -246,8 +249,5 @@ var NAVTREEINDEX52 =
 "group__SYNP__USB__MODULE.html#ga281f8f6c31ee4109ae920a6afbdde3d3":[19,7,47,0,18],
 "group__SYNP__USB__MODULE.html#ga2f557b9b84b0075e96de2bbb57544af5":[19,7,47,0,31],
 "group__SYNP__USB__MODULE.html#ga372ddef9201dd085d2e71d4293308b43":[19,7,47,0,29],
-"group__SYNP__USB__MODULE.html#ga37b551d72a35fea819553f1f0990db7e":[19,7,47,0,46],
-"group__SYNP__USB__MODULE.html#ga3fab991e02d294e42669e44992373305":[19,7,47,0,30],
-"group__SYNP__USB__MODULE.html#ga48c1862c29f4dc361606f40bb034adaa":[19,7,47,0,21],
-"group__SYNP__USB__MODULE.html#ga492e9ded4c4674a0824fd1ad10c241b7":[19,7,47,0,27]
+"group__SYNP__USB__MODULE.html#ga37b551d72a35fea819553f1f0990db7e":[19,7,47,0,46]
 };

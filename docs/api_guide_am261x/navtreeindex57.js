@@ -1,5 +1,13 @@
 var NAVTREEINDEX57 =
 {
+"structCpswAle__IPPktSecurityCfg.html#a7ce85e928c7c0e32c20c83c958a7c1ab":[19,4,0,1,0,41,3],
+"structCpswAle__IPPktSecurityCfg.html#a8bd5019911598d3bd7f8c41c96b8a34a":[19,4,0,1,0,41,0],
+"structCpswAle__IPPktSecurityCfg.html#ac15ea5b834e3d6bbf9dbd00c3d69f0ae":[19,4,0,1,0,41,2],
+"structCpswAle__IPv4EntryInfo.html":[19,4,0,1,0,12],
+"structCpswAle__IPv4EntryInfo.html#a90ea0755a25596824bace0f0365052e7":[19,4,0,1,0,12,1],
+"structCpswAle__IPv4EntryInfo.html#ad55210897debfdad590cbcab24f8f6ae":[19,4,0,1,0,12,0],
+"structCpswAle__IPv6EntryInfo.html":[19,4,0,1,0,13],
+"structCpswAle__IPv6EntryInfo.html#a681f9721bd2be536f1791eca9a25ce98":[19,4,0,1,0,13,0],
 "structCpswAle__IPv6EntryInfo.html#af3f7231cffac54827a78ac4e1038fec5":[19,4,0,1,0,13,1],
 "structCpswAle__InitVlanCfg.html":[19,4,0,1,0,39],
 "structCpswAle__InitVlanCfg.html#a438b5c7e8d54ae24ec0f0acb4c5d9b11":[19,4,0,1,0,39,3],
@@ -241,13 +249,5 @@ var NAVTREEINDEX57 =
 "structCpswCpts__SetFxnGenInArgs.html#a58231c046056cb6e3c472099ccb2c283":[19,4,0,11,0,6,2],
 "structCpswCpts__SetFxnGenInArgs.html#a5b256b72d4b6859fb56218cac61149c6":[19,4,0,11,0,6,5],
 "structCpswCpts__SetFxnGenInArgs.html#aa954dabf4d3ce69f93870639faa6a0fb":[19,4,0,11,0,6,6],
-"structCpswCpts__SetFxnGenInArgs.html#aba17dc4d439c38126070a56d06df7600":[19,4,0,11,0,6,1],
-"structCpswCpts__SetFxnGenInArgs.html#ac27619f94037c6d4b7961c2965c2a781":[19,4,0,11,0,6,3],
-"structCpswCpts__SetFxnGenNudgeInArgs.html":[19,4,0,11,0,7],
-"structCpswCpts__SetFxnGenNudgeInArgs.html#a86bd112d34e3d5b7bea99a6b5987ff12":[19,4,0,11,0,7,1],
-"structCpswCpts__SetFxnGenNudgeInArgs.html#af7d0d7795c92faad09b1c52cd55542c8":[19,4,0,11,0,7,0],
-"structCpswHostPort__Cfg.html":[19,4,0,2,0,1],
-"structCpswHostPort__Cfg.html#a133a44cbc5ae8526aef13c18ab6ebbc7":[19,4,0,2,0,1,0],
-"structCpswHostPort__Cfg.html#a2a673bff734bc24d5e2a3fc3a00187c9":[19,4,0,2,0,1,4],
-"structCpswHostPort__Cfg.html#a3a6d258f198538cc31c53223207f77d5":[19,4,0,2,0,1,13]
+"structCpswCpts__SetFxnGenInArgs.html#aba17dc4d439c38126070a56d06df7600":[19,4,0,11,0,6,1]
 };

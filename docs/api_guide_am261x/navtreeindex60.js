@@ -1,5 +1,13 @@
 var NAVTREEINDEX60 =
 {
+"structEDMA__Attrs.html#a4514814c34248ed82f67508981c89e94":[19,7,6,10,15],
+"structEDMA__Attrs.html#a51b72bfe6e9e3ec895c564ec9eec95f0":[19,7,6,10,2],
+"structEDMA__Attrs.html#a7d0b7fb8e82f2dd7861226292841c4cb":[19,7,6,10,10],
+"structEDMA__Attrs.html#a85ccd7732000baa064d9c131991e2e24":[19,7,6,10,9],
+"structEDMA__Attrs.html#aa988fb8e1c6211ea89b595455cc6a665":[19,7,6,10,8],
+"structEDMA__Attrs.html#ab13d1c6a7882a9d89afd5dc0043bd893":[19,7,6,10,3],
+"structEDMA__Attrs.html#acd76d31ff34ebae83641a9a8fd584d93":[19,7,6,10,1],
+"structEDMA__Attrs.html#ad785af10627181ac450ddab72caae961":[19,7,6,10,13],
 "structEDMA__Attrs.html#ae0b34479fc22f835c19d6517d2ae1771":[19,7,6,10,6],
 "structEDMA__CcErrorInfo.html":[19,7,6,4],
 "structEDMA__CcErrorInfo.html#a01333712a60686e094e0f593d9e0208f":[19,7,6,4,3],
@@ -241,13 +249,5 @@ var NAVTREEINDEX60 =
 "structEnetMdio__C45WriteInArgs.html#aabef509b787d7a887ffbbb4990b11d42":[19,4,0,5,4,1],
 "structEnetMdio__C45WriteInArgs.html#aec8c03081263a840eb2b7b727aee7e06":[19,4,0,5,4,2],
 "structEnetPhy__Cfg.html":[19,4,0,13,5],
-"structEnetPhy__Cfg.html#a0fbd51a9e60e0b019a8d7c96f57464c7":[19,4,0,13,5,8],
-"structEnetPhy__Cfg.html#a13e073030c36adfcfb2578f3e6aab261":[19,4,0,13,5,5],
-"structEnetPhy__Cfg.html#a2fec6f917edb406803098dc9fa8f0cfb":[19,4,0,13,5,10],
-"structEnetPhy__Cfg.html#a326170d15fbd5660cd42f4058afca30b":[19,4,0,13,5,2],
-"structEnetPhy__Cfg.html#a38afa8b7ff5c0444448080633a042762":[19,4,0,13,5,11],
-"structEnetPhy__Cfg.html#a546102a2223d30e56cac6efc5b1f95fd":[19,4,0,13,5,0],
-"structEnetPhy__Cfg.html#a85bbc546f6fc38ede1e120db880eb27b":[19,4,0,13,5,6],
-"structEnetPhy__Cfg.html#a8ddec0dca674469bd9ff7c9d4aeb6aba":[19,4,0,13,5,1],
-"structEnetPhy__Cfg.html#ab3c6228827b13bc92c726e17f95db41e":[19,4,0,13,5,7]
+"structEnetPhy__Cfg.html#a0fbd51a9e60e0b019a8d7c96f57464c7":[19,4,0,13,5,8]
 };

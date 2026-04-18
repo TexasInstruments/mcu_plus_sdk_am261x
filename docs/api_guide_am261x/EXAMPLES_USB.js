@@ -42,5 +42,27 @@ var EXAMPLES_USB =
         [ "Run the example", "EXAMPLES_USB_NCM.html#autotoc_md3440", null ]
       ] ],
       [ "See Also", "EXAMPLES_USB_NCM.html#autotoc_md3442", null ]
+    ] ],
+    [ "USB Vendor Bulk Echo Example", "EXAMPLES_USB_VENDOR_ECHO.html", [
+      [ "Introduction", "EXAMPLES_USB_VENDOR_ECHO.html#autotoc_md3443", null ],
+      [ "Supported Combinations", "EXAMPLES_USB_VENDOR_ECHO.html#EXAMPLES_USB_VENDOR_ECHO_EXAMPLE_COMBOS", null ],
+      [ "Steps to Run the Example", "EXAMPLES_USB_VENDOR_ECHO.html#autotoc_md3444", [
+        [ "Build the example", "EXAMPLES_USB_VENDOR_ECHO.html#autotoc_md3445", null ],
+        [ "HW Setup", "EXAMPLES_USB_VENDOR_ECHO.html#autotoc_md3446", [
+          [ "AM261x-LP", "EXAMPLES_USB_VENDOR_ECHO.html#autotoc_md3447", null ]
+        ] ],
+        [ "Run the example", "EXAMPLES_USB_VENDOR_ECHO.html#autotoc_md3448", [
+          [ "Install WinUSB Driver (Windows)", "EXAMPLES_USB_VENDOR_ECHO.html#autotoc_md3449", null ],
+          [ "Verify Enumeration", "EXAMPLES_USB_VENDOR_ECHO.html#autotoc_md3450", null ]
+        ] ]
+      ] ],
+      [ "Testing the Example", "EXAMPLES_USB_VENDOR_ECHO.html#autotoc_md3451", [
+        [ "Prerequisites", "EXAMPLES_USB_VENDOR_ECHO.html#autotoc_md3452", [
+          [ "1. Install PyUSB", "EXAMPLES_USB_VENDOR_ECHO.html#autotoc_md3453", null ],
+          [ "2. Download libusb", "EXAMPLES_USB_VENDOR_ECHO.html#autotoc_md3454", null ]
+        ] ],
+        [ "Running the Script", "EXAMPLES_USB_VENDOR_ECHO.html#autotoc_md3455", null ]
+      ] ],
+      [ "See Also", "EXAMPLES_USB_VENDOR_ECHO.html#autotoc_md3456", null ]
     ] ]
 ];

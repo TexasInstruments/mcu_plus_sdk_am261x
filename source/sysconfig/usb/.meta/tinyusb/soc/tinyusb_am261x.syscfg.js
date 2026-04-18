@@ -49,6 +49,9 @@ const usb_class = [
     },
     {
         name        : "NCM",
+    },
+    {
+        name        : "VENDOR",
     }
 ];
 

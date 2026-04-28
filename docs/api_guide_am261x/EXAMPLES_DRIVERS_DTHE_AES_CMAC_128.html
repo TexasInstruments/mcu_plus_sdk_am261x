@@ -92,81 +92,81 @@ $(document).ready(function(){initNavTree('EXAMPLES_DRIVERS_DTHE_AES_CMAC_128.htm
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#autotoc_md3116">Introduction</a><ul><li class="level2"><a href="#autotoc_md3117">Build the aes cmac 128 example</a></li>
+<ul><li class="level1"><a href="#autotoc_md3179">Introduction</a><ul><li class="level2"><a href="#autotoc_md3180">Build the aes cmac 128 example</a></li>
 </ul>
 </li>
-<li class="level1"><a href="#autotoc_md3118">Steps to Run through ROM Boot flow</a><ul><li class="level2"><a href="#autotoc_md3119">Via SBL_uart bootloader</a><ul><li class="level3"><a href="#autotoc_md3120">Build sbl_uart</a></li>
-<li class="level3"><a href="#autotoc_md3121">Set board for UART boot</a></li>
-<li class="level3"><a href="#autotoc_md3122">Run UART_bootloader</a></li>
-<li class="level3"><a href="#autotoc_md3123">Sample output</a></li>
+<li class="level1"><a href="#autotoc_md3181">Steps to Run through ROM Boot flow</a><ul><li class="level2"><a href="#autotoc_md3182">Via SBL_uart bootloader</a><ul><li class="level3"><a href="#autotoc_md3183">Build sbl_uart</a></li>
+<li class="level3"><a href="#autotoc_md3184">Set board for UART boot</a></li>
+<li class="level3"><a href="#autotoc_md3185">Run UART_bootloader</a></li>
+<li class="level3"><a href="#autotoc_md3186">Sample output</a></li>
 </ul>
 </li>
-<li class="level2"><a href="#autotoc_md3124">Via SBL_qspi bootloader</a><ul><li class="level3"><a href="#autotoc_md3125">Build sbl_qspi</a></li>
-<li class="level3"><a href="#autotoc_md3126">Build sbl_uart_uniflash</a></li>
-<li class="level3"><a href="#autotoc_md3127">Set UART boot mode</a></li>
-<li class="level3"><a href="#autotoc_md3128">Edit default_sbl_qspi.cfg to include the correct images</a></li>
-<li class="level3"><a href="#autotoc_md3129">Run UART_uniflash</a></li>
-<li class="level3"><a href="#autotoc_md3130">Set QSPI boot mode</a></li>
-<li class="level3"><a href="#autotoc_md3131">Sample output</a></li>
+<li class="level2"><a href="#autotoc_md3187">Via SBL_qspi bootloader</a><ul><li class="level3"><a href="#autotoc_md3188">Build sbl_qspi</a></li>
+<li class="level3"><a href="#autotoc_md3189">Build sbl_uart_uniflash</a></li>
+<li class="level3"><a href="#autotoc_md3190">Set UART boot mode</a></li>
+<li class="level3"><a href="#autotoc_md3191">Edit default_sbl_qspi.cfg to include the correct images</a></li>
+<li class="level3"><a href="#autotoc_md3192">Run UART_uniflash</a></li>
+<li class="level3"><a href="#autotoc_md3193">Set QSPI boot mode</a></li>
+<li class="level3"><a href="#autotoc_md3194">Sample output</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="level1"><a href="#autotoc_md3132">See Also</a></li>
+<li class="level1"><a href="#autotoc_md3195">See Also</a></li>
 </ul>
 </div>
 <div class="textblock"><p><a class="anchor" id="md_examples_security_crypto_dthe_aes_cmac_128"></a></p>
-<h1><a class="anchor" id="autotoc_md3116"></a>
+<h1><a class="anchor" id="autotoc_md3179"></a>
 Introduction</h1>
 <p>This example demonstrates Cipher-based message authentication code(CMAC) of AES(Advanced Encryption Standard) using AES accelerator. The AES supported modes are CBC, ECB and CMAC and all three modes comes in 128-bit and 256-bit implementations. This example explains the steps to build and run for Dthe aes cmac-128.</p>
-<h2><a class="anchor" id="autotoc_md3117"></a>
+<h2><a class="anchor" id="autotoc_md3180"></a>
 Build the aes cmac 128 example</h2>
 <div class="fragment"><div class="line">$make -s -C examples/security/crypto/dthe_aes/crypto_aes_cmac_128/&lt;soc&gt;-&lt;board&gt;/r5fss0-0_nortos/ti-arm-clang all DEVICE=am263x</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md3118"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md3181"></a>
 Steps to Run through ROM Boot flow</h1>
 <dl class="section note"><dt>Note</dt><dd>If the device type is HS-SE, an additional flag "DEVICE_TYPE=HS" is passed for building SBL. The flag results in generation of SBL image with suffix "hs.tiimage" which can only be used when device type is HS-SE.</dd></dl>
-<h2><a class="anchor" id="autotoc_md3119"></a>
+<h2><a class="anchor" id="autotoc_md3182"></a>
 Via SBL_uart bootloader</h2>
-<h3><a class="anchor" id="autotoc_md3120"></a>
+<h3><a class="anchor" id="autotoc_md3183"></a>
 Build sbl_uart</h3>
 <div class="fragment"><div class="line">make -s -C examples/drivers/boot/sbl_uart_multicore_elf/&lt;soc&gt;-&lt;board&gt;/r5fss0-0_nortos/ti-arm-clang/ all DEVICE=&lt;soc&gt;</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md3121"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md3184"></a>
 Set board for UART boot</h3>
 <p>See <a href="https://software-dl.ti.com/mcu-plus-sdk/esd/AM261X/latest/exports/docs/api_guide_am261x/EVM_SETUP_PAGE.html#autotoc_md29">EVM setup</a></p>
-<h3><a class="anchor" id="autotoc_md3122"></a>
+<h3><a class="anchor" id="autotoc_md3185"></a>
 Run UART_bootloader</h3>
 <div class="fragment"><div class="line">python uart_bootloader.py -p &lt;COMxx&gt; --bootloader=sbl_prebuilt/&lt;soc&gt;-&lt;board&gt;/sbl_uart.release.hs.tiimage --file=../../examples/security/crypto/dthe_aes/crypto_aes_cmac_128/&lt;soc&gt;-&lt;board&gt;/r5fss0-0_nortos/ti-arm-clang/crypto_dthe_aes_cmac_128.release.mcelf</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md3123"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md3186"></a>
 Sample output</h3>
 <p>On successful boot, R5 log at uart terminal, will have the following output. UART Console: </p><div class="fragment"><div class="line">[CRYPTO] DTHE AES CMAC-128 example started ...</div>
 <div class="line">[CRYPTO] DTHE AES CMAC-128 example completed!!</div>
 <div class="line">All tests have passed!!</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md3124"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md3187"></a>
 Via SBL_qspi bootloader</h2>
-<h3><a class="anchor" id="autotoc_md3125"></a>
+<h3><a class="anchor" id="autotoc_md3188"></a>
 Build sbl_qspi</h3>
 <div class="fragment"><div class="line">make -C examples/drivers/boot/sbl_qspi_multicore_elf/&lt;soc&gt;-&lt;board&gt;/r5fss0-0_nortos/ti-arm-clang/ all DEVICE=&lt;soc&gt;</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md3126"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md3189"></a>
 Build sbl_uart_uniflash</h3>
 <div class="fragment"><div class="line">make -s -C examples/drivers/boot/sbl_uart_uniflash/&lt;soc&gt;-&lt;board&gt;/r5fss0-0_nortos/ti-arm-clang/ all DEVICE=&lt;soc&gt;</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md3127"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md3190"></a>
 Set UART boot mode</h3>
 <p>See <a href="https://software-dl.ti.com/mcu-plus-sdk/esd/AM261X/latest/exports/docs/api_guide_am261x/EVM_SETUP_PAGE.html#autotoc_md29">EVM setup</a></p>
-<h3><a class="anchor" id="autotoc_md3128"></a>
+<h3><a class="anchor" id="autotoc_md3191"></a>
 Edit default_sbl_qspi.cfg to include the correct images</h3>
-<h3><a class="anchor" id="autotoc_md3129"></a>
+<h3><a class="anchor" id="autotoc_md3192"></a>
 Run UART_uniflash</h3>
 <div class="fragment"><div class="line">python uart_uniflash.py -p &lt;COMxx&gt; --cfg=sbl_prebuilt/&lt;soc&gt;-&lt;board&gt;/default_sbl_qspi.cfg</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md3130"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md3193"></a>
 Set QSPI boot mode</h3>
 <p>See <a href="https://software-dl.ti.com/mcu-plus-sdk/esd/AM261X/latest/exports/docs/api_guide_am261x/EVM_SETUP_PAGE.html#autotoc_md29">EVM setup</a></p>
-<h3><a class="anchor" id="autotoc_md3131"></a>
+<h3><a class="anchor" id="autotoc_md3194"></a>
 Sample output</h3>
 <p>On successful boot, R5 log at uart terminal, will have the following output.</p>
 <p>UART Console: </p><div class="fragment"><div class="line">[CRYPTO] DTHE AES CMAC-128 example started ...</div>
 <div class="line">[CRYPTO] DTHE AES CMAC-128 example completed!!</div>
 <div class="line">All tests have passed!!</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md3132"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md3195"></a>
 See Also</h1>
 <p><a class="el" href="DRIVERS_DTHE_PAGE.html">DTHE</a> </p>
 </div></div><!-- contents -->

@@ -1,5 +1,14 @@
 var NAVTREEINDEX40 =
 {
+"group__DRV__OSPI__MODULE.html#ga55d02050f79b0efdc5dcddcdbc94bfd8":[19,7,34,50],
+"group__DRV__OSPI__MODULE.html#ga66014cbd24d8c287c94846a049d9da68":[19,7,34,18],
+"group__DRV__OSPI__MODULE.html#ga68a204e2a560c924a71c03d4b372f5ad":[19,7,34,34],
+"group__DRV__OSPI__MODULE.html#ga6be5558d3c8085469468d6f8e7c697f2":[19,7,34,10],
+"group__DRV__OSPI__MODULE.html#ga6d161467cb4487ab3fc3462558578f01":[19,7,34,35],
+"group__DRV__OSPI__MODULE.html#ga6d9b5b1d5eeedfe5fb06d2e38d096c8f":[19,7,34,60],
+"group__DRV__OSPI__MODULE.html#ga6da77149b2e1ccb884117269bb8da65d":[19,7,34,58],
+"group__DRV__OSPI__MODULE.html#ga6f1745f40bd55489e6b664ffeebf5273":[19,7,34,43],
+"group__DRV__OSPI__MODULE.html#ga71774ed21246ab68c4e27f01c466c809":[19,7,34,28],
 "group__DRV__OSPI__MODULE.html#ga77f5a9e01741701f6330bdedf85b7321":[19,7,34,24],
 "group__DRV__OSPI__MODULE.html#ga7e7fe11788a7985ea5075fa1f628b437":[19,7,34,20],
 "group__DRV__OSPI__MODULE.html#ga89e702ca1f019b5d88fa8bb2c030ab38":[19,7,34,31],
@@ -240,14 +249,5 @@ var NAVTREEINDEX40 =
 "group__DRV__PINMUX__MODULE.html#ga9bcb83add5da9636a4e50e367712b4e9":[19,7,36,88],
 "group__DRV__PINMUX__MODULE.html#ga9bcf4f802e2ee21ba02e46138dcb0af2":[19,7,36,156],
 "group__DRV__PINMUX__MODULE.html#ga9c0d6d5b816e7cbfae2e42554347bbc4":[19,7,36,199],
-"group__DRV__PINMUX__MODULE.html#ga9f3d14f138e83dfab8bd6f02ef602ad1":[19,7,36,215],
-"group__DRV__PINMUX__MODULE.html#ga9f81d9f5ceaa58bef3252284206c525a":[19,7,36,119],
-"group__DRV__PINMUX__MODULE.html#ga9fe9d2734f1bd3e85e1eacc4cf8a076d":[19,7,36,60],
-"group__DRV__PINMUX__MODULE.html#gaa11282ff833063d78c819cfd388749be":[19,7,36,55],
-"group__DRV__PINMUX__MODULE.html#gaa286cd7e96dc0d30b5ac02eec9a419e0":[19,7,36,242],
-"group__DRV__PINMUX__MODULE.html#gaa39124029fd35dacb54b272251d698c6":[19,7,36,170],
-"group__DRV__PINMUX__MODULE.html#gaa456437310f2ce33a176927458a9bdc0":[19,7,36,7],
-"group__DRV__PINMUX__MODULE.html#gaa568528d009afc6f96b50566845f7f70":[19,7,36,230],
-"group__DRV__PINMUX__MODULE.html#gaa5eda2a597c5b0d8c330305b17e1eb00":[19,7,36,78],
-"group__DRV__PINMUX__MODULE.html#gaa639963f57531d91ce139d061e121fdd":[19,7,36,28]
+"group__DRV__PINMUX__MODULE.html#ga9f3d14f138e83dfab8bd6f02ef602ad1":[19,7,36,215]
 };

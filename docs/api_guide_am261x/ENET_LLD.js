@@ -3,9 +3,9 @@ var ENET_LLD =
     [ "Enet LLD Introduction", "enetlld_top.html", [
       [ "Introduction", "enetlld_top.html#enetlld_intro", null ],
       [ "Application Programming Interface", "enetlld_top.html#enetlld_api_overview", [
-        [ "Control path API", "enetlld_top.html#autotoc_md1274", null ],
-        [ "Data path (DMA) API", "enetlld_top.html#autotoc_md1275", null ],
-        [ "Life cycle of an Enet LLD based application", "enetlld_top.html#autotoc_md1276", null ]
+        [ "Control path API", "enetlld_top.html#autotoc_md1282", null ],
+        [ "Data path (DMA) API", "enetlld_top.html#autotoc_md1283", null ],
+        [ "Life cycle of an Enet LLD based application", "enetlld_top.html#autotoc_md1284", null ]
       ] ],
       [ "Enet Peripherals", "enetlld_top.html#enetlld_enetpers", [
         [ "CPSW Peripheral", "enetlld_top.html#enetper_cpsw", null ]
@@ -42,8 +42,8 @@ var ENET_LLD =
         [ "Init Sequence", "enet_integration_guide_top.html#enet_init_sequence", null ],
         [ "Peripheral Open Sequence", "enet_integration_guide_top.html#enet_open_sequence", null ],
         [ "Port Open Sequence", "enet_integration_guide_top.html#enet_openport_sequence", [
-          [ "MAC-PHY link", "enet_integration_guide_top.html#autotoc_md1277", null ],
-          [ "MAC-to-MAC link", "enet_integration_guide_top.html#autotoc_md1278", null ]
+          [ "MAC-PHY link", "enet_integration_guide_top.html#autotoc_md1285", null ],
+          [ "MAC-to-MAC link", "enet_integration_guide_top.html#autotoc_md1286", null ]
         ] ],
         [ "Packet Send/Receive Sequence", "enet_integration_guide_top.html#enet_pktrxtx_sequence", null ],
         [ "IOCTL Sequence", "enet_integration_guide_top.html#enet_ioctl_sequence", null ],
@@ -54,59 +54,59 @@ var ENET_LLD =
       ] ]
     ] ],
     [ "MDIO Manual Mode Enablement", "enetmdio_manualmode.html", [
-      [ "Workaround for details errata i2329-MDIO interface corruption and its impact:", "enetmdio_manualmode.html#autotoc_md1280", null ],
-      [ "Limitations", "enetmdio_manualmode.html#autotoc_md1281", null ],
-      [ "Not supported MDIO IOCTL APIs in MDIO Manual mode", "enetmdio_manualmode.html#autotoc_md1282", null ]
+      [ "Workaround for details errata i2329-MDIO interface corruption and its impact:", "enetmdio_manualmode.html#autotoc_md1288", null ],
+      [ "Limitations", "enetmdio_manualmode.html#autotoc_md1289", null ],
+      [ "Not supported MDIO IOCTL APIs in MDIO Manual mode", "enetmdio_manualmode.html#autotoc_md1290", null ]
     ] ],
     [ "MDIO PHY Register Access - Clause45 Support", "enet_mdio_clause45_support.html", [
-      [ "Overview", "enet_mdio_clause45_support.html#autotoc_md1283", null ],
-      [ "Background", "enet_mdio_clause45_support.html#autotoc_md1284", [
-        [ "Clause 22 v/s Clause 45", "enet_mdio_clause45_support.html#autotoc_md1285", null ],
-        [ "MMD (Management/MDIO Manageable Device) : Required for Clause45 support", "enet_mdio_clause45_support.html#autotoc_md1286", null ]
+      [ "Overview", "enet_mdio_clause45_support.html#autotoc_md1291", null ],
+      [ "Background", "enet_mdio_clause45_support.html#autotoc_md1292", [
+        [ "Clause 22 v/s Clause 45", "enet_mdio_clause45_support.html#autotoc_md1293", null ],
+        [ "MMD (Management/MDIO Manageable Device) : Required for Clause45 support", "enet_mdio_clause45_support.html#autotoc_md1294", null ]
       ] ],
-      [ "Implementation Requirements", "enet_mdio_clause45_support.html#autotoc_md1287", null ],
-      [ "Implementation Steps", "enet_mdio_clause45_support.html#autotoc_md1288", [
-        [ "Step-1: Modify PHY Driver code with the MMD register as an input argument", "enet_mdio_clause45_support.html#autotoc_md1289", null ],
-        [ "Step-2: Update EnetPhy Configuration", "enet_mdio_clause45_support.html#autotoc_md1290", null ],
-        [ "Step-3: Common PHY registers access, such as PHY alive, PHY link status, etc uses Clause 22 in order to suport backward compatibility. Replace them with Clause 45 support", "enet_mdio_clause45_support.html#autotoc_md1291", null ]
+      [ "Implementation Requirements", "enet_mdio_clause45_support.html#autotoc_md1295", null ],
+      [ "Implementation Steps", "enet_mdio_clause45_support.html#autotoc_md1296", [
+        [ "Step-1: Modify PHY Driver code with the MMD register as an input argument", "enet_mdio_clause45_support.html#autotoc_md1297", null ],
+        [ "Step-2: Update EnetPhy Configuration", "enet_mdio_clause45_support.html#autotoc_md1298", null ],
+        [ "Step-3: Common PHY registers access, such as PHY alive, PHY link status, etc uses Clause 22 in order to suport backward compatibility. Replace them with Clause 45 support", "enet_mdio_clause45_support.html#autotoc_md1299", null ]
       ] ],
-      [ "Detailed API Reference", "enet_mdio_clause45_support.html#autotoc_md1292", [
-        [ "Clause 45 Read Operation", "enet_mdio_clause45_support.html#autotoc_md1293", null ],
-        [ "Clause 45 Write Operation", "enet_mdio_clause45_support.html#autotoc_md1294", null ],
-        [ "Clause 45 Read-Modify-Write Operation", "enet_mdio_clause45_support.html#autotoc_md1295", null ]
+      [ "Detailed API Reference", "enet_mdio_clause45_support.html#autotoc_md1300", [
+        [ "Clause 45 Read Operation", "enet_mdio_clause45_support.html#autotoc_md1301", null ],
+        [ "Clause 45 Write Operation", "enet_mdio_clause45_support.html#autotoc_md1302", null ],
+        [ "Clause 45 Read-Modify-Write Operation", "enet_mdio_clause45_support.html#autotoc_md1303", null ]
       ] ],
-      [ "Key Parameters Explained", "enet_mdio_clause45_support.html#autotoc_md1296", null ],
-      [ "Current Limitations", "enet_mdio_clause45_support.html#autotoc_md1297", null ],
-      [ "Summary", "enet_mdio_clause45_support.html#autotoc_md1298", null ],
-      [ "Limitations", "enet_mdio_clause45_support.html#autotoc_md1299", null ]
+      [ "Key Parameters Explained", "enet_mdio_clause45_support.html#autotoc_md1304", null ],
+      [ "Current Limitations", "enet_mdio_clause45_support.html#autotoc_md1305", null ],
+      [ "Summary", "enet_mdio_clause45_support.html#autotoc_md1306", null ],
+      [ "Limitations", "enet_mdio_clause45_support.html#autotoc_md1307", null ]
     ] ],
     [ "ENET IET Frame Pre-emption userguide", "enet_iet_userguide.html", [
-      [ "Introduction", "enet_iet_userguide.html#autotoc_md1300", [
-        [ "IEEE 802.1Qbu IET", "enet_iet_userguide.html#autotoc_md1301", null ]
+      [ "Introduction", "enet_iet_userguide.html#autotoc_md1308", [
+        [ "IEEE 802.1Qbu IET", "enet_iet_userguide.html#autotoc_md1309", null ]
       ] ],
-      [ "IET Architecture", "enet_iet_userguide.html#autotoc_md1302", null ],
-      [ "Enet LLD API", "enet_iet_userguide.html#autotoc_md1303", null ],
-      [ "Limitations", "enet_iet_userguide.html#autotoc_md1304", null ]
+      [ "IET Architecture", "enet_iet_userguide.html#autotoc_md1310", null ],
+      [ "Enet LLD API", "enet_iet_userguide.html#autotoc_md1311", null ],
+      [ "Limitations", "enet_iet_userguide.html#autotoc_md1312", null ]
     ] ],
     [ "Ethernet Performance on AM261x", "enetlld_performance.html", [
-      [ "Introduction", "enetlld_performance.html#autotoc_md1318", null ],
-      [ "Setup Details", "enetlld_performance.html#autotoc_md1319", null ],
-      [ "Layer 2 Performance", "enetlld_performance.html#autotoc_md1320", [
-        [ "Configuration Details", "enetlld_performance.html#autotoc_md1321", null ],
-        [ "Layer 2 Latency", "enetlld_performance.html#autotoc_md1322", [
-          [ "Layer-2 Hardware Switching Latency for CPSW", "enetlld_performance.html#autotoc_md1323", null ],
-          [ "Test Setup", "enetlld_performance.html#autotoc_md1324", null ],
-          [ "CPSW Latency for RGMII", "enetlld_performance.html#autotoc_md1325", null ]
+      [ "Introduction", "enetlld_performance.html#autotoc_md1326", null ],
+      [ "Setup Details", "enetlld_performance.html#autotoc_md1327", null ],
+      [ "Layer 2 Performance", "enetlld_performance.html#autotoc_md1328", [
+        [ "Configuration Details", "enetlld_performance.html#autotoc_md1329", null ],
+        [ "Layer 2 Latency", "enetlld_performance.html#autotoc_md1330", [
+          [ "Layer-2 Hardware Switching Latency for CPSW", "enetlld_performance.html#autotoc_md1331", null ],
+          [ "Test Setup", "enetlld_performance.html#autotoc_md1332", null ],
+          [ "CPSW Latency for RGMII", "enetlld_performance.html#autotoc_md1333", null ]
         ] ]
       ] ],
-      [ "TCP/IP Performance", "enetlld_performance.html#autotoc_md1326", [
-        [ "Configuration Details", "enetlld_performance.html#autotoc_md1327", [
-          [ "TCP Throughput", "enetlld_performance.html#autotoc_md1328", null ],
-          [ "UDP Throughput", "enetlld_performance.html#autotoc_md1329", null ]
+      [ "TCP/IP Performance", "enetlld_performance.html#autotoc_md1334", [
+        [ "Configuration Details", "enetlld_performance.html#autotoc_md1335", [
+          [ "TCP Throughput", "enetlld_performance.html#autotoc_md1336", null ],
+          [ "UDP Throughput", "enetlld_performance.html#autotoc_md1337", null ]
         ] ]
       ] ],
       [ "XIP Performance", "enetlld_performance.html#networking_xip_performance", null ],
-      [ "See Also", "enetlld_performance.html#autotoc_md1330", null ]
+      [ "See Also", "enetlld_performance.html#autotoc_md1338", null ]
     ] ],
     [ "Enet EST/TAS Support", "enet_tas_top.html", [
       [ "Introduction", "enet_tas_top.html#enet_est_intro", [
@@ -134,6 +134,7 @@ var ENET_LLD =
       [ "Need for sysconfig", "enet_migration_guide_top.html#NeedForSysconfig", null ],
       [ "Enet Driver Initialization Sequence Change", "enet_migration_guide_top.html#EnetInitSeqChange", null ],
       [ "Enet DMA channel open changes", "enet_migration_guide_top.html#EnetDmaChOpenChange", null ],
+      [ "Enet DMA channel override Enable", "enet_migration_guide_top.html#EnetDmaChOverrideChange", null ],
       [ "Runtime Control API (Enet_ioctl) change", "enet_migration_guide_top.html#EnetIoctlChange", null ],
       [ "Packet Transmit/Receive API related changes", "enet_migration_guide_top.html#PacketTxRxChange", null ],
       [ "Custom Board Support", "enet_migration_guide_top.html#CustomBoardSupport", null ],
@@ -143,7 +144,7 @@ var ENET_LLD =
     ] ],
     [ "Ethernet Add-on Boards", "ETHERNET_ADDON_BOARDS_TOP.html", [
       [ "Introduction", "ETHERNET_ADDON_BOARDS_TOP.html#ethernet_addon_boards_intro", [
-        [ "Important Usage Guidelines", "ETHERNET_ADDON_BOARDS_TOP.html#autotoc_md1312", null ]
+        [ "Important Usage Guidelines", "ETHERNET_ADDON_BOARDS_TOP.html#autotoc_md1320", null ]
       ] ]
     ] ],
     [ "Software modification needeed to use Rev-E1 and Rev-E2 version of LP-AM261 EVM", "AM261X_LP_E1_E2_SUPPORT.html", null ],

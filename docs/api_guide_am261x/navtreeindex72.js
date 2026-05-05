@@ -1,5 +1,14 @@
 var NAVTREEINDEX72 =
 {
+"structdwc__ep__t.html#ad4b3377fe64803ebea96efba4e79dff5":[19,7,47,0,10,4],
+"structdwc__ep__t.html#ad5318c575b8d1f56bd9817ef0e21a0a0":[19,7,47,0,10,23],
+"structdwc__ep__t.html#ad9ac05ff2764a84f7d27156b5d1c7828":[19,7,47,0,10,6],
+"structdwc__ep__t.html#adc800665faec6584cb18d860e471abec":[19,7,47,0,10,25],
+"structdwc__ep__t.html#aeb0f99366e66461e84a32c0a6774b447":[19,7,47,0,10,11],
+"structdwc__ep__t.html#aec784994d4b63e48a5568ebf6b9ece3a":[19,7,47,0,10,5],
+"structdwc__ep__t.html#afc31ed94685b9489409e483a9dbda9e0":[19,7,47,0,10,9],
+"structdwc__ep__t.html#afdfeee61137508cfe550ed3da72a2638":[19,7,47,0,10,27],
+"structdwc__ep__t.html#afe356f03861412a8085901f91e321789":[19,7,47,0,10,33],
 "structdwc__hiber__scratchpad__array.html":[19,7,47,0,13],
 "structdwc__hiber__scratchpad__array.html#a296be6a2ac6cd1932ee9ffbedb5da48e":[19,7,47,0,13,0],
 "structdwc__req__t.html":[19,7,47,0,8],

@@ -1,5 +1,14 @@
 var NAVTREEINDEX61 =
 {
+"structEdma__IntrObject.html#ac5490e8a31870a8fd5dc7e6b64b4a31c":[19,7,6,8,3],
+"structEdma__IntrObject.html#ad2eec23e992618bb0d6965c8bbb6ca91":[19,7,6,8,2],
+"structEnetCpdma__OpenRxChPrms.html":[19,4,0,0,0,0,9],
+"structEnetCpdma__OpenRxChPrms.html#a0961951aa692a7574b8ccb47a8ccef85":[19,4,0,0,0,0,9,4],
+"structEnetCpdma__OpenRxChPrms.html#a22b6580590c5a6c02bd21d1918e749d3":[19,4,0,0,0,0,9,0],
+"structEnetCpdma__OpenRxChPrms.html#a54e62c22d0ef0fbd7baa349ccbe45d91":[19,4,0,0,0,0,9,1],
+"structEnetCpdma__OpenRxChPrms.html#a8a14a31d130cad3712bbf0fa30552070":[19,4,0,0,0,0,9,3],
+"structEnetCpdma__OpenRxChPrms.html#adb14aac558d6abeec3f7ef53de3639d7":[19,4,0,0,0,0,9,2],
+"structEnetCpdma__OpenTxChPrms.html":[19,4,0,0,0,0,8],
 "structEnetCpdma__OpenTxChPrms.html#a157ebeb796b2ff14f6b0b9225b221253":[19,4,0,0,0,0,8,3],
 "structEnetCpdma__OpenTxChPrms.html#a2eda8a58f7e15c88551ad34de897369f":[19,4,0,0,0,0,8,0],
 "structEnetCpdma__OpenTxChPrms.html#a5cc3c83febe76501ec98f49bba886e1a":[19,4,0,0,0,0,8,2],
@@ -240,14 +249,5 @@ var NAVTREEINDEX61 =
 "structEnetRm__ResCfg.html#adddefa12afa409bab36d2b975fd5288f":[19,4,0,8,11,1],
 "structEnetRm__ResCfg.html#ae54273010da9be21a4d88cc5068c6a5d":[19,4,0,8,11,3],
 "structEnetRm__ResPrms.html":[19,4,0,8,1],
-"structEnetRm__ResPrms.html#a18319e47b19a59eff8e556adf9ade3c4":[19,4,0,8,1,2],
-"structEnetRm__ResPrms.html#ab3e6e5e694a5a18f06347d502a9c3b5a":[19,4,0,8,1,1],
-"structEnetRm__ResPrms.html#aef5c0203b0c02afc893b6adfc6b754e7":[19,4,0,8,1,0],
-"structEnetRm__ResourceInfo.html":[19,4,0,8,0],
-"structEnetRm__ResourceInfo.html#a0a549dc877888817d6aee43713be5cb0":[19,4,0,8,0,4],
-"structEnetRm__ResourceInfo.html#a1018833da2e0120f2d3a00320704f507":[19,4,0,8,0,0],
-"structEnetRm__ResourceInfo.html#a94354ed8c2c70f99a9b8e89f374480af":[19,4,0,8,0,6],
-"structEnetRm__ResourceInfo.html#a9ef765ed82439a8b68b464d31f462d12":[19,4,0,8,0,5],
-"structEnetRm__ResourceInfo.html#aca13bcc9d04dbc098caaf26c85c5b62b":[19,4,0,8,0,3],
-"structEnetRm__ResourceInfo.html#adbbe5905f0481575d6175963e888ec0e":[19,4,0,8,0,1]
+"structEnetRm__ResPrms.html#a18319e47b19a59eff8e556adf9ade3c4":[19,4,0,8,1,2]
 };

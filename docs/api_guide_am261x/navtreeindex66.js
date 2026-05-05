@@ -1,5 +1,14 @@
 var NAVTREEINDEX66 =
 {
+"structLIN__HwAttrs.html#aaefb44ec0d8615d1de7e9d5c5da023a5":[19,7,23,1,8],
+"structLIN__HwAttrs.html#abce59f7449c4f6b1538167f1f20f617e":[19,7,23,1,3],
+"structLIN__LinConfigParams.html":[19,7,23,5],
+"structLIN__LinConfigParams.html#a051ec1886993c2140d98a9c257966ccf":[19,7,23,5,1],
+"structLIN__LinConfigParams.html#a08fb76fbc756d449809ce4defa749148":[19,7,23,5,9],
+"structLIN__LinConfigParams.html#a155825a6920fbbb3811474ddbea25e05":[19,7,23,5,0],
+"structLIN__LinConfigParams.html#a460a7ff2b5ba993d1ab9227950f68b87":[19,7,23,5,7],
+"structLIN__LinConfigParams.html#a517a0276648152f3b2b1d3661985747a":[19,7,23,5,3],
+"structLIN__LinConfigParams.html#a5538d6fe83e03a9e65be7b7bae939b5e":[19,7,23,5,8],
 "structLIN__LinConfigParams.html#a6f1a597dafaf6907d4f52441d3b053c5":[19,7,23,5,4],
 "structLIN__LinConfigParams.html#a7ac3f10f14386d9ed38215942f6f07a8":[19,7,23,5,5],
 "structLIN__LinConfigParams.html#a7b5ed0e034ac74e526a5c9df27a0fb22":[19,7,23,5,2],
@@ -240,14 +249,5 @@ var NAVTREEINDEX66 =
 "structMCAN__RxBufElementNoCpy.html#a975dae3235253e829a9da94389184939":[19,7,27,23,6],
 "structMCAN__RxBufElementNoCpy.html#ab61ed974dfe13f4ff17890dd6a0c16d7":[19,7,27,23,2],
 "structMCAN__RxBufElementNoCpy.html#abf17e5b42cc045d83498a67c39236d92":[19,7,27,23,1],
-"structMCAN__RxBufElementNoCpy.html#ac0592cf392c66c57911861b47d336857":[19,7,27,23,5],
-"structMCAN__RxBufElementNoCpy.html#af36e8fbf3e125a227a60257da4af0b6b":[19,7,27,23,4],
-"structMCAN__RxFIFOStatus.html":[19,7,27,11],
-"structMCAN__RxFIFOStatus.html#a7bbfc22d6d9e4cfe45eed174eb39b751":[19,7,27,11,2],
-"structMCAN__RxFIFOStatus.html#a8e6ca48c7f598cb4edcd83f5b3d1103b":[19,7,27,11,3],
-"structMCAN__RxFIFOStatus.html#aafa27cab9d69161e127b3106b532deb4":[19,7,27,11,5],
-"structMCAN__RxFIFOStatus.html#af2039ca07999b0d5277850d9fefe9253":[19,7,27,11,4],
-"structMCAN__RxFIFOStatus.html#afcf2259df9e02fd4d43d0f42d3991f29":[19,7,27,11,1],
-"structMCAN__RxFIFOStatus.html#aff39d7139a60efedf785d57726533512":[19,7,27,11,0],
-"structMCAN__RxNewDataStatus.html":[19,7,27,10]
+"structMCAN__RxBufElementNoCpy.html#ac0592cf392c66c57911861b47d336857":[19,7,27,23,5]
 };

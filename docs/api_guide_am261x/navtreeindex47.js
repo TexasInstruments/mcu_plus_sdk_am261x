@@ -1,5 +1,14 @@
 var NAVTREEINDEX47 =
 {
+"group__ENET__RM__API.html":[19,4,0,8],
+"group__ENET__RM__API.html#ga3dc0180310e795d3bca94290796ede95":[19,4,0,8,17],
+"group__ENET__RM__API.html#ga595c5a08b488b4ab0d3989be2953ddee":[19,4,0,8,15],
+"group__ENET__RM__API.html#ga6a12a5e26f1cbda3989a7650fc655eeb":[19,4,0,8,18],
+"group__ENET__RM__API.html#ga7346fb5cd845c1e69f4eb10ec9e90282":[19,4,0,8,20],
+"group__ENET__RM__API.html#ga7b4dc0ecf69d4cb3cbe8d345ad89f520":[19,4,0,8,21],
+"group__ENET__RM__API.html#gaa2b21a71007169a8d1bb36b29e24568d":[19,4,0,8,14],
+"group__ENET__RM__API.html#gaaa28c4ad45ad638459173dc608ddc906":[19,4,0,8,22],
+"group__ENET__RM__API.html#gab275f4c218b8a5e44ae4a4ed884d7dad":[19,4,0,8,19],
 "group__ENET__RM__API.html#gac02d13a16dd62cf7c9e53a82eec45a55":[19,4,0,8,16],
 "group__ENET__RM__API.html#gga7b4dc0ecf69d4cb3cbe8d345ad89f520a14b1a2eb44a65b58194225d876b8e6f1":[19,4,0,8,21,6],
 "group__ENET__RM__API.html#gga7b4dc0ecf69d4cb3cbe8d345ad89f520a695066a53798e9eb7b6dabc895d844bf":[19,4,0,8,21,0],
@@ -240,14 +249,5 @@ var NAVTREEINDEX47 =
 "group__KERNEL__DPL__HEAP.html#ga04347e42bf449ca71b1a3babe1e1f5f5":[19,2,7,10],
 "group__KERNEL__DPL__HEAP.html#ga1351fc36530e348ee85e68a23f36e9a9":[19,2,7,4],
 "group__KERNEL__DPL__HEAP.html#ga50ee8d4828f2b9be907e0778876b599c":[19,2,7,8],
-"group__KERNEL__DPL__HEAP.html#ga6261cb76788cc3cbaec7e4f24a323f65":[19,2,7,5],
-"group__KERNEL__DPL__HEAP.html#ga76345d600df5a0141fd48e4f174ebfd6":[19,2,7,11],
-"group__KERNEL__DPL__HEAP.html#gaab44bd69df87e85cdeb13b9eeb3a20f4":[19,2,7,9],
-"group__KERNEL__DPL__HEAP.html#gaf3adf5f62778f477a13ca7993fc1a306":[19,2,7,6],
-"group__KERNEL__DPL__HWI.html":[19,2,6],
-"group__KERNEL__DPL__HWI.html#ga168008b24252f953ec6ffb5ce3941e2e":[19,2,6,10],
-"group__KERNEL__DPL__HWI.html#ga1f04daa5527319e9807bff06848837ad":[19,2,6,21],
-"group__KERNEL__DPL__HWI.html#ga2038ae2b7b264bf3ad8b68a9a117ad20":[19,2,6,13],
-"group__KERNEL__DPL__HWI.html#ga2ca0b83768d219289389fa39b9228174":[19,2,6,20],
-"group__KERNEL__DPL__HWI.html#ga33a1cf89e3a921c81e8b28fdc8e29534":[19,2,6,22]
+"group__KERNEL__DPL__HEAP.html#ga6261cb76788cc3cbaec7e4f24a323f65":[19,2,7,5]
 };

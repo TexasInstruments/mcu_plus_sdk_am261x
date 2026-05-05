@@ -1,5 +1,14 @@
 var NAVTREEINDEX62 =
 {
+"structEnetRm__ResPrms.html#ab3e6e5e694a5a18f06347d502a9c3b5a":[19,4,0,8,1,1],
+"structEnetRm__ResPrms.html#aef5c0203b0c02afc893b6adfc6b754e7":[19,4,0,8,1,0],
+"structEnetRm__ResourceInfo.html":[19,4,0,8,0],
+"structEnetRm__ResourceInfo.html#a0a549dc877888817d6aee43713be5cb0":[19,4,0,8,0,4],
+"structEnetRm__ResourceInfo.html#a1018833da2e0120f2d3a00320704f507":[19,4,0,8,0,0],
+"structEnetRm__ResourceInfo.html#a94354ed8c2c70f99a9b8e89f374480af":[19,4,0,8,0,6],
+"structEnetRm__ResourceInfo.html#a9ef765ed82439a8b68b464d31f462d12":[19,4,0,8,0,5],
+"structEnetRm__ResourceInfo.html#aca13bcc9d04dbc098caaf26c85c5b62b":[19,4,0,8,0,3],
+"structEnetRm__ResourceInfo.html#adbbe5905f0481575d6175963e888ec0e":[19,4,0,8,0,1],
 "structEnetRm__ResourceInfo.html#aed6a2ca6840471e320d24dc40060e65a":[19,4,0,8,0,2],
 "structEnetTas__ConfigStatus.html":[19,4,0,10,4],
 "structEnetTas__ConfigStatus.html#a78eddac209d9894138d1da3864fe5ca5":[19,4,0,10,4,3],
@@ -240,14 +249,5 @@ var NAVTREEINDEX62 =
 "structGPMC__HwAttrs.html#acd3337795dc34672f10149f4d6ba2e07":[19,7,16,6,1],
 "structGPMC__HwAttrs.html#ad7ab96009c29ec8f49b55d6707278c36":[19,7,16,6,16],
 "structGPMC__HwAttrs.html#ae22c3c5ec843b9bbfac0f67c53d8437a":[19,7,16,6,0],
-"structGPMC__HwAttrs.html#ae25e9320a8df4011bcd84baa6d0b1c53":[19,7,16,6,6],
-"structGPMC__HwAttrs.html#ae722cea92e148aaf135a9bedd15053dd":[19,7,16,6,12],
-"structGPMC__HwAttrs.html#afa7a1d76f13bc6c18ee6f988057e4c6a":[19,7,16,6,5],
-"structGPMC__Object.html":[19,7,16,4],
-"structGPMC__Object.html#a11a051e0fad042034419169f032ee06c":[19,7,16,4,7],
-"structGPMC__Object.html#a4813bf46af45f70399153e5844b692bf":[19,7,16,4,1],
-"structGPMC__Object.html#a5e4976f474768f1232a7e1f238130bfe":[19,7,16,4,3],
-"structGPMC__Object.html#a7ed302507db21ce75f485e2780976c8e":[19,7,16,4,6],
-"structGPMC__Object.html#a85e6593fce3ff02231922361cb0507c7":[19,7,16,4,4],
-"structGPMC__Object.html#aa7aeeb8473721be27a0d01a40cd94f23":[19,7,16,4,5]
+"structGPMC__HwAttrs.html#ae25e9320a8df4011bcd84baa6d0b1c53":[19,7,16,6,6]
 };

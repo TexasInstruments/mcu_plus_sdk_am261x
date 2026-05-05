@@ -1,5 +1,14 @@
 var NAVTREEINDEX56 =
 {
+"group__xtimer.html#ga11d3c07d2416c716b9f7085a34b22718":[19,12,7,11],
+"group__xtimer.html#ga180da4013d4991c18670dba87e3fbbdc":[19,12,7,10],
+"group__xtimer.html#ga353ad58661f7644bc869e7cc7dcad348":[19,12,7,2],
+"group__xtimer.html#ga4bc758674e272e2bd5f09b3f98e3072d":[19,12,7,5],
+"group__xtimer.html#ga56800a5282c87ea92285fc9dae932045":[19,12,7,6],
+"group__xtimer.html#ga6499845dd630ec4b8fa6481fd5ececaf":[19,12,7,4],
+"group__xtimer.html#ga66b800b2d510e43140cfdc09ce6fbd2a":[19,12,7,13],
+"group__xtimer.html#ga77103a3b5061fabe426484673e966ed5":[19,12,7,16],
+"group__xtimer.html#ga773bfd9aa45ad5e1ff7544db00ff9fc8":[19,12,7,9],
 "group__xtimer.html#ga86ddbf3949826e5ec36dd1bd16b1ec6a":[19,12,7,14],
 "group__xtimer.html#ga90b57457df52a746ee968b4f34bd3760":[19,12,7,12],
 "group__xtimer.html#ga91ea8075e67d5caefd0334d0ddc8f654":[19,12,7,7],
@@ -8,8 +17,8 @@ var NAVTREEINDEX56 =
 "group__xtimer.html#gabc716d68e28b749deb531c1a4bd49742":[19,12,7,3],
 "group__xtimer.html#gad69eb8f53037632c4cdefb4ba1c19e3b":[19,12,7,17],
 "group__xtimer.html#gae4233d0f78b7d372c7802ef76ad4784a":[19,12,7,15],
-"index.html":[],
 "index.html":[0],
+"index.html":[],
 "index.html#autotoc_md0":[0,0],
 "index.html#autotoc_md1":[0,1],
 "index.html#autotoc_md2":[0,2],
@@ -240,14 +249,5 @@ var NAVTREEINDEX56 =
 "structCANFD__OpenParams.html#a31dab67e9194590591ca61a14d977dbb":[19,7,2,14,6],
 "structCANFD__OpenParams.html#a3b579e92204b6466211f708820957731":[19,7,2,14,24],
 "structCANFD__OpenParams.html#a3e90b47db78961da85931a0ce202ccaa":[19,7,2,14,20],
-"structCANFD__OpenParams.html#a3f9a2109448e569472e07c2351b251d2":[19,7,2,14,13],
-"structCANFD__OpenParams.html#a4573ffda4ec230c5104db73df81002ba":[19,7,2,14,26],
-"structCANFD__OpenParams.html#a6015b28cab4113f4e90cb6f6c987249e":[19,7,2,14,11],
-"structCANFD__OpenParams.html#a605166451798701f755e70a44184f7ad":[19,7,2,14,3],
-"structCANFD__OpenParams.html#a63bc4f319cbb6a679e84dac046733068":[19,7,2,14,5],
-"structCANFD__OpenParams.html#a6b71cff5f6027a349386347fd4c94c7d":[19,7,2,14,15],
-"structCANFD__OpenParams.html#a6e3787c86a445bb47dd98f75d3bd9df4":[19,7,2,14,16],
-"structCANFD__OpenParams.html#a71a9807602b8801f00b1f874f6c3875f":[19,7,2,14,2],
-"structCANFD__OpenParams.html#a9736d7aed21eb1161e04d8a4f2dd74e7":[19,7,2,14,1],
-"structCANFD__OpenParams.html#a98d6f0fc28a12e2b0dc5d6a5cb58b317":[19,7,2,14,7]
+"structCANFD__OpenParams.html#a3f9a2109448e569472e07c2351b251d2":[19,7,2,14,13]
 };

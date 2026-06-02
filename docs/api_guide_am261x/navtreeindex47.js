@@ -1,5 +1,15 @@
 var NAVTREEINDEX47 =
 {
+"group__ENET__PKTUTILS__API.html#ggae0668f1495e7a0382b12802e67a34f4aaf47582b39dac582d30739ee666d94d1c":[19,4,0,0,1,19,2],
+"group__ENET__QUEUE__API.html":[19,4,0,7],
+"group__ENET__QUEUE__API.html#ga2defbccd8b3fb4946d7efa27aa388093":[19,4,0,7,6],
+"group__ENET__QUEUE__API.html#ga853be8d2d06ab2b6556b83a5bbdaf518":[19,4,0,7,4],
+"group__ENET__QUEUE__API.html#ga90afc98eac65b541962b85a6267a291d":[19,4,0,7,9],
+"group__ENET__QUEUE__API.html#ga9ff6b56be1481b2a065ae4b814aab519":[19,4,0,7,7],
+"group__ENET__QUEUE__API.html#gaa9f0bb4a386f1034211b565800f3efb9":[19,4,0,7,2],
+"group__ENET__QUEUE__API.html#gab4ba83c5a872f727387201b24fb9a8ba":[19,4,0,7,5],
+"group__ENET__QUEUE__API.html#gaf9cde31ea1e2d76b2a048db9b5a335bd":[19,4,0,7,8],
+"group__ENET__QUEUE__API.html#gafeaecbe62f803663fd2b1356e814f1eb":[19,4,0,7,3],
 "group__ENET__RM__API.html":[19,4,0,8],
 "group__ENET__RM__API.html#ga3dc0180310e795d3bca94290796ede95":[19,4,0,8,17],
 "group__ENET__RM__API.html#ga595c5a08b488b4ab0d3989be2953ddee":[19,4,0,8,15],
@@ -239,15 +249,5 @@ var NAVTREEINDEX47 =
 "group__KERNEL__DPL__DEBUG.html#gafe348ab5badd2c15118f95e21bb192c6":[19,2,4,16],
 "group__KERNEL__DPL__EVENT.html":[19,2,5],
 "group__KERNEL__DPL__EVENT.html#ga1862bf85d3f7e9ff0dfafa22e2da2fe4":[19,2,5,4],
-"group__KERNEL__DPL__EVENT.html#ga3ebf3093b25a2a3036ef20f5224c69cc":[19,2,5,3],
-"group__KERNEL__DPL__EVENT.html#ga49665ab39513aebef09c689c6e1c34cd":[19,2,5,2],
-"group__KERNEL__DPL__EVENT.html#gae4b3c278316a067d41e141591630e594":[19,2,5,1],
-"group__KERNEL__DPL__EVENT.html#gafc3f4a27c2889586c62ad25508f86275":[19,2,5,5],
-"group__KERNEL__DPL__EVENT.html#gafca8272287bdaa6a6e5cc7b29f52105e":[19,2,5,0],
-"group__KERNEL__DPL__HEAP.html":[19,2,7],
-"group__KERNEL__DPL__HEAP.html#ga01535a563dd2ff463e392b4a3182fca9":[19,2,7,7],
-"group__KERNEL__DPL__HEAP.html#ga04347e42bf449ca71b1a3babe1e1f5f5":[19,2,7,10],
-"group__KERNEL__DPL__HEAP.html#ga1351fc36530e348ee85e68a23f36e9a9":[19,2,7,4],
-"group__KERNEL__DPL__HEAP.html#ga50ee8d4828f2b9be907e0778876b599c":[19,2,7,8],
-"group__KERNEL__DPL__HEAP.html#ga6261cb76788cc3cbaec7e4f24a323f65":[19,2,7,5]
+"group__KERNEL__DPL__EVENT.html#ga3ebf3093b25a2a3036ef20f5224c69cc":[19,2,5,3]
 };

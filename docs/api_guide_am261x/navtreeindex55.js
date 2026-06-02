@@ -1,5 +1,15 @@
 var NAVTREEINDEX55 =
 {
+"group__network.html":[19,12,1],
+"group__network.html#ga0067e127e100f1653d8a56a551c0f59c":[19,12,1,13],
+"group__network.html#ga032972550105a317bc59f613235f90c4":[19,12,1,19],
+"group__network.html#ga05ec7984ff60fe24f84325828c575087":[19,12,1,8],
+"group__network.html#ga06521e23292981b8b54a6296d698014c":[19,12,1,45],
+"group__network.html#ga084eec045b6cd86ad6e3dfd7c6023c9d":[19,12,1,10],
+"group__network.html#ga10f9b2e647aeef3be82f4bcb710c5e26":[19,12,1,69],
+"group__network.html#ga13087ae9a14a52debcc32412fee89d12":[19,12,1,57],
+"group__network.html#ga1dc11690d3fcce01b5fc1b0507589aa1":[19,12,1,48],
+"group__network.html#ga28b7d7ad6f3c58f9c9dfc8203682ddaf":[19,12,1,3],
 "group__network.html#ga29336a9db91d4edf47d094a414b36666":[19,12,1,5],
 "group__network.html#ga29441e53411f74f52ae8071c182fc0a8":[19,12,1,6],
 "group__network.html#ga35498e7d305ccd68e981ed2a2e21a86e":[19,12,1,15],
@@ -239,15 +249,5 @@ var NAVTREEINDEX55 =
 "group__unibase__macros.html#gac11a34967d24748090381e7fa4b7cb6e":[19,10,7,44],
 "group__unibase__macros.html#gac39981641e59b1dc6a97073fc50dfdc7":[19,10,7,47],
 "group__unibase__macros.html#gacf9a04d6aa3370592d09d0c81bd59f23":[19,10,7,17],
-"group__unibase__macros.html#gad052b9e1f7458a222840f9bae5706c12":[19,10,7,10],
-"group__unibase__macros.html#gad903fac8be9cc3549b3c367bc905a9fa":[19,10,7,33],
-"group__unibase__macros.html#gadf419dd59fd41a7600ea89f27929a059":[19,10,7,40],
-"group__unibase__macros.html#gae1788071e1d319888f7418fe949d3c31":[19,10,7,52],
-"group__unibase__macros.html#gae7e40a4663459d8c189b5bf7a72fb15b":[19,10,7,4],
-"group__unibase__macros.html#gae8de01dee2ddb7e5d116f5b44e6f8a20":[19,10,7,36],
-"group__unibase__macros.html#gaed7e8c3f2dbc6d39f91b9be5bddc1650":[19,10,7,39],
-"group__unibase__macros.html#gaee1f77db18f5a1e944176a105fcac5c1":[19,10,7,53],
-"group__unibase__macros.html#gaf3472a596d8f1f295b749cd71f6ef116":[19,10,7,56],
-"group__unibase__macros.html#gafca22e1e911d4cc459fa1f86cea8c664":[19,10,7,43],
-"group__xtimer.html":[19,12,7]
+"group__unibase__macros.html#gad052b9e1f7458a222840f9bae5706c12":[19,10,7,10]
 };

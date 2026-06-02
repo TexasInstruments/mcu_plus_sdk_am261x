@@ -1,5 +1,15 @@
 var NAVTREEINDEX44 =
 {
+"group__DRV__SOC__XBAR__MODULE.html#gaad753677ce1bb768961fedd511c5a834":[19,7,41,1,8],
+"group__DRV__SOC__XBAR__MODULE.html#gaae8517f12226659eaefc360800bd9685":[19,7,41,1,15],
+"group__DRV__SOC__XBAR__MODULE.html#gab969c1e40742362c35f16d4b391e67dc":[19,7,41,1,33],
+"group__DRV__SOC__XBAR__MODULE.html#gabac0e46886c495bf63cfc7bfaea5b6c3":[19,7,41,1,18],
+"group__DRV__SOC__XBAR__MODULE.html#gabb1432ac16e6db1b519e7bc94dce2798":[19,7,41,1,23],
+"group__DRV__SOC__XBAR__MODULE.html#gabf4603868550a1eaba9c276fb81b470c":[19,7,41,1,29],
+"group__DRV__SOC__XBAR__MODULE.html#gaca288504be925c81ba48c86ebca0cf49":[19,7,41,1,9],
+"group__DRV__SOC__XBAR__MODULE.html#gad37b502083d96151a3dc0f73ee63dd38":[19,7,41,1,37],
+"group__DRV__SOC__XBAR__MODULE.html#gaf582488b6579603db5fcc74d10928b78":[19,7,41,1,38],
+"group__DRV__SOC__XBAR__MODULE.html#gaf8e07a1b6e7f74d7b54cafe82dddbe99":[19,7,41,1,5],
 "group__DRV__SPINLOCK__MODULE.html":[19,7,42],
 "group__DRV__SPINLOCK__MODULE.html#ga087cba22301176f92bd374a9fcedcdc6":[19,7,42,5],
 "group__DRV__SPINLOCK__MODULE.html#ga6905b94613cfa60a61683b510423eee7":[19,7,42,3],
@@ -239,15 +249,5 @@ var NAVTREEINDEX44 =
 "group__ENET__CPDMA__API.html#ga0896d7a8995f21b2879c53293b244617":[19,4,0,0,0,17],
 "group__ENET__CPDMA__API.html#ga0b1706985ca88d1a3a68e3371eb740eb":[19,4,0,0,0,30],
 "group__ENET__CPDMA__API.html#ga0c0d47537a71c73896854b0ca574443a":[19,4,0,0,0,3],
-"group__ENET__CPDMA__API.html#ga0ed10e6f45b46136e8f6bf86be48a88c":[19,4,0,0,0,12],
-"group__ENET__CPDMA__API.html#ga1cbbdb88c4e58050a652fc7f8336820e":[19,4,0,0,0,18],
-"group__ENET__CPDMA__API.html#ga1da1ea0cf0192e52a4592a779c4e123e":[19,4,0,0,0,22],
-"group__ENET__CPDMA__API.html#ga202a03d0b80679daa1d429ade64f7f57":[19,4,0,0,0,21],
-"group__ENET__CPDMA__API.html#ga31ba7e88c22fe277672cb814c7641a84":[19,4,0,0,0,23],
-"group__ENET__CPDMA__API.html#ga51df0779f92bb1f2603c8d80491d888d":[19,4,0,0,0,31],
-"group__ENET__CPDMA__API.html#ga531f254c7e223a5ccb5e90fea7c0942b":[19,4,0,0,0,14],
-"group__ENET__CPDMA__API.html#ga5618735c90f1fecca767e84be9fcd376":[19,4,0,0,0,20],
-"group__ENET__CPDMA__API.html#ga5cbba8b723331633c02cf58a47844e15":[19,4,0,0,0,29],
-"group__ENET__CPDMA__API.html#ga6a35e23def97939896888e2a607ad83f":[19,4,0,0,0,15],
-"group__ENET__CPDMA__API.html#ga6dafefe8d28e0aa4c1fc8bde1adcc671":[19,4,0,0,0,24]
+"group__ENET__CPDMA__API.html#ga0ed10e6f45b46136e8f6bf86be48a88c":[19,4,0,0,0,12]
 };

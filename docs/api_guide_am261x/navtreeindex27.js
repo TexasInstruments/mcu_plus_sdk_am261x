@@ -1,5 +1,14 @@
 var NAVTREEINDEX27 =
 {
+"group__DRV__EDMA__MODULE.html#gacf6ed01cdf13bb5455eba742c1322c56":[19,7,6,79],
+"group__DRV__EDMA__MODULE.html#gacfaeeefbff827d62fe36280e8c0d1415":[19,7,6,61],
+"group__DRV__EDMA__MODULE.html#gad089108aff703012cddcf0d2d107d8b2":[19,7,6,146],
+"group__DRV__EDMA__MODULE.html#gad0e631de990982eff6af00cdc0d76019":[19,7,6,106],
+"group__DRV__EDMA__MODULE.html#gad2ad2f456b245009e17937a59fe162d3":[19,7,6,139],
+"group__DRV__EDMA__MODULE.html#gad325d436c6b1b649127f715c59114bc8":[19,7,6,151],
+"group__DRV__EDMA__MODULE.html#gad511bf305bf3d006e46a835a54d860f3":[19,7,6,127],
+"group__DRV__EDMA__MODULE.html#gad623a40441c806801f188253c7dc36e2":[19,7,6,27],
+"group__DRV__EDMA__MODULE.html#gad62f95a05a95794b2da2b69a7c3822a7":[19,7,6,20],
 "group__DRV__EDMA__MODULE.html#gad85f81d9075dbf8b170c9370013ec671":[19,7,6,94],
 "group__DRV__EDMA__MODULE.html#gad9e994945f256b3bc47c36819c03475d":[19,7,6,16],
 "group__DRV__EDMA__MODULE.html#gada8e3d9abc562f933bc92211438d0207":[19,7,6,98],
@@ -240,14 +249,5 @@ var NAVTREEINDEX27 =
 "group__DRV__ENET__ICSSG.html#gac96303aa5de2bdd37739169defac442e":[19,4,0,6,1,107],
 "group__DRV__ENET__ICSSG.html#gacccd19022013c085d2ce5fa5b21d5d30":[19,4,0,6,1,86],
 "group__DRV__ENET__ICSSG.html#gad06350c2533719edce8acef02632dc4b":[19,4,0,6,1,121],
-"group__DRV__ENET__ICSSG.html#gad1d054a25daffd57e07a16d50ef3b59a":[19,4,0,6,1,94],
-"group__DRV__ENET__ICSSG.html#gad26de49aaf884275ea7f6ca101a61086":[19,4,0,6,1,116],
-"group__DRV__ENET__ICSSG.html#gad4c7d6da7240f8423d9f891f427d09da":[19,4,0,6,1,69],
-"group__DRV__ENET__ICSSG.html#gad5321099e3feb57f677a351472ad84e8":[19,4,0,6,1,31],
-"group__DRV__ENET__ICSSG.html#gad75c8f521b22b64a833b65e03e89eb99":[19,4,0,6,1,59],
-"group__DRV__ENET__ICSSG.html#gad7809b961fb7400a030511e19d770801":[19,4,0,6,1,32],
-"group__DRV__ENET__ICSSG.html#gad99b2290cf29654a9f087396f768490c":[19,4,0,6,1,38],
-"group__DRV__ENET__ICSSG.html#gadb5c32cc150f92ec93764e4e69953fac":[19,4,0,6,1,93],
-"group__DRV__ENET__ICSSG.html#gadb5d05483090fb2e32624224256da29b":[19,4,0,6,1,109],
-"group__DRV__ENET__ICSSG.html#gadb9b1933c250f63c689878f987c13cee":[19,4,0,6,1,66]
+"group__DRV__ENET__ICSSG.html#gad1d054a25daffd57e07a16d50ef3b59a":[19,4,0,6,1,94]
 };

@@ -18,7 +18,7 @@ var DRIVERS_LIN_PAGE =
         [ "DMA Support", "DRIVERS_LIN_V0_LLD_PAGE.html#autotoc_md977", null ],
         [ "Interrupt Management", "DRIVERS_LIN_V0_LLD_PAGE.html#autotoc_md978", null ],
         [ "Message filtering", "DRIVERS_LIN_V0_LLD_PAGE.html#autotoc_md979", [
-          [ "Overview of APIs", "COMPONENT_PRU_GUIDE_PROG.html#autotoc_md3771", null ],
+          [ "Overview of APIs", "COMPONENT_PRU_GUIDE_PROG.html#autotoc_md3780", null ],
           [ "PRU-ICSS", "SENT_DESIGN.html#autotoc_md267", null ],
           [ "Filter Example", "DRIVERS_LIN_V0_LLD_PAGE.html#autotoc_md980", null ]
         ] ],

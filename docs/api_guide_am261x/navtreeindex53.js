@@ -1,5 +1,15 @@
 var NAVTREEINDEX53 =
 {
+"group__SDL__STOG__API.html#ga26f194a1f35736fd536a394ead806f6e":[19,6,11,0,16],
+"group__SDL__STOG__API.html#ga2b69395279a122023ad0aa802b020cec":[19,6,11,0,17],
+"group__SDL__STOG__API.html#ga2ed06b3b1434492f64dfae45ad51d0ba":[19,6,11,0,18],
+"group__SDL__STOG__API.html#ga322bc82fec68b934b055f39397385be1":[19,6,11,0,7],
+"group__SDL__STOG__API.html#ga3bbb563689b65df2d086f2afbcadd629":[19,6,11,0,8],
+"group__SDL__STOG__API.html#ga3d0a9a1bd7b6734d6c4cac47df966962":[19,6,11,0,13],
+"group__SDL__STOG__API.html#ga4d57415533ec33b1953bc4a7ec8d2a4b":[19,6,11,0,14],
+"group__SDL__STOG__API.html#ga86c2ac4742814c784c6a5a42b877ef8c":[19,6,11,0,12],
+"group__SDL__STOG__API.html#gac91bf36f457564b0c3958b8cd740e2d0":[19,6,11,0,5],
+"group__SDL__STOG__API.html#gad0def847343bbac55234a7d554beb5a3":[19,6,11,0,19],
 "group__SDL__STOG__API.html#gad6bf3502b3b7a30d45c7f5ea8e97751c":[19,6,11,0,10],
 "group__SDL__STOG__API.html#gae4fa14e609f53c1eda392e6d799ea4cd":[19,6,11,0,20],
 "group__SDL__STOG__API.html#gaebe110f9b9693e7078f962864eab482b":[19,6,11,0,11],
@@ -239,15 +249,5 @@ var NAVTREEINDEX53 =
 "group__gadget__notif__grp.html#gadcfc1c10307e81ee3690790c79a87a23":[19,7,47,0,3,2],
 "group__gadget__notif__grp.html#gae7d8a7fdcf899ef08d959058d30f9f37":[19,7,47,0,3,0],
 "group__gadget__notif__grp.html#gae90cce6d223c8e0f401d7ae0830150cb":[19,7,47,0,3,5],
-"group__gadget__notif__grp.html#gaf1d0f459f59b1f0b4f1739a9a7ebd82d":[19,7,47,0,3,4],
-"group__gptp.html":[19,9,0],
-"group__gptp.html#ga09965e7711176dc0b51dadadeb75fbdf":[19,9,0,14],
-"group__gptp.html#ga0e85031488e9ee2451158be6d9deb243":[19,9,0,16],
-"group__gptp.html#ga175f0a00bc23352b71514f0ebc21bdb5":[19,9,0,19],
-"group__gptp.html#ga1e6c901b46968056e2fc187372da3789":[19,9,0,15],
-"group__gptp.html#ga1f1a6802c9b4dd594de0dc8fc2b09658":[19,9,0,29],
-"group__gptp.html#ga4b296eb305dcf823e49332ba92b7b697":[19,9,0,25],
-"group__gptp.html#ga4c5f9d9ed9bcb59b1b0d96fa7d081dbe":[19,9,0,42],
-"group__gptp.html#ga54422393cb7ad505834e7589d890087e":[19,9,0,21],
-"group__gptp.html#ga67a9607f4038dc2327d8e64918e2864b":[19,9,0,39]
+"group__gadget__notif__grp.html#gaf1d0f459f59b1f0b4f1739a9a7ebd82d":[19,7,47,0,3,4]
 };

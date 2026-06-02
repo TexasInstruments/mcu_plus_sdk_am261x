@@ -1,5 +1,15 @@
 var NAVTREEINDEX66 =
 {
+"structLIN__Config.html#ad04200eabd60c596feac0779aae07ced":[19,7,23,8,1],
+"structLIN__HwAttrs.html":[19,7,23,1],
+"structLIN__HwAttrs.html#a1f2ae75cf63d583de1498f703f529238":[19,7,23,1,2],
+"structLIN__HwAttrs.html#a1f3475ca30774179931c4be1f3df1811":[19,7,23,1,4],
+"structLIN__HwAttrs.html#a23835bcdc939313ba3ab407b42589f98":[19,7,23,1,0],
+"structLIN__HwAttrs.html#a545d11c5b12af98da0f30fdc43bb9d37":[19,7,23,1,5],
+"structLIN__HwAttrs.html#a594d0fefc6ed5580c760a1f0516d2809":[19,7,23,1,7],
+"structLIN__HwAttrs.html#a60911ead02b7782a61b6f580134556e9":[19,7,23,1,9],
+"structLIN__HwAttrs.html#a816ef58cb33ee1d8f8e7416d310b11d1":[19,7,23,1,6],
+"structLIN__HwAttrs.html#a9103951d959ed62ea2302d25db29bc84":[19,7,23,1,1],
 "structLIN__HwAttrs.html#aaefb44ec0d8615d1de7e9d5c5da023a5":[19,7,23,1,8],
 "structLIN__HwAttrs.html#abce59f7449c4f6b1538167f1f20f617e":[19,7,23,1,3],
 "structLIN__LinConfigParams.html":[19,7,23,5],
@@ -239,15 +249,5 @@ var NAVTREEINDEX66 =
 "structMCAN__RxBufElement.html#a64d77443d3d0209bfae744e72f31ddf4":[19,7,27,22,1],
 "structMCAN__RxBufElement.html#a67eae427878afe8d599402372f59705e":[19,7,27,22,2],
 "structMCAN__RxBufElement.html#ad503be04598fa84204da03530a09ebac":[19,7,27,22,5],
-"structMCAN__RxBufElementNoCpy.html":[19,7,27,23],
-"structMCAN__RxBufElementNoCpy.html#a4efa2e1f65e69f428afd9fc22f50521b":[19,7,27,23,3],
-"structMCAN__RxBufElementNoCpy.html#a621e16ced16360d0d2c31cf31c448d39":[19,7,27,23,0],
-"structMCAN__RxBufElementNoCpy.html#a77ed659a6743b36ddb1bf69bbcd588b5":[19,7,27,23,8],
-"structMCAN__RxBufElementNoCpy.html#a7b549ea55c0893379128dc8fdee9b426":[19,7,27,23,7],
-"structMCAN__RxBufElementNoCpy.html#a7e7993d89dfb6b418aeb6f5b7db2646a":[19,7,27,23,10],
-"structMCAN__RxBufElementNoCpy.html#a952c8ef35ffa53644635ad0e3072e1df":[19,7,27,23,9],
-"structMCAN__RxBufElementNoCpy.html#a975dae3235253e829a9da94389184939":[19,7,27,23,6],
-"structMCAN__RxBufElementNoCpy.html#ab61ed974dfe13f4ff17890dd6a0c16d7":[19,7,27,23,2],
-"structMCAN__RxBufElementNoCpy.html#abf17e5b42cc045d83498a67c39236d92":[19,7,27,23,1],
-"structMCAN__RxBufElementNoCpy.html#ac0592cf392c66c57911861b47d336857":[19,7,27,23,5]
+"structMCAN__RxBufElementNoCpy.html":[19,7,27,23]
 };

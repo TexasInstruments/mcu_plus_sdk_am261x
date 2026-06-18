@@ -1,25 +1,25 @@
 var DRIVERS_OSPI_PAGE =
 [
     [ "OSPI High Level Driver", "DRIVERS_OSPI_HLD_PAGE.html", [
-      [ "Features Supported", "DRIVERS_OSPI_HLD_PAGE.html#autotoc_md1084", null ],
-      [ "SysConfig Features", "DRIVERS_OSPI_HLD_PAGE.html#autotoc_md1085", null ],
-      [ "OSPI Phy Tuning Algorithm", "DRIVERS_OSPI_HLD_PAGE.html#autotoc_md1086", null ],
+      [ "Features Supported", "DRIVERS_OSPI_HLD_PAGE.html#autotoc_md1130", null ],
+      [ "SysConfig Features", "DRIVERS_OSPI_HLD_PAGE.html#autotoc_md1131", null ],
+      [ "OSPI Phy Tuning Algorithm", "DRIVERS_OSPI_HLD_PAGE.html#autotoc_md1132", null ],
       [ "OSPI HLD Migration Guide", "DRIVERS_OSPI_HLD_PAGE.html#OSPI_HLD_MIGRATION_GUIDE", [
-        [ "11.02.00 Changes", "DRIVERS_OSPI_HLD_PAGE.html#autotoc_md1087", null ]
+        [ "11.02.00 Changes", "DRIVERS_OSPI_HLD_PAGE.html#autotoc_md1133", null ]
       ] ],
-      [ "Features not Supported", "DRIVERS_OSPI_HLD_PAGE.html#autotoc_md1088", null ],
-      [ "Example Usage", "DRIVERS_OSPI_HLD_PAGE.html#autotoc_md1089", null ],
-      [ "API", "DRIVERS_OSPI_HLD_PAGE.html#autotoc_md1090", null ]
+      [ "Features not Supported", "DRIVERS_OSPI_HLD_PAGE.html#autotoc_md1134", null ],
+      [ "Example Usage", "DRIVERS_OSPI_HLD_PAGE.html#autotoc_md1135", null ],
+      [ "API", "DRIVERS_OSPI_HLD_PAGE.html#autotoc_md1136", null ]
     ] ],
     [ "OSPI Low Level Driver", "DRIVERS_OSPI_LLD_PAGE.html", [
-      [ "Features Supported", "DRIVERS_OSPI_LLD_PAGE.html#autotoc_md1091", null ],
-      [ "SysConfig Features", "DRIVERS_OSPI_LLD_PAGE.html#autotoc_md1092", null ],
-      [ "OSPI Phy Tuning Algorithm", "DRIVERS_OSPI_LLD_PAGE.html#autotoc_md1093", null ],
+      [ "Features Supported", "DRIVERS_OSPI_LLD_PAGE.html#autotoc_md1137", null ],
+      [ "SysConfig Features", "DRIVERS_OSPI_LLD_PAGE.html#autotoc_md1138", null ],
+      [ "OSPI Phy Tuning Algorithm", "DRIVERS_OSPI_LLD_PAGE.html#autotoc_md1139", null ],
       [ "OSPI LLD Migration Guide", "DRIVERS_OSPI_LLD_PAGE.html#OSPI_LLD_MIGRATION_GUIDE", [
-        [ "11.02.00 Changes", "DRIVERS_OSPI_LLD_PAGE.html#autotoc_md1094", null ]
+        [ "11.02.00 Changes", "DRIVERS_OSPI_LLD_PAGE.html#autotoc_md1140", null ]
       ] ],
-      [ "Features not Supported", "DRIVERS_OSPI_LLD_PAGE.html#autotoc_md1095", null ],
-      [ "Example Usage", "DRIVERS_OSPI_LLD_PAGE.html#autotoc_md1096", null ],
-      [ "API", "DRIVERS_OSPI_LLD_PAGE.html#autotoc_md1097", null ]
+      [ "Features not Supported", "DRIVERS_OSPI_LLD_PAGE.html#autotoc_md1141", null ],
+      [ "Example Usage", "DRIVERS_OSPI_LLD_PAGE.html#autotoc_md1142", null ],
+      [ "API", "DRIVERS_OSPI_LLD_PAGE.html#autotoc_md1143", null ]
     ] ]
 ];

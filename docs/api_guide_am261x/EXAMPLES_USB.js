@@ -1,68 +1,68 @@
 var EXAMPLES_USB =
 [
     [ "USB CDC Echo Example", "EXAMPLES_USB_CDC_ECHO.html", [
-      [ "Introduction", "EXAMPLES_USB_CDC_ECHO.html#autotoc_md3494", null ],
-      [ "USB Logging Template Example", "EXAMPLES_USB_CDC_ECHO.html#autotoc_md3495", null ],
+      [ "Introduction", "EXAMPLES_USB_CDC_ECHO.html#autotoc_md3540", null ],
+      [ "USB Logging Template Example", "EXAMPLES_USB_CDC_ECHO.html#autotoc_md3541", null ],
       [ "Supported Combinations", "EXAMPLES_USB_CDC_ECHO.html#EXAMPLES_USB_CDC_ECHO_EXAMPLE_COMBOS", null ],
-      [ "Steps to Run the Example", "EXAMPLES_USB_CDC_ECHO.html#autotoc_md3496", [
-        [ "Build the example", "EXAMPLES_USB_CDC_ECHO.html#autotoc_md3497", null ],
-        [ "HW Setup", "EXAMPLES_USB_CDC_ECHO.html#autotoc_md3498", [
-          [ "AM261x-LP", "EXAMPLES_USB_CDC_ECHO.html#autotoc_md3499", null ],
-          [ "AM261X-SOM", "EXAMPLES_USB_CDC_ECHO.html#autotoc_md3500", null ]
+      [ "Steps to Run the Example", "EXAMPLES_USB_CDC_ECHO.html#autotoc_md3542", [
+        [ "Build the example", "EXAMPLES_USB_CDC_ECHO.html#autotoc_md3543", null ],
+        [ "HW Setup", "EXAMPLES_USB_CDC_ECHO.html#autotoc_md3544", [
+          [ "AM261x-LP", "EXAMPLES_USB_CDC_ECHO.html#autotoc_md3545", null ],
+          [ "AM261X-SOM", "EXAMPLES_USB_CDC_ECHO.html#autotoc_md3546", null ]
         ] ],
-        [ "Run the example", "EXAMPLES_USB_CDC_ECHO.html#autotoc_md3501", [
-          [ "For Window 10", "EXAMPLES_USB_CDC_ECHO.html#autotoc_md3502", null ],
-          [ "For Linux", "EXAMPLES_USB_CDC_ECHO.html#autotoc_md3503", null ]
+        [ "Run the example", "EXAMPLES_USB_CDC_ECHO.html#autotoc_md3547", [
+          [ "For Window 10", "EXAMPLES_USB_CDC_ECHO.html#autotoc_md3548", null ],
+          [ "For Linux", "EXAMPLES_USB_CDC_ECHO.html#autotoc_md3549", null ]
         ] ]
       ] ],
-      [ "See Also", "EXAMPLES_USB_CDC_ECHO.html#autotoc_md3504", null ]
+      [ "See Also", "EXAMPLES_USB_CDC_ECHO.html#autotoc_md3550", null ]
     ] ],
     [ "USB DFU Example", "EXAMPLES_USB_DFU.html", [
-      [ "Introduction", "EXAMPLES_USB_DFU.html#autotoc_md3505", null ],
+      [ "Introduction", "EXAMPLES_USB_DFU.html#autotoc_md3551", null ],
       [ "Supported Combinations", "EXAMPLES_USB_DFU.html#EXAMPLES_USB_DFU_EXAMPLE_COMBOS", null ],
-      [ "Steps to Run the Example", "EXAMPLES_USB_DFU.html#autotoc_md3506", [
-        [ "Build the example", "EXAMPLES_USB_DFU.html#autotoc_md3507", null ],
-        [ "HW Setup", "EXAMPLES_USB_DFU.html#autotoc_md3508", [
-          [ "AM261x-LP", "EXAMPLES_USB_DFU.html#autotoc_md3509", null ],
-          [ "AM261X-SOM", "EXAMPLES_USB_DFU.html#autotoc_md3510", null ]
+      [ "Steps to Run the Example", "EXAMPLES_USB_DFU.html#autotoc_md3552", [
+        [ "Build the example", "EXAMPLES_USB_DFU.html#autotoc_md3553", null ],
+        [ "HW Setup", "EXAMPLES_USB_DFU.html#autotoc_md3554", [
+          [ "AM261x-LP", "EXAMPLES_USB_DFU.html#autotoc_md3555", null ],
+          [ "AM261X-SOM", "EXAMPLES_USB_DFU.html#autotoc_md3556", null ]
         ] ],
-        [ "Run the example", "EXAMPLES_USB_DFU.html#autotoc_md3511", null ]
+        [ "Run the example", "EXAMPLES_USB_DFU.html#autotoc_md3557", null ]
       ] ],
-      [ "See Also", "EXAMPLES_USB_DFU.html#autotoc_md3514", null ]
+      [ "See Also", "EXAMPLES_USB_DFU.html#autotoc_md3560", null ]
     ] ],
     [ "USB NCM Example", "EXAMPLES_USB_NCM.html", [
       [ "Introduction", "EXAMPLES_USB_NCM.html#INTRODUCTION_NCM", null ],
       [ "Supported Combinations", "EXAMPLES_USB_NCM.html#EXAMPLES_USB_NCM_EXAMPLE_COMBOS", null ],
-      [ "Steps to Run the Example", "EXAMPLES_USB_NCM.html#autotoc_md3515", [
-        [ "Build the example", "EXAMPLES_USB_NCM.html#autotoc_md3516", null ],
-        [ "HW Setup", "EXAMPLES_USB_NCM.html#autotoc_md3517", [
-          [ "AM261x-LP", "EXAMPLES_USB_NCM.html#autotoc_md3518", null ],
-          [ "AM261X-SOM", "EXAMPLES_USB_NCM.html#autotoc_md3519", null ]
+      [ "Steps to Run the Example", "EXAMPLES_USB_NCM.html#autotoc_md3561", [
+        [ "Build the example", "EXAMPLES_USB_NCM.html#autotoc_md3562", null ],
+        [ "HW Setup", "EXAMPLES_USB_NCM.html#autotoc_md3563", [
+          [ "AM261x-LP", "EXAMPLES_USB_NCM.html#autotoc_md3564", null ],
+          [ "AM261X-SOM", "EXAMPLES_USB_NCM.html#autotoc_md3565", null ]
         ] ],
-        [ "Run the example", "EXAMPLES_USB_NCM.html#autotoc_md3520", null ]
+        [ "Run the example", "EXAMPLES_USB_NCM.html#autotoc_md3566", null ]
       ] ],
-      [ "See Also", "EXAMPLES_USB_NCM.html#autotoc_md3522", null ]
+      [ "See Also", "EXAMPLES_USB_NCM.html#autotoc_md3568", null ]
     ] ],
     [ "USB Vendor Bulk Echo Example", "EXAMPLES_USB_VENDOR_ECHO.html", [
-      [ "Introduction", "EXAMPLES_USB_VENDOR_ECHO.html#autotoc_md3523", null ],
+      [ "Introduction", "EXAMPLES_USB_VENDOR_ECHO.html#autotoc_md3569", null ],
       [ "Supported Combinations", "EXAMPLES_USB_VENDOR_ECHO.html#EXAMPLES_USB_VENDOR_ECHO_EXAMPLE_COMBOS", null ],
-      [ "Steps to Run the Example", "EXAMPLES_USB_VENDOR_ECHO.html#autotoc_md3524", [
-        [ "Build the example", "EXAMPLES_USB_VENDOR_ECHO.html#autotoc_md3525", null ],
-        [ "HW Setup", "EXAMPLES_USB_VENDOR_ECHO.html#autotoc_md3526", [
-          [ "AM261x-LP", "EXAMPLES_USB_VENDOR_ECHO.html#autotoc_md3527", null ]
+      [ "Steps to Run the Example", "EXAMPLES_USB_VENDOR_ECHO.html#autotoc_md3570", [
+        [ "Build the example", "EXAMPLES_USB_VENDOR_ECHO.html#autotoc_md3571", null ],
+        [ "HW Setup", "EXAMPLES_USB_VENDOR_ECHO.html#autotoc_md3572", [
+          [ "AM261x-LP", "EXAMPLES_USB_VENDOR_ECHO.html#autotoc_md3573", null ]
         ] ],
-        [ "Run the example", "EXAMPLES_USB_VENDOR_ECHO.html#autotoc_md3528", [
-          [ "Install WinUSB Driver (Windows)", "EXAMPLES_USB_VENDOR_ECHO.html#autotoc_md3529", null ],
-          [ "Verify Enumeration", "EXAMPLES_USB_VENDOR_ECHO.html#autotoc_md3530", null ]
+        [ "Run the example", "EXAMPLES_USB_VENDOR_ECHO.html#autotoc_md3574", [
+          [ "Install WinUSB Driver (Windows)", "EXAMPLES_USB_VENDOR_ECHO.html#autotoc_md3575", null ],
+          [ "Verify Enumeration", "EXAMPLES_USB_VENDOR_ECHO.html#autotoc_md3576", null ]
         ] ]
       ] ],
-      [ "Testing the Example", "EXAMPLES_USB_VENDOR_ECHO.html#autotoc_md3531", [
-        [ "Prerequisites", "EXAMPLES_USB_VENDOR_ECHO.html#autotoc_md3532", [
-          [ "1. Install PyUSB", "EXAMPLES_USB_VENDOR_ECHO.html#autotoc_md3533", null ],
-          [ "2. Download libusb", "EXAMPLES_USB_VENDOR_ECHO.html#autotoc_md3534", null ]
+      [ "Testing the Example", "EXAMPLES_USB_VENDOR_ECHO.html#autotoc_md3577", [
+        [ "Prerequisites", "EXAMPLES_USB_VENDOR_ECHO.html#autotoc_md3578", [
+          [ "1. Install PyUSB", "EXAMPLES_USB_VENDOR_ECHO.html#autotoc_md3579", null ],
+          [ "2. Download libusb", "EXAMPLES_USB_VENDOR_ECHO.html#autotoc_md3580", null ]
         ] ],
-        [ "Running the Script", "EXAMPLES_USB_VENDOR_ECHO.html#autotoc_md3535", null ]
+        [ "Running the Script", "EXAMPLES_USB_VENDOR_ECHO.html#autotoc_md3581", null ]
       ] ],
-      [ "See Also", "EXAMPLES_USB_VENDOR_ECHO.html#autotoc_md3536", null ]
+      [ "See Also", "EXAMPLES_USB_VENDOR_ECHO.html#autotoc_md3582", null ]
     ] ]
 ];

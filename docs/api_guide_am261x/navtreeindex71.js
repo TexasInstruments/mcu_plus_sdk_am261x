@@ -1,5 +1,6 @@
 var NAVTREEINDEX71 =
 {
+"structSOC__RcmXTALInfo.html":[19,7,41,0,1],
 "structSOC__RcmXTALInfo.html#a938802de08fd49c75442ad59d933ec58":[19,7,41,0,1,0],
 "structSOC__RcmXTALInfo.html#aba3526bc071eab730f5be2791eba889d":[19,7,41,0,1,1],
 "structSWRev__t.html":[19,7,17,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX71 =
 "structcb__socket__lldcfg__update__t.html#a0f6f3f7e6d5a7395320278fa835951bb":[19,12,3,4,11],
 "structcb__socket__lldcfg__update__t.html#a6a243d64ed53afac13b8265a167996a2":[19,12,3,4,10],
 "structcb__socket__lldcfg__update__t.html#a76715096d9ef4c9383bccca385bc4809":[19,12,3,4,4],
-"structcb__socket__lldcfg__update__t.html#a8029fb932a4beed7b0351a268bde7b0f":[19,12,3,4,5],
-"structcb__socket__lldcfg__update__t.html#a84f92df98aa0cdd9a6776a39dccc5751":[19,12,3,4,7]
+"structcb__socket__lldcfg__update__t.html#a8029fb932a4beed7b0351a268bde7b0f":[19,12,3,4,5]
 };

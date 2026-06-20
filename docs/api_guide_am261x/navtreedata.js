@@ -212,15 +212,15 @@ var NAVTREEINDEX =
 "structEEPROM__Attrs.html",
 "structEnetPhy__State.html#abb3651617caed1c0ba14a76e728f3858",
 "structFlash__Fxns.html#a70868dc6e7f457f10ffa666ede4aea15",
-"structI2C__Params.html#a7f9942a2c6bab07474666638d0dfdc57",
-"structIcssgStats__MacPort.html#aa78d5ca211901b49b899196c7d344df5",
-"structIpcNotify__Params.html#a2cd3135e030cc2180fb7e207f3e28b6b",
-"structMCAN__MsgRAMConfigParams.html#ad8cc43864c213ec8c01880d019c095aa",
-"structMMCSDLLD__Object.html#a723cbeeb95d778249cda12c89929f6f1",
-"structPRUICSS__HwAttrs.html#ac81a10a098bc79f8d02338113b12da27",
-"structSDL__Ecc__AggrErrorInfo.html",
-"structSOC__RcmXTALInfo.html#a938802de08fd49c75442ad59d933ec58",
-"structcb__socket__lldcfg__update__t.html#a96118fb0529d13526d5b7b7cd355589c"
+"structI2C__Params.html#a56e74ffc2f1ee70f715dcb41874f153c",
+"structIcssgStats__MacPort.html#aa689102fd815057c14f08c75b0a64d12",
+"structIpcNotify__Params.html",
+"structMCAN__MsgRAMConfigParams.html#ab32e5ac58ece0ed58d47a8def44a4bbd",
+"structMMCSDLLD__Object.html#a582eaf0ff7d0c694ab2f3b9c9351baf8",
+"structPRUICSS__HwAttrs.html#abdf78bac1a248162fac07d808fbc70ba",
+"structSDL__Ecc__AggrEccRamErrorStatusInfo.html#af70392ef0b1f85b465ba7ce204e6fc3d",
+"structSOC__RcmXTALInfo.html",
+"structcb__socket__lldcfg__update__t.html#a84f92df98aa0cdd9a6776a39dccc5751"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

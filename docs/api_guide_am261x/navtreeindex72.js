@@ -1,5 +1,6 @@
 var NAVTREEINDEX72 =
 {
+"structcb__socket__lldcfg__update__t.html#a84f92df98aa0cdd9a6776a39dccc5751":[19,12,3,4,7],
 "structcb__socket__lldcfg__update__t.html#a96118fb0529d13526d5b7b7cd355589c":[19,12,3,4,13],
 "structcb__socket__lldcfg__update__t.html#a972afc863a13185e7e9195f89163e9a0":[19,12,3,4,0],
 "structcb__socket__lldcfg__update__t.html#a9b66c2172b169ae131da810371be3f53":[19,12,3,4,8],

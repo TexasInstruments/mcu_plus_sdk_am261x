@@ -193,7 +193,6 @@ var NAVTREEINDEX63 =
 "structI2CLLD__Object.html#a93ccbcbf57b875a7723c97d88cdbb9a8":[19,7,20,6,16],
 "structI2CLLD__Object.html#a954318d82fb98325fbf7d247c7d54eda":[19,7,20,6,26],
 "structI2CLLD__Object.html#aab4e7077957fd0335e5dcc74aaab8dea":[19,7,20,6,0],
-"structI2CLLD__Object.html#ab8d4a34f021e3ddb8053fa2a1f11b440":[19,7,20,6,28],
 "structI2CLLD__Object.html#ace2a05ea8e61f4f64e0d9bf72f0d4b69":[19,7,20,6,7],
 "structI2CLLD__Object.html#ad21dcae583b229de8f2aeef89f4eef4b":[19,7,20,6,14],
 "structI2CLLD__Object.html#ae69438cb3c3c2ce2abb750386dee243e":[19,7,20,6,15],
@@ -249,5 +248,6 @@ var NAVTREEINDEX63 =
 "structI2C__Object.html#ad6a25967b42125c9b81c9bd8a600b117":[19,7,19,4,9],
 "structI2C__Object.html#ada53053790f68feab247d1452cb646ab":[19,7,19,4,1],
 "structI2C__Object.html#aff386dafe5a558b55af8c556841ca4de":[19,7,19,4,11],
-"structI2C__Params.html":[19,7,19,3]
+"structI2C__Params.html":[19,7,19,3],
+"structI2C__Params.html#a56e74ffc2f1ee70f715dcb41874f153c":[19,7,19,3,1]
 };

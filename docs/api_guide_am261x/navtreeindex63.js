@@ -1,5 +1,7 @@
 var NAVTREEINDEX63 =
 {
+"structFlash__Fxns.html":[19,1,1,3],
+"structFlash__Fxns.html#a10e797df598663ad56a0de7fc97948e6":[19,1,1,3,6],
 "structFlash__Fxns.html#a188c641aa936112bf55838b157b6c75a":[19,1,1,3,5],
 "structFlash__Fxns.html#a1ea1056103cb90dffb102efc9851fa9b":[19,1,1,3,2],
 "structFlash__Fxns.html#a2a2e6bba1dc3f3b11b62e551075a87f8":[19,1,1,3,8],
@@ -247,7 +249,5 @@ var NAVTREEINDEX63 =
 "structI2C__Object.html#a76cc5a10bfabe817395d18b7de6e3202":[19,7,19,4,2],
 "structI2C__Object.html#a7923b94eff66662bf2e087943360ae89":[19,7,19,4,10],
 "structI2C__Object.html#a91311572f00321c4e09f9c7211b188d1":[19,7,19,4,3],
-"structI2C__Object.html#a926e5faed22a7e4d797a417301dd0d2f":[19,7,19,4,6],
-"structI2C__Object.html#a9c5bac93e68090c87fafc284eff18e79":[19,7,19,4,7],
-"structI2C__Object.html#ab08fd2d0ee8a59fe0a39dc636e2e50b5":[19,7,19,4,5]
+"structI2C__Object.html#a926e5faed22a7e4d797a417301dd0d2f":[19,7,19,4,6]
 };

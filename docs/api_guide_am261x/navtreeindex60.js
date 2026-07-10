@@ -1,5 +1,7 @@
 var NAVTREEINDEX60 =
 {
+"structCpswStats__MacPort__Ng.html#aa8a5338b7a5b478081f5641877f64657":[19,4,0,9,0,3,1],
+"structCpswStats__MacPort__Ng.html#aa8cd9130f2a5075470e6f06468b68f63":[19,4,0,9,0,3,62],
 "structCpswStats__MacPort__Ng.html#aaad3558548c419ed7830e66af9450a38":[19,4,0,9,0,3,43],
 "structCpswStats__MacPort__Ng.html#ac816aea0dd5bc36c0733f91ab1f355f8":[19,4,0,9,0,3,45],
 "structCpswStats__MacPort__Ng.html#ac960021c83a7464dcc17056ff0e88966":[19,4,0,9,0,3,60],
@@ -247,7 +249,5 @@ var NAVTREEINDEX60 =
 "structEDMA__ResourceObject.html#a94019f1436cf0f4bf884a0f7ca183998":[19,7,6,2,2],
 "structEDMA__ResourceObject.html#abf8ed092d73ec2af22125ee31606dccb":[19,7,6,2,1],
 "structEDMA__ResourceObject.html#ae89623e32ee872837bf4165102fdbfa2":[19,7,6,2,0],
-"structEDMA__TcErrorInfo.html":[19,7,6,5],
-"structEDMA__TcErrorInfo.html#a0117a40b50600ab80d55dbc37a243172":[19,7,6,5,0],
-"structEDMA__TcErrorInfo.html#a2be45abf9b7667e0b3fc9181754e826e":[19,7,6,5,2]
+"structEDMA__TcErrorInfo.html":[19,7,6,5]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX72 =
 {
+"structcb__rawsock__paras__t.html#ab203a597c18180542a46f67815d317b0":[19,12,1,2,8],
+"structcb__rawsock__paras__t.html#af93bcebd168a408a56d2e85ef4023077":[19,12,1,2,6],
 "structcb__socket__lldcfg__update__t.html":[19,12,3,4],
 "structcb__socket__lldcfg__update__t.html#a0f6f3f7e6d5a7395320278fa835951bb":[19,12,3,4,11],
 "structcb__socket__lldcfg__update__t.html#a6a243d64ed53afac13b8265a167996a2":[19,12,3,4,10],

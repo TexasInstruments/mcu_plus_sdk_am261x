@@ -18765,131 +18765,131 @@
     <field name="name">dthe.h</field>
     <field name="url">dthe_8h_source.html#l00078</field>
     <field name="keywords"></field>
-    <field name="text">DTHE_Return_e</field>
+    <field name="text">uint32_t DTHE_Return_t</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe.h</field>
     <field name="url">dthe_8h_source.html#l00080</field>
     <field name="keywords"></field>
-    <field name="text">DTHE_RETURN_SUCCESS U</field>
+    <field name="text"></field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe.h</field>
     <field name="url">dthe_8h_source.html#l00081</field>
     <field name="keywords"></field>
-    <field name="text">DTHE_RETURN_FAILURE U DTHE_Return_t</field>
+    <field name="text"></field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe.h</field>
-    <field name="url">dthe_8h_source.html#l00085</field>
-    <field name="keywords"></field>
-    <field name="text">DTHE_Handle</field>
-  </doc>
-  <doc>
-    <field name="type">source</field>
-    <field name="name">dthe.h</field>
-    <field name="url">dthe_8h_source.html#l00088</field>
+    <field name="url">dthe_8h_source.html#l00084</field>
     <field name="keywords"></field>
     <field name="text"></field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe.h</field>
-    <field name="url">dthe_8h_source.html#l00093</field>
+    <field name="url">dthe_8h_source.html#l00087</field>
+    <field name="keywords"></field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">dthe.h</field>
+    <field name="url">dthe_8h_source.html#l00092</field>
     <field name="keywords"></field>
     <field name="text">uint32_t caBaseAddr</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe.h</field>
-    <field name="url">dthe_8h_source.html#l00095</field>
+    <field name="url">dthe_8h_source.html#l00094</field>
     <field name="keywords"></field>
     <field name="text">uint32_t aesBaseAddr</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe.h</field>
-    <field name="url">dthe_8h_source.html#l00097</field>
+    <field name="url">dthe_8h_source.html#l00096</field>
     <field name="keywords"></field>
     <field name="text">uint32_t shaBaseAddr</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe.h</field>
-    <field name="url">dthe_8h_source.html#l00099</field>
+    <field name="url">dthe_8h_source.html#l00098</field>
     <field name="keywords"></field>
     <field name="text">uint32_t sm3BaseAddr</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe.h</field>
-    <field name="url">dthe_8h_source.html#l00101</field>
+    <field name="url">dthe_8h_source.html#l00100</field>
     <field name="keywords"></field>
     <field name="text">uint32_t sm4BaseAddr</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe.h</field>
-    <field name="url">dthe_8h_source.html#l00103</field>
+    <field name="url">dthe_8h_source.html#l00102</field>
     <field name="keywords"></field>
     <field name="text">uint32_t isOpen</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe.h</field>
-    <field name="url">dthe_8h_source.html#l00105</field>
+    <field name="url">dthe_8h_source.html#l00104</field>
     <field name="keywords"></field>
     <field name="text">uint32_t faultStatus DTHE_Attrs</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe.h</field>
-    <field name="url">dthe_8h_source.html#l00110</field>
+    <field name="url">dthe_8h_source.html#l00109</field>
     <field name="keywords"></field>
     <field name="text"></field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe.h</field>
-    <field name="url">dthe_8h_source.html#l00112</field>
+    <field name="url">dthe_8h_source.html#l00111</field>
     <field name="keywords"></field>
     <field name="text">DTHE_Attrs attrs</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe.h</field>
-    <field name="url">dthe_8h_source.html#l00115</field>
+    <field name="url">dthe_8h_source.html#l00114</field>
     <field name="keywords"></field>
     <field name="text">uint32_t dmaEnable DTHE_Config DTHE_Config gDtheConfig uint32_t gDtheConfigNum</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe.h</field>
-    <field name="url">dthe_8h_source.html#l00134</field>
+    <field name="url">dthe_8h_source.html#l00133</field>
     <field name="keywords"></field>
     <field name="text">DTHE_init</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe.h</field>
-    <field name="url">dthe_8h_source.html#l00139</field>
+    <field name="url">dthe_8h_source.html#l00138</field>
     <field name="keywords"></field>
     <field name="text">DTHE_deinit</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe.h</field>
-    <field name="url">dthe_8h_source.html#l00148</field>
+    <field name="url">dthe_8h_source.html#l00147</field>
     <field name="keywords"></field>
     <field name="text">DTHE_Handle DTHE_open uint32_t index</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe.h</field>
-    <field name="url">dthe_8h_source.html#l00158</field>
+    <field name="url">dthe_8h_source.html#l00157</field>
     <field name="keywords"></field>
     <field name="text">DTHE_Return_t DTHE_close DTHE_Handle handle</field>
   </doc>
@@ -19143,187 +19143,187 @@
     <field name="name">dthe_aes.h</field>
     <field name="url">dthe__aes_8h_source.html#l00154</field>
     <field name="keywords"></field>
-    <field name="text">DTHE_AES_Return_e</field>
+    <field name="text">uint32_t DTHE_AES_Return_t</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe_aes.h</field>
     <field name="url">dthe__aes_8h_source.html#l00156</field>
     <field name="keywords"></field>
-    <field name="text">DTHE_AES_RETURN_SUCCESS U</field>
+    <field name="text"></field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe_aes.h</field>
     <field name="url">dthe__aes_8h_source.html#l00157</field>
     <field name="keywords"></field>
-    <field name="text">DTHE_AES_RETURN_FAILURE U DTHE_AES_Return_t</field>
+    <field name="text"></field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe_aes.h</field>
-    <field name="url">dthe__aes_8h_source.html#l00184</field>
+    <field name="url">dthe__aes_8h_source.html#l00183</field>
     <field name="keywords"></field>
-    <field name="text">DTHE_AES_Params_t</field>
+    <field name="text"></field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe_aes.h</field>
-    <field name="url">dthe__aes_8h_source.html#l00187</field>
+    <field name="url">dthe__aes_8h_source.html#l00186</field>
     <field name="keywords"></field>
     <field name="text">uint32_t algoType</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe_aes.h</field>
-    <field name="url">dthe__aes_8h_source.html#l00190</field>
+    <field name="url">dthe__aes_8h_source.html#l00189</field>
     <field name="keywords"></field>
     <field name="text">uint32_t opType</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe_aes.h</field>
-    <field name="url">dthe__aes_8h_source.html#l00196</field>
+    <field name="url">dthe__aes_8h_source.html#l00195</field>
     <field name="keywords"></field>
     <field name="text">Bool useKEKMode</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe_aes.h</field>
-    <field name="url">dthe__aes_8h_source.html#l00202</field>
+    <field name="url">dthe__aes_8h_source.html#l00201</field>
     <field name="keywords"></field>
     <field name="text">uint32_t ptrKey</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe_aes.h</field>
-    <field name="url">dthe__aes_8h_source.html#l00207</field>
+    <field name="url">dthe__aes_8h_source.html#l00206</field>
     <field name="keywords"></field>
     <field name="text">uint32_t ptrKey1</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe_aes.h</field>
-    <field name="url">dthe__aes_8h_source.html#l00212</field>
+    <field name="url">dthe__aes_8h_source.html#l00211</field>
     <field name="keywords"></field>
     <field name="text">uint32_t ptrKey2</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe_aes.h</field>
-    <field name="url">dthe__aes_8h_source.html#l00217</field>
+    <field name="url">dthe__aes_8h_source.html#l00216</field>
     <field name="keywords"></field>
     <field name="text">uint8_t keyLen</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe_aes.h</field>
-    <field name="url">dthe__aes_8h_source.html#l00222</field>
+    <field name="url">dthe__aes_8h_source.html#l00221</field>
     <field name="keywords"></field>
     <field name="text">uint32_t ptrIV</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe_aes.h</field>
-    <field name="url">dthe__aes_8h_source.html#l00229</field>
+    <field name="url">dthe__aes_8h_source.html#l00228</field>
     <field name="keywords"></field>
     <field name="text">uint32_t dataLenBytes</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe_aes.h</field>
-    <field name="url">dthe__aes_8h_source.html#l00242</field>
+    <field name="url">dthe__aes_8h_source.html#l00241</field>
     <field name="keywords"></field>
     <field name="text">uint32_t ptrEncryptedData</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe_aes.h</field>
-    <field name="url">dthe__aes_8h_source.html#l00253</field>
+    <field name="url">dthe__aes_8h_source.html#l00252</field>
     <field name="keywords"></field>
     <field name="text">uint32_t ptrPlainTextData</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe_aes.h</field>
-    <field name="url">dthe__aes_8h_source.html#l00258</field>
+    <field name="url">dthe__aes_8h_source.html#l00257</field>
     <field name="keywords"></field>
     <field name="text">uint32_t ptrTag</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe_aes.h</field>
-    <field name="url">dthe__aes_8h_source.html#l00263</field>
+    <field name="url">dthe__aes_8h_source.html#l00262</field>
     <field name="keywords"></field>
     <field name="text">uint32_t counterWidth</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe_aes.h</field>
-    <field name="url">dthe__aes_8h_source.html#l00269</field>
+    <field name="url">dthe__aes_8h_source.html#l00268</field>
     <field name="keywords"></field>
     <field name="text">uint32_t streamState</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe_aes.h</field>
-    <field name="url">dthe__aes_8h_source.html#l00280</field>
+    <field name="url">dthe__aes_8h_source.html#l00279</field>
     <field name="keywords"></field>
     <field name="text">uint32_t streamSize</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe_aes.h</field>
-    <field name="url">dthe__aes_8h_source.html#l00285</field>
+    <field name="url">dthe__aes_8h_source.html#l00284</field>
     <field name="keywords"></field>
     <field name="text">uint32_t ptrAAD</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe_aes.h</field>
-    <field name="url">dthe__aes_8h_source.html#l00290</field>
+    <field name="url">dthe__aes_8h_source.html#l00289</field>
     <field name="keywords"></field>
     <field name="text">uint32_t aadLength</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe_aes.h</field>
-    <field name="url">dthe__aes_8h_source.html#l00295</field>
+    <field name="url">dthe__aes_8h_source.html#l00294</field>
     <field name="keywords"></field>
     <field name="text">uint32_t ccmL</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe_aes.h</field>
-    <field name="url">dthe__aes_8h_source.html#l00300</field>
+    <field name="url">dthe__aes_8h_source.html#l00299</field>
     <field name="keywords"></field>
     <field name="text">uint32_t ccmM</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe_aes.h</field>
-    <field name="url">dthe__aes_8h_source.html#l00309</field>
+    <field name="url">dthe__aes_8h_source.html#l00308</field>
     <field name="keywords"></field>
     <field name="text">uint32_t modeSelect DTHE_AES_Params</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe_aes.h</field>
-    <field name="url">dthe__aes_8h_source.html#l00327</field>
+    <field name="url">dthe__aes_8h_source.html#l00326</field>
     <field name="keywords"></field>
     <field name="text">DTHE_AES_Return_t DTHE_AES_open DTHE_Handle handle</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe_aes.h</field>
-    <field name="url">dthe__aes_8h_source.html#l00339</field>
+    <field name="url">dthe__aes_8h_source.html#l00338</field>
     <field name="keywords"></field>
     <field name="text">DTHE_AES_Return_t DTHE_AES_execute DTHE_Handle handle DTHE_AES_Params ptrParams</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe_aes.h</field>
-    <field name="url">dthe__aes_8h_source.html#l00349</field>
+    <field name="url">dthe__aes_8h_source.html#l00348</field>
     <field name="keywords"></field>
     <field name="text">DTHE_AES_Return_t DTHE_AES_close DTHE_Handle handle</field>
   </doc>
@@ -19388,96 +19388,96 @@
     <field name="name">dthe_sha.h</field>
     <field name="url">dthe__sha_8h_source.html#l00094</field>
     <field name="keywords"></field>
-    <field name="text">DTHE_SHA_Return_e</field>
+    <field name="text">uint32_t DTHE_SHA_Return_t</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe_sha.h</field>
     <field name="url">dthe__sha_8h_source.html#l00096</field>
     <field name="keywords"></field>
-    <field name="text">DTHE_SHA_RETURN_SUCCESS U</field>
+    <field name="text"></field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe_sha.h</field>
     <field name="url">dthe__sha_8h_source.html#l00097</field>
     <field name="keywords"></field>
-    <field name="text">DTHE_SHA_RETURN_FAILURE U DTHE_SHA_Return_t</field>
+    <field name="text"></field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe_sha.h</field>
-    <field name="url">dthe__sha_8h_source.html#l00101</field>
+    <field name="url">dthe__sha_8h_source.html#l00100</field>
     <field name="keywords"></field>
-    <field name="text">DTHE_SHA_Params_t</field>
+    <field name="text"></field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe_sha.h</field>
-    <field name="url">dthe__sha_8h_source.html#l00104</field>
+    <field name="url">dthe__sha_8h_source.html#l00103</field>
     <field name="keywords"></field>
     <field name="text">uint32_t algoType</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe_sha.h</field>
-    <field name="url">dthe__sha_8h_source.html#l00106</field>
+    <field name="url">dthe__sha_8h_source.html#l00105</field>
     <field name="keywords"></field>
     <field name="text">uint32_t ptrDataBuffer</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe_sha.h</field>
-    <field name="url">dthe__sha_8h_source.html#l00108</field>
+    <field name="url">dthe__sha_8h_source.html#l00107</field>
     <field name="keywords"></field>
     <field name="text">uint32_t dataLenBytes</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe_sha.h</field>
-    <field name="url">dthe__sha_8h_source.html#l00110</field>
+    <field name="url">dthe__sha_8h_source.html#l00109</field>
     <field name="keywords"></field>
     <field name="text">uint32_t ptrKey</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe_sha.h</field>
-    <field name="url">dthe__sha_8h_source.html#l00112</field>
+    <field name="url">dthe__sha_8h_source.html#l00111</field>
     <field name="keywords"></field>
     <field name="text">uint32_t keySize</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe_sha.h</field>
-    <field name="url">dthe__sha_8h_source.html#l00114</field>
+    <field name="url">dthe__sha_8h_source.html#l00113</field>
     <field name="keywords"></field>
     <field name="text">uint32_t digest DTHE_SHA_MAX_DIGEST_SIZE_BYTES U DTHE_SHA_Params</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe_sha.h</field>
-    <field name="url">dthe__sha_8h_source.html#l00133</field>
+    <field name="url">dthe__sha_8h_source.html#l00132</field>
     <field name="keywords"></field>
     <field name="text">DTHE_SHA_Return_t DTHE_SHA_open DTHE_Handle handle</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe_sha.h</field>
-    <field name="url">dthe__sha_8h_source.html#l00147</field>
+    <field name="url">dthe__sha_8h_source.html#l00146</field>
     <field name="keywords"></field>
     <field name="text">DTHE_SHA_Return_t DTHE_SHA_compute DTHE_Handle handle DTHE_SHA_Params ptrShaParams Bool isLastBlock</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe_sha.h</field>
-    <field name="url">dthe__sha_8h_source.html#l00159</field>
+    <field name="url">dthe__sha_8h_source.html#l00158</field>
     <field name="keywords"></field>
     <field name="text">DTHE_SHA_Return_t DTHE_HMACSHA_compute DTHE_Handle handle DTHE_SHA_Params ptrShaParams</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">dthe_sha.h</field>
-    <field name="url">dthe__sha_8h_source.html#l00169</field>
+    <field name="url">dthe__sha_8h_source.html#l00168</field>
     <field name="keywords"></field>
     <field name="text">DTHE_SHA_Return_t DTHE_SHA_close DTHE_Handle handle</field>
   </doc>
@@ -62135,644 +62135,644 @@
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00278</field>
+    <field name="url">icssg__stats_8h_source.html#l00280</field>
     <field name="keywords"></field>
     <field name="text">uint64_t hostRxByteCnt</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00281</field>
+    <field name="url">icssg__stats_8h_source.html#l00285</field>
     <field name="keywords"></field>
     <field name="text">uint64_t hostTxByteCnt</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00284</field>
+    <field name="url">icssg__stats_8h_source.html#l00289</field>
     <field name="keywords"></field>
     <field name="text">uint64_t hostRxByteCntMacSlice0</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00287</field>
+    <field name="url">icssg__stats_8h_source.html#l00293</field>
     <field name="keywords"></field>
     <field name="text">uint64_t hostRxByteCntMacSlice1</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00290</field>
+    <field name="url">icssg__stats_8h_source.html#l00297</field>
     <field name="keywords"></field>
     <field name="text">uint64_t hostTxByteCntMacSlice0</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00293</field>
+    <field name="url">icssg__stats_8h_source.html#l00301</field>
     <field name="keywords"></field>
     <field name="text">uint64_t hostTxByteCntMacSlice1</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00296</field>
+    <field name="url">icssg__stats_8h_source.html#l00305</field>
     <field name="keywords"></field>
     <field name="text">uint32_t hostRxPktCnt</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00299</field>
+    <field name="url">icssg__stats_8h_source.html#l00309</field>
     <field name="keywords"></field>
     <field name="text">uint32_t hostTxPktCnt</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00302</field>
+    <field name="url">icssg__stats_8h_source.html#l00313</field>
     <field name="keywords"></field>
     <field name="text">uint32_t hostRxPktCntMacSlice0</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00305</field>
+    <field name="url">icssg__stats_8h_source.html#l00317</field>
     <field name="keywords"></field>
     <field name="text">uint32_t hostRxPktCntMacSlice1</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00308</field>
+    <field name="url">icssg__stats_8h_source.html#l00321</field>
     <field name="keywords"></field>
     <field name="text">uint32_t hostTxPktCntMacSlice0</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00311</field>
+    <field name="url">icssg__stats_8h_source.html#l00325</field>
     <field name="keywords"></field>
     <field name="text">uint32_t hostTxPktCntMacSlice1</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00315</field>
+    <field name="url">icssg__stats_8h_source.html#l00329</field>
     <field name="keywords"></field>
     <field name="text">uint32_t rtu0PktDroppedSlice0</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00319</field>
+    <field name="url">icssg__stats_8h_source.html#l00333</field>
     <field name="keywords"></field>
     <field name="text">uint32_t rtu0PktDroppedSlice1</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00322</field>
+    <field name="url">icssg__stats_8h_source.html#l00338</field>
     <field name="keywords"></field>
     <field name="text">uint32_t port1Q0Overflow</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00325</field>
+    <field name="url">icssg__stats_8h_source.html#l00343</field>
     <field name="keywords"></field>
     <field name="text">uint32_t port1Q1Overflow</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00328</field>
+    <field name="url">icssg__stats_8h_source.html#l00348</field>
     <field name="keywords"></field>
     <field name="text">uint32_t port1Q2Overflow</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00331</field>
+    <field name="url">icssg__stats_8h_source.html#l00353</field>
     <field name="keywords"></field>
     <field name="text">uint32_t port1Q3Overflow</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00334</field>
+    <field name="url">icssg__stats_8h_source.html#l00358</field>
     <field name="keywords"></field>
     <field name="text">uint32_t port1Q4Overflow</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00337</field>
+    <field name="url">icssg__stats_8h_source.html#l00363</field>
     <field name="keywords"></field>
     <field name="text">uint32_t port1Q5Overflow</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00340</field>
+    <field name="url">icssg__stats_8h_source.html#l00368</field>
     <field name="keywords"></field>
     <field name="text">uint32_t port1Q6Overflow</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00343</field>
+    <field name="url">icssg__stats_8h_source.html#l00373</field>
     <field name="keywords"></field>
     <field name="text">uint32_t port1Q7Overflow</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00346</field>
+    <field name="url">icssg__stats_8h_source.html#l00378</field>
     <field name="keywords"></field>
     <field name="text">uint32_t port2Q0Overflow</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00349</field>
+    <field name="url">icssg__stats_8h_source.html#l00383</field>
     <field name="keywords"></field>
     <field name="text">uint32_t port2Q1Overflow</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00352</field>
+    <field name="url">icssg__stats_8h_source.html#l00388</field>
     <field name="keywords"></field>
     <field name="text">uint32_t port2Q2Overflow</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00355</field>
+    <field name="url">icssg__stats_8h_source.html#l00393</field>
     <field name="keywords"></field>
     <field name="text">uint32_t port2Q3Overflow</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00358</field>
+    <field name="url">icssg__stats_8h_source.html#l00398</field>
     <field name="keywords"></field>
     <field name="text">uint32_t port2Q4Overflow</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00361</field>
+    <field name="url">icssg__stats_8h_source.html#l00403</field>
     <field name="keywords"></field>
     <field name="text">uint32_t port2Q5Overflow</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00364</field>
+    <field name="url">icssg__stats_8h_source.html#l00408</field>
     <field name="keywords"></field>
     <field name="text">uint32_t port2Q6Overflow</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00367</field>
+    <field name="url">icssg__stats_8h_source.html#l00413</field>
     <field name="keywords"></field>
     <field name="text">uint32_t port2Q7Overflow</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00370</field>
+    <field name="url">icssg__stats_8h_source.html#l00418</field>
     <field name="keywords"></field>
     <field name="text">uint32_t hostQ0Overflow</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00373</field>
+    <field name="url">icssg__stats_8h_source.html#l00423</field>
     <field name="keywords"></field>
     <field name="text">uint32_t hostQ1Overflow</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00376</field>
+    <field name="url">icssg__stats_8h_source.html#l00428</field>
     <field name="keywords"></field>
     <field name="text">uint32_t hostQ2Overflow</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00379</field>
+    <field name="url">icssg__stats_8h_source.html#l00433</field>
     <field name="keywords"></field>
     <field name="text">uint32_t hostQ3Overflow</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00382</field>
+    <field name="url">icssg__stats_8h_source.html#l00438</field>
     <field name="keywords"></field>
     <field name="text">uint32_t hostQ4Overflow</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00385</field>
+    <field name="url">icssg__stats_8h_source.html#l00443</field>
     <field name="keywords"></field>
     <field name="text">uint32_t hostQ5Overflow</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00388</field>
+    <field name="url">icssg__stats_8h_source.html#l00448</field>
     <field name="keywords"></field>
     <field name="text">uint32_t hostQ6Overflow</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00391</field>
+    <field name="url">icssg__stats_8h_source.html#l00453</field>
     <field name="keywords"></field>
     <field name="text">uint32_t hostQ7Overflow</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00394</field>
+    <field name="url">icssg__stats_8h_source.html#l00458</field>
     <field name="keywords"></field>
     <field name="text">uint32_t hostEgressQPreOverflow</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00397</field>
+    <field name="url">icssg__stats_8h_source.html#l00463</field>
     <field name="keywords"></field>
     <field name="text">uint32_t droppedPktSlice0</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00400</field>
+    <field name="url">icssg__stats_8h_source.html#l00468</field>
     <field name="keywords"></field>
     <field name="text">uint32_t droppedPktSlice1</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00403</field>
+    <field name="url">icssg__stats_8h_source.html#l00473</field>
     <field name="keywords"></field>
     <field name="text">uint32_t rxErrorSlice0</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00406</field>
+    <field name="url">icssg__stats_8h_source.html#l00478</field>
     <field name="keywords"></field>
     <field name="text">uint32_t rxErrorSlice1</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00409</field>
+    <field name="url">icssg__stats_8h_source.html#l00483</field>
     <field name="keywords"></field>
     <field name="text">uint32_t rxEofRtuDsInvalidSlice0</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00412</field>
+    <field name="url">icssg__stats_8h_source.html#l00488</field>
     <field name="keywords"></field>
     <field name="text">uint32_t rxEofRtuDsInvalidSlice1</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00415</field>
+    <field name="url">icssg__stats_8h_source.html#l00491</field>
     <field name="keywords"></field>
     <field name="text">uint32_t txPort1DroppedPkt</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00418</field>
+    <field name="url">icssg__stats_8h_source.html#l00494</field>
     <field name="keywords"></field>
     <field name="text">uint32_t txPort2DroppedPkt</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00421</field>
+    <field name="url">icssg__stats_8h_source.html#l00497</field>
     <field name="keywords"></field>
     <field name="text">uint32_t txPort1TsDroppedPkt</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00424</field>
+    <field name="url">icssg__stats_8h_source.html#l00500</field>
     <field name="keywords"></field>
     <field name="text">uint32_t txPort2TsDroppedPkt</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00428</field>
+    <field name="url">icssg__stats_8h_source.html#l00504</field>
     <field name="keywords"></field>
     <field name="text">uint32_t infPortDisabledSlice0</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00432</field>
+    <field name="url">icssg__stats_8h_source.html#l00508</field>
     <field name="keywords"></field>
     <field name="text">uint32_t infPortDisabledSlice1</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00436</field>
+    <field name="url">icssg__stats_8h_source.html#l00512</field>
     <field name="keywords"></field>
     <field name="text">uint32_t infSavSlice0</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00440</field>
+    <field name="url">icssg__stats_8h_source.html#l00516</field>
     <field name="keywords"></field>
     <field name="text">uint32_t infSavSlice1</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00444</field>
+    <field name="url">icssg__stats_8h_source.html#l00520</field>
     <field name="keywords"></field>
     <field name="text">uint32_t infSaBlSlice0</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00448</field>
+    <field name="url">icssg__stats_8h_source.html#l00524</field>
     <field name="keywords"></field>
     <field name="text">uint32_t infSaBlSlice1</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00452</field>
+    <field name="url">icssg__stats_8h_source.html#l00528</field>
     <field name="keywords"></field>
     <field name="text">uint32_t infPortBlockedSlice0</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00456</field>
+    <field name="url">icssg__stats_8h_source.html#l00532</field>
     <field name="keywords"></field>
     <field name="text">uint32_t infPortBlockedSlice1</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00460</field>
+    <field name="url">icssg__stats_8h_source.html#l00536</field>
     <field name="keywords"></field>
     <field name="text">uint32_t infAftDropTaggedSlice0</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00464</field>
+    <field name="url">icssg__stats_8h_source.html#l00540</field>
     <field name="keywords"></field>
     <field name="text">uint32_t infAftDropTaggedSlice1</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00468</field>
+    <field name="url">icssg__stats_8h_source.html#l00544</field>
     <field name="keywords"></field>
     <field name="text">uint32_t infAftDropPrioTaggedSlice0</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00472</field>
+    <field name="url">icssg__stats_8h_source.html#l00548</field>
     <field name="keywords"></field>
     <field name="text">uint32_t infAftDropPrioTaggedSlice1</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00476</field>
+    <field name="url">icssg__stats_8h_source.html#l00552</field>
     <field name="keywords"></field>
     <field name="text">uint32_t infAftDropNoTagSlice0</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00480</field>
+    <field name="url">icssg__stats_8h_source.html#l00556</field>
     <field name="keywords"></field>
     <field name="text">uint32_t infAftDropNoTagSlice1</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00484</field>
+    <field name="url">icssg__stats_8h_source.html#l00560</field>
     <field name="keywords"></field>
     <field name="text">uint32_t infAftDropNotMemberSlice0</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00488</field>
+    <field name="url">icssg__stats_8h_source.html#l00564</field>
     <field name="keywords"></field>
     <field name="text">uint32_t infAftDropNotMemberSlice1</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00491</field>
+    <field name="url">icssg__stats_8h_source.html#l00567</field>
     <field name="keywords"></field>
     <field name="text">uint32_t fdbNoSpaceToLearn</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00494</field>
+    <field name="url">icssg__stats_8h_source.html#l00570</field>
     <field name="keywords"></field>
     <field name="text">uint32_t preemptBadFragSlice0</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00497</field>
+    <field name="url">icssg__stats_8h_source.html#l00573</field>
     <field name="keywords"></field>
     <field name="text">uint32_t preemptBadFragSlice1</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00500</field>
+    <field name="url">icssg__stats_8h_source.html#l00576</field>
     <field name="keywords"></field>
     <field name="text">uint32_t preemptAsmErrSlice0</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00503</field>
+    <field name="url">icssg__stats_8h_source.html#l00579</field>
     <field name="keywords"></field>
     <field name="text">uint32_t preemptAsmErrSlice1</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00506</field>
+    <field name="url">icssg__stats_8h_source.html#l00582</field>
     <field name="keywords"></field>
     <field name="text">uint32_t preemptFragCntTxSlice0</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00509</field>
+    <field name="url">icssg__stats_8h_source.html#l00585</field>
     <field name="keywords"></field>
     <field name="text">uint32_t preemptFragCntTxSlice1</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00512</field>
+    <field name="url">icssg__stats_8h_source.html#l00588</field>
     <field name="keywords"></field>
     <field name="text">uint32_t preemptAsmOkSlice0</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00515</field>
+    <field name="url">icssg__stats_8h_source.html#l00591</field>
     <field name="keywords"></field>
     <field name="text">uint32_t preemptAsmOkSlice1</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00518</field>
+    <field name="url">icssg__stats_8h_source.html#l00594</field>
     <field name="keywords"></field>
     <field name="text">uint32_t preemptFragCntRxSlice0</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00521</field>
+    <field name="url">icssg__stats_8h_source.html#l00597</field>
     <field name="keywords"></field>
     <field name="text">uint32_t preemptFragCntRxSlice1</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00525</field>
+    <field name="url">icssg__stats_8h_source.html#l00602</field>
     <field name="keywords"></field>
     <field name="text">uint32_t rxEofShortFrameErrSlice0</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00529</field>
+    <field name="url">icssg__stats_8h_source.html#l00607</field>
     <field name="keywords"></field>
     <field name="text">uint32_t rxEofShortFrameErrSlice1</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00533</field>
+    <field name="url">icssg__stats_8h_source.html#l00612</field>
     <field name="keywords"></field>
     <field name="text">uint32_t rxB0DropEarlyEoFSlice0</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00537</field>
+    <field name="url">icssg__stats_8h_source.html#l00617</field>
     <field name="keywords"></field>
     <field name="text">uint32_t rxB0DropEarlyEoFSlice1</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00541</field>
+    <field name="url">icssg__stats_8h_source.html#l00622</field>
     <field name="keywords"></field>
     <field name="text">uint32_t txJumboFrameCutoffSlice0</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00545</field>
+    <field name="url">icssg__stats_8h_source.html#l00627</field>
     <field name="keywords"></field>
     <field name="text">uint32_t txJumboFrameCutoffSlice1</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00549</field>
+    <field name="url">icssg__stats_8h_source.html#l00632</field>
     <field name="keywords"></field>
     <field name="text">uint32_t rxExpFragQDropSlice0</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00553</field>
+    <field name="url">icssg__stats_8h_source.html#l00637</field>
     <field name="keywords"></field>
     <field name="text">uint32_t rxExpFragQDropSlice1</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00556</field>
+    <field name="url">icssg__stats_8h_source.html#l00642</field>
     <field name="keywords"></field>
     <field name="text">uint32_t rxFifoOverRunSlice0</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00559</field>
+    <field name="url">icssg__stats_8h_source.html#l00647</field>
     <field name="keywords"></field>
     <field name="text">uint32_t rxFifoOverRunSlice1</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00562</field>
+    <field name="url">icssg__stats_8h_source.html#l00650</field>
     <field name="keywords"></field>
     <field name="text">uint32_t hostEgrsQPreOvrFloMacSlice0</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00565</field>
+    <field name="url">icssg__stats_8h_source.html#l00653</field>
     <field name="keywords"></field>
     <field name="text">uint32_t hostEgrsQPreOvrFloMacSlice1</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00568</field>
+    <field name="url">icssg__stats_8h_source.html#l00656</field>
     <field name="keywords"></field>
     <field name="text">uint32_t hostEgrsQExpOvrFloMacSlice0</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00571</field>
+    <field name="url">icssg__stats_8h_source.html#l00659</field>
     <field name="keywords"></field>
     <field name="text">uint32_t hostEgrsQExpOvrFloMacSlice1</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00574</field>
+    <field name="url">icssg__stats_8h_source.html#l00662</field>
     <field name="keywords"></field>
     <field name="text">uint32_t cutThroughPacketSlice0</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">icssg_stats.h</field>
-    <field name="url">icssg__stats_8h_source.html#l00577</field>
+    <field name="url">icssg__stats_8h_source.html#l00665</field>
     <field name="keywords"></field>
     <field name="text">uint32_t cutThroughPacketSlice1 IcssgStats_Pa</field>
   </doc>
@@ -109422,404 +109422,390 @@
     <field name="name">soc_rcm.h</field>
     <field name="url">soc__rcm_8h_source.html#l00421</field>
     <field name="keywords"></field>
-    <field name="text">SOC_RcmPeripheralId_LIN3_UART3 SOC_RcmPeripheralId</field>
+    <field name="text">SOC_RcmPeripheralId_LIN3_UART3</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00430</field>
+    <field name="url">soc__rcm_8h_source.html#l00425</field>
+    <field name="keywords"></field>
+    <field name="text">SOC_RcmPeripheralId_LIN4_UART4</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">soc_rcm.h</field>
+    <field name="url">soc__rcm_8h_source.html#l00429</field>
+    <field name="keywords"></field>
+    <field name="text">SOC_RcmPeripheralId_LIN5_UART5 SOC_RcmPeripheralId</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">soc_rcm.h</field>
+    <field name="url">soc__rcm_8h_source.html#l00438</field>
     <field name="keywords"></field>
     <field name="text">SOC_RcmPeripheralClockSource_e</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00435</field>
+    <field name="url">soc__rcm_8h_source.html#l00443</field>
     <field name="keywords"></field>
     <field name="text">SOC_RcmPeripheralClockSource_XTALCLK</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00439</field>
+    <field name="url">soc__rcm_8h_source.html#l00447</field>
     <field name="keywords"></field>
     <field name="text">SOC_RcmPeripheralClockSource_SYS_CLK</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00443</field>
+    <field name="url">soc__rcm_8h_source.html#l00451</field>
     <field name="keywords"></field>
     <field name="text">SOC_RcmPeripheralClockSource_WUCPUCLK</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00447</field>
+    <field name="url">soc__rcm_8h_source.html#l00455</field>
     <field name="keywords"></field>
     <field name="text">SOC_RcmPeripheralClockSource_EXT_REFCLK</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00451</field>
+    <field name="url">soc__rcm_8h_source.html#l00459</field>
     <field name="keywords"></field>
     <field name="text">SOC_RcmPeripheralClockSource_RCCLK10M</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00455</field>
+    <field name="url">soc__rcm_8h_source.html#l00463</field>
     <field name="keywords"></field>
     <field name="text">SOC_RcmPeripheralClockSource_RCCLK32K</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00459</field>
+    <field name="url">soc__rcm_8h_source.html#l00467</field>
     <field name="keywords"></field>
     <field name="text">SOC_RcmPeripheralClockSource_CTPS_GENF0</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00463</field>
+    <field name="url">soc__rcm_8h_source.html#l00471</field>
     <field name="keywords"></field>
     <field name="text">SOC_RcmPeripheralClockSource_DPLL_CORE_HSDIV0_CLKOUT0</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00467</field>
+    <field name="url">soc__rcm_8h_source.html#l00475</field>
     <field name="keywords"></field>
     <field name="text">SOC_RcmPeripheralClockSource_DPLL_CORE_HSDIV0_CLKOUT1</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00471</field>
+    <field name="url">soc__rcm_8h_source.html#l00479</field>
     <field name="keywords"></field>
     <field name="text">SOC_RcmPeripheralClockSource_DPLL_CORE_HSDIV0_CLKOUT2</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00475</field>
+    <field name="url">soc__rcm_8h_source.html#l00483</field>
     <field name="keywords"></field>
     <field name="text">SOC_RcmPeripheralClockSource_DPLL_CORE_HSDIV0_CLKOUT3</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00479</field>
+    <field name="url">soc__rcm_8h_source.html#l00487</field>
     <field name="keywords"></field>
     <field name="text">SOC_RcmPeripheralClockSource_DPLL_ETH_HSDIV0_CLKOUT0</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00483</field>
+    <field name="url">soc__rcm_8h_source.html#l00491</field>
     <field name="keywords"></field>
     <field name="text">SOC_RcmPeripheralClockSource_DPLL_PER_HSDIV0_CLKOUT0</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00487</field>
+    <field name="url">soc__rcm_8h_source.html#l00495</field>
     <field name="keywords"></field>
     <field name="text">SOC_RcmPeripheralClockSource_DPLL_PER_HSDIV0_CLKOUT2 SOC_RcmPeripheralClockSource</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00496</field>
+    <field name="url">soc__rcm_8h_source.html#l00504</field>
     <field name="keywords"></field>
     <field name="text">SOC_RcmPllFoutFreqId_e</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00501</field>
+    <field name="url">soc__rcm_8h_source.html#l00509</field>
     <field name="keywords"></field>
     <field name="text">RCM_PLL_FOUT_FREQID_CLK_500MHZ</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00505</field>
+    <field name="url">soc__rcm_8h_source.html#l00513</field>
     <field name="keywords"></field>
     <field name="text">RCM_PLL_FOUT_FREQID_CLK_900MHZ</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00509</field>
+    <field name="url">soc__rcm_8h_source.html#l00517</field>
     <field name="keywords"></field>
     <field name="text">RCM_PLL_FOUT_FREQID_CLK_960MHZ</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00513</field>
+    <field name="url">soc__rcm_8h_source.html#l00521</field>
     <field name="keywords"></field>
     <field name="text">RCM_PLL_FOUT_FREQID_CLK_1000MHZ</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00517</field>
+    <field name="url">soc__rcm_8h_source.html#l00525</field>
     <field name="keywords"></field>
     <field name="text">RCM_PLL_FOUT_FREQID_CLK_2000MHZ SOC_RcmPllFoutFreqId</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00526</field>
+    <field name="url">soc__rcm_8h_source.html#l00534</field>
     <field name="keywords"></field>
     <field name="text">SOC_RcmXtalFreqId_e</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00531</field>
+    <field name="url">soc__rcm_8h_source.html#l00539</field>
     <field name="keywords"></field>
     <field name="text">RCM_XTAL_FREQID_CLK_25MHZ SOC_RcmXtalFreqId</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00534</field>
+    <field name="url">soc__rcm_8h_source.html#l00542</field>
     <field name="keywords"></field>
     <field name="text">SOC_RcmPllId_e</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00536</field>
+    <field name="url">soc__rcm_8h_source.html#l00544</field>
     <field name="keywords"></field>
     <field name="text">RCM_PLLID_CORE</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00537</field>
+    <field name="url">soc__rcm_8h_source.html#l00545</field>
     <field name="keywords"></field>
     <field name="text">RCM_PLLID_ETH</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00538</field>
+    <field name="url">soc__rcm_8h_source.html#l00546</field>
     <field name="keywords"></field>
     <field name="text">RCM_PLLID_PER</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00539</field>
+    <field name="url">soc__rcm_8h_source.html#l00547</field>
     <field name="keywords"></field>
     <field name="text">RCM_PLLID_XTALCLK</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00540</field>
+    <field name="url">soc__rcm_8h_source.html#l00548</field>
     <field name="keywords"></field>
     <field name="text">RCM_PLLID_WUCPUCLK</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00541</field>
+    <field name="url">soc__rcm_8h_source.html#l00549</field>
     <field name="keywords"></field>
     <field name="text">RCM_PLLID_RCCLK32K</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00542</field>
+    <field name="url">soc__rcm_8h_source.html#l00550</field>
     <field name="keywords"></field>
     <field name="text">RCM_PLLID_RCCLK10M</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00543</field>
+    <field name="url">soc__rcm_8h_source.html#l00551</field>
     <field name="keywords"></field>
     <field name="text">RCM_PLLID_EXTREFCLK SOC_RcmPllId</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00552</field>
+    <field name="url">soc__rcm_8h_source.html#l00560</field>
     <field name="keywords"></field>
     <field name="text">SOC_RcmPllHSDIVOutId_e</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00557</field>
+    <field name="url">soc__rcm_8h_source.html#l00565</field>
     <field name="keywords"></field>
     <field name="text">RCM_PLLHSDIV_OUT_0</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00561</field>
+    <field name="url">soc__rcm_8h_source.html#l00569</field>
     <field name="keywords"></field>
     <field name="text">RCM_PLLHSDIV_OUT_1</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00565</field>
+    <field name="url">soc__rcm_8h_source.html#l00573</field>
     <field name="keywords"></field>
     <field name="text">RCM_PLLHSDIV_OUT_2</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00569</field>
+    <field name="url">soc__rcm_8h_source.html#l00577</field>
     <field name="keywords"></field>
     <field name="text">RCM_PLLHSDIV_OUT_3</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00573</field>
+    <field name="url">soc__rcm_8h_source.html#l00581</field>
     <field name="keywords"></field>
     <field name="text">RCM_PLLHSDIV_OUT_NONE SOC_RcmPllHSDIVOutId</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00577</field>
+    <field name="url">soc__rcm_8h_source.html#l00585</field>
     <field name="keywords"></field>
     <field name="text">SOC_RcmClkSrcInfo_s</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00579</field>
+    <field name="url">soc__rcm_8h_source.html#l00587</field>
     <field name="keywords"></field>
     <field name="text">SOC_RcmPllId pllId</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00580</field>
+    <field name="url">soc__rcm_8h_source.html#l00588</field>
     <field name="keywords"></field>
     <field name="text">SOC_RcmPllHSDIVOutId hsDivOut SOC_RcmClkSrcInfo</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00583</field>
+    <field name="url">soc__rcm_8h_source.html#l00591</field>
     <field name="keywords"></field>
     <field name="text">SOC_RcmXTALInfo_s</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00585</field>
-    <field name="keywords"></field>
-    <field name="text">uint32_t Finp</field>
-  </doc>
-  <doc>
-    <field name="type">source</field>
-    <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00586</field>
-    <field name="keywords"></field>
-    <field name="text">Bool div2flag SOC_RcmXTALInfo</field>
-  </doc>
-  <doc>
-    <field name="type">source</field>
-    <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00589</field>
-    <field name="keywords"></field>
-    <field name="text">SOC_RcmADPLLJConfig_s</field>
-  </doc>
-  <doc>
-    <field name="type">source</field>
-    <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00591</field>
-    <field name="keywords"></field>
-    <field name="text">uint32_t N</field>
-  </doc>
-  <doc>
-    <field name="type">source</field>
-    <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00592</field>
-    <field name="keywords"></field>
-    <field name="text">uint32_t M2</field>
-  </doc>
-  <doc>
-    <field name="type">source</field>
-    <field name="name">soc_rcm.h</field>
     <field name="url">soc__rcm_8h_source.html#l00593</field>
     <field name="keywords"></field>
-    <field name="text">uint32_t M</field>
+    <field name="text">uint32_t Finp</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
     <field name="url">soc__rcm_8h_source.html#l00594</field>
     <field name="keywords"></field>
-    <field name="text">uint32_t FracM</field>
-  </doc>
-  <doc>
-    <field name="type">source</field>
-    <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00595</field>
-    <field name="keywords"></field>
-    <field name="text">uint32_t Fout</field>
-  </doc>
-  <doc>
-    <field name="type">source</field>
-    <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00596</field>
-    <field name="keywords"></field>
-    <field name="text">uint32_t Finp</field>
+    <field name="text">Bool div2flag SOC_RcmXTALInfo</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
     <field name="url">soc__rcm_8h_source.html#l00597</field>
     <field name="keywords"></field>
-    <field name="text">uint32_t SD SOC_RcmADPLLJConfig_t</field>
+    <field name="text">SOC_RcmADPLLJConfig_s</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">soc_rcm.h</field>
+    <field name="url">soc__rcm_8h_source.html#l00599</field>
+    <field name="keywords"></field>
+    <field name="text">uint32_t N</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
     <field name="url">soc__rcm_8h_source.html#l00600</field>
     <field name="keywords"></field>
-    <field name="text"></field>
+    <field name="text">uint32_t M2</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
     <field name="url">soc__rcm_8h_source.html#l00601</field>
     <field name="keywords"></field>
-    <field name="text"></field>
+    <field name="text">uint32_t M</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
     <field name="url">soc__rcm_8h_source.html#l00602</field>
     <field name="keywords"></field>
-    <field name="text"></field>
+    <field name="text">uint32_t FracM</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
     <field name="url">soc__rcm_8h_source.html#l00603</field>
     <field name="keywords"></field>
-    <field name="text"></field>
+    <field name="text">uint32_t Fout</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
     <field name="url">soc__rcm_8h_source.html#l00604</field>
+    <field name="keywords"></field>
+    <field name="text">uint32_t Finp</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">soc_rcm.h</field>
+    <field name="url">soc__rcm_8h_source.html#l00605</field>
+    <field name="keywords"></field>
+    <field name="text">uint32_t SD SOC_RcmADPLLJConfig_t</field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">soc_rcm.h</field>
+    <field name="url">soc__rcm_8h_source.html#l00608</field>
     <field name="keywords"></field>
     <field name="text"></field>
   </doc>
@@ -109854,273 +109840,301 @@
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00613</field>
+    <field name="url">soc__rcm_8h_source.html#l00617</field>
     <field name="keywords"></field>
     <field name="text"></field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00615</field>
+    <field name="url">soc__rcm_8h_source.html#l00618</field>
+    <field name="keywords"></field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">soc_rcm.h</field>
+    <field name="url">soc__rcm_8h_source.html#l00619</field>
+    <field name="keywords"></field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">soc_rcm.h</field>
+    <field name="url">soc__rcm_8h_source.html#l00620</field>
+    <field name="keywords"></field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">soc_rcm.h</field>
+    <field name="url">soc__rcm_8h_source.html#l00621</field>
+    <field name="keywords"></field>
+    <field name="text"></field>
+  </doc>
+  <doc>
+    <field name="type">source</field>
+    <field name="name">soc_rcm.h</field>
+    <field name="url">soc__rcm_8h_source.html#l00623</field>
     <field name="keywords"></field>
     <field name="text">SOC_RcmPllHsDivOutConfig_s</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00617</field>
+    <field name="url">soc__rcm_8h_source.html#l00625</field>
     <field name="keywords"></field>
     <field name="text">uint32_t hsdivOutEnMask</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00618</field>
+    <field name="url">soc__rcm_8h_source.html#l00626</field>
     <field name="keywords"></field>
     <field name="text">uint32_t hsDivOutFreqHz RCM_PLL_HSDIV_OUTPUT_COUNT SOC_RcmPllHsDivOutConfig</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00628</field>
+    <field name="url">soc__rcm_8h_source.html#l00636</field>
     <field name="keywords"></field>
     <field name="text">SOC_rcmCoreApllConfig SOC_RcmPllFoutFreqId outFreqId SOC_RcmPllHsDivOutConfig hsDivCfg</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00637</field>
+    <field name="url">soc__rcm_8h_source.html#l00645</field>
     <field name="keywords"></field>
     <field name="text">SOC_rcmEthApllConfig SOC_RcmPllFoutFreqId outFreqId SOC_RcmPllHsDivOutConfig hsDivCfg</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00642</field>
+    <field name="url">soc__rcm_8h_source.html#l00650</field>
     <field name="keywords"></field>
     <field name="text">uint32_t SOC_rcmCoreApllRelockPreRequisite</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00647</field>
+    <field name="url">soc__rcm_8h_source.html#l00655</field>
     <field name="keywords"></field>
     <field name="text">SOC_rcmSetR5ClockSource uint32_t r5ClkSrc</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00657</field>
+    <field name="url">soc__rcm_8h_source.html#l00665</field>
     <field name="keywords"></field>
     <field name="text">SOC_rcmCoreApllHSDivConfig SOC_RcmPllFoutFreqId outFreqId SOC_RcmPllHsDivOutConfig hsDivCfg</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00666</field>
+    <field name="url">soc__rcm_8h_source.html#l00674</field>
     <field name="keywords"></field>
     <field name="text">SOC_rcmPerApllConfig SOC_RcmPllFoutFreqId outFreqId SOC_RcmPllHsDivOutConfig hsDivCfg</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00676</field>
+    <field name="url">soc__rcm_8h_source.html#l00684</field>
     <field name="keywords"></field>
     <field name="text">SOC_rcmsetR5SysClock uint32_t cr5FreqHz uint32_t sysClkFreqHz uint32_t cpuId</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00685</field>
+    <field name="url">soc__rcm_8h_source.html#l00693</field>
     <field name="keywords"></field>
     <field name="text">SOC_rcmsetTraceClock uint32_t traceFreqHz</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00694</field>
+    <field name="url">soc__rcm_8h_source.html#l00702</field>
     <field name="keywords"></field>
     <field name="text">SOC_rcmsetClkoutClock uint32_t clkout0FreqHz uint32_t clkout1FreqHz</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00709</field>
+    <field name="url">soc__rcm_8h_source.html#l00717</field>
     <field name="keywords"></field>
     <field name="text">int32_t SOC_rcmSetPeripheralClock SOC_RcmPeripheralId periphId SOC_RcmPeripheralClockSource clkSource uint32_t freqHz</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00721</field>
+    <field name="url">soc__rcm_8h_source.html#l00729</field>
     <field name="keywords"></field>
     <field name="text">SOC_RcmResetCause SOC_rcmGetResetCause SOC_Rcmr5fssNum r5fssNum</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00735</field>
+    <field name="url">soc__rcm_8h_source.html#l00743</field>
     <field name="keywords"></field>
     <field name="text">int32_t SOC_rcmEnablePeripheralClock SOC_RcmPeripheralId periphId uint32_t enable</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00746</field>
+    <field name="url">soc__rcm_8h_source.html#l00754</field>
     <field name="keywords"></field>
     <field name="text">int32_t SOC_rcmSetR5Clock uint32_t r5FreqHz uint32_t sysClkFreqHz uint32_t cpuId</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00754</field>
+    <field name="url">soc__rcm_8h_source.html#l00762</field>
     <field name="keywords"></field>
     <field name="text">uint32_t SOC_rcmGetR5Clock uint32_t cpuId</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00760</field>
+    <field name="url">soc__rcm_8h_source.html#l00768</field>
     <field name="keywords"></field>
     <field name="text">SOC_rcmR5ConfigLockStep uint32_t cpuId</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00766</field>
+    <field name="url">soc__rcm_8h_source.html#l00774</field>
     <field name="keywords"></field>
     <field name="text">SOC_rcmR5ConfigDualCore uint32_t cpuId SOC_rcmSetR5ClockSource uint32_t r5ClkSrc</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00776</field>
+    <field name="url">soc__rcm_8h_source.html#l00784</field>
     <field name="keywords"></field>
     <field name="text">SOC_rcmR5SS0TriggerReset</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00782</field>
+    <field name="url">soc__rcm_8h_source.html#l00790</field>
     <field name="keywords"></field>
     <field name="text">SOC_rcmCoreR5FUnhalt uint32_t cpuId</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00788</field>
+    <field name="url">soc__rcm_8h_source.html#l00796</field>
     <field name="keywords"></field>
     <field name="text">SOC_rcmStartMemInitTCMA uint32_t cpuId</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00794</field>
+    <field name="url">soc__rcm_8h_source.html#l00802</field>
     <field name="keywords"></field>
     <field name="text">SOC_rcmWaitMemInitTCMA uint32_t cpuId</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00800</field>
+    <field name="url">soc__rcm_8h_source.html#l00808</field>
     <field name="keywords"></field>
     <field name="text">SOC_rcmStartMemInitTCMB uint32_t cpuId</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00806</field>
+    <field name="url">soc__rcm_8h_source.html#l00814</field>
     <field name="keywords"></field>
     <field name="text">SOC_rcmWaitMemInitTCMB uint32_t cpuId</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00811</field>
+    <field name="url">soc__rcm_8h_source.html#l00819</field>
     <field name="keywords"></field>
     <field name="text">SOC_rcmMemInitMailboxMemory</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00815</field>
+    <field name="url">soc__rcm_8h_source.html#l00823</field>
     <field name="keywords"></field>
     <field name="text">SOC_rcmMemInitL2Memory</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00819</field>
+    <field name="url">soc__rcm_8h_source.html#l00827</field>
     <field name="keywords"></field>
     <field name="text">SOC_rcmR5SS0PowerOnReset</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00824</field>
+    <field name="url">soc__rcm_8h_source.html#l00832</field>
     <field name="keywords"></field>
     <field name="text">SOC_rcmR5SS1TriggerReset</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00829</field>
+    <field name="url">soc__rcm_8h_source.html#l00837</field>
     <field name="keywords"></field>
     <field name="text">SOC_rcmR5SS1PowerOnReset</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00838</field>
+    <field name="url">soc__rcm_8h_source.html#l00846</field>
     <field name="keywords"></field>
     <field name="text">uint32_t SOC_rcmIsR5FInLockStepMode uint32_t r5fClusterGroupId</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00843</field>
+    <field name="url">soc__rcm_8h_source.html#l00851</field>
     <field name="keywords"></field>
     <field name="text">SOC_generateSwWarmReset</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00851</field>
+    <field name="url">soc__rcm_8h_source.html#l00859</field>
     <field name="keywords"></field>
     <field name="text">SOC_configureWarmResetSource uint32_t source</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00858</field>
+    <field name="url">soc__rcm_8h_source.html#l00866</field>
     <field name="keywords"></field>
     <field name="text">SOC_WarmResetCause SOC_getWarmResetCause</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00863</field>
+    <field name="url">soc__rcm_8h_source.html#l00871</field>
     <field name="keywords"></field>
     <field name="text">SOC_clearWarmResetCause</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00870</field>
+    <field name="url">soc__rcm_8h_source.html#l00878</field>
     <field name="keywords"></field>
     <field name="text">SOC_configureWarmResetOutputDelay uint16_t opDelayValue</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00877</field>
+    <field name="url">soc__rcm_8h_source.html#l00885</field>
     <field name="keywords"></field>
     <field name="text">SOC_configureWarmResetInputRiseDelay uint16_t inpRiseDelayValue</field>
   </doc>
   <doc>
     <field name="type">source</field>
     <field name="name">soc_rcm.h</field>
-    <field name="url">soc__rcm_8h_source.html#l00884</field>
+    <field name="url">soc__rcm_8h_source.html#l00892</field>
     <field name="keywords"></field>
     <field name="text">SOC_configureWarmResetInputFallDelay uint16_t inpFallDelayValue</field>
   </doc>
@@ -132910,32 +132924,32 @@
     <field name="text"></field>
   </doc>
   <doc>
+    <field name="type">define</field>
+    <field name="name">DTHE_RETURN_SUCCESS</field>
+    <field name="url">group__SECURITY__DTHE__MODULE.html#ga66a976b8eddfeffbe85a2c4c43956d6d</field>
+    <field name="keywords">DTHE_RETURN_SUCCESS DTHE_RETURN_SUCCESS</field>
+    <field name="text">Success/pass return code</field>
+  </doc>
+  <doc>
+    <field name="type">define</field>
+    <field name="name">DTHE_RETURN_FAILURE</field>
+    <field name="url">group__SECURITY__DTHE__MODULE.html#gac82e0af1c37571603398c7b38f0783de</field>
+    <field name="keywords">DTHE_RETURN_FAILURE DTHE_RETURN_FAILURE</field>
+    <field name="text">General or unspecified failure/error</field>
+  </doc>
+  <doc>
+    <field name="type">typedef</field>
+    <field name="name">DTHE_Return_t</field>
+    <field name="url">group__SECURITY__DTHE__MODULE.html#ga089c0914a1c8d3cde385ac10a59c1fdd</field>
+    <field name="keywords">DTHE_Return_t DTHE_Return_t</field>
+    <field name="text">DTHE Driver Error code DTHE Driver Error code The following defines describe all the possible return and error codes which the DTHE Driver can return</field>
+  </doc>
+  <doc>
     <field name="type">typedef</field>
     <field name="name">DTHE_Handle</field>
     <field name="url">group__SECURITY__DTHE__MODULE.html#ga83c5172e7759b4dadec0a146eb376798</field>
     <field name="keywords">DTHE_Handle DTHE_Handle</field>
     <field name="text">Handle to the DTHE driver Handle to the DTHE driver</field>
-  </doc>
-  <doc>
-    <field name="type">enum</field>
-    <field name="name">DTHE_Return_t</field>
-    <field name="url">group__SECURITY__DTHE__MODULE.html#ga03b6242d5ab43f794df7117292a14d34</field>
-    <field name="keywords">DTHE_Return_t DTHE_Return_t</field>
-    <field name="text">DTHE Driver Error code DTHE Driver Error code The enumeration describes all the possible return and error codes which the DTHE Driver can return</field>
-  </doc>
-  <doc>
-    <field name="type">enumvalue</field>
-    <field name="name">DTHE_RETURN_SUCCESS</field>
-    <field name="url">group__SECURITY__DTHE__MODULE.html#gga03b6242d5ab43f794df7117292a14d34aa90685ea782dee60b08d74c03434b114</field>
-    <field name="keywords">DTHE_RETURN_SUCCESS DTHE_RETURN_SUCCESS</field>
-    <field name="text">Success/pass return code</field>
-  </doc>
-  <doc>
-    <field name="type">enumvalue</field>
-    <field name="name">DTHE_RETURN_FAILURE</field>
-    <field name="url">group__SECURITY__DTHE__MODULE.html#gga03b6242d5ab43f794df7117292a14d34a2f6a4dd7c56ea3dbdee82bc92c852504</field>
-    <field name="keywords">DTHE_RETURN_FAILURE DTHE_RETURN_FAILURE</field>
-    <field name="text">General or unspecified failure/error</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -133237,25 +133251,25 @@
     <field name="text">AES XTS Operation Select Mode 3 AES XTS Operation Select Mode 3</field>
   </doc>
   <doc>
-    <field name="type">enum</field>
-    <field name="name">DTHE_AES_Return_t</field>
-    <field name="url">group__SECURITY__DTHE__AES__MODULE.html#gaeb38f975e2c66f1d3ca80e78be2f11e7</field>
-    <field name="keywords">DTHE_AES_Return_t DTHE_AES_Return_t</field>
-    <field name="text">DTHE AES Driver Error code DTHE AES Driver Error code The enumeration describes all the possible return and error codes which the DTHE AES Driver can return</field>
-  </doc>
-  <doc>
-    <field name="type">enumvalue</field>
+    <field name="type">define</field>
     <field name="name">DTHE_AES_RETURN_SUCCESS</field>
-    <field name="url">group__SECURITY__DTHE__AES__MODULE.html#ggaeb38f975e2c66f1d3ca80e78be2f11e7ada7b85cc5ebb6a5763d6f52b2a22ef38</field>
+    <field name="url">group__SECURITY__DTHE__AES__MODULE.html#gaeb9307d2f745596c6d65f398541529f1</field>
     <field name="keywords">DTHE_AES_RETURN_SUCCESS DTHE_AES_RETURN_SUCCESS</field>
     <field name="text">Success/pass return code</field>
   </doc>
   <doc>
-    <field name="type">enumvalue</field>
+    <field name="type">define</field>
     <field name="name">DTHE_AES_RETURN_FAILURE</field>
-    <field name="url">group__SECURITY__DTHE__AES__MODULE.html#ggaeb38f975e2c66f1d3ca80e78be2f11e7a76d1f75232e642234b9bb7e83acf5709</field>
+    <field name="url">group__SECURITY__DTHE__AES__MODULE.html#gac0b77d8caafd37533a46a46299b70b02</field>
     <field name="keywords">DTHE_AES_RETURN_FAILURE DTHE_AES_RETURN_FAILURE</field>
     <field name="text">General or unspecified failure/error</field>
+  </doc>
+  <doc>
+    <field name="type">typedef</field>
+    <field name="name">DTHE_AES_Return_t</field>
+    <field name="url">group__SECURITY__DTHE__AES__MODULE.html#gaff66f2338759d5c1cc17791f6879b556</field>
+    <field name="keywords">DTHE_AES_Return_t DTHE_AES_Return_t</field>
+    <field name="text">DTHE AES Driver Error code DTHE AES Driver Error code The following defines describe all the possible return and error codes which the DTHE AES Driver can return</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -133436,25 +133450,25 @@
     <field name="text">The Maximum Digest Size is 6 4 bytes for the SHA512 The Maximum Digest Size is 6 4 bytes for the SHA512</field>
   </doc>
   <doc>
-    <field name="type">enum</field>
-    <field name="name">DTHE_SHA_Return_t</field>
-    <field name="url">group__SECURITY__DTHE__SHA__MODULE.html#ga00a0fb65e95cfa66c6340105d368f4aa</field>
-    <field name="keywords">DTHE_SHA_Return_t DTHE_SHA_Return_t</field>
-    <field name="text">DTHE SHA Driver Error code DTHE SHA Driver Error code The enumeration describes all the possible return and error codes which the DTHE SHA Driver can return</field>
-  </doc>
-  <doc>
-    <field name="type">enumvalue</field>
+    <field name="type">define</field>
     <field name="name">DTHE_SHA_RETURN_SUCCESS</field>
-    <field name="url">group__SECURITY__DTHE__SHA__MODULE.html#gga00a0fb65e95cfa66c6340105d368f4aaa4d4894cd15ef816709a4e3d95db57a98</field>
+    <field name="url">group__SECURITY__DTHE__SHA__MODULE.html#gad6a84621be4f4eeb9ede53878e6d0d77</field>
     <field name="keywords">DTHE_SHA_RETURN_SUCCESS DTHE_SHA_RETURN_SUCCESS</field>
     <field name="text">Success/pass return code</field>
   </doc>
   <doc>
-    <field name="type">enumvalue</field>
+    <field name="type">define</field>
     <field name="name">DTHE_SHA_RETURN_FAILURE</field>
-    <field name="url">group__SECURITY__DTHE__SHA__MODULE.html#gga00a0fb65e95cfa66c6340105d368f4aaa65b6c67bb7cebb0f62c53692a14062f6</field>
+    <field name="url">group__SECURITY__DTHE__SHA__MODULE.html#ga79586fd221f35ebb00995d7e20446952</field>
     <field name="keywords">DTHE_SHA_RETURN_FAILURE DTHE_SHA_RETURN_FAILURE</field>
     <field name="text">General or unspecified failure/error</field>
+  </doc>
+  <doc>
+    <field name="type">typedef</field>
+    <field name="name">DTHE_SHA_Return_t</field>
+    <field name="url">group__SECURITY__DTHE__SHA__MODULE.html#gaf4f87d07315a65c2d6456eca4d31d920</field>
+    <field name="keywords">DTHE_SHA_Return_t DTHE_SHA_Return_t</field>
+    <field name="text">DTHE SHA Driver Error code DTHE SHA Driver Error code The following defines describe all the possible return and error codes which the DTHE SHA Driver can return</field>
   </doc>
   <doc>
     <field name="type">function</field>
@@ -208788,6 +208802,20 @@
     <field name="text">Value specifying LIN3_UART3</field>
   </doc>
   <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">SOC_RcmPeripheralId_LIN4_UART4</field>
+    <field name="url">group__DRV__SOC__RCM__MODULE.html#gga6674bb5c28889ff80f5a352030bfd78fa54b1065f37c758d68259565f3027866a</field>
+    <field name="keywords">SOC_RcmPeripheralId_LIN4_UART4 SOC_RcmPeripheralId_LIN4_UART4</field>
+    <field name="text">Value specifying LIN4_UART4</field>
+  </doc>
+  <doc>
+    <field name="type">enumvalue</field>
+    <field name="name">SOC_RcmPeripheralId_LIN5_UART5</field>
+    <field name="url">group__DRV__SOC__RCM__MODULE.html#gga6674bb5c28889ff80f5a352030bfd78fac2b39c088628a9731fa4c2bbc102b48f</field>
+    <field name="keywords">SOC_RcmPeripheralId_LIN5_UART5 SOC_RcmPeripheralId_LIN5_UART5</field>
+    <field name="text">Value specifying LIN5_UART5</field>
+  </doc>
+  <doc>
     <field name="type">enum</field>
     <field name="name">SOC_RcmPeripheralClockSource</field>
     <field name="url">group__DRV__SOC__RCM__MODULE.html#ga049fd9d8d05991ff7c58545e744fa8b6</field>
@@ -242189,315 +242217,315 @@
     <field name="name">IcssgStats_Pa::hostRxByteCnt</field>
     <field name="url">structIcssgStats__Pa.html#a3e8e335f62e7dbd215c0406b700163dd</field>
     <field name="keywords">hostRxByteCnt IcssgStats_Pa::hostRxByteCnt IcssgStats_Pa</field>
-    <field name="text">Number of valid bytes sent by RX PRU to Host on PSI Valid only for Switch mode</field>
+    <field name="text">Number of valid bytes sent by RX PRU to host via PSI Valid in Switch mode only</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::hostTxByteCnt</field>
     <field name="url">structIcssgStats__Pa.html#a954c6ad9a4223affc82075f59d1211e9</field>
     <field name="keywords">hostTxByteCnt IcssgStats_Pa::hostTxByteCnt IcssgStats_Pa</field>
-    <field name="text">Number of valid bytes copied by RTU0 to TX queues Valid only for Switch mode</field>
+    <field name="text">Number of valid bytes copied by RTU to TX queues Valid in Switch mode only</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::hostRxByteCntMacSlice0</field>
     <field name="url">structIcssgStats__Pa.html#a744958814218b74d5c129ccbe354d08a</field>
     <field name="keywords">hostRxByteCntMacSlice0 IcssgStats_Pa::hostRxByteCntMacSlice0 IcssgStats_Pa</field>
-    <field name="text">Number of valid bytes sent by Rx PRU to Host on PSI Valid only for Dualmac mode</field>
+    <field name="text">Number of valid bytes sent by RX PRU to host via PSI Valid in DualMAC mode only Port 0</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::hostRxByteCntMacSlice1</field>
     <field name="url">structIcssgStats__Pa.html#a94f7026307b534c4a93c26be49934255</field>
     <field name="keywords">hostRxByteCntMacSlice1 IcssgStats_Pa::hostRxByteCntMacSlice1 IcssgStats_Pa</field>
-    <field name="text">Number of valid bytes sent by Rx PRU to Host on PSI Valid only for Dualmac mode</field>
+    <field name="text">Number of valid bytes sent by RX PRU to host via PSI Valid in DualMAC mode only Port 1</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::hostTxByteCntMacSlice0</field>
     <field name="url">structIcssgStats__Pa.html#a023e39b991da27055f200fa69b647361</field>
     <field name="keywords">hostTxByteCntMacSlice0 IcssgStats_Pa::hostTxByteCntMacSlice0 IcssgStats_Pa</field>
-    <field name="text">Number of valid bytes sent by Tx PRU to Host on PSI Valid only for Dualmac mode</field>
+    <field name="text">Number of valid bytes sent by TX PRU to host via PSI Valid in DualMAC mode only Port 0</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::hostTxByteCntMacSlice1</field>
     <field name="url">structIcssgStats__Pa.html#a9a4c95c4fcc2257d5ee0c62f84c7ed8b</field>
     <field name="keywords">hostTxByteCntMacSlice1 IcssgStats_Pa::hostTxByteCntMacSlice1 IcssgStats_Pa</field>
-    <field name="text">Number of valid bytes sent by Tx PRU to Host on PSI Valid only for Dualmac mode</field>
+    <field name="text">Number of valid bytes sent by TX PRU to host via PSI Valid in DualMAC mode only Port 1</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::hostRxPktCnt</field>
     <field name="url">structIcssgStats__Pa.html#aed09c72128945f8a2c4a8f61e1ff30e7</field>
     <field name="keywords">hostRxPktCnt IcssgStats_Pa::hostRxPktCnt IcssgStats_Pa</field>
-    <field name="text">Number of valid packets sent by RX PRU to Host on PSI Valid only for Switch mode</field>
+    <field name="text">Number of valid packets sent by RX PRU to host via PSI Valid in Switch mode only</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::hostTxPktCnt</field>
     <field name="url">structIcssgStats__Pa.html#a036295b95eff2db9dcccfb5d01cefc14</field>
     <field name="keywords">hostTxPktCnt IcssgStats_Pa::hostTxPktCnt IcssgStats_Pa</field>
-    <field name="text">Number of valid packets copied by RTU0 to TX queues Valid only for Switch mode</field>
+    <field name="text">Number of valid packets copied by RTU to TX queues Valid in Switch mode only</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::hostRxPktCntMacSlice0</field>
     <field name="url">structIcssgStats__Pa.html#aafc9b3ebb9372285610dfb8e495e6e4f</field>
     <field name="keywords">hostRxPktCntMacSlice0 IcssgStats_Pa::hostRxPktCntMacSlice0 IcssgStats_Pa</field>
-    <field name="text">Number of valid packets sent by Rx PRU to Host on PSI Valid only for Dualmac mode</field>
+    <field name="text">Number of valid packets sent by RX PRU to host via PSI Valid in DualMAC mode only Port 0</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::hostRxPktCntMacSlice1</field>
     <field name="url">structIcssgStats__Pa.html#a021c3c8c34720ba35fcc0a8d846a63ec</field>
     <field name="keywords">hostRxPktCntMacSlice1 IcssgStats_Pa::hostRxPktCntMacSlice1 IcssgStats_Pa</field>
-    <field name="text">Number of valid packets sent by Rx PRU to Host on PSI Valid only for Dualmac mode</field>
+    <field name="text">Number of valid packets sent by RX PRU to host via PSI Valid in DualMAC mode only Port 1</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::hostTxPktCntMacSlice0</field>
     <field name="url">structIcssgStats__Pa.html#a52392a24548bd2f6b143ccbd23796414</field>
     <field name="keywords">hostTxPktCntMacSlice0 IcssgStats_Pa::hostTxPktCntMacSlice0 IcssgStats_Pa</field>
-    <field name="text">Number of valid packets copied by RTU0 to Tx queues Valid only for Dualmac mode</field>
+    <field name="text">Number of valid packets copied by RTU to TX queues Valid in DualMAC mode only Port 0</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::hostTxPktCntMacSlice1</field>
     <field name="url">structIcssgStats__Pa.html#a613574032ffc88cb4bc9e9660e2904f7</field>
     <field name="keywords">hostTxPktCntMacSlice1 IcssgStats_Pa::hostTxPktCntMacSlice1 IcssgStats_Pa</field>
-    <field name="text">Number of valid packets copied by RTU1 to Tx queues Valid only for Dualmac mode</field>
+    <field name="text">Number of valid packets copied by RTU to TX queues Valid in DualMAC mode only Port 1</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::rtu0PktDroppedSlice0</field>
     <field name="url">structIcssgStats__Pa.html#ab3ef5fa82f77b5cf46deb5d96c4bcc77</field>
     <field name="keywords">rtu0PktDroppedSlice0 IcssgStats_Pa::rtu0PktDroppedSlice0 IcssgStats_Pa</field>
-    <field name="text">PRU diagnostic error counter which increments when RTU0 drops a locally injected packet due to port disabled or rule violation</field>
+    <field name="text">Diagnostic error counter — increments when RTU drops a locally injected packet due to port being disabled or a rule violation Port 0</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::rtu0PktDroppedSlice1</field>
     <field name="url">structIcssgStats__Pa.html#a5c9bafe016504f87d294d4145ab3854a</field>
     <field name="keywords">rtu0PktDroppedSlice1 IcssgStats_Pa::rtu0PktDroppedSlice1 IcssgStats_Pa</field>
-    <field name="text">PRU diagnostic error counter which increments when RTU1 drops a locally injected packet due to port disabled or rule violation</field>
+    <field name="text">Diagnostic error counter — increments when RTU drops a locally injected packet due to port being disabled or a rule violation Port 1</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::port1Q0Overflow</field>
     <field name="url">structIcssgStats__Pa.html#a97e9a9e4d03d0e400a183ef96eaaa7ca</field>
     <field name="keywords">port1Q0Overflow IcssgStats_Pa::port1Q0Overflow IcssgStats_Pa</field>
-    <field name="text">Port1 TX Q Overflow Counter</field>
+    <field name="text">TX queue 0 overflow counter for Port 1 Valid in Switch mode only</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::port1Q1Overflow</field>
     <field name="url">structIcssgStats__Pa.html#a6184984f673b3ef92f70b6ea60c2932d</field>
     <field name="keywords">port1Q1Overflow IcssgStats_Pa::port1Q1Overflow IcssgStats_Pa</field>
-    <field name="text">Port1 TX Q Overflow Counter</field>
+    <field name="text">TX queue 1 overflow counter for Port 1 Valid in Switch mode only</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::port1Q2Overflow</field>
     <field name="url">structIcssgStats__Pa.html#a1d504cd56cd9c7c8b8064b4d1e2541a2</field>
     <field name="keywords">port1Q2Overflow IcssgStats_Pa::port1Q2Overflow IcssgStats_Pa</field>
-    <field name="text">Port1 TX Q Overflow Counter</field>
+    <field name="text">TX queue 2 overflow counter for Port 1 Valid in Switch mode only</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::port1Q3Overflow</field>
     <field name="url">structIcssgStats__Pa.html#a07236e05e1d8f222bb9cae83a0a735d2</field>
     <field name="keywords">port1Q3Overflow IcssgStats_Pa::port1Q3Overflow IcssgStats_Pa</field>
-    <field name="text">Port1 TX Q Overflow Counter</field>
+    <field name="text">TX queue 3 overflow counter for Port 1 Valid in Switch mode only</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::port1Q4Overflow</field>
     <field name="url">structIcssgStats__Pa.html#ab31a1a229aa79288bec35a30d2d8d654</field>
     <field name="keywords">port1Q4Overflow IcssgStats_Pa::port1Q4Overflow IcssgStats_Pa</field>
-    <field name="text">Port1 TX Q Overflow Counter</field>
+    <field name="text">TX queue 4 overflow counter for Port 1 Valid in Switch mode only</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::port1Q5Overflow</field>
     <field name="url">structIcssgStats__Pa.html#ac418cde5fcb4e77b578788886d323158</field>
     <field name="keywords">port1Q5Overflow IcssgStats_Pa::port1Q5Overflow IcssgStats_Pa</field>
-    <field name="text">Port1 TX Q Overflow Counter</field>
+    <field name="text">TX queue 5 overflow counter for Port 1 Valid in Switch mode only</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::port1Q6Overflow</field>
     <field name="url">structIcssgStats__Pa.html#a84f46eddc15207f819fbb35cad40daf6</field>
     <field name="keywords">port1Q6Overflow IcssgStats_Pa::port1Q6Overflow IcssgStats_Pa</field>
-    <field name="text">Port1 TX Q Overflow Counter</field>
+    <field name="text">TX queue 6 overflow counter for Port 1 Valid in Switch mode only</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::port1Q7Overflow</field>
     <field name="url">structIcssgStats__Pa.html#a17f359c9a933ad6c7a0640bc4c648bac</field>
     <field name="keywords">port1Q7Overflow IcssgStats_Pa::port1Q7Overflow IcssgStats_Pa</field>
-    <field name="text">Port1 TX Q Overflow Counter</field>
+    <field name="text">TX queue 7 overflow counter for Port 1 Valid in Switch mode only</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::port2Q0Overflow</field>
     <field name="url">structIcssgStats__Pa.html#a39b703ead029cb63fd1da1c06af97edb</field>
     <field name="keywords">port2Q0Overflow IcssgStats_Pa::port2Q0Overflow IcssgStats_Pa</field>
-    <field name="text">Port2 TX Q Overflow Counter</field>
+    <field name="text">TX queue 0 overflow counter for Port 2 Valid in Switch mode only</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::port2Q1Overflow</field>
     <field name="url">structIcssgStats__Pa.html#a593617650a634a61d61bdb2e017f9ddb</field>
     <field name="keywords">port2Q1Overflow IcssgStats_Pa::port2Q1Overflow IcssgStats_Pa</field>
-    <field name="text">Port2 TX Q Overflow Counter</field>
+    <field name="text">TX queue 1 overflow counter for Port 2 Valid in Switch mode only</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::port2Q2Overflow</field>
     <field name="url">structIcssgStats__Pa.html#a003ee93eee630d1e7e5584798f9dbb6e</field>
     <field name="keywords">port2Q2Overflow IcssgStats_Pa::port2Q2Overflow IcssgStats_Pa</field>
-    <field name="text">Port2 TX Q Overflow Counter</field>
+    <field name="text">TX queue 2 overflow counter for Port 2 Valid in Switch mode only</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::port2Q3Overflow</field>
     <field name="url">structIcssgStats__Pa.html#a5501ff80095407ccca59e04f982c4079</field>
     <field name="keywords">port2Q3Overflow IcssgStats_Pa::port2Q3Overflow IcssgStats_Pa</field>
-    <field name="text">Port2 TX Q Overflow Counter</field>
+    <field name="text">TX queue 3 overflow counter for Port 2 Valid in Switch mode only</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::port2Q4Overflow</field>
     <field name="url">structIcssgStats__Pa.html#a84c7caf66ee2fe9211f58aff4dec4ab2</field>
     <field name="keywords">port2Q4Overflow IcssgStats_Pa::port2Q4Overflow IcssgStats_Pa</field>
-    <field name="text">Port2 TX Q Overflow Counter</field>
+    <field name="text">TX queue 4 overflow counter for Port 2 Valid in Switch mode only</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::port2Q5Overflow</field>
     <field name="url">structIcssgStats__Pa.html#abbddf8e9cba363f878160812ad9b6ebb</field>
     <field name="keywords">port2Q5Overflow IcssgStats_Pa::port2Q5Overflow IcssgStats_Pa</field>
-    <field name="text">Port2 TX Q Overflow Counter</field>
+    <field name="text">TX queue 5 overflow counter for Port 2 Valid in Switch mode only</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::port2Q6Overflow</field>
     <field name="url">structIcssgStats__Pa.html#a0aa71a85e6233edf17db859188b2d35d</field>
     <field name="keywords">port2Q6Overflow IcssgStats_Pa::port2Q6Overflow IcssgStats_Pa</field>
-    <field name="text">Port2 TX Q Overflow Counter</field>
+    <field name="text">TX queue 6 overflow counter for Port 2 Valid in Switch mode only</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::port2Q7Overflow</field>
     <field name="url">structIcssgStats__Pa.html#afdc411844c2ad798bdbe729a64a2e3be</field>
     <field name="keywords">port2Q7Overflow IcssgStats_Pa::port2Q7Overflow IcssgStats_Pa</field>
-    <field name="text">Port2 TX Q Overflow Counter</field>
+    <field name="text">TX queue 7 overflow counter for Port 2 Valid in Switch mode only</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::hostQ0Overflow</field>
     <field name="url">structIcssgStats__Pa.html#a366313fb66264a7bb1ddbeffe5c8a502</field>
     <field name="keywords">hostQ0Overflow IcssgStats_Pa::hostQ0Overflow IcssgStats_Pa</field>
-    <field name="text">Host TX Q Overflow Counter</field>
+    <field name="text">Host egress queue 0 overflow counter Reserved not currently used</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::hostQ1Overflow</field>
     <field name="url">structIcssgStats__Pa.html#a54def518f8a908807a0963204b736249</field>
     <field name="keywords">hostQ1Overflow IcssgStats_Pa::hostQ1Overflow IcssgStats_Pa</field>
-    <field name="text">Host TX Q Overflow Counter</field>
+    <field name="text">Host egress queue 1 overflow counter Reserved not currently used</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::hostQ2Overflow</field>
     <field name="url">structIcssgStats__Pa.html#a0cd775559d66ee43fbab499a42780ad1</field>
     <field name="keywords">hostQ2Overflow IcssgStats_Pa::hostQ2Overflow IcssgStats_Pa</field>
-    <field name="text">Host TX Q Overflow Counter</field>
+    <field name="text">Host egress queue 2 overflow counter Reserved not currently used</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::hostQ3Overflow</field>
     <field name="url">structIcssgStats__Pa.html#a914e5d3f336d90e72f1655e7534ff633</field>
     <field name="keywords">hostQ3Overflow IcssgStats_Pa::hostQ3Overflow IcssgStats_Pa</field>
-    <field name="text">Host TX Q Overflow Counter</field>
+    <field name="text">Host egress queue 3 overflow counter Reserved not currently used</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::hostQ4Overflow</field>
     <field name="url">structIcssgStats__Pa.html#a19b0a805899f54dd41334b75fcab2083</field>
     <field name="keywords">hostQ4Overflow IcssgStats_Pa::hostQ4Overflow IcssgStats_Pa</field>
-    <field name="text">Host TX Q Overflow Counter</field>
+    <field name="text">Host egress queue 4 overflow counter Reserved not currently used</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::hostQ5Overflow</field>
     <field name="url">structIcssgStats__Pa.html#afce55448feb5ea0633991dd42c571660</field>
     <field name="keywords">hostQ5Overflow IcssgStats_Pa::hostQ5Overflow IcssgStats_Pa</field>
-    <field name="text">Host TX Q Overflow Counter</field>
+    <field name="text">Host egress queue 5 overflow counter Reserved not currently used</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::hostQ6Overflow</field>
     <field name="url">structIcssgStats__Pa.html#a4aeefaf9113597dcd0ffb267dcef4053</field>
     <field name="keywords">hostQ6Overflow IcssgStats_Pa::hostQ6Overflow IcssgStats_Pa</field>
-    <field name="text">Host TX Q Overflow Counter</field>
+    <field name="text">Host egress queue 6 overflow counter Reserved not currently used</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::hostQ7Overflow</field>
     <field name="url">structIcssgStats__Pa.html#ab29c3419115b844c6865d0079cbe36d5</field>
     <field name="keywords">hostQ7Overflow IcssgStats_Pa::hostQ7Overflow IcssgStats_Pa</field>
-    <field name="text">Host TX Q Overflow Counter</field>
+    <field name="text">Host egress queue 7 overflow counter Reserved not currently used</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::hostEgressQPreOverflow</field>
     <field name="url">structIcssgStats__Pa.html#a6f349f9cbe9a5841ea3b07b641acc07a</field>
     <field name="keywords">hostEgressQPreOverflow IcssgStats_Pa::hostEgressQPreOverflow IcssgStats_Pa</field>
-    <field name="text">Host Egress Q Pre-emptible Overflow Counter</field>
+    <field name="text">Host RX pre-emptible egress queue overflow counter Valid in Switch mode only</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::droppedPktSlice0</field>
     <field name="url">structIcssgStats__Pa.html#accf4ce1d52db578fd582f8e6d3776f30</field>
     <field name="keywords">droppedPktSlice0 IcssgStats_Pa::droppedPktSlice0 IcssgStats_Pa</field>
-    <field name="text">Incremented if a packet is dropped at PRU0 because of a rule violation</field>
+    <field name="text">Increments when a packet is dropped at PRU due to a rule violation Port 0</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::droppedPktSlice1</field>
     <field name="url">structIcssgStats__Pa.html#aa6c4c734cd5cac945bf5d66c248ec720</field>
     <field name="keywords">droppedPktSlice1 IcssgStats_Pa::droppedPktSlice1 IcssgStats_Pa</field>
-    <field name="text">Incremented if a packet is dropped at PRU1 because of a rule violation</field>
+    <field name="text">Increments when a packet is dropped at PRU due to a rule violation Port 1</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::rxErrorSlice0</field>
     <field name="url">structIcssgStats__Pa.html#a60d35539ea02c4e11dfa27841be3d2f0</field>
     <field name="keywords">rxErrorSlice0 IcssgStats_Pa::rxErrorSlice0 IcssgStats_Pa</field>
-    <field name="text">Incremented if there was a CRC error or Min/Max frame error at PRU0</field>
+    <field name="text">Increments when a CRC error or Min/Max frame size error is detected Port 0</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::rxErrorSlice1</field>
     <field name="url">structIcssgStats__Pa.html#a0f2218dbb1774d1782ddb9bf23dd2cb2</field>
     <field name="keywords">rxErrorSlice1 IcssgStats_Pa::rxErrorSlice1 IcssgStats_Pa</field>
-    <field name="text">Incremented if there was a CRC error or Min/Max frame error at PRU1</field>
+    <field name="text">Increments when a CRC error or Min/Max frame size error is detected Port 1</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::rxEofRtuDsInvalidSlice0</field>
     <field name="url">structIcssgStats__Pa.html#aa56451635a6a0f37958ba008a6153425</field>
     <field name="keywords">rxEofRtuDsInvalidSlice0 IcssgStats_Pa::rxEofRtuDsInvalidSlice0 IcssgStats_Pa</field>
-    <field name="text">RTU0 diagnostic counter increments when RTU detects Data Status invalid condition</field>
+    <field name="text">RTU diagnostic counter — increments when RTU detects a Data Status invalid condition Port 0</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::rxEofRtuDsInvalidSlice1</field>
     <field name="url">structIcssgStats__Pa.html#a0b71ea7f69bd0d7f59dc02d909efee40</field>
     <field name="keywords">rxEofRtuDsInvalidSlice1 IcssgStats_Pa::rxEofRtuDsInvalidSlice1 IcssgStats_Pa</field>
-    <field name="text">RTU1 diagnostic counter increments when RTU detects Data Status invalid condition</field>
+    <field name="text">RTU diagnostic counter — increments when RTU detects a Data Status invalid condition Port 1</field>
   </doc>
   <doc>
     <field name="type">variable</field>
@@ -242532,112 +242560,112 @@
     <field name="name">IcssgStats_Pa::infPortDisabledSlice0</field>
     <field name="url">structIcssgStats__Pa.html#acd1e57b6751359863bac331fa0273b8d</field>
     <field name="keywords">infPortDisabledSlice0 IcssgStats_Pa::infPortDisabledSlice0 IcssgStats_Pa</field>
-    <field name="text">PRU0 diagnostic error counter which increments when RX frame is dropped due to port is disabled</field>
+    <field name="text">Port 0 diagnostic error counter which increments when RX frame is dropped due to port is disabled</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::infPortDisabledSlice1</field>
     <field name="url">structIcssgStats__Pa.html#a9e1d857753e4a57f85620c8edfbdfd4a</field>
     <field name="keywords">infPortDisabledSlice1 IcssgStats_Pa::infPortDisabledSlice1 IcssgStats_Pa</field>
-    <field name="text">PRU1 diagnostic error counter which increments when RX frame is dropped due to port is disabled</field>
+    <field name="text">Port 1 diagnostic error counter which increments when RX frame is dropped due to port is disabled</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::infSavSlice0</field>
     <field name="url">structIcssgStats__Pa.html#a26c644c0dc2e9a5a3dc6b95d9d4bcce4</field>
     <field name="keywords">infSavSlice0 IcssgStats_Pa::infSavSlice0 IcssgStats_Pa</field>
-    <field name="text">PRU0 diagnostic error counter which increments when RX frame is dropped due to SA violation</field>
+    <field name="text">Port 0 diagnostic error counter which increments when RX frame is dropped due to SA violation</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::infSavSlice1</field>
     <field name="url">structIcssgStats__Pa.html#ab359dddca884248d27fe8c209e9c0dfd</field>
     <field name="keywords">infSavSlice1 IcssgStats_Pa::infSavSlice1 IcssgStats_Pa</field>
-    <field name="text">PRU1 diagnostic error counter which increments when RX frame is dropped due to SA violation</field>
+    <field name="text">Port 1 diagnostic error counter which increments when RX frame is dropped due to SA violation</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::infSaBlSlice0</field>
     <field name="url">structIcssgStats__Pa.html#a827afebfb3eb970727815d5cab093dbc</field>
     <field name="keywords">infSaBlSlice0 IcssgStats_Pa::infSaBlSlice0 IcssgStats_Pa</field>
-    <field name="text">PRU0 diagnostic error counter which increments when RX frame is dropped due to SA black listed</field>
+    <field name="text">Port 0 diagnostic error counter which increments when RX frame is dropped due to SA black listed</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::infSaBlSlice1</field>
     <field name="url">structIcssgStats__Pa.html#ad2eaa0019ca4334aaf62b564a197cddc</field>
     <field name="keywords">infSaBlSlice1 IcssgStats_Pa::infSaBlSlice1 IcssgStats_Pa</field>
-    <field name="text">PRU1 diagnostic error counter which increments when RX frame is dropped due to SA black listed</field>
+    <field name="text">Port 1 diagnostic error counter which increments when RX frame is dropped due to SA black listed</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::infPortBlockedSlice0</field>
     <field name="url">structIcssgStats__Pa.html#a13c58392b629de0a4dc3da57d12dc7c7</field>
     <field name="keywords">infPortBlockedSlice0 IcssgStats_Pa::infPortBlockedSlice0 IcssgStats_Pa</field>
-    <field name="text">PRU0 diagnostic error counter which increments when RX frame is dropped due to port blocked and not a special frame</field>
+    <field name="text">Port 0 diagnostic error counter which increments when RX frame is dropped due to port blocked and not a special frame</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::infPortBlockedSlice1</field>
     <field name="url">structIcssgStats__Pa.html#a8fff31873271efe34cd39fc18a9431c8</field>
     <field name="keywords">infPortBlockedSlice1 IcssgStats_Pa::infPortBlockedSlice1 IcssgStats_Pa</field>
-    <field name="text">PRU1 diagnostic error counter which increments when RX frame is dropped due to port blocked and not a special frame</field>
+    <field name="text">Port 1 diagnostic error counter which increments when RX frame is dropped due to port blocked and not a special frame</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::infAftDropTaggedSlice0</field>
     <field name="url">structIcssgStats__Pa.html#a049db8ea42d4dd9c83d4d8507efc93aa</field>
     <field name="keywords">infAftDropTaggedSlice0 IcssgStats_Pa::infAftDropTaggedSlice0 IcssgStats_Pa</field>
-    <field name="text">PRU0 diagnostic error counter which increments when RX frame is dropped due to tagged</field>
+    <field name="text">Port 0 diagnostic error counter which increments when RX frame is dropped due to tagged</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::infAftDropTaggedSlice1</field>
     <field name="url">structIcssgStats__Pa.html#a99b574fd32cc7e14b87e5fcbbba7835c</field>
     <field name="keywords">infAftDropTaggedSlice1 IcssgStats_Pa::infAftDropTaggedSlice1 IcssgStats_Pa</field>
-    <field name="text">PRU1 diagnostic error counter which increments when RX frame is dropped due to tagged</field>
+    <field name="text">Port 1 diagnostic error counter which increments when RX frame is dropped due to tagged</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::infAftDropPrioTaggedSlice0</field>
     <field name="url">structIcssgStats__Pa.html#a6c87260d79007c27897d609539305fe2</field>
     <field name="keywords">infAftDropPrioTaggedSlice0 IcssgStats_Pa::infAftDropPrioTaggedSlice0 IcssgStats_Pa</field>
-    <field name="text">PRU0 diagnostic error counter which increments when RX frame is dropped due to priority tagged</field>
+    <field name="text">Port 0 diagnostic error counter which increments when RX frame is dropped due to priority tagged</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::infAftDropPrioTaggedSlice1</field>
     <field name="url">structIcssgStats__Pa.html#aaa2bf1a8594ef8bea86ca9a774826144</field>
     <field name="keywords">infAftDropPrioTaggedSlice1 IcssgStats_Pa::infAftDropPrioTaggedSlice1 IcssgStats_Pa</field>
-    <field name="text">PRU1 diagnostic error counter which increments when RX frame is dropped due to priority tagged</field>
+    <field name="text">Port 1 diagnostic error counter which increments when RX frame is dropped due to priority tagged</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::infAftDropNoTagSlice0</field>
     <field name="url">structIcssgStats__Pa.html#af1b30a1ab6088f643910899445b4d39e</field>
     <field name="keywords">infAftDropNoTagSlice0 IcssgStats_Pa::infAftDropNoTagSlice0 IcssgStats_Pa</field>
-    <field name="text">PRU0 diagnostic error counter which increments when RX frame is dropped due to untagged</field>
+    <field name="text">Port 0 diagnostic error counter which increments when RX frame is dropped due to untagged</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::infAftDropNoTagSlice1</field>
     <field name="url">structIcssgStats__Pa.html#af63815a2a333f700cb100b8c6b5fc353</field>
     <field name="keywords">infAftDropNoTagSlice1 IcssgStats_Pa::infAftDropNoTagSlice1 IcssgStats_Pa</field>
-    <field name="text">PRU1 diagnostic error counter which increments when RX frame is dropped due to untagged</field>
+    <field name="text">Port 1 diagnostic error counter which increments when RX frame is dropped due to untagged</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::infAftDropNotMemberSlice0</field>
     <field name="url">structIcssgStats__Pa.html#ae558725ef235677a19316b6723d2a8ef</field>
     <field name="keywords">infAftDropNotMemberSlice0 IcssgStats_Pa::infAftDropNotMemberSlice0 IcssgStats_Pa</field>
-    <field name="text">PRU0 diagnostic error counter which increments when RX frame is dropped due to port not member of VLAN</field>
+    <field name="text">Port 0 diagnostic error counter which increments when RX frame is dropped due to port not member of VLAN</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::infAftDropNotMemberSlice1</field>
     <field name="url">structIcssgStats__Pa.html#a88be11378c5259822b0c032682d09e0d</field>
     <field name="keywords">infAftDropNotMemberSlice1 IcssgStats_Pa::infAftDropNotMemberSlice1 IcssgStats_Pa</field>
-    <field name="text">PRU1 diagnostic error counter which increments when RX frame is dropped due to port not member of VLAN</field>
+    <field name="text">Port 1 diagnostic error counter which increments when RX frame is dropped due to port not member of VLAN</field>
   </doc>
   <doc>
     <field name="type">variable</field>
@@ -242651,182 +242679,182 @@
     <field name="name">IcssgStats_Pa::preemptBadFragSlice0</field>
     <field name="url">structIcssgStats__Pa.html#a15052ef4d0e6080b8a81b6262b91ad8e</field>
     <field name="keywords">preemptBadFragSlice0 IcssgStats_Pa::preemptBadFragSlice0 IcssgStats_Pa</field>
-    <field name="text">PRU0 Bad fragment Error Counter</field>
+    <field name="text">Port 0 bad fragment error counter</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::preemptBadFragSlice1</field>
     <field name="url">structIcssgStats__Pa.html#af270a065425e1e0741a516499b598b11</field>
     <field name="keywords">preemptBadFragSlice1 IcssgStats_Pa::preemptBadFragSlice1 IcssgStats_Pa</field>
-    <field name="text">PRU1 Bad fragment Error Counter</field>
+    <field name="text">Port 1 bad fragment error counter</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::preemptAsmErrSlice0</field>
     <field name="url">structIcssgStats__Pa.html#acafe2bc12af116ad8c39a77d290bffa2</field>
     <field name="keywords">preemptAsmErrSlice0 IcssgStats_Pa::preemptAsmErrSlice0 IcssgStats_Pa</field>
-    <field name="text">PRU0 Fragment assembly Error Counter</field>
+    <field name="text">Port 0 fragment assembly error counter</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::preemptAsmErrSlice1</field>
     <field name="url">structIcssgStats__Pa.html#a01e77c4eef65a823b4157e0ac407a7dc</field>
     <field name="keywords">preemptAsmErrSlice1 IcssgStats_Pa::preemptAsmErrSlice1 IcssgStats_Pa</field>
-    <field name="text">PRU1 Fragment assembly Error Counter</field>
+    <field name="text">Port 1 fragment assembly error counter</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::preemptFragCntTxSlice0</field>
     <field name="url">structIcssgStats__Pa.html#a894e56597738b64e7c6f6200216aebb8</field>
     <field name="keywords">preemptFragCntTxSlice0 IcssgStats_Pa::preemptFragCntTxSlice0 IcssgStats_Pa</field>
-    <field name="text">PRU0 Fragment count in TX</field>
+    <field name="text">Port 0 fragment count in TX</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::preemptFragCntTxSlice1</field>
     <field name="url">structIcssgStats__Pa.html#ac03b1c3b0c01aa61ef046ae5c831c440</field>
     <field name="keywords">preemptFragCntTxSlice1 IcssgStats_Pa::preemptFragCntTxSlice1 IcssgStats_Pa</field>
-    <field name="text">PRU1 Fragment count in TX</field>
+    <field name="text">Port 1 fragment count in TX</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::preemptAsmOkSlice0</field>
     <field name="url">structIcssgStats__Pa.html#a19f351d435884c8bf573c3d1f1948c68</field>
     <field name="keywords">preemptAsmOkSlice0 IcssgStats_Pa::preemptAsmOkSlice0 IcssgStats_Pa</field>
-    <field name="text">PRU0 Assembly Completed</field>
+    <field name="text">Port 0 assembly completed</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::preemptAsmOkSlice1</field>
     <field name="url">structIcssgStats__Pa.html#a598bf3e30e68a0f6b9224c7bc35a7800</field>
     <field name="keywords">preemptAsmOkSlice1 IcssgStats_Pa::preemptAsmOkSlice1 IcssgStats_Pa</field>
-    <field name="text">PRU1 Assembly Completed</field>
+    <field name="text">Port 1 assembly completed</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::preemptFragCntRxSlice0</field>
     <field name="url">structIcssgStats__Pa.html#ab9736a843b8753b1a2ce24aff10d1943</field>
     <field name="keywords">preemptFragCntRxSlice0 IcssgStats_Pa::preemptFragCntRxSlice0 IcssgStats_Pa</field>
-    <field name="text">PRU0 Fragments received</field>
+    <field name="text">Port 0 fragments received</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::preemptFragCntRxSlice1</field>
     <field name="url">structIcssgStats__Pa.html#a0cc793ff5eede1ce9cf7f9070e43aa7f</field>
     <field name="keywords">preemptFragCntRxSlice1 IcssgStats_Pa::preemptFragCntRxSlice1 IcssgStats_Pa</field>
-    <field name="text">PRU1 Fragments received</field>
+    <field name="text">Port 1 fragments received</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::rxEofShortFrameErrSlice0</field>
     <field name="url">structIcssgStats__Pa.html#a180a73c57f827cbf7efe387263d2419e</field>
     <field name="keywords">rxEofShortFrameErrSlice0 IcssgStats_Pa::rxEofShortFrameErrSlice0 IcssgStats_Pa</field>
-    <field name="text">PRU0 diagnostic error counter which increments if EOF task is scheduled without seeing RX_B1</field>
+    <field name="text">PRU diagnostic error counter — increments if EOF task is scheduled without receiving RX_B1 Port 0</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::rxEofShortFrameErrSlice1</field>
     <field name="url">structIcssgStats__Pa.html#a7dfc8bd285823f03255d8a88a695fb13</field>
     <field name="keywords">rxEofShortFrameErrSlice1 IcssgStats_Pa::rxEofShortFrameErrSlice1 IcssgStats_Pa</field>
-    <field name="text">PRU1 diagnostic error counter which increments if EOF task is scheduled without seeing RX_B1</field>
+    <field name="text">PRU diagnostic error counter — increments if EOF task is scheduled without receiving RX_B1 Port 1</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::rxB0DropEarlyEoFSlice0</field>
     <field name="url">structIcssgStats__Pa.html#a649c3bd22364e71dc3ab9c9986eb9487</field>
     <field name="keywords">rxB0DropEarlyEoFSlice0 IcssgStats_Pa::rxB0DropEarlyEoFSlice0 IcssgStats_Pa</field>
-    <field name="text">PRU0 diagnostic counter which increments when frame if droped due to Early EOF received in B0</field>
+    <field name="text">Diagnostic counter — increments when a frame is dropped due to early EOF received in the B0 buffer Port 0</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::rxB0DropEarlyEoFSlice1</field>
     <field name="url">structIcssgStats__Pa.html#a7168d329c9288dae3b30c2e3c1136ecc</field>
     <field name="keywords">rxB0DropEarlyEoFSlice1 IcssgStats_Pa::rxB0DropEarlyEoFSlice1 IcssgStats_Pa</field>
-    <field name="text">PRU1 diagnostic counter which increments when frame if droped due to Early EOF received in B0</field>
+    <field name="text">Diagnostic counter — increments when a frame is dropped due to early EOF received in the B0 buffer Port 1</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::txJumboFrameCutoffSlice0</field>
     <field name="url">structIcssgStats__Pa.html#aaef0c46bf46c63d5c6e980a1ba55a258</field>
     <field name="keywords">txJumboFrameCutoffSlice0 IcssgStats_Pa::txJumboFrameCutoffSlice0 IcssgStats_Pa</field>
-    <field name="text">Tx PRU0 diagnostic counter which increments when frame is cut off to prevent packet size 2 0 0 0 B</field>
+    <field name="text">TX diagnostic counter — increments when a frame is cut off to prevent packet size exceeding 2 0 0 0 bytes Port 0</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::txJumboFrameCutoffSlice1</field>
     <field name="url">structIcssgStats__Pa.html#abe59a42162e16ad6fa60fe456b1274bb</field>
     <field name="keywords">txJumboFrameCutoffSlice1 IcssgStats_Pa::txJumboFrameCutoffSlice1 IcssgStats_Pa</field>
-    <field name="text">Tx PRU1 diagnostic counter which increments when frame is cut off to prevent packet size 2 0 0 0 B</field>
+    <field name="text">TX diagnostic counter — increments when a frame is cut off to prevent packet size exceeding 2 0 0 0 bytes Port 1</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::rxExpFragQDropSlice0</field>
     <field name="url">structIcssgStats__Pa.html#aa8fd07fbdc04a4ea985b76a716f7a221</field>
     <field name="keywords">rxExpFragQDropSlice0 IcssgStats_Pa::rxExpFragQDropSlice0 IcssgStats_Pa</field>
-    <field name="text">Rx PRU0 diagnostic counter which increments when express frame is received in same queue as previous fragment</field>
+    <field name="text">Diagnostic counter — increments when an express frame is received in the same queue as a previous fragment Port 0</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::rxExpFragQDropSlice1</field>
     <field name="url">structIcssgStats__Pa.html#a81e45211aa85401ef97c97a843986c9b</field>
     <field name="keywords">rxExpFragQDropSlice1 IcssgStats_Pa::rxExpFragQDropSlice1 IcssgStats_Pa</field>
-    <field name="text">Rx PRU1 diagnostic counter which increments when express frame is received in same queue as previous fragment</field>
+    <field name="text">Diagnostic counter — increments when an express frame is received in the same queue as a previous fragment Port 1</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::rxFifoOverRunSlice0</field>
     <field name="url">structIcssgStats__Pa.html#a4ec5b616444f52bd3528473a9c8a3d8e</field>
     <field name="keywords">rxFifoOverRunSlice0 IcssgStats_Pa::rxFifoOverRunSlice0 IcssgStats_Pa</field>
-    <field name="text">RX fifo overrun for slice 0</field>
+    <field name="text">RX FIFO overrun — increments when the L1 receive FIFO is full because firmware cannot process frames fast enough the arriving frame is dropped Port 0</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::rxFifoOverRunSlice1</field>
     <field name="url">structIcssgStats__Pa.html#aa164aa651546bb91c0abe834bdf38242</field>
     <field name="keywords">rxFifoOverRunSlice1 IcssgStats_Pa::rxFifoOverRunSlice1 IcssgStats_Pa</field>
-    <field name="text">RX fifo overrun for slice 1</field>
+    <field name="text">RX FIFO overrun — increments when the L1 receive FIFO is full because firmware cannot process frames fast enough the arriving frame is dropped Port 1</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::hostEgrsQPreOvrFloMacSlice0</field>
     <field name="url">structIcssgStats__Pa.html#a74cff0052d4deb020452e48bee140a56</field>
     <field name="keywords">hostEgrsQPreOvrFloMacSlice0 IcssgStats_Pa::hostEgrsQPreOvrFloMacSlice0 IcssgStats_Pa</field>
-    <field name="text">Host Egress Q Pre-emptible Overflow Counter</field>
+    <field name="text">Host RX pre-emptible egress queue overflow counter — DualMAC mode only Port 0</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::hostEgrsQPreOvrFloMacSlice1</field>
     <field name="url">structIcssgStats__Pa.html#a0783f6e5a7ea19b7be44a22343580bbb</field>
     <field name="keywords">hostEgrsQPreOvrFloMacSlice1 IcssgStats_Pa::hostEgrsQPreOvrFloMacSlice1 IcssgStats_Pa</field>
-    <field name="text">Host Egress Q Pre-emptible Overflow Counter</field>
+    <field name="text">Host RX pre-emptible egress queue overflow counter — DualMAC mode only Port 1</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::hostEgrsQExpOvrFloMacSlice0</field>
     <field name="url">structIcssgStats__Pa.html#a165e85e59616aea966785889415879f1</field>
     <field name="keywords">hostEgrsQExpOvrFloMacSlice0 IcssgStats_Pa::hostEgrsQExpOvrFloMacSlice0 IcssgStats_Pa</field>
-    <field name="text">Host Egress Q Express Overflow Counter</field>
+    <field name="text">Host RX express egress queue overflow counter — DualMAC mode only Port 0</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::hostEgrsQExpOvrFloMacSlice1</field>
     <field name="url">structIcssgStats__Pa.html#aa633e3453c3edc3fc28a008c5bf0e29e</field>
     <field name="keywords">hostEgrsQExpOvrFloMacSlice1 IcssgStats_Pa::hostEgrsQExpOvrFloMacSlice1 IcssgStats_Pa</field>
-    <field name="text">Host Egress Q Express Overflow Counter</field>
+    <field name="text">Host RX express egress queue overflow counter — DualMAC mode only Port 1</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::cutThroughPacketSlice0</field>
     <field name="url">structIcssgStats__Pa.html#a285d37a9d03884fa4f4bb708763c0736</field>
     <field name="keywords">cutThroughPacketSlice0 IcssgStats_Pa::cutThroughPacketSlice0 IcssgStats_Pa</field>
-    <field name="text">Cut-through packet Counter for slice 0</field>
+    <field name="text">Cut-through packet counter for port 0</field>
   </doc>
   <doc>
     <field name="type">variable</field>
     <field name="name">IcssgStats_Pa::cutThroughPacketSlice1</field>
     <field name="url">structIcssgStats__Pa.html#a155881d307d3eb9bfc6502a52b145b9a</field>
     <field name="keywords">cutThroughPacketSlice1 IcssgStats_Pa::cutThroughPacketSlice1 IcssgStats_Pa</field>
-    <field name="text">Cut-through packet Counter for slice 1</field>
+    <field name="text">Cut-through packet counter for port 1</field>
   </doc>
   <doc>
     <field name="type">struct</field>

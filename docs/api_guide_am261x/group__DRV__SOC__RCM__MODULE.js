@@ -120,7 +120,9 @@ var group__DRV__SOC__RCM__MODULE =
       [ "SOC_RcmPeripheralId_LIN0_UART0", "group__DRV__SOC__RCM__MODULE.html#gga6674bb5c28889ff80f5a352030bfd78fadf033bcabbf2f913fd737c14f051f287", null ],
       [ "SOC_RcmPeripheralId_LIN1_UART1", "group__DRV__SOC__RCM__MODULE.html#gga6674bb5c28889ff80f5a352030bfd78fa7da76dd4539b1e1cf26e49451f042b81", null ],
       [ "SOC_RcmPeripheralId_LIN2_UART2", "group__DRV__SOC__RCM__MODULE.html#gga6674bb5c28889ff80f5a352030bfd78fa17d484da5bff194de7252301b5e0a457", null ],
-      [ "SOC_RcmPeripheralId_LIN3_UART3", "group__DRV__SOC__RCM__MODULE.html#gga6674bb5c28889ff80f5a352030bfd78fa1d3c4a4421af17d356b9339d523814f6", null ]
+      [ "SOC_RcmPeripheralId_LIN3_UART3", "group__DRV__SOC__RCM__MODULE.html#gga6674bb5c28889ff80f5a352030bfd78fa1d3c4a4421af17d356b9339d523814f6", null ],
+      [ "SOC_RcmPeripheralId_LIN4_UART4", "group__DRV__SOC__RCM__MODULE.html#gga6674bb5c28889ff80f5a352030bfd78fa54b1065f37c758d68259565f3027866a", null ],
+      [ "SOC_RcmPeripheralId_LIN5_UART5", "group__DRV__SOC__RCM__MODULE.html#gga6674bb5c28889ff80f5a352030bfd78fac2b39c088628a9731fa4c2bbc102b48f", null ]
     ] ],
     [ "SOC_RcmPeripheralClockSource", "group__DRV__SOC__RCM__MODULE.html#ga049fd9d8d05991ff7c58545e744fa8b6", [
       [ "SOC_RcmPeripheralClockSource_XTALCLK", "group__DRV__SOC__RCM__MODULE.html#gga049fd9d8d05991ff7c58545e744fa8b6aaf05baba15192999cce36aac297a190c", null ],

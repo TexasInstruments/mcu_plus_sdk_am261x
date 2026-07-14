@@ -92,30 +92,30 @@ $(document).ready(function(){initNavTree('EXAMPLES_USB_VENDOR_ECHO.html',''); in
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#autotoc_md3569">Introduction</a></li>
+<ul><li class="level1"><a href="#autotoc_md3573">Introduction</a></li>
 <li class="level1"><a href="#EXAMPLES_USB_VENDOR_ECHO_EXAMPLE_COMBOS">Supported Combinations</a></li>
-<li class="level1"><a href="#autotoc_md3570">Steps to Run the Example</a><ul><li class="level2"><a href="#autotoc_md3571">Build the example</a></li>
-<li class="level2"><a href="#autotoc_md3572">HW Setup</a><ul><li class="level3"><a href="#autotoc_md3573">AM261x-LP</a></li>
+<li class="level1"><a href="#autotoc_md3574">Steps to Run the Example</a><ul><li class="level2"><a href="#autotoc_md3575">Build the example</a></li>
+<li class="level2"><a href="#autotoc_md3576">HW Setup</a><ul><li class="level3"><a href="#autotoc_md3577">AM261x-LP</a></li>
 </ul>
 </li>
-<li class="level2"><a href="#autotoc_md3574">Run the example</a><ul><li class="level3"><a href="#autotoc_md3575">Install WinUSB Driver (Windows)</a></li>
-<li class="level3"><a href="#autotoc_md3576">Verify Enumeration</a></li>
+<li class="level2"><a href="#autotoc_md3578">Run the example</a><ul><li class="level3"><a href="#autotoc_md3579">Install WinUSB Driver (Windows)</a></li>
+<li class="level3"><a href="#autotoc_md3580">Verify Enumeration</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="level1"><a href="#autotoc_md3577">Testing the Example</a><ul><li class="level2"><a href="#autotoc_md3578">Prerequisites</a><ul><li class="level3"><a href="#autotoc_md3579">1. Install PyUSB</a></li>
-<li class="level3"><a href="#autotoc_md3580">2. Download libusb</a></li>
+<li class="level1"><a href="#autotoc_md3581">Testing the Example</a><ul><li class="level2"><a href="#autotoc_md3582">Prerequisites</a><ul><li class="level3"><a href="#autotoc_md3583">1. Install PyUSB</a></li>
+<li class="level3"><a href="#autotoc_md3584">2. Download libusb</a></li>
 </ul>
 </li>
-<li class="level2"><a href="#autotoc_md3581">Running the Script</a></li>
+<li class="level2"><a href="#autotoc_md3585">Running the Script</a></li>
 </ul>
 </li>
-<li class="level1"><a href="#autotoc_md3582">See Also</a></li>
+<li class="level1"><a href="#autotoc_md3586">See Also</a></li>
 </ul>
 </div>
 <div class="textblock"><p><a class="anchor" id="md_examples_usb_usb_vendor_bulk_echo_example"></a></p>
-<h1><a class="anchor" id="autotoc_md3569"></a>
+<h1><a class="anchor" id="autotoc_md3573"></a>
 Introduction</h1>
 <p>This example is a USB device Vendor class application based on TinyUSB.</p>
 <p>The example does the below</p><ul>
@@ -139,18 +139,18 @@ Supported Combinations</h1>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">Example folder  </td><td class="markdownTableBodyNone">examples/usb/device/vendor_bulk_echo   </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md3570"></a>
+<h1><a class="anchor" id="autotoc_md3574"></a>
 Steps to Run the Example</h1>
-<h2><a class="anchor" id="autotoc_md3571"></a>
+<h2><a class="anchor" id="autotoc_md3575"></a>
 Build the example</h2>
 <ul>
 <li><b>When using CCS projects to build</b>, import the CCS project for the required combination and build it using the CCS project menu (see <a class="el" href="CCS_PROJECTS_PAGE.html">Using SDK with CCS Projects</a>).</li>
 <li><b>When using makefiles to build</b>, note the required combination and build using make command (see <a class="el" href="MAKEFILE_BUILD_PAGE.html">Using SDK with Makefiles</a>)</li>
 </ul>
 <dl class="section note"><dt>Note</dt><dd>SysConfig will generate an empty <code>ti_usb_descriptor.c</code> for this example. The actual USB descriptors are provided by <code>usb_descriptors.c</code> which is part of the example source.</dd></dl>
-<h2><a class="anchor" id="autotoc_md3572"></a>
+<h2><a class="anchor" id="autotoc_md3576"></a>
 HW Setup</h2>
-<h3><a class="anchor" id="autotoc_md3573"></a>
+<h3><a class="anchor" id="autotoc_md3577"></a>
 AM261x-LP</h3>
 <ul>
 <li>To test the application, use a Windows PC as a USB host.</li>
@@ -160,12 +160,12 @@ AM261x-LP</h3>
 <img src="am261x_lp_j10.png" alt=""/>
 <div class="caption">
 USB Micro B Device Connector (J10)</div></div>
-<h2><a class="anchor" id="autotoc_md3574"></a>
+<h2><a class="anchor" id="autotoc_md3578"></a>
 Run the example</h2>
 <ul>
 <li>Launch a CCS debug session and run the executable, see <a class="el" href="CCS_LAUNCH_PAGE.html">CCS Launch, Load and Run</a></li>
 </ul>
-<h3><a class="anchor" id="autotoc_md3575"></a>
+<h3><a class="anchor" id="autotoc_md3579"></a>
 Install WinUSB Driver (Windows)</h3>
 <p>A vendor-specific USB device has no built-in OS driver. On first connection, Windows will show the device as <b>Unknown device</b> in Device Manager.</p>
 <p> <style>div.image img[src="usb_vendor_bulk_unknown_device.png"]{width:40%}</style> </p><div class="image">
@@ -187,7 +187,7 @@ Selecting the Unknown Device in Zadig</div></div>
 <li>Ensure <b>WinUSB</b> is selected as the target driver, then click <b>Install Driver</b>.</li>
 </ol>
 <dl class="section note"><dt>Note</dt><dd>The board must be running the example while using Zadig; otherwise the device may not appear.</dd></dl>
-<h3><a class="anchor" id="autotoc_md3576"></a>
+<h3><a class="anchor" id="autotoc_md3580"></a>
 Verify Enumeration</h3>
 <p>After driver installation:</p>
 <ol type="1">
@@ -200,16 +200,16 @@ Verify Enumeration</h3>
 <img src="usb_vendor_bulk_device_enum.png" alt=""/>
 <div class="caption">
 AM261x Vendor device enumerated correctly</div></div>
-<h1><a class="anchor" id="autotoc_md3577"></a>
+<h1><a class="anchor" id="autotoc_md3581"></a>
 Testing the Example</h1>
 <p>A Python test script is provided in the SDK to verify the bulk echo functionality: </p><pre class="fragment">tools/usb_test_scripts/usb_vendor_bulk_echo_test.py
 </pre><p>The script sends three bulk transfer payloads of increasing size (128 KB, 256 KB, 512 KB) to the device and verifies that the echoed data matches exactly. It reports the result, elapsed time, and throughput for each test.</p>
-<h2><a class="anchor" id="autotoc_md3578"></a>
+<h2><a class="anchor" id="autotoc_md3582"></a>
 Prerequisites</h2>
-<h3><a class="anchor" id="autotoc_md3579"></a>
+<h3><a class="anchor" id="autotoc_md3583"></a>
 1. Install PyUSB</h3>
 <p>Install the PyUSB library using pip: </p><pre class="fragment">pip install pyusb
-</pre><h3><a class="anchor" id="autotoc_md3580"></a>
+</pre><h3><a class="anchor" id="autotoc_md3584"></a>
 2. Download libusb</h3>
 <p>PyUSB requires the <b>libusb</b> backend DLL on Windows.</p>
 <ul>
@@ -219,7 +219,7 @@ Prerequisites</h2>
 </pre></li>
 </ul>
 <dl class="section note"><dt>Note</dt><dd>If your <code>libusb-1.0.dll</code> is in a different location, update the <code>LIBUSB_DLL_PATH</code> variable at the top of the script accordingly.</dd></dl>
-<h2><a class="anchor" id="autotoc_md3581"></a>
+<h2><a class="anchor" id="autotoc_md3585"></a>
 Running the Script</h2>
 <p>With the example running on the board and the USB cable connected, run: </p><pre class="fragment">python usb_vendor_bulk_echo_test.py
 </pre><p>If all tests pass, the output should look as follows:</p>
@@ -227,7 +227,7 @@ Running the Script</h2>
 <img src="usb_vendor_bulk_test_output.png" alt=""/>
 <div class="caption">
 Expected test output when all bulk transfer tests pass</div></div>
-<h1><a class="anchor" id="autotoc_md3582"></a>
+<h1><a class="anchor" id="autotoc_md3586"></a>
 See Also</h1>
 <p><a class="el" href="USB_DEVICE_DRIVER.html">USB</a> </p>
 </div></div><!-- contents -->

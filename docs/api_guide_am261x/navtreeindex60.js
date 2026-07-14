@@ -1,5 +1,11 @@
 var NAVTREEINDEX60 =
 {
+"structCpswStats__MacPort__Ng.html#a901bf497999cbe01c0b3f13347813879":[19,4,0,9,0,3,21],
+"structCpswStats__MacPort__Ng.html#a995387e55a26900f62bc3ec52b2fb999":[19,4,0,9,0,3,19],
+"structCpswStats__MacPort__Ng.html#a9d77b461715f022a5723442b5b734274":[19,4,0,9,0,3,68],
+"structCpswStats__MacPort__Ng.html#a9f5fcbb1e7ce4a3e2bb9abc01f52e997":[19,4,0,9,0,3,32],
+"structCpswStats__MacPort__Ng.html#aa173a4d8424f3bd4f2c38e39ea9cc855":[19,4,0,9,0,3,11],
+"structCpswStats__MacPort__Ng.html#aa8a3a7c03b9bf3c5cb47d3f4af503175":[19,4,0,9,0,3,50],
 "structCpswStats__MacPort__Ng.html#aa8a5338b7a5b478081f5641877f64657":[19,4,0,9,0,3,1],
 "structCpswStats__MacPort__Ng.html#aa8cd9130f2a5075470e6f06468b68f63":[19,4,0,9,0,3,62],
 "structCpswStats__MacPort__Ng.html#aaad3558548c419ed7830e66af9450a38":[19,4,0,9,0,3,43],
@@ -243,11 +249,5 @@ var NAVTREEINDEX60 =
 "structEDMA__Object.html#af2ab95cf657d7399fd60e7f8ba71e40d":[19,7,6,9,6],
 "structEDMA__Params.html":[19,7,6,7],
 "structEDMA__Params.html#aa201bda2709dbd15c15a6eb5cbe98f4a":[19,7,6,7,0],
-"structEDMA__Params.html#af0c4c90de08720b7d22b266e6eee92d5":[19,7,6,7,1],
-"structEDMA__ResourceObject.html":[19,7,6,2],
-"structEDMA__ResourceObject.html#a61de78a3f8e58678b822006dd9706d05":[19,7,6,2,3],
-"structEDMA__ResourceObject.html#a94019f1436cf0f4bf884a0f7ca183998":[19,7,6,2,2],
-"structEDMA__ResourceObject.html#abf8ed092d73ec2af22125ee31606dccb":[19,7,6,2,1],
-"structEDMA__ResourceObject.html#ae89623e32ee872837bf4165102fdbfa2":[19,7,6,2,0],
-"structEDMA__TcErrorInfo.html":[19,7,6,5]
+"structEDMA__Params.html#af0c4c90de08720b7d22b266e6eee92d5":[19,7,6,7,1]
 };

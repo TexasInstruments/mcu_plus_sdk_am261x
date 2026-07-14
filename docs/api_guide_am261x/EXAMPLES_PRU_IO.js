@@ -1,9 +1,9 @@
 var EXAMPLES_PRU_IO =
 [
     [ "Empty Project", "EXAMPLES_PRU_EMPTY.html", [
-      [ "Introduction", "EXAMPLES_PRU_EMPTY.html#autotoc_md3137", null ],
-      [ "Supported Combinations", "EXAMPLES_PRU_EMPTY.html#autotoc_md3138", null ],
-      [ "Steps to Run the Example", "EXAMPLES_PRU_EMPTY.html#autotoc_md3139", null ]
+      [ "Introduction", "EXAMPLES_PRU_EMPTY.html#autotoc_md3141", null ],
+      [ "Supported Combinations", "EXAMPLES_PRU_EMPTY.html#autotoc_md3142", null ],
+      [ "Steps to Run the Example", "EXAMPLES_PRU_EMPTY.html#autotoc_md3143", null ]
     ] ],
     [ "SENT Decoder Example", "EXAMPLES_SENT_DECODER.html", [
       [ "Introduction", "EXAMPLES_SENT_DECODER.html#autotoc_md327", null ],

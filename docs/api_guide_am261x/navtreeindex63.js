@@ -1,5 +1,7 @@
 var NAVTREEINDEX63 =
 {
+"structFlash__DevConfig.html#aceece3d92326136df48c08aad0b56109":[19,1,1,1,2],
+"structFlash__DevConfig.html#aec4d61cd7bbcd19ee93805ec6ebd4203":[19,1,1,1,28],
 "structFlash__DevConfig.html#aeea07d11c4e7bdafaeb17d5d07f56ea6":[19,1,1,1,4],
 "structFlash__DevConfig.html#af26d4f2cc7406d7d47b233d74813c859":[19,1,1,1,24],
 "structFlash__DevConfig.html#af9aaea904629353d937dc22dc5837b94":[19,1,1,1,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX63 =
 "structI2C__Memory__ExtendedParams.html":[19,7,20,4],
 "structI2C__Memory__ExtendedParams.html#a50692bdab4669cfad7e5743d9f7890ff":[19,7,20,4,2],
 "structI2C__Memory__ExtendedParams.html#a513ca096238418a4172df9678f51d30b":[19,7,20,4,1],
-"structI2C__Memory__ExtendedParams.html#adf6e2f48b386682818525f715f0e62e0":[19,7,20,4,0],
-"structI2C__Object.html":[19,7,19,4],
-"structI2C__Object.html#a00a4f93fca8c1fda9e24343353b9bff9":[19,7,19,4,8]
+"structI2C__Memory__ExtendedParams.html#adf6e2f48b386682818525f715f0e62e0":[19,7,20,4,0]
 };

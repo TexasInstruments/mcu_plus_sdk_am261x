@@ -1,5 +1,7 @@
 var NAVTREEINDEX66 =
 {
+"structIcssg__custom__Fw.html#a97d01e56df52aab474208c6d1996b3c0":[19,4,0,6,1,16,1],
+"structIcssg__custom__Fw.html#aa19938acc228f4347f1f1f737eb85c7f":[19,4,0,6,1,16,4],
 "structIcssg__custom__Fw.html#aa551b43a2e45fe0efec70e002e654271":[19,4,0,6,1,16,5],
 "structIcssg__custom__Fw.html#ad17731388772c8cae03471c8ecebabbe":[19,4,0,6,1,16,0],
 "structIcssg__mdioLinkIntCfg.html":[19,4,0,6,1,19],
@@ -247,7 +249,5 @@ var NAVTREEINDEX66 =
 "structMCAN__InitParams.html#af95f3c4951549def09b7d4cf0a93809c":[19,7,27,4,5],
 "structMCAN__MsgRAMConfigParams.html":[19,7,27,8],
 "structMCAN__MsgRAMConfigParams.html#a00fb1c6e4ad5643178c8a0d22694865b":[19,7,27,8,23],
-"structMCAN__MsgRAMConfigParams.html#a0d9fe1d27e1a703fb422a8fad34bd7a4":[19,7,27,8,13],
-"structMCAN__MsgRAMConfigParams.html#a1621511f93612ba9796c6ee6da0ff967":[19,7,27,8,21],
-"structMCAN__MsgRAMConfigParams.html#a19852b0030e05771f3ae7de42ed6d080":[19,7,27,8,14]
+"structMCAN__MsgRAMConfigParams.html#a0d9fe1d27e1a703fb422a8fad34bd7a4":[19,7,27,8,13]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX52 =
 {
+"group__SDL__MCRC__API.html#gaa5a3b2200f07c19c615eedac78a0b8f9":[19,6,7,0,65],
+"group__SDL__MCRC__API.html#gaa975fbef361b7017e0ad645ff3105613":[19,6,7,0,58],
 "group__SDL__MCRC__API.html#gaafb0de20bb46c31aac41e1ac874e0e75":[19,6,7,0,54],
 "group__SDL__MCRC__API.html#gab5ea04c139cea73db735fe78336972e3":[19,6,7,0,20],
 "group__SDL__MCRC__API.html#gab88b74b382f3c6ef988fea7e70da1b98":[19,6,7,0,62],
@@ -234,8 +236,8 @@ var NAVTREEINDEX52 =
 "group__SDL__ROMCHECKSUM__MACROS.html#gae201151d66367e133c21424fa3727adb":[19,6,10,0,3,7],
 "group__SDL__ROMCHECKSUM__MACROS.html#gae78fbbc5c550e91c21afd76252818d1c":[19,6,10,0,3,5],
 "group__SDL__ROMCHECKSUM__MACROS.html#gaf0a3a49e1165f53815b73fc18e9bf143":[19,6,10,0,3,4],
-"group__SDL__RTI__API.html":[19,6,8],
 "group__SDL__RTI__API.html":[19,5,1],
+"group__SDL__RTI__API.html":[19,6,8],
 "group__SDL__RTI__ENUM.html":[19,5,1,1],
 "group__SDL__RTI__ENUM.html":[19,6,8,1],
 "group__SDL__RTI__ENUM.html#gaf3c380f1a6387bbf83e41fa59e03d307":[19,5,1,1,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX52 =
 "group__SDL__RTI__ENUM.html#ggaf3c380f1a6387bbf83e41fa59e03d307aca8bfa0a480ef2fc67358a5005853ba1":[19,5,1,1,0,1],
 "group__SDL__RTI__ENUM.html#ggaf3c380f1a6387bbf83e41fa59e03d307aca8bfa0a480ef2fc67358a5005853ba1":[19,6,8,1,0,1],
 "group__SDL__RTI__FUNCTION.html":[19,5,1,2],
-"group__SDL__RTI__FUNCTION.html":[19,6,8,2],
-"group__SDL__RTI__FUNCTION.html#ga0e3f1dc0d83e79da9d5d91f1e213f6e0":[19,5,1,2,3],
-"group__SDL__RTI__FUNCTION.html#ga0e3f1dc0d83e79da9d5d91f1e213f6e0":[19,6,8,2,3]
+"group__SDL__RTI__FUNCTION.html":[19,6,8,2]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX61 =
 {
+"structEDMA__Params.html#aa201bda2709dbd15c15a6eb5cbe98f4a":[19,7,6,7,0],
+"structEDMA__Params.html#af0c4c90de08720b7d22b266e6eee92d5":[19,7,6,7,1],
 "structEDMA__ResourceObject.html":[19,7,6,2],
 "structEDMA__ResourceObject.html#a61de78a3f8e58678b822006dd9706d05":[19,7,6,2,3],
 "structEDMA__ResourceObject.html#a94019f1436cf0f4bf884a0f7ca183998":[19,7,6,2,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX61 =
 "structEnetPhy__Obj.html#ab09f1f4d15d40dae95f9246946646308":[19,4,0,13,8,11],
 "structEnetPhy__Obj.html#aba5c2a6c65120737b943ac37b418f850":[19,4,0,13,8,0],
 "structEnetPhy__Obj.html#abbd01b6771dfd8fd1b87868e208bd672":[19,4,0,13,8,5],
-"structEnetPhy__Obj.html#acf0b022b5945134c1be9da34f3fc7f1f":[19,4,0,13,8,2],
-"structEnetPhy__Obj.html#ad277b7ca1134d1809919408a5cfaf413":[19,4,0,13,8,9],
-"structEnetPhy__Obj.html#af83aae079158fbe8b3afc28d081fb64c":[19,4,0,13,8,4]
+"structEnetPhy__Obj.html#acf0b022b5945134c1be9da34f3fc7f1f":[19,4,0,13,8,2]
 };

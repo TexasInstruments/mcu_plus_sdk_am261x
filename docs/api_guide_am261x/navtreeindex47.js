@@ -1,5 +1,7 @@
 var NAVTREEINDEX47 =
 {
+"group__ENET__MOD__TIMESYNC.html#gga7e24fd175aef78aaad60a277946fc0c3ac6cf9ab509b4ff2b78df202f38e5c5d3":[19,4,0,11,7,7],
+"group__ENET__MOD__TIMESYNC.html#gga7e24fd175aef78aaad60a277946fc0c3ac827487b78128c6bef5c7caf546c7ca6":[19,4,0,11,7,1],
 "group__ENET__MOD__TIMESYNC.html#gga7e24fd175aef78aaad60a277946fc0c3ad9b80f6a813bf21d812ff98bfc8250c6":[19,4,0,11,7,9],
 "group__ENET__MOD__TIMESYNC.html#ggaaf38d27f2346094db6344f81685a3a7da026b1d4ec4b6a5fb1c11b8fd24ac9fa1":[19,4,0,11,6,6],
 "group__ENET__MOD__TIMESYNC.html#ggaaf38d27f2346094db6344f81685a3a7da074a06f5df9a9ea7ca953e214444660e":[19,4,0,11,6,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX47 =
 "group__KERNEL__DPL__CLOCK.html#ga9e9856925b37c23a38b38342a749a46d":[19,2,2,10],
 "group__KERNEL__DPL__CLOCK.html#ga9f1e99a67f697549e08a65ccb6bcdea2":[19,2,2,15],
 "group__KERNEL__DPL__CLOCK.html#gab6ebabd2de3589d2f3055602764336a4":[19,2,2,2],
-"group__KERNEL__DPL__CLOCK.html#gad335017943bc236cdbf9ee1f7b9619f1":[19,2,2,11],
-"group__KERNEL__DPL__CLOCK.html#gad656f1c6ee80f43a375a5e9e0786a9e3":[19,2,2,9],
-"group__KERNEL__DPL__CLOCK.html#gafc6e58e9f59a09db3f51bf5faabcb05c":[19,2,2,7]
+"group__KERNEL__DPL__CLOCK.html#gad335017943bc236cdbf9ee1f7b9619f1":[19,2,2,11]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX71 =
 {
+"structSIPC__SwQueue.html#af6fefea1af172dcceb3332cf96a92824":[19,7,43,1,0],
+"structSOC__RcmADPLLJConfig__t.html":[19,7,41,0,2],
 "structSOC__RcmADPLLJConfig__t.html#a404891035a458b81092861a3cea0ec83":[19,7,41,0,2,3],
 "structSOC__RcmADPLLJConfig__t.html#a46715bcd17f502b18909a7a7275bbd93":[19,7,41,0,2,2],
 "structSOC__RcmADPLLJConfig__t.html#a575403f52ff4e7b25eafcb0a24bc8c5d":[19,7,41,0,2,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX71 =
 "structcb__rawsock__ovip__para__t.html#a681b6c86b6e5b47126bfedff00b26eed":[19,12,1,1,1],
 "structcb__rawsock__ovip__para__t.html#a71204f63bc64c18da25a2969bfc83a36":[19,12,1,1,3],
 "structcb__rawsock__ovip__para__t.html#a8d69ca513bcd87063a9bb4c1107a67f9":[19,12,1,1,2],
-"structcb__rawsock__paras__t.html":[19,12,1,2],
-"structcb__rawsock__paras__t.html#a302dd4c9d6da04ad0dddc5f52be4903f":[19,12,1,2,5],
-"structcb__rawsock__paras__t.html#a4af203a6f0912f21ce8e3c1ce2cf1ae3":[19,12,1,2,7]
+"structcb__rawsock__paras__t.html":[19,12,1,2]
 };

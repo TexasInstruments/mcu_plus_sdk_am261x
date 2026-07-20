@@ -1,5 +1,7 @@
 var NAVTREEINDEX57 =
 {
+"structCANFD__MCANProtocolStatus.html#a396affe709200b68654a5d6bdbd28e35":[19,7,2,8,6],
+"structCANFD__MCANProtocolStatus.html#a7751dab5f3a9e853d67421dca31a2793":[19,7,2,8,1],
 "structCANFD__MCANProtocolStatus.html#a7fb6da9660c344cf2d18097f1c319d71":[19,7,2,8,3],
 "structCANFD__MCANProtocolStatus.html#a81c7780fba1e43db6762bc1281fd7173":[19,7,2,8,8],
 "structCANFD__MCANProtocolStatus.html#a94c238cdcb8cdf0aebb37c07f84c11ef":[19,7,2,8,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX57 =
 "structCpswAle__PolicerEntryOutArgs.html#a4515ec75f3208a8ff39b3b74ba091e89":[19,4,0,1,0,30,11],
 "structCpswAle__PolicerEntryOutArgs.html#a4b61362b97af03849b08cbc287cc31cc":[19,4,0,1,0,30,17],
 "structCpswAle__PolicerEntryOutArgs.html#a4fecd8fff98933cdc93073d87f3700f5":[19,4,0,1,0,30,0],
-"structCpswAle__PolicerEntryOutArgs.html#a564f98ceff14a888874384ec2d88c26a":[19,4,0,1,0,30,3],
-"structCpswAle__PolicerEntryOutArgs.html#a708041f9de6d4091c13a089d53268182":[19,4,0,1,0,30,14],
-"structCpswAle__PolicerEntryOutArgs.html#a85bb142eefc406a396ea8067bc5a8905":[19,4,0,1,0,30,7]
+"structCpswAle__PolicerEntryOutArgs.html#a564f98ceff14a888874384ec2d88c26a":[19,4,0,1,0,30,3]
 };

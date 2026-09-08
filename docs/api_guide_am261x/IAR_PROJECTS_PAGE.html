@@ -43,7 +43,7 @@
   <td id="projectlogo"><a href="https://www.ti.com"><img alt="Logo" src="ti_logo.svg"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AM261x MCU+ SDK
-   &#160;<span id="projectnumber">26.00.00</span>
+   &#160;<span id="projectnumber">26.01.00</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -92,14 +92,14 @@ $(document).ready(function(){initNavTree('IAR_PROJECTS_PAGE.html',''); initResiz
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#autotoc_md454">Introduction</a></li>
-<li class="level1"><a href="#autotoc_md455">Setup IAR EW IDE</a></li>
-<li class="level1"><a href="#autotoc_md456">IAR Projects Files</a></li>
-<li class="level1"><a href="#autotoc_md457">Configure SDK path to IDE</a></li>
-<li class="level1"><a href="#autotoc_md458">Import a Workspace in IAR EW</a></li>
-<li class="level1"><a href="#autotoc_md459">Build a Project in IAR Embedded Workbench</a></li>
-<li class="level1"><a href="#autotoc_md460">Build System Projects in IAR Embedded Workbench [Not Supported]</a></li>
-<li class="level1"><a href="#autotoc_md461">Load and Run Executables Built with IAR Projects</a></li>
+<ul><li class="level1"><a href="#autotoc_md456">Introduction</a></li>
+<li class="level1"><a href="#autotoc_md457">Setup IAR EW IDE</a></li>
+<li class="level1"><a href="#autotoc_md458">IAR Projects Files</a></li>
+<li class="level1"><a href="#autotoc_md459">Configure SDK path to IDE</a></li>
+<li class="level1"><a href="#autotoc_md460">Import a Workspace in IAR EW</a></li>
+<li class="level1"><a href="#autotoc_md461">Build a Project in IAR Embedded Workbench</a></li>
+<li class="level1"><a href="#autotoc_md462">Build System Projects in IAR Embedded Workbench [Not Supported]</a></li>
+<li class="level1"><a href="#autotoc_md463">Load and Run Executables Built with IAR Projects</a></li>
 </ul>
 </div>
 <div class="textblock"><p><a class="anchor" id="md_developer_guides_iar_projects"></a></p>
@@ -110,14 +110,14 @@ By default, Importing of SDK example workspace to IAR EW performs a copy of exam
 Importing the IAR project directly instead of workspace will create the project within the SDK directory. As a result, any modifications will be applied directly to the original SDK files.</dd>
 <dd>
 Deleting the IAR EW project, deletes the project files from IAR EW workspace. User should be careful especially when the copied example files are modified by user.</dd></dl>
-<h1><a class="anchor" id="autotoc_md454"></a>
+<h1><a class="anchor" id="autotoc_md456"></a>
 Introduction</h1>
 <p>Some of the SDK examples can be built using IAR EW projects. Using IAR EW projects one can also open SysConfig from IAR EW itself to configure the example. This section provides basic instructions and tips on using IAR EW projects.</p>
 <dl class="section note"><dt>Note</dt><dd>To re-build libraries you need to use makefiles, see <a class="el" href="MAKEFILE_BUILD_PAGE.html">Using SDK with Makefiles</a></dd></dl>
-<h1><a class="anchor" id="autotoc_md455"></a>
+<h1><a class="anchor" id="autotoc_md457"></a>
 Setup IAR EW IDE</h1>
 <p>Setup IAR Embedded Workbench, SysConfig, and other necessary tools. Following the steps outlined in <a class="el" href="IAR_SETUP_PAGE.html">Download, Install and Setup IAR Embedded Workbench</a>.</p>
-<h1><a class="anchor" id="autotoc_md456"></a>
+<h1><a class="anchor" id="autotoc_md458"></a>
 IAR Projects Files</h1>
 <ul>
 <li>When a example workspace is imported into IAR EW, it brings in four main file types: a workspace template, a project file, a debug file, and project connection files.</li>
@@ -125,7 +125,7 @@ IAR Projects Files</h1>
 <li>During the import process, IAR EW asks the user to specify a new location for creating the workspace and importing all related files.</li>
 <li>The IAR project connection file (.ipcf) is central to this process, detailing the project files, compiler and linker options, and any custom pre/post-build steps</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md457"></a>
+<h1><a class="anchor" id="autotoc_md459"></a>
 Configure SDK path to IDE</h1>
 <ul>
 <li>Navigate to Tools &gt; Configure Custom Argument Variables  <style>div.image img[src="iar_custom_argument_menu.png"]{width:30%}</style> <div class="image">
@@ -150,7 +150,7 @@ IAR Custom Argument Variables</div></div>
 </li>
 </ul>
 <dl class="section note"><dt>Note</dt><dd>For Integrating sysconfig with IAR EW refer <a class="el" href="IAR_SETUP_PAGE.html#IAR_SYSCFG_SETUP">Configure Sysconfig to IAR Embedded Workbench IDE</a></dd></dl>
-<h1><a class="anchor" id="autotoc_md458"></a>
+<h1><a class="anchor" id="autotoc_md460"></a>
 Import a Workspace in IAR EW</h1>
 <ul>
 <li>Directly importing an individual project from the MCU PLUS SDK into IAR Embedded Workbench is not supported. You must import the entire workspace containing the required projects instead.</li>
@@ -169,19 +169,19 @@ Import a Workspace in IAR EW</h1>
 <li>On opening the workspace template it will prompt to save to new folder.</li>
 <li>Click OK and select an folder location to where the project need to be imported. Then Press Save.</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md459"></a>
+<h1><a class="anchor" id="autotoc_md461"></a>
 Build a Project in IAR Embedded Workbench</h1>
 <ul>
 <li>To build a project "right-click" on the project name and select "Make" to build it</li>
 <li>By default it builds in "debug" profile, i.e without compiler optimizations. To build with compiler optimizations, click "debug" above the project files and select the "release" profile instead.</li>
 <li>You can explore additional project options by right clicking project name.</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md460"></a>
+<h1><a class="anchor" id="autotoc_md462"></a>
 Build System Projects in IAR Embedded Workbench [Not Supported]</h1>
 <ul>
 <li>Building the System Project is currently not supported by IAR EW, Refer <a class="el" href="IAR_SETUP_PAGE.html#IAR_MULTI_CORE_LOAD">Debugging Multi-core Projects Using the XDS110 in IAR</a></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md461"></a>
+<h1><a class="anchor" id="autotoc_md463"></a>
 Load and Run Executables Built with IAR Projects</h1>
 <ul>
 <li>Simply load and run binary .out on EVM using IAR EW (see <a class="el" href="IAR_LAUNCH_PAGE.html">IAR Launch, Load and Run</a>) </li>

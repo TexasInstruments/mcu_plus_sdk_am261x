@@ -61,6 +61,7 @@ INCLUDES_common := \
 	-I${MCU_PLUS_SDK_PATH}/source/networking/lwip/lwip-config/am261x/usb/ \
 	-I${MCU_PLUS_SDK_PATH}/source/networking/lwip/lwip-port/include/ \
 	-I${MCU_PLUS_SDK_PATH}/source/networking/lwip/lwip-stack/src/include/lwip/apps \
+	-I${MCU_PLUS_SDK_PATH}/source/networking/lwip/lwip-port/freertos/include/ \
 	-I${MCU_PLUS_SDK_PATH}/source/kernel/freertos/portable/IAR/ARM_CR5F \
 	-I${MCU_PLUS_SDK_PATH}/source/kernel/freertos/portable/IAR_ARM/ARM_CR5F \
 	-Igenerated \
@@ -80,6 +81,7 @@ CFLAGS_common := \
 	-e \
 	--endian=little \
 	--silent \
+	--diag_suppress=Pe111 \
 
 CFLAGS_cpp_common := \
 
@@ -108,7 +110,7 @@ LIBS_common = \
 	drivers.am261x.r5f.iar-arm.freertos.${ConfigName}.lib \
 	board.am261x.r5f.iar-arm.freertos.${ConfigName}.lib \
 	usbd_synp_freertos.am261x.r5f.iar-arm.${ConfigName}.lib \
-	usbd_tusb_ncm_nortos.am261x.r5f.iar-arm.${ConfigName}.lib \
+	usbd_tusb_ncm_freertos.am261x.r5f.iar-arm.${ConfigName}.lib \
 
 LFLAGS_common = \
 	--silent \
@@ -122,7 +124,7 @@ LIBS_NAME = \
 	drivers.am261x.r5f.iar-arm.freertos.${ConfigName}.lib \
 	board.am261x.r5f.iar-arm.freertos.${ConfigName}.lib \
 	usbd_synp_freertos.am261x.r5f.iar-arm.${ConfigName}.lib \
-	usbd_tusb_ncm_nortos.am261x.r5f.iar-arm.${ConfigName}.lib \
+	usbd_tusb_ncm_freertos.am261x.r5f.iar-arm.${ConfigName}.lib \
 
 LIBS_PATH_NAME = \
 	${MCU_PLUS_SDK_PATH}/source/kernel/freertos/lib \

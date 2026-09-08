@@ -1,9 +1,9 @@
 /**
  * These arguments were used when this file was generated. They will be automatically applied on subsequent loads
  * via the GUI or CLI. Run CLI with '--help' for additional information on how to override these arguments.
- * @cliArgs --device "AM261x_ZFG" --part "AM2612" --package "ZFG" --context "r5fss0-0" --product "MCU_PLUS_SDK_AM261x@26.00.00"
- * @v2CliArgs --device "AM2612" --package "NFBGA (ZFG)" --variant "500MHz" --context "r5fss0-0" --product "MCU_PLUS_SDK_AM261x@26.00.00"
- * @versions {"tool":"1.25.0+4268"}
+ * @cliArgs --device "AM261x_ZFG" --part "AM2612" --package "ZFG" --context "r5fss0-0" --product "MCU_PLUS_SDK_AM261x@26.01.00"
+ * @v2CliArgs --device "AM2612" --package "NFBGA (ZFG)" --variant "500MHz" --context "r5fss0-0" --product "MCU_PLUS_SDK_AM261x@26.01.00"
+ * @versions {"tool":"1.27.0+4565"}
  */
 
 /**
@@ -44,25 +44,48 @@ const section12       = section.addInstance();
 /**
  * Write custom configuration values to the imported modules.
  */
-ram1.$name                                              = "CONFIG_RAM0";
-ram1.serialRamDriver.$name                              = "board_ram_serialRam_serialram0";
-ram1.serialRamDriver.peripheralDriver.$name             = "CONFIG_OSPI0";
-ram1.serialRamDriver.peripheralDriver.protocol          = "8d_8d_8d";
-ram1.serialRamDriver.peripheralDriver.dmaEnable         = true;
-ram1.serialRamDriver.peripheralDriver.baudRateDiv       = 4;
-ram1.serialRamDriver.peripheralDriver.OSPI.$assign      = "OSPI1";
-ram1.serialRamDriver.peripheralDriver.OSPI.CLK.$assign  = "GPIO29";
-ram1.serialRamDriver.peripheralDriver.OSPI.CSn0.$assign = "GPIO38";
-ram1.serialRamDriver.peripheralDriver.OSPI.DQS.$assign  = "GPIO39";
-ram1.serialRamDriver.peripheralDriver.OSPI.D7.$assign   = "GPIO37";
-ram1.serialRamDriver.peripheralDriver.OSPI.D6.$assign   = "GPIO36";
-ram1.serialRamDriver.peripheralDriver.OSPI.D5.$assign   = "GPIO35";
-ram1.serialRamDriver.peripheralDriver.OSPI.D4.$assign   = "GPIO34";
-ram1.serialRamDriver.peripheralDriver.OSPI.D3.$assign   = "GPIO33";
-ram1.serialRamDriver.peripheralDriver.OSPI.D2.$assign   = "GPIO32";
-ram1.serialRamDriver.peripheralDriver.OSPI.D1.$assign   = "GPIO31";
-ram1.serialRamDriver.peripheralDriver.OSPI.D0.$assign   = "GPIO30";
-ram1.serialRamDriver.peripheralDriver.child.$name       = "drivers_ospi_v0_ospi_v0_am261x_template0";
+ram1.$name                                                 = "CONFIG_RAM0";
+ram1.serialRamDriver.$name                                 = "board_ram_serialRam_serialram0";
+ram1.serialRamDriver.sramDummyClksWr                       = 4;
+ram1.serialRamDriver.sramDummyClksCmd                      = 9;
+ram1.serialRamDriver.sramDummyClksRd                       = 9;
+ram1.serialRamDriver.peripheralDriver.$name                = "CONFIG_OSPI0";
+ram1.serialRamDriver.peripheralDriver.protocol             = "8d_8d_8d";
+ram1.serialRamDriver.peripheralDriver.rdDelayMin           = 0;
+ram1.serialRamDriver.peripheralDriver.txDllLowWindowEnd    = 127;
+ram1.serialRamDriver.peripheralDriver.txDllHighWindowStart = 0;
+ram1.serialRamDriver.peripheralDriver.txDllHighWindowEnd   = 127;
+ram1.serialRamDriver.peripheralDriver.rxLowSearchEnd       = 127;
+ram1.serialRamDriver.peripheralDriver.rxHighSearchStart    = 0;
+ram1.serialRamDriver.peripheralDriver.txLowSearchEnd       = 127;
+ram1.serialRamDriver.peripheralDriver.txHighSearchStart    = 0;
+ram1.serialRamDriver.peripheralDriver.txDLLSearchOffset    = 0;
+ram1.serialRamDriver.peripheralDriver.rxTxDLLSearchStep    = 2;
+ram1.serialRamDriver.peripheralDriver.rdDelayMax           = 4;
+ram1.serialRamDriver.peripheralDriver.phyEnable            = true;
+ram1.serialRamDriver.peripheralDriver.dmaEnable            = true;
+ram1.serialRamDriver.peripheralDriver.OSPI.$assign         = "OSPI1";
+ram1.serialRamDriver.peripheralDriver.OSPI.CLK.$assign     = "GPIO29";
+ram1.serialRamDriver.peripheralDriver.OSPI.CSn0.$assign    = "GPIO38";
+ram1.serialRamDriver.peripheralDriver.OSPI.DQS.$assign     = "GPIO39";
+ram1.serialRamDriver.peripheralDriver.OSPI.D7.$assign      = "GPIO37";
+ram1.serialRamDriver.peripheralDriver.OSPI.D6.$assign      = "GPIO36";
+ram1.serialRamDriver.peripheralDriver.OSPI.D5.$assign      = "GPIO35";
+ram1.serialRamDriver.peripheralDriver.OSPI.D4.$assign      = "GPIO34";
+ram1.serialRamDriver.peripheralDriver.OSPI.D3.$assign      = "GPIO33";
+ram1.serialRamDriver.peripheralDriver.OSPI.D2.$assign      = "GPIO32";
+ram1.serialRamDriver.peripheralDriver.OSPI.D1.$assign      = "GPIO31";
+ram1.serialRamDriver.peripheralDriver.OSPI.D0.$assign      = "GPIO30";
+ram1.serialRamDriver.peripheralDriver.child.$name          = "drivers_ospi_v0_ospi_v0_am261x_template0";
+
+const divider34       = system.clockTree["OSPI1_CLK_GCM_CLKDIV"];
+divider34.divideValue = 2;
+
+const gate58  = system.clockTree["PLL_ETH_HSDIV0_CLKOUT2_GATE"];
+gate58.enable = true;
+
+const mux21       = system.clockTree["OSPI1_CLK_GCM_CLKSRC_SEL"];
+mux21.inputSelect = "SYSCLK";
 
 const edma                                       = scripting.addModule("/drivers/edma/edma", {}, false);
 const edma1                                      = edma.addInstance({}, false);

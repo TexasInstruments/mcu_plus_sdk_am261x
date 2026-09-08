@@ -486,6 +486,10 @@ typedef enum SOC_RcmPeripheralClockSource_e
      */
     SOC_RcmPeripheralClockSource_DPLL_ETH_HSDIV0_CLKOUT0,
     /**
+     * \brief   Value specifying PLL Eth Clock Out 2 (100 Mhz)
+     */
+    SOC_RcmPeripheralClockSource_DPLL_ETH_HSDIV0_CLKOUT2,
+    /**
      * \brief   Value specifying PLL Per Clock Out 0 (240 Mhz)
      */
     SOC_RcmPeripheralClockSource_DPLL_PER_HSDIV0_CLKOUT0,

@@ -327,6 +327,8 @@ void dwc_usb3_handle_connect_done_intr(dwc_usb3_pcd_t *pcd)
 
 	if (pcd->state == DWC_STATE_UNCONNECTED) {
 		pcd->state = DWC_STATE_DEFAULT;
+		/* Start EP0-OUT to receive SETUP packets on first connection */
+		dwc_usb3_pcd_ep0_out_start(pcd);
 	}
 
 	/* Inform the gadget of the connection and the speed */

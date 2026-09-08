@@ -17,7 +17,7 @@
             </argVar>
             <argVar>
                 <name>SYSCFG_PATH</name>
-                <value>C:\ti\sysconfig_1.27.0</value>
+                <value>C:\ti\sysconfig_1.28.0</value>
             </argVar>
             <argVar>
                 <name>SYSCFG_SDKPRODUCT</name>
@@ -43,6 +43,7 @@
         <path>$MCU_PLUS_SDK_PATH$/source/networking/lwip/lwip-config/am261x/usb/</path>
         <path>$MCU_PLUS_SDK_PATH$/source/networking/lwip/lwip-port/include/</path>
         <path>$MCU_PLUS_SDK_PATH$/source/networking/lwip/lwip-stack/src/include/lwip/apps</path>
+        <path>$MCU_PLUS_SDK_PATH$/source/networking/lwip/lwip-port/freertos/include/</path>
         <path>$MCU_PLUS_SDK_PATH$/source/kernel/freertos/portable/IAR/ARM_CR5F</path>
         <path>$MCU_PLUS_SDK_PATH$/source/kernel/freertos/portable/IAR_ARM/ARM_CR5F</path>
     </includePath>
@@ -59,6 +60,7 @@
             <arg>--diag_suppress=Pe177</arg>
             <arg>-e</arg>
             <arg>--silent</arg>
+            <arg>--diag_suppress=Pe111</arg>
     </extraOptions>
 
     <linkerFile>
@@ -72,7 +74,7 @@
             <arg>drivers.am261x.r5f.iar-arm.freertos.$CONFIG_NAME$.lib</arg>
             <arg>board.am261x.r5f.iar-arm.freertos.$CONFIG_NAME$.lib</arg>
             <arg>usbd_synp_freertos.am261x.r5f.iar-arm.$CONFIG_NAME$.lib</arg>
-            <arg>usbd_tusb_ncm_nortos.am261x.r5f.iar-arm.$CONFIG_NAME$.lib</arg>
+            <arg>usbd_tusb_ncm_freertos.am261x.r5f.iar-arm.$CONFIG_NAME$.lib</arg>
             <arg>-L$MCU_PLUS_SDK_PATH$/source/kernel/freertos/lib</arg>
             <arg>-L$MCU_PLUS_SDK_PATH$/source/drivers/lib</arg>
             <arg>-L$MCU_PLUS_SDK_PATH$/source/board/lib</arg>

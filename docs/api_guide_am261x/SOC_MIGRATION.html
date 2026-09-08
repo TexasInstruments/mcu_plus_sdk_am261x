@@ -43,7 +43,7 @@
   <td id="projectlogo"><a href="https://www.ti.com"><img alt="Logo" src="ti_logo.svg"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AM261x MCU+ SDK
-   &#160;<span id="projectnumber">26.00.00</span>
+   &#160;<span id="projectnumber">26.01.00</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -92,14 +92,15 @@ $(document).ready(function(){initNavTree('SOC_MIGRATION.html',''); initResizable
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#autotoc_md570">Installing dependencies</a></li>
-<li class="level1"><a href="#autotoc_md571">Setup</a><ul><li class="level2"><a href="#autotoc_md572">Excluding examples from migration</a></li>
+<ul><li class="level1"><a href="#autotoc_md573">Installing dependencies</a></li>
+<li class="level1"><a href="#autotoc_md574">Setup</a></li>
+<li class="level1"><a href="#autotoc_md575">Migrating examples to AM261x variant/package</a><ul><li class="level2"><a href="#autotoc_md576">Excluding examples from migration</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="textblock"><p><a class="anchor" id="md_developer_guides_soc_migration"></a></p>
-<h1><a class="anchor" id="autotoc_md570"></a>
+<h1><a class="anchor" id="autotoc_md573"></a>
 Installing dependencies</h1>
 <ul>
 <li>Install SysConfig version 1.16.0 or above from <a href="https://www.ti.com/tool/SYSCONFIG#downloads">here</a></li>
@@ -110,7 +111,7 @@ Installing dependencies</h1>
 <li>Once node is installed, download yargs package using: <div class="fragment"><div class="line">$ npm install yargs@16</div>
 </div><!-- fragment --></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md571"></a>
+<h1><a class="anchor" id="autotoc_md574"></a>
 Setup</h1>
 <ul>
 <li>The migration script titled <b>migrate.js</b> is situated inside the "{your_sdk_path}/tools/migration_script" folder.</li>
@@ -128,16 +129,28 @@ Setup</h1>
 <li>The package and part arguments can be skipped if not required.</li>
 </ul>
 <dl class="section note"><dt>Note</dt><dd>The script is not validated for part migration yet.</dd></dl>
+<h1><a class="anchor" id="autotoc_md575"></a>
+Migrating examples to AM261x variant/package</h1>
+<p>The AM261x device supports package and variant migrations:</p>
+<ul>
+<li><b>Packages</b>: ZFG, ZCZ, ZEJ, ZNC</li>
+<li><b>Variants</b>: 500MHz (default) and 400MHz (add _400 suffix)</li>
+</ul>
+<p>Examples:</p><ul>
+<li>AM261x_ZFG → AM261x_ZNC</li>
+<li>AM261x_ZNC → AM261x_ZNC_400</li>
+<li>AM261x_ZFG → AM261x_ZNC_400</li>
+</ul>
 <p>To run the script, open terminal/command prompt inside the SDK folder that has the migrate.js script.</p>
 <p>In this case, navigate to migration_script folder using: </p><pre class="fragment">$ cd tools/migration_script
-</pre><p>For example, let's say you want to switch all the AM261X examples in the whole of SDK from package <b>ZCZ_S</b> to <b>ZCZ_F</b>. Then, enter this command in your terminal: </p><pre class="fragment">$ node migrate.js --product {your_sdk_path}/.metadata/product.json --sourceDevice AM261X --destinationDevice AM261X --sourcePackage ZCZ_S --destinationPackage ZCZ_F --migratePath {your_sdk_path}
-</pre><p>The arguments <b>sourceDevice</b> and <b>destinationDevice</b> are same in this case, both AM261X.</p>
+</pre><p>For example, let's say you want to switch all the AM261x examples in the whole of SDK from package <b>ZFG</b> to <b>ZNC_400</b> (ZNC package with 400MHz variant). Then, enter this command in your terminal: </p><pre class="fragment">$ node migrate.js --product {your_sdk_path}/.metadata/product.json --sourceDevice AM261x_ZFG --destinationDevice AM261x_ZNC_400 --sourcePackage ZFG --destinationPackage ZNC --migratePath {your_sdk_path}
+</pre><p>The arguments <b>sourceDevice</b> and <b>destinationDevice</b> are case sensitive.</p>
 <p>When you run this command, the migrate.js script recursively traverses through the whole SDK path, searches for all the examples that are currently in <b>sourcePackage</b>, and then migrates those examples to <b>destinationPackage</b>.</p>
 <p>You can also use the script to switch individual examples. Let's say you want to switch only the 'mcasp' examples, than replace the last argument with: </p><pre class="fragment">"{your_sdk_path}/examples/drivers/mcasp"
 </pre><p>It does in-place modification of <b>example.syscfg</b>, <b>makefile</b>, and <b>example.projectspec</b> files of the examples.</p>
 <p>The list of files successfully migrated and files that failed to migrate can be observed from the <b>log_file.txt</b> generated inside the tools/migration_script folder of the SDK.</p>
 <p>To understand the list of arguments, their aliases and description enter this command: </p><pre class="fragment">$ node migrate.js --help
-</pre><h2><a class="anchor" id="autotoc_md572"></a>
+</pre><h2><a class="anchor" id="autotoc_md576"></a>
 Excluding examples from migration</h2>
 <p>To skip certain examples from being migrated, add the SDK relative path to those folders in the file <b>exclude_list_am261x.js</b> inside migration_script/soc folder. </p>
 </div></div><!-- contents -->

@@ -43,7 +43,7 @@
   <td id="projectlogo"><a href="https://www.ti.com"><img alt="Logo" src="ti_logo.svg"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AM261x MCU+ SDK
-   &#160;<span id="projectnumber">26.00.00</span>
+   &#160;<span id="projectnumber">26.01.00</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -193,12 +193,12 @@ Macros</h2></td></tr>
 <tr class="separator:a597718e59a8fc9c4d4ab63f5a34e28b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c045d5be06e715cc335784a7320714e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__defs_8h.html#a6c045d5be06e715cc335784a7320714e">EINPROGRESS</a>&#160;&#160;&#160;115     /* Operation now in progress */</td></tr>
 <tr class="separator:a6c045d5be06e715cc335784a7320714e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cec6ad808589891b39e150d6a18152c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__defs_8h.html#a6cec6ad808589891b39e150d6a18152c">wmb</a>()&#160;&#160;&#160;do {} while ((bool)(0))</td></tr>
+<tr class="memitem:a6cec6ad808589891b39e150d6a18152c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__defs_8h.html#a6cec6ad808589891b39e150d6a18152c">wmb</a>()&#160;&#160;&#160;__asm__ __volatile__ (&quot;dsb&quot; : : : &quot;memory&quot;)</td></tr>
 <tr class="separator:a6cec6ad808589891b39e150d6a18152c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cf3f41112fa388f82d01243f96d691f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__defs_8h.html#a8cf3f41112fa388f82d01243f96d691f">interrupt_disable</a>()&#160;&#160;&#160;0</td></tr>
+<tr class="memitem:a8cf3f41112fa388f82d01243f96d691f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__defs_8h.html#a8cf3f41112fa388f82d01243f96d691f">interrupt_disable</a>()&#160;&#160;&#160;<a class="el" href="group__KERNEL__DPL__HWI.html#gaac47ffab62f7d25d736b58e40be17425">HwiP_disable</a>()</td></tr>
 <tr class="separator:a8cf3f41112fa388f82d01243f96d691f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adccfbc626ab364de6a8d4156dcab0a2c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__defs_8h.html#adccfbc626ab364de6a8d4156dcab0a2c">interrupt_enable</a>()&#160;&#160;&#160;do {} while ((bool)(0))</td></tr>
-<tr class="separator:adccfbc626ab364de6a8d4156dcab0a2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac87d19cfc570f84ccc9a3401b04e2c70"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__defs_8h.html#ac87d19cfc570f84ccc9a3401b04e2c70">interrupt_enable</a>(f)&#160;&#160;&#160;<a class="el" href="group__KERNEL__DPL__HWI.html#ga5708f4c326c7bc0aafdf4c4a4e89acd0">HwiP_restore</a>(f)</td></tr>
+<tr class="separator:ac87d19cfc570f84ccc9a3401b04e2c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78f69c2cca159bbd8c674a316e8c66bf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__defs_8h.html#a78f69c2cca159bbd8c674a316e8c66bf">dwc_init_spinlock</a>(d,  p)&#160;&#160;&#160;do {} while ((bool)(0))</td></tr>
 <tr class="separator:a78f69c2cca159bbd8c674a316e8c66bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afda7b1024d290e786e7fc1034e6e06dd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__defs_8h.html#afda7b1024d290e786e7fc1034e6e06dd">dwc_acquire_spinlock</a>(d,  p)&#160;&#160;&#160;do {} while ((bool)(0))</td></tr>
@@ -207,7 +207,7 @@ Macros</h2></td></tr>
 <tr class="separator:ae85bc5eb30dc2513dd686aeaf8dd1e35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52b2858df0e2363e21c771a5a6e7c7af"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__defs_8h.html#a52b2858df0e2363e21c771a5a6e7c7af">dwc_acquire_spinlock_irq</a>(d,  p,  f)&#160;&#160;&#160;do { (f) = <a class="el" href="os__defs_8h.html#a8cf3f41112fa388f82d01243f96d691f">interrupt_disable</a>(); } while ((bool)(0))</td></tr>
 <tr class="separator:a52b2858df0e2363e21c771a5a6e7c7af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68e981cceaa26f802abf6b69b280a4ba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__defs_8h.html#a68e981cceaa26f802abf6b69b280a4ba">dwc_release_spinlock_irq</a>(d,  p,  f)&#160;&#160;&#160;do { if (f &gt; 0U) { <a class="el" href="os__defs_8h.html#adccfbc626ab364de6a8d4156dcab0a2c">interrupt_enable</a>(); } } while ((bool)(0))</td></tr>
+<tr class="memitem:a68e981cceaa26f802abf6b69b280a4ba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__defs_8h.html#a68e981cceaa26f802abf6b69b280a4ba">dwc_release_spinlock_irq</a>(d,  p,  f)&#160;&#160;&#160;do { <a class="el" href="os__defs_8h.html#ac87d19cfc570f84ccc9a3401b04e2c70">interrupt_enable</a>(f); } while ((bool)(0))</td></tr>
 <tr class="separator:a68e981cceaa26f802abf6b69b280a4ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af426571df310b145bc3f73d0e708098f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__defs_8h.html#af426571df310b145bc3f73d0e708098f">DWC_NUM_BULK_TRBS</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:af426571df310b145bc3f73d0e708098f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -801,7 +801,7 @@ Variables</h2></td></tr>
           <td class="memname">#define wmb</td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;do {} while ((bool)(0))</td>
+          <td>&#160;&#160;&#160;__asm__ __volatile__ (&quot;dsb&quot; : : : &quot;memory&quot;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -819,15 +819,15 @@ Variables</h2></td></tr>
           <td class="memname">#define interrupt_disable</td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;0</td>
+          <td>&#160;&#160;&#160;<a class="el" href="group__KERNEL__DPL__HWI.html#gaac47ffab62f7d25d736b58e40be17425">HwiP_disable</a>()</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="adccfbc626ab364de6a8d4156dcab0a2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adccfbc626ab364de6a8d4156dcab0a2c">&#9670;&nbsp;</a></span>interrupt_enable</h2>
+<a id="ac87d19cfc570f84ccc9a3401b04e2c70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac87d19cfc570f84ccc9a3401b04e2c70">&#9670;&nbsp;</a></span>interrupt_enable</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -835,8 +835,9 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">#define interrupt_enable</td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;do {} while ((bool)(0))</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">f</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="group__KERNEL__DPL__HWI.html#ga5708f4c326c7bc0aafdf4c4a4e89acd0">HwiP_restore</a>(f)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -988,7 +989,7 @@ Variables</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;do { if (f &gt; 0U) { <a class="el" href="os__defs_8h.html#adccfbc626ab364de6a8d4156dcab0a2c">interrupt_enable</a>(); } } while ((bool)(0))</td>
+          <td></td><td>&#160;&#160;&#160;do { <a class="el" href="os__defs_8h.html#ac87d19cfc570f84ccc9a3401b04e2c70">interrupt_enable</a>(f); } while ((bool)(0))</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -63,7 +63,8 @@
 #include "device/dcd.h"
 #include <usb_drv.h>
 #include "soc/device_wrapper.h"
-#include <kernel/dpl/DebugP.h> 
+#include <kernel/dpl/DebugP.h>
+#include <kernel/dpl/CacheP.h>
 #include <kernel/nortos/dpl/common/printf.h>
 
 /*
@@ -178,10 +179,9 @@ void epXferCmplCb(usb_ep_t *ep, usb_request_t *req) {
         req->complete = 0;
     }
     else {
-        /* copy the received data from completed request buffer to TinyUSB buffer */
-        TU_LOG2("[epXferCmplCb] memcpy: from (0x%08X) to (0x%08X) (%d)bytes \n",
-            (uintptr_t)req->dma, (uintptr_t)req->buf, req->actual);
-        memcpy((void *)req->buf, (void *)req->dma, req->actual);
+        /* buf and dma point at the same caller-supplied buffer (zero-copy);
+         * invalidate so the CPU observes what the DMA engine just wrote */
+        CacheP_inv((void *)req->buf, req->actual, CacheP_TYPE_ALL);
 
         /* inform the tud_task the transfer is completed */
         dcd_event_t event = { .rhport = 0, .event_id = DCD_EVENT_XFER_COMPLETE };
@@ -305,16 +305,21 @@ bool dcd_edpt_xfer (uint8_t rhport, uint8_t ep_addr, uint8_t * buffer, uint16_t 
             usb_req->complete = epXferCmplCb;
             if (dir == TUSB_DIR_IN)
             {
-                char *local_buf = (char *)ep_in_buf[epnum-1];
-                memcpy(local_buf, buffer, total_bytes);
-                usb_req->buf = (char *)ep_in_buf[epnum-1];
-                usb_req->dma = (dwc_dma_t) ep_in_buf[epnum-1];
+                /* Zero-copy: DMA reads straight from the caller's buffer.
+                 * Write back dirty cache lines first so the DMA engine sees
+                 * committed data instead of stale RAM. */
+                CacheP_wb((void *)buffer, total_bytes, CacheP_TYPE_ALL);
+                usb_req->buf = (char *) buffer;
+                usb_req->dma = (dwc_dma_t) buffer;
                 dwc_usb3_ep_queue(usb_handle.dwc_usb3_dev, &pcd_ep->usb_ep, usb_req);
             }
             else
             {
+                /* Zero-copy: DMA writes straight into the caller's buffer.
+                 * Cache invalidation happens on completion in epXferCmplCb()
+                 * once the actual transfer length is known. */
                 usb_req->buf = (char *) buffer;
-                usb_req->dma = (dwc_dma_t) ep_out_buf[epnum-1];
+                usb_req->dma = (dwc_dma_t) buffer;
                 dwc_usb3_ep_queue(usb_handle.dwc_usb3_dev, &pcd_ep->usb_ep, usb_req);
             }
         }

@@ -43,7 +43,7 @@
   <td id="projectlogo"><a href="https://www.ti.com"><img alt="Logo" src="ti_logo.svg"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AM261x MCU+ SDK
-   &#160;<span id="projectnumber">26.00.00</span>
+   &#160;<span id="projectnumber">26.01.00</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -92,31 +92,31 @@ $(document).ready(function(){initNavTree('EXAMPLES_DRIVERS_ADC_ALTERNATE_DMA_TRI
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#autotoc_md1933">Example Description</a><ul><li class="level2"><a href="#autotoc_md1934">Configurations</a></li>
-<li class="level2"><a href="#autotoc_md1935">ISRs</a></li>
-<li class="level2"><a href="#autotoc_md1936">External Connections</a></li>
-<li class="level2"><a href="#autotoc_md1937">Watch Variables</a></li>
+<ul><li class="level1"><a href="#autotoc_md1982">Example Description</a><ul><li class="level2"><a href="#autotoc_md1983">Configurations</a></li>
+<li class="level2"><a href="#autotoc_md1984">ISRs</a></li>
+<li class="level2"><a href="#autotoc_md1985">External Connections</a></li>
+<li class="level2"><a href="#autotoc_md1986">Watch Variables</a></li>
 </ul>
 </li>
 <li class="level1"><a href="#EXAMPLES_DRIVERS_ADC_ALTERNATE_DMA_TRIGGER_COMBOS">Supported Combinations</a></li>
-<li class="level1"><a href="#autotoc_md1938">Steps to Run the Example</a></li>
-<li class="level1"><a href="#autotoc_md1939">See Also</a></li>
-<li class="level1"><a href="#autotoc_md1940">Sample Output</a></li>
+<li class="level1"><a href="#autotoc_md1987">Steps to Run the Example</a></li>
+<li class="level1"><a href="#autotoc_md1988">See Also</a></li>
+<li class="level1"><a href="#autotoc_md1989">Sample Output</a></li>
 </ul>
 </div>
 <div class="textblock"><p><a class="anchor" id="md_examples_drivers_adc_alternate_dma_trigger"></a></p>
-<h1><a class="anchor" id="autotoc_md1933"></a>
+<h1><a class="anchor" id="autotoc_md1982"></a>
 Example Description</h1>
 <p>This example showcases the usage of the alternate dma trigger from ADC, in order to trigger DMA once the results have been latched in the result space, instead of triggering the DMA at the end of conversion. <a class="el" href="group__DRV__ADC__MODULE.html#gadaa3b0c0bd1b40680b45cb129e735e85">ADC_enableAltDMATiming()</a> will enable this trigger.</p>
-<h2><a class="anchor" id="autotoc_md1934"></a>
+<h2><a class="anchor" id="autotoc_md1983"></a>
 Configurations</h2>
 <p>The Example Configures the SOC0 in both ADC0, ADC1 to be triggered by ADC_INT1. The DMA channels 0,1 are configured for triggers from ADC0_INT1, ADC1_INT1 respectively.</p>
-<h2><a class="anchor" id="autotoc_md1935"></a>
+<h2><a class="anchor" id="autotoc_md1984"></a>
 ISRs</h2>
 <p>App_dmach0ISR</p><ul>
 <li>ISR triggered at the end of the DMA transfers to stop ADC SOCs from getting further triggers.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md1936"></a>
+<h2><a class="anchor" id="autotoc_md1985"></a>
 External Connections</h2>
 <p>ADC0-SOC0 Samples on Channel 2, where as ADC1-SOC0 samples on Channel 0.</p><ul>
 <li>on AM263Px CC E2, with HSEC Dock<ul>
@@ -144,7 +144,7 @@ External Connections</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md1937"></a>
+<h2><a class="anchor" id="autotoc_md1986"></a>
 Watch Variables</h2>
 <p>gAdc0DataBuffer[] - Buffer to store ADC0 SOC0 results, copied by DMA. gAdc1DataBuffer[] - Buffer to store ADC1 SOC0 results, copied by DMA.</p>
 <h1><a class="anchor" id="EXAMPLES_DRIVERS_ADC_ALTERNATE_DMA_TRIGGER_COMBOS"></a>
@@ -161,7 +161,7 @@ Supported Combinations</h1>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">Example folder  </td><td class="markdownTableBodyNone">examples/drivers/adc/adc_alternate_dma_trigger/   </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md1938"></a>
+<h1><a class="anchor" id="autotoc_md1987"></a>
 Steps to Run the Example</h1>
 <ul>
 <li><b>When using CCS projects to build</b>, import the CCS project for the required combination and build it using the CCS project menu (see <a class="el" href="CCS_PROJECTS_PAGE.html">Using SDK with CCS Projects</a>).</li>
@@ -171,10 +171,10 @@ Steps to Run the Example</h1>
 <li>Using watch variables, view the ADC conversion results.</li>
 <li>View the ADC conversion results in UART console logs</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md1939"></a>
+<h1><a class="anchor" id="autotoc_md1988"></a>
 See Also</h1>
 <p><a class="el" href="DRIVERS_ADC_PAGE.html">ADC</a></p>
-<h1><a class="anchor" id="autotoc_md1940"></a>
+<h1><a class="anchor" id="autotoc_md1989"></a>
 Sample Output</h1>
 <p>Shown below is a sample output when the application is run,</p>
 <div class="fragment"><div class="line">ADC Alternate DMA trigger Test Started ...</div>

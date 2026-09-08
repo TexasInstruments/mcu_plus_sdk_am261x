@@ -59,6 +59,8 @@ FILES_common := \
     lwiperf.c \
     fs.c \
     err.c \
+    sys_arch.c \
+    tcpip.c \
 
 FILES_PATH_common = \
     ../tinyusb/tinyusb-stack_0.20.0/src \
@@ -78,6 +80,7 @@ FILES_PATH_common = \
     ../../networking/lwip/lwip-stack/src/netif \
     ../../networking/lwip/lwip-stack/src/apps/http/ \
     ../../networking/lwip/lwip-stack/src/apps/lwiperf/ \
+    ../../networking/lwip/lwip-port/freertos/src/ \
 
 THIRD_PARTY_FILE_common := \
     tinyusb-stack_0.20.0/ \
@@ -106,6 +109,9 @@ INCLUDES_common := \
     -I../../networking/lwip/lwip-stack/src/include/lwip \
     -I../../networking/lwip/lwip-config/am261x/usb/ \
     -I../../networking/lwip/lwip-port/include/ \
+    -I../../networking/lwip/lwip-port/freertos/include \
+    -I../../networking/mbedtls_library/mbedtls/include \
+    -I../../networking/mbedtls_library/mbedtls_ti \
     -I../../kernel/freertos/portable/IAR_ARM/ARM_CR5F \
     -I${MCU_PLUS_SDK_PATH}/source/kernel/freertos/FreeRTOS-Kernel/include \
     -I${MCU_PLUS_SDK_PATH}/source/kernel/freertos/portable/IAR_ARM/ARM_CR5F \
@@ -130,7 +136,9 @@ CFLAGS_common := \
     -e \
     --endian=little \
     --silent \
+    --dlib_config $(CGT_IAR_ARM_PATH)/inc/c/DLib_Config_Full.h \
     --diag_suppress=Pe111 \
+    --diag_suppress=Pe231 \
 
 CFLAGS_cpp_common := \
 

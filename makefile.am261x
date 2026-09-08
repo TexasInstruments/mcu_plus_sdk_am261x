@@ -12,6 +12,7 @@ help:
 	@echo  Notes,
 	@echo  - Use -j to invoke parallel builds
 	@echo  - Use PROFILE=debug or PROFILE=release [default] to build in debug or release profile
+	@echo  - Use COMPILER=ti-arm-clang or COMPILER=iar-arm or COMPILER =all [default] to build using particular compiler, by default build all compilers
 	@echo  .
 	@echo  Overall build targets,
 	@echo  ======================
@@ -31,20 +32,21 @@ help:
 	@echo  .
 	@echo  Library build targets,
 	@echo  ======================
-	@echo  $(MAKE) -s -f makefile.am261x ai_r5f.ti-arm-clang.nortos ai_r5f.ti-arm-clang.freertos ai_r5f.ti-arm-clang.freertos_mpu
-	@echo  $(MAKE) -s -f makefile.am261x board_r5f.ti-arm-clang.nortos board_r5f.ti-arm-clang.freertos board_r5f.ti-arm-clang.freertos_mpu board_r5f.iar-arm.nortos board_r5f.iar-arm.freertos board_r5f.iar-arm.freertos_mpu
-	@echo  $(MAKE) -s -f makefile.am261x pmic_blackbird_r5f.ti-arm-clang.nortos pmic_blackbird_r5f.ti-arm-clang.freertos pmic_blackbird_r5f.ti-arm-clang.freertos_mpu
-	@echo  $(MAKE) -s -f makefile.am261x pmic_derby_r5f.ti-arm-clang.nortos pmic_derby_r5f.ti-arm-clang.freertos pmic_derby_r5f.ti-arm-clang.freertos_mpu
-	@echo  $(MAKE) -s -f makefile.am261x sfo_r5f.ti-arm-clang.nortos sfo_r5f.ti-arm-clang.freertos sfo_r5f.ti-arm-clang.freertos_mpu
-	@echo  $(MAKE) -s -f makefile.am261x drivers_r5f.ti-arm-clang.nortos drivers_r5f.ti-arm-clang.freertos drivers_r5f.ti-arm-clang.freertos_mpu drivers_r5f.iar-arm.nortos drivers_r5f.iar-arm.freertos drivers_r5f.iar-arm.freertos_mpu
+	@echo  $(MAKE) -s -f makefile.am261x ai_r5f.ti-arm-clang.nortos ai_r5f.ti-arm-clang.freertos ai_r5f.ti-arm-clang.freertos_mpu ai_r5f.ti-arm-clang.threadx
+	@echo  $(MAKE) -s -f makefile.am261x board_r5f.ti-arm-clang.nortos board_r5f.ti-arm-clang.freertos board_r5f.ti-arm-clang.freertos_mpu board_r5f.ti-arm-clang.threadx board_r5f.iar-arm.nortos board_r5f.iar-arm.freertos board_r5f.iar-arm.freertos_mpu board_r5f.iar-arm.threadx
+	@echo  $(MAKE) -s -f makefile.am261x pmic_blackbird_r5f.ti-arm-clang.nortos pmic_blackbird_r5f.ti-arm-clang.freertos pmic_blackbird_r5f.ti-arm-clang.freertos_mpu pmic_blackbird_r5f.ti-arm-clang.threadx
+	@echo  $(MAKE) -s -f makefile.am261x pmic_derby_r5f.ti-arm-clang.nortos pmic_derby_r5f.ti-arm-clang.freertos pmic_derby_r5f.ti-arm-clang.freertos_mpu pmic_derby_r5f.ti-arm-clang.threadx
+	@echo  $(MAKE) -s -f makefile.am261x sfo_r5f.ti-arm-clang.nortos sfo_r5f.ti-arm-clang.freertos sfo_r5f.ti-arm-clang.freertos_mpu sfo_r5f.ti-arm-clang.threadx
+	@echo  $(MAKE) -s -f makefile.am261x drivers_r5f.ti-arm-clang.nortos drivers_r5f.ti-arm-clang.freertos drivers_r5f.ti-arm-clang.freertos_mpu drivers_r5f.ti-arm-clang.threadx drivers_r5f.iar-arm.nortos drivers_r5f.iar-arm.freertos drivers_r5f.iar-arm.freertos_mpu drivers_r5f.iar-arm.threadx
 	@echo  $(MAKE) -s -f makefile.am261x freeRTOS_fat-freertos_r5f.ti-arm-clang
 	@echo  $(MAKE) -s -f makefile.am261x freeRTOS_fat-nortos_r5f.ti-arm-clang
-	@echo  $(MAKE) -s -f makefile.am261x littlefs_r5f.ti-arm-clang.nortos littlefs_r5f.ti-arm-clang.freertos littlefs_r5f.ti-arm-clang.freertos_mpu littlefs_r5f.iar-arm.nortos littlefs_r5f.iar-arm.freertos littlefs_r5f.iar-arm.freertos_mpu
-	@echo  $(MAKE) -s -f makefile.am261x middleware_r5f.ti-arm-clang.nortos middleware_r5f.ti-arm-clang.freertos middleware_r5f.ti-arm-clang.freertos_mpu
+	@echo  $(MAKE) -s -f makefile.am261x littlefs_r5f.ti-arm-clang.nortos littlefs_r5f.ti-arm-clang.freertos littlefs_r5f.ti-arm-clang.freertos_mpu littlefs_r5f.ti-arm-clang.threadx littlefs_r5f.iar-arm.nortos littlefs_r5f.iar-arm.freertos littlefs_r5f.iar-arm.freertos_mpu littlefs_r5f.iar-arm.threadx
+	@echo  $(MAKE) -s -f makefile.am261x middleware_r5f.ti-arm-clang.nortos middleware_r5f.ti-arm-clang.freertos middleware_r5f.ti-arm-clang.freertos_mpu middleware_r5f.ti-arm-clang.threadx
 	@echo  $(MAKE) -s -f makefile.am261x nortos_r5f.ti-arm-clang nortos_r5f.iar-arm
 	@echo  $(MAKE) -s -f makefile.am261x freertos_r5f.ti-arm-clang freertos_r5f-mpu.ti-arm-clang freertos_r5f.iar-arm
-	@echo  $(MAKE) -s -f makefile.am261x mathlib_r5f.ti-arm-clang.nortos mathlib_r5f.ti-arm-clang.freertos mathlib_r5f.ti-arm-clang.freertos_mpu
-	@echo  $(MAKE) -s -f makefile.am261x enet-cpsw_r5f.ti-arm-clang.nortos enet-cpsw_r5f.ti-arm-clang.freertos enet-cpsw_r5f.ti-arm-clang.freertos_mpu
+	@echo  $(MAKE) -s -f makefile.am261x threadx_r5f.ti-arm-clang
+	@echo  $(MAKE) -s -f makefile.am261x mathlib_r5f.ti-arm-clang.nortos mathlib_r5f.ti-arm-clang.freertos mathlib_r5f.ti-arm-clang.freertos_mpu mathlib_r5f.ti-arm-clang.threadx
+	@echo  $(MAKE) -s -f makefile.am261x enet-cpsw_r5f.ti-arm-clang.nortos enet-cpsw_r5f.ti-arm-clang.freertos enet-cpsw_r5f.ti-arm-clang.freertos_mpu enet-cpsw_r5f.ti-arm-clang.threadx
 	@echo  $(MAKE) -s -f makefile.am261x lwipif-cpsw-freertos_r5f.ti-arm-clang
 	@echo  $(MAKE) -s -f makefile.am261x lwipif-cpsw-nortos_r5f.ti-arm-clang
 	@echo  $(MAKE) -s -f makefile.am261x lwip-freertos_r5f.ti-arm-clang
@@ -57,13 +59,13 @@ help:
 	@echo  $(MAKE) -s -f makefile.am261x hsr_prp_icss_emac_r5f.ti-arm-clang.nortos hsr_prp_icss_emac_r5f.ti-arm-clang.freertos hsr_prp_icss_emac_r5f.ti-arm-clang.freertos_mpu
 	@echo  $(MAKE) -s -f makefile.am261x icss_emac_lwip_if_r5f.ti-arm-clang.nortos icss_emac_lwip_if_r5f.ti-arm-clang.freertos icss_emac_lwip_if_r5f.ti-arm-clang.freertos_mpu
 	@echo  $(MAKE) -s -f makefile.am261x icss_timesync_r5f.ti-arm-clang.nortos icss_timesync_r5f.ti-arm-clang.freertos icss_timesync_r5f.ti-arm-clang.freertos_mpu
-	@echo  $(MAKE) -s -f makefile.am261x mbedtls_r5f.ti-arm-clang.nortos mbedtls_r5f.ti-arm-clang.freertos mbedtls_r5f.ti-arm-clang.freertos_mpu
+	@echo  $(MAKE) -s -f makefile.am261x mbedtls_r5f.ti-arm-clang.nortos mbedtls_r5f.ti-arm-clang.freertos mbedtls_r5f.ti-arm-clang.freertos_mpu mbedtls_r5f.ti-arm-clang.threadx
 	@echo  $(MAKE) -s -f makefile.am261x tsn_gptp-freertos_r5f.ti-arm-clang
 	@echo  $(MAKE) -s -f makefile.am261x tsn_combase-freertos_r5f.ti-arm-clang
 	@echo  $(MAKE) -s -f makefile.am261x tsn_uniconf-freertos_r5f.ti-arm-clang
 	@echo  $(MAKE) -s -f makefile.am261x tsn_unibase-freertos_r5f.ti-arm-clang
-	@echo  $(MAKE) -s -f makefile.am261x sdl_r5f.ti-arm-clang.nortos sdl_r5f.ti-arm-clang.freertos sdl_r5f.ti-arm-clang.freertos_mpu
-	@echo  $(MAKE) -s -f makefile.am261x security_r5f.ti-arm-clang.nortos security_r5f.ti-arm-clang.freertos security_r5f.ti-arm-clang.freertos_mpu
+	@echo  $(MAKE) -s -f makefile.am261x sdl_r5f.ti-arm-clang.nortos sdl_r5f.ti-arm-clang.freertos sdl_r5f.ti-arm-clang.freertos_mpu sdl_r5f.ti-arm-clang.threadx
+	@echo  $(MAKE) -s -f makefile.am261x security_r5f.ti-arm-clang.nortos security_r5f.ti-arm-clang.freertos security_r5f.ti-arm-clang.freertos_mpu security_r5f.ti-arm-clang.threadx
 	@echo  $(MAKE) -s -f makefile.am261x usbd_synp_nortos_r5f.ti-arm-clang usbd_synp_nortos_r5f.iar-arm
 	@echo  $(MAKE) -s -f makefile.am261x usbd_synp_freertos_r5f.ti-arm-clang usbd_synp_freertos_r5f.iar-arm
 	@echo  $(MAKE) -s -f makefile.am261x usbd_tusb_cdc_nortos_r5f.ti-arm-clang usbd_tusb_cdc_nortos_r5f.iar-arm
@@ -74,23 +76,25 @@ help:
 	@echo  $(MAKE) -s -f makefile.am261x usbd_tusb_ncm_freertos_r5f.ti-arm-clang usbd_tusb_ncm_freertos_r5f.iar-arm
 	@echo  $(MAKE) -s -f makefile.am261x usbd_tusb_vendor_nortos_r5f.ti-arm-clang
 	@echo  $(MAKE) -s -f makefile.am261x usbd_tusb_vendor_freertos_r5f.ti-arm-clang
+	@echo  $(MAKE) -s -f makefile.am261x usbd_tusb_benchmark_freertos_r5f.ti-arm-clang
 	@echo  .
 	@echo  Library clean targets,
 	@echo  ======================
-	@echo  $(MAKE) -s -f makefile.am261x ai_r5f.ti-arm-clang.nortos_clean ai_r5f.ti-arm-clang.freertos_clean ai_r5f.ti-arm-clang.freertos_mpu_clean
-	@echo  $(MAKE) -s -f makefile.am261x board_r5f.ti-arm-clang.nortos_clean board_r5f.ti-arm-clang.freertos_clean board_r5f.ti-arm-clang.freertos_mpu_clean board_r5f.iar-arm.nortos_clean board_r5f.iar-arm.freertos_clean board_r5f.iar-arm.freertos_mpu_clean
-	@echo  $(MAKE) -s -f makefile.am261x pmic_blackbird_r5f.ti-arm-clang.nortos_clean pmic_blackbird_r5f.ti-arm-clang.freertos_clean pmic_blackbird_r5f.ti-arm-clang.freertos_mpu_clean
-	@echo  $(MAKE) -s -f makefile.am261x pmic_derby_r5f.ti-arm-clang.nortos_clean pmic_derby_r5f.ti-arm-clang.freertos_clean pmic_derby_r5f.ti-arm-clang.freertos_mpu_clean
-	@echo  $(MAKE) -s -f makefile.am261x sfo_r5f.ti-arm-clang.nortos_clean sfo_r5f.ti-arm-clang.freertos_clean sfo_r5f.ti-arm-clang.freertos_mpu_clean
-	@echo  $(MAKE) -s -f makefile.am261x drivers_r5f.ti-arm-clang.nortos_clean drivers_r5f.ti-arm-clang.freertos_clean drivers_r5f.ti-arm-clang.freertos_mpu_clean drivers_r5f.iar-arm.nortos_clean drivers_r5f.iar-arm.freertos_clean drivers_r5f.iar-arm.freertos_mpu_clean
+	@echo  $(MAKE) -s -f makefile.am261x ai_r5f.ti-arm-clang.nortos_clean ai_r5f.ti-arm-clang.freertos_clean ai_r5f.ti-arm-clang.freertos_mpu_clean ai_r5f.ti-arm-clang.threadx_clean
+	@echo  $(MAKE) -s -f makefile.am261x board_r5f.ti-arm-clang.nortos_clean board_r5f.ti-arm-clang.freertos_clean board_r5f.ti-arm-clang.freertos_mpu_clean board_r5f.ti-arm-clang.threadx_clean board_r5f.iar-arm.nortos_clean board_r5f.iar-arm.freertos_clean board_r5f.iar-arm.freertos_mpu_clean board_r5f.iar-arm.threadx_clean
+	@echo  $(MAKE) -s -f makefile.am261x pmic_blackbird_r5f.ti-arm-clang.nortos_clean pmic_blackbird_r5f.ti-arm-clang.freertos_clean pmic_blackbird_r5f.ti-arm-clang.freertos_mpu_clean pmic_blackbird_r5f.ti-arm-clang.threadx_clean
+	@echo  $(MAKE) -s -f makefile.am261x pmic_derby_r5f.ti-arm-clang.nortos_clean pmic_derby_r5f.ti-arm-clang.freertos_clean pmic_derby_r5f.ti-arm-clang.freertos_mpu_clean pmic_derby_r5f.ti-arm-clang.threadx_clean
+	@echo  $(MAKE) -s -f makefile.am261x sfo_r5f.ti-arm-clang.nortos_clean sfo_r5f.ti-arm-clang.freertos_clean sfo_r5f.ti-arm-clang.freertos_mpu_clean sfo_r5f.ti-arm-clang.threadx_clean
+	@echo  $(MAKE) -s -f makefile.am261x drivers_r5f.ti-arm-clang.nortos_clean drivers_r5f.ti-arm-clang.freertos_clean drivers_r5f.ti-arm-clang.freertos_mpu_clean drivers_r5f.ti-arm-clang.threadx_clean drivers_r5f.iar-arm.nortos_clean drivers_r5f.iar-arm.freertos_clean drivers_r5f.iar-arm.freertos_mpu_clean drivers_r5f.iar-arm.threadx_clean
 	@echo  $(MAKE) -s -f makefile.am261x freeRTOS_fat-freertos_r5f.ti-arm-clang_clean
 	@echo  $(MAKE) -s -f makefile.am261x freeRTOS_fat-nortos_r5f.ti-arm-clang_clean
-	@echo  $(MAKE) -s -f makefile.am261x littlefs_r5f.ti-arm-clang.nortos_clean littlefs_r5f.ti-arm-clang.freertos_clean littlefs_r5f.ti-arm-clang.freertos_mpu_clean littlefs_r5f.iar-arm.nortos_clean littlefs_r5f.iar-arm.freertos_clean littlefs_r5f.iar-arm.freertos_mpu_clean
-	@echo  $(MAKE) -s -f makefile.am261x middleware_r5f.ti-arm-clang.nortos_clean middleware_r5f.ti-arm-clang.freertos_clean middleware_r5f.ti-arm-clang.freertos_mpu_clean
+	@echo  $(MAKE) -s -f makefile.am261x littlefs_r5f.ti-arm-clang.nortos_clean littlefs_r5f.ti-arm-clang.freertos_clean littlefs_r5f.ti-arm-clang.freertos_mpu_clean littlefs_r5f.ti-arm-clang.threadx_clean littlefs_r5f.iar-arm.nortos_clean littlefs_r5f.iar-arm.freertos_clean littlefs_r5f.iar-arm.freertos_mpu_clean littlefs_r5f.iar-arm.threadx_clean
+	@echo  $(MAKE) -s -f makefile.am261x middleware_r5f.ti-arm-clang.nortos_clean middleware_r5f.ti-arm-clang.freertos_clean middleware_r5f.ti-arm-clang.freertos_mpu_clean middleware_r5f.ti-arm-clang.threadx_clean
 	@echo  $(MAKE) -s -f makefile.am261x nortos_r5f.ti-arm-clang_clean nortos_r5f.iar-arm_clean
 	@echo  $(MAKE) -s -f makefile.am261x freertos_r5f.ti-arm-clang_clean freertos_r5f-mpu.ti-arm-clang_clean freertos_r5f.iar-arm_clean
-	@echo  $(MAKE) -s -f makefile.am261x mathlib_r5f.ti-arm-clang.nortos_clean mathlib_r5f.ti-arm-clang.freertos_clean mathlib_r5f.ti-arm-clang.freertos_mpu_clean
-	@echo  $(MAKE) -s -f makefile.am261x enet-cpsw_r5f.ti-arm-clang.nortos_clean enet-cpsw_r5f.ti-arm-clang.freertos_clean enet-cpsw_r5f.ti-arm-clang.freertos_mpu_clean
+	@echo  $(MAKE) -s -f makefile.am261x threadx_r5f.ti-arm-clang_clean
+	@echo  $(MAKE) -s -f makefile.am261x mathlib_r5f.ti-arm-clang.nortos_clean mathlib_r5f.ti-arm-clang.freertos_clean mathlib_r5f.ti-arm-clang.freertos_mpu_clean mathlib_r5f.ti-arm-clang.threadx_clean
+	@echo  $(MAKE) -s -f makefile.am261x enet-cpsw_r5f.ti-arm-clang.nortos_clean enet-cpsw_r5f.ti-arm-clang.freertos_clean enet-cpsw_r5f.ti-arm-clang.freertos_mpu_clean enet-cpsw_r5f.ti-arm-clang.threadx_clean
 	@echo  $(MAKE) -s -f makefile.am261x lwipif-cpsw-freertos_r5f.ti-arm-clang_clean
 	@echo  $(MAKE) -s -f makefile.am261x lwipif-cpsw-nortos_r5f.ti-arm-clang_clean
 	@echo  $(MAKE) -s -f makefile.am261x lwip-freertos_r5f.ti-arm-clang_clean
@@ -103,13 +107,13 @@ help:
 	@echo  $(MAKE) -s -f makefile.am261x hsr_prp_icss_emac_r5f.ti-arm-clang.nortos_clean hsr_prp_icss_emac_r5f.ti-arm-clang.freertos_clean hsr_prp_icss_emac_r5f.ti-arm-clang.freertos_mpu_clean
 	@echo  $(MAKE) -s -f makefile.am261x icss_emac_lwip_if_r5f.ti-arm-clang.nortos_clean icss_emac_lwip_if_r5f.ti-arm-clang.freertos_clean icss_emac_lwip_if_r5f.ti-arm-clang.freertos_mpu_clean
 	@echo  $(MAKE) -s -f makefile.am261x icss_timesync_r5f.ti-arm-clang.nortos_clean icss_timesync_r5f.ti-arm-clang.freertos_clean icss_timesync_r5f.ti-arm-clang.freertos_mpu_clean
-	@echo  $(MAKE) -s -f makefile.am261x mbedtls_r5f.ti-arm-clang.nortos_clean mbedtls_r5f.ti-arm-clang.freertos_clean mbedtls_r5f.ti-arm-clang.freertos_mpu_clean
+	@echo  $(MAKE) -s -f makefile.am261x mbedtls_r5f.ti-arm-clang.nortos_clean mbedtls_r5f.ti-arm-clang.freertos_clean mbedtls_r5f.ti-arm-clang.freertos_mpu_clean mbedtls_r5f.ti-arm-clang.threadx_clean
 	@echo  $(MAKE) -s -f makefile.am261x tsn_gptp-freertos_r5f.ti-arm-clang_clean
 	@echo  $(MAKE) -s -f makefile.am261x tsn_combase-freertos_r5f.ti-arm-clang_clean
 	@echo  $(MAKE) -s -f makefile.am261x tsn_uniconf-freertos_r5f.ti-arm-clang_clean
 	@echo  $(MAKE) -s -f makefile.am261x tsn_unibase-freertos_r5f.ti-arm-clang_clean
-	@echo  $(MAKE) -s -f makefile.am261x sdl_r5f.ti-arm-clang.nortos_clean sdl_r5f.ti-arm-clang.freertos_clean sdl_r5f.ti-arm-clang.freertos_mpu_clean
-	@echo  $(MAKE) -s -f makefile.am261x security_r5f.ti-arm-clang.nortos_clean security_r5f.ti-arm-clang.freertos_clean security_r5f.ti-arm-clang.freertos_mpu_clean
+	@echo  $(MAKE) -s -f makefile.am261x sdl_r5f.ti-arm-clang.nortos_clean sdl_r5f.ti-arm-clang.freertos_clean sdl_r5f.ti-arm-clang.freertos_mpu_clean sdl_r5f.ti-arm-clang.threadx_clean
+	@echo  $(MAKE) -s -f makefile.am261x security_r5f.ti-arm-clang.nortos_clean security_r5f.ti-arm-clang.freertos_clean security_r5f.ti-arm-clang.freertos_mpu_clean security_r5f.ti-arm-clang.threadx_clean
 	@echo  $(MAKE) -s -f makefile.am261x usbd_synp_nortos_r5f.ti-arm-clang_clean usbd_synp_nortos_r5f.iar-arm_clean
 	@echo  $(MAKE) -s -f makefile.am261x usbd_synp_freertos_r5f.ti-arm-clang_clean usbd_synp_freertos_r5f.iar-arm_clean
 	@echo  $(MAKE) -s -f makefile.am261x usbd_tusb_cdc_nortos_r5f.ti-arm-clang_clean usbd_tusb_cdc_nortos_r5f.iar-arm_clean
@@ -120,6 +124,7 @@ help:
 	@echo  $(MAKE) -s -f makefile.am261x usbd_tusb_ncm_freertos_r5f.ti-arm-clang_clean usbd_tusb_ncm_freertos_r5f.iar-arm_clean
 	@echo  $(MAKE) -s -f makefile.am261x usbd_tusb_vendor_nortos_r5f.ti-arm-clang_clean
 	@echo  $(MAKE) -s -f makefile.am261x usbd_tusb_vendor_freertos_r5f.ti-arm-clang_clean
+	@echo  $(MAKE) -s -f makefile.am261x usbd_tusb_benchmark_freertos_r5f.ti-arm-clang_clean
 	@echo  .
 	@echo  Example build targets,
 	@echo  ======================
@@ -214,6 +219,8 @@ help:
 	@echo  $(MAKE) -s -C examples/drivers/boot/sbl_ospi_nand_multicore_elf/am261x-lp/r5fss0-0_nortos/ti-arm-clang [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C examples/drivers/boot/sbl_ospi_swap/am261x-som/r5fss0-0_nortos/ti-arm-clang [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C examples/drivers/boot/sbl_ospi_swap/am261x-lp/r5fss0-0_nortos/ti-arm-clang [all clean syscfg-gui syscfg]
+	@echo  $(MAKE) -s -C examples/drivers/boot/sbl_qspi_multicore_elf/am261x-som/r5fss0-0_nortos/ti-arm-clang [all clean syscfg-gui syscfg]
+	@echo  $(MAKE) -s -C examples/drivers/boot/sbl_qspi_multicore_elf/am261x-lp/r5fss0-0_nortos/ti-arm-clang [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C examples/drivers/boot/sbl_uart_multicore_elf/am261x-som/r5fss0-0_nortos/ti-arm-clang [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C examples/drivers/boot/sbl_uart_multicore_elf/am261x-lp/r5fss0-0_nortos/ti-arm-clang [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C examples/drivers/boot/sbl_uart_uniflash/am261x-som/r5fss0-0_nortos/ti-arm-clang [all clean syscfg-gui syscfg]
@@ -341,8 +348,10 @@ help:
 	@echo  $(MAKE) -s -C examples/drivers/hsmclient/hsm_services/am261x-lp/r5fss0-0_nortos/ti-arm-clang [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C examples/drivers/i2c/i2c_led_blink/am261x-som/r5fss0-0_nortos/ti-arm-clang [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C examples/drivers/i2c/i2c_led_blink/am261x-som/r5fss0-0_freertos/ti-arm-clang [all clean syscfg-gui syscfg]
+	@echo  $(MAKE) -s -C examples/drivers/i2c/i2c_led_blink/am261x-som/r5fss0-0_threadx/ti-arm-clang [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C examples/drivers/i2c/i2c_led_blink/am261x-lp/r5fss0-0_nortos/ti-arm-clang [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C examples/drivers/i2c/i2c_led_blink/am261x-lp/r5fss0-0_freertos/ti-arm-clang [all clean syscfg-gui syscfg]
+	@echo  $(MAKE) -s -C examples/drivers/i2c/i2c_led_blink/am261x-lp/r5fss0-0_threadx/ti-arm-clang [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C examples/drivers/i2c/i2c_led_blink/am261x-lp/r5fss0-0_nortos/iar-arm [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C examples/drivers/i2c/i2c_led_blink/am261x-lp/r5fss0-0_freertos/iar-arm [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C examples/drivers/i2c/i2c_led_blink_interrupt_lld/am261x-lp/r5fss0-0_nortos/ti-arm-clang [all clean syscfg-gui syscfg]
@@ -478,6 +487,7 @@ help:
 	@echo  $(MAKE) -s -C examples/drivers/ospi/ospi_dual_flash_io/am261x-lp/r5fss0-0_nortos/ti-arm-clang [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C examples/benchmarks/optiflash_benchmark/ocram/am261x-lp/r5fss0-0_freertos/ti-arm-clang [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C examples/benchmarks/optiflash_benchmark/ocram/am261x-som/r5fss0-0_freertos/ti-arm-clang [all clean syscfg-gui syscfg]
+	@echo  $(MAKE) -s -C examples/benchmarks/optiflash_benchmark/psram_xip/am261x-lp/r5fss0-0_freertos/ti-arm-clang [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C examples/benchmarks/optiflash_benchmark/flash_xip/am261x-lp/r5fss0-0_freertos/ti-arm-clang [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C examples/benchmarks/optiflash_benchmark/flash_xip/am261x-som/r5fss0-0_freertos/ti-arm-clang [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C examples/benchmarks/optiflash_benchmark/flash_xip_l2_cache_8k/am261x-lp/r5fss0-0_freertos/ti-arm-clang [all clean syscfg-gui syscfg]
@@ -490,6 +500,16 @@ help:
 	@echo  $(MAKE) -s -C examples/benchmarks/optiflash_benchmark/flash_xip_l2_cache_64k/am261x-som/r5fss0-0_freertos/ti-arm-clang [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C examples/benchmarks/optiflash_benchmark/flash_xip_smart_placement/am261x-lp/r5fss0-0_freertos/ti-arm-clang [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C examples/benchmarks/optiflash_benchmark/flash_xip_smart_placement/am261x-som/r5fss0-0_freertos/ti-arm-clang [all clean syscfg-gui syscfg]
+	@echo  $(MAKE) -s -C examples/benchmarks/usb/usb_bulk_benchmark/am261x-som/r5fss0-0_freertos/ti-arm-clang [all clean syscfg-gui syscfg]
+	@echo  $(MAKE) -s -C examples/benchmarks/usb/usb_bulk_benchmark/am261x-lp/r5fss0-0_freertos/ti-arm-clang [all clean syscfg-gui syscfg]
+	@echo  $(MAKE) -s -C examples/benchmarks/usb/usb_vendor_benchmark/am261x-som/r5fss0-0_freertos/ti-arm-clang [all clean syscfg-gui syscfg]
+	@echo  $(MAKE) -s -C examples/benchmarks/usb/usb_vendor_benchmark/am261x-lp/r5fss0-0_freertos/ti-arm-clang [all clean syscfg-gui syscfg]
+	@echo  $(MAKE) -s -C examples/benchmarks/usb/usb_cdc_benchmark/am261x-som/r5fss0-0_freertos/ti-arm-clang [all clean syscfg-gui syscfg]
+	@echo  $(MAKE) -s -C examples/benchmarks/usb/usb_cdc_benchmark/am261x-lp/r5fss0-0_freertos/ti-arm-clang [all clean syscfg-gui syscfg]
+	@echo  $(MAKE) -s -C examples/benchmarks/usb/usb_dfu_benchmark/am261x-som/r5fss0-0_freertos/ti-arm-clang [all clean syscfg-gui syscfg]
+	@echo  $(MAKE) -s -C examples/benchmarks/usb/usb_dfu_benchmark/am261x-lp/r5fss0-0_freertos/ti-arm-clang [all clean syscfg-gui syscfg]
+	@echo  $(MAKE) -s -C examples/benchmarks/usb/usb_ncm_benchmark/am261x-som/r5fss0-0_freertos/ti-arm-clang [all clean syscfg-gui syscfg]
+	@echo  $(MAKE) -s -C examples/benchmarks/usb/usb_ncm_benchmark/am261x-lp/r5fss0-0_freertos/ti-arm-clang [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C examples/drivers/pmic/pmic_esm_level_mode/am261x-lp/r5fss0-0_nortos/ti-arm-clang [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C examples/drivers/pmic/pmic_esm_level_mode/am261x-lp/r5fss0-0_freertos/ti-arm-clang [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C examples/drivers/pmic/pmic_esm_level_mode/am261x-som/r5fss0-0_nortos/ti-arm-clang [all clean syscfg-gui syscfg]
@@ -564,8 +584,10 @@ help:
 	@echo  $(MAKE) -s -C examples/drivers/watchdog/watchdog_reset/am261x-lp/r5fss0-0_nortos/ti-arm-clang [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C examples/hello_world/am261x-som/r5fss0-0_nortos/ti-arm-clang [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C examples/hello_world/am261x-som/r5fss0-0_freertos/ti-arm-clang [all clean syscfg-gui syscfg]
+	@echo  $(MAKE) -s -C examples/hello_world/am261x-som/r5fss0-0_threadx/ti-arm-clang [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C examples/hello_world/am261x-lp/r5fss0-0_nortos/ti-arm-clang [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C examples/hello_world/am261x-lp/r5fss0-0_freertos/ti-arm-clang [all clean syscfg-gui syscfg]
+	@echo  $(MAKE) -s -C examples/hello_world/am261x-lp/r5fss0-0_threadx/ti-arm-clang [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C examples/hello_world/am261x-lp/r5fss0-0_nortos/iar-arm [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C examples/hello_world/am261x-lp/r5fss0-0_freertos/iar-arm [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C examples/hello_world_board_syscfg/am261x-som/r5fss0-0_nortos/ti-arm-clang [all clean syscfg-gui syscfg]
@@ -602,6 +624,8 @@ help:
 	@echo  $(MAKE) -s -C examples/kernel/freertos/posix_demo/am261x-lp/r5fss0-0_freertos/ti-arm-clang [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C examples/kernel/freertos/task_switch/am261x-som/r5fss0-0_freertos/ti-arm-clang [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C examples/kernel/freertos/task_switch/am261x-lp/r5fss0-0_freertos/ti-arm-clang [all clean syscfg-gui syscfg]
+	@echo  $(MAKE) -s -C examples/kernel/threadx/task_switch/am261x-som/r5fss0-0_threadx/ti-arm-clang [all clean syscfg-gui syscfg]
+	@echo  $(MAKE) -s -C examples/kernel/threadx/task_switch/am261x-lp/r5fss0-0_threadx/ti-arm-clang [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C examples/kernel/freertos/task_switch_mpu/am261x-lp/r5fss0-0_freertos_mpu/ti-arm-clang [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C examples/kernel/freertos/task_switch_mpu/am261x-som/r5fss0-0_freertos_mpu/ti-arm-clang [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C examples/kernel/nortos/basic_smart_placement/am261x-som/r5fss0-0_nortos/ti-arm-clang [all clean syscfg-gui syscfg]
@@ -644,6 +668,10 @@ help:
 	@echo  $(MAKE) -s -C source/networking/enet/core/examples/lwip/enet_cpsw_udpclient/am261x-som/r5fss0-0_freertos/ti-arm-clang [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C source/networking/enet/core/examples/lwip/enet_lwip_cpsw/am261x-lp/r5fss0-0_freertos/ti-arm-clang [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C source/networking/enet/core/examples/lwip/enet_lwip_cpsw/am261x-som/r5fss0-0_freertos/ti-arm-clang [all clean syscfg-gui syscfg]
+	@echo  $(MAKE) -s -C source/networking/enet/core/examples/tsn_demo/listener/am261x-lp/r5fss0-0_freertos/ti-arm-clang [all clean syscfg-gui syscfg]
+	@echo  $(MAKE) -s -C source/networking/enet/core/examples/tsn_demo/listener/am261x-som/r5fss0-0_freertos/ti-arm-clang [all clean syscfg-gui syscfg]
+	@echo  $(MAKE) -s -C source/networking/enet/core/examples/tsn_demo/talker/am261x-lp/r5fss0-0_freertos/ti-arm-clang [all clean syscfg-gui syscfg]
+	@echo  $(MAKE) -s -C source/networking/enet/core/examples/tsn_demo/talker/am261x-som/r5fss0-0_freertos/ti-arm-clang [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C examples/networking/lwip/icss_emac_lwip/am261x-lp/r5fss0-0_freertos/ti-arm-clang [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C source/networking/enet/core/examples/tsn/gptp_cpsw_app/am261x-lp/r5fss0-0_freertos/ti-arm-clang [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C source/networking/enet/core/examples/tsn/gptp_cpsw_app/am261x-som/r5fss0-0_freertos/ti-arm-clang [all clean syscfg-gui syscfg]
@@ -782,6 +810,8 @@ help:
 	@echo  $(MAKE) -s -C examples/drivers/hsmclient/mpu_firewall_services_demo/am261x-lp/system_nortos/ti-arm-clang [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C examples/drivers/ipc/ipc_notify_echo/am261x-som/system_freertos_nortos/ti-arm-clang [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C examples/drivers/ipc/ipc_notify_echo/am261x-lp/system_freertos_nortos/ti-arm-clang [all clean syscfg-gui syscfg]
+	@echo  $(MAKE) -s -C examples/drivers/ipc/ipc_notify_echo/am261x-lp/system_threadx_nortos/ti-arm-clang [all clean syscfg-gui syscfg]
+	@echo  $(MAKE) -s -C examples/drivers/ipc/ipc_notify_echo/am261x-som/system_threadx_nortos/ti-arm-clang [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C examples/drivers/ipc/ipc_notify_echo_optishare/am261x-lp/system_freertos_nortos/ti-arm-clang [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C examples/drivers/ipc/ipc_rpmsg_echo/am261x-som/system_freertos_nortos/ti-arm-clang [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C examples/drivers/ipc/ipc_rpmsg_echo/am261x-lp/system_freertos_nortos/ti-arm-clang [all clean syscfg-gui syscfg]
@@ -803,24 +833,35 @@ help:
 	@echo  $(MAKE) -s -C examples/empty/am261x-som/system_nortos/ti-arm-clang [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C examples/empty/am261x-lp/system_nortos/ti-arm-clang [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C examples/empty/am261x-lp/system_nortos/iar-arm [all clean syscfg-gui syscfg]
+	@echo  $(MAKE) -s -C examples/empty/am261x-som/system_threadx/ti-arm-clang [all clean syscfg-gui syscfg]
+	@echo  $(MAKE) -s -C examples/empty/am261x-lp/system_threadx/ti-arm-clang [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C examples/sdl/stc/stc_mcu/am261x-som/system_nortos_nortos/ti-arm-clang [all clean syscfg-gui syscfg]
 	@echo  .
 
+ifeq ($(COMPILER),)
+COMPILER := all
+else ifneq ($(filter help,$(MAKECMDGOALS)),)
+# Skip validation when help is requested
+else ifeq ($(filter $(COMPILER),ti-arm-clang iar-arm all),)
+$(error Invalid COMPILER=$(COMPILER). Allowed values: ti-arm-clang, iar-arm, all)
+endif
+
 # Various Component Targets
-BUILD_COMBO_ai = ai_r5f.ti-arm-clang.nortos ai_r5f.ti-arm-clang.freertos ai_r5f.ti-arm-clang.freertos_mpu
-BUILD_COMBO_board = board_r5f.ti-arm-clang.nortos board_r5f.ti-arm-clang.freertos board_r5f.ti-arm-clang.freertos_mpu board_r5f.iar-arm.nortos board_r5f.iar-arm.freertos board_r5f.iar-arm.freertos_mpu
-BUILD_COMBO_pmic_blackbird = pmic_blackbird_r5f.ti-arm-clang.nortos pmic_blackbird_r5f.ti-arm-clang.freertos pmic_blackbird_r5f.ti-arm-clang.freertos_mpu
-BUILD_COMBO_pmic_derby = pmic_derby_r5f.ti-arm-clang.nortos pmic_derby_r5f.ti-arm-clang.freertos pmic_derby_r5f.ti-arm-clang.freertos_mpu
-BUILD_COMBO_sfo = sfo_r5f.ti-arm-clang.nortos sfo_r5f.ti-arm-clang.freertos sfo_r5f.ti-arm-clang.freertos_mpu
-BUILD_COMBO_drivers = drivers_r5f.ti-arm-clang.nortos drivers_r5f.ti-arm-clang.freertos drivers_r5f.ti-arm-clang.freertos_mpu drivers_r5f.iar-arm.nortos drivers_r5f.iar-arm.freertos drivers_r5f.iar-arm.freertos_mpu
+BUILD_COMBO_ai = ai_r5f.ti-arm-clang.nortos ai_r5f.ti-arm-clang.freertos ai_r5f.ti-arm-clang.freertos_mpu ai_r5f.ti-arm-clang.threadx
+BUILD_COMBO_board = board_r5f.ti-arm-clang.nortos board_r5f.ti-arm-clang.freertos board_r5f.ti-arm-clang.freertos_mpu board_r5f.ti-arm-clang.threadx board_r5f.iar-arm.nortos board_r5f.iar-arm.freertos board_r5f.iar-arm.freertos_mpu board_r5f.iar-arm.threadx
+BUILD_COMBO_pmic_blackbird = pmic_blackbird_r5f.ti-arm-clang.nortos pmic_blackbird_r5f.ti-arm-clang.freertos pmic_blackbird_r5f.ti-arm-clang.freertos_mpu pmic_blackbird_r5f.ti-arm-clang.threadx
+BUILD_COMBO_pmic_derby = pmic_derby_r5f.ti-arm-clang.nortos pmic_derby_r5f.ti-arm-clang.freertos pmic_derby_r5f.ti-arm-clang.freertos_mpu pmic_derby_r5f.ti-arm-clang.threadx
+BUILD_COMBO_sfo = sfo_r5f.ti-arm-clang.nortos sfo_r5f.ti-arm-clang.freertos sfo_r5f.ti-arm-clang.freertos_mpu sfo_r5f.ti-arm-clang.threadx
+BUILD_COMBO_drivers = drivers_r5f.ti-arm-clang.nortos drivers_r5f.ti-arm-clang.freertos drivers_r5f.ti-arm-clang.freertos_mpu drivers_r5f.ti-arm-clang.threadx drivers_r5f.iar-arm.nortos drivers_r5f.iar-arm.freertos drivers_r5f.iar-arm.freertos_mpu drivers_r5f.iar-arm.threadx
 BUILD_COMBO_freeRTOS_fat-freertos = freeRTOS_fat-freertos_r5f.ti-arm-clang
 BUILD_COMBO_freeRTOS_fat-nortos = freeRTOS_fat-nortos_r5f.ti-arm-clang
-BUILD_COMBO_littlefs = littlefs_r5f.ti-arm-clang.nortos littlefs_r5f.ti-arm-clang.freertos littlefs_r5f.ti-arm-clang.freertos_mpu littlefs_r5f.iar-arm.nortos littlefs_r5f.iar-arm.freertos littlefs_r5f.iar-arm.freertos_mpu
-BUILD_COMBO_middleware = middleware_r5f.ti-arm-clang.nortos middleware_r5f.ti-arm-clang.freertos middleware_r5f.ti-arm-clang.freertos_mpu
+BUILD_COMBO_littlefs = littlefs_r5f.ti-arm-clang.nortos littlefs_r5f.ti-arm-clang.freertos littlefs_r5f.ti-arm-clang.freertos_mpu littlefs_r5f.ti-arm-clang.threadx littlefs_r5f.iar-arm.nortos littlefs_r5f.iar-arm.freertos littlefs_r5f.iar-arm.freertos_mpu littlefs_r5f.iar-arm.threadx
+BUILD_COMBO_middleware = middleware_r5f.ti-arm-clang.nortos middleware_r5f.ti-arm-clang.freertos middleware_r5f.ti-arm-clang.freertos_mpu middleware_r5f.ti-arm-clang.threadx
 BUILD_COMBO_nortos = nortos_r5f.ti-arm-clang nortos_r5f.iar-arm
 BUILD_COMBO_freertos = freertos_r5f.ti-arm-clang freertos_r5f-mpu.ti-arm-clang freertos_r5f.iar-arm
-BUILD_COMBO_mathlib = mathlib_r5f.ti-arm-clang.nortos mathlib_r5f.ti-arm-clang.freertos mathlib_r5f.ti-arm-clang.freertos_mpu
-BUILD_COMBO_enet-cpsw = enet-cpsw_r5f.ti-arm-clang.nortos enet-cpsw_r5f.ti-arm-clang.freertos enet-cpsw_r5f.ti-arm-clang.freertos_mpu
+BUILD_COMBO_threadx = threadx_r5f.ti-arm-clang
+BUILD_COMBO_mathlib = mathlib_r5f.ti-arm-clang.nortos mathlib_r5f.ti-arm-clang.freertos mathlib_r5f.ti-arm-clang.freertos_mpu mathlib_r5f.ti-arm-clang.threadx
+BUILD_COMBO_enet-cpsw = enet-cpsw_r5f.ti-arm-clang.nortos enet-cpsw_r5f.ti-arm-clang.freertos enet-cpsw_r5f.ti-arm-clang.freertos_mpu enet-cpsw_r5f.ti-arm-clang.threadx
 BUILD_COMBO_lwipif-cpsw-freertos = lwipif-cpsw-freertos_r5f.ti-arm-clang
 BUILD_COMBO_lwipif-cpsw-nortos = lwipif-cpsw-nortos_r5f.ti-arm-clang
 BUILD_COMBO_lwip-freertos = lwip-freertos_r5f.ti-arm-clang
@@ -833,13 +874,13 @@ BUILD_COMBO_icss_emac = icss_emac_r5f.ti-arm-clang.nortos icss_emac_r5f.ti-arm-c
 BUILD_COMBO_hsr_prp_icss_emac = hsr_prp_icss_emac_r5f.ti-arm-clang.nortos hsr_prp_icss_emac_r5f.ti-arm-clang.freertos hsr_prp_icss_emac_r5f.ti-arm-clang.freertos_mpu
 BUILD_COMBO_icss_emac_lwip_if = icss_emac_lwip_if_r5f.ti-arm-clang.nortos icss_emac_lwip_if_r5f.ti-arm-clang.freertos icss_emac_lwip_if_r5f.ti-arm-clang.freertos_mpu
 BUILD_COMBO_icss_timesync = icss_timesync_r5f.ti-arm-clang.nortos icss_timesync_r5f.ti-arm-clang.freertos icss_timesync_r5f.ti-arm-clang.freertos_mpu
-BUILD_COMBO_mbedtls = mbedtls_r5f.ti-arm-clang.nortos mbedtls_r5f.ti-arm-clang.freertos mbedtls_r5f.ti-arm-clang.freertos_mpu
+BUILD_COMBO_mbedtls = mbedtls_r5f.ti-arm-clang.nortos mbedtls_r5f.ti-arm-clang.freertos mbedtls_r5f.ti-arm-clang.freertos_mpu mbedtls_r5f.ti-arm-clang.threadx
 BUILD_COMBO_tsn_gptp-freertos = tsn_gptp-freertos_r5f.ti-arm-clang
 BUILD_COMBO_tsn_combase-freertos = tsn_combase-freertos_r5f.ti-arm-clang
 BUILD_COMBO_tsn_uniconf-freertos = tsn_uniconf-freertos_r5f.ti-arm-clang
 BUILD_COMBO_tsn_unibase-freertos = tsn_unibase-freertos_r5f.ti-arm-clang
-BUILD_COMBO_sdl = sdl_r5f.ti-arm-clang.nortos sdl_r5f.ti-arm-clang.freertos sdl_r5f.ti-arm-clang.freertos_mpu
-BUILD_COMBO_security = security_r5f.ti-arm-clang.nortos security_r5f.ti-arm-clang.freertos security_r5f.ti-arm-clang.freertos_mpu
+BUILD_COMBO_sdl = sdl_r5f.ti-arm-clang.nortos sdl_r5f.ti-arm-clang.freertos sdl_r5f.ti-arm-clang.freertos_mpu sdl_r5f.ti-arm-clang.threadx
+BUILD_COMBO_security = security_r5f.ti-arm-clang.nortos security_r5f.ti-arm-clang.freertos security_r5f.ti-arm-clang.freertos_mpu security_r5f.ti-arm-clang.threadx
 BUILD_COMBO_usbd_synp_nortos = usbd_synp_nortos_r5f.ti-arm-clang usbd_synp_nortos_r5f.iar-arm
 BUILD_COMBO_usbd_synp_freertos = usbd_synp_freertos_r5f.ti-arm-clang usbd_synp_freertos_r5f.iar-arm
 BUILD_COMBO_usbd_tusb_cdc_nortos = usbd_tusb_cdc_nortos_r5f.ti-arm-clang usbd_tusb_cdc_nortos_r5f.iar-arm
@@ -850,10 +891,14 @@ BUILD_COMBO_usbd_tusb_ncm_nortos = usbd_tusb_ncm_nortos_r5f.ti-arm-clang usbd_tu
 BUILD_COMBO_usbd_tusb_ncm_freertos = usbd_tusb_ncm_freertos_r5f.ti-arm-clang usbd_tusb_ncm_freertos_r5f.iar-arm
 BUILD_COMBO_usbd_tusb_vendor_nortos = usbd_tusb_vendor_nortos_r5f.ti-arm-clang
 BUILD_COMBO_usbd_tusb_vendor_freertos = usbd_tusb_vendor_freertos_r5f.ti-arm-clang
+BUILD_COMBO_usbd_tusb_benchmark_freertos = usbd_tusb_benchmark_freertos_r5f.ti-arm-clang
 
 
 # Combine all Components
-BUILD_COMBO_ALL = $(BUILD_COMBO_ai) $(BUILD_COMBO_board) $(BUILD_COMBO_pmic_blackbird) $(BUILD_COMBO_pmic_derby) $(BUILD_COMBO_sfo) $(BUILD_COMBO_drivers) $(BUILD_COMBO_freeRTOS_fat-freertos) $(BUILD_COMBO_freeRTOS_fat-nortos) $(BUILD_COMBO_littlefs) $(BUILD_COMBO_middleware) $(BUILD_COMBO_nortos) $(BUILD_COMBO_freertos) $(BUILD_COMBO_mathlib) $(BUILD_COMBO_enet-cpsw) $(BUILD_COMBO_lwipif-cpsw-freertos) $(BUILD_COMBO_lwipif-cpsw-nortos) $(BUILD_COMBO_lwip-freertos) $(BUILD_COMBO_lwip-freertos-icss_emac) $(BUILD_COMBO_lwip-nortos) $(BUILD_COMBO_lwip-contrib-freertos) $(BUILD_COMBO_lwip-contrib-freertos-icss_emac) $(BUILD_COMBO_lwip-contrib-nortos) $(BUILD_COMBO_icss_emac) $(BUILD_COMBO_hsr_prp_icss_emac) $(BUILD_COMBO_icss_emac_lwip_if) $(BUILD_COMBO_icss_timesync) $(BUILD_COMBO_mbedtls) $(BUILD_COMBO_tsn_gptp-freertos) $(BUILD_COMBO_tsn_combase-freertos) $(BUILD_COMBO_tsn_uniconf-freertos) $(BUILD_COMBO_tsn_unibase-freertos) $(BUILD_COMBO_sdl) $(BUILD_COMBO_security) $(BUILD_COMBO_usbd_synp_nortos) $(BUILD_COMBO_usbd_synp_freertos) $(BUILD_COMBO_usbd_tusb_cdc_nortos) $(BUILD_COMBO_usbd_tusb_cdc_freertos) $(BUILD_COMBO_usbd_tusb_dfu_nortos) $(BUILD_COMBO_usbd_tusb_dfu_freertos) $(BUILD_COMBO_usbd_tusb_ncm_nortos) $(BUILD_COMBO_usbd_tusb_ncm_freertos) $(BUILD_COMBO_usbd_tusb_vendor_nortos) $(BUILD_COMBO_usbd_tusb_vendor_freertos)
+BUILD_COMBO_ALL = $(BUILD_COMBO_ai) $(BUILD_COMBO_board) $(BUILD_COMBO_pmic_blackbird) $(BUILD_COMBO_pmic_derby) $(BUILD_COMBO_sfo) $(BUILD_COMBO_drivers) $(BUILD_COMBO_freeRTOS_fat-freertos) $(BUILD_COMBO_freeRTOS_fat-nortos) $(BUILD_COMBO_littlefs) $(BUILD_COMBO_middleware) $(BUILD_COMBO_nortos) $(BUILD_COMBO_freertos) $(BUILD_COMBO_threadx) $(BUILD_COMBO_mathlib) $(BUILD_COMBO_enet-cpsw) $(BUILD_COMBO_lwipif-cpsw-freertos) $(BUILD_COMBO_lwipif-cpsw-nortos) $(BUILD_COMBO_lwip-freertos) $(BUILD_COMBO_lwip-freertos-icss_emac) $(BUILD_COMBO_lwip-nortos) $(BUILD_COMBO_lwip-contrib-freertos) $(BUILD_COMBO_lwip-contrib-freertos-icss_emac) $(BUILD_COMBO_lwip-contrib-nortos) $(BUILD_COMBO_icss_emac) $(BUILD_COMBO_hsr_prp_icss_emac) $(BUILD_COMBO_icss_emac_lwip_if) $(BUILD_COMBO_icss_timesync) $(BUILD_COMBO_mbedtls) $(BUILD_COMBO_tsn_gptp-freertos) $(BUILD_COMBO_tsn_combase-freertos) $(BUILD_COMBO_tsn_uniconf-freertos) $(BUILD_COMBO_tsn_unibase-freertos) $(BUILD_COMBO_sdl) $(BUILD_COMBO_security) $(BUILD_COMBO_usbd_synp_nortos) $(BUILD_COMBO_usbd_synp_freertos) $(BUILD_COMBO_usbd_tusb_cdc_nortos) $(BUILD_COMBO_usbd_tusb_cdc_freertos) $(BUILD_COMBO_usbd_tusb_dfu_nortos) $(BUILD_COMBO_usbd_tusb_dfu_freertos) $(BUILD_COMBO_usbd_tusb_ncm_nortos) $(BUILD_COMBO_usbd_tusb_ncm_freertos) $(BUILD_COMBO_usbd_tusb_vendor_nortos) $(BUILD_COMBO_usbd_tusb_vendor_freertos) $(BUILD_COMBO_usbd_tusb_benchmark_freertos)
+ifneq ($(filter $(COMPILER),ti-arm-clang iar-arm),)
+BUILD_COMBO_ALL := $(foreach word, $(BUILD_COMBO_ALL), $(if $(findstring $(COMPILER), $(word)), $(word)))
+endif
 
 
 # Combine all Pre-built Components
@@ -905,6 +950,9 @@ $(BUILD_COMBO_nortos):
 
 $(BUILD_COMBO_freertos):
 	$(MAKE) -C source/kernel/freertos -f makefile.am261x.$(subst freertos_,,$@) all
+
+$(BUILD_COMBO_threadx):
+	$(MAKE) -C source/kernel/threadx -f makefile.am261x.$(subst threadx_,,$@) all
 
 $(BUILD_COMBO_mathlib):
 	$(MAKE) -C source/mathlib -f makefile.am261x.$(subst mathlib_,,$@) all
@@ -999,23 +1047,27 @@ $(BUILD_COMBO_usbd_tusb_vendor_nortos):
 $(BUILD_COMBO_usbd_tusb_vendor_freertos):
 	$(MAKE) -C source/usb/tinyusb -f makefile.vendor_freertos.am261x.$(subst usbd_tusb_vendor_freertos_,,$@) all
 
+$(BUILD_COMBO_usbd_tusb_benchmark_freertos):
+	$(MAKE) -C source/usb/tinyusb -f makefile.benchmark_freertos.am261x.$(subst usbd_tusb_benchmark_freertos_,,$@) all
+
 
 
 # Various Component Clean Targets
-BUILD_COMBO_CLEAN_ai = ai_r5f.ti-arm-clang.nortos_clean ai_r5f.ti-arm-clang.freertos_clean ai_r5f.ti-arm-clang.freertos_mpu_clean
-BUILD_COMBO_CLEAN_board = board_r5f.ti-arm-clang.nortos_clean board_r5f.ti-arm-clang.freertos_clean board_r5f.ti-arm-clang.freertos_mpu_clean board_r5f.iar-arm.nortos_clean board_r5f.iar-arm.freertos_clean board_r5f.iar-arm.freertos_mpu_clean
-BUILD_COMBO_CLEAN_pmic_blackbird = pmic_blackbird_r5f.ti-arm-clang.nortos_clean pmic_blackbird_r5f.ti-arm-clang.freertos_clean pmic_blackbird_r5f.ti-arm-clang.freertos_mpu_clean
-BUILD_COMBO_CLEAN_pmic_derby = pmic_derby_r5f.ti-arm-clang.nortos_clean pmic_derby_r5f.ti-arm-clang.freertos_clean pmic_derby_r5f.ti-arm-clang.freertos_mpu_clean
-BUILD_COMBO_CLEAN_sfo = sfo_r5f.ti-arm-clang.nortos_clean sfo_r5f.ti-arm-clang.freertos_clean sfo_r5f.ti-arm-clang.freertos_mpu_clean
-BUILD_COMBO_CLEAN_drivers = drivers_r5f.ti-arm-clang.nortos_clean drivers_r5f.ti-arm-clang.freertos_clean drivers_r5f.ti-arm-clang.freertos_mpu_clean drivers_r5f.iar-arm.nortos_clean drivers_r5f.iar-arm.freertos_clean drivers_r5f.iar-arm.freertos_mpu_clean
+BUILD_COMBO_CLEAN_ai = ai_r5f.ti-arm-clang.nortos_clean ai_r5f.ti-arm-clang.freertos_clean ai_r5f.ti-arm-clang.freertos_mpu_clean ai_r5f.ti-arm-clang.threadx_clean
+BUILD_COMBO_CLEAN_board = board_r5f.ti-arm-clang.nortos_clean board_r5f.ti-arm-clang.freertos_clean board_r5f.ti-arm-clang.freertos_mpu_clean board_r5f.ti-arm-clang.threadx_clean board_r5f.iar-arm.nortos_clean board_r5f.iar-arm.freertos_clean board_r5f.iar-arm.freertos_mpu_clean board_r5f.iar-arm.threadx_clean
+BUILD_COMBO_CLEAN_pmic_blackbird = pmic_blackbird_r5f.ti-arm-clang.nortos_clean pmic_blackbird_r5f.ti-arm-clang.freertos_clean pmic_blackbird_r5f.ti-arm-clang.freertos_mpu_clean pmic_blackbird_r5f.ti-arm-clang.threadx_clean
+BUILD_COMBO_CLEAN_pmic_derby = pmic_derby_r5f.ti-arm-clang.nortos_clean pmic_derby_r5f.ti-arm-clang.freertos_clean pmic_derby_r5f.ti-arm-clang.freertos_mpu_clean pmic_derby_r5f.ti-arm-clang.threadx_clean
+BUILD_COMBO_CLEAN_sfo = sfo_r5f.ti-arm-clang.nortos_clean sfo_r5f.ti-arm-clang.freertos_clean sfo_r5f.ti-arm-clang.freertos_mpu_clean sfo_r5f.ti-arm-clang.threadx_clean
+BUILD_COMBO_CLEAN_drivers = drivers_r5f.ti-arm-clang.nortos_clean drivers_r5f.ti-arm-clang.freertos_clean drivers_r5f.ti-arm-clang.freertos_mpu_clean drivers_r5f.ti-arm-clang.threadx_clean drivers_r5f.iar-arm.nortos_clean drivers_r5f.iar-arm.freertos_clean drivers_r5f.iar-arm.freertos_mpu_clean drivers_r5f.iar-arm.threadx_clean
 BUILD_COMBO_CLEAN_freeRTOS_fat-freertos = freeRTOS_fat-freertos_r5f.ti-arm-clang_clean
 BUILD_COMBO_CLEAN_freeRTOS_fat-nortos = freeRTOS_fat-nortos_r5f.ti-arm-clang_clean
-BUILD_COMBO_CLEAN_littlefs = littlefs_r5f.ti-arm-clang.nortos_clean littlefs_r5f.ti-arm-clang.freertos_clean littlefs_r5f.ti-arm-clang.freertos_mpu_clean littlefs_r5f.iar-arm.nortos_clean littlefs_r5f.iar-arm.freertos_clean littlefs_r5f.iar-arm.freertos_mpu_clean
-BUILD_COMBO_CLEAN_middleware = middleware_r5f.ti-arm-clang.nortos_clean middleware_r5f.ti-arm-clang.freertos_clean middleware_r5f.ti-arm-clang.freertos_mpu_clean
+BUILD_COMBO_CLEAN_littlefs = littlefs_r5f.ti-arm-clang.nortos_clean littlefs_r5f.ti-arm-clang.freertos_clean littlefs_r5f.ti-arm-clang.freertos_mpu_clean littlefs_r5f.ti-arm-clang.threadx_clean littlefs_r5f.iar-arm.nortos_clean littlefs_r5f.iar-arm.freertos_clean littlefs_r5f.iar-arm.freertos_mpu_clean littlefs_r5f.iar-arm.threadx_clean
+BUILD_COMBO_CLEAN_middleware = middleware_r5f.ti-arm-clang.nortos_clean middleware_r5f.ti-arm-clang.freertos_clean middleware_r5f.ti-arm-clang.freertos_mpu_clean middleware_r5f.ti-arm-clang.threadx_clean
 BUILD_COMBO_CLEAN_nortos = nortos_r5f.ti-arm-clang_clean nortos_r5f.iar-arm_clean
 BUILD_COMBO_CLEAN_freertos = freertos_r5f.ti-arm-clang_clean freertos_r5f-mpu.ti-arm-clang_clean freertos_r5f.iar-arm_clean
-BUILD_COMBO_CLEAN_mathlib = mathlib_r5f.ti-arm-clang.nortos_clean mathlib_r5f.ti-arm-clang.freertos_clean mathlib_r5f.ti-arm-clang.freertos_mpu_clean
-BUILD_COMBO_CLEAN_enet-cpsw = enet-cpsw_r5f.ti-arm-clang.nortos_clean enet-cpsw_r5f.ti-arm-clang.freertos_clean enet-cpsw_r5f.ti-arm-clang.freertos_mpu_clean
+BUILD_COMBO_CLEAN_threadx = threadx_r5f.ti-arm-clang_clean
+BUILD_COMBO_CLEAN_mathlib = mathlib_r5f.ti-arm-clang.nortos_clean mathlib_r5f.ti-arm-clang.freertos_clean mathlib_r5f.ti-arm-clang.freertos_mpu_clean mathlib_r5f.ti-arm-clang.threadx_clean
+BUILD_COMBO_CLEAN_enet-cpsw = enet-cpsw_r5f.ti-arm-clang.nortos_clean enet-cpsw_r5f.ti-arm-clang.freertos_clean enet-cpsw_r5f.ti-arm-clang.freertos_mpu_clean enet-cpsw_r5f.ti-arm-clang.threadx_clean
 BUILD_COMBO_CLEAN_lwipif-cpsw-freertos = lwipif-cpsw-freertos_r5f.ti-arm-clang_clean
 BUILD_COMBO_CLEAN_lwipif-cpsw-nortos = lwipif-cpsw-nortos_r5f.ti-arm-clang_clean
 BUILD_COMBO_CLEAN_lwip-freertos = lwip-freertos_r5f.ti-arm-clang_clean
@@ -1028,13 +1080,13 @@ BUILD_COMBO_CLEAN_icss_emac = icss_emac_r5f.ti-arm-clang.nortos_clean icss_emac_
 BUILD_COMBO_CLEAN_hsr_prp_icss_emac = hsr_prp_icss_emac_r5f.ti-arm-clang.nortos_clean hsr_prp_icss_emac_r5f.ti-arm-clang.freertos_clean hsr_prp_icss_emac_r5f.ti-arm-clang.freertos_mpu_clean
 BUILD_COMBO_CLEAN_icss_emac_lwip_if = icss_emac_lwip_if_r5f.ti-arm-clang.nortos_clean icss_emac_lwip_if_r5f.ti-arm-clang.freertos_clean icss_emac_lwip_if_r5f.ti-arm-clang.freertos_mpu_clean
 BUILD_COMBO_CLEAN_icss_timesync = icss_timesync_r5f.ti-arm-clang.nortos_clean icss_timesync_r5f.ti-arm-clang.freertos_clean icss_timesync_r5f.ti-arm-clang.freertos_mpu_clean
-BUILD_COMBO_CLEAN_mbedtls = mbedtls_r5f.ti-arm-clang.nortos_clean mbedtls_r5f.ti-arm-clang.freertos_clean mbedtls_r5f.ti-arm-clang.freertos_mpu_clean
+BUILD_COMBO_CLEAN_mbedtls = mbedtls_r5f.ti-arm-clang.nortos_clean mbedtls_r5f.ti-arm-clang.freertos_clean mbedtls_r5f.ti-arm-clang.freertos_mpu_clean mbedtls_r5f.ti-arm-clang.threadx_clean
 BUILD_COMBO_CLEAN_tsn_gptp-freertos = tsn_gptp-freertos_r5f.ti-arm-clang_clean
 BUILD_COMBO_CLEAN_tsn_combase-freertos = tsn_combase-freertos_r5f.ti-arm-clang_clean
 BUILD_COMBO_CLEAN_tsn_uniconf-freertos = tsn_uniconf-freertos_r5f.ti-arm-clang_clean
 BUILD_COMBO_CLEAN_tsn_unibase-freertos = tsn_unibase-freertos_r5f.ti-arm-clang_clean
-BUILD_COMBO_CLEAN_sdl = sdl_r5f.ti-arm-clang.nortos_clean sdl_r5f.ti-arm-clang.freertos_clean sdl_r5f.ti-arm-clang.freertos_mpu_clean
-BUILD_COMBO_CLEAN_security = security_r5f.ti-arm-clang.nortos_clean security_r5f.ti-arm-clang.freertos_clean security_r5f.ti-arm-clang.freertos_mpu_clean
+BUILD_COMBO_CLEAN_sdl = sdl_r5f.ti-arm-clang.nortos_clean sdl_r5f.ti-arm-clang.freertos_clean sdl_r5f.ti-arm-clang.freertos_mpu_clean sdl_r5f.ti-arm-clang.threadx_clean
+BUILD_COMBO_CLEAN_security = security_r5f.ti-arm-clang.nortos_clean security_r5f.ti-arm-clang.freertos_clean security_r5f.ti-arm-clang.freertos_mpu_clean security_r5f.ti-arm-clang.threadx_clean
 BUILD_COMBO_CLEAN_usbd_synp_nortos = usbd_synp_nortos_r5f.ti-arm-clang_clean usbd_synp_nortos_r5f.iar-arm_clean
 BUILD_COMBO_CLEAN_usbd_synp_freertos = usbd_synp_freertos_r5f.ti-arm-clang_clean usbd_synp_freertos_r5f.iar-arm_clean
 BUILD_COMBO_CLEAN_usbd_tusb_cdc_nortos = usbd_tusb_cdc_nortos_r5f.ti-arm-clang_clean usbd_tusb_cdc_nortos_r5f.iar-arm_clean
@@ -1045,10 +1097,14 @@ BUILD_COMBO_CLEAN_usbd_tusb_ncm_nortos = usbd_tusb_ncm_nortos_r5f.ti-arm-clang_c
 BUILD_COMBO_CLEAN_usbd_tusb_ncm_freertos = usbd_tusb_ncm_freertos_r5f.ti-arm-clang_clean usbd_tusb_ncm_freertos_r5f.iar-arm_clean
 BUILD_COMBO_CLEAN_usbd_tusb_vendor_nortos = usbd_tusb_vendor_nortos_r5f.ti-arm-clang_clean
 BUILD_COMBO_CLEAN_usbd_tusb_vendor_freertos = usbd_tusb_vendor_freertos_r5f.ti-arm-clang_clean
+BUILD_COMBO_CLEAN_usbd_tusb_benchmark_freertos = usbd_tusb_benchmark_freertos_r5f.ti-arm-clang_clean
 
 
 # Combine all Components Clean
-BUILD_COMBO_CLEAN_ALL = $(BUILD_COMBO_CLEAN_ai) $(BUILD_COMBO_CLEAN_board) $(BUILD_COMBO_CLEAN_pmic_blackbird) $(BUILD_COMBO_CLEAN_pmic_derby) $(BUILD_COMBO_CLEAN_sfo) $(BUILD_COMBO_CLEAN_drivers) $(BUILD_COMBO_CLEAN_freeRTOS_fat-freertos) $(BUILD_COMBO_CLEAN_freeRTOS_fat-nortos) $(BUILD_COMBO_CLEAN_littlefs) $(BUILD_COMBO_CLEAN_middleware) $(BUILD_COMBO_CLEAN_nortos) $(BUILD_COMBO_CLEAN_freertos) $(BUILD_COMBO_CLEAN_mathlib) $(BUILD_COMBO_CLEAN_enet-cpsw) $(BUILD_COMBO_CLEAN_lwipif-cpsw-freertos) $(BUILD_COMBO_CLEAN_lwipif-cpsw-nortos) $(BUILD_COMBO_CLEAN_lwip-freertos) $(BUILD_COMBO_CLEAN_lwip-freertos-icss_emac) $(BUILD_COMBO_CLEAN_lwip-nortos) $(BUILD_COMBO_CLEAN_lwip-contrib-freertos) $(BUILD_COMBO_CLEAN_lwip-contrib-freertos-icss_emac) $(BUILD_COMBO_CLEAN_lwip-contrib-nortos) $(BUILD_COMBO_CLEAN_icss_emac) $(BUILD_COMBO_CLEAN_hsr_prp_icss_emac) $(BUILD_COMBO_CLEAN_icss_emac_lwip_if) $(BUILD_COMBO_CLEAN_icss_timesync) $(BUILD_COMBO_CLEAN_mbedtls) $(BUILD_COMBO_CLEAN_tsn_gptp-freertos) $(BUILD_COMBO_CLEAN_tsn_combase-freertos) $(BUILD_COMBO_CLEAN_tsn_uniconf-freertos) $(BUILD_COMBO_CLEAN_tsn_unibase-freertos) $(BUILD_COMBO_CLEAN_sdl) $(BUILD_COMBO_CLEAN_security) $(BUILD_COMBO_CLEAN_usbd_synp_nortos) $(BUILD_COMBO_CLEAN_usbd_synp_freertos) $(BUILD_COMBO_CLEAN_usbd_tusb_cdc_nortos) $(BUILD_COMBO_CLEAN_usbd_tusb_cdc_freertos) $(BUILD_COMBO_CLEAN_usbd_tusb_dfu_nortos) $(BUILD_COMBO_CLEAN_usbd_tusb_dfu_freertos) $(BUILD_COMBO_CLEAN_usbd_tusb_ncm_nortos) $(BUILD_COMBO_CLEAN_usbd_tusb_ncm_freertos) $(BUILD_COMBO_CLEAN_usbd_tusb_vendor_nortos) $(BUILD_COMBO_CLEAN_usbd_tusb_vendor_freertos)
+BUILD_COMBO_CLEAN_ALL = $(BUILD_COMBO_CLEAN_ai) $(BUILD_COMBO_CLEAN_board) $(BUILD_COMBO_CLEAN_pmic_blackbird) $(BUILD_COMBO_CLEAN_pmic_derby) $(BUILD_COMBO_CLEAN_sfo) $(BUILD_COMBO_CLEAN_drivers) $(BUILD_COMBO_CLEAN_freeRTOS_fat-freertos) $(BUILD_COMBO_CLEAN_freeRTOS_fat-nortos) $(BUILD_COMBO_CLEAN_littlefs) $(BUILD_COMBO_CLEAN_middleware) $(BUILD_COMBO_CLEAN_nortos) $(BUILD_COMBO_CLEAN_freertos) $(BUILD_COMBO_CLEAN_threadx) $(BUILD_COMBO_CLEAN_mathlib) $(BUILD_COMBO_CLEAN_enet-cpsw) $(BUILD_COMBO_CLEAN_lwipif-cpsw-freertos) $(BUILD_COMBO_CLEAN_lwipif-cpsw-nortos) $(BUILD_COMBO_CLEAN_lwip-freertos) $(BUILD_COMBO_CLEAN_lwip-freertos-icss_emac) $(BUILD_COMBO_CLEAN_lwip-nortos) $(BUILD_COMBO_CLEAN_lwip-contrib-freertos) $(BUILD_COMBO_CLEAN_lwip-contrib-freertos-icss_emac) $(BUILD_COMBO_CLEAN_lwip-contrib-nortos) $(BUILD_COMBO_CLEAN_icss_emac) $(BUILD_COMBO_CLEAN_hsr_prp_icss_emac) $(BUILD_COMBO_CLEAN_icss_emac_lwip_if) $(BUILD_COMBO_CLEAN_icss_timesync) $(BUILD_COMBO_CLEAN_mbedtls) $(BUILD_COMBO_CLEAN_tsn_gptp-freertos) $(BUILD_COMBO_CLEAN_tsn_combase-freertos) $(BUILD_COMBO_CLEAN_tsn_uniconf-freertos) $(BUILD_COMBO_CLEAN_tsn_unibase-freertos) $(BUILD_COMBO_CLEAN_sdl) $(BUILD_COMBO_CLEAN_security) $(BUILD_COMBO_CLEAN_usbd_synp_nortos) $(BUILD_COMBO_CLEAN_usbd_synp_freertos) $(BUILD_COMBO_CLEAN_usbd_tusb_cdc_nortos) $(BUILD_COMBO_CLEAN_usbd_tusb_cdc_freertos) $(BUILD_COMBO_CLEAN_usbd_tusb_dfu_nortos) $(BUILD_COMBO_CLEAN_usbd_tusb_dfu_freertos) $(BUILD_COMBO_CLEAN_usbd_tusb_ncm_nortos) $(BUILD_COMBO_CLEAN_usbd_tusb_ncm_freertos) $(BUILD_COMBO_CLEAN_usbd_tusb_vendor_nortos) $(BUILD_COMBO_CLEAN_usbd_tusb_vendor_freertos) $(BUILD_COMBO_CLEAN_usbd_tusb_benchmark_freertos)
+ifneq ($(filter $(COMPILER),ti-arm-clang iar-arm),)
+BUILD_COMBO_CLEAN_ALL := $(foreach word, $(BUILD_COMBO_CLEAN_ALL), $(if $(findstring $(COMPILER), $(word)), $(word)))
+endif
 
 
 # Combine all Pre-built Components Clean
@@ -1094,6 +1150,9 @@ $(BUILD_COMBO_CLEAN_nortos):
 
 $(BUILD_COMBO_CLEAN_freertos):
 	$(MAKE) -C source/kernel/freertos -f makefile.am261x.$(subst freertos_,,$(subst _clean,,$@)) clean
+
+$(BUILD_COMBO_CLEAN_threadx):
+	$(MAKE) -C source/kernel/threadx -f makefile.am261x.$(subst threadx_,,$(subst _clean,,$@)) clean
 
 $(BUILD_COMBO_CLEAN_mathlib):
 	$(MAKE) -C source/mathlib -f makefile.am261x.$(subst mathlib_,,$(subst _clean,,$@)) clean
@@ -1188,23 +1247,27 @@ $(BUILD_COMBO_CLEAN_usbd_tusb_vendor_nortos):
 $(BUILD_COMBO_CLEAN_usbd_tusb_vendor_freertos):
 	$(MAKE) -C source/usb/tinyusb -f makefile.vendor_freertos.am261x.$(subst usbd_tusb_vendor_freertos_,,$(subst _clean,,$@)) clean
 
+$(BUILD_COMBO_CLEAN_usbd_tusb_benchmark_freertos):
+	$(MAKE) -C source/usb/tinyusb -f makefile.benchmark_freertos.am261x.$(subst usbd_tusb_benchmark_freertos_,,$(subst _clean,,$@)) clean
+
 
 
 # Various Component Scrub Targets
-BUILD_COMBO_SCRUB_ai = ai_r5f.ti-arm-clang.nortos_scrub ai_r5f.ti-arm-clang.freertos_scrub ai_r5f.ti-arm-clang.freertos_mpu_scrub
-BUILD_COMBO_SCRUB_board = board_r5f.ti-arm-clang.nortos_scrub board_r5f.ti-arm-clang.freertos_scrub board_r5f.ti-arm-clang.freertos_mpu_scrub board_r5f.iar-arm.nortos_scrub board_r5f.iar-arm.freertos_scrub board_r5f.iar-arm.freertos_mpu_scrub
-BUILD_COMBO_SCRUB_pmic_blackbird = pmic_blackbird_r5f.ti-arm-clang.nortos_scrub pmic_blackbird_r5f.ti-arm-clang.freertos_scrub pmic_blackbird_r5f.ti-arm-clang.freertos_mpu_scrub
-BUILD_COMBO_SCRUB_pmic_derby = pmic_derby_r5f.ti-arm-clang.nortos_scrub pmic_derby_r5f.ti-arm-clang.freertos_scrub pmic_derby_r5f.ti-arm-clang.freertos_mpu_scrub
-BUILD_COMBO_SCRUB_sfo = sfo_r5f.ti-arm-clang.nortos_scrub sfo_r5f.ti-arm-clang.freertos_scrub sfo_r5f.ti-arm-clang.freertos_mpu_scrub
-BUILD_COMBO_SCRUB_drivers = drivers_r5f.ti-arm-clang.nortos_scrub drivers_r5f.ti-arm-clang.freertos_scrub drivers_r5f.ti-arm-clang.freertos_mpu_scrub drivers_r5f.iar-arm.nortos_scrub drivers_r5f.iar-arm.freertos_scrub drivers_r5f.iar-arm.freertos_mpu_scrub
+BUILD_COMBO_SCRUB_ai = ai_r5f.ti-arm-clang.nortos_scrub ai_r5f.ti-arm-clang.freertos_scrub ai_r5f.ti-arm-clang.freertos_mpu_scrub ai_r5f.ti-arm-clang.threadx_scrub
+BUILD_COMBO_SCRUB_board = board_r5f.ti-arm-clang.nortos_scrub board_r5f.ti-arm-clang.freertos_scrub board_r5f.ti-arm-clang.freertos_mpu_scrub board_r5f.ti-arm-clang.threadx_scrub board_r5f.iar-arm.nortos_scrub board_r5f.iar-arm.freertos_scrub board_r5f.iar-arm.freertos_mpu_scrub board_r5f.iar-arm.threadx_scrub
+BUILD_COMBO_SCRUB_pmic_blackbird = pmic_blackbird_r5f.ti-arm-clang.nortos_scrub pmic_blackbird_r5f.ti-arm-clang.freertos_scrub pmic_blackbird_r5f.ti-arm-clang.freertos_mpu_scrub pmic_blackbird_r5f.ti-arm-clang.threadx_scrub
+BUILD_COMBO_SCRUB_pmic_derby = pmic_derby_r5f.ti-arm-clang.nortos_scrub pmic_derby_r5f.ti-arm-clang.freertos_scrub pmic_derby_r5f.ti-arm-clang.freertos_mpu_scrub pmic_derby_r5f.ti-arm-clang.threadx_scrub
+BUILD_COMBO_SCRUB_sfo = sfo_r5f.ti-arm-clang.nortos_scrub sfo_r5f.ti-arm-clang.freertos_scrub sfo_r5f.ti-arm-clang.freertos_mpu_scrub sfo_r5f.ti-arm-clang.threadx_scrub
+BUILD_COMBO_SCRUB_drivers = drivers_r5f.ti-arm-clang.nortos_scrub drivers_r5f.ti-arm-clang.freertos_scrub drivers_r5f.ti-arm-clang.freertos_mpu_scrub drivers_r5f.ti-arm-clang.threadx_scrub drivers_r5f.iar-arm.nortos_scrub drivers_r5f.iar-arm.freertos_scrub drivers_r5f.iar-arm.freertos_mpu_scrub drivers_r5f.iar-arm.threadx_scrub
 BUILD_COMBO_SCRUB_freeRTOS_fat-freertos = freeRTOS_fat-freertos_r5f.ti-arm-clang_scrub
 BUILD_COMBO_SCRUB_freeRTOS_fat-nortos = freeRTOS_fat-nortos_r5f.ti-arm-clang_scrub
-BUILD_COMBO_SCRUB_littlefs = littlefs_r5f.ti-arm-clang.nortos_scrub littlefs_r5f.ti-arm-clang.freertos_scrub littlefs_r5f.ti-arm-clang.freertos_mpu_scrub littlefs_r5f.iar-arm.nortos_scrub littlefs_r5f.iar-arm.freertos_scrub littlefs_r5f.iar-arm.freertos_mpu_scrub
-BUILD_COMBO_SCRUB_middleware = middleware_r5f.ti-arm-clang.nortos_scrub middleware_r5f.ti-arm-clang.freertos_scrub middleware_r5f.ti-arm-clang.freertos_mpu_scrub
+BUILD_COMBO_SCRUB_littlefs = littlefs_r5f.ti-arm-clang.nortos_scrub littlefs_r5f.ti-arm-clang.freertos_scrub littlefs_r5f.ti-arm-clang.freertos_mpu_scrub littlefs_r5f.ti-arm-clang.threadx_scrub littlefs_r5f.iar-arm.nortos_scrub littlefs_r5f.iar-arm.freertos_scrub littlefs_r5f.iar-arm.freertos_mpu_scrub littlefs_r5f.iar-arm.threadx_scrub
+BUILD_COMBO_SCRUB_middleware = middleware_r5f.ti-arm-clang.nortos_scrub middleware_r5f.ti-arm-clang.freertos_scrub middleware_r5f.ti-arm-clang.freertos_mpu_scrub middleware_r5f.ti-arm-clang.threadx_scrub
 BUILD_COMBO_SCRUB_nortos = nortos_r5f.ti-arm-clang_scrub nortos_r5f.iar-arm_scrub
 BUILD_COMBO_SCRUB_freertos = freertos_r5f.ti-arm-clang_scrub freertos_r5f-mpu.ti-arm-clang_scrub freertos_r5f.iar-arm_scrub
-BUILD_COMBO_SCRUB_mathlib = mathlib_r5f.ti-arm-clang.nortos_scrub mathlib_r5f.ti-arm-clang.freertos_scrub mathlib_r5f.ti-arm-clang.freertos_mpu_scrub
-BUILD_COMBO_SCRUB_enet-cpsw = enet-cpsw_r5f.ti-arm-clang.nortos_scrub enet-cpsw_r5f.ti-arm-clang.freertos_scrub enet-cpsw_r5f.ti-arm-clang.freertos_mpu_scrub
+BUILD_COMBO_SCRUB_threadx = threadx_r5f.ti-arm-clang_scrub
+BUILD_COMBO_SCRUB_mathlib = mathlib_r5f.ti-arm-clang.nortos_scrub mathlib_r5f.ti-arm-clang.freertos_scrub mathlib_r5f.ti-arm-clang.freertos_mpu_scrub mathlib_r5f.ti-arm-clang.threadx_scrub
+BUILD_COMBO_SCRUB_enet-cpsw = enet-cpsw_r5f.ti-arm-clang.nortos_scrub enet-cpsw_r5f.ti-arm-clang.freertos_scrub enet-cpsw_r5f.ti-arm-clang.freertos_mpu_scrub enet-cpsw_r5f.ti-arm-clang.threadx_scrub
 BUILD_COMBO_SCRUB_lwipif-cpsw-freertos = lwipif-cpsw-freertos_r5f.ti-arm-clang_scrub
 BUILD_COMBO_SCRUB_lwipif-cpsw-nortos = lwipif-cpsw-nortos_r5f.ti-arm-clang_scrub
 BUILD_COMBO_SCRUB_lwip-freertos = lwip-freertos_r5f.ti-arm-clang_scrub
@@ -1217,13 +1280,13 @@ BUILD_COMBO_SCRUB_icss_emac = icss_emac_r5f.ti-arm-clang.nortos_scrub icss_emac_
 BUILD_COMBO_SCRUB_hsr_prp_icss_emac = hsr_prp_icss_emac_r5f.ti-arm-clang.nortos_scrub hsr_prp_icss_emac_r5f.ti-arm-clang.freertos_scrub hsr_prp_icss_emac_r5f.ti-arm-clang.freertos_mpu_scrub
 BUILD_COMBO_SCRUB_icss_emac_lwip_if = icss_emac_lwip_if_r5f.ti-arm-clang.nortos_scrub icss_emac_lwip_if_r5f.ti-arm-clang.freertos_scrub icss_emac_lwip_if_r5f.ti-arm-clang.freertos_mpu_scrub
 BUILD_COMBO_SCRUB_icss_timesync = icss_timesync_r5f.ti-arm-clang.nortos_scrub icss_timesync_r5f.ti-arm-clang.freertos_scrub icss_timesync_r5f.ti-arm-clang.freertos_mpu_scrub
-BUILD_COMBO_SCRUB_mbedtls = mbedtls_r5f.ti-arm-clang.nortos_scrub mbedtls_r5f.ti-arm-clang.freertos_scrub mbedtls_r5f.ti-arm-clang.freertos_mpu_scrub
+BUILD_COMBO_SCRUB_mbedtls = mbedtls_r5f.ti-arm-clang.nortos_scrub mbedtls_r5f.ti-arm-clang.freertos_scrub mbedtls_r5f.ti-arm-clang.freertos_mpu_scrub mbedtls_r5f.ti-arm-clang.threadx_scrub
 BUILD_COMBO_SCRUB_tsn_gptp-freertos = tsn_gptp-freertos_r5f.ti-arm-clang_scrub
 BUILD_COMBO_SCRUB_tsn_combase-freertos = tsn_combase-freertos_r5f.ti-arm-clang_scrub
 BUILD_COMBO_SCRUB_tsn_uniconf-freertos = tsn_uniconf-freertos_r5f.ti-arm-clang_scrub
 BUILD_COMBO_SCRUB_tsn_unibase-freertos = tsn_unibase-freertos_r5f.ti-arm-clang_scrub
-BUILD_COMBO_SCRUB_sdl = sdl_r5f.ti-arm-clang.nortos_scrub sdl_r5f.ti-arm-clang.freertos_scrub sdl_r5f.ti-arm-clang.freertos_mpu_scrub
-BUILD_COMBO_SCRUB_security = security_r5f.ti-arm-clang.nortos_scrub security_r5f.ti-arm-clang.freertos_scrub security_r5f.ti-arm-clang.freertos_mpu_scrub
+BUILD_COMBO_SCRUB_sdl = sdl_r5f.ti-arm-clang.nortos_scrub sdl_r5f.ti-arm-clang.freertos_scrub sdl_r5f.ti-arm-clang.freertos_mpu_scrub sdl_r5f.ti-arm-clang.threadx_scrub
+BUILD_COMBO_SCRUB_security = security_r5f.ti-arm-clang.nortos_scrub security_r5f.ti-arm-clang.freertos_scrub security_r5f.ti-arm-clang.freertos_mpu_scrub security_r5f.ti-arm-clang.threadx_scrub
 BUILD_COMBO_SCRUB_usbd_synp_nortos = usbd_synp_nortos_r5f.ti-arm-clang_scrub usbd_synp_nortos_r5f.iar-arm_scrub
 BUILD_COMBO_SCRUB_usbd_synp_freertos = usbd_synp_freertos_r5f.ti-arm-clang_scrub usbd_synp_freertos_r5f.iar-arm_scrub
 BUILD_COMBO_SCRUB_usbd_tusb_cdc_nortos = usbd_tusb_cdc_nortos_r5f.ti-arm-clang_scrub usbd_tusb_cdc_nortos_r5f.iar-arm_scrub
@@ -1234,10 +1297,15 @@ BUILD_COMBO_SCRUB_usbd_tusb_ncm_nortos = usbd_tusb_ncm_nortos_r5f.ti-arm-clang_s
 BUILD_COMBO_SCRUB_usbd_tusb_ncm_freertos = usbd_tusb_ncm_freertos_r5f.ti-arm-clang_scrub usbd_tusb_ncm_freertos_r5f.iar-arm_scrub
 BUILD_COMBO_SCRUB_usbd_tusb_vendor_nortos = usbd_tusb_vendor_nortos_r5f.ti-arm-clang_scrub
 BUILD_COMBO_SCRUB_usbd_tusb_vendor_freertos = usbd_tusb_vendor_freertos_r5f.ti-arm-clang_scrub
+BUILD_COMBO_SCRUB_usbd_tusb_benchmark_freertos = usbd_tusb_benchmark_freertos_r5f.ti-arm-clang_scrub
 
 
 # Combine all Components Scrub Targets
-BUILD_COMBO_SCRUB_ALL = $(BUILD_COMBO_SCRUB_ai) $(BUILD_COMBO_SCRUB_board) $(BUILD_COMBO_SCRUB_pmic_blackbird) $(BUILD_COMBO_SCRUB_pmic_derby) $(BUILD_COMBO_SCRUB_sfo) $(BUILD_COMBO_SCRUB_drivers) $(BUILD_COMBO_SCRUB_freeRTOS_fat-freertos) $(BUILD_COMBO_SCRUB_freeRTOS_fat-nortos) $(BUILD_COMBO_SCRUB_littlefs) $(BUILD_COMBO_SCRUB_middleware) $(BUILD_COMBO_SCRUB_nortos) $(BUILD_COMBO_SCRUB_freertos) $(BUILD_COMBO_SCRUB_mathlib) $(BUILD_COMBO_SCRUB_enet-cpsw) $(BUILD_COMBO_SCRUB_lwipif-cpsw-freertos) $(BUILD_COMBO_SCRUB_lwipif-cpsw-nortos) $(BUILD_COMBO_SCRUB_lwip-freertos) $(BUILD_COMBO_SCRUB_lwip-freertos-icss_emac) $(BUILD_COMBO_SCRUB_lwip-nortos) $(BUILD_COMBO_SCRUB_lwip-contrib-freertos) $(BUILD_COMBO_SCRUB_lwip-contrib-freertos-icss_emac) $(BUILD_COMBO_SCRUB_lwip-contrib-nortos) $(BUILD_COMBO_SCRUB_icss_emac) $(BUILD_COMBO_SCRUB_hsr_prp_icss_emac) $(BUILD_COMBO_SCRUB_icss_emac_lwip_if) $(BUILD_COMBO_SCRUB_icss_timesync) $(BUILD_COMBO_SCRUB_mbedtls) $(BUILD_COMBO_SCRUB_tsn_gptp-freertos) $(BUILD_COMBO_SCRUB_tsn_combase-freertos) $(BUILD_COMBO_SCRUB_tsn_uniconf-freertos) $(BUILD_COMBO_SCRUB_tsn_unibase-freertos) $(BUILD_COMBO_SCRUB_sdl) $(BUILD_COMBO_SCRUB_security) $(BUILD_COMBO_SCRUB_usbd_synp_nortos) $(BUILD_COMBO_SCRUB_usbd_synp_freertos) $(BUILD_COMBO_SCRUB_usbd_tusb_cdc_nortos) $(BUILD_COMBO_SCRUB_usbd_tusb_cdc_freertos) $(BUILD_COMBO_SCRUB_usbd_tusb_dfu_nortos) $(BUILD_COMBO_SCRUB_usbd_tusb_dfu_freertos) $(BUILD_COMBO_SCRUB_usbd_tusb_ncm_nortos) $(BUILD_COMBO_SCRUB_usbd_tusb_ncm_freertos) $(BUILD_COMBO_SCRUB_usbd_tusb_vendor_nortos) $(BUILD_COMBO_SCRUB_usbd_tusb_vendor_freertos)
+BUILD_COMBO_SCRUB_ALL = $(BUILD_COMBO_SCRUB_ai) $(BUILD_COMBO_SCRUB_board) $(BUILD_COMBO_SCRUB_pmic_blackbird) $(BUILD_COMBO_SCRUB_pmic_derby) $(BUILD_COMBO_SCRUB_sfo) $(BUILD_COMBO_SCRUB_drivers) $(BUILD_COMBO_SCRUB_freeRTOS_fat-freertos) $(BUILD_COMBO_SCRUB_freeRTOS_fat-nortos) $(BUILD_COMBO_SCRUB_littlefs) $(BUILD_COMBO_SCRUB_middleware) $(BUILD_COMBO_SCRUB_nortos) $(BUILD_COMBO_SCRUB_freertos) $(BUILD_COMBO_SCRUB_threadx) $(BUILD_COMBO_SCRUB_mathlib) $(BUILD_COMBO_SCRUB_enet-cpsw) $(BUILD_COMBO_SCRUB_lwipif-cpsw-freertos) $(BUILD_COMBO_SCRUB_lwipif-cpsw-nortos) $(BUILD_COMBO_SCRUB_lwip-freertos) $(BUILD_COMBO_SCRUB_lwip-freertos-icss_emac) $(BUILD_COMBO_SCRUB_lwip-nortos) $(BUILD_COMBO_SCRUB_lwip-contrib-freertos) $(BUILD_COMBO_SCRUB_lwip-contrib-freertos-icss_emac) $(BUILD_COMBO_SCRUB_lwip-contrib-nortos) $(BUILD_COMBO_SCRUB_icss_emac) $(BUILD_COMBO_SCRUB_hsr_prp_icss_emac) $(BUILD_COMBO_SCRUB_icss_emac_lwip_if) $(BUILD_COMBO_SCRUB_icss_timesync) $(BUILD_COMBO_SCRUB_mbedtls) $(BUILD_COMBO_SCRUB_tsn_gptp-freertos) $(BUILD_COMBO_SCRUB_tsn_combase-freertos) $(BUILD_COMBO_SCRUB_tsn_uniconf-freertos) $(BUILD_COMBO_SCRUB_tsn_unibase-freertos) $(BUILD_COMBO_SCRUB_sdl) $(BUILD_COMBO_SCRUB_security) $(BUILD_COMBO_SCRUB_usbd_synp_nortos) $(BUILD_COMBO_SCRUB_usbd_synp_freertos) $(BUILD_COMBO_SCRUB_usbd_tusb_cdc_nortos) $(BUILD_COMBO_SCRUB_usbd_tusb_cdc_freertos) $(BUILD_COMBO_SCRUB_usbd_tusb_dfu_nortos) $(BUILD_COMBO_SCRUB_usbd_tusb_dfu_freertos) $(BUILD_COMBO_SCRUB_usbd_tusb_ncm_nortos) $(BUILD_COMBO_SCRUB_usbd_tusb_ncm_freertos) $(BUILD_COMBO_SCRUB_usbd_tusb_vendor_nortos) $(BUILD_COMBO_SCRUB_usbd_tusb_vendor_freertos) $(BUILD_COMBO_SCRUB_usbd_tusb_benchmark_freertos)
+ifneq ($(filter $(COMPILER),ti-arm-clang iar-arm),)
+BUILD_COMBO_SCRUB_ALL := $(foreach word, $(BUILD_COMBO_SCRUB_ALL), $(if $(findstring $(COMPILER), $(word)), $(word)))
+endif
+
 
 # Combine all Pre-built Components Scrub Targets
 BUILD_COMBO_PREBUILT_SCRUB_ALL =
@@ -1282,6 +1350,9 @@ $(BUILD_COMBO_SCRUB_nortos):
 
 $(BUILD_COMBO_SCRUB_freertos):
 	$(MAKE) -C source/kernel/freertos -f makefile.am261x.$(subst freertos_,,$(subst _scrub,,$@)) scrub
+
+$(BUILD_COMBO_SCRUB_threadx):
+	$(MAKE) -C source/kernel/threadx -f makefile.am261x.$(subst threadx_,,$(subst _scrub,,$@)) scrub
 
 $(BUILD_COMBO_SCRUB_mathlib):
 	$(MAKE) -C source/mathlib -f makefile.am261x.$(subst mathlib_,,$(subst _scrub,,$@)) scrub
@@ -1375,6 +1446,9 @@ $(BUILD_COMBO_SCRUB_usbd_tusb_vendor_nortos):
 
 $(BUILD_COMBO_SCRUB_usbd_tusb_vendor_freertos):
 	$(MAKE) -C source/usb/tinyusb -f makefile.vendor_freertos.am261x.$(subst usbd_tusb_vendor_freertos_,,$(subst _scrub,,$@)) scrub
+
+$(BUILD_COMBO_SCRUB_usbd_tusb_benchmark_freertos):
+	$(MAKE) -C source/usb/tinyusb -f makefile.benchmark_freertos.am261x.$(subst usbd_tusb_benchmark_freertos_,,$(subst _scrub,,$@)) scrub
 
 
 BUILD_COMBO_EXAMPLE_ALL =
@@ -1573,8 +1647,10 @@ BUILD_COMBO_EXAMPLE_ALL += gpio_led_blink_am261x-lp_r5fss0-0_nortos_iar-arm
 BUILD_COMBO_EXAMPLE_ALL += hsm_services_am261x-lp_r5fss0-0_nortos_ti-arm-clang
 BUILD_COMBO_EXAMPLE_ALL += i2c_led_blink_am261x-som_r5fss0-0_nortos_ti-arm-clang
 BUILD_COMBO_EXAMPLE_ALL += i2c_led_blink_am261x-som_r5fss0-0_freertos_ti-arm-clang
+BUILD_COMBO_EXAMPLE_ALL += i2c_led_blink_am261x-som_r5fss0-0_threadx_ti-arm-clang
 BUILD_COMBO_EXAMPLE_ALL += i2c_led_blink_am261x-lp_r5fss0-0_nortos_ti-arm-clang
 BUILD_COMBO_EXAMPLE_ALL += i2c_led_blink_am261x-lp_r5fss0-0_freertos_ti-arm-clang
+BUILD_COMBO_EXAMPLE_ALL += i2c_led_blink_am261x-lp_r5fss0-0_threadx_ti-arm-clang
 BUILD_COMBO_EXAMPLE_ALL += i2c_led_blink_am261x-lp_r5fss0-0_nortos_iar-arm
 BUILD_COMBO_EXAMPLE_ALL += i2c_led_blink_am261x-lp_r5fss0-0_freertos_iar-arm
 BUILD_COMBO_EXAMPLE_ALL += i2c_led_blink_interrupt_lld_am261x-lp_r5fss0-0_nortos_ti-arm-clang
@@ -1710,6 +1786,7 @@ BUILD_COMBO_EXAMPLE_ALL += ospi_dual_flash_io_am261x-som_r5fss0-0_nortos_ti-arm-
 BUILD_COMBO_EXAMPLE_ALL += ospi_dual_flash_io_am261x-lp_r5fss0-0_nortos_ti-arm-clang
 BUILD_COMBO_EXAMPLE_ALL += optiflash_ocram_benchmark_am261x-lp_r5fss0-0_freertos_ti-arm-clang
 BUILD_COMBO_EXAMPLE_ALL += optiflash_ocram_benchmark_am261x-som_r5fss0-0_freertos_ti-arm-clang
+BUILD_COMBO_EXAMPLE_ALL += psram_xip_benchmark_am261x-lp_r5fss0-0_freertos_ti-arm-clang
 BUILD_COMBO_EXAMPLE_ALL += optiflash_xip_benchmark_am261x-lp_r5fss0-0_freertos_ti-arm-clang
 BUILD_COMBO_EXAMPLE_ALL += optiflash_xip_benchmark_am261x-som_r5fss0-0_freertos_ti-arm-clang
 BUILD_COMBO_EXAMPLE_ALL += optiflash_xip_benchmark_l2_8k_am261x-lp_r5fss0-0_freertos_ti-arm-clang
@@ -1722,6 +1799,16 @@ BUILD_COMBO_EXAMPLE_ALL += optiflash_xip_benchmark_l2_64k_am261x-lp_r5fss0-0_fre
 BUILD_COMBO_EXAMPLE_ALL += optiflash_xip_benchmark_l2_64k_am261x-som_r5fss0-0_freertos_ti-arm-clang
 BUILD_COMBO_EXAMPLE_ALL += ocmc_benchmarking_am261x-lp_r5fss0-0_freertos_ti-arm-clang
 BUILD_COMBO_EXAMPLE_ALL += ocmc_benchmarking_am261x-som_r5fss0-0_freertos_ti-arm-clang
+BUILD_COMBO_EXAMPLE_ALL += usb_bulk_benchmark_am261x-som_r5fss0-0_freertos_ti-arm-clang
+BUILD_COMBO_EXAMPLE_ALL += usb_bulk_benchmark_am261x-lp_r5fss0-0_freertos_ti-arm-clang
+BUILD_COMBO_EXAMPLE_ALL += usb_vendor_benchmark_am261x-som_r5fss0-0_freertos_ti-arm-clang
+BUILD_COMBO_EXAMPLE_ALL += usb_vendor_benchmark_am261x-lp_r5fss0-0_freertos_ti-arm-clang
+BUILD_COMBO_EXAMPLE_ALL += usb_cdc_benchmark_am261x-som_r5fss0-0_freertos_ti-arm-clang
+BUILD_COMBO_EXAMPLE_ALL += usb_cdc_benchmark_am261x-lp_r5fss0-0_freertos_ti-arm-clang
+BUILD_COMBO_EXAMPLE_ALL += usb_dfu_benchmark_am261x-som_r5fss0-0_freertos_ti-arm-clang
+BUILD_COMBO_EXAMPLE_ALL += usb_dfu_benchmark_am261x-lp_r5fss0-0_freertos_ti-arm-clang
+BUILD_COMBO_EXAMPLE_ALL += usb_ncm_benchmark_am261x-som_r5fss0-0_freertos_ti-arm-clang
+BUILD_COMBO_EXAMPLE_ALL += usb_ncm_benchmark_am261x-lp_r5fss0-0_freertos_ti-arm-clang
 BUILD_COMBO_EXAMPLE_ALL += pmic_esm_level_mode_am261x-lp_r5fss0-0_nortos_ti-arm-clang
 BUILD_COMBO_EXAMPLE_ALL += pmic_esm_level_mode_am261x-lp_r5fss0-0_freertos_ti-arm-clang
 BUILD_COMBO_EXAMPLE_ALL += pmic_esm_level_mode_am261x-som_r5fss0-0_nortos_ti-arm-clang
@@ -1796,8 +1883,10 @@ BUILD_COMBO_EXAMPLE_ALL += watchdog_reset_mode_am261x-som_r5fss0-0_nortos_ti-arm
 BUILD_COMBO_EXAMPLE_ALL += watchdog_reset_mode_am261x-lp_r5fss0-0_nortos_ti-arm-clang
 BUILD_COMBO_EXAMPLE_ALL += hello_world_am261x-som_r5fss0-0_nortos_ti-arm-clang
 BUILD_COMBO_EXAMPLE_ALL += hello_world_am261x-som_r5fss0-0_freertos_ti-arm-clang
+BUILD_COMBO_EXAMPLE_ALL += hello_world_am261x-som_r5fss0-0_threadx_ti-arm-clang
 BUILD_COMBO_EXAMPLE_ALL += hello_world_am261x-lp_r5fss0-0_nortos_ti-arm-clang
 BUILD_COMBO_EXAMPLE_ALL += hello_world_am261x-lp_r5fss0-0_freertos_ti-arm-clang
+BUILD_COMBO_EXAMPLE_ALL += hello_world_am261x-lp_r5fss0-0_threadx_ti-arm-clang
 BUILD_COMBO_EXAMPLE_ALL += hello_world_am261x-lp_r5fss0-0_nortos_iar-arm
 BUILD_COMBO_EXAMPLE_ALL += hello_world_am261x-lp_r5fss0-0_freertos_iar-arm
 BUILD_COMBO_EXAMPLE_ALL += hello_world_board_syscfg_am261x-som_r5fss0-0_nortos_ti-arm-clang
@@ -1834,6 +1923,8 @@ BUILD_COMBO_EXAMPLE_ALL += posix_demo_am261x-som_r5fss0-0_freertos_ti-arm-clang
 BUILD_COMBO_EXAMPLE_ALL += posix_demo_am261x-lp_r5fss0-0_freertos_ti-arm-clang
 BUILD_COMBO_EXAMPLE_ALL += task_switch_am261x-som_r5fss0-0_freertos_ti-arm-clang
 BUILD_COMBO_EXAMPLE_ALL += task_switch_am261x-lp_r5fss0-0_freertos_ti-arm-clang
+BUILD_COMBO_EXAMPLE_ALL += task_switch_am261x-som_r5fss0-0_threadx_ti-arm-clang
+BUILD_COMBO_EXAMPLE_ALL += task_switch_am261x-lp_r5fss0-0_threadx_ti-arm-clang
 BUILD_COMBO_EXAMPLE_ALL += task_switch_mpu_am261x-lp_r5fss0-0_freertos_mpu_ti-arm-clang
 BUILD_COMBO_EXAMPLE_ALL += task_switch_mpu_am261x-som_r5fss0-0_freertos_mpu_ti-arm-clang
 BUILD_COMBO_EXAMPLE_ALL += basic_smart_placement_am261x-som_r5fss0-0_nortos_ti-arm-clang
@@ -1876,6 +1967,10 @@ BUILD_COMBO_EXAMPLE_ALL += enet_cpsw_udpclient_am261x-lp_r5fss0-0_freertos_ti-ar
 BUILD_COMBO_EXAMPLE_ALL += enet_cpsw_udpclient_am261x-som_r5fss0-0_freertos_ti-arm-clang
 BUILD_COMBO_EXAMPLE_ALL += enet_lwip_cpsw_am261x-lp_r5fss0-0_freertos_ti-arm-clang
 BUILD_COMBO_EXAMPLE_ALL += enet_lwip_cpsw_am261x-som_r5fss0-0_freertos_ti-arm-clang
+BUILD_COMBO_EXAMPLE_ALL += tsn_demo_listener_am261x-lp_r5fss0-0_freertos_ti-arm-clang
+BUILD_COMBO_EXAMPLE_ALL += tsn_demo_listener_am261x-som_r5fss0-0_freertos_ti-arm-clang
+BUILD_COMBO_EXAMPLE_ALL += tsn_demo_talker_am261x-lp_r5fss0-0_freertos_ti-arm-clang
+BUILD_COMBO_EXAMPLE_ALL += tsn_demo_talker_am261x-som_r5fss0-0_freertos_ti-arm-clang
 BUILD_COMBO_EXAMPLE_ALL += icss_emac_lwip_am261x-lp_r5fss0-0_freertos_ti-arm-clang
 BUILD_COMBO_EXAMPLE_ALL += gptp_app_am261x-lp_r5fss0-0_freertos_ti-arm-clang
 BUILD_COMBO_EXAMPLE_ALL += gptp_app_am261x-som_r5fss0-0_freertos_ti-arm-clang
@@ -2001,6 +2096,8 @@ BUILD_COMBO_EXAMPLE_ALL += mpu_firewall_services_demo_am261x-som_system_nortos_t
 BUILD_COMBO_EXAMPLE_ALL += mpu_firewall_services_demo_am261x-lp_system_nortos_ti-arm-clang
 BUILD_COMBO_EXAMPLE_ALL += ipc_notify_echo_am261x-som_system_freertos_nortos_ti-arm-clang
 BUILD_COMBO_EXAMPLE_ALL += ipc_notify_echo_am261x-lp_system_freertos_nortos_ti-arm-clang
+BUILD_COMBO_EXAMPLE_ALL += ipc_notify_echo_am261x-lp_system_threadx_nortos_ti-arm-clang
+BUILD_COMBO_EXAMPLE_ALL += ipc_notify_echo_am261x-som_system_threadx_nortos_ti-arm-clang
 BUILD_COMBO_EXAMPLE_ALL += ipc_notify_echo_optishare_am261x-lp_system_freertos_nortos_ti-arm-clang
 BUILD_COMBO_EXAMPLE_ALL += ipc_rpmsg_echo_am261x-som_system_freertos_nortos_ti-arm-clang
 BUILD_COMBO_EXAMPLE_ALL += ipc_rpmsg_echo_am261x-lp_system_freertos_nortos_ti-arm-clang
@@ -2022,6 +2119,8 @@ BUILD_COMBO_EXAMPLE_ALL += empty_am261x-lp_system_freertos_iar-arm
 BUILD_COMBO_EXAMPLE_ALL += empty_am261x-som_system_nortos_ti-arm-clang
 BUILD_COMBO_EXAMPLE_ALL += empty_am261x-lp_system_nortos_ti-arm-clang
 BUILD_COMBO_EXAMPLE_ALL += empty_am261x-lp_system_nortos_iar-arm
+BUILD_COMBO_EXAMPLE_ALL += empty_am261x-som_system_threadx_ti-arm-clang
+BUILD_COMBO_EXAMPLE_ALL += empty_am261x-lp_system_threadx_ti-arm-clang
 BUILD_COMBO_EXAMPLE_ALL += sdl_stc_am261x-som_system_nortos_nortos_ti-arm-clang
 
 
@@ -2042,6 +2141,9 @@ BUILD_COMBO_EXAMPLE_PRIVATE_ALL += sent_decoder_using_iep_capture_short_serial_m
 BUILD_COMBO_EXAMPLE_PRIVATE_ALL += sent_encoder_pru_fw_am261x-lp_icss_m0_pru0_fw_ti-pru-cgt
 # Various Private System Example Targets
 
+ifneq ($(filter $(COMPILER),ti-arm-clang iar-arm),)
+BUILD_COMBO_EXAMPLE_ALL := $(foreach word, $(BUILD_COMBO_EXAMPLE_ALL), $(if $(findstring $(COMPILER), $(word)), $(word)))
+endif
 
 examples: $(BUILD_COMBO_EXAMPLE_ALL)
 
@@ -2321,6 +2423,12 @@ examples-private: $(BUILD_COMBO_EXAMPLE_PRIVATE_ALL)
 
  sbl_ospi_swap_am261x-lp_r5fss0-0_nortos_ti-arm-clang:
 	$(MAKE) -C examples/drivers/boot/sbl_ospi_swap/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile all
+
+ sbl_qspi_multicore_elf_am261x-som_r5fss0-0_nortos_ti-arm-clang:
+	$(MAKE) -C examples/drivers/boot/sbl_qspi_multicore_elf/am261x-som/r5fss0-0_nortos/ti-arm-clang -f makefile all
+
+ sbl_qspi_multicore_elf_am261x-lp_r5fss0-0_nortos_ti-arm-clang:
+	$(MAKE) -C examples/drivers/boot/sbl_qspi_multicore_elf/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile all
 
  sbl_uart_multicore_elf_am261x-som_r5fss0-0_nortos_ti-arm-clang:
 	$(MAKE) -C examples/drivers/boot/sbl_uart_multicore_elf/am261x-som/r5fss0-0_nortos/ti-arm-clang -f makefile all
@@ -2703,11 +2811,17 @@ examples-private: $(BUILD_COMBO_EXAMPLE_PRIVATE_ALL)
  i2c_led_blink_am261x-som_r5fss0-0_freertos_ti-arm-clang:
 	$(MAKE) -C examples/drivers/i2c/i2c_led_blink/am261x-som/r5fss0-0_freertos/ti-arm-clang -f makefile all
 
+ i2c_led_blink_am261x-som_r5fss0-0_threadx_ti-arm-clang:
+	$(MAKE) -C examples/drivers/i2c/i2c_led_blink/am261x-som/r5fss0-0_threadx/ti-arm-clang -f makefile all
+
  i2c_led_blink_am261x-lp_r5fss0-0_nortos_ti-arm-clang:
 	$(MAKE) -C examples/drivers/i2c/i2c_led_blink/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile all
 
  i2c_led_blink_am261x-lp_r5fss0-0_freertos_ti-arm-clang:
 	$(MAKE) -C examples/drivers/i2c/i2c_led_blink/am261x-lp/r5fss0-0_freertos/ti-arm-clang -f makefile all
+
+ i2c_led_blink_am261x-lp_r5fss0-0_threadx_ti-arm-clang:
+	$(MAKE) -C examples/drivers/i2c/i2c_led_blink/am261x-lp/r5fss0-0_threadx/ti-arm-clang -f makefile all
 
  i2c_led_blink_am261x-lp_r5fss0-0_nortos_iar-arm:
 	$(MAKE) -C examples/drivers/i2c/i2c_led_blink/am261x-lp/r5fss0-0_nortos/iar-arm -f makefile all
@@ -3114,6 +3228,9 @@ examples-private: $(BUILD_COMBO_EXAMPLE_PRIVATE_ALL)
  optiflash_ocram_benchmark_am261x-som_r5fss0-0_freertos_ti-arm-clang:
 	$(MAKE) -C examples/benchmarks/optiflash_benchmark/ocram/am261x-som/r5fss0-0_freertos/ti-arm-clang -f makefile all
 
+ psram_xip_benchmark_am261x-lp_r5fss0-0_freertos_ti-arm-clang:
+	$(MAKE) -C examples/benchmarks/optiflash_benchmark/psram_xip/am261x-lp/r5fss0-0_freertos/ti-arm-clang -f makefile all
+
  optiflash_xip_benchmark_am261x-lp_r5fss0-0_freertos_ti-arm-clang:
 	$(MAKE) -C examples/benchmarks/optiflash_benchmark/flash_xip/am261x-lp/r5fss0-0_freertos/ti-arm-clang -f makefile all
 
@@ -3149,6 +3266,36 @@ examples-private: $(BUILD_COMBO_EXAMPLE_PRIVATE_ALL)
 
  ocmc_benchmarking_am261x-som_r5fss0-0_freertos_ti-arm-clang:
 	$(MAKE) -C examples/benchmarks/optiflash_benchmark/flash_xip_smart_placement/am261x-som/r5fss0-0_freertos/ti-arm-clang -f makefile all
+
+ usb_bulk_benchmark_am261x-som_r5fss0-0_freertos_ti-arm-clang:
+	$(MAKE) -C examples/benchmarks/usb/usb_bulk_benchmark/am261x-som/r5fss0-0_freertos/ti-arm-clang -f makefile all
+
+ usb_bulk_benchmark_am261x-lp_r5fss0-0_freertos_ti-arm-clang:
+	$(MAKE) -C examples/benchmarks/usb/usb_bulk_benchmark/am261x-lp/r5fss0-0_freertos/ti-arm-clang -f makefile all
+
+ usb_vendor_benchmark_am261x-som_r5fss0-0_freertos_ti-arm-clang:
+	$(MAKE) -C examples/benchmarks/usb/usb_vendor_benchmark/am261x-som/r5fss0-0_freertos/ti-arm-clang -f makefile all
+
+ usb_vendor_benchmark_am261x-lp_r5fss0-0_freertos_ti-arm-clang:
+	$(MAKE) -C examples/benchmarks/usb/usb_vendor_benchmark/am261x-lp/r5fss0-0_freertos/ti-arm-clang -f makefile all
+
+ usb_cdc_benchmark_am261x-som_r5fss0-0_freertos_ti-arm-clang:
+	$(MAKE) -C examples/benchmarks/usb/usb_cdc_benchmark/am261x-som/r5fss0-0_freertos/ti-arm-clang -f makefile all
+
+ usb_cdc_benchmark_am261x-lp_r5fss0-0_freertos_ti-arm-clang:
+	$(MAKE) -C examples/benchmarks/usb/usb_cdc_benchmark/am261x-lp/r5fss0-0_freertos/ti-arm-clang -f makefile all
+
+ usb_dfu_benchmark_am261x-som_r5fss0-0_freertos_ti-arm-clang:
+	$(MAKE) -C examples/benchmarks/usb/usb_dfu_benchmark/am261x-som/r5fss0-0_freertos/ti-arm-clang -f makefile all
+
+ usb_dfu_benchmark_am261x-lp_r5fss0-0_freertos_ti-arm-clang:
+	$(MAKE) -C examples/benchmarks/usb/usb_dfu_benchmark/am261x-lp/r5fss0-0_freertos/ti-arm-clang -f makefile all
+
+ usb_ncm_benchmark_am261x-som_r5fss0-0_freertos_ti-arm-clang:
+	$(MAKE) -C examples/benchmarks/usb/usb_ncm_benchmark/am261x-som/r5fss0-0_freertos/ti-arm-clang -f makefile all
+
+ usb_ncm_benchmark_am261x-lp_r5fss0-0_freertos_ti-arm-clang:
+	$(MAKE) -C examples/benchmarks/usb/usb_ncm_benchmark/am261x-lp/r5fss0-0_freertos/ti-arm-clang -f makefile all
 
  pmic_esm_level_mode_am261x-lp_r5fss0-0_nortos_ti-arm-clang:
 	$(MAKE) -C examples/drivers/pmic/pmic_esm_level_mode/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile all
@@ -3372,11 +3519,17 @@ examples-private: $(BUILD_COMBO_EXAMPLE_PRIVATE_ALL)
  hello_world_am261x-som_r5fss0-0_freertos_ti-arm-clang:
 	$(MAKE) -C examples/hello_world/am261x-som/r5fss0-0_freertos/ti-arm-clang -f makefile all
 
+ hello_world_am261x-som_r5fss0-0_threadx_ti-arm-clang:
+	$(MAKE) -C examples/hello_world/am261x-som/r5fss0-0_threadx/ti-arm-clang -f makefile all
+
  hello_world_am261x-lp_r5fss0-0_nortos_ti-arm-clang:
 	$(MAKE) -C examples/hello_world/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile all
 
  hello_world_am261x-lp_r5fss0-0_freertos_ti-arm-clang:
 	$(MAKE) -C examples/hello_world/am261x-lp/r5fss0-0_freertos/ti-arm-clang -f makefile all
+
+ hello_world_am261x-lp_r5fss0-0_threadx_ti-arm-clang:
+	$(MAKE) -C examples/hello_world/am261x-lp/r5fss0-0_threadx/ti-arm-clang -f makefile all
 
  hello_world_am261x-lp_r5fss0-0_nortos_iar-arm:
 	$(MAKE) -C examples/hello_world/am261x-lp/r5fss0-0_nortos/iar-arm -f makefile all
@@ -3485,6 +3638,12 @@ examples-private: $(BUILD_COMBO_EXAMPLE_PRIVATE_ALL)
 
  task_switch_am261x-lp_r5fss0-0_freertos_ti-arm-clang:
 	$(MAKE) -C examples/kernel/freertos/task_switch/am261x-lp/r5fss0-0_freertos/ti-arm-clang -f makefile all
+
+ task_switch_am261x-som_r5fss0-0_threadx_ti-arm-clang:
+	$(MAKE) -C examples/kernel/threadx/task_switch/am261x-som/r5fss0-0_threadx/ti-arm-clang -f makefile all
+
+ task_switch_am261x-lp_r5fss0-0_threadx_ti-arm-clang:
+	$(MAKE) -C examples/kernel/threadx/task_switch/am261x-lp/r5fss0-0_threadx/ti-arm-clang -f makefile all
 
  task_switch_mpu_am261x-lp_r5fss0-0_freertos_mpu_ti-arm-clang:
 	$(MAKE) -C examples/kernel/freertos/task_switch_mpu/am261x-lp/r5fss0-0_freertos_mpu/ti-arm-clang -f makefile all
@@ -3611,6 +3770,18 @@ examples-private: $(BUILD_COMBO_EXAMPLE_PRIVATE_ALL)
 
  enet_lwip_cpsw_am261x-som_r5fss0-0_freertos_ti-arm-clang:
 	$(MAKE) -C source/networking/enet/core/examples/lwip/enet_lwip_cpsw/am261x-som/r5fss0-0_freertos/ti-arm-clang -f makefile all
+
+ tsn_demo_listener_am261x-lp_r5fss0-0_freertos_ti-arm-clang:
+	$(MAKE) -C source/networking/enet/core/examples/tsn_demo/listener/am261x-lp/r5fss0-0_freertos/ti-arm-clang -f makefile all
+
+ tsn_demo_listener_am261x-som_r5fss0-0_freertos_ti-arm-clang:
+	$(MAKE) -C source/networking/enet/core/examples/tsn_demo/listener/am261x-som/r5fss0-0_freertos/ti-arm-clang -f makefile all
+
+ tsn_demo_talker_am261x-lp_r5fss0-0_freertos_ti-arm-clang:
+	$(MAKE) -C source/networking/enet/core/examples/tsn_demo/talker/am261x-lp/r5fss0-0_freertos/ti-arm-clang -f makefile all
+
+ tsn_demo_talker_am261x-som_r5fss0-0_freertos_ti-arm-clang:
+	$(MAKE) -C source/networking/enet/core/examples/tsn_demo/talker/am261x-som/r5fss0-0_freertos/ti-arm-clang -f makefile all
 
  icss_emac_lwip_am261x-lp_r5fss0-0_freertos_ti-arm-clang:
 	$(MAKE) -C examples/networking/lwip/icss_emac_lwip/am261x-lp/r5fss0-0_freertos/ti-arm-clang -f makefile all
@@ -4017,6 +4188,12 @@ examples-private: $(BUILD_COMBO_EXAMPLE_PRIVATE_ALL)
  ipc_notify_echo_am261x-lp_system_freertos_nortos_ti-arm-clang:
 	$(MAKE) -C examples/drivers/ipc/ipc_notify_echo/am261x-lp/system_freertos_nortos/ti-arm-clang -f makefile all
 
+ ipc_notify_echo_am261x-lp_system_threadx_nortos_ti-arm-clang:
+	$(MAKE) -C examples/drivers/ipc/ipc_notify_echo/am261x-lp/system_threadx_nortos/ti-arm-clang -f makefile all
+
+ ipc_notify_echo_am261x-som_system_threadx_nortos_ti-arm-clang:
+	$(MAKE) -C examples/drivers/ipc/ipc_notify_echo/am261x-som/system_threadx_nortos/ti-arm-clang -f makefile all
+
  ipc_notify_echo_optishare_am261x-lp_system_freertos_nortos_ti-arm-clang:
 	$(MAKE) -C examples/drivers/ipc/ipc_notify_echo_optishare/am261x-lp/system_freertos_nortos/ti-arm-clang -f makefile all
 
@@ -4080,9 +4257,18 @@ examples-private: $(BUILD_COMBO_EXAMPLE_PRIVATE_ALL)
  empty_am261x-lp_system_nortos_iar-arm:
 	$(MAKE) -C examples/empty/am261x-lp/system_nortos/iar-arm -f makefile all
 
+ empty_am261x-som_system_threadx_ti-arm-clang:
+	$(MAKE) -C examples/empty/am261x-som/system_threadx/ti-arm-clang -f makefile all
+
+ empty_am261x-lp_system_threadx_ti-arm-clang:
+	$(MAKE) -C examples/empty/am261x-lp/system_threadx/ti-arm-clang -f makefile all
+
  sdl_stc_am261x-som_system_nortos_nortos_ti-arm-clang:
 	$(MAKE) -C examples/sdl/stc/stc_mcu/am261x-som/system_nortos_nortos/ti-arm-clang -f makefile all
 
+# Ordering dependencies: serialize system projects that share core build directories
+ipc_notify_echo_am261x-lp_system_threadx_nortos_ti-arm-clang: | ipc_notify_echo_am261x-lp_system_freertos_nortos_ti-arm-clang
+ipc_notify_echo_am261x-som_system_threadx_nortos_ti-arm-clang: | ipc_notify_echo_am261x-som_system_freertos_nortos_ti-arm-clang
 
 BUILD_COMBO_EXAMPLE_CLEAN_ALL =
 # Various Example Clean Targets
@@ -4280,8 +4466,10 @@ BUILD_COMBO_EXAMPLE_CLEAN_ALL += gpio_led_blink_am261x-lp_r5fss0-0_nortos_iar-ar
 BUILD_COMBO_EXAMPLE_CLEAN_ALL += hsm_services_am261x-lp_r5fss0-0_nortos_ti-arm-clang_clean
 BUILD_COMBO_EXAMPLE_CLEAN_ALL += i2c_led_blink_am261x-som_r5fss0-0_nortos_ti-arm-clang_clean
 BUILD_COMBO_EXAMPLE_CLEAN_ALL += i2c_led_blink_am261x-som_r5fss0-0_freertos_ti-arm-clang_clean
+BUILD_COMBO_EXAMPLE_CLEAN_ALL += i2c_led_blink_am261x-som_r5fss0-0_threadx_ti-arm-clang_clean
 BUILD_COMBO_EXAMPLE_CLEAN_ALL += i2c_led_blink_am261x-lp_r5fss0-0_nortos_ti-arm-clang_clean
 BUILD_COMBO_EXAMPLE_CLEAN_ALL += i2c_led_blink_am261x-lp_r5fss0-0_freertos_ti-arm-clang_clean
+BUILD_COMBO_EXAMPLE_CLEAN_ALL += i2c_led_blink_am261x-lp_r5fss0-0_threadx_ti-arm-clang_clean
 BUILD_COMBO_EXAMPLE_CLEAN_ALL += i2c_led_blink_am261x-lp_r5fss0-0_nortos_iar-arm_clean
 BUILD_COMBO_EXAMPLE_CLEAN_ALL += i2c_led_blink_am261x-lp_r5fss0-0_freertos_iar-arm_clean
 BUILD_COMBO_EXAMPLE_CLEAN_ALL += i2c_led_blink_interrupt_lld_am261x-lp_r5fss0-0_nortos_ti-arm-clang_clean
@@ -4417,6 +4605,7 @@ BUILD_COMBO_EXAMPLE_CLEAN_ALL += ospi_dual_flash_io_am261x-som_r5fss0-0_nortos_t
 BUILD_COMBO_EXAMPLE_CLEAN_ALL += ospi_dual_flash_io_am261x-lp_r5fss0-0_nortos_ti-arm-clang_clean
 BUILD_COMBO_EXAMPLE_CLEAN_ALL += optiflash_ocram_benchmark_am261x-lp_r5fss0-0_freertos_ti-arm-clang_clean
 BUILD_COMBO_EXAMPLE_CLEAN_ALL += optiflash_ocram_benchmark_am261x-som_r5fss0-0_freertos_ti-arm-clang_clean
+BUILD_COMBO_EXAMPLE_CLEAN_ALL += psram_xip_benchmark_am261x-lp_r5fss0-0_freertos_ti-arm-clang_clean
 BUILD_COMBO_EXAMPLE_CLEAN_ALL += optiflash_xip_benchmark_am261x-lp_r5fss0-0_freertos_ti-arm-clang_clean
 BUILD_COMBO_EXAMPLE_CLEAN_ALL += optiflash_xip_benchmark_am261x-som_r5fss0-0_freertos_ti-arm-clang_clean
 BUILD_COMBO_EXAMPLE_CLEAN_ALL += optiflash_xip_benchmark_l2_8k_am261x-lp_r5fss0-0_freertos_ti-arm-clang_clean
@@ -4429,6 +4618,16 @@ BUILD_COMBO_EXAMPLE_CLEAN_ALL += optiflash_xip_benchmark_l2_64k_am261x-lp_r5fss0
 BUILD_COMBO_EXAMPLE_CLEAN_ALL += optiflash_xip_benchmark_l2_64k_am261x-som_r5fss0-0_freertos_ti-arm-clang_clean
 BUILD_COMBO_EXAMPLE_CLEAN_ALL += ocmc_benchmarking_am261x-lp_r5fss0-0_freertos_ti-arm-clang_clean
 BUILD_COMBO_EXAMPLE_CLEAN_ALL += ocmc_benchmarking_am261x-som_r5fss0-0_freertos_ti-arm-clang_clean
+BUILD_COMBO_EXAMPLE_CLEAN_ALL += usb_bulk_benchmark_am261x-som_r5fss0-0_freertos_ti-arm-clang_clean
+BUILD_COMBO_EXAMPLE_CLEAN_ALL += usb_bulk_benchmark_am261x-lp_r5fss0-0_freertos_ti-arm-clang_clean
+BUILD_COMBO_EXAMPLE_CLEAN_ALL += usb_vendor_benchmark_am261x-som_r5fss0-0_freertos_ti-arm-clang_clean
+BUILD_COMBO_EXAMPLE_CLEAN_ALL += usb_vendor_benchmark_am261x-lp_r5fss0-0_freertos_ti-arm-clang_clean
+BUILD_COMBO_EXAMPLE_CLEAN_ALL += usb_cdc_benchmark_am261x-som_r5fss0-0_freertos_ti-arm-clang_clean
+BUILD_COMBO_EXAMPLE_CLEAN_ALL += usb_cdc_benchmark_am261x-lp_r5fss0-0_freertos_ti-arm-clang_clean
+BUILD_COMBO_EXAMPLE_CLEAN_ALL += usb_dfu_benchmark_am261x-som_r5fss0-0_freertos_ti-arm-clang_clean
+BUILD_COMBO_EXAMPLE_CLEAN_ALL += usb_dfu_benchmark_am261x-lp_r5fss0-0_freertos_ti-arm-clang_clean
+BUILD_COMBO_EXAMPLE_CLEAN_ALL += usb_ncm_benchmark_am261x-som_r5fss0-0_freertos_ti-arm-clang_clean
+BUILD_COMBO_EXAMPLE_CLEAN_ALL += usb_ncm_benchmark_am261x-lp_r5fss0-0_freertos_ti-arm-clang_clean
 BUILD_COMBO_EXAMPLE_CLEAN_ALL += pmic_esm_level_mode_am261x-lp_r5fss0-0_nortos_ti-arm-clang_clean
 BUILD_COMBO_EXAMPLE_CLEAN_ALL += pmic_esm_level_mode_am261x-lp_r5fss0-0_freertos_ti-arm-clang_clean
 BUILD_COMBO_EXAMPLE_CLEAN_ALL += pmic_esm_level_mode_am261x-som_r5fss0-0_nortos_ti-arm-clang_clean
@@ -4503,8 +4702,10 @@ BUILD_COMBO_EXAMPLE_CLEAN_ALL += watchdog_reset_mode_am261x-som_r5fss0-0_nortos_
 BUILD_COMBO_EXAMPLE_CLEAN_ALL += watchdog_reset_mode_am261x-lp_r5fss0-0_nortos_ti-arm-clang_clean
 BUILD_COMBO_EXAMPLE_CLEAN_ALL += hello_world_am261x-som_r5fss0-0_nortos_ti-arm-clang_clean
 BUILD_COMBO_EXAMPLE_CLEAN_ALL += hello_world_am261x-som_r5fss0-0_freertos_ti-arm-clang_clean
+BUILD_COMBO_EXAMPLE_CLEAN_ALL += hello_world_am261x-som_r5fss0-0_threadx_ti-arm-clang_clean
 BUILD_COMBO_EXAMPLE_CLEAN_ALL += hello_world_am261x-lp_r5fss0-0_nortos_ti-arm-clang_clean
 BUILD_COMBO_EXAMPLE_CLEAN_ALL += hello_world_am261x-lp_r5fss0-0_freertos_ti-arm-clang_clean
+BUILD_COMBO_EXAMPLE_CLEAN_ALL += hello_world_am261x-lp_r5fss0-0_threadx_ti-arm-clang_clean
 BUILD_COMBO_EXAMPLE_CLEAN_ALL += hello_world_am261x-lp_r5fss0-0_nortos_iar-arm_clean
 BUILD_COMBO_EXAMPLE_CLEAN_ALL += hello_world_am261x-lp_r5fss0-0_freertos_iar-arm_clean
 BUILD_COMBO_EXAMPLE_CLEAN_ALL += hello_world_board_syscfg_am261x-som_r5fss0-0_nortos_ti-arm-clang_clean
@@ -4541,6 +4742,8 @@ BUILD_COMBO_EXAMPLE_CLEAN_ALL += posix_demo_am261x-som_r5fss0-0_freertos_ti-arm-
 BUILD_COMBO_EXAMPLE_CLEAN_ALL += posix_demo_am261x-lp_r5fss0-0_freertos_ti-arm-clang_clean
 BUILD_COMBO_EXAMPLE_CLEAN_ALL += task_switch_am261x-som_r5fss0-0_freertos_ti-arm-clang_clean
 BUILD_COMBO_EXAMPLE_CLEAN_ALL += task_switch_am261x-lp_r5fss0-0_freertos_ti-arm-clang_clean
+BUILD_COMBO_EXAMPLE_CLEAN_ALL += task_switch_am261x-som_r5fss0-0_threadx_ti-arm-clang_clean
+BUILD_COMBO_EXAMPLE_CLEAN_ALL += task_switch_am261x-lp_r5fss0-0_threadx_ti-arm-clang_clean
 BUILD_COMBO_EXAMPLE_CLEAN_ALL += task_switch_mpu_am261x-lp_r5fss0-0_freertos_mpu_ti-arm-clang_clean
 BUILD_COMBO_EXAMPLE_CLEAN_ALL += task_switch_mpu_am261x-som_r5fss0-0_freertos_mpu_ti-arm-clang_clean
 BUILD_COMBO_EXAMPLE_CLEAN_ALL += basic_smart_placement_am261x-som_r5fss0-0_nortos_ti-arm-clang_clean
@@ -4583,6 +4786,10 @@ BUILD_COMBO_EXAMPLE_CLEAN_ALL += enet_cpsw_udpclient_am261x-lp_r5fss0-0_freertos
 BUILD_COMBO_EXAMPLE_CLEAN_ALL += enet_cpsw_udpclient_am261x-som_r5fss0-0_freertos_ti-arm-clang_clean
 BUILD_COMBO_EXAMPLE_CLEAN_ALL += enet_lwip_cpsw_am261x-lp_r5fss0-0_freertos_ti-arm-clang_clean
 BUILD_COMBO_EXAMPLE_CLEAN_ALL += enet_lwip_cpsw_am261x-som_r5fss0-0_freertos_ti-arm-clang_clean
+BUILD_COMBO_EXAMPLE_CLEAN_ALL += tsn_demo_listener_am261x-lp_r5fss0-0_freertos_ti-arm-clang_clean
+BUILD_COMBO_EXAMPLE_CLEAN_ALL += tsn_demo_listener_am261x-som_r5fss0-0_freertos_ti-arm-clang_clean
+BUILD_COMBO_EXAMPLE_CLEAN_ALL += tsn_demo_talker_am261x-lp_r5fss0-0_freertos_ti-arm-clang_clean
+BUILD_COMBO_EXAMPLE_CLEAN_ALL += tsn_demo_talker_am261x-som_r5fss0-0_freertos_ti-arm-clang_clean
 BUILD_COMBO_EXAMPLE_CLEAN_ALL += icss_emac_lwip_am261x-lp_r5fss0-0_freertos_ti-arm-clang_clean
 BUILD_COMBO_EXAMPLE_CLEAN_ALL += gptp_app_am261x-lp_r5fss0-0_freertos_ti-arm-clang_clean
 BUILD_COMBO_EXAMPLE_CLEAN_ALL += gptp_app_am261x-som_r5fss0-0_freertos_ti-arm-clang_clean
@@ -4707,6 +4914,8 @@ BUILD_COMBO_EXAMPLE_CLEAN_ALL += mpu_firewall_services_demo_am261x-som_system_no
 BUILD_COMBO_EXAMPLE_CLEAN_ALL += mpu_firewall_services_demo_am261x-lp_system_nortos_ti-arm-clang_clean
 BUILD_COMBO_EXAMPLE_CLEAN_ALL += ipc_notify_echo_am261x-som_system_freertos_nortos_ti-arm-clang_clean
 BUILD_COMBO_EXAMPLE_CLEAN_ALL += ipc_notify_echo_am261x-lp_system_freertos_nortos_ti-arm-clang_clean
+BUILD_COMBO_EXAMPLE_CLEAN_ALL += ipc_notify_echo_am261x-lp_system_threadx_nortos_ti-arm-clang_clean
+BUILD_COMBO_EXAMPLE_CLEAN_ALL += ipc_notify_echo_am261x-som_system_threadx_nortos_ti-arm-clang_clean
 BUILD_COMBO_EXAMPLE_CLEAN_ALL += ipc_notify_echo_optishare_am261x-lp_system_freertos_nortos_ti-arm-clang_clean
 BUILD_COMBO_EXAMPLE_CLEAN_ALL += ipc_rpmsg_echo_am261x-som_system_freertos_nortos_ti-arm-clang_clean
 BUILD_COMBO_EXAMPLE_CLEAN_ALL += ipc_rpmsg_echo_am261x-lp_system_freertos_nortos_ti-arm-clang_clean
@@ -4728,6 +4937,8 @@ BUILD_COMBO_EXAMPLE_CLEAN_ALL += empty_am261x-lp_system_freertos_iar-arm_clean
 BUILD_COMBO_EXAMPLE_CLEAN_ALL += empty_am261x-som_system_nortos_ti-arm-clang_clean
 BUILD_COMBO_EXAMPLE_CLEAN_ALL += empty_am261x-lp_system_nortos_ti-arm-clang_clean
 BUILD_COMBO_EXAMPLE_CLEAN_ALL += empty_am261x-lp_system_nortos_iar-arm_clean
+BUILD_COMBO_EXAMPLE_CLEAN_ALL += empty_am261x-som_system_threadx_ti-arm-clang_clean
+BUILD_COMBO_EXAMPLE_CLEAN_ALL += empty_am261x-lp_system_threadx_ti-arm-clang_clean
 BUILD_COMBO_EXAMPLE_CLEAN_ALL += sdl_stc_am261x-som_system_nortos_nortos_ti-arm-clang_clean
 
 
@@ -4746,6 +4957,10 @@ BUILD_COMBO_EXAMPLE_PRIVATE_CLEAN_ALL += sent_decoder_using_iep_capture_am261x-l
 BUILD_COMBO_EXAMPLE_PRIVATE_CLEAN_ALL += sent_decoder_using_iep_capture_short_serial_msg_am261x-lp_icss_m0_pru0_fw_ti-pru-cgt_clean
 BUILD_COMBO_EXAMPLE_PRIVATE_CLEAN_ALL += sent_encoder_pru_fw_am261x-lp_icss_m0_pru0_fw_ti-pru-cgt_clean
 # Various Private System Example Targets
+
+ifneq ($(filter $(COMPILER),ti-arm-clang iar-arm),)
+BUILD_COMBO_EXAMPLE_CLEAN_ALL := $(foreach word, $(BUILD_COMBO_EXAMPLE_CLEAN_ALL), $(if $(findstring $(COMPILER), $(word)), $(word)))
+endif
 
 examples-clean: $(BUILD_COMBO_EXAMPLE_CLEAN_ALL)
 
@@ -5023,6 +5238,12 @@ examples-private-clean: $(BUILD_COMBO_EXAMPLE_PRIVATE_CLEAN_ALL)
 
  sbl_ospi_swap_am261x-lp_r5fss0-0_nortos_ti-arm-clang_clean:
 	$(MAKE) -C examples/drivers/boot/sbl_ospi_swap/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile clean
+
+ sbl_qspi_multicore_elf_am261x-som_r5fss0-0_nortos_ti-arm-clang_clean:
+	$(MAKE) -C examples/drivers/boot/sbl_qspi_multicore_elf/am261x-som/r5fss0-0_nortos/ti-arm-clang -f makefile clean
+
+ sbl_qspi_multicore_elf_am261x-lp_r5fss0-0_nortos_ti-arm-clang_clean:
+	$(MAKE) -C examples/drivers/boot/sbl_qspi_multicore_elf/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile clean
 
  sbl_uart_multicore_elf_am261x-som_r5fss0-0_nortos_ti-arm-clang_clean:
 	$(MAKE) -C examples/drivers/boot/sbl_uart_multicore_elf/am261x-som/r5fss0-0_nortos/ti-arm-clang -f makefile clean
@@ -5405,11 +5626,17 @@ examples-private-clean: $(BUILD_COMBO_EXAMPLE_PRIVATE_CLEAN_ALL)
  i2c_led_blink_am261x-som_r5fss0-0_freertos_ti-arm-clang_clean:
 	$(MAKE) -C examples/drivers/i2c/i2c_led_blink/am261x-som/r5fss0-0_freertos/ti-arm-clang -f makefile clean
 
+ i2c_led_blink_am261x-som_r5fss0-0_threadx_ti-arm-clang_clean:
+	$(MAKE) -C examples/drivers/i2c/i2c_led_blink/am261x-som/r5fss0-0_threadx/ti-arm-clang -f makefile clean
+
  i2c_led_blink_am261x-lp_r5fss0-0_nortos_ti-arm-clang_clean:
 	$(MAKE) -C examples/drivers/i2c/i2c_led_blink/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile clean
 
  i2c_led_blink_am261x-lp_r5fss0-0_freertos_ti-arm-clang_clean:
 	$(MAKE) -C examples/drivers/i2c/i2c_led_blink/am261x-lp/r5fss0-0_freertos/ti-arm-clang -f makefile clean
+
+ i2c_led_blink_am261x-lp_r5fss0-0_threadx_ti-arm-clang_clean:
+	$(MAKE) -C examples/drivers/i2c/i2c_led_blink/am261x-lp/r5fss0-0_threadx/ti-arm-clang -f makefile clean
 
  i2c_led_blink_am261x-lp_r5fss0-0_nortos_iar-arm_clean:
 	$(MAKE) -C examples/drivers/i2c/i2c_led_blink/am261x-lp/r5fss0-0_nortos/iar-arm -f makefile clean
@@ -5816,6 +6043,9 @@ examples-private-clean: $(BUILD_COMBO_EXAMPLE_PRIVATE_CLEAN_ALL)
  optiflash_ocram_benchmark_am261x-som_r5fss0-0_freertos_ti-arm-clang_clean:
 	$(MAKE) -C examples/benchmarks/optiflash_benchmark/ocram/am261x-som/r5fss0-0_freertos/ti-arm-clang -f makefile clean
 
+ psram_xip_benchmark_am261x-lp_r5fss0-0_freertos_ti-arm-clang_clean:
+	$(MAKE) -C examples/benchmarks/optiflash_benchmark/psram_xip/am261x-lp/r5fss0-0_freertos/ti-arm-clang -f makefile clean
+
  optiflash_xip_benchmark_am261x-lp_r5fss0-0_freertos_ti-arm-clang_clean:
 	$(MAKE) -C examples/benchmarks/optiflash_benchmark/flash_xip/am261x-lp/r5fss0-0_freertos/ti-arm-clang -f makefile clean
 
@@ -5851,6 +6081,36 @@ examples-private-clean: $(BUILD_COMBO_EXAMPLE_PRIVATE_CLEAN_ALL)
 
  ocmc_benchmarking_am261x-som_r5fss0-0_freertos_ti-arm-clang_clean:
 	$(MAKE) -C examples/benchmarks/optiflash_benchmark/flash_xip_smart_placement/am261x-som/r5fss0-0_freertos/ti-arm-clang -f makefile clean
+
+ usb_bulk_benchmark_am261x-som_r5fss0-0_freertos_ti-arm-clang_clean:
+	$(MAKE) -C examples/benchmarks/usb/usb_bulk_benchmark/am261x-som/r5fss0-0_freertos/ti-arm-clang -f makefile clean
+
+ usb_bulk_benchmark_am261x-lp_r5fss0-0_freertos_ti-arm-clang_clean:
+	$(MAKE) -C examples/benchmarks/usb/usb_bulk_benchmark/am261x-lp/r5fss0-0_freertos/ti-arm-clang -f makefile clean
+
+ usb_vendor_benchmark_am261x-som_r5fss0-0_freertos_ti-arm-clang_clean:
+	$(MAKE) -C examples/benchmarks/usb/usb_vendor_benchmark/am261x-som/r5fss0-0_freertos/ti-arm-clang -f makefile clean
+
+ usb_vendor_benchmark_am261x-lp_r5fss0-0_freertos_ti-arm-clang_clean:
+	$(MAKE) -C examples/benchmarks/usb/usb_vendor_benchmark/am261x-lp/r5fss0-0_freertos/ti-arm-clang -f makefile clean
+
+ usb_cdc_benchmark_am261x-som_r5fss0-0_freertos_ti-arm-clang_clean:
+	$(MAKE) -C examples/benchmarks/usb/usb_cdc_benchmark/am261x-som/r5fss0-0_freertos/ti-arm-clang -f makefile clean
+
+ usb_cdc_benchmark_am261x-lp_r5fss0-0_freertos_ti-arm-clang_clean:
+	$(MAKE) -C examples/benchmarks/usb/usb_cdc_benchmark/am261x-lp/r5fss0-0_freertos/ti-arm-clang -f makefile clean
+
+ usb_dfu_benchmark_am261x-som_r5fss0-0_freertos_ti-arm-clang_clean:
+	$(MAKE) -C examples/benchmarks/usb/usb_dfu_benchmark/am261x-som/r5fss0-0_freertos/ti-arm-clang -f makefile clean
+
+ usb_dfu_benchmark_am261x-lp_r5fss0-0_freertos_ti-arm-clang_clean:
+	$(MAKE) -C examples/benchmarks/usb/usb_dfu_benchmark/am261x-lp/r5fss0-0_freertos/ti-arm-clang -f makefile clean
+
+ usb_ncm_benchmark_am261x-som_r5fss0-0_freertos_ti-arm-clang_clean:
+	$(MAKE) -C examples/benchmarks/usb/usb_ncm_benchmark/am261x-som/r5fss0-0_freertos/ti-arm-clang -f makefile clean
+
+ usb_ncm_benchmark_am261x-lp_r5fss0-0_freertos_ti-arm-clang_clean:
+	$(MAKE) -C examples/benchmarks/usb/usb_ncm_benchmark/am261x-lp/r5fss0-0_freertos/ti-arm-clang -f makefile clean
 
  pmic_esm_level_mode_am261x-lp_r5fss0-0_nortos_ti-arm-clang_clean:
 	$(MAKE) -C examples/drivers/pmic/pmic_esm_level_mode/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile clean
@@ -6074,11 +6334,17 @@ examples-private-clean: $(BUILD_COMBO_EXAMPLE_PRIVATE_CLEAN_ALL)
  hello_world_am261x-som_r5fss0-0_freertos_ti-arm-clang_clean:
 	$(MAKE) -C examples/hello_world/am261x-som/r5fss0-0_freertos/ti-arm-clang -f makefile clean
 
+ hello_world_am261x-som_r5fss0-0_threadx_ti-arm-clang_clean:
+	$(MAKE) -C examples/hello_world/am261x-som/r5fss0-0_threadx/ti-arm-clang -f makefile clean
+
  hello_world_am261x-lp_r5fss0-0_nortos_ti-arm-clang_clean:
 	$(MAKE) -C examples/hello_world/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile clean
 
  hello_world_am261x-lp_r5fss0-0_freertos_ti-arm-clang_clean:
 	$(MAKE) -C examples/hello_world/am261x-lp/r5fss0-0_freertos/ti-arm-clang -f makefile clean
+
+ hello_world_am261x-lp_r5fss0-0_threadx_ti-arm-clang_clean:
+	$(MAKE) -C examples/hello_world/am261x-lp/r5fss0-0_threadx/ti-arm-clang -f makefile clean
 
  hello_world_am261x-lp_r5fss0-0_nortos_iar-arm_clean:
 	$(MAKE) -C examples/hello_world/am261x-lp/r5fss0-0_nortos/iar-arm -f makefile clean
@@ -6187,6 +6453,12 @@ examples-private-clean: $(BUILD_COMBO_EXAMPLE_PRIVATE_CLEAN_ALL)
 
  task_switch_am261x-lp_r5fss0-0_freertos_ti-arm-clang_clean:
 	$(MAKE) -C examples/kernel/freertos/task_switch/am261x-lp/r5fss0-0_freertos/ti-arm-clang -f makefile clean
+
+ task_switch_am261x-som_r5fss0-0_threadx_ti-arm-clang_clean:
+	$(MAKE) -C examples/kernel/threadx/task_switch/am261x-som/r5fss0-0_threadx/ti-arm-clang -f makefile clean
+
+ task_switch_am261x-lp_r5fss0-0_threadx_ti-arm-clang_clean:
+	$(MAKE) -C examples/kernel/threadx/task_switch/am261x-lp/r5fss0-0_threadx/ti-arm-clang -f makefile clean
 
  task_switch_mpu_am261x-lp_r5fss0-0_freertos_mpu_ti-arm-clang_clean:
 	$(MAKE) -C examples/kernel/freertos/task_switch_mpu/am261x-lp/r5fss0-0_freertos_mpu/ti-arm-clang -f makefile clean
@@ -6313,6 +6585,18 @@ examples-private-clean: $(BUILD_COMBO_EXAMPLE_PRIVATE_CLEAN_ALL)
 
  enet_lwip_cpsw_am261x-som_r5fss0-0_freertos_ti-arm-clang_clean:
 	$(MAKE) -C source/networking/enet/core/examples/lwip/enet_lwip_cpsw/am261x-som/r5fss0-0_freertos/ti-arm-clang -f makefile clean
+
+ tsn_demo_listener_am261x-lp_r5fss0-0_freertos_ti-arm-clang_clean:
+	$(MAKE) -C source/networking/enet/core/examples/tsn_demo/listener/am261x-lp/r5fss0-0_freertos/ti-arm-clang -f makefile clean
+
+ tsn_demo_listener_am261x-som_r5fss0-0_freertos_ti-arm-clang_clean:
+	$(MAKE) -C source/networking/enet/core/examples/tsn_demo/listener/am261x-som/r5fss0-0_freertos/ti-arm-clang -f makefile clean
+
+ tsn_demo_talker_am261x-lp_r5fss0-0_freertos_ti-arm-clang_clean:
+	$(MAKE) -C source/networking/enet/core/examples/tsn_demo/talker/am261x-lp/r5fss0-0_freertos/ti-arm-clang -f makefile clean
+
+ tsn_demo_talker_am261x-som_r5fss0-0_freertos_ti-arm-clang_clean:
+	$(MAKE) -C source/networking/enet/core/examples/tsn_demo/talker/am261x-som/r5fss0-0_freertos/ti-arm-clang -f makefile clean
 
  icss_emac_lwip_am261x-lp_r5fss0-0_freertos_ti-arm-clang_clean:
 	$(MAKE) -C examples/networking/lwip/icss_emac_lwip/am261x-lp/r5fss0-0_freertos/ti-arm-clang -f makefile clean
@@ -6719,6 +7003,12 @@ examples-private-clean: $(BUILD_COMBO_EXAMPLE_PRIVATE_CLEAN_ALL)
  ipc_notify_echo_am261x-lp_system_freertos_nortos_ti-arm-clang_clean:
 	$(MAKE) -C examples/drivers/ipc/ipc_notify_echo/am261x-lp/system_freertos_nortos/ti-arm-clang -f makefile clean
 
+ ipc_notify_echo_am261x-lp_system_threadx_nortos_ti-arm-clang_clean:
+	$(MAKE) -C examples/drivers/ipc/ipc_notify_echo/am261x-lp/system_threadx_nortos/ti-arm-clang -f makefile clean
+
+ ipc_notify_echo_am261x-som_system_threadx_nortos_ti-arm-clang_clean:
+	$(MAKE) -C examples/drivers/ipc/ipc_notify_echo/am261x-som/system_threadx_nortos/ti-arm-clang -f makefile clean
+
  ipc_notify_echo_optishare_am261x-lp_system_freertos_nortos_ti-arm-clang_clean:
 	$(MAKE) -C examples/drivers/ipc/ipc_notify_echo_optishare/am261x-lp/system_freertos_nortos/ti-arm-clang -f makefile clean
 
@@ -6781,6 +7071,12 @@ examples-private-clean: $(BUILD_COMBO_EXAMPLE_PRIVATE_CLEAN_ALL)
 
  empty_am261x-lp_system_nortos_iar-arm_clean:
 	$(MAKE) -C examples/empty/am261x-lp/system_nortos/iar-arm -f makefile clean
+
+ empty_am261x-som_system_threadx_ti-arm-clang_clean:
+	$(MAKE) -C examples/empty/am261x-som/system_threadx/ti-arm-clang -f makefile clean
+
+ empty_am261x-lp_system_threadx_ti-arm-clang_clean:
+	$(MAKE) -C examples/empty/am261x-lp/system_threadx/ti-arm-clang -f makefile clean
 
  sdl_stc_am261x-som_system_nortos_nortos_ti-arm-clang_clean:
 	$(MAKE) -C examples/sdl/stc/stc_mcu/am261x-som/system_nortos_nortos/ti-arm-clang -f makefile clean
@@ -6982,8 +7278,10 @@ BUILD_COMBO_EXAMPLE_SCRUB_ALL += gpio_led_blink_am261x-lp_r5fss0-0_nortos_iar-ar
 BUILD_COMBO_EXAMPLE_SCRUB_ALL += hsm_services_am261x-lp_r5fss0-0_nortos_ti-arm-clang_scrub
 BUILD_COMBO_EXAMPLE_SCRUB_ALL += i2c_led_blink_am261x-som_r5fss0-0_nortos_ti-arm-clang_scrub
 BUILD_COMBO_EXAMPLE_SCRUB_ALL += i2c_led_blink_am261x-som_r5fss0-0_freertos_ti-arm-clang_scrub
+BUILD_COMBO_EXAMPLE_SCRUB_ALL += i2c_led_blink_am261x-som_r5fss0-0_threadx_ti-arm-clang_scrub
 BUILD_COMBO_EXAMPLE_SCRUB_ALL += i2c_led_blink_am261x-lp_r5fss0-0_nortos_ti-arm-clang_scrub
 BUILD_COMBO_EXAMPLE_SCRUB_ALL += i2c_led_blink_am261x-lp_r5fss0-0_freertos_ti-arm-clang_scrub
+BUILD_COMBO_EXAMPLE_SCRUB_ALL += i2c_led_blink_am261x-lp_r5fss0-0_threadx_ti-arm-clang_scrub
 BUILD_COMBO_EXAMPLE_SCRUB_ALL += i2c_led_blink_am261x-lp_r5fss0-0_nortos_iar-arm_scrub
 BUILD_COMBO_EXAMPLE_SCRUB_ALL += i2c_led_blink_am261x-lp_r5fss0-0_freertos_iar-arm_scrub
 BUILD_COMBO_EXAMPLE_SCRUB_ALL += i2c_led_blink_interrupt_lld_am261x-lp_r5fss0-0_nortos_ti-arm-clang_scrub
@@ -7119,6 +7417,7 @@ BUILD_COMBO_EXAMPLE_SCRUB_ALL += ospi_dual_flash_io_am261x-som_r5fss0-0_nortos_t
 BUILD_COMBO_EXAMPLE_SCRUB_ALL += ospi_dual_flash_io_am261x-lp_r5fss0-0_nortos_ti-arm-clang_scrub
 BUILD_COMBO_EXAMPLE_SCRUB_ALL += optiflash_ocram_benchmark_am261x-lp_r5fss0-0_freertos_ti-arm-clang_scrub
 BUILD_COMBO_EXAMPLE_SCRUB_ALL += optiflash_ocram_benchmark_am261x-som_r5fss0-0_freertos_ti-arm-clang_scrub
+BUILD_COMBO_EXAMPLE_SCRUB_ALL += psram_xip_benchmark_am261x-lp_r5fss0-0_freertos_ti-arm-clang_scrub
 BUILD_COMBO_EXAMPLE_SCRUB_ALL += optiflash_xip_benchmark_am261x-lp_r5fss0-0_freertos_ti-arm-clang_scrub
 BUILD_COMBO_EXAMPLE_SCRUB_ALL += optiflash_xip_benchmark_am261x-som_r5fss0-0_freertos_ti-arm-clang_scrub
 BUILD_COMBO_EXAMPLE_SCRUB_ALL += optiflash_xip_benchmark_l2_8k_am261x-lp_r5fss0-0_freertos_ti-arm-clang_scrub
@@ -7131,6 +7430,16 @@ BUILD_COMBO_EXAMPLE_SCRUB_ALL += optiflash_xip_benchmark_l2_64k_am261x-lp_r5fss0
 BUILD_COMBO_EXAMPLE_SCRUB_ALL += optiflash_xip_benchmark_l2_64k_am261x-som_r5fss0-0_freertos_ti-arm-clang_scrub
 BUILD_COMBO_EXAMPLE_SCRUB_ALL += ocmc_benchmarking_am261x-lp_r5fss0-0_freertos_ti-arm-clang_scrub
 BUILD_COMBO_EXAMPLE_SCRUB_ALL += ocmc_benchmarking_am261x-som_r5fss0-0_freertos_ti-arm-clang_scrub
+BUILD_COMBO_EXAMPLE_SCRUB_ALL += usb_bulk_benchmark_am261x-som_r5fss0-0_freertos_ti-arm-clang_scrub
+BUILD_COMBO_EXAMPLE_SCRUB_ALL += usb_bulk_benchmark_am261x-lp_r5fss0-0_freertos_ti-arm-clang_scrub
+BUILD_COMBO_EXAMPLE_SCRUB_ALL += usb_vendor_benchmark_am261x-som_r5fss0-0_freertos_ti-arm-clang_scrub
+BUILD_COMBO_EXAMPLE_SCRUB_ALL += usb_vendor_benchmark_am261x-lp_r5fss0-0_freertos_ti-arm-clang_scrub
+BUILD_COMBO_EXAMPLE_SCRUB_ALL += usb_cdc_benchmark_am261x-som_r5fss0-0_freertos_ti-arm-clang_scrub
+BUILD_COMBO_EXAMPLE_SCRUB_ALL += usb_cdc_benchmark_am261x-lp_r5fss0-0_freertos_ti-arm-clang_scrub
+BUILD_COMBO_EXAMPLE_SCRUB_ALL += usb_dfu_benchmark_am261x-som_r5fss0-0_freertos_ti-arm-clang_scrub
+BUILD_COMBO_EXAMPLE_SCRUB_ALL += usb_dfu_benchmark_am261x-lp_r5fss0-0_freertos_ti-arm-clang_scrub
+BUILD_COMBO_EXAMPLE_SCRUB_ALL += usb_ncm_benchmark_am261x-som_r5fss0-0_freertos_ti-arm-clang_scrub
+BUILD_COMBO_EXAMPLE_SCRUB_ALL += usb_ncm_benchmark_am261x-lp_r5fss0-0_freertos_ti-arm-clang_scrub
 BUILD_COMBO_EXAMPLE_SCRUB_ALL += pmic_esm_level_mode_am261x-lp_r5fss0-0_nortos_ti-arm-clang_scrub
 BUILD_COMBO_EXAMPLE_SCRUB_ALL += pmic_esm_level_mode_am261x-lp_r5fss0-0_freertos_ti-arm-clang_scrub
 BUILD_COMBO_EXAMPLE_SCRUB_ALL += pmic_esm_level_mode_am261x-som_r5fss0-0_nortos_ti-arm-clang_scrub
@@ -7205,8 +7514,10 @@ BUILD_COMBO_EXAMPLE_SCRUB_ALL += watchdog_reset_mode_am261x-som_r5fss0-0_nortos_
 BUILD_COMBO_EXAMPLE_SCRUB_ALL += watchdog_reset_mode_am261x-lp_r5fss0-0_nortos_ti-arm-clang_scrub
 BUILD_COMBO_EXAMPLE_SCRUB_ALL += hello_world_am261x-som_r5fss0-0_nortos_ti-arm-clang_scrub
 BUILD_COMBO_EXAMPLE_SCRUB_ALL += hello_world_am261x-som_r5fss0-0_freertos_ti-arm-clang_scrub
+BUILD_COMBO_EXAMPLE_SCRUB_ALL += hello_world_am261x-som_r5fss0-0_threadx_ti-arm-clang_scrub
 BUILD_COMBO_EXAMPLE_SCRUB_ALL += hello_world_am261x-lp_r5fss0-0_nortos_ti-arm-clang_scrub
 BUILD_COMBO_EXAMPLE_SCRUB_ALL += hello_world_am261x-lp_r5fss0-0_freertos_ti-arm-clang_scrub
+BUILD_COMBO_EXAMPLE_SCRUB_ALL += hello_world_am261x-lp_r5fss0-0_threadx_ti-arm-clang_scrub
 BUILD_COMBO_EXAMPLE_SCRUB_ALL += hello_world_am261x-lp_r5fss0-0_nortos_iar-arm_scrub
 BUILD_COMBO_EXAMPLE_SCRUB_ALL += hello_world_am261x-lp_r5fss0-0_freertos_iar-arm_scrub
 BUILD_COMBO_EXAMPLE_SCRUB_ALL += hello_world_board_syscfg_am261x-som_r5fss0-0_nortos_ti-arm-clang_scrub
@@ -7243,6 +7554,8 @@ BUILD_COMBO_EXAMPLE_SCRUB_ALL += posix_demo_am261x-som_r5fss0-0_freertos_ti-arm-
 BUILD_COMBO_EXAMPLE_SCRUB_ALL += posix_demo_am261x-lp_r5fss0-0_freertos_ti-arm-clang_scrub
 BUILD_COMBO_EXAMPLE_SCRUB_ALL += task_switch_am261x-som_r5fss0-0_freertos_ti-arm-clang_scrub
 BUILD_COMBO_EXAMPLE_SCRUB_ALL += task_switch_am261x-lp_r5fss0-0_freertos_ti-arm-clang_scrub
+BUILD_COMBO_EXAMPLE_SCRUB_ALL += task_switch_am261x-som_r5fss0-0_threadx_ti-arm-clang_scrub
+BUILD_COMBO_EXAMPLE_SCRUB_ALL += task_switch_am261x-lp_r5fss0-0_threadx_ti-arm-clang_scrub
 BUILD_COMBO_EXAMPLE_SCRUB_ALL += task_switch_mpu_am261x-lp_r5fss0-0_freertos_mpu_ti-arm-clang_scrub
 BUILD_COMBO_EXAMPLE_SCRUB_ALL += task_switch_mpu_am261x-som_r5fss0-0_freertos_mpu_ti-arm-clang_scrub
 BUILD_COMBO_EXAMPLE_SCRUB_ALL += basic_smart_placement_am261x-som_r5fss0-0_nortos_ti-arm-clang_scrub
@@ -7285,6 +7598,10 @@ BUILD_COMBO_EXAMPLE_SCRUB_ALL += enet_cpsw_udpclient_am261x-lp_r5fss0-0_freertos
 BUILD_COMBO_EXAMPLE_SCRUB_ALL += enet_cpsw_udpclient_am261x-som_r5fss0-0_freertos_ti-arm-clang_scrub
 BUILD_COMBO_EXAMPLE_SCRUB_ALL += enet_lwip_cpsw_am261x-lp_r5fss0-0_freertos_ti-arm-clang_scrub
 BUILD_COMBO_EXAMPLE_SCRUB_ALL += enet_lwip_cpsw_am261x-som_r5fss0-0_freertos_ti-arm-clang_scrub
+BUILD_COMBO_EXAMPLE_SCRUB_ALL += tsn_demo_listener_am261x-lp_r5fss0-0_freertos_ti-arm-clang_scrub
+BUILD_COMBO_EXAMPLE_SCRUB_ALL += tsn_demo_listener_am261x-som_r5fss0-0_freertos_ti-arm-clang_scrub
+BUILD_COMBO_EXAMPLE_SCRUB_ALL += tsn_demo_talker_am261x-lp_r5fss0-0_freertos_ti-arm-clang_scrub
+BUILD_COMBO_EXAMPLE_SCRUB_ALL += tsn_demo_talker_am261x-som_r5fss0-0_freertos_ti-arm-clang_scrub
 BUILD_COMBO_EXAMPLE_SCRUB_ALL += icss_emac_lwip_am261x-lp_r5fss0-0_freertos_ti-arm-clang_scrub
 BUILD_COMBO_EXAMPLE_SCRUB_ALL += gptp_app_am261x-lp_r5fss0-0_freertos_ti-arm-clang_scrub
 BUILD_COMBO_EXAMPLE_SCRUB_ALL += gptp_app_am261x-som_r5fss0-0_freertos_ti-arm-clang_scrub
@@ -7409,6 +7726,8 @@ BUILD_COMBO_EXAMPLE_SCRUB_ALL += mpu_firewall_services_demo_am261x-som_system_no
 BUILD_COMBO_EXAMPLE_SCRUB_ALL += mpu_firewall_services_demo_am261x-lp_system_nortos_ti-arm-clang_scrub
 BUILD_COMBO_EXAMPLE_SCRUB_ALL += ipc_notify_echo_am261x-som_system_freertos_nortos_ti-arm-clang_scrub
 BUILD_COMBO_EXAMPLE_SCRUB_ALL += ipc_notify_echo_am261x-lp_system_freertos_nortos_ti-arm-clang_scrub
+BUILD_COMBO_EXAMPLE_SCRUB_ALL += ipc_notify_echo_am261x-lp_system_threadx_nortos_ti-arm-clang_scrub
+BUILD_COMBO_EXAMPLE_SCRUB_ALL += ipc_notify_echo_am261x-som_system_threadx_nortos_ti-arm-clang_scrub
 BUILD_COMBO_EXAMPLE_SCRUB_ALL += ipc_notify_echo_optishare_am261x-lp_system_freertos_nortos_ti-arm-clang_scrub
 BUILD_COMBO_EXAMPLE_SCRUB_ALL += ipc_rpmsg_echo_am261x-som_system_freertos_nortos_ti-arm-clang_scrub
 BUILD_COMBO_EXAMPLE_SCRUB_ALL += ipc_rpmsg_echo_am261x-lp_system_freertos_nortos_ti-arm-clang_scrub
@@ -7430,6 +7749,8 @@ BUILD_COMBO_EXAMPLE_SCRUB_ALL += empty_am261x-lp_system_freertos_iar-arm_scrub
 BUILD_COMBO_EXAMPLE_SCRUB_ALL += empty_am261x-som_system_nortos_ti-arm-clang_scrub
 BUILD_COMBO_EXAMPLE_SCRUB_ALL += empty_am261x-lp_system_nortos_ti-arm-clang_scrub
 BUILD_COMBO_EXAMPLE_SCRUB_ALL += empty_am261x-lp_system_nortos_iar-arm_scrub
+BUILD_COMBO_EXAMPLE_SCRUB_ALL += empty_am261x-som_system_threadx_ti-arm-clang_scrub
+BUILD_COMBO_EXAMPLE_SCRUB_ALL += empty_am261x-lp_system_threadx_ti-arm-clang_scrub
 BUILD_COMBO_EXAMPLE_SCRUB_ALL += sdl_stc_am261x-som_system_nortos_nortos_ti-arm-clang_scrub
 
 
@@ -7448,6 +7769,10 @@ BUILD_COMBO_EXAMPLE_PRIVATE_SCRUB_ALL += sent_decoder_using_iep_capture_am261x-l
 BUILD_COMBO_EXAMPLE_PRIVATE_SCRUB_ALL += sent_decoder_using_iep_capture_short_serial_msg_am261x-lp_icss_m0_pru0_fw_ti-pru-cgt_scrub
 BUILD_COMBO_EXAMPLE_PRIVATE_SCRUB_ALL += sent_encoder_pru_fw_am261x-lp_icss_m0_pru0_fw_ti-pru-cgt_scrub
 # Various Private System Example Targets
+
+ifneq ($(filter $(COMPILER),ti-arm-clang iar-arm),)
+BUILD_COMBO_EXAMPLE_SCRUB_ALL := $(foreach word, $(BUILD_COMBO_EXAMPLE_SCRUB_ALL), $(if $(findstring $(COMPILER), $(word)), $(word)))
+endif
 
 examples-scrub: $(BUILD_COMBO_EXAMPLE_SCRUB_ALL)
 
@@ -7725,6 +8050,12 @@ examples-scrub-private: $(BUILD_COMBO_EXAMPLE_PRIVATE_SCRUB_ALL)
 
  sbl_ospi_swap_am261x-lp_r5fss0-0_nortos_ti-arm-clang_scrub:
 	$(MAKE) -C examples/drivers/boot/sbl_ospi_swap/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile scrub
+
+ sbl_qspi_multicore_elf_am261x-som_r5fss0-0_nortos_ti-arm-clang_scrub:
+	$(MAKE) -C examples/drivers/boot/sbl_qspi_multicore_elf/am261x-som/r5fss0-0_nortos/ti-arm-clang -f makefile scrub
+
+ sbl_qspi_multicore_elf_am261x-lp_r5fss0-0_nortos_ti-arm-clang_scrub:
+	$(MAKE) -C examples/drivers/boot/sbl_qspi_multicore_elf/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile scrub
 
  sbl_uart_multicore_elf_am261x-som_r5fss0-0_nortos_ti-arm-clang_scrub:
 	$(MAKE) -C examples/drivers/boot/sbl_uart_multicore_elf/am261x-som/r5fss0-0_nortos/ti-arm-clang -f makefile scrub
@@ -8107,11 +8438,17 @@ examples-scrub-private: $(BUILD_COMBO_EXAMPLE_PRIVATE_SCRUB_ALL)
  i2c_led_blink_am261x-som_r5fss0-0_freertos_ti-arm-clang_scrub:
 	$(MAKE) -C examples/drivers/i2c/i2c_led_blink/am261x-som/r5fss0-0_freertos/ti-arm-clang -f makefile scrub
 
+ i2c_led_blink_am261x-som_r5fss0-0_threadx_ti-arm-clang_scrub:
+	$(MAKE) -C examples/drivers/i2c/i2c_led_blink/am261x-som/r5fss0-0_threadx/ti-arm-clang -f makefile scrub
+
  i2c_led_blink_am261x-lp_r5fss0-0_nortos_ti-arm-clang_scrub:
 	$(MAKE) -C examples/drivers/i2c/i2c_led_blink/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile scrub
 
  i2c_led_blink_am261x-lp_r5fss0-0_freertos_ti-arm-clang_scrub:
 	$(MAKE) -C examples/drivers/i2c/i2c_led_blink/am261x-lp/r5fss0-0_freertos/ti-arm-clang -f makefile scrub
+
+ i2c_led_blink_am261x-lp_r5fss0-0_threadx_ti-arm-clang_scrub:
+	$(MAKE) -C examples/drivers/i2c/i2c_led_blink/am261x-lp/r5fss0-0_threadx/ti-arm-clang -f makefile scrub
 
  i2c_led_blink_am261x-lp_r5fss0-0_nortos_iar-arm_scrub:
 	$(MAKE) -C examples/drivers/i2c/i2c_led_blink/am261x-lp/r5fss0-0_nortos/iar-arm -f makefile scrub
@@ -8518,6 +8855,9 @@ examples-scrub-private: $(BUILD_COMBO_EXAMPLE_PRIVATE_SCRUB_ALL)
  optiflash_ocram_benchmark_am261x-som_r5fss0-0_freertos_ti-arm-clang_scrub:
 	$(MAKE) -C examples/benchmarks/optiflash_benchmark/ocram/am261x-som/r5fss0-0_freertos/ti-arm-clang -f makefile scrub
 
+ psram_xip_benchmark_am261x-lp_r5fss0-0_freertos_ti-arm-clang_scrub:
+	$(MAKE) -C examples/benchmarks/optiflash_benchmark/psram_xip/am261x-lp/r5fss0-0_freertos/ti-arm-clang -f makefile scrub
+
  optiflash_xip_benchmark_am261x-lp_r5fss0-0_freertos_ti-arm-clang_scrub:
 	$(MAKE) -C examples/benchmarks/optiflash_benchmark/flash_xip/am261x-lp/r5fss0-0_freertos/ti-arm-clang -f makefile scrub
 
@@ -8553,6 +8893,36 @@ examples-scrub-private: $(BUILD_COMBO_EXAMPLE_PRIVATE_SCRUB_ALL)
 
  ocmc_benchmarking_am261x-som_r5fss0-0_freertos_ti-arm-clang_scrub:
 	$(MAKE) -C examples/benchmarks/optiflash_benchmark/flash_xip_smart_placement/am261x-som/r5fss0-0_freertos/ti-arm-clang -f makefile scrub
+
+ usb_bulk_benchmark_am261x-som_r5fss0-0_freertos_ti-arm-clang_scrub:
+	$(MAKE) -C examples/benchmarks/usb/usb_bulk_benchmark/am261x-som/r5fss0-0_freertos/ti-arm-clang -f makefile scrub
+
+ usb_bulk_benchmark_am261x-lp_r5fss0-0_freertos_ti-arm-clang_scrub:
+	$(MAKE) -C examples/benchmarks/usb/usb_bulk_benchmark/am261x-lp/r5fss0-0_freertos/ti-arm-clang -f makefile scrub
+
+ usb_vendor_benchmark_am261x-som_r5fss0-0_freertos_ti-arm-clang_scrub:
+	$(MAKE) -C examples/benchmarks/usb/usb_vendor_benchmark/am261x-som/r5fss0-0_freertos/ti-arm-clang -f makefile scrub
+
+ usb_vendor_benchmark_am261x-lp_r5fss0-0_freertos_ti-arm-clang_scrub:
+	$(MAKE) -C examples/benchmarks/usb/usb_vendor_benchmark/am261x-lp/r5fss0-0_freertos/ti-arm-clang -f makefile scrub
+
+ usb_cdc_benchmark_am261x-som_r5fss0-0_freertos_ti-arm-clang_scrub:
+	$(MAKE) -C examples/benchmarks/usb/usb_cdc_benchmark/am261x-som/r5fss0-0_freertos/ti-arm-clang -f makefile scrub
+
+ usb_cdc_benchmark_am261x-lp_r5fss0-0_freertos_ti-arm-clang_scrub:
+	$(MAKE) -C examples/benchmarks/usb/usb_cdc_benchmark/am261x-lp/r5fss0-0_freertos/ti-arm-clang -f makefile scrub
+
+ usb_dfu_benchmark_am261x-som_r5fss0-0_freertos_ti-arm-clang_scrub:
+	$(MAKE) -C examples/benchmarks/usb/usb_dfu_benchmark/am261x-som/r5fss0-0_freertos/ti-arm-clang -f makefile scrub
+
+ usb_dfu_benchmark_am261x-lp_r5fss0-0_freertos_ti-arm-clang_scrub:
+	$(MAKE) -C examples/benchmarks/usb/usb_dfu_benchmark/am261x-lp/r5fss0-0_freertos/ti-arm-clang -f makefile scrub
+
+ usb_ncm_benchmark_am261x-som_r5fss0-0_freertos_ti-arm-clang_scrub:
+	$(MAKE) -C examples/benchmarks/usb/usb_ncm_benchmark/am261x-som/r5fss0-0_freertos/ti-arm-clang -f makefile scrub
+
+ usb_ncm_benchmark_am261x-lp_r5fss0-0_freertos_ti-arm-clang_scrub:
+	$(MAKE) -C examples/benchmarks/usb/usb_ncm_benchmark/am261x-lp/r5fss0-0_freertos/ti-arm-clang -f makefile scrub
 
  pmic_esm_level_mode_am261x-lp_r5fss0-0_nortos_ti-arm-clang_scrub:
 	$(MAKE) -C examples/drivers/pmic/pmic_esm_level_mode/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile scrub
@@ -8776,11 +9146,17 @@ examples-scrub-private: $(BUILD_COMBO_EXAMPLE_PRIVATE_SCRUB_ALL)
  hello_world_am261x-som_r5fss0-0_freertos_ti-arm-clang_scrub:
 	$(MAKE) -C examples/hello_world/am261x-som/r5fss0-0_freertos/ti-arm-clang -f makefile scrub
 
+ hello_world_am261x-som_r5fss0-0_threadx_ti-arm-clang_scrub:
+	$(MAKE) -C examples/hello_world/am261x-som/r5fss0-0_threadx/ti-arm-clang -f makefile scrub
+
  hello_world_am261x-lp_r5fss0-0_nortos_ti-arm-clang_scrub:
 	$(MAKE) -C examples/hello_world/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile scrub
 
  hello_world_am261x-lp_r5fss0-0_freertos_ti-arm-clang_scrub:
 	$(MAKE) -C examples/hello_world/am261x-lp/r5fss0-0_freertos/ti-arm-clang -f makefile scrub
+
+ hello_world_am261x-lp_r5fss0-0_threadx_ti-arm-clang_scrub:
+	$(MAKE) -C examples/hello_world/am261x-lp/r5fss0-0_threadx/ti-arm-clang -f makefile scrub
 
  hello_world_am261x-lp_r5fss0-0_nortos_iar-arm_scrub:
 	$(MAKE) -C examples/hello_world/am261x-lp/r5fss0-0_nortos/iar-arm -f makefile scrub
@@ -8889,6 +9265,12 @@ examples-scrub-private: $(BUILD_COMBO_EXAMPLE_PRIVATE_SCRUB_ALL)
 
  task_switch_am261x-lp_r5fss0-0_freertos_ti-arm-clang_scrub:
 	$(MAKE) -C examples/kernel/freertos/task_switch/am261x-lp/r5fss0-0_freertos/ti-arm-clang -f makefile scrub
+
+ task_switch_am261x-som_r5fss0-0_threadx_ti-arm-clang_scrub:
+	$(MAKE) -C examples/kernel/threadx/task_switch/am261x-som/r5fss0-0_threadx/ti-arm-clang -f makefile scrub
+
+ task_switch_am261x-lp_r5fss0-0_threadx_ti-arm-clang_scrub:
+	$(MAKE) -C examples/kernel/threadx/task_switch/am261x-lp/r5fss0-0_threadx/ti-arm-clang -f makefile scrub
 
  task_switch_mpu_am261x-lp_r5fss0-0_freertos_mpu_ti-arm-clang_scrub:
 	$(MAKE) -C examples/kernel/freertos/task_switch_mpu/am261x-lp/r5fss0-0_freertos_mpu/ti-arm-clang -f makefile scrub
@@ -9015,6 +9397,18 @@ examples-scrub-private: $(BUILD_COMBO_EXAMPLE_PRIVATE_SCRUB_ALL)
 
  enet_lwip_cpsw_am261x-som_r5fss0-0_freertos_ti-arm-clang_scrub:
 	$(MAKE) -C source/networking/enet/core/examples/lwip/enet_lwip_cpsw/am261x-som/r5fss0-0_freertos/ti-arm-clang -f makefile scrub
+
+ tsn_demo_listener_am261x-lp_r5fss0-0_freertos_ti-arm-clang_scrub:
+	$(MAKE) -C source/networking/enet/core/examples/tsn_demo/listener/am261x-lp/r5fss0-0_freertos/ti-arm-clang -f makefile scrub
+
+ tsn_demo_listener_am261x-som_r5fss0-0_freertos_ti-arm-clang_scrub:
+	$(MAKE) -C source/networking/enet/core/examples/tsn_demo/listener/am261x-som/r5fss0-0_freertos/ti-arm-clang -f makefile scrub
+
+ tsn_demo_talker_am261x-lp_r5fss0-0_freertos_ti-arm-clang_scrub:
+	$(MAKE) -C source/networking/enet/core/examples/tsn_demo/talker/am261x-lp/r5fss0-0_freertos/ti-arm-clang -f makefile scrub
+
+ tsn_demo_talker_am261x-som_r5fss0-0_freertos_ti-arm-clang_scrub:
+	$(MAKE) -C source/networking/enet/core/examples/tsn_demo/talker/am261x-som/r5fss0-0_freertos/ti-arm-clang -f makefile scrub
 
  icss_emac_lwip_am261x-lp_r5fss0-0_freertos_ti-arm-clang_scrub:
 	$(MAKE) -C examples/networking/lwip/icss_emac_lwip/am261x-lp/r5fss0-0_freertos/ti-arm-clang -f makefile scrub
@@ -9421,6 +9815,12 @@ examples-scrub-private: $(BUILD_COMBO_EXAMPLE_PRIVATE_SCRUB_ALL)
  ipc_notify_echo_am261x-lp_system_freertos_nortos_ti-arm-clang_scrub:
 	$(MAKE) -C examples/drivers/ipc/ipc_notify_echo/am261x-lp/system_freertos_nortos/ti-arm-clang -f makefile scrub
 
+ ipc_notify_echo_am261x-lp_system_threadx_nortos_ti-arm-clang_scrub:
+	$(MAKE) -C examples/drivers/ipc/ipc_notify_echo/am261x-lp/system_threadx_nortos/ti-arm-clang -f makefile scrub
+
+ ipc_notify_echo_am261x-som_system_threadx_nortos_ti-arm-clang_scrub:
+	$(MAKE) -C examples/drivers/ipc/ipc_notify_echo/am261x-som/system_threadx_nortos/ti-arm-clang -f makefile scrub
+
  ipc_notify_echo_optishare_am261x-lp_system_freertos_nortos_ti-arm-clang_scrub:
 	$(MAKE) -C examples/drivers/ipc/ipc_notify_echo_optishare/am261x-lp/system_freertos_nortos/ti-arm-clang -f makefile scrub
 
@@ -9484,6 +9884,12 @@ examples-scrub-private: $(BUILD_COMBO_EXAMPLE_PRIVATE_SCRUB_ALL)
  empty_am261x-lp_system_nortos_iar-arm_scrub:
 	$(MAKE) -C examples/empty/am261x-lp/system_nortos/iar-arm -f makefile scrub
 
+ empty_am261x-som_system_threadx_ti-arm-clang_scrub:
+	$(MAKE) -C examples/empty/am261x-som/system_threadx/ti-arm-clang -f makefile scrub
+
+ empty_am261x-lp_system_threadx_ti-arm-clang_scrub:
+	$(MAKE) -C examples/empty/am261x-lp/system_threadx/ti-arm-clang -f makefile scrub
+
  sdl_stc_am261x-som_system_nortos_nortos_ti-arm-clang_scrub:
 	$(MAKE) -C examples/sdl/stc/stc_mcu/am261x-som/system_nortos_nortos/ti-arm-clang -f makefile scrub
 
@@ -9508,6 +9914,8 @@ sbl: libs
 	$(MAKE) -C examples/drivers/boot/sbl_ospi_nand_multicore_elf/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile all
 	$(MAKE) -C examples/drivers/boot/sbl_ospi_swap/am261x-som/r5fss0-0_nortos/ti-arm-clang -f makefile all
 	$(MAKE) -C examples/drivers/boot/sbl_ospi_swap/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile all
+	$(MAKE) -C examples/drivers/boot/sbl_qspi_multicore_elf/am261x-som/r5fss0-0_nortos/ti-arm-clang -f makefile all
+	$(MAKE) -C examples/drivers/boot/sbl_qspi_multicore_elf/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile all
 	$(MAKE) -C examples/drivers/boot/sbl_uart_multicore_elf/am261x-som/r5fss0-0_nortos/ti-arm-clang -f makefile all
 	$(MAKE) -C examples/drivers/boot/sbl_uart_multicore_elf/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile all
 	$(MAKE) -C examples/drivers/boot/sbl_uart_uniflash/am261x-som/r5fss0-0_nortos/ti-arm-clang -f makefile all
@@ -9534,6 +9942,8 @@ sbl-clean:
 	$(MAKE) -C examples/drivers/boot/sbl_ospi_nand_multicore_elf/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile clean
 	$(MAKE) -C examples/drivers/boot/sbl_ospi_swap/am261x-som/r5fss0-0_nortos/ti-arm-clang -f makefile clean
 	$(MAKE) -C examples/drivers/boot/sbl_ospi_swap/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile clean
+	$(MAKE) -C examples/drivers/boot/sbl_qspi_multicore_elf/am261x-som/r5fss0-0_nortos/ti-arm-clang -f makefile clean
+	$(MAKE) -C examples/drivers/boot/sbl_qspi_multicore_elf/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile clean
 	$(MAKE) -C examples/drivers/boot/sbl_uart_multicore_elf/am261x-som/r5fss0-0_nortos/ti-arm-clang -f makefile clean
 	$(MAKE) -C examples/drivers/boot/sbl_uart_multicore_elf/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile clean
 	$(MAKE) -C examples/drivers/boot/sbl_uart_uniflash/am261x-som/r5fss0-0_nortos/ti-arm-clang -f makefile clean
@@ -9560,6 +9970,8 @@ sbl-scrub:
 	$(MAKE) -C examples/drivers/boot/sbl_ospi_nand_multicore_elf/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile scrub
 	$(MAKE) -C examples/drivers/boot/sbl_ospi_swap/am261x-som/r5fss0-0_nortos/ti-arm-clang -f makefile scrub
 	$(MAKE) -C examples/drivers/boot/sbl_ospi_swap/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile scrub
+	$(MAKE) -C examples/drivers/boot/sbl_qspi_multicore_elf/am261x-som/r5fss0-0_nortos/ti-arm-clang -f makefile scrub
+	$(MAKE) -C examples/drivers/boot/sbl_qspi_multicore_elf/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile scrub
 	$(MAKE) -C examples/drivers/boot/sbl_uart_multicore_elf/am261x-som/r5fss0-0_nortos/ti-arm-clang -f makefile scrub
 	$(MAKE) -C examples/drivers/boot/sbl_uart_multicore_elf/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile scrub
 	$(MAKE) -C examples/drivers/boot/sbl_uart_uniflash/am261x-som/r5fss0-0_nortos/ti-arm-clang -f makefile scrub

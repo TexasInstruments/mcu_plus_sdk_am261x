@@ -1,5 +1,9 @@
 var group__BOARD__RAM__MODULE =
 [
+    [ "Ram_MrConfig", "structRam__MrConfig.html", [
+      [ "address", "structRam__MrConfig.html#af13c82dbf998247eed53614892bf6b89", null ],
+      [ "value", "structRam__MrConfig.html#afde745add5ab199f462d7ad26f4bdd86", null ]
+    ] ],
     [ "Ram_DevConfig", "structRam__DevConfig.html", [
       [ "cmdRd", "structRam__DevConfig.html#ac1d979e3bb847f64a005ab718b070750", null ],
       [ "cmdWr", "structRam__DevConfig.html#af5c7b384a49ee6e000b7872ea80ad7b2", null ],
@@ -8,7 +12,11 @@ var group__BOARD__RAM__MODULE =
       [ "cmdRegWr", "structRam__DevConfig.html#a8c162c4f16fa09fd4b26550ce98d3c36", null ],
       [ "dummyClksRd", "structRam__DevConfig.html#a9f837a01eaa916b411d63ff5171ba08f", null ],
       [ "dummyClksWr", "structRam__DevConfig.html#a0d52c5ae173db726f3434706b81c111c", null ],
-      [ "dummyClksCmd", "structRam__DevConfig.html#a7d738039c97291269f72c1e79df79ca9", null ]
+      [ "dummyClksCmd", "structRam__DevConfig.html#a7d738039c97291269f72c1e79df79ca9", null ],
+      [ "cmdExtType", "structRam__DevConfig.html#a0f28d226ce308dae84e785f56de06efa", null ],
+      [ "mrCount", "structRam__DevConfig.html#ac10f5206d5bfc974b4abee3b3ce6d35a", null ],
+      [ "mrValWidth", "structRam__DevConfig.html#a41f5f17a88dbb57d1e7791739efeecf9", null ],
+      [ "mrConfig", "structRam__DevConfig.html#a47e3101d7240a70b09310f2334138d6c", null ]
     ] ],
     [ "Ram_Attrs", "structRam__Attrs.html", [
       [ "ramType", "structRam__Attrs.html#a6390da376a36f25e8b6041aa39597db2", null ],
@@ -16,7 +24,8 @@ var group__BOARD__RAM__MODULE =
       [ "deviceId", "structRam__Attrs.html#a669fa30f8367d055cb278e51ebd36e9a", null ],
       [ "manufacturerId", "structRam__Attrs.html#a1cb18a104a4781563972bd7e03acdfbb", null ],
       [ "driverInstance", "structRam__Attrs.html#a558e86a917b8422c92539b970374e446", null ],
-      [ "ramSize", "structRam__Attrs.html#a09fe085106292800bd7776eb50e7f6a9", null ]
+      [ "ramSize", "structRam__Attrs.html#a09fe085106292800bd7776eb50e7f6a9", null ],
+      [ "pageSize", "structRam__Attrs.html#ad08c8917440e8ef049654e8cba2b7382", null ]
     ] ],
     [ "Ram_Fxns", "structRam__Fxns.html", [
       [ "openFxn", "structRam__Fxns.html#a86485f0bbe7884dd8f2832ffd3478d17", null ],

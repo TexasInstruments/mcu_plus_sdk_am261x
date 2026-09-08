@@ -43,7 +43,7 @@
   <td id="projectlogo"><a href="https://www.ti.com"><img alt="Logo" src="ti_logo.svg"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AM261x MCU+ SDK
-   &#160;<span id="projectnumber">26.00.00</span>
+   &#160;<span id="projectnumber">26.01.00</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -92,22 +92,23 @@ $(document).ready(function(){initNavTree('USB_DEVICE_DRIVER.html',''); initResiz
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#autotoc_md749">Introduction</a></li>
-<li class="level1"><a href="#autotoc_md750">Features Supported</a><ul><li class="level2"><a href="#autotoc_md751">TinyUSB</a></li>
-<li class="level2"><a href="#autotoc_md752">USB Device Driver</a></li>
-<li class="level2"><a href="#autotoc_md753">SoC Porting Layer</a></li>
+<ul><li class="level1"><a href="#autotoc_md773">Introduction</a></li>
+<li class="level1"><a href="#autotoc_md774">Features Supported</a><ul><li class="level2"><a href="#autotoc_md775">TinyUSB</a></li>
+<li class="level2"><a href="#autotoc_md776">USB Device Driver</a></li>
+<li class="level2"><a href="#autotoc_md777">SoC Porting Layer</a></li>
 </ul>
 </li>
-<li class="level1"><a href="#autotoc_md754">SysConfig Features</a></li>
-<li class="level1"><a href="#autotoc_md755">Features Not Supported</a></li>
-<li class="level1"><a href="#autotoc_md756">Implementation Note</a></li>
-<li class="level1"><a href="#autotoc_md757">USB Logging</a></li>
-<li class="level1"><a href="#autotoc_md758">Important files and directory structure</a></li>
+<li class="level1"><a href="#autotoc_md778">SysConfig Features</a></li>
+<li class="level1"><a href="#autotoc_md779">Features Not Supported</a></li>
+<li class="level1"><a href="#autotoc_md780">Implementation Note</a></li>
+<li class="level1"><a href="#autotoc_md781">USB Logging</a></li>
+<li class="level1"><a href="#autotoc_md782">USB Benchmarking Performance</a></li>
+<li class="level1"><a href="#autotoc_md783">Important files and directory structure</a></li>
 <li class="level1"><a href="#TINYUSB_ADDITIONAL_REFERENCES">Additional References</a></li>
 </ul>
 </div>
 <div class="textblock"><p><a class="anchor" id="md_components_usb_usb_driver"></a></p>
-<h1><a class="anchor" id="autotoc_md749"></a>
+<h1><a class="anchor" id="autotoc_md773"></a>
 Introduction</h1>
 <p>The USB SW stack in MCU+ SDK is shown below.</p>
 <p> <style>div.image img[src="usb_cdc_ncm_tinyusb_arch_am261x.png"]{width:40%}</style> </p><div class="image">
@@ -121,9 +122,9 @@ USB SW Stack Block Diagram</div></div>
 </ul>
 <p>We encourage customers to use USB peripheral from TinyUSB APIs. The <a class="el" href="EXAMPLES_USB_CDC_ECHO.html">USB CDC Echo Example</a> is using the CDC class API from TinyUSB. This way, customers can easily adapt to other TinyUSB examples.</p>
 <p>For advanced customers or 3P USB stack vendors, refer to the USB device driver references listed below.</p>
-<h1><a class="anchor" id="autotoc_md750"></a>
+<h1><a class="anchor" id="autotoc_md774"></a>
 Features Supported</h1>
-<h2><a class="anchor" id="autotoc_md751"></a>
+<h2><a class="anchor" id="autotoc_md775"></a>
 TinyUSB</h2>
 <p>TinyUSB is an open-source cross-platform USB Host/Device stack for embedded system, designed to be memory-safe with no dynamic allocation and thread-safe with all interrupt events are deferred then handled in the non-ISR task function.</p>
 <p>Below features are supported in the SDK</p><ul>
@@ -131,9 +132,10 @@ TinyUSB</h2>
 <li>USB CDC Class</li>
 <li>USB DFU Class</li>
 <li>USB NCM Class</li>
+<li>USB Vendor Specific Class</li>
 </ul>
-<dl class="section note"><dt>Note</dt><dd>Supported TinyUSB version is <a href="https://github.com/hathach/tinyusb/tree/0.14.0">0.14.0</a></dd></dl>
-<h2><a class="anchor" id="autotoc_md752"></a>
+<dl class="section note"><dt>Note</dt><dd>Supported TinyUSB version is <a href="https://github.com/hathach/tinyusb/tree/0.20.0">0.20.0</a></dd></dl>
+<h2><a class="anchor" id="autotoc_md776"></a>
 USB Device Driver</h2>
 <p>The USB device driver is the USB HW specific software component that provides a programming abstraction to the Synopsys dwc3 USB IP included in the SOC and supports below features,</p>
 <ul>
@@ -142,7 +144,7 @@ USB Device Driver</h2>
 <li>USB device data transfer</li>
 <li>USB device interrupts and DMA</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md753"></a>
+<h2><a class="anchor" id="autotoc_md777"></a>
 SoC Porting Layer</h2>
 <p>The SoC porting layer for USB device driver is the glue layer between the SoC and the USB device driver and does the below,</p>
 <ul>
@@ -151,28 +153,28 @@ SoC Porting Layer</h2>
 <li>Clock settings needed for USB device</li>
 <li>Configure the USB HW for USB device mode</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md754"></a>
+<h1><a class="anchor" id="autotoc_md778"></a>
 SysConfig Features</h1>
 <dl class="section note"><dt>Note</dt><dd>It is strongly recommend to use SysConfig where it is available instead of using direct SW API calls. This will help simplify the SW application and also catch common mistakes early in the development cycle.</dd></dl>
 <ul>
 <li>Initialize USB device driver including clock setup and pinmux</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md755"></a>
+<h1><a class="anchor" id="autotoc_md779"></a>
 Features Not Supported</h1>
 <ul>
-<li>TinyUSB Class Drivers Other Than CDC, DFU &amp; NCM.</li>
+<li>TinyUSB Class Drivers Other Than CDC, DFU, NCM &amp; VSC.</li>
 <li>TinyUSB Host Core Driver and Class Drivers</li>
 <li>USB 3.0</li>
 <li>USB 2.0 Host Mode</li>
 <li>USB Dual Role Mode</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md756"></a>
+<h1><a class="anchor" id="autotoc_md780"></a>
 Implementation Note</h1>
 <ul>
 <li>USB device class driver should be operating as higher priority task if host driver is implemented as polling for device response with strict timeout.</li>
 <li>If Synopsys driver is used with TinyUSB, makefiles of both example and driver should define TINYUSB_INTEGRATION (like default cdc_echo example). This macro defined in driver and not in example or vice versa is an invalid combination.</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md757"></a>
+<h1><a class="anchor" id="autotoc_md781"></a>
 USB Logging</h1>
 <ul>
 <li>User needs to define following macros to enable logs.<ol type="1">
@@ -187,7 +189,13 @@ USB Logging</h1>
 <li>refer <a class="el" href="KERNEL_DPL_DEBUG_PAGE.html">Debug</a> for more information on <b>shared memory logging</b> and how to use it.</li>
 </ul>
 </dd></dl>
-<h1><a class="anchor" id="autotoc_md758"></a>
+<h1><a class="anchor" id="autotoc_md782"></a>
+USB Benchmarking Performance</h1>
+<p>For detailed USB performance benchmarking information on AM261x, including throughput measurements, optimization opportunities, and host testing tools, refer to <a class="el" href="USB_BENCHMARKING_PERFORMANCE.html">Performance Benchmarking</a>.</p>
+<ul>
+<li><a class="el" href="USB_BENCHMARKING_PERFORMANCE.html">Performance Benchmarking</a></li>
+</ul>
+<h1><a class="anchor" id="autotoc_md783"></a>
 Important files and directory structure</h1>
 <table class="doxtable">
 <tr>
@@ -226,6 +234,10 @@ Additional References</h1>
 <td><a class="el" href="EXAMPLES_USB_DFU.html">USB DFU Example</a>  </td></tr>
 <tr>
 <td><p class="starttd"><a class="el" href="EXAMPLES_USB_NCM.html">USB NCM Example</a> </p>
+<p class="endtd"></p>
+</td></tr>
+<tr>
+<td><p class="starttd"><a class="el" href="EXAMPLES_USB_VENDOR_ECHO.html">USB Vendor Bulk Echo Example</a> </p>
 <p class="endtd"></p>
 </td></tr>
 <tr>

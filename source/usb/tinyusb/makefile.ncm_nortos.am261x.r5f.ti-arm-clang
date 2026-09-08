@@ -102,6 +102,9 @@ INCLUDES_common := \
     -I../../networking/lwip/lwip-stack/src/include/lwip \
     -I../../networking/lwip/lwip-config/am261x/usb/ \
     -I../../networking/lwip/lwip-port/include/ \
+    -I../../networking/lwip/lwip-port/nortos/include \
+    -I../../networking/mbedtls_library/mbedtls/include \
+    -I../../networking/mbedtls_library/mbedtls_ti \
 
 DEFINES_common := \
     -DSOC_AM261X \

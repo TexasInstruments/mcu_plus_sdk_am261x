@@ -39,8 +39,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <usb/cdn/include/cdn_print.h>
-#include <usb/cdn/include/usb_init.h>
+
+#include <kernel/dpl/TaskP.h>
+#include <kernel/dpl/QueueP.h>
 
 #include "dhserver.h"
 #include "dnserver.h"
@@ -53,6 +54,29 @@
 #include "ti_drivers_config.h"
 #include "ti_drivers_open_close.h"
 #include "tusb.h"
+
+#define RX_QUEUE_SIZE 32
+#define TX_QUEUE_SIZE 32
+
+typedef struct
+{
+    QueueP_Elem elem;
+    struct pbuf * pbuf;
+}ncmQueueElem;
+
+QueueP_Object   freeQObjectRx;
+QueueP_Object   readyQObjectRx;
+QueueP_Handle   freeQHandleRx;
+QueueP_Handle   readyQHandleRx;
+
+QueueP_Object   freeQObjectTx;
+QueueP_Object   readyQObjectTx;
+QueueP_Handle   freeQHandleTx;
+QueueP_Handle   readyQHandleTx;
+
+
+static ncmQueueElem ncmRxQueueBuffer[RX_QUEUE_SIZE] = {0};
+static ncmQueueElem ncmTxQueueBuffer[TX_QUEUE_SIZE] = {0};
 
 #if LWIP_TCP
 static void lwiperf_report(void *arg, enum lwiperf_report_type report_type,
@@ -83,9 +107,6 @@ void lwiperf_example_init(void) {
 /* lwip context */
 static struct netif netif_data;
 
-/* shared between tud_network_recv_cb() and service_traffic() */
-static struct pbuf *received_frame;
-
 /* this is used by this code, ./class/net/net_driver.c, and usb_descriptors.c */
 /* ideally speaking, this should be generated from the hardware's unique ID (if
  * available) */
@@ -94,6 +115,7 @@ static struct pbuf *received_frame;
 #if defined(SOC_AM64X) || defined (SOC_AM243X)
 const uint8_t tud_network_mac_address[6] = {0x02, 0x02, 0x84, 0x6A, 0x96, 0x00};
 #endif
+
 /* network parameters of this MCU */
 static const ip4_addr_t ipaddr = INIT_IP4(192, 168, 7, 1);
 static const ip4_addr_t netmask = INIT_IP4(255, 255, 255, 0);
@@ -122,20 +144,21 @@ static const dhcp_config_t dhcp_config = {
 static err_t linkoutput_fn(struct netif *netif, struct pbuf *p) {
     (void)netif;
 
-    for (;;) {
-        /* if TinyUSB isn't ready, we must signal back to lwip that there is nothing
-         * we can do */
-        if (!tud_ready()) return ERR_USE;
+    /* if TinyUSB isn't ready, we must signal back to lwip that there is nothing
+     * we can do */
+    if (!tud_ready()) return ERR_USE;
 
-        /* if the network driver can accept another packet, we make it happen */
-        if (tud_network_can_xmit(p->tot_len)) {
-            tud_network_xmit(p, 0 /* unused for this example */);
-            return ERR_OK;
-        }
-        /* transfer execution to TinyUSB in the hopes that it will finish
-         * transmitting the prior packet */
-        tud_task();
+    ncmQueueElem *elem = (ncmQueueElem*)QueueP_get(freeQHandleTx);
+    if (elem != NULL)
+    {
+        pbuf_ref(p);
+        elem->pbuf = p;
+
+        QueueP_put(readyQHandleTx, elem);
+        return ERR_OK;
     }
+
+    return ERR_MEM;
 }
 
 static err_t ip4_output_fn(struct netif *netif, struct pbuf *p,
@@ -196,26 +219,46 @@ bool dns_query_proc(const char *name, ip4_addr_t *addr) {
 }
 
 bool tud_network_recv_cb(const uint8_t *src, uint16_t size) {
-    /* this shouldn't happen, but if we get another packet before
-    parsing the previous, we must signal our inability to accept it */
-    if (received_frame) {
+    /* Zero-length packets are valid in USB NCM protocol (keep-alive, flow control).
+     * Return true to acknowledge receipt without processing. */
+    if (size == 0) {
+        return true;
+    }
+    
+    ncmQueueElem *elem = (ncmQueueElem*)QueueP_get(freeQHandleRx);
+    if (elem == NULL)
+    {
         return false;
     }
+    
+    elem->pbuf = pbuf_alloc(PBUF_RAW, size, PBUF_POOL);
+    if (elem->pbuf) {
+        /* pbuf_alloc() has already initialized struct; all we need to do is copy
+         * the data */
+        pbuf_take(elem->pbuf, src, size);
+        QueueP_put(readyQHandleRx, elem);
+        tud_network_recv_renew();
+        return true;
+    } else {
+        QueueP_put(freeQHandleRx, elem);
+        return false;
+    }
+}
 
-    if (size) {
-        struct pbuf *p = pbuf_alloc(PBUF_RAW, size, PBUF_POOL);
-        /* DebugP_log("recv size=%d\r\n",size); */
-        if (p) {
-            /* pbuf_alloc() has already initialized struct; all we need to do is copy
-             * the data */
-            memcpy(p->payload, src, size);
+void QueueInit(){
+    freeQHandleRx = QueueP_create(&freeQObjectRx);
+    readyQHandleRx = QueueP_create(&readyQObjectRx);
 
-            /* store away the pointer for service_traffic() to later handle */
-            received_frame = p;
-        }
+    for (uint8_t i = 0; i < RX_QUEUE_SIZE; i++) {
+        QueueP_put(freeQHandleRx, &ncmRxQueueBuffer[i]);
     }
 
-    return true;
+    freeQHandleTx = QueueP_create(&freeQObjectTx);
+    readyQHandleTx = QueueP_create(&readyQObjectTx);
+
+    for (uint8_t i = 0; i < TX_QUEUE_SIZE; i++) {
+        QueueP_put(freeQHandleTx, &ncmTxQueueBuffer[i]);
+    }
 }
 
 uint16_t tud_network_xmit_cb(uint8_t *dst, void *ref, uint16_t arg) {
@@ -229,26 +272,66 @@ uint16_t tud_network_xmit_cb(uint8_t *dst, void *ref, uint16_t arg) {
 /* here the ethernet input is the input to stack
  tcp/ip */
 static void service_traffic(void) {
-    /* handle any packet received by tud_network_recv_cb() */
-    if (received_frame) {
-        /* loop_forever() ; */
-        if (ERR_OK != ethernet_input(received_frame, &netif_data)) {
-            pbuf_free(received_frame);
-            DebugP_log("Free because of error \r\n");
+    
+    ncmQueueElem *elem;
+
+    while (QueueP_isEmpty(readyQHandleRx) == QueueP_NOTEMPTY)
+    {
+        /* handle any packet received by tud_network_recv_cb() */
+        elem = QueueP_get(readyQHandleRx);
+        if (elem != NULL) {
+            if (ERR_OK != ethernet_input(elem->pbuf, &netif_data)) {
+                pbuf_free(elem->pbuf);
+            }
+            QueueP_put(freeQHandleRx, elem);
+            tud_network_recv_renew();
         }
-        received_frame = NULL;
-        tud_network_recv_renew();
+    }
+
+    while (QueueP_isEmpty(readyQHandleTx) == QueueP_NOTEMPTY) {
+        elem = QueueP_get(readyQHandleTx);
+        if (elem != NULL)
+        {                
+            if (tud_ready() && tud_network_can_xmit(elem->pbuf->tot_len)) {
+                /* Transmit the packet */
+                tud_network_xmit(elem->pbuf, 0);
+                pbuf_free(elem->pbuf);
+                QueueP_put(freeQHandleTx, elem);
+            }
+            else {
+                /* Can't transmit - put back in queue and stop processing
+                    * The packet will be retried when TX_EVENT_BIT is set again
+                    * (either by new packets or by TinyUSB when buffer frees up) */
+                QueueP_put(readyQHandleTx, elem);
+                TaskP_yield();
+                break;
+            }
+        }
     }
 
     sys_check_timeouts();
 }
 
 void tud_network_init_cb(void) {
-    /* if the network is re-initializing and we have a leftover packet, we must do
-     * a cleanup */
-    if (received_frame) {
-        pbuf_free(received_frame);
-        received_frame = NULL;
+    
+    ncmQueueElem *elem;
+    /* if the network is re-initializing, flush any leftover packets in RX queue */
+    while (QueueP_isEmpty(readyQHandleRx) == QueueP_NOTEMPTY){
+        elem = QueueP_get(readyQHandleRx);
+        if (elem != NULL)
+        {
+            pbuf_free(elem->pbuf);
+            QueueP_put(freeQHandleRx, elem);
+        }
+    }
+
+    while (QueueP_isEmpty(readyQHandleTx) == QueueP_NOTEMPTY){
+        elem = QueueP_get(readyQHandleTx);
+        if (elem != NULL)
+        {
+            pbuf_free(elem->pbuf);
+            QueueP_put(freeQHandleTx, elem);
+        }
     }
 }
 
@@ -294,8 +377,14 @@ int ncm_main(void) {
     Drivers_open();
     Board_driversOpen();
 
+    QueueInit();
+
     /* initialize lwip, dhcp-server, dns-server, and http */
     init_lwip();
+#if LWIP_LWIPERF_APP
+    lwiperf_example_init();
+#endif
+
     while (!netif_is_up(&netif_data))
         ;
     while (dhserv_init(&dhcp_config) != ERR_OK)

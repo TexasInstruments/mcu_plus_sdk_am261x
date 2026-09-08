@@ -64,6 +64,7 @@ INCLUDES_common := \
 	-I${MCU_PLUS_SDK_PATH}/source/networking/lwip/lwip-config/am261x/usb/ \
 	-I${MCU_PLUS_SDK_PATH}/source/networking/lwip/lwip-port/include/ \
 	-I${MCU_PLUS_SDK_PATH}/source/networking/lwip/lwip-stack/src/include/lwip/apps \
+	-I${MCU_PLUS_SDK_PATH}/source/networking/lwip/lwip-port/freertos/include/ \
 	-I${MCU_PLUS_SDK_PATH}/source/kernel/freertos/portable/TI_ARM_CLANG/ARM_CR5F \
 	-Igenerated \
 
@@ -118,7 +119,7 @@ LIBS_common = \
 	-ldrivers.am261x.r5f.ti-arm-clang.freertos.${ConfigName}.lib \
 	-lboard.am261x.r5f.ti-arm-clang.freertos.${ConfigName}.lib \
 	-lusbd_synp_freertos.am261x.r5f.ti-arm-clang.${ConfigName}.lib \
-	-lusbd_tusb_ncm_nortos.am261x.r5f.ti-arm-clang.${ConfigName}.lib \
+	-lusbd_tusb_ncm_freertos.am261x.r5f.ti-arm-clang.${ConfigName}.lib \
 	-llibc.a \
 	-llibsysbm.a \
 
@@ -134,7 +135,7 @@ LIBS_NAME = \
 	drivers.am261x.r5f.ti-arm-clang.freertos.${ConfigName}.lib \
 	board.am261x.r5f.ti-arm-clang.freertos.${ConfigName}.lib \
 	usbd_synp_freertos.am261x.r5f.ti-arm-clang.${ConfigName}.lib \
-	usbd_tusb_ncm_nortos.am261x.r5f.ti-arm-clang.${ConfigName}.lib \
+	usbd_tusb_ncm_freertos.am261x.r5f.ti-arm-clang.${ConfigName}.lib \
 	libc.a \
 	libsysbm.a \
 

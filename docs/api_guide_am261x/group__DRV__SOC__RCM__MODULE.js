@@ -137,6 +137,7 @@ var group__DRV__SOC__RCM__MODULE =
       [ "SOC_RcmPeripheralClockSource_DPLL_CORE_HSDIV0_CLKOUT2", "group__DRV__SOC__RCM__MODULE.html#gga049fd9d8d05991ff7c58545e744fa8b6ae2337caec5559bb23ee7c08fcdbbd956", null ],
       [ "SOC_RcmPeripheralClockSource_DPLL_CORE_HSDIV0_CLKOUT3", "group__DRV__SOC__RCM__MODULE.html#gga049fd9d8d05991ff7c58545e744fa8b6a133c44252e1245335124876e5a67e339", null ],
       [ "SOC_RcmPeripheralClockSource_DPLL_ETH_HSDIV0_CLKOUT0", "group__DRV__SOC__RCM__MODULE.html#gga049fd9d8d05991ff7c58545e744fa8b6a33e3506ad6899ba29415701497e7169c", null ],
+      [ "SOC_RcmPeripheralClockSource_DPLL_ETH_HSDIV0_CLKOUT2", "group__DRV__SOC__RCM__MODULE.html#gga049fd9d8d05991ff7c58545e744fa8b6abf8f9f7c5aef116f058bce9c06b3b838", null ],
       [ "SOC_RcmPeripheralClockSource_DPLL_PER_HSDIV0_CLKOUT0", "group__DRV__SOC__RCM__MODULE.html#gga049fd9d8d05991ff7c58545e744fa8b6ab49a9e667aefaccbc370a176ded6a50c", null ],
       [ "SOC_RcmPeripheralClockSource_DPLL_PER_HSDIV0_CLKOUT2", "group__DRV__SOC__RCM__MODULE.html#gga049fd9d8d05991ff7c58545e744fa8b6a94b268f3ea741ac45cc2dfe1595ea4a3", null ]
     ] ],

@@ -1869,7 +1869,9 @@ stall:
 		if (ep == pcd->ep0) {
 			ep->dwc_ep.is_in = 0;
 			dwc_usb3_pcd_ep_set_stall(pcd, ep);
-			pcd->ep0state = EP0_STALL;
+			ep->dwc_ep.stopped = 1;
+			pcd->ep0state = EP0_IDLE;
+			dwc_usb3_pcd_ep0_out_start(pcd);
 		} else {
 			dwc_usb3_pcd_ep_set_stall(pcd, ep);
 		}

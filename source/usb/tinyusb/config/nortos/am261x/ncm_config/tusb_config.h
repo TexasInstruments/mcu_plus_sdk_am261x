@@ -186,6 +186,11 @@
 #define CFG_TUD_ENDPOINT0_SIZE    64
 #endif
 
+#define CFG_TUD_NCM_IN_NTB_MAX_SIZE   (3092) 
+#define CFG_TUD_NCM_OUT_NTB_MAX_SIZE  (3092) 
+
+#define CFG_TUD_NCM_MAX_DATAGRAMS_PER_NTB 16
+
 /*------------- CLASS -------------*/
 // Network class has 2 drivers: ECM/RNDIS and NCM.
 // Only one of the drivers can be enabled

@@ -199,6 +199,11 @@ const SOC_RcmClkSrcInfo gPeripheralClkSrcInfoMap[] =
         .pllId = RCM_PLLID_ETH,
         .hsDivOut = RCM_PLLHSDIV_OUT_0,
     },
+    [SOC_RcmPeripheralClockSource_DPLL_ETH_HSDIV0_CLKOUT2] =
+    {
+        .pllId = RCM_PLLID_ETH,
+        .hsDivOut = RCM_PLLHSDIV_OUT_2,
+    },
 };
 
 
@@ -269,6 +274,7 @@ static uint16_t const gOspiClkSrcValMap[] =
     [SOC_RcmPeripheralClockSource_DPLL_CORE_HSDIV0_CLKOUT2]    = UNSUPPORTED_CLOCK_SOURCE,
     [SOC_RcmPeripheralClockSource_DPLL_CORE_HSDIV0_CLKOUT3]    = 0x666U,
     [SOC_RcmPeripheralClockSource_DPLL_ETH_HSDIV0_CLKOUT0]     = UNSUPPORTED_CLOCK_SOURCE,
+    [SOC_RcmPeripheralClockSource_DPLL_ETH_HSDIV0_CLKOUT2]     = 0x444U,
     [SOC_RcmPeripheralClockSource_DPLL_PER_HSDIV0_CLKOUT0]     = 0x333U,
     [SOC_RcmPeripheralClockSource_DPLL_PER_HSDIV0_CLKOUT2]     = UNSUPPORTED_CLOCK_SOURCE,
 };
@@ -1659,6 +1665,10 @@ static uint32_t SOC_rcmGetCLKOUTInFrequency(void)
 static uint32_t SOC_rcmGetModuleClkDivVal(uint32_t inFreq, uint32_t outFreq)
 {
     uint32_t moduleClkDivVal;
+
+    DebugP_assert(outFreq > 0);
+    DebugP_assert(inFreq >= outFreq);
+
     moduleClkDivVal = inFreq / outFreq;
     uint32_t actOutFreq = inFreq / moduleClkDivVal;
     DebugP_assert(actOutFreq == outFreq);
@@ -1928,8 +1938,9 @@ static uint32_t SOC_rcmGetEthHSDivOut(uint32_t Finp, bool div2flag, SOC_RcmPllHS
         }
         case RCM_PLLHSDIV_OUT_2:
         {
-            DebugP_assert(FALSE);
-            clkDiv = 0;
+            // DebugP_assert(FALSE);
+            // clkDiv = 0;
+            clkDiv = CSL_FEXT(ptrTopRCMRegs->PLL_ETH_HSDIVIDER_CLKOUT2, TOP_RCM_PLL_ETH_HSDIVIDER_CLKOUT2_DIV);
             break;
         }
         case RCM_PLLHSDIV_OUT_3:
@@ -2028,6 +2039,12 @@ uint32_t SOC_rcmGetPeripheralClockFrequency(SOC_RcmPeripheralClockSource clkSour
         {
             Finp = gXTALInfo[clkFreqId].Finp;
             clkFreq = Finp * 1000 * 1000;
+            break;
+        }
+        case RCM_PLLID_RCCLK10M:
+        {
+            Finp = 10;  //10MHz
+            clkFreq = SOC_RCM_FREQ_MHZ2HZ(Finp);
             break;
         }
         default:
@@ -2202,7 +2219,13 @@ void SOC_rcmEthApllConfig(SOC_RcmPllFoutFreqId outFreqId, SOC_RcmPllHsDivOutConf
         
         }
         /* Eth PLL output 1 not used.Will not configure */
-        /* Eth PLL output 2 not used.Will not configure */
+        if (hsDivCfg->hsdivOutEnMask & RCM_PLL_HSDIV_OUTPUT_ENABLE_2)
+        {
+            // DebugP_assert((Fout % hsDivCfg->hsDivOutFreqHz[RCM_PLL_HSDIV_OUTPUT_IDX2]) == 0);
+            hsDivOutRegVal = Fout / hsDivCfg->hsDivOutFreqHz[RCM_PLL_HSDIV_OUTPUT_IDX2];
+            hsDivOutRegVal--;
+            ptrTopRCMRegs->PLL_ETH_HSDIVIDER_CLKOUT2 = SOC_rcmInsert8 (ptrTopRCMRegs->PLL_ETH_HSDIVIDER_CLKOUT2, 4U, 0U, hsDivOutRegVal);
+        }
         /* Eth PLL output 3 not used.Will not configure */
 
         /* Generate Trigger to latch these values */
@@ -2213,6 +2236,10 @@ void SOC_rcmEthApllConfig(SOC_RcmPllFoutFreqId outFreqId, SOC_RcmPllHsDivOutConf
         if (hsDivCfg->hsdivOutEnMask & RCM_PLL_HSDIV_OUTPUT_ENABLE_0)
         {
             ptrTopRCMRegs->PLL_ETH_HSDIVIDER_CLKOUT0 = SOC_rcmInsert8 (ptrTopRCMRegs->PLL_ETH_HSDIVIDER_CLKOUT0, 8U, 8U, 0x1U);
+        }
+        if (hsDivCfg->hsdivOutEnMask & RCM_PLL_HSDIV_OUTPUT_ENABLE_2)
+        {
+            ptrTopRCMRegs->PLL_ETH_HSDIVIDER_CLKOUT2 = SOC_rcmInsert8 (ptrTopRCMRegs->PLL_ETH_HSDIVIDER_CLKOUT2, 8U, 8U, 0x1U);
         }
 
     }
@@ -3206,15 +3233,13 @@ void SOC_generateSwWarmReset(void)
 void SOC_configureWarmResetSource(uint32_t source)
 {
     CSL_top_rcmRegs *ptrTOPRCMRegs;
-    uint32_t regVal;
 
     ptrTOPRCMRegs = SOC_rcmGetBaseAddressTOPRCM();
 
     /* Unlock CONTROLSS_CTRL registers */
     SOC_controlModuleUnlockMMR(SOC_DOMAIN_ID_MAIN, TOP_RCM_PARTITION0);
 
-    regVal = ptrTOPRCMRegs->WARM_RESET_CONFIG;
-    CSL_REG32_WR(regVal, source);
+    CSL_REG32_WR(&(ptrTOPRCMRegs->WARM_RESET_CONFIG), source);
 
     /* Lock CONTROLSS_CTRL registers */
     SOC_controlModuleLockMMR(SOC_DOMAIN_ID_MAIN, TOP_RCM_PARTITION0);

@@ -43,7 +43,7 @@
   <td id="projectlogo"><a href="https://www.ti.com"><img alt="Logo" src="ti_logo.svg"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AM261x MCU+ SDK
-   &#160;<span id="projectnumber">26.00.00</span>
+   &#160;<span id="projectnumber">26.01.00</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -92,26 +92,26 @@ $(document).ready(function(){initNavTree('RELEASE_NOTES_10_00_01_PAGE.html','');
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#autotoc_md94">New in this Release</a></li>
-<li class="level1"><a href="#autotoc_md95">Modules Not tested/supported in this release</a><ul><li class="level2"><a href="#autotoc_md96">Device and Validation Information</a></li>
-<li class="level2"><a href="#autotoc_md97">Dependent Tools and Compiler Information</a></li>
-<li class="level2"><a href="#autotoc_md98">Key Features</a><ul><li class="level3"><a href="#autotoc_md99">Experimental Features</a></li>
-<li class="level3"><a href="#autotoc_md100">OS Kernel</a></li>
-<li class="level3"><a href="#autotoc_md101">Driver Porting Layer (DPL)</a></li>
-<li class="level3"><a href="#autotoc_md102">Secondary Bootloader (SBL)</a></li>
-<li class="level3"><a href="#autotoc_md103">SOC Device Drivers</a></li>
-<li class="level3"><a href="#autotoc_md104">Trigonometric Operations</a></li>
-<li class="level3"><a href="#autotoc_md105">Board Device Drivers</a></li>
-<li class="level3"><a href="#autotoc_md106">Networking</a></li>
+<ul><li class="level1"><a href="#autotoc_md95">New in this Release</a></li>
+<li class="level1"><a href="#autotoc_md96">Modules Not tested/supported in this release</a><ul><li class="level2"><a href="#autotoc_md97">Device and Validation Information</a></li>
+<li class="level2"><a href="#autotoc_md98">Dependent Tools and Compiler Information</a></li>
+<li class="level2"><a href="#autotoc_md99">Key Features</a><ul><li class="level3"><a href="#autotoc_md100">Experimental Features</a></li>
+<li class="level3"><a href="#autotoc_md101">OS Kernel</a></li>
+<li class="level3"><a href="#autotoc_md102">Driver Porting Layer (DPL)</a></li>
+<li class="level3"><a href="#autotoc_md103">Secondary Bootloader (SBL)</a></li>
+<li class="level3"><a href="#autotoc_md104">SOC Device Drivers</a></li>
+<li class="level3"><a href="#autotoc_md105">Trigonometric Operations</a></li>
+<li class="level3"><a href="#autotoc_md106">Board Device Drivers</a></li>
+<li class="level3"><a href="#autotoc_md107">Networking</a></li>
 </ul>
 </li>
-<li class="level2"><a href="#autotoc_md107">Fixed Issues</a></li>
-<li class="level2"><a href="#autotoc_md108">Known Issues</a></li>
-<li class="level2"><a href="#autotoc_md109">Errata</a></li>
-<li class="level2"><a href="#autotoc_md110">Limitations</a></li>
-<li class="level2"><a href="#autotoc_md111">Upgrade and Compatibility Information</a><ul><li class="level3"><a href="#autotoc_md112">Compiler Options</a></li>
-<li class="level3"><a href="#autotoc_md113">SOC Device Drivers</a></li>
-<li class="level3"><a href="#autotoc_md114">Networking</a></li>
+<li class="level2"><a href="#autotoc_md108">Fixed Issues</a></li>
+<li class="level2"><a href="#autotoc_md109">Known Issues</a></li>
+<li class="level2"><a href="#autotoc_md110">Errata</a></li>
+<li class="level2"><a href="#autotoc_md111">Limitations</a></li>
+<li class="level2"><a href="#autotoc_md112">Upgrade and Compatibility Information</a><ul><li class="level3"><a href="#autotoc_md113">Compiler Options</a></li>
+<li class="level3"><a href="#autotoc_md114">SOC Device Drivers</a></li>
+<li class="level3"><a href="#autotoc_md115">Networking</a></li>
 </ul>
 </li>
 </ul>
@@ -136,7 +136,7 @@ $(document).ready(function(){initNavTree('RELEASE_NOTES_10_00_01_PAGE.html','');
  Unless explicitly noted otherwise, the SW modules would work in both FreeRTOS and no-RTOS environment. <br  />
  Unless explicitly noted otherwise, the SW modules would work on any of the R5F's present on the SOC. <br  />
  </dd></dl>
-<h1><a class="anchor" id="autotoc_md94"></a>
+<h1><a class="anchor" id="autotoc_md95"></a>
 New in this Release</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -152,13 +152,13 @@ New in this Release</h1>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">Auto PHY (DP83TG720-EVM-AM2) and Industrial PHY (DP83826-EVM-AM2) Support  </td><td class="markdownTableBodyNone">Networking   </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md95"></a>
+<h1><a class="anchor" id="autotoc_md96"></a>
 Modules Not tested/supported in this release</h1>
 <ul>
 <li>USB and Networking support on AM261x SOM Board.</li>
 <li>OSPI Phy Tuning on AM261x LP and SOM Board.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md96"></a>
+<h2><a class="anchor" id="autotoc_md97"></a>
 Device and Validation Information</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -170,7 +170,7 @@ Device and Validation Information</h2>
 <td class="markdownTableBodyNone">AM261x  </td><td class="markdownTableBodyNone">R5F  </td><td class="markdownTableBodyNone">AM261x SOM (referred to as am261x-som in code). <br  />
   </td><td class="markdownTableBodyNone">Windows 10 64b or Ubuntu 18.04 64b or MacOS   </td></tr>
 </table>
-<h2><a class="anchor" id="autotoc_md97"></a>
+<h2><a class="anchor" id="autotoc_md98"></a>
 Dependent Tools and Compiler Information</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -188,9 +188,9 @@ Dependent Tools and Compiler Information</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">Mbed-TLS  </td><td class="markdownTableBodyNone">R5F  </td><td class="markdownTableBodyNone">2.13.1   </td></tr>
 </table>
-<h2><a class="anchor" id="autotoc_md98"></a>
+<h2><a class="anchor" id="autotoc_md99"></a>
 Key Features</h2>
-<h3><a class="anchor" id="autotoc_md99"></a>
+<h3><a class="anchor" id="autotoc_md100"></a>
 Experimental Features</h3>
 <dl class="section attention"><dt>Attention</dt><dd>Features listed below are early versions and should be considered as "experimental". </dd>
 <dd>
@@ -205,7 +205,7 @@ Experimental features will be enabled with limited examples and SW modules.</dd>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">-  </td><td class="markdownTableBodyNone">-   </td></tr>
 </table>
-<h3><a class="anchor" id="autotoc_md100"></a>
+<h3><a class="anchor" id="autotoc_md101"></a>
 OS Kernel</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -217,7 +217,7 @@ OS Kernel</h3>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">NO RTOS  </td><td class="markdownTableBodyNone">R5F  </td><td class="markdownTableBodyNone">NA  </td><td class="markdownTableBodyNone">See <b>Driver Porting Layer (DPL)</b> below  </td><td class="markdownTableBodyNone">-   </td></tr>
 </table>
-<h3><a class="anchor" id="autotoc_md101"></a>
+<h3><a class="anchor" id="autotoc_md102"></a>
 Driver Porting Layer (DPL)</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -245,7 +245,7 @@ Driver Porting Layer (DPL)</h3>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">Timer  </td><td class="markdownTableBodyNone">R5F  </td><td class="markdownTableBodyNone">YES  </td><td class="markdownTableBodyNone">FreeRTOS, NORTOS  </td><td class="markdownTableBodyNone">Configure arbitrary timers  </td><td class="markdownTableBodyNone">-   </td></tr>
 </table>
-<h3><a class="anchor" id="autotoc_md102"></a>
+<h3><a class="anchor" id="autotoc_md103"></a>
 Secondary Bootloader (SBL)</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -253,7 +253,7 @@ Secondary Bootloader (SBL)</h3>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">Bootloader  </td><td class="markdownTableBodyNone">R5FSS0-0  </td><td class="markdownTableBodyNone">YES  </td><td class="markdownTableBodyNone">NORTOS  </td><td class="markdownTableBodyNone">Boot modes: OSPI, UART. All R5F's. RPRC, multi-core image format  </td><td class="markdownTableBodyNone">Force Dual Core Mode   </td></tr>
 </table>
-<h3><a class="anchor" id="autotoc_md103"></a>
+<h3><a class="anchor" id="autotoc_md104"></a>
 SOC Device Drivers</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -315,7 +315,7 @@ SOC Device Drivers</h3>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">WATCHDOG  </td><td class="markdownTableBodyNone">R5F  </td><td class="markdownTableBodyNone">YES  </td><td class="markdownTableBodyNone">NA  </td><td class="markdownTableBodyNone">Reset mode, Interrupt mode  </td><td class="markdownTableBodyNone">-   </td></tr>
 </table>
-<h3><a class="anchor" id="autotoc_md104"></a>
+<h3><a class="anchor" id="autotoc_md105"></a>
 Trigonometric Operations</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -323,7 +323,7 @@ Trigonometric Operations</h3>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">TMU  </td><td class="markdownTableBodyNone">R5F  </td><td class="markdownTableBodyNone">NO  </td><td class="markdownTableBodyNone">NA  </td><td class="markdownTableBodyNone">TMU Operations, Pipelining, Contex Save  </td><td class="markdownTableBodyNone">Square Root, Division Operations. more than 1 Interrupt Nesting for the contex save is not Supported.   </td></tr>
 </table>
-<h3><a class="anchor" id="autotoc_md105"></a>
+<h3><a class="anchor" id="autotoc_md106"></a>
 Board Device Drivers</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -341,7 +341,7 @@ Board Device Drivers</h3>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">PMIC  </td><td class="markdownTableBodyNone">R5F  </td><td class="markdownTableBodyNone">YES  </td><td class="markdownTableBodyNone">Watchdog Reset and disable  </td><td class="markdownTableBodyNone">-   </td></tr>
 </table>
-<h3><a class="anchor" id="autotoc_md106"></a>
+<h3><a class="anchor" id="autotoc_md107"></a>
 Networking</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -355,7 +355,7 @@ Networking</h3>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">ICSS-EMAC  </td><td class="markdownTableBodyNone">R5F  </td><td class="markdownTableBodyNone">YES  </td><td class="markdownTableBodyNone">FreeRTOS  </td><td class="markdownTableBodyNone">Switch and MAC features, Storm Prevention (MAC), Host Statistics, Multicast Filtering  </td><td class="markdownTableBodyNone">Promiscuous Mode   </td></tr>
 </table>
-<h2><a class="anchor" id="autotoc_md107"></a>
+<h2><a class="anchor" id="autotoc_md108"></a>
 Fixed Issues</h2>
 <table class="doxtable">
 <tr>
@@ -379,7 +379,7 @@ Fixed Issues</h2>
 <tr>
 <td>MCUSDK-13773 </td><td>EEPROM Read-Write not working properly. </td><td>I2C </td><td>10.00.00 </td><td>AM261x </td><td>EEPROM Address was incorrect.  </td></tr>
 </table>
-<h2><a class="anchor" id="autotoc_md108"></a>
+<h2><a class="anchor" id="autotoc_md109"></a>
 Known Issues</h2>
 <table class="doxtable">
 <tr>
@@ -421,7 +421,7 @@ Known Issues</h2>
 <tr>
 <td>- </td><td>- </td><td>- </td><td>- </td><td>-  </td></tr>
 </table>
-<h2><a class="anchor" id="autotoc_md109"></a>
+<h2><a class="anchor" id="autotoc_md110"></a>
 Errata</h2>
 <table class="doxtable">
 <tr>
@@ -429,7 +429,7 @@ Errata</h2>
 <tr>
 <td>- </td><td>- </td><td>- </td><td>-  </td></tr>
 </table>
-<h2><a class="anchor" id="autotoc_md110"></a>
+<h2><a class="anchor" id="autotoc_md111"></a>
 Limitations</h2>
 <table class="doxtable">
 <tr>
@@ -439,9 +439,9 @@ Limitations</h2>
 <tr>
 <td>- </td><td>- </td><td>- </td><td>- </td><td>-  </td></tr>
 </table>
-<h2><a class="anchor" id="autotoc_md111"></a>
+<h2><a class="anchor" id="autotoc_md112"></a>
 Upgrade and Compatibility Information</h2>
-<h3><a class="anchor" id="autotoc_md112"></a>
+<h3><a class="anchor" id="autotoc_md113"></a>
 Compiler Options</h3>
 <table class="doxtable">
 <tr>
@@ -449,7 +449,7 @@ Compiler Options</h3>
 <tr>
 <td>- </td><td>- </td><td>- </td><td>-  </td></tr>
 </table>
-<h3><a class="anchor" id="autotoc_md113"></a>
+<h3><a class="anchor" id="autotoc_md114"></a>
 SOC Device Drivers</h3>
 <table class="doxtable">
 <tr>
@@ -459,7 +459,7 @@ SOC Device Drivers</h3>
 <tr>
 <td>- </td><td>- </td><td>- </td><td>-  </td></tr>
 </table>
-<h3><a class="anchor" id="autotoc_md114"></a>
+<h3><a class="anchor" id="autotoc_md115"></a>
 Networking</h3>
 <table class="doxtable">
 <tr>

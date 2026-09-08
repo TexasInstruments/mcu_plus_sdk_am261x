@@ -217,9 +217,7 @@ int dwc_usb3_gadget_complete(dwc_usb3_pcd_t *pcd, dwc_usb3_pcd_ep_t *pcd_ep,
 	usb_req->actual = actual;
 
 	if (usb_req->complete != NULL) {
-		dwc_release_spinlock(pcd->usb3_dev, &pcd->lock);
 		usb_req->complete(usb_ep, usb_req);
-		dwc_acquire_spinlock(pcd->usb3_dev, &pcd->lock);
 	}
 
 	if (pcd->request_pending > 0U) {
@@ -749,16 +747,27 @@ do_start:
 		/* Call the PCD API routine to set up the request TRBs */
 		dwc_usb3_pcd_fill_trbs(pcd, pcd_ep, pcd_req);
 
+		dwc_acquire_spinlock(pcd->usb3_dev, &pcd->lock);
 		/* Call the PCD API routine to submit the transfer request */
 		retval = dwc_usb3_pcd_ep_submit_req(pcd, pcd_ep, pcd_req, req_flags);
+
+
+		if (retval == 0) {
+			DWC_CIRCLEQ_INSERT_TAIL(&pcd_ep->dwc_ep.queue, pcd_req, entry);
+			++pcd->request_pending;
+		}
+
+		dwc_release_spinlock(pcd->usb3_dev, &pcd->lock);
+
+		return retval < 0 ? retval : 0;
 	}
 
-	if (retval == 0) {
-		DWC_CIRCLEQ_INSERT_TAIL(&pcd_ep->dwc_ep.queue, pcd_req, entry);
-		++pcd->request_pending;
-	}
+	dwc_acquire_spinlock(pcd->usb3_dev, &pcd->lock);
+	DWC_CIRCLEQ_INSERT_TAIL(&pcd_ep->dwc_ep.queue, pcd_req, entry);
+	++pcd->request_pending;
+	dwc_release_spinlock(pcd->usb3_dev, &pcd->lock);
 
-	return retval < 0 ? retval : 0;
+	return 0;
 }
 
 /**

@@ -43,7 +43,7 @@
   <td id="projectlogo"><a href="https://www.ti.com"><img alt="Logo" src="ti_logo.svg"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AM261x MCU+ SDK
-   &#160;<span id="projectnumber">26.00.00</span>
+   &#160;<span id="projectnumber">26.01.00</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -112,6 +112,14 @@ Data Fields</h2></td></tr>
 <tr class="separator:a0d52c5ae173db726f3434706b81c111c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d738039c97291269f72c1e79df79ca9"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRam__DevConfig.html#a7d738039c97291269f72c1e79df79ca9">dummyClksCmd</a></td></tr>
 <tr class="separator:a7d738039c97291269f72c1e79df79ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f28d226ce308dae84e785f56de06efa"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRam__DevConfig.html#a0f28d226ce308dae84e785f56de06efa">cmdExtType</a></td></tr>
+<tr class="separator:a0f28d226ce308dae84e785f56de06efa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac10f5206d5bfc974b4abee3b3ce6d35a"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRam__DevConfig.html#ac10f5206d5bfc974b4abee3b3ce6d35a">mrCount</a></td></tr>
+<tr class="separator:ac10f5206d5bfc974b4abee3b3ce6d35a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41f5f17a88dbb57d1e7791739efeecf9"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRam__DevConfig.html#a41f5f17a88dbb57d1e7791739efeecf9">mrValWidth</a></td></tr>
+<tr class="separator:a41f5f17a88dbb57d1e7791739efeecf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47e3101d7240a70b09310f2334138d6c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structRam__MrConfig.html">Ram_MrConfig</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRam__DevConfig.html#a47e3101d7240a70b09310f2334138d6c">mrConfig</a></td></tr>
+<tr class="separator:a47e3101d7240a70b09310f2334138d6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
 <a id="ac1d979e3bb847f64a005ab718b070750"></a>
@@ -220,6 +228,64 @@ Data Fields</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">uint8_t Ram_DevConfig::dummyClksCmd</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0f28d226ce308dae84e785f56de06efa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f28d226ce308dae84e785f56de06efa">&#9670;&nbsp;</a></span>cmdExtType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t Ram_DevConfig::cmdExtType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Command extension type: OSPI_CMD_EXT_TYPE_REPEAT / INVERSE / NONE </p>
+
+</div>
+</div>
+<a id="ac10f5206d5bfc974b4abee3b3ce6d35a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac10f5206d5bfc974b4abee3b3ce6d35a">&#9670;&nbsp;</a></span>mrCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t Ram_DevConfig::mrCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a41f5f17a88dbb57d1e7791739efeecf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41f5f17a88dbb57d1e7791739efeecf9">&#9670;&nbsp;</a></span>mrValWidth</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t Ram_DevConfig::mrValWidth</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Width in bytes for each MR value write: 1 (8-bit), 2 (16-bit), or 4 (32-bit) </p>
+
+</div>
+</div>
+<a id="a47e3101d7240a70b09310f2334138d6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47e3101d7240a70b09310f2334138d6c">&#9670;&nbsp;</a></span>mrConfig</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="structRam__MrConfig.html">Ram_MrConfig</a>* Ram_DevConfig::mrConfig</td>
         </tr>
       </table>
 </div><div class="memdoc">

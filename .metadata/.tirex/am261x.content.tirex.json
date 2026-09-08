@@ -2990,6 +2990,72 @@
         "resourceSubClass": [
             "example.general"
         ],
+        "description": "A Sbl Qspi Multicore Elf Example. CPU is R5FSS0-0 running NORTOS.",
+        "name": "sbl_qspi_multicore_elf",
+        "location": "../../examples/drivers/boot/sbl_qspi_multicore_elf/am261x-som/r5fss0-0_nortos/ti-arm-clang/example.projectspec",
+        "devtools": [
+            "AM261-SOM-EVM"
+        ],
+        "kernel": [
+            "nortos"
+        ],
+        "compiler": [
+            "ticlang"
+        ],
+        "subCategories": [
+            "drivers",
+            "boot",
+            "sbl_qspi_multicore_elf",
+            "r5fss0-0_nortos"
+        ],
+        "mainCategories": [
+            [
+                "Examples",
+                "Development Tools"
+            ]
+        ]
+    },
+    {
+        "resourceType": "project.ccs",
+        "resourceClass": [
+            "example"
+        ],
+        "resourceSubClass": [
+            "example.general"
+        ],
+        "description": "A Sbl Qspi Multicore Elf Example. CPU is R5FSS0-0 running NORTOS.",
+        "name": "sbl_qspi_multicore_elf",
+        "location": "../../examples/drivers/boot/sbl_qspi_multicore_elf/am261x-lp/r5fss0-0_nortos/ti-arm-clang/example.projectspec",
+        "devtools": [
+            "LP-AM261"
+        ],
+        "kernel": [
+            "nortos"
+        ],
+        "compiler": [
+            "ticlang"
+        ],
+        "subCategories": [
+            "drivers",
+            "boot",
+            "sbl_qspi_multicore_elf",
+            "r5fss0-0_nortos"
+        ],
+        "mainCategories": [
+            [
+                "Examples",
+                "Development Tools"
+            ]
+        ]
+    },
+    {
+        "resourceType": "project.ccs",
+        "resourceClass": [
+            "example"
+        ],
+        "resourceSubClass": [
+            "example.general"
+        ],
         "description": "A Sbl Uart Multicore Elf Example. CPU is R5FSS0-0 running NORTOS.",
         "name": "sbl_uart_multicore_elf",
         "location": "../../examples/drivers/boot/sbl_uart_multicore_elf/am261x-som/r5fss0-0_nortos/ti-arm-clang/example.projectspec",
@@ -12592,6 +12658,39 @@
             "example.general"
         ],
         "description": "An OCRAM memory benchmark. CPU is R5FSS0-0 running FREERTOS.",
+        "name": "psram_xip_benchmark",
+        "location": "../../examples/benchmarks/optiflash_benchmark/psram_xip/am261x-lp/r5fss0-0_freertos/ti-arm-clang/example.projectspec",
+        "devtools": [
+            "LP-AM261"
+        ],
+        "kernel": [
+            "freertos"
+        ],
+        "compiler": [
+            "ticlang"
+        ],
+        "subCategories": [
+            "benchmarks",
+            "optiflash_benchmark",
+            "psram_xip",
+            "r5fss0-0_freertos"
+        ],
+        "mainCategories": [
+            [
+                "Examples",
+                "Development Tools"
+            ]
+        ]
+    },
+    {
+        "resourceType": "project.ccs",
+        "resourceClass": [
+            "example"
+        ],
+        "resourceSubClass": [
+            "example.general"
+        ],
+        "description": "An OCRAM memory benchmark. CPU is R5FSS0-0 running FREERTOS.",
         "name": "optiflash_xip_benchmark",
         "location": "../../examples/benchmarks/optiflash_benchmark/flash_xip/am261x-lp/r5fss0-0_freertos/ti-arm-clang/example.projectspec",
         "devtools": [
@@ -12970,6 +13069,336 @@
             "benchmarks",
             "optiflash_benchmark",
             "flash_xip_smart_placement",
+            "r5fss0-0_freertos"
+        ],
+        "mainCategories": [
+            [
+                "Examples",
+                "Development Tools"
+            ]
+        ]
+    },
+    {
+        "resourceType": "project.ccs",
+        "resourceClass": [
+            "example"
+        ],
+        "resourceSubClass": [
+            "example.general"
+        ],
+        "description": "USB Bulk benchmark using custom raw class driver (zero-copy DMA) CPU is R5FSS0-0 running FREERTOS.",
+        "name": "usb_bulk_benchmark",
+        "location": "../../examples/benchmarks/usb/usb_bulk_benchmark/am261x-som/r5fss0-0_freertos/ti-arm-clang/example.projectspec",
+        "devtools": [
+            "AM261-SOM-EVM"
+        ],
+        "kernel": [
+            "freertos"
+        ],
+        "compiler": [
+            "ticlang"
+        ],
+        "subCategories": [
+            "benchmarks",
+            "usb",
+            "usb_bulk_benchmark",
+            "r5fss0-0_freertos"
+        ],
+        "mainCategories": [
+            [
+                "Examples",
+                "Development Tools"
+            ]
+        ]
+    },
+    {
+        "resourceType": "project.ccs",
+        "resourceClass": [
+            "example"
+        ],
+        "resourceSubClass": [
+            "example.general"
+        ],
+        "description": "USB Bulk benchmark using custom raw class driver (zero-copy DMA) CPU is R5FSS0-0 running FREERTOS.",
+        "name": "usb_bulk_benchmark",
+        "location": "../../examples/benchmarks/usb/usb_bulk_benchmark/am261x-lp/r5fss0-0_freertos/ti-arm-clang/example.projectspec",
+        "devtools": [
+            "LP-AM261"
+        ],
+        "kernel": [
+            "freertos"
+        ],
+        "compiler": [
+            "ticlang"
+        ],
+        "subCategories": [
+            "benchmarks",
+            "usb",
+            "usb_bulk_benchmark",
+            "r5fss0-0_freertos"
+        ],
+        "mainCategories": [
+            [
+                "Examples",
+                "Development Tools"
+            ]
+        ]
+    },
+    {
+        "resourceType": "project.ccs",
+        "resourceClass": [
+            "example"
+        ],
+        "resourceSubClass": [
+            "example.general"
+        ],
+        "description": "USB Vendor benchmark using TinyUSB vendor class CPU is R5FSS0-0 running FREERTOS.",
+        "name": "usb_vendor_benchmark",
+        "location": "../../examples/benchmarks/usb/usb_vendor_benchmark/am261x-som/r5fss0-0_freertos/ti-arm-clang/example.projectspec",
+        "devtools": [
+            "AM261-SOM-EVM"
+        ],
+        "kernel": [
+            "freertos"
+        ],
+        "compiler": [
+            "ticlang"
+        ],
+        "subCategories": [
+            "benchmarks",
+            "usb",
+            "usb_vendor_benchmark",
+            "r5fss0-0_freertos"
+        ],
+        "mainCategories": [
+            [
+                "Examples",
+                "Development Tools"
+            ]
+        ]
+    },
+    {
+        "resourceType": "project.ccs",
+        "resourceClass": [
+            "example"
+        ],
+        "resourceSubClass": [
+            "example.general"
+        ],
+        "description": "USB Vendor benchmark using TinyUSB vendor class CPU is R5FSS0-0 running FREERTOS.",
+        "name": "usb_vendor_benchmark",
+        "location": "../../examples/benchmarks/usb/usb_vendor_benchmark/am261x-lp/r5fss0-0_freertos/ti-arm-clang/example.projectspec",
+        "devtools": [
+            "LP-AM261"
+        ],
+        "kernel": [
+            "freertos"
+        ],
+        "compiler": [
+            "ticlang"
+        ],
+        "subCategories": [
+            "benchmarks",
+            "usb",
+            "usb_vendor_benchmark",
+            "r5fss0-0_freertos"
+        ],
+        "mainCategories": [
+            [
+                "Examples",
+                "Development Tools"
+            ]
+        ]
+    },
+    {
+        "resourceType": "project.ccs",
+        "resourceClass": [
+            "example"
+        ],
+        "resourceSubClass": [
+            "example.general"
+        ],
+        "description": "USB CDC-ACM throughput benchmark CPU is R5FSS0-0 running FREERTOS.",
+        "name": "usb_cdc_benchmark",
+        "location": "../../examples/benchmarks/usb/usb_cdc_benchmark/am261x-som/r5fss0-0_freertos/ti-arm-clang/example.projectspec",
+        "devtools": [
+            "AM261-SOM-EVM"
+        ],
+        "kernel": [
+            "freertos"
+        ],
+        "compiler": [
+            "ticlang"
+        ],
+        "subCategories": [
+            "benchmarks",
+            "usb",
+            "usb_cdc_benchmark",
+            "r5fss0-0_freertos"
+        ],
+        "mainCategories": [
+            [
+                "Examples",
+                "Development Tools"
+            ]
+        ]
+    },
+    {
+        "resourceType": "project.ccs",
+        "resourceClass": [
+            "example"
+        ],
+        "resourceSubClass": [
+            "example.general"
+        ],
+        "description": "USB CDC-ACM throughput benchmark CPU is R5FSS0-0 running FREERTOS.",
+        "name": "usb_cdc_benchmark",
+        "location": "../../examples/benchmarks/usb/usb_cdc_benchmark/am261x-lp/r5fss0-0_freertos/ti-arm-clang/example.projectspec",
+        "devtools": [
+            "LP-AM261"
+        ],
+        "kernel": [
+            "freertos"
+        ],
+        "compiler": [
+            "ticlang"
+        ],
+        "subCategories": [
+            "benchmarks",
+            "usb",
+            "usb_cdc_benchmark",
+            "r5fss0-0_freertos"
+        ],
+        "mainCategories": [
+            [
+                "Examples",
+                "Development Tools"
+            ]
+        ]
+    },
+    {
+        "resourceType": "project.ccs",
+        "resourceClass": [
+            "example"
+        ],
+        "resourceSubClass": [
+            "example.general"
+        ],
+        "description": "USB DFU throughput benchmark CPU is R5FSS0-0 running FREERTOS.",
+        "name": "usb_dfu_benchmark",
+        "location": "../../examples/benchmarks/usb/usb_dfu_benchmark/am261x-som/r5fss0-0_freertos/ti-arm-clang/example.projectspec",
+        "devtools": [
+            "AM261-SOM-EVM"
+        ],
+        "kernel": [
+            "freertos"
+        ],
+        "compiler": [
+            "ticlang"
+        ],
+        "subCategories": [
+            "benchmarks",
+            "usb",
+            "usb_dfu_benchmark",
+            "r5fss0-0_freertos"
+        ],
+        "mainCategories": [
+            [
+                "Examples",
+                "Development Tools"
+            ]
+        ]
+    },
+    {
+        "resourceType": "project.ccs",
+        "resourceClass": [
+            "example"
+        ],
+        "resourceSubClass": [
+            "example.general"
+        ],
+        "description": "USB DFU throughput benchmark CPU is R5FSS0-0 running FREERTOS.",
+        "name": "usb_dfu_benchmark",
+        "location": "../../examples/benchmarks/usb/usb_dfu_benchmark/am261x-lp/r5fss0-0_freertos/ti-arm-clang/example.projectspec",
+        "devtools": [
+            "LP-AM261"
+        ],
+        "kernel": [
+            "freertos"
+        ],
+        "compiler": [
+            "ticlang"
+        ],
+        "subCategories": [
+            "benchmarks",
+            "usb",
+            "usb_dfu_benchmark",
+            "r5fss0-0_freertos"
+        ],
+        "mainCategories": [
+            [
+                "Examples",
+                "Development Tools"
+            ]
+        ]
+    },
+    {
+        "resourceType": "project.ccs",
+        "resourceClass": [
+            "example"
+        ],
+        "resourceSubClass": [
+            "example.general"
+        ],
+        "description": "USB NCM with LWIP benchmarking CPU is R5FSS0-0 running FREERTOS.",
+        "name": "usb_ncm_benchmark",
+        "location": "../../examples/benchmarks/usb/usb_ncm_benchmark/am261x-som/r5fss0-0_freertos/ti-arm-clang/example.projectspec",
+        "devtools": [
+            "AM261-SOM-EVM"
+        ],
+        "kernel": [
+            "freertos"
+        ],
+        "compiler": [
+            "ticlang"
+        ],
+        "subCategories": [
+            "benchmarks",
+            "usb",
+            "usb_ncm_benchmark",
+            "r5fss0-0_freertos"
+        ],
+        "mainCategories": [
+            [
+                "Examples",
+                "Development Tools"
+            ]
+        ]
+    },
+    {
+        "resourceType": "project.ccs",
+        "resourceClass": [
+            "example"
+        ],
+        "resourceSubClass": [
+            "example.general"
+        ],
+        "description": "USB NCM with LWIP benchmarking CPU is R5FSS0-0 running FREERTOS.",
+        "name": "usb_ncm_benchmark",
+        "location": "../../examples/benchmarks/usb/usb_ncm_benchmark/am261x-lp/r5fss0-0_freertos/ti-arm-clang/example.projectspec",
+        "devtools": [
+            "LP-AM261"
+        ],
+        "kernel": [
+            "freertos"
+        ],
+        "compiler": [
+            "ticlang"
+        ],
+        "subCategories": [
+            "benchmarks",
+            "usb",
+            "usb_ncm_benchmark",
             "r5fss0-0_freertos"
         ],
         "mainCategories": [
@@ -18672,6 +19101,158 @@
             "examples",
             "lwip",
             "enet_lwip_cpsw",
+            "r5fss0-0_freertos"
+        ],
+        "mainCategories": [
+            [
+                "Examples",
+                "Development Tools"
+            ]
+        ]
+    },
+    {
+        "resourceType": "project.ccs",
+        "resourceClass": [
+            "example"
+        ],
+        "resourceSubClass": [
+            "example.general"
+        ],
+        "description": "A Tsn Demo Listener Example. CPU is R5FSS0-0 running FREERTOS.",
+        "name": "tsn_demo_listener",
+        "location": "../../source/networking/enet/core/examples/tsn_demo/listener/am261x-lp/r5fss0-0_freertos/ti-arm-clang/example.projectspec",
+        "devtools": [
+            "LP-AM261"
+        ],
+        "kernel": [
+            "freertos"
+        ],
+        "compiler": [
+            "ticlang"
+        ],
+        "subCategories": [
+            "..",
+            "source",
+            "networking",
+            "enet",
+            "core",
+            "examples",
+            "tsn_demo",
+            "listener",
+            "r5fss0-0_freertos"
+        ],
+        "mainCategories": [
+            [
+                "Examples",
+                "Development Tools"
+            ]
+        ]
+    },
+    {
+        "resourceType": "project.ccs",
+        "resourceClass": [
+            "example"
+        ],
+        "resourceSubClass": [
+            "example.general"
+        ],
+        "description": "A Tsn Demo Listener Example. CPU is R5FSS0-0 running FREERTOS.",
+        "name": "tsn_demo_listener",
+        "location": "../../source/networking/enet/core/examples/tsn_demo/listener/am261x-som/r5fss0-0_freertos/ti-arm-clang/example.projectspec",
+        "devtools": [
+            "AM261-SOM-EVM"
+        ],
+        "kernel": [
+            "freertos"
+        ],
+        "compiler": [
+            "ticlang"
+        ],
+        "subCategories": [
+            "..",
+            "source",
+            "networking",
+            "enet",
+            "core",
+            "examples",
+            "tsn_demo",
+            "listener",
+            "r5fss0-0_freertos"
+        ],
+        "mainCategories": [
+            [
+                "Examples",
+                "Development Tools"
+            ]
+        ]
+    },
+    {
+        "resourceType": "project.ccs",
+        "resourceClass": [
+            "example"
+        ],
+        "resourceSubClass": [
+            "example.general"
+        ],
+        "description": "A Tsn Demo Talker Example. CPU is R5FSS0-0 running FREERTOS.",
+        "name": "tsn_demo_talker",
+        "location": "../../source/networking/enet/core/examples/tsn_demo/talker/am261x-lp/r5fss0-0_freertos/ti-arm-clang/example.projectspec",
+        "devtools": [
+            "LP-AM261"
+        ],
+        "kernel": [
+            "freertos"
+        ],
+        "compiler": [
+            "ticlang"
+        ],
+        "subCategories": [
+            "..",
+            "source",
+            "networking",
+            "enet",
+            "core",
+            "examples",
+            "tsn_demo",
+            "talker",
+            "r5fss0-0_freertos"
+        ],
+        "mainCategories": [
+            [
+                "Examples",
+                "Development Tools"
+            ]
+        ]
+    },
+    {
+        "resourceType": "project.ccs",
+        "resourceClass": [
+            "example"
+        ],
+        "resourceSubClass": [
+            "example.general"
+        ],
+        "description": "A Tsn Demo Talker Example. CPU is R5FSS0-0 running FREERTOS.",
+        "name": "tsn_demo_talker",
+        "location": "../../source/networking/enet/core/examples/tsn_demo/talker/am261x-som/r5fss0-0_freertos/ti-arm-clang/example.projectspec",
+        "devtools": [
+            "AM261-SOM-EVM"
+        ],
+        "kernel": [
+            "freertos"
+        ],
+        "compiler": [
+            "ticlang"
+        ],
+        "subCategories": [
+            "..",
+            "source",
+            "networking",
+            "enet",
+            "core",
+            "examples",
+            "tsn_demo",
+            "talker",
             "r5fss0-0_freertos"
         ],
         "mainCategories": [

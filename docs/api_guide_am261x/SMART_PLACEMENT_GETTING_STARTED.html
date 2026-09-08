@@ -43,7 +43,7 @@
   <td id="projectlogo"><a href="https://www.ti.com"><img alt="Logo" src="ti_logo.svg"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AM261x MCU+ SDK
-   &#160;<span id="projectnumber">26.00.00</span>
+   &#160;<span id="projectnumber">26.01.00</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -92,40 +92,40 @@ $(document).ready(function(){initNavTree('SMART_PLACEMENT_GETTING_STARTED.html',
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#autotoc_md67">Introduction</a><ul><li class="level2"><a href="#autotoc_md68">When is smart placement required:</a></li>
-<li class="level2"><a href="#autotoc_md69">What not to expect from Smart Placement?</a></li>
+<ul><li class="level1"><a href="#autotoc_md68">Introduction</a><ul><li class="level2"><a href="#autotoc_md69">When is smart placement required:</a></li>
+<li class="level2"><a href="#autotoc_md70">What not to expect from Smart Placement?</a></li>
 </ul>
 </li>
-<li class="level1"><a href="#autotoc_md70">Specific implementation of smart placement</a><ul><li class="level2"><a href="#autotoc_md71">Manual Implementation</a></li>
-<li class="level2"><a href="#autotoc_md72">SW Instrumentation implementation</a></li>
+<li class="level1"><a href="#autotoc_md71">Specific implementation of smart placement</a><ul><li class="level2"><a href="#autotoc_md72">Manual Implementation</a></li>
+<li class="level2"><a href="#autotoc_md73">SW Instrumentation implementation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="textblock"><p><a class="anchor" id="md_getting_started_getting_started_smart_placement"></a> </p>
-<h1><a class="anchor" id="autotoc_md67"></a>
+<h1><a class="anchor" id="autotoc_md68"></a>
 Introduction</h1>
 <p>Usually used when application foot print is more than internal memory size. More on this can be read at <a class="el" href="SMART_PLACEMENT.html">Smart Placement</a></p>
-<h2><a class="anchor" id="autotoc_md68"></a>
+<h2><a class="anchor" id="autotoc_md69"></a>
 When is smart placement required:</h2>
 <p>Smart Placement would:</p><ol type="1">
 <li>Place critical code section needed for deterministic latencies to appropriate memories</li>
 <li>Identify and place code section which are bottleneck to system performance and place them in faster memory.</li>
 <li>Improves XIP performance.</li>
 </ol>
-<h2><a class="anchor" id="autotoc_md69"></a>
+<h2><a class="anchor" id="autotoc_md70"></a>
 What not to expect from Smart Placement?</h2>
 <p>Smart placement is dependent on profiling data and the input given by the user on the priority of the function. The result achieved by smart placement tool is dependent on these factors. In absence of this factor, the full effect of smart placement would not be achieved.</p>
-<h1><a class="anchor" id="autotoc_md70"></a>
+<h1><a class="anchor" id="autotoc_md71"></a>
 Specific implementation of smart placement</h1>
-<h2><a class="anchor" id="autotoc_md71"></a>
+<h2><a class="anchor" id="autotoc_md72"></a>
 Manual Implementation</h2>
 <p>Use this when</p><ol type="1">
 <li>it is not suitable to run the application on the target and collect runtime profiling data.</li>
 <li>Developer of the application have knowledge about the criticality of various functions/Tasks.</li>
 </ol>
 <p>More on this can be read at <a class="el" href="MANUAL_SMART_PLACEMENT.html">Manual Smart Placement</a></p>
-<h2><a class="anchor" id="autotoc_md72"></a>
+<h2><a class="anchor" id="autotoc_md73"></a>
 SW Instrumentation implementation</h2>
 <p>This method gives an automated way of finding critical functions. A more frequent function is more critical function. Use this when:</p><ol type="1">
 <li>Application runtime profiling and profiling data extraction is possible.</li>

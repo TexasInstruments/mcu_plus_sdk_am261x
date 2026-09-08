@@ -43,7 +43,7 @@
   <td id="projectlogo"><a href="https://www.ti.com"><img alt="Logo" src="ti_logo.svg"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AM261x MCU+ SDK
-   &#160;<span id="projectnumber">26.00.00</span>
+   &#160;<span id="projectnumber">26.01.00</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -92,12 +92,12 @@ $(document).ready(function(){initNavTree('FAST_SECURE_BOOT.html',''); initResiza
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md_developer_guides_fast_secure_boot"></a> </p>
-<h1><a class="anchor" id="autotoc_md482"></a>
+<h1><a class="anchor" id="autotoc_md485"></a>
 Achieving Fast Secure Boot</h1>
-<h2><a class="anchor" id="autotoc_md483"></a>
+<h2><a class="anchor" id="autotoc_md486"></a>
 Introduction</h2>
 <p>This document is intended for the users who want to achieve the least secure boot time for a signed (optionally encrypted) application through Flash interface</p>
-<h2><a class="anchor" id="autotoc_md484"></a>
+<h2><a class="anchor" id="autotoc_md487"></a>
 Steps to build, flash, load and run secure applications</h2>
 <ul>
 <li>Make sure <b>pyelftools</b>, <b>construct</b> and <b>cryptography</b> is installed from pip. This package is required for encrypting MCELF application images.</li>
@@ -122,7 +122,7 @@ HSM Runtime Flash Offset</div></div>
 <li>Set the board to UART bootmode and update the flash contents. Checkout the steps mentioned in <a class="el" href="GETTING_STARTED_FLASH.html">Flash a Hello World example</a> .</li>
 </ul>
 <dl class="section note"><dt>Note</dt><dd>HSM runtime firmware path must be provided in this fast sbl config in addition to sbl_qspi_fastboot, application and sbl_uart_uniflash binary paths .</dd></dl>
-<h1><a class="anchor" id="autotoc_md485"></a>
+<h1><a class="anchor" id="autotoc_md488"></a>
 Component wise secure boot time measurement</h1>
 <p>Secure Boot time can be measured by using GPIOs at various points of execution.</p>
 <p>The points of interest for Secure Boot are:</p><ol type="1">
@@ -139,7 +139,7 @@ Component wise secure boot time measurement</h1>
 </ul>
 </li>
 </ol>
-<h1><a class="anchor" id="autotoc_md486"></a>
+<h1><a class="anchor" id="autotoc_md489"></a>
 Boot time calculator</h1>
 <p>The boot time calculator can be used get an idea of the secure boot time values which can be achieved with fast boot sbls and tifs mcu. The numbers are as per SDK 10.00 version.</p>
 <p>Checkout the secure boot time calculator tool <a href="../boottime_calculator/index.html">here</a> . </p>

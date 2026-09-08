@@ -43,7 +43,7 @@
   <td id="projectlogo"><a href="https://www.ti.com"><img alt="Logo" src="ti_logo.svg"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AM261x MCU+ SDK
-   &#160;<span id="projectnumber">26.00.00</span>
+   &#160;<span id="projectnumber">26.01.00</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -92,23 +92,23 @@ $(document).ready(function(){initNavTree('ADDITIONAL_DETAILS_PAGE.html',''); ini
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><ul><li class="level2"><a href="#autotoc_md52">Alternate Method to Build and Run the examples</a><ul><li class="level3"><a href="#EVM_SOC_INIT">SOC Initialization</a></li>
-<li class="level3"><a href="#EVM_SOC_INIT_NOBOOT_MODE">SOC Initialization Using CCS Scripting</a><ul><li class="level4"><a href="#autotoc_md53">Set Environment Variable</a></li>
-<li class="level4"><a href="#autotoc_md54">Run the SOC Initialization Script</a></li>
+<ul><ul><li class="level2"><a href="#autotoc_md53">Alternate Method to Build and Run the examples</a><ul><li class="level3"><a href="#EVM_SOC_INIT">SOC Initialization</a></li>
+<li class="level3"><a href="#EVM_SOC_INIT_NOBOOT_MODE">SOC Initialization Using CCS Scripting</a><ul><li class="level4"><a href="#autotoc_md54">Set Environment Variable</a></li>
+<li class="level4"><a href="#autotoc_md55">Run the SOC Initialization Script</a></li>
 </ul>
 </li>
 <li class="level3"><a href="#EVM_FLASH_SOC_INIT">SOC Initialization using the Binary Flashed in OSPI memory</a></li>
 </ul>
 </li>
-<li class="level2"><a href="#autotoc_md55">AM261X-SOM</a></li>
-<li class="level2"><a href="#autotoc_md56">AM261X-LP</a><ul><li class="level3"><a href="#autotoc_md57">Run the example</a></li>
+<li class="level2"><a href="#autotoc_md56">AM261X-SOM</a></li>
+<li class="level2"><a href="#autotoc_md57">AM261X-LP</a><ul><li class="level3"><a href="#autotoc_md58">Run the example</a></li>
 </ul>
 </li>
 </ul>
 </ul>
 </div>
 <div class="textblock"><p><a class="anchor" id="md_device_am261x_additional_details"></a></p>
-<h2><a class="anchor" id="autotoc_md52"></a>
+<h2><a class="anchor" id="autotoc_md53"></a>
 Alternate Method to Build and Run the examples</h2>
 <dl class="section note"><dt>Note</dt><dd>These steps are optional.</dd></dl>
 <p>Below method cab be used for running examples built with makefiles</p>
@@ -122,7 +122,7 @@ SOC Initialization</h3>
 <p>Before any program can be loaded and run on the EVM, the SOC needs to be initialized. Below sections describes the various options available for SOC initialization.</p>
 <h3><a class="anchor" id="EVM_SOC_INIT_NOBOOT_MODE"></a>
 SOC Initialization Using CCS Scripting</h3>
-<h4><a class="anchor" id="autotoc_md53"></a>
+<h4><a class="anchor" id="autotoc_md54"></a>
 Set Environment Variable</h4>
 <dl class="section note"><dt>Note</dt><dd>This step needs to be done once and is needed for the SOC initialization script <code>load_sbl.js</code> to find certain initialization files within the SDK folder. This variable is not used otherwise in the build process. If you dont like adding variables in the environment, then you need to edit the file <code>${SDK_INSTALL_PATH}/tools/ccs_load/am261x/load_sbl.js</code> and specify the SDK path in the file itself.</dd></dl>
 <ul>
@@ -143,7 +143,7 @@ Add New Environment Variable For Your Account</div></div>
 </pre></li>
 <li>If CCS is open, close and reopen CCS for the CCS to be able to see the updated environment variable</li>
 </ul>
-<h4><a class="anchor" id="autotoc_md54"></a>
+<h4><a class="anchor" id="autotoc_md55"></a>
 Run the SOC Initialization Script</h4>
 <h5>AM261X-LP</h5>
 <dl class="section attention"><dt>Attention</dt><dd>This step needs to be done <b>every time</b> the AM261X-LP is power-cycled.</dd></dl>
@@ -263,7 +263,7 @@ Scripting Console Log</div></div>
 </ul>
 <h3><a class="anchor" id="EVM_FLASH_SOC_INIT"></a>
 SOC Initialization using the Binary Flashed in OSPI memory</h3>
-<h2><a class="anchor" id="autotoc_md55"></a>
+<h2><a class="anchor" id="autotoc_md56"></a>
 AM261X-SOM</h2>
 <p>The <code>sbl_null</code> is a secondary bootloader which doesn't load any application binary, but just does the SOC initialization and puts all the cores in WFI (Wait For Interrupt) mode.</p>
 <ul>
@@ -337,7 +337,7 @@ OSPI BOOT MODE</div></div>
 <li>Re-connect the UART terminal in CCS window as shown in <a class="el" href="EVM_SETUP_PAGE.html#CCS_UART_TERMINAL">Setup UART Terminal</a></li>
 <li><b>POWER-ON</b> the EVM</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md56"></a>
+<h2><a class="anchor" id="autotoc_md57"></a>
 AM261X-LP</h2>
 <p>The <code>sbl_null</code> is a secondary bootloader which doesn't load any application binary, but just does the SOC initialization and puts all the cores in WFI (Wait For Interrupt) mode.</p>
 <ul>
@@ -411,7 +411,7 @@ OSPI BOOT MODE</div></div>
 <li>Re-connect the UART terminal in CCS window as shown in <a class="el" href="EVM_SETUP_PAGE.html#CCS_UART_TERMINAL">Setup UART Terminal</a></li>
 <li><b>POWER-ON</b> the EVM</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md57"></a>
+<h3><a class="anchor" id="autotoc_md58"></a>
 Run the example</h3>
 <ul>
 <li>Now you can run the example built (see <a class="el" href="CCS_LAUNCH_PAGE.html">CCS Launch, Load and Run</a> <a class="el" href="IAR_LAUNCH_PAGE.html">IAR Launch, Load and Run</a>)</li>

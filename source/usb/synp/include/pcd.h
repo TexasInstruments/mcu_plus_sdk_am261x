@@ -88,7 +88,7 @@ extern "C" {
 #define DWC_MAX_EP0_SIZE	512
 
 /**
- * \brief Maxpacket size for any EP, defined by USB3 spec 
+ * \brief Maxpacket size for any EP, defined by USB3 spec
  */
 #define DWC_MAX_PACKET_SIZE	1024
 

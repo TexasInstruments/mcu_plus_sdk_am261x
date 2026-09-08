@@ -43,7 +43,7 @@
   <td id="projectlogo"><a href="https://www.ti.com"><img alt="Logo" src="ti_logo.svg"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AM261x MCU+ SDK
-   &#160;<span id="projectnumber">26.00.00</span>
+   &#160;<span id="projectnumber">26.01.00</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -105,16 +105,19 @@ $(document).ready(function(){initNavTree('EVM_SETUP_PAGE.html',''); initResizabl
 <li class="level4"><a href="#autotoc_md41">AM261X-SOM</a></li>
 </ul>
 </li>
-<li class="level3"><a href="#BOOTMODE_UART">UART BOOT MODE</a><ul><li class="level4"><a href="#autotoc_md42">AM261X-LP</a></li>
-<li class="level4"><a href="#autotoc_md43">AM261X-SOM</a></li>
+<li class="level3"><a href="#BOOTMODE_OSPI_8S">OSPI 8S BOOT MODE</a><ul><li class="level4"><a href="#autotoc_md42">AM261X-LP</a></li>
 </ul>
 </li>
-<li class="level3"><a href="#BOOTMODE_NOBOOT">DEVBOOT MODE</a><ul><li class="level4"><a href="#autotoc_md44">AM261X-LP</a></li>
-<li class="level4"><a href="#autotoc_md45">AM261X-SOM</a></li>
+<li class="level3"><a href="#BOOTMODE_UART">UART BOOT MODE</a><ul><li class="level4"><a href="#autotoc_md43">AM261X-LP</a></li>
+<li class="level4"><a href="#autotoc_md44">AM261X-SOM</a></li>
 </ul>
 </li>
-<li class="level3"><a href="#BOOTMODE_DFU">DFU BOOT MODE</a><ul><li class="level4"><a href="#autotoc_md46">AM261X-LP</a></li>
-<li class="level4"><a href="#autotoc_md47">AM261X-SOM</a></li>
+<li class="level3"><a href="#BOOTMODE_NOBOOT">DEVBOOT MODE</a><ul><li class="level4"><a href="#autotoc_md45">AM261X-LP</a></li>
+<li class="level4"><a href="#autotoc_md46">AM261X-SOM</a></li>
+</ul>
+</li>
+<li class="level3"><a href="#BOOTMODE_DFU">DFU BOOT MODE</a><ul><li class="level4"><a href="#autotoc_md47">AM261X-LP</a></li>
+<li class="level4"><a href="#autotoc_md48">AM261X-SOM</a></li>
 </ul>
 </li>
 </ul>
@@ -217,17 +220,28 @@ AM261X-SOM</h4>
 <img src="am261x_som_boot_pins_ospi.png" alt=""/>
 <div class="caption">
 OSPI BOOT MODE</div></div>
+<h3><a class="anchor" id="BOOTMODE_OSPI_8S"></a>
+OSPI 8S BOOT MODE</h3>
+<p>This boot mode must be used when booting with the <b>GigaDevice GD25LX256</b> OSPI flash on AM261x-LP.</p>
+<dl class="section note"><dt>Note</dt><dd><b>Limitation:</b> The ROM bootloader does not correctly configure the GD25LX256 flash in the standard xSPI (8D-8D-8D) boot mode. As a workaround, use this 8S functional boot mode instead. The SBL will take over and reconfigure the flash in 8D-8D-8D protocol before loading the application. See <a class="el" href="CUSTOM_FLASH_SUPPORT_GUIDE.html">Adding Support For a Custom Flash Device</a> for the required SysConfig settings when using the GigaDevice flash.</dd></dl>
+<h4><a class="anchor" id="autotoc_md42"></a>
+AM261X-LP</h4>
+<div class="fragment"><div class="line">BOOTMODE [ 1 : 4 ] (SW1) = 0011</div>
+</div><!-- fragment --><p> <style>div.image img[src="am261x_lp_boot_pins_ospi_8s.png"]{width:30%}</style> </p><div class="image">
+<img src="am261x_lp_boot_pins_ospi_8s.png" alt=""/>
+<div class="caption">
+OSPI 8S BOOT MODE (GigaDevice GD25LX256)</div></div>
 <h3><a class="anchor" id="BOOTMODE_UART"></a>
 UART BOOT MODE</h3>
 <p>This mode is used to flash files to the EVM flash via UART. It can also be used to boot applications via UART.</p>
-<h4><a class="anchor" id="autotoc_md42"></a>
+<h4><a class="anchor" id="autotoc_md43"></a>
 AM261X-LP</h4>
 <div class="fragment"><div class="line">BOOTMODE [ 1 : 4 ] (SW1) = 0111</div>
 </div><!-- fragment --><p> <style>div.image img[src="am261x_lp_boot_pins_uart_mode.png"]{width:30%}</style> </p><div class="image">
 <img src="am261x_lp_boot_pins_uart_mode.png" alt=""/>
 <div class="caption">
 UART BOOT MODE</div></div>
-<h4><a class="anchor" id="autotoc_md43"></a>
+<h4><a class="anchor" id="autotoc_md44"></a>
 AM261X-SOM</h4>
 <div class="fragment"><div class="line">BOOTMODE [ 1 : 4 ] (SW1) = 1000</div>
 </div><!-- fragment --><p> <style>div.image img[src="am261x_som_boot_pins_uart_mode.png"]{width:25%}</style> </p><div class="image">
@@ -237,14 +251,14 @@ UART BOOT MODE</div></div>
 <h3><a class="anchor" id="BOOTMODE_NOBOOT"></a>
 DEVBOOT MODE</h3>
 <p>This mode is used in CCS.</p>
-<h4><a class="anchor" id="autotoc_md44"></a>
+<h4><a class="anchor" id="autotoc_md45"></a>
 AM261X-LP</h4>
 <div class="fragment"><div class="line">BOOTMODE [ 1 : 4 ] (SW1) = 0010</div>
 </div><!-- fragment --><p> <style>div.image img[src="am261x_lp_boot_pins_noboot_mode.png"]{width:30%}</style> </p><div class="image">
 <img src="am261x_lp_boot_pins_noboot_mode.png" alt=""/>
 <div class="caption">
 NO BOOT MODE</div></div>
-<h4><a class="anchor" id="autotoc_md45"></a>
+<h4><a class="anchor" id="autotoc_md46"></a>
 AM261X-SOM</h4>
 <div class="fragment"><div class="line">BOOTMODE [ 1 : 4 ] (SW1) = 1101</div>
 </div><!-- fragment --><p> <style>div.image img[src="am261x_som_boot_pins_noboot_mode.png"]{width:25%}</style> </p><div class="image">
@@ -254,14 +268,14 @@ NO BOOT MODE</div></div>
 <h3><a class="anchor" id="BOOTMODE_DFU"></a>
 DFU BOOT MODE</h3>
 <p>This mode is used with DFU bootloader and DFU Uniflash.</p>
-<h4><a class="anchor" id="autotoc_md46"></a>
+<h4><a class="anchor" id="autotoc_md47"></a>
 AM261X-LP</h4>
 <div class="fragment"><div class="line">BOOTMODE [ 1 : 4 ] (SW1) = 1000</div>
 </div><!-- fragment --><p> <style>div.image img[src="am261x_lp_boot_pins_dfu_mode.png"]{width:30%}</style> </p><div class="image">
 <img src="am261x_lp_boot_pins_dfu_mode.png" alt=""/>
 <div class="caption">
 DFU BOOT MODE</div></div>
-<h4><a class="anchor" id="autotoc_md47"></a>
+<h4><a class="anchor" id="autotoc_md48"></a>
 AM261X-SOM</h4>
 <div class="fragment"><div class="line">BOOTMODE [ 1 : 4 ] (SW1) = 0111</div>
 </div><!-- fragment --><p> <style>div.image img[src="am261x_som_boot_pins_dfu_mode.png"]{width:25%}</style> </p><div class="image">

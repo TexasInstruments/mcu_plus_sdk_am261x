@@ -41,6 +41,9 @@
 
 #include "FreeRTOS.h"
 #include <kernel/dpl/TaskP.h>
+#include <kernel/dpl/QueueP.h>
+#include <kernel/dpl/SemaphoreP.h>
+#include <kernel/dpl/EventP.h>
 
 #include "dhserver.h"
 #include "dnserver.h"
@@ -53,23 +56,48 @@
 #include "ti_drivers_config.h"
 #include "ti_drivers_open_close.h"
 #include "tusb.h"
+#include <lwip/tcpip.h>
 
 
-#define USB_TASK_PRI  (TaskP_PRIORITY_HIGHEST-2)
-#define USB_TASK_SIZE (1024U)
+#define USB_TASK_PRI      (TaskP_PRIORITY_HIGHEST-2)
+#define USB_TASK_SIZE       (2048U)
 uint8_t gUsbTaskStack[USB_TASK_SIZE] __attribute__((aligned(32)));
 TaskP_Object gUsbTaskObj;
 TaskP_Params gUsbTaskParams;
 
-#define NETWORK_SERVICE_TASK_PRI  (TaskP_PRIORITY_HIGHEST-3)
-#define NETWORK_SERVICE_TASK_SIZE (1024U)
+#define NETWORK_SERVICE_TASK_PRI  (TaskP_PRIORITY_HIGHEST-4)
+#define NETWORK_SERVICE_TASK_SIZE (2048U)
 uint8_t gNetworkTaskStack[NETWORK_SERVICE_TASK_SIZE] __attribute__((aligned(32)));
 TaskP_Object gNetworkTaskObj;
 TaskP_Params gNetworkTaskParams;
 
+/* Event bits for network processing */
+#define NETWORK_EVENT_TX_BIT        (1 << 0)  /* Bit 0: TX data ready */
+#define NETWORK_EVENT_TX_RETRY_BIT  (1 << 1)  /* Bit 1: TX retry */
+
+EventP_Object gNetworkEventObj;
+
 void usb_task_loop(void *args);
 void network_service_task_loop(void *args);
 
+#define TX_QUEUE_SIZE 64
+
+typedef struct
+{
+    QueueP_Elem elem;
+    struct pbuf * pbuf;
+}ncmQueueElem;
+
+QueueP_Object   freeQObjectTx;
+QueueP_Object   readyQObjectTx;
+QueueP_Handle   freeQHandleTx;
+QueueP_Handle   readyQHandleTx;
+
+SemaphoreP_Object txQueueMutex;
+SemaphoreP_Object initNetwork;
+
+static ncmQueueElem ncmTxQueueBuffer[TX_QUEUE_SIZE] = {0};
+static ncmQueueElem *pendingElem = NULL;
 
 #if LWIP_TCP
 static void lwiperf_report(void *arg, enum lwiperf_report_type report_type,
@@ -99,9 +127,6 @@ void lwiperf_example_init(void) {
 
 /* lwip context */
 static struct netif netif_data;
-
-/* shared between tud_network_recv_cb() and service_traffic() */
-static struct pbuf *received_frame;
 
 /* this is used by this code, ./class/net/net_driver.c, and usb_descriptors.c */
 /* ideally speaking, this should be generated from the hardware's unique ID (if
@@ -140,20 +165,28 @@ static const dhcp_config_t dhcp_config = {
 static err_t linkoutput_fn(struct netif *netif, struct pbuf *p) {
     (void)netif;
 
-    for (;;) {
-        /* if TinyUSB isn't ready, we must signal back to lwip that there is nothing
-         * we can do */
-        if (!tud_ready()) return ERR_USE;
+    /* if TinyUSB isn't ready, we must signal back to lwip that there is nothing
+     * we can do */
+    if (!tud_ready()) return ERR_USE;
 
-        /* if the network driver can accept another packet, we make it happen */
-        if (tud_network_can_xmit(p->tot_len)) {
-            tud_network_xmit(p, 0 /* unused for this example */);
-            return ERR_OK;
-        }
-        /* transfer execution to TinyUSB in the hopes that it will finish
-         * transmitting the prior packet */
-        tud_task();
+    SemaphoreP_pend(&txQueueMutex, SystemP_WAIT_FOREVER);
+    ncmQueueElem *elem = (ncmQueueElem*)QueueP_get(freeQHandleTx);
+    if (elem != NULL)
+    {
+        pbuf_ref(p);
+        elem->pbuf = p;
+
+        QueueP_put(readyQHandleTx, elem);
+        SemaphoreP_post(&txQueueMutex);
+        
+        /* Set TX event bit to trigger network task processing */
+        EventP_setBits(&gNetworkEventObj, NETWORK_EVENT_TX_BIT);
+        
+        return ERR_OK;
     }
+    SemaphoreP_post(&txQueueMutex);
+
+    return ERR_MEM;
 }
 
 static err_t ip4_output_fn(struct netif *netif, struct pbuf *p,
@@ -184,26 +217,6 @@ static err_t netif_init_cb(struct netif *netif) {
     return ERR_OK;
 }
 
-static void init_lwip(void) {
-    struct netif *netif = &netif_data;
-
-    lwip_init();
-
-    /* the lwip virtual MAC address must be different from the host's; to ensure
-     * this, we toggle the LSbit */
-    netif->hwaddr_len = sizeof(tud_network_mac_address);
-    memcpy(netif->hwaddr, tud_network_mac_address,
-                 sizeof(tud_network_mac_address));
-    netif->hwaddr[5] ^= 0x01;
-
-    netif = netif_add(netif, &ipaddr, &netmask, &gateway, NULL, netif_init_cb,
-                                        ip_input);
-#if LWIP_IPV6
-    netif_create_ip6_linklocal_address(netif, 1);
-#endif
-    netif_set_default(netif);
-}
-
 /* handle any DNS requests from dns-server */
 bool dns_query_proc(const char *name, ip4_addr_t *addr) {
     if (0 == strcmp(name, "tiny.usb")) {
@@ -213,27 +226,94 @@ bool dns_query_proc(const char *name, ip4_addr_t *addr) {
     return false;
 }
 
+static void setup_netif_and_services(netif_input_fn input_fn)
+{
+    struct netif *netif = &netif_data;
+
+    /* the lwip virtual MAC address must be different from the host's; to ensure
+     * this, we toggle the LSbit */
+    netif->hwaddr_len = sizeof(tud_network_mac_address);
+    memcpy(netif->hwaddr, tud_network_mac_address,
+                 sizeof(tud_network_mac_address));
+    netif->hwaddr[5] ^= 0x01;
+
+    netif = netif_add(netif, &ipaddr, &netmask, &gateway, NULL, netif_init_cb,
+                    input_fn);
+#if LWIP_IPV6
+    netif_create_ip6_linklocal_address(netif, 1);
+#endif
+    netif_set_default(netif);
+
+#if LWIP_LWIPERF_APP
+    lwiperf_example_init();
+#endif
+    while (!netif_is_up(&netif_data))
+        ClockP_usleep(1000);
+    while (dhserv_init(&dhcp_config) != ERR_OK)
+        ClockP_usleep(1000);
+    while (dnserv_init(IP_ADDR_ANY, 53, dns_query_proc) != ERR_OK)
+        ClockP_usleep(1000);
+    httpd_init();
+}
+
+#if !NO_SYS
+/* Called by the tcpip thread after lwip_init; runs in tcpip thread context. */
+void lwIP_tcpipCallback(void *pvArg)
+{
+    setup_netif_and_services(tcpip_input);
+    SemaphoreP_post(&initNetwork);
+}
+#endif
+
+static void init_lwip(void) {
+#if NO_SYS
+    lwip_init();
+    setup_netif_and_services(netif_input);
+#else
+    tcpip_init(lwIP_tcpipCallback, 0);
+    SemaphoreP_pend(&initNetwork, SystemP_WAIT_FOREVER);
+#endif
+}
+
 bool tud_network_recv_cb(const uint8_t *src, uint16_t size) {
-    /* this shouldn't happen, but if we get another packet before
-    parsing the previous, we must signal our inability to accept it */
-    if (received_frame) {
+    if (size == 0) {
+        return true;
+    }
+    /* Guard against packets arriving before LwIP is initialized */
+    if (netif_data.input == NULL) {
         return false;
     }
-
-    if (size) {
-        struct pbuf *p = pbuf_alloc(PBUF_RAW, size, PBUF_POOL);
-        /* DebugP_log("recv size=%d\r\n",size); */
-        if (p) {
-            /* pbuf_alloc() has already initialized struct; all we need to do is copy
-             * the data */
-            memcpy(p->payload, src, size);
-
-            /* store away the pointer for service_traffic() to later handle */
-            received_frame = p;
-        }
+    struct pbuf *pbuf = pbuf_alloc(PBUF_RAW, size, PBUF_POOL);
+    if (pbuf == NULL) {
+        tud_network_recv_renew();
+        return false;
     }
-
+    pbuf_take(pbuf, src, size);
+    if (ERR_OK != netif_data.input(pbuf, &netif_data)) {
+        pbuf_free(pbuf);
+    }
+    tud_network_recv_renew();
     return true;
+}
+
+void QueueInit(){
+    int32_t status;
+
+    status = EventP_construct(&gNetworkEventObj);
+    DebugP_assert(status == SystemP_SUCCESS);
+
+    status = SemaphoreP_constructMutex(&txQueueMutex);
+    DebugP_assert(status == SystemP_SUCCESS);
+
+    status = SemaphoreP_constructBinary(&initNetwork, 0);
+    DebugP_assert(status == SystemP_SUCCESS);
+
+    freeQHandleTx = QueueP_create(&freeQObjectTx);
+    readyQHandleTx = QueueP_create(&readyQObjectTx);
+
+    for (uint8_t i = 0; i < TX_QUEUE_SIZE; i++) {
+        QueueP_put(freeQHandleTx, &ncmTxQueueBuffer[i]);
+    }
 }
 
 uint16_t tud_network_xmit_cb(uint8_t *dst, void *ref, uint16_t arg) {
@@ -247,27 +327,95 @@ uint16_t tud_network_xmit_cb(uint8_t *dst, void *ref, uint16_t arg) {
 /* here the ethernet input is the input to stack
  tcp/ip */
 static void service_traffic(void) {
-    /* handle any packet received by tud_network_recv_cb() */
-    if (received_frame) {
-        /* loop_forever() ; */
-        if (ERR_OK != ethernet_input(received_frame, &netif_data)) {
-            pbuf_free(received_frame);
-            DebugP_log("Free because of error \r\n");
-        }
-        received_frame = NULL;
-        tud_network_recv_renew();
-    }
 
-    sys_check_timeouts();
+    ncmQueueElem *elem;
+    uint32_t eventBits = 0;
+
+    /* Wait for TX events - don't auto-clear, we'll clear manually */
+    EventP_waitBits(&gNetworkEventObj,
+        NETWORK_EVENT_TX_BIT | NETWORK_EVENT_TX_RETRY_BIT,
+        0,  /* clearOnExit: don't auto-clear, we'll clear manually after processing */
+        0,  /* waitForAll: wait for ANY bit (OR) */
+        SystemP_WAIT_FOREVER,
+        &eventBits);
+
+    if (eventBits & (NETWORK_EVENT_TX_BIT | NETWORK_EVENT_TX_RETRY_BIT))
+    {
+        /* Clear the retry bit immediately if set */
+        if (eventBits & NETWORK_EVENT_TX_RETRY_BIT) {
+            EventP_clearBits(&gNetworkEventObj, NETWORK_EVENT_TX_RETRY_BIT);
+        }
+        
+        /* Process TX queue with TX mutex - protect pendingElem access */
+        if(SystemP_SUCCESS == SemaphoreP_pend(&txQueueMutex, SystemP_WAIT_FOREVER)){
+            if (pendingElem != NULL)
+            {
+                if (tud_ready() && tud_network_can_xmit(pendingElem->pbuf->tot_len)) {
+                    /* Transmit the packet */
+                    tud_network_xmit(pendingElem->pbuf, 0);
+                    pbuf_free(pendingElem->pbuf);
+                    QueueP_put(freeQHandleTx, pendingElem);
+                    pendingElem = NULL;
+                } else {
+                    /* Still can't transmit, set retry bit and return */
+                    EventP_setBits(&gNetworkEventObj, NETWORK_EVENT_TX_RETRY_BIT);
+                    SemaphoreP_post(&txQueueMutex);
+                    return;
+                }
+            }
+            
+            while (QueueP_isEmpty(readyQHandleTx) == QueueP_NOTEMPTY) {
+                elem = QueueP_get(readyQHandleTx);
+                if (elem != NULL)
+                {
+                    if (tud_ready() && tud_network_can_xmit(elem->pbuf->tot_len)) {
+                        /* Transmit the packet */
+                        tud_network_xmit(elem->pbuf, 0);
+                        pbuf_free(elem->pbuf);
+                        QueueP_put(freeQHandleTx, elem);
+                    }
+                    else {
+                        /* Can't transmit now, save for retry */
+                        pendingElem = elem;
+                        EventP_setBits(&gNetworkEventObj, NETWORK_EVENT_TX_RETRY_BIT);
+                        SemaphoreP_post(&txQueueMutex);
+                        return;
+                    }
+                }
+            }
+            
+            /* All packets processed, clear TX bit */
+            if (QueueP_isEmpty(readyQHandleTx) == QueueP_EMPTY && pendingElem == NULL)
+            {
+                EventP_clearBits(&gNetworkEventObj, NETWORK_EVENT_TX_BIT);
+            }
+            
+            SemaphoreP_post(&txQueueMutex);
+        }
+    }
 }
 
 void tud_network_init_cb(void) {
-    /* if the network is re-initializing and we have a leftover packet, we must do
-     * a cleanup */
-    if (received_frame) {
-        pbuf_free(received_frame);
-        received_frame = NULL;
+    ncmQueueElem *elem;
+
+    /* Flush TX queue on USB reconnect */
+    SemaphoreP_pend(&txQueueMutex, SystemP_WAIT_FOREVER);
+    
+    /* Clean up pending element to prevent use-after-free */
+    if (pendingElem != NULL) {
+        pbuf_free(pendingElem->pbuf);
+        QueueP_put(freeQHandleTx, pendingElem);
+        pendingElem = NULL;
     }
+    
+    while (QueueP_isEmpty(readyQHandleTx) == QueueP_NOTEMPTY) {
+        elem = QueueP_get(readyQHandleTx);
+        if (elem != NULL) {
+            pbuf_free(elem->pbuf);
+            QueueP_put(freeQHandleTx, elem);
+        }
+    }
+    SemaphoreP_post(&txQueueMutex);
 }
 
 /* lets receive POST request */
@@ -308,13 +456,15 @@ void httpd_post_finished(void *connection, char *response_uri,
     return;
 }
 
-
-int ncm_main(void) {
+void ncm_main(void *args) {
+    (void)args;
     int32_t status;
 
     Drivers_open();
     Board_driversOpen();
     
+    QueueInit();
+
     TaskP_Params_init(&gUsbTaskParams);
     gUsbTaskParams.name = "usb_task";                /**< Pointer to task name */
     gUsbTaskParams.stackSize = USB_TASK_SIZE;        /**< Size of stack in units of bytes */
@@ -336,18 +486,7 @@ int ncm_main(void) {
     /* create the task */
     status = TaskP_construct(&gNetworkTaskObj, &gNetworkTaskParams);
     DebugP_assert(status == SystemP_SUCCESS);
-
-    return 0;
 }
-
-/* lwip has provision for using a mutex, when applicable */
-sys_prot_t sys_arch_protect(void) { return 0; }
-void sys_arch_unprotect(sys_prot_t pval) { (void)pval; }
-
-/* lwip needs a millisecond time source, and the TinyUSB board support code has
- * one available */
-uint32_t sys_now(void) { return (ClockP_getTimeUsec() / 1000); }
-
 
 void usb_task_loop(void *args)
 {
@@ -355,7 +494,7 @@ void usb_task_loop(void *args)
     {
         USB_dwcTask(); /* Synopsis DWC task */
 
-        tud_task();
+        tud_task_ext(0, false);
     }
 }
 
@@ -364,13 +503,6 @@ void network_service_task_loop(void *args)
     (void)args;
 
     init_lwip();
-    while (!netif_is_up(&netif_data))
-        ;
-    while (dhserv_init(&dhcp_config) != ERR_OK)
-        ;
-    while (dnserv_init(IP_ADDR_ANY, 53, dns_query_proc) != ERR_OK)
-        ;
-    httpd_init();
 
     while (1)
     {

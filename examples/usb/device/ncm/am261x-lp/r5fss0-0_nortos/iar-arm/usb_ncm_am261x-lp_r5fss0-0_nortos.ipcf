@@ -17,7 +17,7 @@
             </argVar>
             <argVar>
                 <name>SYSCFG_PATH</name>
-                <value>C:\ti\sysconfig_1.27.0</value>
+                <value>C:\ti\sysconfig_1.28.0</value>
             </argVar>
             <argVar>
                 <name>SYSCFG_SDKPRODUCT</name>
@@ -41,6 +41,7 @@
         <path>$MCU_PLUS_SDK_PATH$/source/networking/lwip/lwip-config/am261x/usb/</path>
         <path>$MCU_PLUS_SDK_PATH$/source/networking/lwip/lwip-port/include/</path>
         <path>$MCU_PLUS_SDK_PATH$/source/networking/lwip/lwip-stack/src/include/lwip/apps</path>
+        <path>$MCU_PLUS_SDK_PATH$/source/networking/lwip/lwip-port/nortos/include/</path>
     </includePath>
 
     <defines>

@@ -35,6 +35,7 @@
 
 #include <string.h>
 #include "usb_drv.h"
+#include "os_defs.h"
 
 #define ALIGN_NO_CACHE(x) __attribute__ ((aligned (x))) __attribute__((section(".bss.nocache")))
 

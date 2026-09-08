@@ -17,7 +17,7 @@
             </argVar>
             <argVar>
                 <name>SYSCFG_PATH</name>
-                <value>C:\ti\sysconfig_1.27.0</value>
+                <value>C:\ti\sysconfig_1.28.0</value>
             </argVar>
             <argVar>
                 <name>SYSCFG_SDKPRODUCT</name>

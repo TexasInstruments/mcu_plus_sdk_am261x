@@ -102,16 +102,34 @@ typedef unsigned long           dwc_dma_t;
 #define EINPROGRESS     115     /* Operation now in progress */
 
 /** Write memory barrier macro */
-#define wmb()           do {} while ((bool)(0))
+#if defined(__ICCARM__)
+#define wmb()            __asm volatile  ("dsb" : : : "memory")
+#else
+#define wmb()           __asm__ __volatile__ ("dsb" : : : "memory")
+#endif
 
-#define interrupt_disable()     0
-#define interrupt_enable()      do {} while ((bool)(0))
+#include "kernel/dpl/HwiP.h"
 
+#define interrupt_disable()     HwiP_disable()
+#define interrupt_enable(f)      HwiP_restore(f)
+
+#if defined(OS_FREERTOS)
+/* FreeRTOS: Use critical sections to protect against task switches and interrupts */
+#include "FreeRTOS.h"
+#include "task.h"
+#define dwc_init_spinlock(d, p)                 do {} while ((bool)(0))
+#define dwc_acquire_spinlock(d, p)              taskENTER_CRITICAL()
+#define dwc_release_spinlock(d, p)              taskEXIT_CRITICAL()
+#define dwc_acquire_spinlock_irq(d, p, f)       do { (f) = interrupt_disable(); } while ((bool)(0))
+#define dwc_release_spinlock_irq(d, p, f)       do { interrupt_enable(f); } while ((bool)(0))
+#else
+/* NoRTOS: Use interrupt disable/enable for protection */
 #define dwc_init_spinlock(d, p)                 do {} while ((bool)(0))
 #define dwc_acquire_spinlock(d, p)              do {} while ((bool)(0))
 #define dwc_release_spinlock(d, p)              do {} while ((bool)(0))
 #define dwc_acquire_spinlock_irq(d, p, f)       do { (f) = interrupt_disable(); } while ((bool)(0))
-#define dwc_release_spinlock_irq(d, p, f)       do { if (f > 0U) { interrupt_enable(); } } while ((bool)(0))
+#define dwc_release_spinlock_irq(d, p, f)       do { interrupt_enable(f); } while ((bool)(0))
+#endif
 
 struct task_struct {
         int dummy;

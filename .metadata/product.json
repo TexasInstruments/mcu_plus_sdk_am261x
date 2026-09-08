@@ -1,7 +1,7 @@
 {
     "name": "MCU_PLUS_SDK_AM261x",
     "displayName": "MCU+ SDK for AM261x",
-    "version": "26.00.00",
+    "version": "26.01.00",
     "documentationPath": "../docs",
     "includePaths": [
         "../source/sysconfig",
@@ -23,14 +23,27 @@
     ],
     "devices": [
         "AM261x_ZCZ",
+        "AM261x_ZCZ_400",
         "AM261x_ZNC",
+        "AM261x_ZNC_400",
         "AM261x_ZEJ",
+        "AM261x_ZEJ_400",
         "AM261x_ZFG",
         "AM261x_ZFG_400",
     ],
     "boardPath": "/board/",
     "contexts": {
         "AM261x_ZCZ": [{
+            "name": "r5fss0-0",
+            "targetdbId": "Cortex_R5_0"
+        }, {
+            "name": "r5fss0-1",
+            "targetdbId": "Cortex_R5_1"
+        }, {
+            "name": "hsm0-0",
+            "targetdbId": "Cortex_M4_0"
+        }],
+        "AM261x_ZCZ_400": [{
             "name": "r5fss0-0",
             "targetdbId": "Cortex_R5_0"
         }, {
@@ -50,7 +63,27 @@
             "name": "hsm0-0",
             "targetdbId": "Cortex_M4_0"
         }],
+        "AM261x_ZNC_400": [{
+            "name": "r5fss0-0",
+            "targetdbId": "Cortex_R5_0"
+        }, {
+            "name": "r5fss0-1",
+            "targetdbId": "Cortex_R5_1"
+        }, {
+            "name": "hsm0-0",
+            "targetdbId": "Cortex_M4_0"
+        }],
         "AM261x_ZEJ": [{
+            "name": "r5fss0-0",
+            "targetdbId": "Cortex_R5_0"
+        }, {
+            "name": "r5fss0-1",
+            "targetdbId": "Cortex_R5_1"
+        }, {
+            "name": "hsm0-0",
+            "targetdbId": "Cortex_M4_0"
+        }],
+        "AM261x_ZEJ_400": [{
             "name": "r5fss0-0",
             "targetdbId": "Cortex_R5_0"
         }, {
@@ -88,5 +121,5 @@
         "showSignals": true,
         "showUsed": true
     },
-    "minToolVersion" : "1.27.0"
+    "minToolVersion" : "1.28.0"
 }

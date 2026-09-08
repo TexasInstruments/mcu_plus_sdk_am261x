@@ -43,7 +43,7 @@
   <td id="projectlogo"><a href="https://www.ti.com"><img alt="Logo" src="ti_logo.svg"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AM261x MCU+ SDK
-   &#160;<span id="projectnumber">26.00.00</span>
+   &#160;<span id="projectnumber">26.01.00</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -92,52 +92,52 @@ $(document).ready(function(){initNavTree('RELEASE_NOTES_26_00_00_PAGE.html','');
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#autotoc_md214">New in this Release</a></li>
-<li class="level1"><a href="#autotoc_md215">Modules Not tested/supported in this release</a><ul><li class="level2"><a href="#autotoc_md216">Device and Validation Information</a></li>
-<li class="level2"><a href="#autotoc_md217">Dependent Tools and Compiler Information</a></li>
-<li class="level2"><a href="#autotoc_md218">Key Features</a><ul><li class="level3"><a href="#autotoc_md219">Experimental Features</a></li>
-<li class="level3"><a href="#autotoc_md220">OS Kernel</a></li>
-<li class="level3"><a href="#autotoc_md221">Driver Porting Layer (DPL)</a></li>
-<li class="level3"><a href="#autotoc_md222">Secondary Bootloader (SBL)</a></li>
-<li class="level3"><a href="#autotoc_md223">SOC Device Drivers</a></li>
-<li class="level3"><a href="#autotoc_md224">Trigonometric Operations</a></li>
-<li class="level3"><a href="#autotoc_md225">Board Device Drivers</a></li>
-<li class="level3"><a href="#autotoc_md226">Networking</a></li>
-<li class="level3"><a href="#autotoc_md227">Safety Diagnostic Library</a></li>
+<ul><li class="level1"><a href="#autotoc_md215">New in this Release</a></li>
+<li class="level1"><a href="#autotoc_md216">Modules Not tested/supported in this release</a><ul><li class="level2"><a href="#autotoc_md217">Device and Validation Information</a></li>
+<li class="level2"><a href="#autotoc_md218">Dependent Tools and Compiler Information</a></li>
+<li class="level2"><a href="#autotoc_md219">Key Features</a><ul><li class="level3"><a href="#autotoc_md220">Experimental Features</a></li>
+<li class="level3"><a href="#autotoc_md221">OS Kernel</a></li>
+<li class="level3"><a href="#autotoc_md222">Driver Porting Layer (DPL)</a></li>
+<li class="level3"><a href="#autotoc_md223">Secondary Bootloader (SBL)</a></li>
+<li class="level3"><a href="#autotoc_md224">SOC Device Drivers</a></li>
+<li class="level3"><a href="#autotoc_md225">Trigonometric Operations</a></li>
+<li class="level3"><a href="#autotoc_md226">Board Device Drivers</a></li>
+<li class="level3"><a href="#autotoc_md227">Networking</a></li>
+<li class="level3"><a href="#autotoc_md228">Safety Diagnostic Library</a></li>
 </ul>
 </li>
-<li class="level2"><a href="#autotoc_md228">Fixed Issues</a></li>
-<li class="level2"><a href="#autotoc_md229">Known Issues</a></li>
-<li class="level2"><a href="#autotoc_md230">Errata</a></li>
-<li class="level2"><a href="#autotoc_md231">Limitations</a></li>
-<li class="level2"><a href="#autotoc_md232">Release Types</a><ul><li class="level3"><a href="#autotoc_md233">How to Identify Release Type</a></li>
-<li class="level3"><a href="#autotoc_md234">EA (Early Adopter)</a></li>
-<li class="level3"><a href="#autotoc_md235">STS (Short Term Support)</a></li>
-<li class="level3"><a href="#autotoc_md236">LTS (Long Term Support)</a></li>
-<li class="level3"><a href="#autotoc_md237">Release Type Comparison</a></li>
+<li class="level2"><a href="#autotoc_md229">Fixed Issues</a></li>
+<li class="level2"><a href="#autotoc_md230">Known Issues</a></li>
+<li class="level2"><a href="#autotoc_md231">Errata</a></li>
+<li class="level2"><a href="#autotoc_md232">Limitations</a></li>
+<li class="level2"><a href="#autotoc_md233">Release Types</a><ul><li class="level3"><a href="#autotoc_md234">How to Identify Release Type</a></li>
+<li class="level3"><a href="#autotoc_md235">EA (Early Adopter)</a></li>
+<li class="level3"><a href="#autotoc_md236">STS (Short Term Support)</a></li>
+<li class="level3"><a href="#autotoc_md237">LTS (Long Term Support)</a></li>
+<li class="level3"><a href="#autotoc_md238">Release Type Comparison</a></li>
 </ul>
 </li>
-<li class="level2"><a href="#autotoc_md238">CI/CD Strategy</a></li>
-<li class="level2"><a href="#autotoc_md239">Software Bill of Materials</a></li>
-<li class="level2"><a href="#autotoc_md240">Upgrade and Compatibility Information</a><ul><li class="level3"><a href="#autotoc_md241">LP / SOM Rev E2 to Rev A revision Changes</a></li>
-<li class="level3"><a href="#autotoc_md242">Migration to 400 MHz in ZFG package</a></li>
-<li class="level3"><a href="#autotoc_md243">Compiling examples in MacOS machines</a></li>
-<li class="level3"><a href="#autotoc_md244">RPRC Image format is Deprecated and Corresponding SBL&#39;s are also removed from SDK</a></li>
-<li class="level3"><a href="#autotoc_md245">Flash Reset moved to SysCfg</a></li>
-<li class="level3"><a href="#autotoc_md246">Module clock configuration through Clock Tree</a></li>
-<li class="level3"><a href="#autotoc_md247">Migrating back from CCS Theia to CCS Eclipse</a><ul><li class="level4"><a href="#autotoc_md248">Importing and Building in Eclipse</a></li>
-<li class="level4"><a href="#autotoc_md249">CCS SBL Loading</a></li>
+<li class="level2"><a href="#autotoc_md239">CI/CD Strategy</a></li>
+<li class="level2"><a href="#autotoc_md240">Software Bill of Materials</a></li>
+<li class="level2"><a href="#autotoc_md241">Upgrade and Compatibility Information</a><ul><li class="level3"><a href="#autotoc_md242">LP / SOM Rev E2 to Rev A revision Changes</a></li>
+<li class="level3"><a href="#autotoc_md243">Migration to 400 MHz in ZFG package</a></li>
+<li class="level3"><a href="#autotoc_md244">Compiling examples in MacOS machines</a></li>
+<li class="level3"><a href="#autotoc_md245">RPRC Image format is Deprecated and Corresponding SBL&#39;s are also removed from SDK</a></li>
+<li class="level3"><a href="#autotoc_md246">Flash Reset moved to SysCfg</a></li>
+<li class="level3"><a href="#autotoc_md247">Module clock configuration through Clock Tree</a></li>
+<li class="level3"><a href="#autotoc_md248">Migrating back from CCS Theia to CCS Eclipse</a><ul><li class="level4"><a href="#autotoc_md249">Importing and Building in Eclipse</a></li>
+<li class="level4"><a href="#autotoc_md250">CCS SBL Loading</a></li>
 </ul>
 </li>
-<li class="level3"><a href="#autotoc_md250">Migrating examples to 11.00.00 from older versions</a><ul><li class="level4"><a href="#autotoc_md251">Makefile Changes</a></li>
+<li class="level3"><a href="#autotoc_md251">Migrating examples to 11.00.00 from older versions</a><ul><li class="level4"><a href="#autotoc_md252">Makefile Changes</a></li>
 </ul>
 </li>
-<li class="level3"><a href="#autotoc_md254">SDL PBIST Self test</a></li>
-<li class="level3"><a href="#autotoc_md255">SDL STC Configuration</a></li>
-<li class="level3"><a href="#autotoc_md256">SDL Handler API name update</a></li>
-<li class="level3"><a href="#autotoc_md257">Compiler Options</a></li>
-<li class="level3"><a href="#autotoc_md258">SOC Device Drivers</a></li>
-<li class="level3"><a href="#autotoc_md259">Networking</a></li>
+<li class="level3"><a href="#autotoc_md255">SDL PBIST Self test</a></li>
+<li class="level3"><a href="#autotoc_md256">SDL STC Configuration</a></li>
+<li class="level3"><a href="#autotoc_md257">SDL Handler API name update</a></li>
+<li class="level3"><a href="#autotoc_md258">Compiler Options</a></li>
+<li class="level3"><a href="#autotoc_md259">SOC Device Drivers</a></li>
+<li class="level3"><a href="#autotoc_md260">Networking</a></li>
 </ul>
 </li>
 </ul>
@@ -160,7 +160,7 @@ $(document).ready(function(){initNavTree('RELEASE_NOTES_26_00_00_PAGE.html','');
  Unless explicitly noted otherwise, the SW modules would work in both FreeRTOS and no-RTOS environment. <br  />
  Unless explicitly noted otherwise, the SW modules would work on any of the R5F's present on the SOC. <br  />
  </dd></dl>
-<h1><a class="anchor" id="autotoc_md214"></a>
+<h1><a class="anchor" id="autotoc_md215"></a>
 New in this Release</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -186,12 +186,12 @@ New in this Release</h1>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">Baremetal Layer-2 packet transfer and reception example  </td><td class="markdownTableBodyNone">Networking   </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md215"></a>
+<h1><a class="anchor" id="autotoc_md216"></a>
 Modules Not tested/supported in this release</h1>
 <ul>
 <li>MMCSD and GPMC drivers are not validated on AM261x LP or SOM Board.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md216"></a>
+<h2><a class="anchor" id="autotoc_md217"></a>
 Device and Validation Information</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -203,7 +203,7 @@ Device and Validation Information</h2>
 <td class="markdownTableBodyNone">AM261x  </td><td class="markdownTableBodyNone">R5F  </td><td class="markdownTableBodyNone">AM261x SOM Rev A (referred to as am261x-som in code). <br  />
   </td><td class="markdownTableBodyNone">Windows 10 64b or Ubuntu 18.04 64b or MacOS   </td></tr>
 </table>
-<h2><a class="anchor" id="autotoc_md217"></a>
+<h2><a class="anchor" id="autotoc_md218"></a>
 Dependent Tools and Compiler Information</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -223,9 +223,9 @@ Dependent Tools and Compiler Information</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">Uniflash  </td><td class="markdownTableBodyNone">R5F  </td><td class="markdownTableBodyNone">9.5.0   </td></tr>
 </table>
-<h2><a class="anchor" id="autotoc_md218"></a>
+<h2><a class="anchor" id="autotoc_md219"></a>
 Key Features</h2>
-<h3><a class="anchor" id="autotoc_md219"></a>
+<h3><a class="anchor" id="autotoc_md220"></a>
 Experimental Features</h3>
 <dl class="section attention"><dt>Attention</dt><dd>Features listed below are early versions and should be considered as "experimental". </dd>
 <dd>
@@ -240,7 +240,7 @@ Experimental features will be enabled with limited examples and SW modules.</dd>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">Ethernet MDIO with Clause 45 support  </td><td class="markdownTableBodyNone">Networking   </td></tr>
 </table>
-<h3><a class="anchor" id="autotoc_md220"></a>
+<h3><a class="anchor" id="autotoc_md221"></a>
 OS Kernel</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -252,7 +252,7 @@ OS Kernel</h3>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">NO RTOS  </td><td class="markdownTableBodyNone">R5F  </td><td class="markdownTableBodyNone">NA  </td><td class="markdownTableBodyNone">See <b>Driver Porting Layer (DPL)</b> below  </td><td class="markdownTableBodyNone">-   </td></tr>
 </table>
-<h3><a class="anchor" id="autotoc_md221"></a>
+<h3><a class="anchor" id="autotoc_md222"></a>
 Driver Porting Layer (DPL)</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -280,7 +280,7 @@ Driver Porting Layer (DPL)</h3>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">Timer  </td><td class="markdownTableBodyNone">R5F  </td><td class="markdownTableBodyNone">YES  </td><td class="markdownTableBodyNone">FreeRTOS, NORTOS  </td><td class="markdownTableBodyNone">Configure arbitrary timers  </td><td class="markdownTableBodyNone">-   </td></tr>
 </table>
-<h3><a class="anchor" id="autotoc_md222"></a>
+<h3><a class="anchor" id="autotoc_md223"></a>
 Secondary Bootloader (SBL)</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -288,7 +288,7 @@ Secondary Bootloader (SBL)</h3>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">Bootloader  </td><td class="markdownTableBodyNone">R5FSS0-0  </td><td class="markdownTableBodyNone">YES  </td><td class="markdownTableBodyNone">NORTOS  </td><td class="markdownTableBodyNone">Boot modes: OSPI, UART. All R5F's. Multi-core ELF image format  </td><td class="markdownTableBodyNone">Force Dual Core Mode   </td></tr>
 </table>
-<h3><a class="anchor" id="autotoc_md223"></a>
+<h3><a class="anchor" id="autotoc_md224"></a>
 SOC Device Drivers</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -352,7 +352,7 @@ SOC Device Drivers</h3>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">WATCHDOG  </td><td class="markdownTableBodyNone">R5F  </td><td class="markdownTableBodyNone">YES  </td><td class="markdownTableBodyNone">NA  </td><td class="markdownTableBodyNone">Reset mode, Interrupt mode  </td><td class="markdownTableBodyNone">-   </td></tr>
 </table>
-<h3><a class="anchor" id="autotoc_md224"></a>
+<h3><a class="anchor" id="autotoc_md225"></a>
 Trigonometric Operations</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -360,7 +360,7 @@ Trigonometric Operations</h3>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">TMU  </td><td class="markdownTableBodyNone">R5F  </td><td class="markdownTableBodyNone">NO  </td><td class="markdownTableBodyNone">NA  </td><td class="markdownTableBodyNone">TMU Operations, Pipelining, Contex Save  </td><td class="markdownTableBodyNone">Square Root, Division Operations. more than 1 Interrupt Nesting for the contex save is not Supported.   </td></tr>
 </table>
-<h3><a class="anchor" id="autotoc_md225"></a>
+<h3><a class="anchor" id="autotoc_md226"></a>
 Board Device Drivers</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -378,7 +378,7 @@ Board Device Drivers</h3>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">PMIC  </td><td class="markdownTableBodyNone">R5F  </td><td class="markdownTableBodyNone">YES  </td><td class="markdownTableBodyNone">Watchdog Reset and disable  </td><td class="markdownTableBodyNone">-   </td></tr>
 </table>
-<h3><a class="anchor" id="autotoc_md226"></a>
+<h3><a class="anchor" id="autotoc_md227"></a>
 Networking</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -392,7 +392,7 @@ Networking</h3>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">ICSS-EMAC  </td><td class="markdownTableBodyNone">R5F  </td><td class="markdownTableBodyNone">YES  </td><td class="markdownTableBodyNone">FreeRTOS  </td><td class="markdownTableBodyNone">Switch and MAC features, Storm Prevention (MAC), Host Statistics, Multicast Filtering  </td><td class="markdownTableBodyNone">Promiscuous Mode   </td></tr>
 </table>
-<h3><a class="anchor" id="autotoc_md227"></a>
+<h3><a class="anchor" id="autotoc_md228"></a>
 Safety Diagnostic Library</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -425,7 +425,7 @@ Safety Diagnostic Library</h3>
 <td class="markdownTableBodyNone">Integrated Example  </td><td class="markdownTableBodyNone">R5F  </td><td class="markdownTableBodyNone">NA  </td><td class="markdownTableBodyNone">FreeRTOS  </td><td class="markdownTableBodyNone">Integrated example with all the SDL modules integrated in to one example.  </td><td class="markdownTableBodyNone">ECC for TPTC, ECC Bus Safety and STC.   </td></tr>
 </table>
 <p><b>Note</b>: SDL is validated only on SOM Board.</p>
-<h2><a class="anchor" id="autotoc_md228"></a>
+<h2><a class="anchor" id="autotoc_md229"></a>
 Fixed Issues</h2>
 <table class="doxtable">
 <tr>
@@ -469,7 +469,7 @@ Fixed Issues</h2>
 <tr>
 <td>MCUSDK-15178 </td><td>AM261x: DOC: Missing detailed custom board enablement guide </td><td>Networking </td><td>11.01.00 onwards </td><td>AM261x </td><td>Added Documentation  </td></tr>
 </table>
-<h2><a class="anchor" id="autotoc_md229"></a>
+<h2><a class="anchor" id="autotoc_md230"></a>
 Known Issues</h2>
 <table class="doxtable">
 <tr>
@@ -558,7 +558,7 @@ Known Issues</h2>
 <tr>
 <td>MCUSDK-15551 </td><td>Adding PSRAM in SBL OSPI syscfg causes the SBL boot up to fail </td><td>SBL </td><td>11.00.00 onwards </td><td>None  </td></tr>
 </table>
-<h2><a class="anchor" id="autotoc_md230"></a>
+<h2><a class="anchor" id="autotoc_md231"></a>
 Errata</h2>
 <table class="doxtable">
 <tr>
@@ -588,7 +588,7 @@ Errata</h2>
 <tr>
 <td>i2404 </td><td>Race condition in mailbox registers resulting in events miss </td><td>IPC, Mailbox </td><td>Implemented  </td></tr>
 </table>
-<h2><a class="anchor" id="autotoc_md231"></a>
+<h2><a class="anchor" id="autotoc_md232"></a>
 Limitations</h2>
 <table class="doxtable">
 <tr>
@@ -600,14 +600,14 @@ Limitations</h2>
 <tr>
 <td>- </td><td>LP-AM261 Out-of-box CPSW networking examples supports Rev-A board version seamlessly with DP83869 PHY. </td><td>Networking </td><td>11.00.00 onwards </td><td>To use LP-AM261 Rev-E1,Rev-E2 boards, follow the steps mentioned in <a class="el" href="AM261X_LP_E1_E2_SUPPORT.html">Software modification needeed to use Rev-E1 and Rev-E2 version of LP-AM261 EVM</a>.  </td></tr>
 </table>
-<h2><a class="anchor" id="autotoc_md232"></a>
+<h2><a class="anchor" id="autotoc_md233"></a>
 Release Types</h2>
 <p>AM26xx SDK releases follow a tiered support model with three release types: Early Adopter (EA), Short Term Support (STS), and Long Term Support (LTS). Each release type serves different customer needs and provides varying levels of support, quality assurance, and maintenance.</p>
-<h3><a class="anchor" id="autotoc_md233"></a>
+<h3><a class="anchor" id="autotoc_md234"></a>
 How to Identify Release Type</h3>
 <p>The release type for each AM26xx SDK release can be identified through the following methods:</p>
 <p>Release Notes Introduction Section: Every release note’s Introduction section will specify the release type (EA, STS, or LTS) for that particular release.</p>
-<h3><a class="anchor" id="autotoc_md234"></a>
+<h3><a class="anchor" id="autotoc_md235"></a>
 EA (Early Adopter)</h3>
 <p>Early Adopter releases are intended for customers who want early access to new features and capabilities before they are fully validated. These releases allow customers to evaluate new functionality and provide feedback during the development cycle.</p>
 <p>Example Use Cases:</p><ul>
@@ -616,7 +616,7 @@ EA (Early Adopter)</h3>
 <li>Providing feedback to the development team</li>
 <li>Planning for future integration</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md235"></a>
+<h3><a class="anchor" id="autotoc_md236"></a>
 STS (Short Term Support)</h3>
 <p>Short Term Support releases provide a stable platform with validated features suitable for development and integration activities. These releases offer improved quality assurance compared to EA releases but are not intended for production deployment.</p>
 <p>Example Use Cases:</p><ul>
@@ -625,7 +625,7 @@ STS (Short Term Support)</h3>
 <li>Pre-production evaluation</li>
 <li>Feature completeness verification</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md236"></a>
+<h3><a class="anchor" id="autotoc_md237"></a>
 LTS (Long Term Support)</h3>
 <p>Long Term Support releases are production-ready releases that provide the highest level of quality assurance, safety certification support, and long-term maintenance. These releases are recommended for production deployment in automotive and safety-critical applications.</p>
 <p>Example Use Cases:</p><ul>
@@ -634,7 +634,7 @@ LTS (Long Term Support)</h3>
 <li>Automotive production systems</li>
 <li>Applications requiring long-term stability and support</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md237"></a>
+<h3><a class="anchor" id="autotoc_md238"></a>
 Release Type Comparison</h3>
 <table class="doxtable">
 <tr>
@@ -656,7 +656,7 @@ Release Type Comparison</h3>
 <tr>
 <td>Production Ready </td><td>No </td><td>Not recommended for Production </td><td>Recommended for Production  </td></tr>
 </table>
-<h2><a class="anchor" id="autotoc_md238"></a>
+<h2><a class="anchor" id="autotoc_md239"></a>
 CI/CD Strategy</h2>
 <p>AM26xx SDK is also available on GitHub.</p><ul>
 <li>AM263X - <a href="https://github.com/TexasInstruments/mcu_plus_sdk_am263x/">https://github.com/TexasInstruments/mcu_plus_sdk_am263x/</a></li>
@@ -666,7 +666,7 @@ CI/CD Strategy</h2>
 <p>These GitHub repositories provide early access to the latest features, fixes, and improvements as they are developed.</p>
 <p>Disclaimer: The GitHub repositories contains software that is not fully tested and may include bugs, errors, or defects that could cause system instability or unexpected behavior. Always review and validate code before use in any application.</p>
 <p>Official releases are published under the Releases section of the GitHub repository. These correspond to the versioned releases documented in these release notes and have undergone the quality and testing criteria.</p>
-<h2><a class="anchor" id="autotoc_md239"></a>
+<h2><a class="anchor" id="autotoc_md240"></a>
 Software Bill of Materials</h2>
 <table class="doxtable">
 <tr>
@@ -680,9 +680,9 @@ Software Bill of Materials</h2>
 <tr>
 <td>Examples </td><td>${SDK_INSTALL_PATH}/examples/* </td><td>Reference </td><td>Demo Quality </td><td>No </td><td>github </td></tr>
 </table>
-<h2><a class="anchor" id="autotoc_md240"></a>
+<h2><a class="anchor" id="autotoc_md241"></a>
 Upgrade and Compatibility Information</h2>
-<h3><a class="anchor" id="autotoc_md241"></a>
+<h3><a class="anchor" id="autotoc_md242"></a>
 LP / SOM Rev E2 to Rev A revision Changes</h3>
 <table class="doxtable">
 <tr>
@@ -704,7 +704,7 @@ For SOM, the GPIO interrupt pin has changed from GPIO128 to GPIO120 in REV A. GP
 <p class="endtd"></p>
 </td></tr>
 </table>
-<h3><a class="anchor" id="autotoc_md242"></a>
+<h3><a class="anchor" id="autotoc_md243"></a>
 Migration to 400 MHz in ZFG package</h3>
 <table class="doxtable">
 <tr>
@@ -712,7 +712,7 @@ Migration to 400 MHz in ZFG package</h3>
 <tr>
 <td>Clocktree </td><td>Switching between 500 MHz and 400 MHz in ZFG package has changed. </td><td>There are two variants available, catering to different R5F clock frequencies: 400 MHz and 500 MHz. The default variant is 500 MHz, but users can switch to the 400 MHz variant. This switching was earlier done through clock module in sysconfig but now it's done through Device View settings (<a class="el" href="CLOCKTREE.html#CLOCKTREE_VARIANT_SWITCHING">Switching between 500 MHz and 400 MHz in ZFG package</a>)  </td></tr>
 </table>
-<h3><a class="anchor" id="autotoc_md243"></a>
+<h3><a class="anchor" id="autotoc_md244"></a>
 Compiling examples in MacOS machines</h3>
 <p>Currently the gmac library packaged within SDK is compiled using gcc darwin23.6.0 on Apple MAC. To build SDK examples on a different toolchain, recompile the gmac library by using these steps:</p>
 <div class="fragment"><div class="line">$ cd {SDK_PATH}/tools/boot/multicore-elf/c_modules/gmac</div>
@@ -721,7 +721,7 @@ Compiling examples in MacOS machines</h3>
 <li>A new library will be created inside mac/dist.</li>
 <li>Rename this file to "gmac.arm64-apple-darwin.darwin.dylib".</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md244"></a>
+<h3><a class="anchor" id="autotoc_md245"></a>
 RPRC Image format is Deprecated and Corresponding SBL's are also removed from SDK</h3>
 <p>RPRC image format is no longer supported and MCELF will be the only file format. Older SBL's and Cfg files which mapped to RPRC format are removed and replaced with MCELF variants. Below is the list of updated SBL's and Cfg files:</p>
 <table class="doxtable">
@@ -739,28 +739,28 @@ RPRC Image format is Deprecated and Corresponding SBL's are also removed from SD
 <td>SBL CAN UNIFLASH (default_sbl_can_uniflash.cfg, default_sbl_can_uniflash_app.cfg) </td><td>SBL CAN UNIFLASH MULTICORE ELF (mcelf_sbl_can_uniflash.cfg, mcelf_sbl_can_uniflash_app.cfg)  </td></tr>
 </table>
 <p>Please refer to the updated SDK example makefiles for Infra changes.</p>
-<h3><a class="anchor" id="autotoc_md245"></a>
+<h3><a class="anchor" id="autotoc_md246"></a>
 Flash Reset moved to SysCfg</h3>
 <p>Earlier, flash reset was done in board.c file within application which is now moved to SysCfg. If Flash reset logic needs to be added, please enable "Enable Flash Reset API" configurable in Flash module. This is by enabled out of box for all SDK Flash examples. For custom flash, define the flash reset API in application and add the API name to "Flash Reset Function" configurable.</p>
-<h3><a class="anchor" id="autotoc_md246"></a>
+<h3><a class="anchor" id="autotoc_md247"></a>
 Module clock configuration through Clock Tree</h3>
 <p>Previously our SDK had a mix of hardcoded clock configurations and limited configuration flexibility through sysconfig for the modules. With Clocktree, we now have a clear view of the entire clock tree with configurable components like PLL, DPLL, muxes, dividers added with validity checks. Earlier, the Input clock source and frequency for any module was configured through the module view in SysCfg. From now, this has to be done through clocktree.</p>
 <p>Please refer to <a class="el" href="CLOCKTREE.html">Clocktree</a> for more details.</p>
-<h3><a class="anchor" id="autotoc_md247"></a>
+<h3><a class="anchor" id="autotoc_md248"></a>
 Migrating back from CCS Theia to CCS Eclipse</h3>
 <p>SDK was supporting CCS Eclipse until this release and now been migrated to support CCS Theia Out of Box. Below sections describe how to update the applications for Eclipse if needed.</p>
-<h4><a class="anchor" id="autotoc_md248"></a>
+<h4><a class="anchor" id="autotoc_md249"></a>
 Importing and Building in Eclipse</h4>
 <p>CCS Projectspec files are same for both Theia and Eclipse. Hence, no update is needed to import and build an SDK application on Eclipse.</p>
-<h4><a class="anchor" id="autotoc_md249"></a>
+<h4><a class="anchor" id="autotoc_md250"></a>
 CCS SBL Loading</h4>
 <p>JS Script for SBL loading on eclipse is updated to "load_sbl_eclipse.js". Please refer to <a class="el" href="TOOLS_CCS.html">CCS Tools</a> for more details.</p>
-<h3><a class="anchor" id="autotoc_md250"></a>
+<h3><a class="anchor" id="autotoc_md251"></a>
 Migrating examples to 11.00.00 from older versions</h3>
 <dl class="section note"><dt>Note</dt><dd>Images are shown for AM64x. It is application for AM261X as well.</dd></dl>
-<h4><a class="anchor" id="autotoc_md251"></a>
+<h4><a class="anchor" id="autotoc_md252"></a>
 Makefile Changes</h4>
-<p><a class="anchor" id="autotoc_md252"></a></p><h5>Library Name change on makefile and CCS projects</h5>
+<p><a class="anchor" id="autotoc_md253"></a></p><h5>Library Name change on makefile and CCS projects</h5>
 <p>From 11.00.00 SDK all the libraries are built separately for OS. There are separate libraries available for NoRTOS and FreeROTS. So the makefiles needs to be updated accordingly. Please refer the sample changes on the makefile below. These changes are not applicable for the libraries which were already built separately for NoRTOS/FreeRTOS like kernel libraries.</p>
 <p>For NoRTOS/baremetal,</p>
 <p> <style>div.image img[src="example_migration1.png"]{width:40%}</style> </p><div class="image">
@@ -773,7 +773,7 @@ Library name change for NoRTOS example</div></div>
 <div class="caption">
 Library name change for FreeRTOS example</div></div>
 <p>similar change can be done on the CCS project as well</p>
-<p><a class="anchor" id="autotoc_md253"></a></p><h5>OS define on makefile and CCS projects</h5>
+<p><a class="anchor" id="autotoc_md254"></a></p><h5>OS define on makefile and CCS projects</h5>
 <p>Additional macro OS_NORTOS or OS_FREERTOS should be defined on the makefile or CC project based on the OS of the project.</p>
 <p>For NoRTOS/baremetal,</p>
 <p> <style>div.image img[src="example_migration3.png"]{width:20%}</style> </p><div class="image">
@@ -785,16 +785,16 @@ OS Macro addition for NoRTOS example</div></div>
 <img src="example_migration4.png" alt=""/>
 <div class="caption">
 OS Macro addition for FreeRTOS example</div></div>
-<h3><a class="anchor" id="autotoc_md254"></a>
+<h3><a class="anchor" id="autotoc_md255"></a>
 SDL PBIST Self test</h3>
 <p>VIM Memory groups are added to PBIST self test from this release. Because of this change, Self test (SDL_PBIST_selfTest) API has to be called in polling mode only and interrupt mode is not supported.</p>
-<h3><a class="anchor" id="autotoc_md255"></a>
+<h3><a class="anchor" id="autotoc_md256"></a>
 SDL STC Configuration</h3>
 <p>faultInsert and stcDiagnostic are removed from <a class="el" href="structSDL__STC__Config.html">SDL_STC_Config</a> structure as unused in SDL library.</p>
-<h3><a class="anchor" id="autotoc_md256"></a>
+<h3><a class="anchor" id="autotoc_md257"></a>
 SDL Handler API name update</h3>
 <p>Handler API names are added prefix with "SDL_". For example, undefInstructionExptnHandler changed to SDL_undefInstructionExptnHandler.</p>
-<h3><a class="anchor" id="autotoc_md257"></a>
+<h3><a class="anchor" id="autotoc_md258"></a>
 Compiler Options</h3>
 <table class="doxtable">
 <tr>
@@ -802,7 +802,7 @@ Compiler Options</h3>
 <tr>
 <td>- </td><td>- </td><td>- </td><td>-  </td></tr>
 </table>
-<h3><a class="anchor" id="autotoc_md258"></a>
+<h3><a class="anchor" id="autotoc_md259"></a>
 SOC Device Drivers</h3>
 <table class="doxtable">
 <tr>
@@ -810,7 +810,7 @@ SOC Device Drivers</h3>
 <tr>
 <td>- </td><td>- </td><td>- </td><td>-  </td></tr>
 </table>
-<h3><a class="anchor" id="autotoc_md259"></a>
+<h3><a class="anchor" id="autotoc_md260"></a>
 Networking</h3>
 <table class="doxtable">
 <tr>

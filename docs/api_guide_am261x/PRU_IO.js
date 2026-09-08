@@ -1,6 +1,6 @@
 var PRU_IO =
 [
-    [ "Introduction", "PRU_IO.html#autotoc_md585", null ],
+    [ "Introduction", "PRU_IO.html#autotoc_md589", null ],
     [ "PRU Guide", "COMPONENT_PRU_GUIDE.html", "COMPONENT_PRU_GUIDE" ],
     [ "SENT", "SENT.html", "SENT" ]
 ];

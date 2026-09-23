@@ -91,28 +91,27 @@ var ENET_LLD =
     [ "Ethernet Performance on AM261x", "enetlld_performance.html", [
       [ "Introduction", "enetlld_performance.html#autotoc_md1419", null ],
       [ "Setup Details", "enetlld_performance.html#autotoc_md1420", null ],
-      [ "Layer 2 Performance", "enetlld_performance.html#autotoc_md1421", [
-        [ "Configuration Details", "enetlld_performance.html#autotoc_md1422", null ],
-        [ "Layer 2 Latency", "enetlld_performance.html#autotoc_md1423", [
-          [ "Layer-2 Hardware Switching Latency for CPSW", "enetlld_performance.html#autotoc_md1424", null ],
-          [ "Test Setup", "enetlld_performance.html#autotoc_md1425", null ],
-          [ "CPSW Latency for RGMII", "enetlld_performance.html#autotoc_md1426", null ]
+      [ "Library Memory Footprint - Cpsw, Lwip, Gptp", "enetlld_performance.html#autotoc_md1421", [
+        [ "Library Sizes - Feature-rich (Without LTO)", "enetlld_performance.html#autotoc_md1422", null ],
+        [ "Library Sizes - Per usecase (Without LTO)", "enetlld_performance.html#autotoc_md1423", null ]
+      ] ],
+      [ "Layer 2 Performance", "enetlld_performance.html#autotoc_md1424", [
+        [ "Configuration Details", "enetlld_performance.html#autotoc_md1425", null ],
+        [ "Layer 2 Latency", "enetlld_performance.html#autotoc_md1426", [
+          [ "Layer-2 Hardware Switching Latency for CPSW", "enetlld_performance.html#autotoc_md1427", null ],
+          [ "Test Setup", "enetlld_performance.html#autotoc_md1428", null ],
+          [ "CPSW Latency for RGMII", "enetlld_performance.html#autotoc_md1429", null ]
         ] ]
       ] ],
-      [ "TCP/IP Performance", "enetlld_performance.html#autotoc_md1427", [
-        [ "Configuration Details", "enetlld_performance.html#autotoc_md1428", [
-          [ "TCP Throughput", "enetlld_performance.html#autotoc_md1429", null ],
-          [ "UDP Throughput", "enetlld_performance.html#autotoc_md1430", null ]
+      [ "gPTP Performance", "enetlld_performance.html#autotoc_md1430", null ],
+      [ "TCP/IP Performance", "enetlld_performance.html#autotoc_md1431", [
+        [ "Configuration Details", "enetlld_performance.html#autotoc_md1432", [
+          [ "TCP Throughput", "enetlld_performance.html#autotoc_md1433", null ],
+          [ "UDP Throughput", "enetlld_performance.html#autotoc_md1434", null ]
         ] ]
-      ] ],
-      [ "Daisy Chain KPI performance with TSN Features(IET,EST,Gptp,Cut-thru)", "enetlld_performance.html#autotoc_md1431", [
-        [ "Test Setup", "enetlld_performance.html#autotoc_md1432", null ],
-        [ "Test Configuration", "enetlld_performance.html#autotoc_md1433", null ],
-        [ "Round Trip Latencies with 3 nodes(1 talker, 2listener)", "enetlld_performance.html#autotoc_md1434", null ],
-        [ "KPI Summary", "enetlld_performance.html#autotoc_md1435", null ]
       ] ],
       [ "XIP Performance", "enetlld_performance.html#networking_xip_performance", null ],
-      [ "See Also", "enetlld_performance.html#autotoc_md1436", null ]
+      [ "See Also", "enetlld_performance.html#autotoc_md1435", null ]
     ] ],
     [ "Enet EST/TAS Support", "enet_tas_top.html", [
       [ "Introduction", "enet_tas_top.html#enet_est_intro", [

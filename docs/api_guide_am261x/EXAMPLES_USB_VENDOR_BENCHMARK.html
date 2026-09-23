@@ -93,10 +93,10 @@ $(document).ready(function(){initNavTree('EXAMPLES_USB_VENDOR_BENCHMARK.html',''
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
 <ul><li class="level1"><a href="#EXAMPLES_USB_VENDOR_BENCHMARK_COMBOS">Supported Combinations</a></li>
-<li class="level1"><a href="#autotoc_md3707">Introduction</a></li>
-<li class="level1"><a href="#autotoc_md3708">Building benchmark application</a></li>
-<li class="level1"><a href="#autotoc_md3709">Running benchmark application</a><ul><li class="level2"><a href="#autotoc_md3710">Output</a></li>
-<li class="level2"><a href="#autotoc_md3711">Result</a></li>
+<li class="level1"><a href="#autotoc_md3757">Introduction</a></li>
+<li class="level1"><a href="#autotoc_md3758">Building benchmark application</a></li>
+<li class="level1"><a href="#autotoc_md3759">Running benchmark application</a><ul><li class="level2"><a href="#autotoc_md3760">Output</a></li>
+<li class="level2"><a href="#autotoc_md3761">Result</a></li>
 </ul>
 </li>
 </ul>
@@ -116,7 +116,7 @@ Supported Combinations</h1>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">Example folder  </td><td class="markdownTableBodyNone">examples/benchmarks/usb/usb_vendor_benchmark   </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md3707"></a>
+<h1><a class="anchor" id="autotoc_md3757"></a>
 Introduction</h1>
 <p>This benchmark measures USB High-Speed performance using TinyUSB's built-in vendor class driver. It serves as an alternative implementation to compare against the custom vendor class driver used in the USB Bulk Benchmark.</p>
 <p><b>Key Features:</b></p><ul>
@@ -124,10 +124,10 @@ Introduction</h1>
 <li>Standard TinyUSB FIFO-based transfers</li>
 <li>Measures sustained throughput in multiple modes</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md3708"></a>
+<h1><a class="anchor" id="autotoc_md3758"></a>
 Building benchmark application</h1>
 <div class="fragment"><div class="line">make -s -C examples/benchmarks/usb/usb_vendor_benchmark/am261x-lp/r5fss0-0_freertos/ti-arm-clang/</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md3709"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md3759"></a>
 Running benchmark application</h1>
 <ol type="1">
 <li>Build and run the application on AM261x board</li>
@@ -137,7 +137,7 @@ Running benchmark application</h1>
 <div class="fragment"><div class="line">python3 tools/usb_test_scripts/usb_bulk_benchmark_host.py --mode in --duration 10</div>
 <div class="line">python3 tools/usb_test_scripts/usb_bulk_benchmark_host.py --mode out --duration 10</div>
 <div class="line">python3 tools/usb_test_scripts/usb_bulk_benchmark_host.py --mode bidir --duration 10</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md3710"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md3760"></a>
 Output</h2>
 <div class="fragment"><div class="line">[VENDOR BENCHMARK] USB Vendor Transfer Benchmark - AM261x</div>
 <div class="line"> </div>
@@ -158,7 +158,7 @@ Output</h2>
 <div class="line">[VENDOR BENCHMARK] Starting Test - Mode: Bidirectional</div>
 <div class="line">[VENDOR BENCHMARK] Throughput : 29.33 MB/s (294.72 MB in 10.1 sec)</div>
 <div class="line">[VENDOR BENCHMARK] CPU Load   : total 28.12%  usb_task 28.11%  vendor_task 0.00%</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md3711"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md3761"></a>
 Result</h2>
 <p>For detailed USB vendor class benchmark performance results, refer to <a class="el" href="USB_BENCHMARKING_PERFORMANCE.html">Performance Benchmarking</a>.</p>
 <p><b>Note:</b> TinyUSB vendor class performance differs from the custom vendor class driver due to different buffer management and transfer strategies. </p>

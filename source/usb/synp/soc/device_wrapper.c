@@ -35,6 +35,7 @@
 #include "device_wrapper.h"
 #include "usb_init.h"
 #include "device_usb_reg_offset.h"
+#include <drivers/soc/am261x/soc.h>
 
 /* 5 milli sec timeout for per pll locking and usb reg reset while loop */ 
 #define CONFIG_TIMEOUT   (5U)
@@ -169,11 +170,13 @@ UsbPhy_ret_t usb_phy_power_sequence(void){
     /* IDDIG. reset value = 1 , SESSEND . reset value = x1 
 	 * VBUSVALID. set 1, BVALID . set 1 , AVALID . set 1 
 	 */ 
+	SOC_controlModuleUnlockMMR(SOC_DOMAIN_ID_MAIN, MSS_CTRL_PARTITION0);
     HW_WR_FIELD32_RAW(MSS_CTRL + MSS_CTRL_CONTROL_USBOTGHS_CONTROL, 0x0000000F,0,0xF);
 
     /* Turn on PHY/OTGSS (no impact in Presilicon, since there is no PHY involved) */ 
 	/* set this field to 0 to enable phy */ 
     HW_WR_FIELD32_RAW(MSS_CTRL + MSS_CTRL_CTRL_USB_CTRL, 0x00000001,0,0); // CM_PWRDN . 0x0
+	SOC_controlModuleLockMMR(SOC_DOMAIN_ID_MAIN, MSS_CTRL_PARTITION0);
 
     /* wait until CNR flag in USBSTS is '0' before writing any xHC registers -- reset successful */ 
 	/* TODO: Add timeout value here for safety 

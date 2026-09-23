@@ -93,10 +93,10 @@ $(document).ready(function(){initNavTree('EXAMPLES_USB_BULK_BENCHMARK.html','');
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
 <ul><li class="level1"><a href="#EXAMPLES_USB_BULK_BENCHMARK_COMBOS">Supported Combinations</a></li>
-<li class="level1"><a href="#autotoc_md3702">Introduction</a></li>
-<li class="level1"><a href="#autotoc_md3703">Building benchmark application</a></li>
-<li class="level1"><a href="#autotoc_md3704">Running benchmark application</a><ul><li class="level2"><a href="#autotoc_md3705">Output</a></li>
-<li class="level2"><a href="#autotoc_md3706">Result</a></li>
+<li class="level1"><a href="#autotoc_md3752">Introduction</a></li>
+<li class="level1"><a href="#autotoc_md3753">Building benchmark application</a></li>
+<li class="level1"><a href="#autotoc_md3754">Running benchmark application</a><ul><li class="level2"><a href="#autotoc_md3755">Output</a></li>
+<li class="level2"><a href="#autotoc_md3756">Result</a></li>
 </ul>
 </li>
 </ul>
@@ -116,7 +116,7 @@ Supported Combinations</h1>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">Example folder  </td><td class="markdownTableBodyNone">examples/benchmarks/usb/usb_bulk_benchmark   </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md3702"></a>
+<h1><a class="anchor" id="autotoc_md3752"></a>
 Introduction</h1>
 <p>This benchmark measures USB High-Speed bulk transfer performance using a custom vendor class driver that optimizes for maximum throughput. It tests device-to-host (IN), host-to-device (OUT), and bidirectional transfer modes.</p>
 <p><b>Key Features:</b></p><ul>
@@ -124,10 +124,10 @@ Introduction</h1>
 <li>Bypasses TinyUSB FIFO limitations for optimal performance</li>
 <li>Measures sustained throughput in three modes: TX, RX, and bidirectional</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md3703"></a>
+<h1><a class="anchor" id="autotoc_md3753"></a>
 Building benchmark application</h1>
 <div class="fragment"><div class="line">make -s -C examples/benchmarks/usb/usb_bulk_benchmark/am261x-lp/r5fss0-0_freertos/ti-arm-clang/</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md3704"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md3754"></a>
 Running benchmark application</h1>
 <ol type="1">
 <li>Build and run the application on AM261x board</li>
@@ -137,7 +137,7 @@ Running benchmark application</h1>
 <div class="fragment"><div class="line">python3 tools/usb_test_scripts/usb_bulk_benchmark_host.py --mode in --duration 10</div>
 <div class="line">python3 tools/usb_test_scripts/usb_bulk_benchmark_host.py --mode out --duration 10</div>
 <div class="line">python3 tools/usb_test_scripts/usb_bulk_benchmark_host.py --mode bidir --duration 10</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md3705"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md3755"></a>
 Output</h2>
 <div class="fragment"><div class="line">[BULK BENCHMARK] USB Bulk Transfer Benchmark - AM261x</div>
 <div class="line"> </div>
@@ -158,7 +158,7 @@ Output</h2>
 <div class="line">[BULK BENCHMARK] Starting Test - Mode: Bidirectional</div>
 <div class="line">[BULK BENCHMARK] Throughput : 37.71 MB/s (379.03 MB in 10.1 sec)</div>
 <div class="line">[BULK BENCHMARK] CPU Load   : total 8.77%  usb_task 8.76%  bulk_task 0.00%</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md3706"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md3756"></a>
 Result</h2>
 <p>For detailed USB bulk benchmark performance results including throughput measurements, transfer size impact, and optimization analysis, refer to <a class="el" href="USB_BENCHMARKING_PERFORMANCE.html">Performance Benchmarking</a>. </p>
 </div></div><!-- contents -->

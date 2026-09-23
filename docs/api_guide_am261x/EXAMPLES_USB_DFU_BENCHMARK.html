@@ -93,10 +93,10 @@ $(document).ready(function(){initNavTree('EXAMPLES_USB_DFU_BENCHMARK.html',''); 
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
 <ul><li class="level1"><a href="#EXAMPLES_USB_DFU_BENCHMARK_COMBOS">Supported Combinations</a></li>
-<li class="level1"><a href="#autotoc_md3717">Introduction</a></li>
-<li class="level1"><a href="#autotoc_md3718">Building benchmark application</a></li>
-<li class="level1"><a href="#autotoc_md3719">Running benchmark application</a><ul><li class="level2"><a href="#autotoc_md3720">Output</a></li>
-<li class="level2"><a href="#autotoc_md3721">Result</a></li>
+<li class="level1"><a href="#autotoc_md3767">Introduction</a></li>
+<li class="level1"><a href="#autotoc_md3768">Building benchmark application</a></li>
+<li class="level1"><a href="#autotoc_md3769">Running benchmark application</a><ul><li class="level2"><a href="#autotoc_md3770">Output</a></li>
+<li class="level2"><a href="#autotoc_md3771">Result</a></li>
 </ul>
 </li>
 </ul>
@@ -116,7 +116,7 @@ Supported Combinations</h1>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">Example folder  </td><td class="markdownTableBodyNone">examples/benchmarks/usb/usb_dfu_benchmark   </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md3717"></a>
+<h1><a class="anchor" id="autotoc_md3767"></a>
 Introduction</h1>
 <p>This benchmark measures USB DFU (Device Firmware Upgrade) class performance. DFU is a standardized protocol for firmware updates over USB and is essential for device firmware management in production environments.</p>
 <p><b>Key Features:</b></p><ul>
@@ -125,10 +125,10 @@ Introduction</h1>
 <li>Measures firmware download throughput</li>
 <li>Performance characterization for firmware update scenarios</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md3718"></a>
+<h1><a class="anchor" id="autotoc_md3768"></a>
 Building benchmark application</h1>
 <div class="fragment"><div class="line">make -s -C examples/benchmarks/usb/usb_dfu_benchmark/am261x-lp/r5fss0-0_freertos/ti-arm-clang/</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md3719"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md3769"></a>
 Running benchmark application</h1>
 <ol type="1">
 <li>Build and run the application on AM261x board</li>
@@ -138,7 +138,7 @@ Running benchmark application</h1>
 <div class="fragment"><div class="line">dfu-util -l</div>
 <div class="line">dfu-util -i 0 -a 0 -D firmware.bin</div>
 <div class="line">dfu-util -i 0 -a 0 -U firmware.bin</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md3720"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md3770"></a>
 Output</h2>
 <div class="fragment"><div class="line">[DFU BENCHMARK] USB DFU Firmware Transfer Benchmark - AM261x</div>
 <div class="line"> </div>
@@ -157,7 +157,7 @@ Output</h2>
 <div class="line">[DFU BENCHMARK] Download (Host to Device) completed</div>
 <div class="line">[DFU BENCHMARK] Throughput : 1.62 MB/s (16.00 MB in 9.9 sec)</div>
 <div class="line">[DFU BENCHMARK] CPU Load   : total 51.78%  usb_task 51.77%  dfu_task 0.00%</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md3721"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md3771"></a>
 Result</h2>
 <p>For detailed USB DFU benchmark performance results, refer to <a class="el" href="USB_BENCHMARKING_PERFORMANCE.html">Performance Benchmarking</a>. </p>
 </div></div><!-- contents -->

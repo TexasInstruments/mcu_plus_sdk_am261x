@@ -92,36 +92,35 @@ $(document).ready(function(){initNavTree('enetlld_performance.html',''); initRes
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#autotoc_md1419">Introduction</a></li>
-<li class="level1"><a href="#autotoc_md1420">Setup Details</a></li>
-<li class="level1"><a href="#autotoc_md1421">Library Memory Footprint - Cpsw, Lwip, Gptp</a><ul><li class="level2"><a href="#autotoc_md1422">Library Sizes - Feature-rich (Without LTO)</a></li>
-<li class="level2"><a href="#autotoc_md1423">Library Sizes - Per usecase (Without LTO)</a></li>
+<ul><li class="level1"><a href="#autotoc_md1424">Introduction</a></li>
+<li class="level1"><a href="#autotoc_md1425">Setup Details</a></li>
+<li class="level1"><a href="#autotoc_md1426">Library Memory Footprint - Cpsw, Lwip, Gptp</a><ul><li class="level2"><a href="#autotoc_md1427">Library Sizes - Per usecase (Without LTO)</a></li>
 </ul>
 </li>
-<li class="level1"><a href="#autotoc_md1424">Layer 2 Performance</a><ul><li class="level2"><a href="#autotoc_md1425">Configuration Details</a></li>
-<li class="level2"><a href="#autotoc_md1426">Layer 2 Latency</a><ul><li class="level3"><a href="#autotoc_md1427">Layer-2 Hardware Switching Latency for CPSW</a></li>
-<li class="level3"><a href="#autotoc_md1428">Test Setup</a></li>
-<li class="level3"><a href="#autotoc_md1429">CPSW Latency for RGMII</a></li>
+<li class="level1"><a href="#autotoc_md1428">Layer 2 Performance</a><ul><li class="level2"><a href="#autotoc_md1429">Configuration Details</a></li>
+<li class="level2"><a href="#autotoc_md1430">Layer 2 Latency</a><ul><li class="level3"><a href="#autotoc_md1431">Layer-2 Hardware Switching Latency for CPSW</a></li>
+<li class="level3"><a href="#autotoc_md1432">Test Setup</a></li>
+<li class="level3"><a href="#autotoc_md1433">CPSW Latency for RGMII</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="level1"><a href="#autotoc_md1430">gPTP Performance</a></li>
-<li class="level1"><a href="#autotoc_md1431">TCP/IP Performance</a><ul><li class="level2"><a href="#autotoc_md1432">Configuration Details</a><ul><li class="level3"><a href="#autotoc_md1433">TCP Throughput</a></li>
-<li class="level3"><a href="#autotoc_md1434">UDP Throughput</a></li>
+<li class="level1"><a href="#autotoc_md1434">gPTP Performance</a></li>
+<li class="level1"><a href="#autotoc_md1435">TCP/IP Performance</a><ul><li class="level2"><a href="#autotoc_md1436">Configuration Details</a><ul><li class="level3"><a href="#autotoc_md1437">TCP Throughput</a></li>
+<li class="level3"><a href="#autotoc_md1438">UDP Throughput</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="level1"><a href="#networking_xip_performance">XIP Performance</a></li>
-<li class="level1"><a href="#autotoc_md1435">See Also</a></li>
+<li class="level1"><a href="#autotoc_md1439">See Also</a></li>
 </ul>
 </div>
 <div class="textblock"><p><a class="anchor" id="md_components_networking_enet_lld_enet_cpsw_performance_am261x"></a> </p>
-<h1><a class="anchor" id="autotoc_md1419"></a>
+<h1><a class="anchor" id="autotoc_md1424"></a>
 Introduction</h1>
 <p>This section provides the performance numbers and memory footprint of Ethernet drivers using CPSW peripheral in MCU+ SDK</p>
-<h1><a class="anchor" id="autotoc_md1420"></a>
+<h1><a class="anchor" id="autotoc_md1425"></a>
 Setup Details</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -135,34 +134,12 @@ Setup Details</h1>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">Cache status  </td><td class="markdownTableBodyNone">Enabled   </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md1421"></a>
+<h1><a class="anchor" id="autotoc_md1426"></a>
 Library Memory Footprint - Cpsw, Lwip, Gptp</h1>
-<p>The two tables below capture:</p><ul>
-<li><b>Library Sizes - Feature-rich</b> is the raw, as-built size of each <code>.lib</code> this ethernet driver ships (<code>enet-cpsw</code>, <code>lwip</code>, <code>tsn</code>), before it is ever linked into an application. This is a <b>superset</b> library size: every function and object in the library.</li>
+<p>The table below capture:</p><ul>
 <li><b>Library Sizes - Per usecase</b>, by contrast, comes from the linker's <code>.map</code> file for a fully linked application image - which reflects actual library content used by application/usecase. Enabling LTO would shrink the <code>code</code>/<code>.text</code> figures in the Example Sizes table further by removing unused/inlined functions across translation units at link time.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md1422"></a>
-Library Sizes - Feature-rich (Without LTO)</h2>
-<p>Each row is one prebuilt static ethernet library; the columns are the standard linker output sections contributed by that library on its own (i.e. before it is linked into any particular application).</p>
-<ul>
-<li>**.text** - executable code.</li>
-<li>**.data** - initialized global/static variables (occupies both flash and RAM).</li>
-<li>**.bss** - zero-initialized global/static variables (RAM only, not stored in the binary).</li>
-<li><b>Total</b> - <code>.text + .data + .bss</code>, i.e. the library's full static footprint.</li>
-</ul>
-<table class="doxtable">
-<tr>
-<th rowspan="2">Library </th><th colspan="4">Section Sizes (KB)  </th></tr>
-<tr>
-<th>.text</th><th>.data</th><th>.bss</th><th>Total  </th></tr>
-<tr>
-<td>enet-cpsw.freertos</td><td class="num">150.50</td><td class="num">8.26</td><td class="num">2.63</td><td class="num">161.39 </td></tr>
-<tr>
-<td>lwip (freertos)</td><td class="num">139.85</td><td class="num">3.77</td><td class="num">8.64</td><td class="num">152.26 </td></tr>
-<tr>
-<td>tsn (freertos)</td><td class="num">290.42</td><td class="num">4.38</td><td class="num">158.94</td><td class="num">453.74 </td></tr>
-</table>
-<h2><a class="anchor" id="autotoc_md1423"></a>
+<h2><a class="anchor" id="autotoc_md1427"></a>
 Library Sizes - Per usecase (Without LTO)</h2>
 <p>Each row is a complete, linked application image, so unused library code has already been stripped by the compiler</p>
 <ul>
@@ -173,26 +150,26 @@ Library Sizes - Per usecase (Without LTO)</h2>
 </ul>
 <table class="doxtable">
 <tr>
-<th rowspan="2">Use Case </th><th colspan="3">enet-cpsw </th><th colspan="3">lwip (freertos) </th><th colspan="3">tsn (freertos) </th><th rowspan="2">Total (KB)  </th></tr>
+<th rowspan="2">Use Case </th><th colspan="3">enet-cpsw </th><th colspan="3">lwip (freertos) </th><th colspan="3">tsn (freertos) </th><th colspan="3">FreeRTOS and other libraries </th><th colspan="3">Packet Buffers </th><th rowspan="2">Total (KB)  </th></tr>
 <tr>
-<th>code</th><th>ro_data</th><th>rw_data </th><th>code</th><th>ro_data</th><th>rw_data </th><th>code</th><th>ro_data</th><th>rw_data  </th></tr>
+<th>code</th><th>ro_data</th><th>rw_data </th><th>code</th><th>ro_data</th><th>rw_data </th><th>code</th><th>ro_data</th><th>rw_data </th><th>code</th><th>ro_data</th><th>rw_data </th><th>code</th><th>ro_data</th><th>rw_data  </th></tr>
 <tr>
-<td>Basic Layer2 TX/RX</td><td class="num">67.65</td><td class="num">16.78</td><td class="num">4.91</td><td class="na">&mdash;</td><td class="na">&mdash;</td><td class="na">&mdash;</td><td class="na">&mdash;</td><td class="na">&mdash;</td><td class="na">&mdash;</td><td class="na">89.34 </td></tr>
+<td>Basic Layer2 TX/RX </td><td class="num">67.65</td><td class="num">16.78</td><td class="num">4.91 </td><td class="na">&mdash;</td><td class="na">&mdash;</td><td class="na">&mdash; </td><td class="na">&mdash;</td><td class="na">&mdash;</td><td class="na">&mdash; </td><td class="na">40.16</td><td class="na">6.85</td><td class="na">9.61 </td><td class="na">&mdash;</td><td class="na">&mdash;</td><td class="na">11.8 </td><td class="na">157.76 </td></tr>
 <tr>
-<td>LwIP - TCP Server</td><td class="num">66.39</td><td class="num">15.21</td><td class="num">5.17</td><td class="num">56.55</td><td class="num">17.56</td><td class="num">140.16</td><td class="na">&mdash;</td><td class="na">&mdash;</td><td class="na">&mdash;</td><td class="na">301.04 </td></tr>
+<td>LwIP - TCP Server</td><td class="num">66.39</td><td class="num">15.21</td><td class="num">5.17 </td><td class="num">56.55</td><td class="num">17.56</td><td class="num">55.16 </td><td class="na">&mdash;</td><td class="na">&mdash;</td><td class="na">&mdash; </td><td class="na">39.3</td><td class="na">6.82</td><td class="na">9.6 </td><td class="na">&mdash;</td><td class="na">&mdash;</td><td class="na">14.21 </td><td class="na">285.97 </td></tr>
 <tr>
-<td>LwIP - UDP/IGMP Multicast</td><td class="num">66.60</td><td class="num">15.31</td><td class="num">5.17</td><td class="num">60.60</td><td class="num">18.18</td><td class="num">140.44</td><td class="na">&mdash;</td><td class="na">&mdash;</td><td class="na">&mdash;</td><td class="na">306.10 </td></tr>
+<td>LwIP - UDP/IGMP Multicast</td><td class="num">66.60</td><td class="num">15.31</td><td class="num">5.17 </td><td class="num">60.60</td><td class="num">18.18</td><td class="num">55.16 </td><td class="na">&mdash;</td><td class="na">&mdash;</td><td class="na">&mdash; </td><td class="na">45.1</td><td class="na">7.21</td><td class="na">10.03 </td><td class="na">&mdash;</td><td class="na">&mdash;</td><td class="na">15.3 </td><td class="na">298.66 </td></tr>
 <tr>
-<td>Basic TSN (talker/listener)</td><td class="num">80.51</td><td class="num">16.08</td><td class="num">4.91</td><td class="na">&mdash;</td><td class="na">&mdash;</td><td class="na">&mdash;</td><td class="num">158.34</td><td class="num">39.33</td><td class="num">154.25</td><td class="na">453.41 </td></tr>
+<td>Basic TSN (talker/listener)</td><td class="num">80.51</td><td class="num">16.08</td><td class="num">4.91 </td><td class="na">&mdash;</td><td class="na">&mdash;</td><td class="na">&mdash; </td><td class="num">158.34</td><td class="num">39.33</td><td class="num">154.25 </td><td class="na">47.3</td><td class="na">5.83</td><td class="na">7.9 </td><td class="na">&mdash;</td><td class="na">&mdash;</td><td class="na">12 </td><td class="na">526.45 </td></tr>
 </table>
-<p><b>Analysis:</b> Adding <code>lwip</code> to a bare Layer2 example costs roughly +215 to +220 KB, almost entirely <code>rw_data</code> (~140 KB) for socket/PCB state and packet buffer pools. The Gptp use case is the largest at ~454 KB total. </p>
-<h1><a class="anchor" id="autotoc_md1424"></a>
+<p><b>Analysis:</b> Adding <code>lwip</code> to a bare Layer2 example costs roughly +155 to +160 KB. The Gptp use case is the largest at ~526 KB total. </p>
+<h1><a class="anchor" id="autotoc_md1428"></a>
 Layer 2 Performance</h1>
 <p> <style>div.image img[src="CPSW_latency_measurement_diagram.bmp"]{width:30%}</style> </p><div class="image">
 <img src="CPSW_latency_measurement_diagram.bmp" alt=""/>
 <div class="caption">
 Latency defination</div></div>
-<h2><a class="anchor" id="autotoc_md1425"></a>
+<h2><a class="anchor" id="autotoc_md1429"></a>
 Configuration Details</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -225,7 +202,7 @@ Configuration Details</h2>
 </table>
 <p><br  />
  </p>
-<h2><a class="anchor" id="autotoc_md1426"></a>
+<h2><a class="anchor" id="autotoc_md1430"></a>
 Layer 2 Latency</h2>
 <p>RX/TX Latency here is one-way, wire-to-application (or application-to-wire) latency, split into where it's spent: <b>CPU&lt;-&gt;CPSW</b> is time inside the SoC (CPSW switch + CPDMA + interrupt/ISR handling up to/from the application buffer), and <b>PHY</b> is the fixed latency contributed by the DP83869HM PHY itself (from its datasheet, not measured on this setup). <b>Total Latency</b> is the sum of Phy delay and time taken by packet to/from CPU DMA Trigger to Mac. </p><table class="doxtable">
 <tr>
@@ -238,7 +215,7 @@ Layer 2 Latency</h2>
 <tr>
 <td>TX Latency </td><td>13225 </td><td>384 </td><td>13609  </td></tr>
 </table>
-<h3><a class="anchor" id="autotoc_md1427"></a>
+<h3><a class="anchor" id="autotoc_md1431"></a>
 Layer-2 Hardware Switching Latency for CPSW</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -261,13 +238,13 @@ Layer-2 Hardware Switching Latency for CPSW</h3>
 </table>
 <p><br  />
  </p>
-<h3><a class="anchor" id="autotoc_md1428"></a>
+<h3><a class="anchor" id="autotoc_md1432"></a>
 Test Setup</h3>
 <p> <style>div.image img[src="CPSW_Latency_measurement.png"]{width:15==20%}</style> </p><div class="image">
 <img src="CPSW_Latency_measurement.png" alt=""/>
 <div class="caption">
 Connections for Latency Measurement</div></div>
-<h3><a class="anchor" id="autotoc_md1429"></a>
+<h3><a class="anchor" id="autotoc_md1433"></a>
 CPSW Latency for RGMII</h3>
 <table class="doxtable">
 <tr>
@@ -283,7 +260,7 @@ CPSW Latency for RGMII</h3>
 <tr>
 <td><b>1518 Bytes</b> </td><td>13.2</td><td>2.0 </td><td>124.0</td><td>13.8 </td><td>1237.0</td><td>135.6  </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md1430"></a>
+<h1><a class="anchor" id="autotoc_md1434"></a>
 gPTP Performance</h1>
 <p>This table measures how quickly and how precisely a slave synchronizes to a gPTP grandmaster over a single hop - see the TSN demo's daisy-chain KPI data (<a class="el" href="EXAMPLES_ENET_CPSW_TSN_DEMO_TALKER.html">Enet CPSW TSN Integrated Demo - Talker</a>) for multi-hop accuracy under load. </p><table class="markdownTable">
 <tr class="markdownTableHead">
@@ -293,9 +270,9 @@ gPTP Performance</h1>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">Sync accuracy  </td><td class="markdownTableBodyNone">&lt; 100 ns  </td><td class="markdownTableBodyNone">Tested with Intel I210, I229, and I350 NICs and TI EVM-to-EVM setups.   </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md1431"></a>
+<h1><a class="anchor" id="autotoc_md1435"></a>
 TCP/IP Performance</h1>
-<h2><a class="anchor" id="autotoc_md1432"></a>
+<h2><a class="anchor" id="autotoc_md1436"></a>
 Configuration Details</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -332,7 +309,7 @@ Configuration Details</h2>
 </table>
 <p><br  />
  </p>
-<h3><a class="anchor" id="autotoc_md1433"></a>
+<h3><a class="anchor" id="autotoc_md1437"></a>
 TCP Throughput</h3>
 <p>Maximum sustained TCP throughput as measured by iperf, and the R5F CPU load required to sustain it. <b>TCP RX</b>/**TX** are single-direction tests; <b>TCP Bidirectional</b> runs both directions simultaneously, so its Bandwidth column reports the RX and TX rates achieved concurrently. </p><table class="doxtable">
 <tr>
@@ -356,7 +333,7 @@ TCP Throughput</h3>
  $<code>iperf -c &lt;evm_ip&gt; -d</code><br  />
  </li>
 </ul>
-<h3><a class="anchor" id="autotoc_md1434"></a>
+<h3><a class="anchor" id="autotoc_md1438"></a>
 UDP Throughput</h3>
 <p>Unlike the TCP table above, the <b>Bandwidth</b> column in the <b>UDP RX</b> rows is the <em>offered</em> load requested on the host PC (via iperf's <code>-b &lt;bw&gt;</code>, see the commands below) - not necessarily what the EVM actually received. Each of the 3 UDP RX rows is one offered-load step (4/5/10 Mbps for 64B datagrams, scaling up for larger datagrams); <b>Packet Loss (%)</b> at that row shows how much of that offered load the EVM failed to receive. <b>UDP RX (Max)</b> and <b>UDP TX (Max)</b> are the highest offered load (RX) or transmit rate (TX) the EVM could sustain at that datagram size while keeping packet loss low. </p><table class="doxtable">
 <tr>
@@ -425,7 +402,7 @@ XIP Performance</h1>
 <tr>
 <td>UDP Rx </td><td>116Mbps ~1% pkt drop 86% CPU load </td><td>45Mbps ~1% pkt drop 98% CPU load </td><td>64Mbps ~1% pkt drop 99% CPU load </td><td>92Mbps ~1% pkt drop 97% CPU load </td><td>108Mbps ~1% pkt drop 89% CPU load </td><td>110Mbps ~1% pkt drop 86% CPU load </td><td>115Mbps ~1% pkt drop 89% CPU load  </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md1435"></a>
+<h1><a class="anchor" id="autotoc_md1439"></a>
 See Also</h1>
 <p><a class="el" href="NETWORKING.html">Ethernet And Networking</a> <a class="el" href="EXAMPLES_ENET_LWIP_CPSW.html">Enet Lwip CPSW Example</a> </p>
 </div></div><!-- contents -->

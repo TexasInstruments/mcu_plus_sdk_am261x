@@ -32,23 +32,29 @@ var RELEASE_NOTES_PAGE =
         [ "Upgrade and Compatibility Information", "RELEASE_NOTES_26_01_00_PAGE.html#autotoc_md287", [
           [ "LP / SOM Rev E2 to Rev A revision Changes", "RELEASE_NOTES_26_01_00_PAGE.html#autotoc_md288", null ],
           [ "Migration to 400 MHz in ZFG package", "RELEASE_NOTES_26_01_00_PAGE.html#autotoc_md289", null ],
-          [ "Compiling examples in MacOS machines", "RELEASE_NOTES_26_01_00_PAGE.html#autotoc_md290", null ],
-          [ "RPRC Image format is Deprecated and Corresponding SBL's are also removed from SDK", "RELEASE_NOTES_26_01_00_PAGE.html#autotoc_md291", null ],
-          [ "Flash Reset moved to SysCfg", "RELEASE_NOTES_26_01_00_PAGE.html#autotoc_md292", null ],
-          [ "Module clock configuration through Clock Tree", "RELEASE_NOTES_26_01_00_PAGE.html#autotoc_md293", null ],
-          [ "Migrating back from CCS Theia to CCS Eclipse", "RELEASE_NOTES_26_01_00_PAGE.html#autotoc_md294", [
-            [ "Importing and Building in Eclipse", "RELEASE_NOTES_26_01_00_PAGE.html#autotoc_md295", null ],
-            [ "CCS SBL Loading", "RELEASE_NOTES_26_01_00_PAGE.html#autotoc_md296", null ]
+          [ "400MHz support for ZEJ/ZNC packages", "RELEASE_NOTES_26_01_00_PAGE.html#autotoc_md290", [
+            [ "Networking (Enet CPSW) - SysConfig Module Functions for 1.28.0 Migration", "RELEASE_NOTES_26_01_00_PAGE.html#autotoc_md291", null ],
+            [ "Networking (Enet CPSW) - Example SysConfig Updates for 1.28.0 Migration", "RELEASE_NOTES_26_01_00_PAGE.html#autotoc_md292", null ],
+            [ "Networking (Enet CPSW) - TSN Demo Talker Out of Box Example Update for 1.28.0 Migration", "RELEASE_NOTES_26_01_00_PAGE.html#autotoc_md293", null ]
           ] ],
-          [ "Migrating examples to 11.00.00 from older versions", "RELEASE_NOTES_26_01_00_PAGE.html#autotoc_md297", [
-            [ "Makefile Changes", "RELEASE_NOTES_26_01_00_PAGE.html#autotoc_md298", null ]
+          [ "Compiling examples in MacOS machines", "RELEASE_NOTES_26_01_00_PAGE.html#autotoc_md294", null ],
+          [ "RPRC Image format is Deprecated and Corresponding SBL's are also removed from SDK", "RELEASE_NOTES_26_01_00_PAGE.html#autotoc_md295", null ],
+          [ "Flash Reset moved to SysCfg", "RELEASE_NOTES_26_01_00_PAGE.html#autotoc_md296", null ],
+          [ "Module clock configuration through Clock Tree", "RELEASE_NOTES_26_01_00_PAGE.html#autotoc_md297", null ],
+          [ "Migrating back from CCS Theia to CCS Eclipse", "RELEASE_NOTES_26_01_00_PAGE.html#autotoc_md298", [
+            [ "Importing and Building in Eclipse", "RELEASE_NOTES_26_01_00_PAGE.html#autotoc_md299", null ],
+            [ "CCS SBL Loading", "RELEASE_NOTES_26_01_00_PAGE.html#autotoc_md300", null ]
           ] ],
-          [ "SDL PBIST Self test", "RELEASE_NOTES_26_01_00_PAGE.html#autotoc_md301", null ],
-          [ "SDL STC Configuration", "RELEASE_NOTES_26_01_00_PAGE.html#autotoc_md302", null ],
-          [ "SDL Handler API name update", "RELEASE_NOTES_26_01_00_PAGE.html#autotoc_md303", null ],
-          [ "Compiler Options", "RELEASE_NOTES_26_01_00_PAGE.html#autotoc_md304", null ],
-          [ "SOC Device Drivers", "RELEASE_NOTES_26_01_00_PAGE.html#autotoc_md305", null ],
-          [ "Networking", "RELEASE_NOTES_26_01_00_PAGE.html#autotoc_md306", null ]
+          [ "Migrating examples to 11.00.00 from older versions", "RELEASE_NOTES_26_01_00_PAGE.html#autotoc_md301", [
+            [ "Makefile Changes", "RELEASE_NOTES_26_01_00_PAGE.html#autotoc_md302", null ]
+          ] ],
+          [ "SDL PBIST Self test", "RELEASE_NOTES_26_01_00_PAGE.html#autotoc_md305", null ],
+          [ "SDL STC Configuration", "RELEASE_NOTES_26_01_00_PAGE.html#autotoc_md306", null ],
+          [ "SDL Handler API name update", "RELEASE_NOTES_26_01_00_PAGE.html#autotoc_md307", null ],
+          [ "SDL MMR Control", "RELEASE_NOTES_26_01_00_PAGE.html#autotoc_md308", null ],
+          [ "Compiler Options", "RELEASE_NOTES_26_01_00_PAGE.html#autotoc_md309", null ],
+          [ "SOC Device Drivers", "RELEASE_NOTES_26_01_00_PAGE.html#autotoc_md310", null ],
+          [ "Networking", "RELEASE_NOTES_26_01_00_PAGE.html#autotoc_md311", null ]
         ] ]
       ] ]
     ] ],

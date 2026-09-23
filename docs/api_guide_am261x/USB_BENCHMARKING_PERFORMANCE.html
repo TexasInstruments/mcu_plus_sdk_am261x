@@ -92,31 +92,31 @@ $(document).ready(function(){initNavTree('USB_BENCHMARKING_PERFORMANCE.html','')
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><ul><li class="level2"><a href="#autotoc_md784">Introduction</a></li>
-<li class="level2"><a href="#autotoc_md785">Benchmarking Examples</a></li>
-<li class="level2"><a href="#autotoc_md786">Test Configuration</a></li>
-<li class="level2"><a href="#autotoc_md787">USB Bulk Transfer Performance</a></li>
-<li class="level2"><a href="#autotoc_md788">Performance Results</a></li>
-<li class="level2"><a href="#autotoc_md789">USB Vendor Transfer Performance</a><ul><li class="level3"><a href="#autotoc_md790">Performance Results</a></li>
+<ul><ul><li class="level2"><a href="#autotoc_md789">Introduction</a></li>
+<li class="level2"><a href="#autotoc_md790">Benchmarking Examples</a></li>
+<li class="level2"><a href="#autotoc_md791">Test Configuration</a></li>
+<li class="level2"><a href="#autotoc_md792">USB Bulk Transfer Performance</a></li>
+<li class="level2"><a href="#autotoc_md793">Performance Results</a></li>
+<li class="level2"><a href="#autotoc_md794">USB Vendor Transfer Performance</a><ul><li class="level3"><a href="#autotoc_md795">Performance Results</a></li>
 </ul>
 </li>
-<li class="level2"><a href="#autotoc_md791">USB CDC Performance</a><ul><li class="level3"><a href="#autotoc_md792">Performance Results</a></li>
+<li class="level2"><a href="#autotoc_md796">USB CDC Performance</a><ul><li class="level3"><a href="#autotoc_md797">Performance Results</a></li>
 </ul>
 </li>
-<li class="level2"><a href="#autotoc_md793">USB DFU Performance</a><ul><li class="level3"><a href="#autotoc_md794">Performance Results</a></li>
+<li class="level2"><a href="#autotoc_md798">USB DFU Performance</a><ul><li class="level3"><a href="#autotoc_md799">Performance Results</a></li>
 </ul>
 </li>
-<li class="level2"><a href="#autotoc_md795">USB NCM Performance</a><ul><li class="level3"><a href="#autotoc_md796">Performance Results</a></li>
+<li class="level2"><a href="#autotoc_md800">USB NCM Performance</a><ul><li class="level3"><a href="#autotoc_md801">Performance Results</a></li>
 </ul>
 </li>
 </ul>
-<li class="level1"><a href="#autotoc_md797">See Also</a></li>
+<li class="level1"><a href="#autotoc_md802">See Also</a></li>
 </ul>
 </div>
-<div class="textblock"><h2><a class="anchor" id="autotoc_md784"></a>
+<div class="textblock"><h2><a class="anchor" id="autotoc_md789"></a>
 Introduction</h2>
 <p>This section provides performance measurements for USB benchmarking examples on AM261x using TinyUSB stack. The benchmarks measure bulk transfer and different throughput for different data directions and operating modes to characterize USB High-Speed performance on the platform.</p>
-<h2><a class="anchor" id="autotoc_md785"></a>
+<h2><a class="anchor" id="autotoc_md790"></a>
 Benchmarking Examples</h2>
 <p>The MCU+ SDK includes the following USB benchmarking examples:</p>
 <table class="markdownTable">
@@ -133,7 +133,7 @@ Benchmarking Examples</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">USB NCM Benchmark  </td><td class="markdownTableBodyNone">NCM (Network Control Model) class performance measurements  </td><td class="markdownTableBodyNone"><code>examples/benchmarks/usb/usb_ncm_benchmark/</code>   </td></tr>
 </table>
-<h2><a class="anchor" id="autotoc_md786"></a>
+<h2><a class="anchor" id="autotoc_md791"></a>
 Test Configuration</h2>
 <p>All USB benchmark tests on AM261x use the following base configuration:</p>
 <table class="markdownTable">
@@ -156,9 +156,9 @@ Test Configuration</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">Host PC Tool  </td><td class="markdownTableBodyNone">Custom Python script (pyusb)   </td></tr>
 </table>
-<h2><a class="anchor" id="autotoc_md787"></a>
+<h2><a class="anchor" id="autotoc_md792"></a>
 USB Bulk Transfer Performance</h2>
-<h2><a class="anchor" id="autotoc_md788"></a>
+<h2><a class="anchor" id="autotoc_md793"></a>
 Performance Results</h2>
 <p><b>Test Configuration:</b></p><ul>
 <li>Transfer size: 16 KB buffers</li>
@@ -179,10 +179,10 @@ Performance Results</h2>
 <li>Theoretical maximum throughput: ~60 MB/s (USB 2.0 High-Speed)</li>
 <li>Bidirectional mode uses sequential transfers (device sends first, then host sends)</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md789"></a>
+<h2><a class="anchor" id="autotoc_md794"></a>
 USB Vendor Transfer Performance</h2>
 <p>TinyUSB built-in vendor class driver with standard FIFO-based transfers.</p>
-<h3><a class="anchor" id="autotoc_md790"></a>
+<h3><a class="anchor" id="autotoc_md795"></a>
 Performance Results</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -198,10 +198,10 @@ Performance Results</h3>
 <li>TinyUSB vendor class uses standard FIFO-based transfers</li>
 <li>Performance differs from custom vendor class due to different buffer management strategies</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md791"></a>
+<h2><a class="anchor" id="autotoc_md796"></a>
 USB CDC Performance</h2>
 <p>CDC (Communications Device Class) for serial communication.</p>
-<h3><a class="anchor" id="autotoc_md792"></a>
+<h3><a class="anchor" id="autotoc_md797"></a>
 Performance Results</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -215,10 +215,10 @@ Performance Results</h3>
 <li>CDC class provides serial communication interface</li>
 <li>Suitable for serial communication and control scenarios</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md793"></a>
+<h2><a class="anchor" id="autotoc_md798"></a>
 USB DFU Performance</h2>
 <p>DFU (Device Firmware Upgrade) class for firmware updates over USB.</p>
-<h3><a class="anchor" id="autotoc_md794"></a>
+<h3><a class="anchor" id="autotoc_md799"></a>
 Performance Results</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -232,10 +232,10 @@ Performance Results</h3>
 <li>Lower performance compared to bulk transfers due to protocol overhead</li>
 <li>Suitable for firmware update scenarios where speed is not critical</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md795"></a>
+<h2><a class="anchor" id="autotoc_md800"></a>
 USB NCM Performance</h2>
 <p>NCM (Network Control Model) class for network communication over USB with lwIP integration.</p>
-<h3><a class="anchor" id="autotoc_md796"></a>
+<h3><a class="anchor" id="autotoc_md801"></a>
 Performance Results</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -249,7 +249,7 @@ Performance Results</h3>
 <li>NCM provides network interface over USB with TCP/IP stack</li>
 <li>Suitable for network-over-USB applications</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md797"></a>
+<h1><a class="anchor" id="autotoc_md802"></a>
 See Also</h1>
 <p><a class="el" href="EXAMPLES_USB_BULK_BENCHMARK.html">USB Bulk Benchmark</a></p>
 <p><a class="el" href="EXAMPLES_USB_VENDOR_BENCHMARK.html">USB Vendor Benchmark</a></p>

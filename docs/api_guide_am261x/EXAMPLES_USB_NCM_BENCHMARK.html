@@ -93,10 +93,10 @@ $(document).ready(function(){initNavTree('EXAMPLES_USB_NCM_BENCHMARK.html',''); 
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
 <ul><li class="level1"><a href="#EXAMPLES_USB_NCM_BENCHMARK_COMBOS">Supported Combinations</a></li>
-<li class="level1"><a href="#autotoc_md3772">Introduction</a></li>
-<li class="level1"><a href="#autotoc_md3773">Building benchmark application</a></li>
-<li class="level1"><a href="#autotoc_md3774">Running benchmark application</a><ul><li class="level2"><a href="#autotoc_md3775">Output</a></li>
-<li class="level2"><a href="#autotoc_md3776">Result</a></li>
+<li class="level1"><a href="#autotoc_md3776">Introduction</a></li>
+<li class="level1"><a href="#autotoc_md3777">Building benchmark application</a></li>
+<li class="level1"><a href="#autotoc_md3778">Running benchmark application</a><ul><li class="level2"><a href="#autotoc_md3779">Output</a></li>
+<li class="level2"><a href="#autotoc_md3780">Result</a></li>
 </ul>
 </li>
 </ul>
@@ -116,7 +116,7 @@ Supported Combinations</h1>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">Example folder  </td><td class="markdownTableBodyNone">examples/benchmarks/usb/usb_ncm_benchmark   </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md3772"></a>
+<h1><a class="anchor" id="autotoc_md3776"></a>
 Introduction</h1>
 <p>This benchmark measures USB NCM (Network Control Model) class performance. NCM is a networking protocol over USB that provides high-speed data transfer for network communication scenarios.</p>
 <p><b>Key Features:</b></p><ul>
@@ -125,10 +125,10 @@ Introduction</h1>
 <li>Measures data throughput for networking scenarios</li>
 <li>Performance characterization for network-over-USB applications</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md3773"></a>
+<h1><a class="anchor" id="autotoc_md3777"></a>
 Building benchmark application</h1>
 <div class="fragment"><div class="line">make -s -C examples/benchmarks/usb/usb_ncm_benchmark/am261x-lp/r5fss0-0_freertos/ti-arm-clang/</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md3774"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md3778"></a>
 Running benchmark application</h1>
 <ol type="1">
 <li>Build and run the application on AM261x board</li>
@@ -138,7 +138,7 @@ Running benchmark application</h1>
 </ol>
 <div class="fragment"><div class="line">ping 192.168.7.1</div>
 <div class="line">iperf -c 192.168.7.1 -t 10 -r</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md3775"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md3779"></a>
 Output</h2>
 <div class="fragment"><div class="line">[NCM BENCHMARK] USB NCM Network Throughput Benchmark - AM261x</div>
 <div class="line"> </div>
@@ -159,7 +159,7 @@ Output</h2>
 <div class="line">[NCM BENCHMARK] TCP client test completed</div>
 <div class="line">[NCM BENCHMARK] Remote: 192.168.7.2:5001</div>
 <div class="line">[NCM BENCHMARK] Throughput : 7.87 MB/s (76.86 MB in 10.0 sec)</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md3776"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md3780"></a>
 Result</h2>
 <p>For detailed USB NCM benchmark performance results, refer to <a class="el" href="USB_BENCHMARKING_PERFORMANCE.html">Performance Benchmarking</a>. </p>
 </div></div><!-- contents -->

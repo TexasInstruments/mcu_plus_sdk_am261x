@@ -121,23 +121,29 @@ $(document).ready(function(){initNavTree('RELEASE_NOTES_26_01_00_PAGE.html','');
 <li class="level2"><a href="#autotoc_md286">Software Bill of Materials</a></li>
 <li class="level2"><a href="#autotoc_md287">Upgrade and Compatibility Information</a><ul><li class="level3"><a href="#autotoc_md288">LP / SOM Rev E2 to Rev A revision Changes</a></li>
 <li class="level3"><a href="#autotoc_md289">Migration to 400 MHz in ZFG package</a></li>
-<li class="level3"><a href="#autotoc_md290">Compiling examples in MacOS machines</a></li>
-<li class="level3"><a href="#autotoc_md291">RPRC Image format is Deprecated and Corresponding SBL&#39;s are also removed from SDK</a></li>
-<li class="level3"><a href="#autotoc_md292">Flash Reset moved to SysCfg</a></li>
-<li class="level3"><a href="#autotoc_md293">Module clock configuration through Clock Tree</a></li>
-<li class="level3"><a href="#autotoc_md294">Migrating back from CCS Theia to CCS Eclipse</a><ul><li class="level4"><a href="#autotoc_md295">Importing and Building in Eclipse</a></li>
-<li class="level4"><a href="#autotoc_md296">CCS SBL Loading</a></li>
+<li class="level3"><a href="#autotoc_md290">400MHz support for ZEJ/ZNC packages</a><ul><li class="level4"><a href="#autotoc_md291">Networking (Enet CPSW) - SysConfig Module Functions for 1.28.0 Migration</a></li>
+<li class="level4"><a href="#autotoc_md292">Networking (Enet CPSW) - Example SysConfig Updates for 1.28.0 Migration</a></li>
+<li class="level4"><a href="#autotoc_md293">Networking (Enet CPSW) - TSN Demo Talker Out of Box Example Update for 1.28.0 Migration</a></li>
 </ul>
 </li>
-<li class="level3"><a href="#autotoc_md297">Migrating examples to 11.00.00 from older versions</a><ul><li class="level4"><a href="#autotoc_md298">Makefile Changes</a></li>
+<li class="level3"><a href="#autotoc_md294">Compiling examples in MacOS machines</a></li>
+<li class="level3"><a href="#autotoc_md295">RPRC Image format is Deprecated and Corresponding SBL&#39;s are also removed from SDK</a></li>
+<li class="level3"><a href="#autotoc_md296">Flash Reset moved to SysCfg</a></li>
+<li class="level3"><a href="#autotoc_md297">Module clock configuration through Clock Tree</a></li>
+<li class="level3"><a href="#autotoc_md298">Migrating back from CCS Theia to CCS Eclipse</a><ul><li class="level4"><a href="#autotoc_md299">Importing and Building in Eclipse</a></li>
+<li class="level4"><a href="#autotoc_md300">CCS SBL Loading</a></li>
 </ul>
 </li>
-<li class="level3"><a href="#autotoc_md301">SDL PBIST Self test</a></li>
-<li class="level3"><a href="#autotoc_md302">SDL STC Configuration</a></li>
-<li class="level3"><a href="#autotoc_md303">SDL Handler API name update</a></li>
-<li class="level3"><a href="#autotoc_md304">Compiler Options</a></li>
-<li class="level3"><a href="#autotoc_md305">SOC Device Drivers</a></li>
-<li class="level3"><a href="#autotoc_md306">Networking</a></li>
+<li class="level3"><a href="#autotoc_md301">Migrating examples to 11.00.00 from older versions</a><ul><li class="level4"><a href="#autotoc_md302">Makefile Changes</a></li>
+</ul>
+</li>
+<li class="level3"><a href="#autotoc_md305">SDL PBIST Self test</a></li>
+<li class="level3"><a href="#autotoc_md306">SDL STC Configuration</a></li>
+<li class="level3"><a href="#autotoc_md307">SDL Handler API name update</a></li>
+<li class="level3"><a href="#autotoc_md308">SDL MMR Control</a></li>
+<li class="level3"><a href="#autotoc_md309">Compiler Options</a></li>
+<li class="level3"><a href="#autotoc_md310">SOC Device Drivers</a></li>
+<li class="level3"><a href="#autotoc_md311">Networking</a></li>
 </ul>
 </li>
 </ul>
@@ -166,14 +172,24 @@ New in this Release</h1>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Feature  </th><th class="markdownTableHeadNone">Module   </th></tr>
 <tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">ThreadX RTOS support added  </td><td class="markdownTableBodyNone">Kernel   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Out-of-box Phy tuning support for OSPI PSRAM at 125Mhz (For running at 133mhz, please refer <a class="el" href="PSRAM_133MHZ_MODE2_GUIDE.html">PSRAM at 133 MHz in Mode 2</a>)  </td><td class="markdownTableBodyNone">PSRAM   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">OSPI/QSPI NAND Flash support on OSPI interface  </td><td class="markdownTableBodyNone">Flash/OSPI   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">SBL QSPI flash examples added for AM261x  </td><td class="markdownTableBodyNone">Flash/QSPI   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Option to disable FIFO via Sysconfig for a McSPI instance  </td><td class="markdownTableBodyNone">McSPI   </td></tr>
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">ICSS-EMAC and ICSS TimeSync driver sources are now at <code>source/networking/icss_emac_lld/</code> . Check <a class="el" href="ICSS_EMAC_MIGRATION_GUIDE.html#ICSS_EMAC_SOURCE_PATH_CHANGE">Source Path Change (MCU+ SDK &gt;= 26.01.00)</a> &zwj; for the migration guide  </td><td class="markdownTableBodyNone">Networking   </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">ICSS-EMAC: Added <code>pruRstIsoStatusParams</code> field to <code><a class="el" href="structICSS__EMAC__Params.html" title="ICSS_EMAC Parameters.">ICSS_EMAC_Params</a></code> and <code><a class="el" href="group__NETWORKING__ICSS__EMAC__MODULE.html#gaa0ea20af82b6ded6ca9f595991930887" title="Gets the reset isolation status from the ICSS_EMAC handle.">ICSS_EMAC_getResetIsolationStatus()</a></code> API for PRU reset isolation support. Reset isolation requires firmware support — do not enable unless the PRU firmware explicitly supports it. Supported on AM243x and AM64x only.  </td><td class="markdownTableBodyNone">Networking   </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">CPSW: Added OOB Example to showcase performance of TSN Features(EST, GPTP, IET, Cut-thru)  </td><td class="markdownTableBodyNone">Networking   </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">CPSW: zero-copy stats IOCTL implementation  </td><td class="markdownTableBodyNone">Networking   </td></tr>
+<td class="markdownTableBodyNone">CPSW: Added OOB Example to showcase performance of TSN Features(EST, GPTP, IET, Cut-thru)  </td><td class="markdownTableBodyNone">Networking   </td></tr>
 <tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">CPSW: zero-copy stats IOCTL implementation  </td><td class="markdownTableBodyNone">Networking   </td></tr>
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">CPSW: Add MII Pinmux support in Syscfg  </td><td class="markdownTableBodyNone">Networking   </td></tr>
 </table>
 <h1><a class="anchor" id="autotoc_md262"></a>
@@ -433,6 +449,14 @@ Fixed Issues</h2>
 <tr>
 <td>PROC_SDL-9820 </td><td>End of Conversion bit (EOCZ) is not using for reading temperature sensor results in SDL_VTM_getTemp API for AM26x controllers </td><td>SDL </td><td>26.00.00 onwards </td><td>AM263x, AM263Px, AM261x </td><td>Fixed in library  </td></tr>
 <tr>
+<td>PROC_SDL-10274 </td><td>Remove sdl_rom_checksum.h from AM26x SDK package </td><td>SDL </td><td>26.00.00 onwards </td><td>Fixed in installer package script  </td></tr>
+<tr>
+<td>PROC_SDL-10283 </td><td>SDL is not unlocked before write CTRL MMR registers </td><td>SDL </td><td>26.00.00 onwards </td><td>Fixed in code and example  </td></tr>
+<tr>
+<td>PROC_SDL-10276 </td><td>AM26x: Altering R5 register values directly in SDL_UTILS_enable_event_bus and SDL_UTILS_enable_cache_event_bus APIs without store and restore creating issues in customer application </td><td>SDL </td><td>26.00.00 onwards </td><td>Fixed in r5 asm code  </td></tr>
+<tr>
+<td>PROC_SDL-10190 </td><td>Fix reverted bug and testcase on SDL_RTI_clearStatus </td><td>SDL </td><td>26.00.00 onwards </td><td>Fixed in library and test  </td></tr>
+<tr>
 <td>MCUSDK-15576 </td><td>I2C Target doesn't work with 0 write size interaction </td><td>I2C </td><td>26.00.00 onwards </td><td>AM263x, AM263Px, AM261x </td><td>Updated source code  </td></tr>
 <tr>
 <td>PSIRT-276 </td><td>Buffer overflow in MCELF Program Header Table parsing due to unvalidated e_phentsize field </td><td>SBL </td><td>10.00.00 onwards </td><td>AM263x, AM263Px, AM261x </td><td>Added validation of the ELF Program Header entry size (e_phentsize) in Bootloader_parseAndLoadMultiCoreELF to prevent an out-of-bounds write into the PHT buffer  </td></tr>
@@ -446,6 +470,42 @@ Fixed Issues</h2>
 <td>MCUSDK-15562 </td><td>EEPROM dependency cannot be removed even if MAC address is configured manually </td><td>Networking </td><td>11.01.00 </td><td>AM263x, AM263Px, AM261x </td><td>Remove EEPROM dependency for Manual MAC address assignment mode  </td></tr>
 <tr>
 <td>MCUSDK-15754 </td><td>UDP port number in lwip cpsw example </td><td>Networking </td><td>26.00.00 </td><td>AM263x, AM263Px, AM261x </td><td>Corrected the UDP Port number in LWIP CPSW example  </td></tr>
+<tr>
+<td>MCUSDK-15738 </td><td>Unable to disable shadow loading for Action Qualifier using sysconfig </td><td>EPWM </td><td>10.02.00, 11.01.00 </td><td>AM261x, AM263Px, AM263x </td><td>Generate EPWM_setActionQualifierShadowLoadMode only when shadow load mode is enabled  </td></tr>
+<tr>
+<td>MCUSDK-15711 </td><td>AM261x Launchpad fails to start PROFINET when REL_26.0.0.6 Bootloader is used </td><td>Networking </td><td>26.00.00 </td><td>AM261x </td><td>Call MMR register unlock APIs before write and lock back after to maintain protection  </td></tr>
+<tr>
+<td>MCUSDK-15591 </td><td>SOC_configureWarmResetSource API needs to be corrected </td><td>SOC </td><td>11.01.00 </td><td>AM261x, AM263Px </td><td>Corrected address being passed to the API  </td></tr>
+<tr>
+<td>MCUSDK-15731 </td><td>AM261x:UART4 and UART5 Support missing in soc_rcm files </td><td>UART </td><td>26.00.00 </td><td>AM261x </td><td>Added support for UART instance 4 and 5  </td></tr>
+<tr>
+<td>MCUSDK-15749 </td><td>AM26x: Multicore FreeRTOS project with IPC enabled on all cores crashes </td><td>IPC </td><td>26.00.00 </td><td>AM261x, AM263Px, AM263x </td><td>Updated docs with correct steps to run and debug multicore examples  </td></tr>
+<tr>
+<td>MCUSDK-15337 </td><td>AM26x: RTI: Sysconfig does not free up the RTI instance used by clock module </td><td>RTI </td><td>11.01.00 </td><td>AM261x, AM263Px, AM263x </td><td>Workaround provided to free up the RTI instance used by clock module  </td></tr>
+<tr>
+<td>MCUSDK-15386 </td><td>AM26x: CPSW ethernet examples have issues with RJ-45 LEDs configuration </td><td>Networking </td><td>11.01.00 </td><td>AM261x, AM263Px, AM263x </td><td>Updated default PHY LED configuration based on schematics  </td></tr>
+<tr>
+<td>MCUSDK-15740 </td><td>AM261x: Phy Tuning Support for OSPI PSRAM </td><td>OSPI </td><td>10.02.00 </td><td>AM261x </td><td>Phy tuning enabled and tested at 125Mhz  </td></tr>
+<tr>
+<td>MCUSDK-15132 </td><td>OSPI: phy tuning failure causing boot fail </td><td>OSPI </td><td>11.01.00 </td><td>AM261x, AM263Px </td><td>Fixed phy tuning failure causing boot fail  </td></tr>
+<tr>
+<td>MCUSDK-15221 </td><td>AM26x: Issues with Parsing the MMCSD response register </td><td>MMCSD </td><td>11.01.00 </td><td>AM261x, AM263Px, AM263x </td><td>Fixed parsing of CSD and CID registers in mmcsd_parse.c  </td></tr>
+<tr>
+<td>MCUSDK-15577 </td><td>OSPI EDMA copy is not working correctly after STC reset </td><td>OSPI </td><td>26.00.00 </td><td>AM261x, AM263Px, AM263x </td><td>Fixed in driver (soc.c) - Kept isMapAvailable flag uninitialized so it stays in .bss area  </td></tr>
+<tr>
+<td>MCUSDK-15916 </td><td><a class="el" href="group__DRV__I2C__HLD__MODULE.html#ga6c82327e0d17600c67b45a8616905c10" title="API to initiate a transfer from I2C Instance.">I2C_transfer()</a> returns success after timeout when enableIntr=true, causing data corruption </td><td>I2C </td><td>26.00.00 </td><td>AM261x, AM263Px, AM263x </td><td>Implemented fix similar to the poll-mode code path  </td></tr>
+<tr>
+<td>MCUSDK-15708 </td><td>AM261x: WDT: RCCLK23K and RCCLK10M are marked as unsupported in SOC RCM CLock settings </td><td>SOC </td><td>26.00.01 </td><td>AM261x, AM263Px, AM263x </td><td>Enabled support for RCCLK10M  </td></tr>
+<tr>
+<td>MCUSDK-15946 </td><td>AM261x- GD25B4.json flash config file causes syscfg hang </td><td>OSPI </td><td>26.00.00 </td><td>AM261x </td><td>Added complete flash config JSON template with all required fields  </td></tr>
+<tr>
+<td>MCUSDK-15544 </td><td>[AM261x]: OSPI: DPLL_CORE_HSDIV0_CLKOUT3 modeled as 500MHz in SysConfig but actual HW is 333MHz, causing RCM assert and incorrect SCLK calculations </td><td>OSPI </td><td>26.00.01 </td><td>AM261x </td><td>Added input validation assert to accept only input frequency greater than or equal to output frequency  </td></tr>
+<tr>
+<td>MCUSDK-15578 </td><td>AM261x: Hard coded CPU frequency for ZFG, missing support for ZNC, ZEJ package </td><td>SOC </td><td>26.00.00 </td><td>AM261x </td><td>Added support for ZNC, ZEJ package CPU frequency. Refer to Compatibility section below for more details.  </td></tr>
+<tr>
+<td>MCUSDK-15261 </td><td>VPP_EN bit to be set to 1 after boot to disconnect VDDA18_LDO from Vpp circuit when eFuse is not being programmed </td><td>SBL </td><td>11.01.00 </td><td>AM261x, AM263Px </td><td>Set the VPP_EN bit in all SBLs  </td></tr>
+<tr>
+<td>MCUSDK-15730 </td><td>USB: Improve NCM FreeRTOS stability and performance </td><td>USB </td><td>11.01.00 </td><td>AM261x </td><td>Improved USB NCM FreeRTOS implementation, fixed NCM/LwIP integration and USB stall issues  </td></tr>
 </table>
 <h2><a class="anchor" id="autotoc_md276"></a>
 Known Issues</h2>
@@ -468,6 +528,8 @@ Known Issues</h2>
 <tr>
 <td>MCUSDK-14950 </td><td>AM26x: Networking examples show up as "..." on TIREX </td><td>Networking </td><td>10.01.00 onwards </td><td>-  </td></tr>
 <tr>
+<td>MCUSDK-16002 </td><td>AM261x-som: Enet: CPSW Phy loopback example fails due to incorrect link params </td><td>Networking </td><td>26.01.00 onwards </td><td>Update link speed to "100M" and duplexity to "FULL" in phy loopback example syscfg  </td></tr>
+<tr>
 <td>PINDSW-7715 </td><td>Dual EMAC instance not working with both ports together for icss_emac_lwip example </td><td>ICSS-EMAC </td><td>10.00.01 onwards </td><td>None  </td></tr>
 <tr>
 <td>PINDSW-7746 </td><td>Low iperf values in TCP and UDP </td><td>ICSS-EMAC </td><td>10.00.01 onwards </td><td>None  </td></tr>
@@ -482,7 +544,7 @@ Known Issues</h2>
 <tr>
 <td>PROC_SDL-10004 </td><td>ECC Injection example for TPTC memory is not working on latest released MCU PLUS SDK </td><td>SDL </td><td>26.00.00 onwards </td><td>Example not working in SBL and Use CCS testing.  </td></tr>
 <tr>
-<td>PROC_SDL-9596 </td><td>SEC and DED failure in ecc_bus_safety example </td><td>SDL </td><td>11.01.00 onwards </td><td>For AXI_RD_SEC nodes can test in specific core.  </td></tr>
+<td>PROC_SDL-9596 </td><td>SEC and DED failure in ecc_bus_safety example and function test </td><td>SDL </td><td>11.01.00 onwards </td><td>For AXI_RD_SEC nodes can test in specific core.  </td></tr>
 <tr>
 <td>PROC_SDL-9617 </td><td>AXI_S SEC and DED failure </td><td>SDL </td><td>11.01.00 onwards </td><td>For AXI_S node, use CCS to test.  </td></tr>
 <tr>
@@ -497,6 +559,8 @@ Known Issues</h2>
 <td>PROC_SDL-9131 </td><td>CLK-T1 MSS_DCCC and DCCA diag failure </td><td>SDL </td><td>10.02.00 onwards </td><td>None  </td></tr>
 <tr>
 <td>PROC_SDL-9163 </td><td>ECC Aggregators FSS FOTA and OSPI </td><td>SDL </td><td>10.02.00 onwards </td><td>None  </td></tr>
+<tr>
+<td>PROC_SDL-10320 </td><td>Add AM261x support for ECC EDMA and PRU Example </td><td>SDL </td><td>26.00.00 onwards </td><td>Refer AM263Px or AM263x example for ECC EDMA and PRU examples  </td></tr>
 <tr>
 <td>MCUSDK-14898 </td><td>SDL apps fails on other than RFSS0-0 with SBL </td><td>SBL, SDL </td><td>11.00.00 onwards </td><td>This because SBL brings the RFSS0-1 out of reset before the SBL UART prints gets flushed. This will be fixed in next release. As a workaround the application in R5FSS1-0 can delay the start of application till SBL UART prints gets completed.  </td></tr>
 <tr>
@@ -526,8 +590,6 @@ Known Issues</h2>
 <tr>
 <td>MCUSDK-14941 </td><td>McSPI: Non Multiple's of FIFO cannot be transferred in DMA mode </td><td>McSPI </td><td>10.00.00 onwards </td><td>Use FIFO Trigger level of 1.  </td></tr>
 <tr>
-<td>MCUSDK-13011 </td><td>Data Abort in application when all cores are running freertos using Gel files(CCS) </td><td>FreeRTOS </td><td>10.00.00 onwards </td><td>Flash and use SBL NULL instead of gel files  </td></tr>
-<tr>
 <td>MCUSDK-14636 </td><td>AM261x: Phy Tuning not supported for NAND Flash and PSRAM </td><td>OSPI, Flash </td><td>10.02.00 onwards </td><td>-  </td></tr>
 <tr>
 <td>MCUSDK-14656 </td><td>Mac OS Support not available for DFU Utils tool </td><td>USB </td><td>10.02.00 onwards </td><td>-  </td></tr>
@@ -535,6 +597,10 @@ Known Issues</h2>
 <td>MCUSDK-14644 </td><td>EST <a class="el" href="structTimestamp.html" title="The Timestamp type represents a positive time with respect to the epoch.">Timestamp</a> verification is failing after link down event </td><td>Networking </td><td>11.00.00 onwards </td><td>Re-apply the EST configuration post link-up  </td></tr>
 <tr>
 <td>MCUSDK-15550 </td><td>Adding PSRAM in SBL Null syscfg causes the SBL boot up to fail </td><td>SBL </td><td>11.00.00 onwards </td><td>None  </td></tr>
+<tr>
+<td>MCUSDK-15963 </td><td>MCSPI LLD driver generates redundant TX_EMPTY interrupt during single transfer </td><td>McSPI </td><td>26.01.00 onwards </td><td>Disable FIFO in the driver/SysConfig. This results in one interrupt per word (no buffering), but eliminates the initial TXx_EMPTY burst. Or Use DMA mode (<a class="el" href="group__DRV__MCSPI__LLD__MODULE.html#gaae2d0e9af00185a61a45e225c733270c" title="This API reads writes data from the McSPI instance in DMA mode.">MCSPI_lld_readWriteDma()</a>) to offload data movement and bypass the interrupt-driven FIFO filling.  </td></tr>
+<tr>
+<td>MCUSDK-15953 </td><td>AllSoc: Libraries Don't Build When DebugP_ASSERT_ENABLED is 0 </td><td>Build </td><td>26.00.00 onwards </td><td>None  </td></tr>
 <tr>
 <td>MCUSDK-15551 </td><td>Adding PSRAM in SBL OSPI syscfg causes the SBL boot up to fail </td><td>SBL </td><td>11.00.00 onwards </td><td>None  </td></tr>
 </table>
@@ -701,6 +767,90 @@ Migration to 400 MHz in ZFG package</h3>
 <td>Clocktree </td><td>Switching between 500 MHz and 400 MHz in ZFG package has changed. </td><td>There are two variants available, catering to different R5F clock frequencies: 400 MHz and 500 MHz. The default variant is 500 MHz, but users can switch to the 400 MHz variant. This switching was earlier done through clock module in sysconfig but now it's done through Device View settings (<a class="el" href="CLOCKTREE.html#CLOCKTREE_VARIANT_SWITCHING">Switching between 500 MHz and 400 MHz in ZFG package</a>)  </td></tr>
 </table>
 <h3><a class="anchor" id="autotoc_md290"></a>
+400MHz support for ZEJ/ZNC packages</h3>
+<p>Users who want to use ZEJ or ZNC package at 400Mhz must upgrade to sysconfig 1.28.0</p>
+<p>ZCZ users must stay on SysConfig 1.27.0, since there is a compatibility issue with the ZCZ package in 1.28.0.</p>
+<p>SysConfig 1.28.0 introduces two new device variants, AM261x_ZEJ_400 and AM261x_ZNC_400, which can be selected in SysConfig to run at 400 MHz.</p>
+<h4><a class="anchor" id="autotoc_md291"></a>
+Networking (Enet CPSW) - SysConfig Module Functions for 1.28.0 Migration</h4>
+<p>When migrating to SysConfig 1.28.0, replace the entire content of <code>getEnetClockConfig</code>, <code>getClockEnableIds</code>, and <code>getClockFrequencies</code> in <code>source/networking/enet/core/sysconfig/networking/.meta/enet_cpsw/am261x/enet_cpsw_am261x.syscfg.js</code> with:</p>
+<div class="fragment"><div class="line">function getEnetClockConfig(device_name)</div>
+<div class="line">{</div>
+<div class="line">    var enet_clock_config;</div>
+<div class="line"> </div>
+<div class="line">    if((device_name == &quot;AM261x_ZFG&quot;) || (device_name == &quot;AM261x_ZCZ&quot;) ||</div>
+<div class="line">       (device_name == &quot;AM261x_ZNC&quot;) || (device_name == &quot;AM261x_ZEJ&quot;))</div>
+<div class="line">    {</div>
+<div class="line">enet_clock_config =</div>
+<div class="line">    {</div>
+<div class="line"> </div>
+<div class="line">    clockIds        : [ &quot;SOC_RcmPeripheralId_CPTS&quot;, &quot;SOC_RcmPeripheralId_CPSW_5_50_250&quot;],</div>
+<div class="line">    clockFrequencies: [</div>
+<div class="line">        {</div>
+<div class="line">            moduleId: &quot;SOC_RcmPeripheralId_CPTS&quot;,</div>
+<div class="line">            clkId   : &quot;SOC_RcmPeripheralClockSource_SYS_CLK&quot;,</div>
+<div class="line">            clkRate : 250000000,</div>
+<div class="line">        },</div>
+<div class="line">        {</div>
+<div class="line">            moduleId: &quot;SOC_RcmPeripheralId_CPSW_5_50_250&quot;,</div>
+<div class="line">            clkId   : &quot;SOC_RcmPeripheralClockSource_DPLL_CORE_HSDIV0_CLKOUT1&quot;,</div>
+<div class="line">            clkRate : 500000000,</div>
+<div class="line">        },</div>
+<div class="line">    ],</div>
+<div class="line">    }</div>
+<div class="line">    }</div>
+<div class="line">    else if((device_name == &quot;AM261x_ZFG_400&quot;) || (device_name == &quot;AM261x_ZCZ_400&quot;) ||</div>
+<div class="line">            (device_name == &quot;AM261x_ZNC_400&quot;) || (device_name == &quot;AM261x_ZEJ_400&quot;))</div>
+<div class="line">    {</div>
+<div class="line">enet_clock_config =</div>
+<div class="line">    {</div>
+<div class="line"> </div>
+<div class="line">    clockIds        : [ &quot;SOC_RcmPeripheralId_CPTS&quot;, &quot;SOC_RcmPeripheralId_CPSW_5_50_250&quot;],</div>
+<div class="line">    clockFrequencies: [</div>
+<div class="line">        {</div>
+<div class="line">            moduleId: &quot;SOC_RcmPeripheralId_CPTS&quot;,</div>
+<div class="line">            clkId   : &quot;SOC_RcmPeripheralClockSource_SYS_CLK&quot;,</div>
+<div class="line">            clkRate : 200000000,</div>
+<div class="line">        },</div>
+<div class="line">        {</div>
+<div class="line">            moduleId: &quot;SOC_RcmPeripheralId_CPSW_5_50_250&quot;,</div>
+<div class="line">            clkId   : &quot;SOC_RcmPeripheralClockSource_DPLL_CORE_HSDIV0_CLKOUT1&quot;,</div>
+<div class="line">            clkRate : 500000000,</div>
+<div class="line">        },</div>
+<div class="line">    ],</div>
+<div class="line">    }</div>
+<div class="line">    }</div>
+<div class="line">    else</div>
+<div class="line">    {</div>
+<div class="line">        throw new Error(`enet_cpsw_am261x: unrecognized device &quot;${device_name}&quot; - ` +</div>
+<div class="line">                        `expected AM261x_ZFG/ZCZ/ZNC/ZEJ with or without _400 suffix`);</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    return enet_clock_config;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line">function getClockEnableIds(instance) {</div>
+<div class="line">    let instConfig = getEnetClockConfig(system.deviceData.device);</div>
+<div class="line">    return instConfig.clockIds;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line">function getClockFrequencies(inst) {</div>
+<div class="line">    let instConfig = getEnetClockConfig(system.deviceData.device);</div>
+<div class="line">    return instConfig.clockFrequencies;</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>This changes device detection from board names (<code>am261x-lp</code>/<code>am261x-som</code>) to package names (<code>AM261x_ZFG</code>/<code>AM261x_ZCZ</code>/<code>AM261x_ZNC</code>/<code>AM261x_ZEJ</code> with <code>_400</code> suffix for 400MHz variants).</p>
+<h4><a class="anchor" id="autotoc_md292"></a>
+Networking (Enet CPSW) - Example SysConfig Updates for 1.28.0 Migration</h4>
+<p>When migrating to SysConfig 1.28.0, update <code>cptsRftClkFreq</code> in example <code>.syscfg</code> files based on package:</p>
+<p><b>For ZNC_400 / ZEJ_400 packages (400MHz CPU / 200MHz CPTS):</b> </p><div class="fragment"><div class="line">enet_cpsw1.cptsRftClkFreq = &quot;CPSW_CPTS_RFTCLK_FREQ_200MHZ&quot;;</div>
+</div><!-- fragment --><p><b>For ZNC / ZEJ / ZFG / ZCZ packages (500MHz CPU / 250MHz CPTS):</b> </p><div class="fragment"><div class="line">enet_cpsw1.cptsRftClkFreq = &quot;CPSW_CPTS_RFTCLK_FREQ_250MHZ&quot;;</div>
+</div><!-- fragment --><h4><a class="anchor" id="autotoc_md293"></a>
+Networking (Enet CPSW) - TSN Demo Talker Out of Box Example Update for 1.28.0 Migration</h4>
+<p>For users using the <code>tsn_demo</code> talker Out of Box example, update <code>TSNDEMO_CPTS_TICK_NS</code> in the example <code>.syscfg</code> file based on package:</p>
+<p><b>For 400MHz CPU packages (ZNC_400, ZEJ_400, ZFG_400, ZCZ_400):</b> </p><div class="fragment"><div class="line">TSNDEMO_CPTS_TICK_NS = 5U;</div>
+</div><!-- fragment --><p><b>For 500MHz CPU packages (ZNC, ZEJ, ZFG, ZCZ):</b> </p><div class="fragment"><div class="line">TSNDEMO_CPTS_TICK_NS = 4U;</div>
+</div><!-- fragment --><p>This accounts for the CPTS reference clock frequency difference (200MHz for 400MHz CPU packages vs 250MHz for 500MHz CPU packages).</p>
+<h3><a class="anchor" id="autotoc_md294"></a>
 Compiling examples in MacOS machines</h3>
 <p>Currently the gmac library packaged within SDK is compiled using gcc darwin23.6.0 on Apple MAC. To build SDK examples on a different toolchain, recompile the gmac library by using these steps:</p>
 <div class="fragment"><div class="line">$ cd {SDK_PATH}/tools/boot/multicore-elf/c_modules/gmac</div>
@@ -709,7 +859,7 @@ Compiling examples in MacOS machines</h3>
 <li>A new library will be created inside mac/dist.</li>
 <li>Rename this file to "gmac.arm64-apple-darwin.darwin.dylib".</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md291"></a>
+<h3><a class="anchor" id="autotoc_md295"></a>
 RPRC Image format is Deprecated and Corresponding SBL's are also removed from SDK</h3>
 <p>RPRC image format is no longer supported and MCELF will be the only file format. Older SBL's and Cfg files which mapped to RPRC format are removed and replaced with MCELF variants. Below is the list of updated SBL's and Cfg files:</p>
 <table class="doxtable">
@@ -727,28 +877,28 @@ RPRC Image format is Deprecated and Corresponding SBL's are also removed from SD
 <td>SBL CAN UNIFLASH (default_sbl_can_uniflash.cfg, default_sbl_can_uniflash_app.cfg) </td><td>SBL CAN UNIFLASH MULTICORE ELF (mcelf_sbl_can_uniflash.cfg, mcelf_sbl_can_uniflash_app.cfg)  </td></tr>
 </table>
 <p>Please refer to the updated SDK example makefiles for Infra changes.</p>
-<h3><a class="anchor" id="autotoc_md292"></a>
+<h3><a class="anchor" id="autotoc_md296"></a>
 Flash Reset moved to SysCfg</h3>
 <p>Earlier, flash reset was done in board.c file within application which is now moved to SysCfg. If Flash reset logic needs to be added, please enable "Enable Flash Reset API" configurable in Flash module. This is by enabled out of box for all SDK Flash examples. For custom flash, define the flash reset API in application and add the API name to "Flash Reset Function" configurable.</p>
-<h3><a class="anchor" id="autotoc_md293"></a>
+<h3><a class="anchor" id="autotoc_md297"></a>
 Module clock configuration through Clock Tree</h3>
 <p>Previously our SDK had a mix of hardcoded clock configurations and limited configuration flexibility through sysconfig for the modules. With Clocktree, we now have a clear view of the entire clock tree with configurable components like PLL, DPLL, muxes, dividers added with validity checks. Earlier, the Input clock source and frequency for any module was configured through the module view in SysCfg. From now, this has to be done through clocktree.</p>
 <p>Please refer to <a class="el" href="CLOCKTREE.html">Clocktree</a> for more details.</p>
-<h3><a class="anchor" id="autotoc_md294"></a>
+<h3><a class="anchor" id="autotoc_md298"></a>
 Migrating back from CCS Theia to CCS Eclipse</h3>
 <p>SDK was supporting CCS Eclipse until this release and now been migrated to support CCS Theia Out of Box. Below sections describe how to update the applications for Eclipse if needed.</p>
-<h4><a class="anchor" id="autotoc_md295"></a>
+<h4><a class="anchor" id="autotoc_md299"></a>
 Importing and Building in Eclipse</h4>
 <p>CCS Projectspec files are same for both Theia and Eclipse. Hence, no update is needed to import and build an SDK application on Eclipse.</p>
-<h4><a class="anchor" id="autotoc_md296"></a>
+<h4><a class="anchor" id="autotoc_md300"></a>
 CCS SBL Loading</h4>
 <p>JS Script for SBL loading on eclipse is updated to "load_sbl_eclipse.js". Please refer to <a class="el" href="TOOLS_CCS.html">CCS Tools</a> for more details.</p>
-<h3><a class="anchor" id="autotoc_md297"></a>
+<h3><a class="anchor" id="autotoc_md301"></a>
 Migrating examples to 11.00.00 from older versions</h3>
 <dl class="section note"><dt>Note</dt><dd>Images are shown for AM64x. It is application for AM261X as well.</dd></dl>
-<h4><a class="anchor" id="autotoc_md298"></a>
+<h4><a class="anchor" id="autotoc_md302"></a>
 Makefile Changes</h4>
-<p><a class="anchor" id="autotoc_md299"></a></p><h5>Library Name change on makefile and CCS projects</h5>
+<p><a class="anchor" id="autotoc_md303"></a></p><h5>Library Name change on makefile and CCS projects</h5>
 <p>From 11.00.00 SDK all the libraries are built separately for OS. There are separate libraries available for NoRTOS and FreeROTS. So the makefiles needs to be updated accordingly. Please refer the sample changes on the makefile below. These changes are not applicable for the libraries which were already built separately for NoRTOS/FreeRTOS like kernel libraries.</p>
 <p>For NoRTOS/baremetal,</p>
 <p> <style>div.image img[src="example_migration1.png"]{width:40%}</style> </p><div class="image">
@@ -761,7 +911,7 @@ Library name change for NoRTOS example</div></div>
 <div class="caption">
 Library name change for FreeRTOS example</div></div>
 <p>similar change can be done on the CCS project as well</p>
-<p><a class="anchor" id="autotoc_md300"></a></p><h5>OS define on makefile and CCS projects</h5>
+<p><a class="anchor" id="autotoc_md304"></a></p><h5>OS define on makefile and CCS projects</h5>
 <p>Additional macro OS_NORTOS or OS_FREERTOS should be defined on the makefile or CC project based on the OS of the project.</p>
 <p>For NoRTOS/baremetal,</p>
 <p> <style>div.image img[src="example_migration3.png"]{width:20%}</style> </p><div class="image">
@@ -773,16 +923,19 @@ OS Macro addition for NoRTOS example</div></div>
 <img src="example_migration4.png" alt=""/>
 <div class="caption">
 OS Macro addition for FreeRTOS example</div></div>
-<h3><a class="anchor" id="autotoc_md301"></a>
+<h3><a class="anchor" id="autotoc_md305"></a>
 SDL PBIST Self test</h3>
 <p>VIM Memory groups are added to PBIST self test from this release. Because of this change, Self test (SDL_PBIST_selfTest) API has to be called in polling mode only and interrupt mode is not supported.</p>
-<h3><a class="anchor" id="autotoc_md302"></a>
+<h3><a class="anchor" id="autotoc_md306"></a>
 SDL STC Configuration</h3>
 <p>faultInsert and stcDiagnostic are removed from <a class="el" href="structSDL__STC__Config.html">SDL_STC_Config</a> structure as unused in SDL library.</p>
-<h3><a class="anchor" id="autotoc_md303"></a>
+<h3><a class="anchor" id="autotoc_md307"></a>
 SDL Handler API name update</h3>
 <p>Handler API names are added prefix with "SDL_". For example, undefInstructionExptnHandler changed to SDL_undefInstructionExptnHandler.</p>
-<h3><a class="anchor" id="autotoc_md304"></a>
+<h3><a class="anchor" id="autotoc_md308"></a>
+SDL MMR Control</h3>
+<p>Added unlock and lock APIs before write CTRL MMRs like MSS_CTRL and MSS_RCM.</p>
+<h3><a class="anchor" id="autotoc_md309"></a>
 Compiler Options</h3>
 <table class="doxtable">
 <tr>
@@ -790,7 +943,7 @@ Compiler Options</h3>
 <tr>
 <td>- </td><td>- </td><td>- </td><td>-  </td></tr>
 </table>
-<h3><a class="anchor" id="autotoc_md305"></a>
+<h3><a class="anchor" id="autotoc_md310"></a>
 SOC Device Drivers</h3>
 <table class="doxtable">
 <tr>
@@ -798,7 +951,7 @@ SOC Device Drivers</h3>
 <tr>
 <td>- </td><td>- </td><td>- </td><td>-  </td></tr>
 </table>
-<h3><a class="anchor" id="autotoc_md306"></a>
+<h3><a class="anchor" id="autotoc_md311"></a>
 Networking</h3>
 <table class="doxtable">
 <tr>

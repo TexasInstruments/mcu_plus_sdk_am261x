@@ -216,6 +216,7 @@ help:
 	@echo  $(MAKE) -s -C examples/drivers/boot/sbl_ospi_fastboot/am261x-lp/r5fss0-0_nortos/ti-arm-clang [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C examples/drivers/boot/sbl_ospi_multicore_elf/am261x-som/r5fss0-0_nortos/ti-arm-clang [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C examples/drivers/boot/sbl_ospi_multicore_elf/am261x-lp/r5fss0-0_nortos/ti-arm-clang [all clean syscfg-gui syscfg]
+	@echo  $(MAKE) -s -C examples/drivers/boot/sbl_ospi_psram_xip/am261x-lp/r5fss0-0_nortos/ti-arm-clang [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C examples/drivers/boot/sbl_ospi_nand_multicore_elf/am261x-lp/r5fss0-0_nortos/ti-arm-clang [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C examples/drivers/boot/sbl_ospi_swap/am261x-som/r5fss0-0_nortos/ti-arm-clang [all clean syscfg-gui syscfg]
 	@echo  $(MAKE) -s -C examples/drivers/boot/sbl_ospi_swap/am261x-lp/r5fss0-0_nortos/ti-arm-clang [all clean syscfg-gui syscfg]
@@ -2420,6 +2421,9 @@ examples-private: $(BUILD_COMBO_EXAMPLE_PRIVATE_ALL)
 
  sbl_ospi_multicore_elf_am261x-lp_r5fss0-0_nortos_ti-arm-clang:
 	$(MAKE) -C examples/drivers/boot/sbl_ospi_multicore_elf/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile all
+
+ sbl_ospi_psram_xip_am261x-lp_r5fss0-0_nortos_ti-arm-clang:
+	$(MAKE) -C examples/drivers/boot/sbl_ospi_psram_xip/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile all
 
  sbl_ospi_nand_multicore_elf_am261x-lp_r5fss0-0_nortos_ti-arm-clang:
 	$(MAKE) -C examples/drivers/boot/sbl_ospi_nand_multicore_elf/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile all
@@ -5248,6 +5252,9 @@ examples-private-clean: $(BUILD_COMBO_EXAMPLE_PRIVATE_CLEAN_ALL)
  sbl_ospi_multicore_elf_am261x-lp_r5fss0-0_nortos_ti-arm-clang_clean:
 	$(MAKE) -C examples/drivers/boot/sbl_ospi_multicore_elf/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile clean
 
+ sbl_ospi_psram_xip_am261x-lp_r5fss0-0_nortos_ti-arm-clang_clean:
+	$(MAKE) -C examples/drivers/boot/sbl_ospi_psram_xip/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile clean
+
  sbl_ospi_nand_multicore_elf_am261x-lp_r5fss0-0_nortos_ti-arm-clang_clean:
 	$(MAKE) -C examples/drivers/boot/sbl_ospi_nand_multicore_elf/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile clean
 
@@ -8072,6 +8079,9 @@ examples-scrub-private: $(BUILD_COMBO_EXAMPLE_PRIVATE_SCRUB_ALL)
  sbl_ospi_multicore_elf_am261x-lp_r5fss0-0_nortos_ti-arm-clang_scrub:
 	$(MAKE) -C examples/drivers/boot/sbl_ospi_multicore_elf/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile scrub
 
+ sbl_ospi_psram_xip_am261x-lp_r5fss0-0_nortos_ti-arm-clang_scrub:
+	$(MAKE) -C examples/drivers/boot/sbl_ospi_psram_xip/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile scrub
+
  sbl_ospi_nand_multicore_elf_am261x-lp_r5fss0-0_nortos_ti-arm-clang_scrub:
 	$(MAKE) -C examples/drivers/boot/sbl_ospi_nand_multicore_elf/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile scrub
 
@@ -9950,6 +9960,7 @@ sbl: libs
 	$(MAKE) -C examples/drivers/boot/sbl_ospi_fastboot/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile all
 	$(MAKE) -C examples/drivers/boot/sbl_ospi_multicore_elf/am261x-som/r5fss0-0_nortos/ti-arm-clang -f makefile all
 	$(MAKE) -C examples/drivers/boot/sbl_ospi_multicore_elf/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile all
+	$(MAKE) -C examples/drivers/boot/sbl_ospi_psram_xip/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile all
 	$(MAKE) -C examples/drivers/boot/sbl_ospi_nand_multicore_elf/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile all
 	$(MAKE) -C examples/drivers/boot/sbl_ospi_swap/am261x-som/r5fss0-0_nortos/ti-arm-clang -f makefile all
 	$(MAKE) -C examples/drivers/boot/sbl_ospi_swap/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile all
@@ -9978,6 +9989,7 @@ sbl-clean:
 	$(MAKE) -C examples/drivers/boot/sbl_ospi_fastboot/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile clean
 	$(MAKE) -C examples/drivers/boot/sbl_ospi_multicore_elf/am261x-som/r5fss0-0_nortos/ti-arm-clang -f makefile clean
 	$(MAKE) -C examples/drivers/boot/sbl_ospi_multicore_elf/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile clean
+	$(MAKE) -C examples/drivers/boot/sbl_ospi_psram_xip/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile clean
 	$(MAKE) -C examples/drivers/boot/sbl_ospi_nand_multicore_elf/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile clean
 	$(MAKE) -C examples/drivers/boot/sbl_ospi_swap/am261x-som/r5fss0-0_nortos/ti-arm-clang -f makefile clean
 	$(MAKE) -C examples/drivers/boot/sbl_ospi_swap/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile clean
@@ -10006,6 +10018,7 @@ sbl-scrub:
 	$(MAKE) -C examples/drivers/boot/sbl_ospi_fastboot/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile scrub
 	$(MAKE) -C examples/drivers/boot/sbl_ospi_multicore_elf/am261x-som/r5fss0-0_nortos/ti-arm-clang -f makefile scrub
 	$(MAKE) -C examples/drivers/boot/sbl_ospi_multicore_elf/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile scrub
+	$(MAKE) -C examples/drivers/boot/sbl_ospi_psram_xip/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile scrub
 	$(MAKE) -C examples/drivers/boot/sbl_ospi_nand_multicore_elf/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile scrub
 	$(MAKE) -C examples/drivers/boot/sbl_ospi_swap/am261x-som/r5fss0-0_nortos/ti-arm-clang -f makefile scrub
 	$(MAKE) -C examples/drivers/boot/sbl_ospi_swap/am261x-lp/r5fss0-0_nortos/ti-arm-clang -f makefile scrub

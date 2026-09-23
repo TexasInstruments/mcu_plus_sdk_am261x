@@ -1,5 +1,7 @@
 var NAVTREEINDEX59 =
 {
+"structCpswAle__PortCfg.html#a81cf2dcb7080fcf047d5f9b1c5c222f1":[19,4,0,1,0,47,2],
+"structCpswAle__PortCfg.html#a9defbd0b99bd98fafc4b0b9965c441c6":[19,4,0,1,0,47,3],
 "structCpswAle__PortCfg.html#aa07f2099acefbafd78eabcd28497cd03":[19,4,0,1,0,47,0],
 "structCpswAle__PortCfg.html#ad16110f247af16c51bc4f80b87202870":[19,4,0,1,0,47,1],
 "structCpswAle__PortLearningSecurityCfg.html":[19,4,0,1,0,44],
@@ -247,7 +249,5 @@ var NAVTREEINDEX59 =
 "structCpswStats__HostPort__2g.html#a35d2f53eb224a401a08e03a5d3cb079c":[19,4,0,9,0,0,22],
 "structCpswStats__HostPort__2g.html#a375f6e7a6b73e3e44564561332cb6194":[19,4,0,9,0,0,54],
 "structCpswStats__HostPort__2g.html#a3e040b107d4da4e1d1db95733a2a4ea9":[19,4,0,9,0,0,3],
-"structCpswStats__HostPort__2g.html#a46e58fc0dae5216c8395cb29e5eb4359":[19,4,0,9,0,0,28],
-"structCpswStats__HostPort__2g.html#a48155b3906554cd471bc66364681e5e4":[19,4,0,9,0,0,7],
-"structCpswStats__HostPort__2g.html#a492ba5c28052be4975977d5adc779994":[19,4,0,9,0,0,53]
+"structCpswStats__HostPort__2g.html#a46e58fc0dae5216c8395cb29e5eb4359":[19,4,0,9,0,0,28]
 };

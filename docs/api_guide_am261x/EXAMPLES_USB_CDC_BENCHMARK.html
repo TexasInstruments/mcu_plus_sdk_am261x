@@ -93,10 +93,10 @@ $(document).ready(function(){initNavTree('EXAMPLES_USB_CDC_BENCHMARK.html',''); 
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
 <ul><li class="level1"><a href="#EXAMPLES_USB_CDC_BENCHMARK_COMBOS">Supported Combinations</a></li>
-<li class="level1"><a href="#autotoc_md3762">Introduction</a></li>
-<li class="level1"><a href="#autotoc_md3763">Building benchmark application</a></li>
-<li class="level1"><a href="#autotoc_md3764">Running benchmark application</a><ul><li class="level2"><a href="#autotoc_md3765">Output</a></li>
-<li class="level2"><a href="#autotoc_md3766">Result</a></li>
+<li class="level1"><a href="#autotoc_md3766">Introduction</a></li>
+<li class="level1"><a href="#autotoc_md3767">Building benchmark application</a></li>
+<li class="level1"><a href="#autotoc_md3768">Running benchmark application</a><ul><li class="level2"><a href="#autotoc_md3769">Output</a></li>
+<li class="level2"><a href="#autotoc_md3770">Result</a></li>
 </ul>
 </li>
 </ul>
@@ -116,7 +116,7 @@ Supported Combinations</h1>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">Example folder  </td><td class="markdownTableBodyNone">examples/benchmarks/usb/usb_cdc_benchmark   </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md3762"></a>
+<h1><a class="anchor" id="autotoc_md3766"></a>
 Introduction</h1>
 <p>This benchmark measures USB CDC (Communications Device Class) performance for serial communication. CDC is commonly used for device-to-host communication and provides a standardized interface for serial protocols.</p>
 <p><b>Key Features:</b></p><ul>
@@ -124,10 +124,10 @@ Introduction</h1>
 <li>Measures throughput for TX, RX, and bidirectional modes</li>
 <li>Suitable for serial communication and control scenarios</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md3763"></a>
+<h1><a class="anchor" id="autotoc_md3767"></a>
 Building benchmark application</h1>
 <div class="fragment"><div class="line">make -s -C examples/benchmarks/usb/usb_cdc_benchmark/am261x-lp/r5fss0-0_freertos/ti-arm-clang/</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md3764"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md3768"></a>
 Running benchmark application</h1>
 <ol type="1">
 <li>Build and run the application on AM261x board</li>
@@ -137,7 +137,7 @@ Running benchmark application</h1>
 </ol>
 <div class="fragment"><div class="line">python3 tools/usb_test_scripts/usb_cdc_benchmark_host.py --mode tx --duration 10</div>
 <div class="line">python3 tools/usb_test_scripts/usb_cdc_benchmark_host.py --mode rx --duration 10</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md3765"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md3769"></a>
 Output</h2>
 <div class="fragment"><div class="line">[CDC BENCHMARK] USB CDC-ACM Throughput Benchmark - AM261x</div>
 <div class="line"> </div>
@@ -153,7 +153,7 @@ Output</h2>
 <div class="line">[CDC BENCHMARK] Starting Test - Mode: Device-to-Host (TX)</div>
 <div class="line">[CDC BENCHMARK] Throughput : 22.82 MB/s (229.37 MB in 10.1 sec)</div>
 <div class="line">[CDC BENCHMARK] CPU Load   : total 79.98%  usb_task 45.07%  cdc_task 34.90%</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md3766"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md3770"></a>
 Result</h2>
 <p>For detailed USB CDC benchmark performance results, refer to <a class="el" href="USB_BENCHMARKING_PERFORMANCE.html">Performance Benchmarking</a>. </p>
 </div></div><!-- contents -->

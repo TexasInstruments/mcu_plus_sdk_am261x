@@ -1,5 +1,7 @@
 var NAVTREEINDEX64 =
 {
+"structFlash__NandConfig.html#ac26788435610e8982ae141039c374b91":[19,1,1,0,2],
+"structFlash__NandConfig.html#ae26fb17dbf1b97522965b1d4b67e7642":[19,1,1,0,9],
 "structFlash__NandConfig.html#af151e797eaf119f15c9ecce04aebe7fa":[19,1,1,0,11],
 "structFlash__NandConfig.html#af65ff3790948df048400a56d9684c83d":[19,1,1,0,5],
 "structFlash__Params.html":[19,1,1,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX64 =
 "structI2C__Transaction.html#a804b918d5cb08bb75a39866d0b89e01e":[19,7,19,2,2],
 "structI2C__Transaction.html#ab3fba2e46341efc0ff19e21a13194b17":[19,7,19,2,9],
 "structI2C__Transaction.html#ad5959435aa2266d8b9af752b1a2e14c6":[19,7,19,2,7],
-"structI2C__Transaction.html#ae2e46ac2e1fe354494ebc47fbd131ea3":[19,7,19,2,8],
-"structI2C__Transaction.html#afa33691bf2059e699e0813867bc228c4":[19,7,19,2,11],
-"structI2C__Transaction.html#afa4e6dc5a33d862aa60f15383e6d0e17":[19,7,19,2,10]
+"structI2C__Transaction.html#ae2e46ac2e1fe354494ebc47fbd131ea3":[19,7,19,2,8]
 };

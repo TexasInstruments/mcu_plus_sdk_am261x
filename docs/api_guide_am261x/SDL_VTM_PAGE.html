@@ -92,11 +92,11 @@ $(document).ready(function(){initNavTree('SDL_VTM_PAGE.html',''); initResizable(
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#autotoc_md1676">SysConfig Features</a></li>
-<li class="level1"><a href="#autotoc_md1677">Features NOT Supported</a></li>
-<li class="level1"><a href="#autotoc_md1678">Important Usage Guidelines</a></li>
-<li class="level1"><a href="#autotoc_md1679">Example Usage</a></li>
-<li class="level1"><a href="#autotoc_md1680">API</a></li>
+<ul><li class="level1"><a href="#autotoc_md1680">SysConfig Features</a></li>
+<li class="level1"><a href="#autotoc_md1681">Features NOT Supported</a></li>
+<li class="level1"><a href="#autotoc_md1682">Important Usage Guidelines</a></li>
+<li class="level1"><a href="#autotoc_md1683">Example Usage</a></li>
+<li class="level1"><a href="#autotoc_md1684">API</a></li>
 </ul>
 </div>
 <div class="textblock"><p><a class="anchor" id="md_components_sdl_vtm1"></a></p>
@@ -113,22 +113,22 @@ $(document).ready(function(){initNavTree('SDL_VTM_PAGE.html',''); initResizable(
 <li>Ability to check the status of the temperature sensor based on alert temperature</li>
 <li>Ability to clear and contorl the VTM event inerrupts</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md1676"></a>
+<h1><a class="anchor" id="autotoc_md1680"></a>
 SysConfig Features</h1>
 <ul>
 <li>None</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md1677"></a>
+<h1><a class="anchor" id="autotoc_md1681"></a>
 Features NOT Supported</h1>
 <ul>
 <li>None</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md1678"></a>
+<h1><a class="anchor" id="autotoc_md1682"></a>
 Important Usage Guidelines</h1>
 <ul>
 <li>None</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md1679"></a>
+<h1><a class="anchor" id="autotoc_md1683"></a>
 Example Usage</h1>
 <p>The following shows an example of SDL VTM API usage by the application to set up the VTM for monitoring for events. Events can be monitored by enabling the events in the associated ESM instance.</p>
 <p>Configure the VTM Thresholds and enable events </p><div class="fragment"><div class="line">int32_t retValue;</div>
@@ -175,7 +175,7 @@ Example Usage</h1>
 </div><!-- fragment --><p>Convert from Temperature to ADC Code </p><div class="fragment"><div class="line">int32_t temp_val = 64000; <span class="comment">// temperature in milli degrees Celsius</span></div>
 <div class="line"><a class="code" href="group__SDL__IP__VTM__Enum.html#gae10ff0bea1cd5ecd8f4470dc63c90082">SDL_VTM_adc_code</a> adc_code;</div>
 <div class="line"> </div>
-<div class="line"><a class="code" href="group__SDL__IP__VTM__FUNCTION.html#ga97c2a20c535f0e82165c407cd9c8e436">SDL_VTM_tsConvTempToAdc</a>(temp_val, &amp;adc_code);</div>
+<div class="line">SDL_VTM_tsConvTempToAdc(temp_val, &amp;adc_code);</div>
 </div><!-- fragment --><p>Convert from ADC Code to Temperature </p><div class="fragment"><div class="line"><a class="code" href="group__SDL__IP__VTM__Enum.html#gae10ff0bea1cd5ecd8f4470dc63c90082">SDL_VTM_adc_code</a> adc_code = 50;</div>
 <div class="line">int32_t temp_val; <span class="comment">// temperature in milli degrees Celsius</span></div>
 <div class="line"> </div>
@@ -184,7 +184,7 @@ Example Usage</h1>
 <div class="line"><span class="comment">/* Get current temperature value */</span></div>
 <div class="line"><a class="code" href="group__SDL__VTM__FUNCTION.html#gad33fa583d435c37ac29c24b82772373f">SDL_VTM_getTemp</a>(<a class="code" href="sdl__soc__vtm_8h.html#ad1764a56fd7ca1ae485dd8b509dc5289ae65e931925ae4ea782ff1394870f2327">SDL_VTM_INSTANCE_TS_0</a>, &amp;temp0);</div>
 </div><!-- fragment --><p>Acknowledge and Disable an interrupt </p><div class="fragment"><div class="line"><a class="code" href="group__SDL__VTM__FUNCTION.html#gad1a40183d7ba5fe865bf48f4cc17c9ff">SDL_VTM_setClearInterrupts</a>(<a class="code" href="sdl__soc__vtm_8h.html#ad1764a56fd7ca1ae485dd8b509dc5289ae65e931925ae4ea782ff1394870f2327">SDL_VTM_INSTANCE_TS_0</a>, <a class="code" href="group__SDL__IP__VTM__Enum.html#gaba2d46994418372f291e4e4836c07559">SDL_VTM_MASK_HOT</a>, <a class="code" href="group__SDL__IP__VTM__Enum.html#gad5652e75fdd70cbfed017df1590a50e7">SDL_VTM_MASK_COLD</a>, <a class="code" href="group__SDL__IP__VTM__Enum.html#ga08124d36194143a5f8facbb0bdf90a0c">SDL_VTM_MASK_LOW_TH</a>);</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md1680"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md1684"></a>
 API</h1>
 <p><a class="el" href="group__SDL__VTM__API.html">APIs for VTM</a> </p>
 </div></div><!-- contents -->
@@ -204,7 +204,6 @@ API</h1>
 <div class="ttc" id="agroup__SDL__VTM__FUNCTION_html_ga6c65a9980484e76b4835fa1644bc188b"><div class="ttname"><a href="group__SDL__VTM__FUNCTION.html#ga6c65a9980484e76b4835fa1644bc188b">SDL_VTM_enableTc</a></div><div class="ttdeci">void SDL_VTM_enableTc(void)</div><div class="ttdoc">Enable Temperature Controller.</div></div>
 <div class="ttc" id="agroup__SDL__DPL__MODULE_html_gaf639702b531be398f258d3fb169c44ce"><div class="ttname"><a href="group__SDL__DPL__MODULE.html#gaf639702b531be398f258d3fb169c44ce">SDL_DPL_enableInterrupt</a></div><div class="ttdeci">int32_t SDL_DPL_enableInterrupt(int32_t intNum)</div><div class="ttdoc">DPL enable interrupt.</div></div>
 <div class="ttc" id="asdl__soc__vtm_8h_html_ad1764a56fd7ca1ae485dd8b509dc5289ae65e931925ae4ea782ff1394870f2327"><div class="ttname"><a href="sdl__soc__vtm_8h.html#ad1764a56fd7ca1ae485dd8b509dc5289ae65e931925ae4ea782ff1394870f2327">SDL_VTM_INSTANCE_TS_0</a></div><div class="ttdeci">@ SDL_VTM_INSTANCE_TS_0</div><div class="ttdef"><b>Definition:</b> sdl_soc_vtm.h:56</div></div>
-<div class="ttc" id="agroup__SDL__IP__VTM__FUNCTION_html_ga97c2a20c535f0e82165c407cd9c8e436"><div class="ttname"><a href="group__SDL__IP__VTM__FUNCTION.html#ga97c2a20c535f0e82165c407cd9c8e436">SDL_VTM_tsConvTempToAdc</a></div><div class="ttdeci">int32_t SDL_VTM_tsConvTempToAdc(int32_t milliDegreeTempVal, SDL_VTM_adc_code *pAdcCode)</div><div class="ttdoc">VTM Temperature to ADC code conversion.</div></div>
 <div class="ttc" id="astructSDL__DPL__HwipParams_html_a486dcd26a28eb8cf607c19a9010dd720"><div class="ttname"><a href="structSDL__DPL__HwipParams.html#a486dcd26a28eb8cf607c19a9010dd720">SDL_DPL_HwipParams::callback</a></div><div class="ttdeci">pSDL_DPL_InterruptCallbackFunction callback</div><div class="ttdef"><b>Definition:</b> sdl_dpl.h:73</div></div>
 <div class="ttc" id="agroup__SDL__IP__VTM__Enum_html_gae10ff0bea1cd5ecd8f4470dc63c90082"><div class="ttname"><a href="group__SDL__IP__VTM__Enum.html#gae10ff0bea1cd5ecd8f4470dc63c90082">SDL_VTM_adc_code</a></div><div class="ttdeci">int16_t SDL_VTM_adc_code</div><div class="ttdoc">This typedef for VTM temperature sensor ADC code This is the data_out value of the temperature sensor...</div><div class="ttdef"><b>Definition:</b> sdl_ip_vtm.h:154</div></div>
 <div class="ttc" id="agroup__SDL__IP__VTM__Enum_html_ga08124d36194143a5f8facbb0bdf90a0c"><div class="ttname"><a href="group__SDL__IP__VTM__Enum.html#ga08124d36194143a5f8facbb0bdf90a0c">SDL_VTM_MASK_LOW_TH</a></div><div class="ttdeci">#define SDL_VTM_MASK_LOW_TH</div><div class="ttdef"><b>Definition:</b> sdl_ip_vtm.h:127</div></div>

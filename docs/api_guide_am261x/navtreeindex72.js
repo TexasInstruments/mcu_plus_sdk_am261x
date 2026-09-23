@@ -1,5 +1,7 @@
 var NAVTREEINDEX72 =
 {
+"structSWRev__t.html#acf11f341e179eaf10c1b49755bd95596":[19,7,17,10,0],
+"structSWRev__t.html#ad55c6dae84716e240bec8508a4d2d1ef":[19,7,17,10,1],
 "structScaledNs.html":[19,9,0,8],
 "structScaledNs.html#ac484b3e6916baa43d2e582d692646f2a":[19,9,0,8,1],
 "structScaledNs.html#adeeec7a5bf527c35727438f99f4188b1":[19,9,0,8,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX72 =
 "structcb__socket__lldcfg__update__t.html#a96118fb0529d13526d5b7b7cd355589c":[19,12,3,4,13],
 "structcb__socket__lldcfg__update__t.html#a972afc863a13185e7e9195f89163e9a0":[19,12,3,4,0],
 "structcb__socket__lldcfg__update__t.html#a9b66c2172b169ae131da810371be3f53":[19,12,3,4,8],
-"structcb__socket__lldcfg__update__t.html#a9da479bb471f749f4586a055ad051b76":[19,12,3,4,6],
-"structcb__socket__lldcfg__update__t.html#aa33d311a5cce63b15fc400822e6438eb":[19,12,3,4,3],
-"structcb__socket__lldcfg__update__t.html#aaaa915055a0e0b300996daa26a545bc6":[19,12,3,4,12]
+"structcb__socket__lldcfg__update__t.html#a9da479bb471f749f4586a055ad051b76":[19,12,3,4,6]
 };

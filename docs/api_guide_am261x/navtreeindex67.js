@@ -1,5 +1,7 @@
 var NAVTREEINDEX67 =
 {
+"structKeyWriterCertHeader__t.html#ad863397eca11dd14aea46409009e23aa":[19,7,17,6,3],
+"structKeyWriterCertHeader__t.html#ae9b90a224e0f7a5529d517f530dbe9bc":[19,7,17,6,0],
 "structLED__Attrs.html":[19,1,3,2],
 "structLED__Attrs.html#a1fabe3a63005410b6d76ea5c76f3d5d7":[19,1,3,2,0],
 "structLED__Config__s.html":[19,1,3,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX67 =
 "structMCAN__ProtocolStatus.html#a1bf1c5f25ce0ad02701487597eea9224":[19,7,27,7,8],
 "structMCAN__ProtocolStatus.html#a3635523b04a3681752e809ada431d64d":[19,7,27,7,4],
 "structMCAN__ProtocolStatus.html#a3faecaaf9dd46851c8b6e1bd53521394":[19,7,27,7,0],
-"structMCAN__ProtocolStatus.html#a42bb50172cfd6a8a345dd4c2eeed0002":[19,7,27,7,10],
-"structMCAN__ProtocolStatus.html#a5f604b801fc02e6acc3edd377295c553":[19,7,27,7,9],
-"structMCAN__ProtocolStatus.html#a673f70d521caa89898f9df5c4a238a60":[19,7,27,7,6]
+"structMCAN__ProtocolStatus.html#a42bb50172cfd6a8a345dd4c2eeed0002":[19,7,27,7,10]
 };

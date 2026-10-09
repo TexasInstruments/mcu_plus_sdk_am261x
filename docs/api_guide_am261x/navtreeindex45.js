@@ -1,5 +1,7 @@
 var NAVTREEINDEX45 =
 {
+"group__DRV__SOC__XBAR__MODULE.html#ga6e7735b186a6b301b99602df45af4c05":[19,7,41,1,30],
+"group__DRV__SOC__XBAR__MODULE.html#ga8caf027a7bbf2e4ac0e3c1000f7ac60c":[19,7,41,1,36],
 "group__DRV__SOC__XBAR__MODULE.html#ga8def982ecb02197965f213aa6525f649":[19,7,41,1,2],
 "group__DRV__SOC__XBAR__MODULE.html#ga928f7f449cec7957860aee0e885a47cd":[19,7,41,1,12],
 "group__DRV__SOC__XBAR__MODULE.html#ga97628484ae59e2f091cb9c8645db2f02":[19,7,41,1,34],
@@ -247,7 +249,5 @@ var NAVTREEINDEX45 =
 "group__DRV__WDT__MODULE.html#ggaf7e311bd1af75086a718d512dc1e5209ac744015b3cac5c2bf4bfa39023f6113e":[19,7,48,11,1],
 "group__ENETPHY__DP83TG721.html":[19,4,0,13,1],
 "group__ENETPHY__DP83TG721.html#ga4110adf3ba051cbd6e2ec763578eca5b":[19,4,0,13,1,1],
-"group__ENETPHY__DP83TG721.html#ga4dd2cdf833ebbb2f5e55985282c96e87":[19,4,0,13,1,2],
-"group__ENETPHY__GENERIC__PHY.html":[19,4,0,13,0],
-"group__ENET__CPDMA__API.html":[19,4,0,0,0]
+"group__ENETPHY__DP83TG721.html#ga4dd2cdf833ebbb2f5e55985282c96e87":[19,4,0,13,1,2]
 };

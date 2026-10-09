@@ -1,5 +1,8 @@
 var NAVTREEINDEX68 =
 {
+"structMCAN__ProtocolStatus.html#a3635523b04a3681752e809ada431d64d":[19,7,27,7,4],
+"structMCAN__ProtocolStatus.html#a3faecaaf9dd46851c8b6e1bd53521394":[19,7,27,7,0],
+"structMCAN__ProtocolStatus.html#a42bb50172cfd6a8a345dd4c2eeed0002":[19,7,27,7,10],
 "structMCAN__ProtocolStatus.html#a5f604b801fc02e6acc3edd377295c553":[19,7,27,7,9],
 "structMCAN__ProtocolStatus.html#a673f70d521caa89898f9df5c4a238a60":[19,7,27,7,6],
 "structMCAN__ProtocolStatus.html#a6e9d87efae493102669e959389bd3cf4":[19,7,27,7,7],
@@ -246,8 +249,5 @@ var NAVTREEINDEX68 =
 "structMMCSDLLD__Object.html#ad128b5539bc7b086f789e493ab78ba25":[19,7,32,5,3],
 "structMMCSDLLD__Object.html#ae4a51b787d8859cb3c11638f36e864ea":[19,7,32,5,2],
 "structMMCSDLLD__Object.html#aed3c9ee36c86c5a6d31a311c98c96c26":[19,7,32,5,11],
-"structMMCSDLLD__Object.html#af7e0a6efeaa912664b46280a98dc7c38":[19,7,32,5,7],
-"structMMCSDLLD__Transaction.html":[19,7,32,3],
-"structMMCSDLLD__Transaction.html#a23cd9693183115ddc3f242bacc9f1541":[19,7,32,3,3],
-"structMMCSDLLD__Transaction.html#a600999925b24041edc240731d1dd1261":[19,7,32,3,6]
+"structMMCSDLLD__Object.html#af7e0a6efeaa912664b46280a98dc7c38":[19,7,32,5,7]
 };

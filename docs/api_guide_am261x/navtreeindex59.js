@@ -1,5 +1,8 @@
 var NAVTREEINDEX59 =
 {
+"structCpswAle__PortBcastMcastRateLimitParams.html#aaba20a2763af0ba580c44f8808251be5":[19,4,0,1,0,22,3],
+"structCpswAle__PortBcastMcastRateLimitParams.html#aacdb7a24ab98d187c5b1fa3cac8427e5":[19,4,0,1,0,22,4],
+"structCpswAle__PortCfg.html":[19,4,0,1,0,47],
 "structCpswAle__PortCfg.html#a81cf2dcb7080fcf047d5f9b1c5c222f1":[19,4,0,1,0,47,2],
 "structCpswAle__PortCfg.html#a9defbd0b99bd98fafc4b0b9965c441c6":[19,4,0,1,0,47,3],
 "structCpswAle__PortCfg.html#aa07f2099acefbafd78eabcd28497cd03":[19,4,0,1,0,47,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX59 =
 "structCpswStats__HostPort__2g.html#a168b0417d4f1921e3232c52be244d3e9":[19,4,0,9,0,0,12],
 "structCpswStats__HostPort__2g.html#a226763758f71b4a33a832838a5609b2c":[19,4,0,9,0,0,16],
 "structCpswStats__HostPort__2g.html#a284b7d8e13b79da840b33c2936dcb270":[19,4,0,9,0,0,35],
-"structCpswStats__HostPort__2g.html#a35d2f53eb224a401a08e03a5d3cb079c":[19,4,0,9,0,0,22],
-"structCpswStats__HostPort__2g.html#a375f6e7a6b73e3e44564561332cb6194":[19,4,0,9,0,0,54],
-"structCpswStats__HostPort__2g.html#a3e040b107d4da4e1d1db95733a2a4ea9":[19,4,0,9,0,0,3],
-"structCpswStats__HostPort__2g.html#a46e58fc0dae5216c8395cb29e5eb4359":[19,4,0,9,0,0,28]
+"structCpswStats__HostPort__2g.html#a35d2f53eb224a401a08e03a5d3cb079c":[19,4,0,9,0,0,22]
 };

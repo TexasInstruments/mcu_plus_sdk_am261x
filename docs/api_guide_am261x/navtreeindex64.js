@@ -1,5 +1,8 @@
 var NAVTREEINDEX64 =
 {
+"structFlash__NandConfig.html#a7379c773feff9d3d9ffc369ef9c9717d":[19,1,1,0,4],
+"structFlash__NandConfig.html#a782a6418f669bcb4261513e37c47b916":[19,1,1,0,8],
+"structFlash__NandConfig.html#ab04ae84b55ce949a3682c430b5ec0e33":[19,1,1,0,7],
 "structFlash__NandConfig.html#ac26788435610e8982ae141039c374b91":[19,1,1,0,2],
 "structFlash__NandConfig.html#ae26fb17dbf1b97522965b1d4b67e7642":[19,1,1,0,9],
 "structFlash__NandConfig.html#af151e797eaf119f15c9ecce04aebe7fa":[19,1,1,0,11],
@@ -246,8 +249,5 @@ var NAVTREEINDEX64 =
 "structI2C__Transaction.html#a343a6e4d485f58b098eeb167c76ccac7":[19,7,19,2,12],
 "structI2C__Transaction.html#a3a80191f72d53c793b58c17cf2361da6":[19,7,19,2,0],
 "structI2C__Transaction.html#a56940dfa9a256cfd16144d4e61d64188":[19,7,19,2,4],
-"structI2C__Transaction.html#a804b918d5cb08bb75a39866d0b89e01e":[19,7,19,2,2],
-"structI2C__Transaction.html#ab3fba2e46341efc0ff19e21a13194b17":[19,7,19,2,9],
-"structI2C__Transaction.html#ad5959435aa2266d8b9af752b1a2e14c6":[19,7,19,2,7],
-"structI2C__Transaction.html#ae2e46ac2e1fe354494ebc47fbd131ea3":[19,7,19,2,8]
+"structI2C__Transaction.html#a804b918d5cb08bb75a39866d0b89e01e":[19,7,19,2,2]
 };

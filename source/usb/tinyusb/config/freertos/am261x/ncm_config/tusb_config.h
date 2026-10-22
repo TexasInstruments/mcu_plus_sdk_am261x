@@ -191,6 +191,11 @@
 
 #define CFG_TUD_NCM_MAX_DATAGRAMS_PER_NTB 16
 
+/* Endpoint buffers are DMA'd zero-copy and cache-maintained by the DCD: keep each
+ * one on its own 32-byte R5F cache line so inv/wb never clobbers a neighbour. */
+#define CFG_TUD_MEM_DCACHE_ENABLE     1
+#define CFG_TUD_MEM_DCACHE_LINE_SIZE  32
+
 /*------------- CLASS -------------*/
 // Network class has 2 drivers: ECM/RNDIS and NCM.
 // Only one of the drivers can be enabled

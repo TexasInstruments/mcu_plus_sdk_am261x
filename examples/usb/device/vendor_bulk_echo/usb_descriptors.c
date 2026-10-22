@@ -59,53 +59,6 @@
   #include "tusb.h"
   #include "ti_drivers_open_close.h"
 
-  #define DEV_MANUFACUTURER "Texas Instruments, Inc."
-  #define DEV_VERSION "01.00.00.01"
-  #define DEV_PRODUCT  "AM261x Vendor"
-  #define DEV_INTERFACE "Vendor"
-
-
-  /* USB VID/PID for vendor-specific device */
-  #define USB_PID (0x6170)
-  #define USB_VID (0x0451)
-  #define USB_BCD 0x0200
-
-  /*
-  --------------------------------------------------------------------+
-   Device Descriptors
-  --------------------------------------------------------------------+
-  */
-  tusb_desc_device_t const desc_device =
-  {
-      .bLength = sizeof(tusb_desc_device_t),
-      .bDescriptorType = TUSB_DESC_DEVICE,
-      .bcdUSB = USB_BCD,
-
-      /* Vendor-specific device class */
-      .bDeviceClass = 0x00,          
-      .bDeviceSubClass = 0x00,
-      .bDeviceProtocol = 0x00,
-
-      .bMaxPacketSize0 = CFG_TUD_ENDPOINT0_SIZE,
-
-      .idVendor = USB_VID,
-      .idProduct = USB_PID,
-      .bcdDevice = 0x0100,
-
-      .iManufacturer = 0x01,
-      .iProduct = 0x02,
-      .iSerialNumber = 0x03,
-
-      .bNumConfigurations = 0x01
-  };
-
-  /* Invoked when received GET DEVICE DESCRIPTOR */
-  /* Application return pointer to descriptor */
-  uint8_t const *tud_descriptor_device_cb(void)
-  { 
-    return (uint8_t const *)&desc_device;
-  }
-
   /*
   --------------------------------------------------------------------+
    Configuration Descriptor
@@ -119,9 +72,8 @@
 
   #define CONFIG_TOTAL_LEN (TUD_CONFIG_DESC_LEN + TUD_VENDOR_DESC_LEN)
 
-  
-  #define EPNUM_VENDOR_OUT 0x01 
-  #define EPNUM_VENDOR_IN 0x81  
+  #define EPNUM_VENDOR_OUT  0x01 
+  #define EPNUM_VENDOR_IN   0x81  
 
   /* Full-speed configuration descriptor */
   uint8_t const desc_fs_configuration[] =
@@ -146,31 +98,6 @@
       TUD_VENDOR_DESCRIPTOR(ITF_NUM_VENDOR, 4, EPNUM_VENDOR_OUT, EPNUM_VENDOR_IN, 512)
   };
   #endif
-
-  /* device qualifier is mostly similar to device descriptor since we don't change configuration based on speed */
-  tusb_desc_device_qualifier_t const desc_device_qualifier =
-  {
-      .bLength = sizeof(tusb_desc_device_qualifier_t),
-      .bDescriptorType = TUSB_DESC_DEVICE,
-      .bcdUSB = USB_BCD,
-
-      .bDeviceClass = 0x00,
-      .bDeviceSubClass = 0x00,
-      .bDeviceProtocol = 0x00,
-
-      .bMaxPacketSize0 = CFG_TUD_ENDPOINT0_SIZE,
-      .bNumConfigurations = 0x01,
-      .bReserved = 0x00
-  };
-
-  /* Invoked when received GET DEVICE QUALIFIER DESCRIPTOR request */
-  /* Application return pointer to descriptor, whose contents must exist long enough for transfer to complete. */
-  /* device_qualifier descriptor describes information about a high-speed capable device that would */
-  /* change if the device were operating at the other speed. If not highspeed capable stall this request. */
-  uint8_t const *tud_descriptor_device_qualifier_cb(void)
-  {
-    return (uint8_t const *)&desc_device_qualifier;
-  }
 
   /* Invoked when received GET OTHER SPEED CONFIGURATION DESCRIPTOR request */
   /* Application return pointer to descriptor, whose contents must exist long enough for transfer to complete */
@@ -199,63 +126,4 @@
       #else
           return desc_fs_configuration;
       #endif
-  }
-
-  /*
-  --------------------------------------------------------------------+
-   String Descriptors
-  --------------------------------------------------------------------+
-  */
-
-  /* array of pointer to string descriptors */
-  char const *string_desc_arr[] =
-  {
-      (const char[]){0x09, 0x04}, /* 0: is supported language is English (0x0409) */
-      DEV_MANUFACUTURER,          /* 1: Manufacturer */
-      DEV_PRODUCT,                /* 2: Product */
-      DEV_VERSION,                /* 3: Serials, should use chip ID */
-      DEV_INTERFACE,              /* 4: Vendor */
-  };
-
-  static uint16_t _desc_str[32];
-
-  /* Invoked when received GET STRING DESCRIPTOR request */
-  /* Application return pointer to descriptor, whose contents must exist long enough for transfer to complete */
-  uint16_t const *tud_descriptor_string_cb(uint8_t index, uint16_t langid)
-  {
-    (void)langid;
-
-    uint8_t chr_count;
-
-    if (index == 0)
-    {
-      memcpy(&_desc_str[1], string_desc_arr[0], 2);
-      chr_count = 1;
-    }
-    else
-    {
-      /* Note: the 0xEE index string is a Microsoft OS 1.0 Descriptors. */
-      /* https://docs.microsoft.com/en-us/windows-hardware/drivers/usbcon/microsoft-defined-usb-descriptors */
-
-      if (!(index < sizeof(string_desc_arr) / sizeof(string_desc_arr[0])))
-        return NULL;
-
-      const char *str = string_desc_arr[index];
-
-      /* Cap at max char */
-      chr_count = strlen(str);
-      if (chr_count > 31)
-        chr_count = 31;
-
-      /* Convert ASCII string into UTF-16 */
-      for (uint8_t i = 0; i < chr_count; i++)
-      {
-        _desc_str[1 + i] = str[i];
-      }
-    }
-
-    /* first byte is length (including header), second byte is string type */
-    _desc_str[0] = (TUSB_DESC_STRING << 8) | (2 * chr_count + 2);
-
-    return _desc_str;
   }

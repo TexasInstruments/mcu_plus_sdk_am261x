@@ -36,7 +36,7 @@
         <path>$MCU_PLUS_SDK_PATH$/source</path>
         <path>$MCU_PLUS_SDK_PATH$/source/kernel/freertos/FreeRTOS-Kernel/include</path>
         <path>$MCU_PLUS_SDK_PATH$/source/kernel/freertos/config/am261x/r5f</path>
-        <path>$MCU_PLUS_SDK_PATH$/source/usb/tinyusb/config/nortos/am261x/dfu_config</path>
+        <path>$MCU_PLUS_SDK_PATH$/source/usb/tinyusb/config/freertos/am261x/dfu_config</path>
         <path>$MCU_PLUS_SDK_PATH$/source/usb/tinyusb/tinyusb-stack_0.20.0/src</path>
         <path>$MCU_PLUS_SDK_PATH$/source/kernel/freertos/portable/IAR/ARM_CR5F</path>
         <path>$MCU_PLUS_SDK_PATH$/source/kernel/freertos/portable/IAR_ARM/ARM_CR5F</path>
@@ -54,6 +54,7 @@
             <arg>--diag_suppress=Pe177</arg>
             <arg>-e</arg>
             <arg>--silent</arg>
+            <arg>--diag_suppress=Pe111</arg>
     </extraOptions>
 
     <linkerFile>
@@ -67,7 +68,7 @@
             <arg>drivers.am261x.r5f.iar-arm.freertos.$CONFIG_NAME$.lib</arg>
             <arg>board.am261x.r5f.iar-arm.freertos.$CONFIG_NAME$.lib</arg>
             <arg>usbd_synp_freertos.am261x.r5f.iar-arm.$CONFIG_NAME$.lib</arg>
-            <arg>usbd_tusb_dfu_nortos.am261x.r5f.iar-arm.$CONFIG_NAME$.lib</arg>
+            <arg>usbd_tusb_dfu_freertos.am261x.r5f.iar-arm.$CONFIG_NAME$.lib</arg>
             <arg>-L$MCU_PLUS_SDK_PATH$/source/kernel/freertos/lib</arg>
             <arg>-L$MCU_PLUS_SDK_PATH$/source/drivers/lib</arg>
             <arg>-L$MCU_PLUS_SDK_PATH$/source/board/lib</arg>
@@ -115,8 +116,8 @@
     </buildActions>
 
     <files>
-        <path copyTo="$PROJ_DIR$/dfu_nortos.c">$MCU_PLUS_SDK_PATH$/examples/usb/device/dfu/dfu_nortos.c</path>
-        <path copyTo="$PROJ_DIR$/dfu_nortos.c">$MCU_PLUS_SDK_PATH$/examples/usb/device/dfu/am261x-lp/r5fss0-0_freertos/dfu_nortos.c</path>
+        <path copyTo="$PROJ_DIR$/dfu_freertos.c">$MCU_PLUS_SDK_PATH$/examples/usb/device/dfu/dfu_freertos.c</path>
+        <path copyTo="$PROJ_DIR$/dfu_freertos.c">$MCU_PLUS_SDK_PATH$/examples/usb/device/dfu/am261x-lp/r5fss0-0_freertos/dfu_freertos.c</path>
         <path copyTo="$PROJ_DIR$/main.c">$MCU_PLUS_SDK_PATH$/examples/usb/device/dfu/main.c</path>
         <path copyTo="$PROJ_DIR$/main.c">$MCU_PLUS_SDK_PATH$/examples/usb/device/dfu/am261x-lp/r5fss0-0_freertos/main.c</path>
         <path copyTo="$PROJ_DIR$/example.syscfg">$MCU_PLUS_SDK_PATH$/examples/usb/device/dfu/am261x-lp/r5fss0-0_freertos/example.syscfg</path>

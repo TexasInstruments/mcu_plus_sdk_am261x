@@ -158,7 +158,8 @@ void tud_dfu_download_cb(uint8_t alt, uint16_t block_num, uint8_t const* data, u
   }
   else
   {
-	  recvFileSize = 0 ;  
+	  recvFileSize = 0 ; 
+    FileBufPtr = gFileBuf; 
 	  tud_dfu_finish_flashing(DFU_STATUS_ERR_FILE);
   }
 }

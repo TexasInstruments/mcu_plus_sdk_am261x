@@ -186,6 +186,11 @@
 #define CFG_TUD_ENDPOINT0_SIZE    64
 #endif
 
+/* Endpoint buffers are DMA'd zero-copy and cache-maintained by the DCD: keep each
+ * one on its own 32-byte R5F cache line so inv/wb never clobbers a neighbour. */
+#define CFG_TUD_MEM_DCACHE_ENABLE     1
+#define CFG_TUD_MEM_DCACHE_LINE_SIZE  32
+
 /*------------- CLASS -------------*/
 #define CFG_TUD_CDC               0
 #define CFG_TUD_DFU               1

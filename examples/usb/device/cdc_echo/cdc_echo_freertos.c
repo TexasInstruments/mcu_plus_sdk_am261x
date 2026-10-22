@@ -248,7 +248,7 @@ void usb_task_loop(void *args)
     {
         USB_dwcTask(); /* Synopsis DWC task */
 
-        tud_task();
+        tud_task_ext(0, false);
 
         cdc_task();
     }

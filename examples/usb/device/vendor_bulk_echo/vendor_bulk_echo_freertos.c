@@ -75,30 +75,44 @@ int vendor_echo_main(void)
     return 0;
 }
 
-/* Vendor bulk echo task
- * Reads data from vendor interface and echoes it back
+/* 
+ * Normal path: echo the buffer handed to tud_vendor_rx_cb() straight back.
+ * If the TX FIFO has no room for it, leave the data in the RX FIFO (the host
+ * is throttled once it is full) and move it from tud_vendor_tx_cb() when TX
+ * has drained.
  */
-static void vendor_task(void)
-  {
-      if (tud_vendor_available())
-      {
-          uint8_t buf[512];
-          uint32_t count = tud_vendor_read(buf, sizeof(buf));
+/* Staging buffer for the fallback path only: tud_vendor_tx_cb() copies data
+ * that was left in the RX FIFO into this buffer, then writes it to the TX FIFO. */
+static uint8_t gRxStageBuf[CFG_TUD_VENDOR_RX_BUFSIZE] __attribute__((aligned(32)));
 
-          if (count > 0)
-          {
-              uint32_t written = 0;
-              while (written < count)
-              {
-                  USB_dwcTask();     
-                  tud_task();
-                  written += tud_vendor_write(buf + written, count - written);
-              }
-              tud_vendor_flush();
-          }
-      }
-  }
+/* Invoked when data is received from the host */
+void tud_vendor_rx_cb(uint8_t itf, uint8_t const *buffer, uint16_t bufsize)
+{
+    (void)itf;
 
+    if (tud_vendor_write_available() >= bufsize)
+    {
+        tud_vendor_write(buffer, bufsize);
+        tud_vendor_write_flush();
+        tud_vendor_read_flush(); /* drop the RX FIFO copy and re-arm the OUT endpoint */
+    }
+}
+
+/* Invoked when a transfer to the host completed: TX FIFO has room again */
+void tud_vendor_tx_cb(uint8_t itf, uint32_t sent_bytes)
+{
+    (void)itf; (void)sent_bytes;
+
+    uint32_t count = TU_MIN(tud_vendor_available(), tud_vendor_write_available());
+    count = TU_MIN(count, sizeof(gRxStageBuf));
+
+    if (count > 0)
+    {
+        count = tud_vendor_read(gRxStageBuf, count);
+        tud_vendor_write(gRxStageBuf, count);
+        tud_vendor_write_flush();
+    }
+}
 
 void usb_task_loop(void *args)
 {
@@ -106,8 +120,6 @@ void usb_task_loop(void *args)
     {
         USB_dwcTask(); /* Synopsis DWC task */
 
-        tud_task();    /* tinyusb device task */
-
-        vendor_task(); /* Vendor handler */
+        tud_task_ext(0, false);    /* tinyusb device task */
     }
 }

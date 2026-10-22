@@ -55,7 +55,7 @@ INCLUDES_common := \
 	-I${MCU_PLUS_SDK_PATH}/source \
 	-I${MCU_PLUS_SDK_PATH}/source/kernel/freertos/FreeRTOS-Kernel/include \
 	-I${MCU_PLUS_SDK_PATH}/source/kernel/freertos/config/am261x/r5f \
-	-I${MCU_PLUS_SDK_PATH}/source/usb/tinyusb/config/nortos/am261x/cdc_config \
+	-I${MCU_PLUS_SDK_PATH}/source/usb/tinyusb/config/freertos/am261x/cdc_config \
 	-I${MCU_PLUS_SDK_PATH}/source/usb/tinyusb/tinyusb-stack_0.20.0/src \
 	-I${MCU_PLUS_SDK_PATH}/source/kernel/freertos/portable/IAR_ARM/ARM_CR5F \
 	-Igenerated \
@@ -75,6 +75,7 @@ CFLAGS_common := \
 	-e \
 	--endian=little \
 	--silent \
+	--diag_suppress=Pe111 \
 
 CFLAGS_cpp_common := \
 
@@ -103,7 +104,7 @@ LIBS_common = \
 	drivers.am261x.r5f.iar-arm.freertos.${ConfigName}.lib \
 	board.am261x.r5f.iar-arm.freertos.${ConfigName}.lib \
 	usbd_synp_freertos.am261x.r5f.iar-arm.${ConfigName}.lib \
-	usbd_tusb_cdc_nortos.am261x.r5f.iar-arm.${ConfigName}.lib \
+	usbd_tusb_cdc_freertos.am261x.r5f.iar-arm.${ConfigName}.lib \
 
 LFLAGS_common = \
 	--silent \
@@ -117,7 +118,7 @@ LIBS_NAME = \
 	drivers.am261x.r5f.iar-arm.freertos.${ConfigName}.lib \
 	board.am261x.r5f.iar-arm.freertos.${ConfigName}.lib \
 	usbd_synp_freertos.am261x.r5f.iar-arm.${ConfigName}.lib \
-	usbd_tusb_cdc_nortos.am261x.r5f.iar-arm.${ConfigName}.lib \
+	usbd_tusb_cdc_freertos.am261x.r5f.iar-arm.${ConfigName}.lib \
 
 LIBS_PATH_NAME = \
 	${MCU_PLUS_SDK_PATH}/source/kernel/freertos/lib \

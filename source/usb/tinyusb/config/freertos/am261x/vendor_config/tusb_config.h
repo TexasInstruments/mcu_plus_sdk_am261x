@@ -195,6 +195,11 @@
 #define CFG_TUD_VENDOR_TX_BUFSIZE 512
 #define CFG_TUD_VENDOR_EPSIZE (TUD_OPT_HIGH_SPEED ? 512 : 64)
 
+/* Endpoint buffers are DMA'd zero-copy and cache-maintained by the DCD: keep each
+ * one on its own 32-byte R5F cache line so inv/wb never clobbers a neighbour. */
+#define CFG_TUD_MEM_DCACHE_ENABLE     1
+#define CFG_TUD_MEM_DCACHE_LINE_SIZE  32
+
 #ifdef __cplusplus
  }
 #endif

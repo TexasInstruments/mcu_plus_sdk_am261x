@@ -156,7 +156,6 @@ Operation 2 to 5 in a typical application</div></div>
 </ul>
 <h2><a class="anchor" id="CHAPTER_OPERATION_SECTION_1"></a>
 Operation 1: Latch and respond to interrupt</h2>
-<dl class="section note"><dt>Note</dt><dd>Latency to latch and repond to interrupt from ControlSS is 29 cycles (worst case) at 400MHz R5F core clock.</dd></dl>
 <p>This latency depends on</p><ol type="1">
 <li>Propagation of interrupt from peripheral to R5F. This is predominantly dependent on hardware latencies.</li>
 <li>Instruction under execution in R5F. Worst case scenario is when R5F starts executing a multi-cycle instruction and unable to respond to the interrupt. Example: a memory load instruction (from OCRAM) under execution in background loop or a low priority task when expecting an ADC interrupt</li>
@@ -177,7 +176,6 @@ Operation 1: Latch and respond to interrupt</h2>
 Interrupt route</div></div>
 <h2><a class="anchor" id="CHAPTER_OPERATION_SECTION_2"></a>
 Operation 2: R5F Context save</h2>
-<dl class="section note"><dt>Note</dt><dd>Latency to save context is 53 cycles (best case) at 400MHz R5F core clock.</dd></dl>
 <p>This latency depends on</p><ol type="1">
 <li>Saving/preserving the context of interrupted task<ul>
 <li>R5F Program status register, LR, core registers</li>
@@ -201,7 +199,6 @@ Code for context save</div></div>
 Context save</div></div>
 <h2><a class="anchor" id="CHAPTER_OPERATION_SECTION_3"></a>
 Operation 3: R5F read accesses to sensed inputs</h2>
-<dl class="section note"><dt>Note</dt><dd>Latency to read inputs (one 16-bit ADC result) is 18 cycles (best case) at 400MHz R5F core clock</dd></dl>
 <p>This latency depends on</p><ol type="1">
 <li>Hardware latency. ControlSS peripheral register read access</li>
 <li>Software/code. Pattern of accessing the registers</li>
@@ -224,7 +221,6 @@ Operation 3: R5F read accesses to sensed inputs</h2>
 ADC read access optimization</div></div>
 <h2><a class="anchor" id="CHAPTER_OPERATION_SECTION_4"></a>
 Operation 4: R5F executes calcuations/algorithm</h2>
-<dl class="section note"><dt>Note</dt><dd>Execution time of the control algorithm is specific to application use case. For example: Field Oriented Control computations for AM261X traction inverter executes for 985ns. Refer application note. SPRAD32 <a href="https://www.ti.com/lit/an/sprad32/sprad32.pdf">https://www.ti.com/lit/an/sprad32/sprad32.pdf</a></dd></dl>
 <p>This depends on</p><ol type="1">
 <li>Number of inputs and outputs required. For example: number of channels, phases, stages</li>
 <li>Number of floating point/trigonometric calculations</li>
@@ -241,7 +237,6 @@ Operation 4: R5F executes calcuations/algorithm</h2>
 Execution time for FOC computation from SPRAD32</div></div>
 <h2><a class="anchor" id="CHAPTER_OPERATION_SECTION_5"></a>
 Operation 5: R5F writes to outputs</h2>
-<dl class="section note"><dt>Note</dt><dd>Throughput to write outputs (For example: PWM compare values) is 2 cycles per write (best case) at 400MHz R5F core clock. Refer section CHAPTER_OPTIMIZATION_SECTION_3 on the settings to achieve this throughput.</dd></dl>
 <p>This latency depends on</p><ol type="1">
 <li>Hardware latency (write access latency)</li>
 <li>Software/Generated code (pattern of read/write)<ul>

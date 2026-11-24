@@ -193,7 +193,6 @@ Understanding NORTOS IRQ handler in MCU PLUS SDK DPL</h3>
 <img src="Fig13.PNG" alt=""/>
 <div class="caption">
 ARM Cortex R5 interrupt handling in MCU PLUS SDK for am261x</div></div>
-<p>The OS abstraction layer (DPL) of MCU PLUS SDK architected for networking applications introduces performance overheads (interrupt latencies). To support Real Time Control use cases the IRQ handlers are optimized, reducing software overheads down to 150ns. Use below steps to utilize the optimized IRQ handlers.</p>
 <h3><a class="anchor" id="autotoc_md575"></a>
 Step by step guide for optimizations</h3>
 <dl class="section note"><dt>Note</dt><dd>Please refer <a class="el" href="EXAMPLES_KERNEL_DPL_LOW_LATENCY_INTERRUPT.html">Driver Porting Layer (DPL) Low Latency Interrupt</a> example which demonstrates the steps to register a custom interrupt using optimized approach</dd></dl>
@@ -241,7 +240,6 @@ Optimize R5F MPU settings</h2>
 <dl class="section note"><dt>Note</dt><dd>Recommended R5 MPU settings for control peripherals: Device, Non-Shareable. </dd>
 <dd>
 MPU settings for On-Chip RAM shall not be kept shareable unless specifically intended shared region for IPC.</dd></dl>
-<p>Modify R5F MPU configuration for the ControlSS register space to enable posted writes.</p>
 <p> <style>div.image img[src="Fig11.PNG"]{width:80%}</style> </p><div class="image">
 <img src="Fig11.PNG" alt=""/>
 <div class="caption">
@@ -410,22 +408,6 @@ Optimize application code</h2>
 </ol>
 <h3><a class="anchor" id="autotoc_md577"></a>
 Peripheral Bus Architecture &amp; Mapping</h3>
-<p>CONTROLSS interconnect is divided into below list of separate interconnect connected to the CORE VBUSP interconnect individually. Since this are connected to the CORE VBUSP interconnect separately, each of this interconnect can be accessed in parallel by different initiators without any arbitration. Accessing a single CONTROLSS interconnect by multiple initiators at the same time will be arbitrated.</p>
-<ul>
-<li>MISC PERIPH</li>
-<li>MISC CONFIG</li>
-<li>FSI0 (FSITX[0:1] and FSIRX[0:1])</li>
-<li>FSI1 (FSITX[2:3] and FSIRX[2:3])</li>
-<li>G0_EPWM, G1_EPWM, G2_EPWM, G3_EPWM</li>
-<li>ADC0, ADC1, ADC2, ADC3, ADC4, ADC5</li>
-</ul>
-<p>Below diagram shows the different interconnect connections.</p>
-<p> <style>div.image img[src="Fig10.PNG"]{width:80%}</style> </p><div class="image">
-<img src="Fig10.PNG" alt=""/>
-<div class="caption">
-Figure 10</div></div>
-<p>MISC PERIPH, MISC CONFIG, FSI0 and FSI1 are single initiator, multiple targets as shown in the diagram. EPWM interconnect are divided into 4 groups G0_EPWM, G1_EPWM, G2_EPWM and G3_EPWM accessed using different address regions in the memory map. Each interconnect has n target ports depending on number of EPWM in the design. After the interconnect, a 4:1 Static Mux can be configured per EPWM using CONTROLSS_CTRL.EPWM_STATICXBAR_SEL0 &amp; CONTROLSS_CTRL.EPWM_STATICXBAR_SEL1 register.</p>
-<p>ADC0, ADC1, ADC2, ADC3, ADC4 and ADC5 are different interconnect per intiator (R5FSS0-0_AHB, R5FSS0-1_AHB,R5FSS1-0_AHB, R5FSS1-1_AHB, CORE VBUSP (Port0), and CORE VBUSP (Port1)). The target ports are based on number of ADCs in the design. Each initiator can independently access any ADC register without any arbitration.</p>
 <h2><a class="anchor" id="CHAPTER_OPTIMIZATION_SECTION_6"></a>
 Memory optimization</h2>
 <p>Code Size optimizations</p><ul>

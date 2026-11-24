@@ -151,18 +151,6 @@ Flow chart</div></div>
 <li>Refer table below for measurement of execution time of Interrupt handler (NORTOS, IRQ handlers)</li>
 <li>These measurements include IRQ entry handling latency + EPWM interrupt clear + IRQ exit handling latency + GPIO toggling overheads in background task</li>
 </ul>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Interrupt handler  </th><th class="markdownTableHeadNone">Measured execution time   </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">1. Non Re-entrant, Without FPU context save  </td><td class="markdownTableBodyNone">310ns   </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">2. Non Re-entrant, With FPU context save  </td><td class="markdownTableBodyNone">426ns   </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">3. Re-entrant, Without FPU context save  </td><td class="markdownTableBodyNone">376ns   </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">4. Re-entrant, With FPU context save  </td><td class="markdownTableBodyNone">496ns   </td></tr>
-</table>
 <h1><a class="anchor" id="autotoc_md1719"></a>
 Supported Combinations</h1>
 <h1><a class="anchor" id="autotoc_md1720"></a>
@@ -184,6 +172,7 @@ See Also</h1>
 <h1><a class="anchor" id="autotoc_md1722"></a>
 Sample Output</h1>
 <p>Shown below is a sample output when the application is run,</p>
+<dl class="section note"><dt>Note</dt><dd>The GPIO pin numbers printed in the log depend on the board configuration (e.g., GPIO 43 on AM263x CC, or GPIO 62 on AM243x LP / AM64x EVM).</dd></dl>
 <div class="fragment"><div class="line">DPL Low latency interrupt example started...</div>
 <div class="line"> </div>
 <div class="line">Interrupt Latency test...</div>
@@ -191,7 +180,7 @@ Sample Output</h1>
 <div class="line">Configuring source of interrupts... Done.</div>
 <div class="line">Registering interrupt handler in R5F VIM... Done.</div>
 <div class="line">Configuring pin to toggle in background loop... Done.</div>
-<div class="line">Please observe pin (GPIO 43)</div>
+<div class="line">Please observe pin (GPIO 43 on AM263x / GPIO 62 on AM243x / AM64x)</div>
 <div class="line">   If toggling         -&gt; Background loop running</div>
 <div class="line">   If gap/no toggling  -&gt; Background loop interrupted. Interrupt routine running</div>
 <div class="line">Waiting for few seconds... Done.</div>
@@ -202,9 +191,9 @@ Sample Output</h1>
 <div class="line">Configuring source of interrupts... Done.</div>
 <div class="line">Registering interrupt handlers in R5F VIM... Done.</div>
 <div class="line">Configuring pins to use in interrupt routine... Done.</div>
-<div class="line">Please observe pins (GPIO 44 and 45)</div>
-<div class="line">   If pin 44 high -&gt; ISR 1 running</div>
-<div class="line">   If pin 45 high -&gt; ISR 2 running</div>
+<div class="line">Please observe pins (GPIO 44 and 45 on AM263x / GPIO 63 and 64 on AM243x)</div>
+<div class="line">   If pin 44/63 high -&gt; ISR 1 running</div>
+<div class="line">   If pin 45/64 high -&gt; ISR 2 running</div>
 <div class="line">Waiting for few seconds...</div>
 <div class="line">De-initializations... Done.</div>
 <div class="line"> </div>
